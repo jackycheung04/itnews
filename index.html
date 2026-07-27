@@ -1147,7 +1147,7 @@ License: You must have a valid license from official store to legally use the th
         // 逐一讀取每一則新聞，並套用你喜歡的卡片樣式印出來
         newsList.forEach(news => {
           const cardHTML = `
-            <article class="flex-shrink max-w-full w-full sm:w-1/2 px-3 mb-4">
+            <article class="flex-shrink max-w-full w-full sm:w-1/2 px-3 mb-4" id="techno-article">
               <div class="relative hover-img max-h-48 overflow-hidden rounded-lg">
                 <a href="${news.link}" target="_blank">
                   <img class="max-w-full w-full mx-auto h-auto object-cover" src="${news.image || 'src/img/dummy/img2.jpg'}" alt="Image">
@@ -1178,42 +1178,31 @@ License: You must have a valid license from official store to legally use the th
     fetch('data/news.json')
       .then(response => response.json())
       .then(newsList => {
-        console.log("成功取得新聞資料：", newsList);
-        
-        // 找尋網頁上第一個大文章區塊或我們自訂的容器
-        const container = document.getElementById('news-container') || document.querySelector('article').parentNode;
-        
-        if (container) {
-          let htmlContent = '';
-          newsList.forEach(news => {
-            htmlContent += `
-              <article class="flex-shrink max-w-full w-full sm:w-1/2 px-3 mb-4" style="background: #111; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                <div class="relative hover-img max-h-48 overflow-hidden rounded-lg">
-                  <a href="${news.link}" target="_blank">
-                    <h2 class="text-xl font-bold text-white mb-2" style="color: #fff !important;">${news.title}</h2>
+        if (newsList && newsList.length > 0) {
+          const latestNews = newsList[0];
+          const technoBox = document.getElementById('techno-article');
+          
+          if (technoBox) {
+            technoBox.innerHTML = `
+              <div class="relative hover-img max-h-48 overflow-hidden rounded-lg">
+                <a href="${latestNews.link}" target="_blank">
+                  <img class="max-w-full w-full mx-auto h-auto object-cover" src="${latestNews.image || 'src/img/dummy/img2.jpg'}" alt="Image">
+                </a>
+                <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                  <a href="${latestNews.link}" target="_blank">
+                    <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">${latestNews.title}</h2>
                   </a>
-                  <p class="text-gray-300 text-sm mb-2" style="color: #ccc !important;">${news.summary}</p>
                   <div class="pt-1">
-                    <div class="text-red-400 text-xs">${news.date} | <a href="${news.link}" target="_blank" style="color: #ff6b6b; text-decoration: underline;">閱讀原文</a></div>
+                    <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div><span>Techno</span></div>
                   </div>
                 </div>
-              </article>
+              </div>
             `;
-          });
-          
-          // 如果有找到自訂容器就塞進去，沒有的話就直接置頂顯示
-          if(document.getElementById('news-container')) {
-            document.getElementById('news-container').innerHTML = htmlContent;
-          } else {
-            // 直接加在網頁最上方，絕對不會漏看！
-            const topDiv = document.createElement('div');
-            topDiv.innerHTML = `<div style="background: #1a1a1a; padding: 20px; margin: 20px; border-radius: 10px;"><h1 style="color: #ff4757; font-size: 24px; margin-bottom: 15px; font-weight: bold;">🤖 AI 自動抓取的最新 IT 新聞</h1><div style="display: flex; flex-wrap: wrap;">${htmlContent}</div></div>`;
-            document.body.prepend(topDiv);
           }
         }
       })
       .catch(error => {
-        console.log('載入新聞失敗或正在等待更新', error);
+        console.log('自動新聞載入中...', error);
       });
   });
 </script>
