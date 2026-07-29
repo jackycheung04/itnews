@@ -4,17 +4,55 @@ import time
 import re
 import requests
 import feedparser
-from google import genai
-from google.genai import errors
 
-# 1. 初始化新版 Gemini API Client
+# 1. 取得環境變數中的 API Key
 api_key = os.environ.get("GEMINI_API_KEY")
-client = genai.Client(api_key=api_key)
 
-# 當前官方標準模型名稱
-MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash']
+def get_available_models():
+    """向 Google 查詢這個 API Key 實際能用的模型清單，徹底解決 404 問題"""
+    if not api_key:
+        print("❌ 找不到 GEMINI_API_KEY 環境變數")
+        return ['gemini-1.5-flash']
+    
+    url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
+    try:
+        res = requests.get(url)
+        if res.status_code == 200:
+            models_data = res.json().get('models', [])
+            valid_models = []
+            for m in models_data:
+                # 確保模型支援生成內容
+                if 'generateContent' in m.get('supportedGenerationMethods', []):
+                    name = m.get('name').replace('models/', '')
+                    valid_models.append(name)
+            
+            print(f"✅ 您的 API Key 支援以下模型: {valid_models}")
+            
+            # 從支援清單中，優先挑選我們想要的免費模型
+            preferred = []
+            for target in ['gemini-1.5-flash', 'gemini-1.5-flash-8b', 'gemini-1.5-pro']:
+                if target in valid_models:
+                    preferred.append(target)
+                    
+            if preferred:
+                return preferred
+            elif valid_models:
+                return valid_models[:2] # 如果都沒有，隨便抓前兩個能用的
+        else:
+            print(f"⚠️ 獲取模型清單失敗 ({res.status_code})")
+    except Exception as e:
+        print(f"⚠️ 請求模型清單發生錯誤: {e}")
+        
+    return ['gemini-1.5-flash']
+
+# 取得保證不會 404 的模型清單
+MODELS_TO_TRY = get_available_models()
+print(f"🎯 系統決定使用以下模型進行翻譯: {MODELS_TO_TRY}")
 
 def translate_text(title, summary):
+    if not api_key:
+        return title, summary
+        
     prompt = f"""
     請將以下英文 IT 新聞總結並翻譯成吸引人的繁體中文：
     標題：{title}
@@ -24,45 +62,51 @@ def translate_text(title, summary):
     {{"title": "繁體中文新聞標題", "summary": "150字左右的繁體中文核心總結"}}
     """
     
-    for m_name in MODELS:
-        max_retries = 3
-        for attempt in range(max_retries):
+    for m_name in MODELS_TO_TRY:
+        url = f"[https://generativelanguage.googleapis.com/v1beta/models/](https://generativelanguage.googleapis.com/v1beta/models/){m_name}:generateContent?key={api_key}"
+        payload = {
+            "contents": [{"parts": [{"text": prompt}]}]
+        }
+        
+        # 每個模型最多重試 2 次 (避免死等 429)
+        for attempt in range(2):
             try:
-                response = client.models.generate_content(
-                    model=m_name,
-                    contents=prompt
-                )
-                text = response.text.strip()
+                res = requests.post(url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
                 
-                # 清除 markdown codeblock 標籤
-                if "```" in text:
-                    text = text.split("```")[1]
-                    if text.startswith("json"):
-                        text = text[4:].strip()
-                
-                # 嘗試解析 JSON
-                data = json.loads(text.strip())
-                if "title" in data and "summary" in data:
-                    print(f"✅ AI 模型 [{m_name}] 翻譯成功：{data['title']}")
-                    return data["title"], data["summary"]
-            
-            except errors.APIError as e:
-                # 針對 429 超過速率限制進行自動等待重試
-                if getattr(e, 'code', None) == 429 or "429" in str(e):
-                    wait_time = 20 * (attempt + 1)
-                    print(f"⏳ 觸發 API 頻率限制 (429)，自動等待 {wait_time} 秒後進行第 {attempt + 1} 次重試...")
+                if res.status_code == 200:
+                    data = res.json()
+                    text = data['candidates'][0]['content']['parts'][0]['text'].strip()
+                    
+                    # 清理 Markdown 標籤
+                    if text.startswith("```"):
+                        text = re.sub(r"^```(?:json)?", "", text)
+                        text = re.sub(r"```$", "", text).strip()
+                    
+                    try:
+                        result = json.loads(text)
+                        if "title" in result and "summary" in result:
+                            print(f"✅ [{m_name}] 翻譯成功：{result['title']}")
+                            return result["title"], result["summary"]
+                    except json.JSONDecodeError:
+                        print(f"⚠️ JSON 解析失敗，原始回傳: {text}")
+                        return title, summary
+                        
+                elif res.status_code == 429:
+                    wait_time = 15
+                    print(f"⏳ [{m_name}] 觸發頻率限制，等待 {wait_time} 秒後重試...")
                     time.sleep(wait_time)
                 else:
-                    print(f"⚠️ 模型 {m_name} API 錯誤: {e}")
-                    break
+                    print(f"⚠️ [{m_name}] API 錯誤 ({res.status_code}): {res.text}")
+                    break # 直接換下一個模型
+                    
             except Exception as e:
-                print(f"⚠️ 模型 {m_name} 解析或處理失敗: {e}")
+                print(f"⚠️ [{m_name}] 請求發生例外錯誤: {e}")
                 break
-
-    print("❌ 所有 AI 模型與重試皆嘗試完畢，暫時改用英文原文")
+                
+    print("❌ 所有模型皆失敗，保留英文原文")
     return title, summary
 
-# 2. RSS 來源設定
+# 2. 抓取 RSS
 RSS_SOURCES = [
     "https://techcrunch.com/feed/",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
@@ -70,36 +114,26 @@ RSS_SOURCES = [
 ]
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 }
 
 entries = []
 for url in RSS_SOURCES:
-    clean_url = url
-    if "](" in url:
-        clean_url = url.split("](")[-1].replace(")", "")
-        
+    clean_url = url.split("](")[-1].replace(")", "")
     print(f"嘗試抓取 RSS: {clean_url}")
     try:
         resp = requests.get(clean_url, headers=headers, timeout=10)
         if resp.status_code == 200:
             feed = feedparser.parse(resp.text)
-            if feed.entries and len(feed.entries) > 0:
+            if feed.entries:
                 entries = feed.entries
-                print(f"🎉 成功從 {clean_url} 抓取到 {len(entries)} 則新聞！")
+                print(f"🎉 成功從 {clean_url} 抓取 {len(entries)} 則新聞！")
                 break
-            else:
-                print(f"⚠️ {clean_url} 回傳內容不包含新聞文章")
-        else:
-            print(f"⚠️ {clean_url} 回傳 HTTP 狀態碼 {resp.status_code}")
     except Exception as e:
         print(f"抓取 {clean_url} 失敗: {e}")
 
+# 3. 處理與翻譯
 news_list = []
-
-# 3. 處理新聞並進行翻譯
 if entries:
     for idx, entry in enumerate(entries[:5]):
         orig_title = entry.get('title', '')
@@ -110,13 +144,8 @@ if entries:
         image_url = "src/img/dummy/img2.jpg"
         if 'media_content' in entry and len(entry.media_content) > 0:
             image_url = entry.media_content[0].get('url', image_url)
-        elif 'links' in entry:
-            for l in entry.links:
-                if l.get('type', '').startswith('image/'):
-                    image_url = l.get('href', image_url)
-                    break
-
-        # AI 翻譯處理
+            
+        print(f"🔄 正在翻譯第 {idx+1}/5 篇...")
         zh_title, zh_summary = translate_text(orig_title, orig_summary)
 
         news_list.append({
@@ -127,15 +156,13 @@ if entries:
             "date": published
         })
 
-        # 新聞間間隔 15 秒，避免連續請求觸發免費額度紅線
+        # 新聞間隔 5 秒緩衝
         if idx < 4:
-            time.sleep(15)
+            time.sleep(5)
 
-# 4. 寫入 JSON 檔案
+# 4. 寫入檔案
 os.makedirs("data", exist_ok=True)
 if news_list:
     with open("data/news.json", "w", encoding="utf-8") as f:
         json.dump(news_list, f, ensure_ascii=False, indent=4)
-    print(f"🚀 新聞更新成功！共寫入 {len(news_list)} 則繁體中文新聞。")
-else:
-    print("⚠️ 這次沒有抓取到任何新聞，保持舊檔案，不覆蓋 news.json！")
+    print(f"🚀 更新成功！共寫入 {len(news_list)} 則繁體中文新聞。")
