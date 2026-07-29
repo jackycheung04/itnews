@@ -7,8 +7,11 @@ import google.generativeai as genai
 api_key = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-# 使用 gemini-1.5-flash 模型
-model = genai.GenerativeModel('gemini-1.5-flash')
+# 使用最新的 Gemini 2.0 Flash 模型（若失敗則自動備用 gemini-1.5-flash-latest）
+try:
+    model = genai.GenerativeModel('gemini-2.0-flash')
+except Exception:
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 # 2. 設定 RSS 來源（加上 User-Agent 避免被網站阻擋）
 rss_url = "https://techcrunch.com/feed/"
@@ -50,10 +53,10 @@ for entry in feed.entries[:5]:
         text_res = response.text.strip()
         
         # 清理可能包覆的 markdown 符號
-        if text_res.startswith("```"):
+        if "```" in text_res:
             text_res = text_res.split("```")[1]
             if text_res.startswith("json"):
-                text_res = text_res[4:]
+                text_res = text_res[4:].strip()
         
         ai_data = json.loads(text_res.strip())
         
@@ -68,7 +71,7 @@ for entry in feed.entries[:5]:
     except Exception as e:
         print(f"處理新聞『{original_title}』失敗: {e}")
 
-# 5. 確保 data 資料夾存在，並寫入 data/news.json
+# 5. 寫入 data/news.json
 os.makedirs("data", exist_ok=True)
 with open("data/news.json", "w", encoding="utf-8") as f:
     json.dump(news_list, f, ensure_ascii=False, indent=4)
