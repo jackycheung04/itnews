@@ -1,5 +1,6 @@
 import os
 import json
+import time
 import requests
 import feedparser
 import google.generativeai as genai
@@ -8,7 +9,12 @@ import google.generativeai as genai
 api_key = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro']
+# 使用最新的 Gemini 2.0 / 2.5 系列模型名稱
+MODELS = [
+    'gemini-2.5-flash',
+    'gemini-2.0-flash',
+    'gemini-2.0-flash-lite'
+]
 
 def translate_text(title, summary):
     prompt = f"""
@@ -37,6 +43,8 @@ def translate_text(title, summary):
                 return data["title"], data["summary"]
         except Exception as e:
             print(f"⚠️ 模型 {m_name} 嘗試失敗: {e}")
+            # 若遭遇頻率限制，稍等 3 秒再試下一個模型
+            time.sleep(3)
             continue
             
     print("❌ 所有 AI 模型皆失敗，暫時改用英文原文")
@@ -57,7 +65,6 @@ headers = {
 
 entries = []
 for url in RSS_SOURCES:
-    # 🧹 自動清除複製貼上可能產生的 Markdown 超連結格式
     clean_url = url
     if "](" in url:
         clean_url = url.split("](")[-1].replace(")", "")
@@ -82,7 +89,7 @@ news_list = []
 
 # 3. 處理新聞
 if entries:
-    for entry in entries[:5]:
+    for idx, entry in enumerate(entries[:5]):
         orig_title = entry.get('title', '')
         orig_summary = entry.get('summary', entry.get('description', ''))
         link = entry.get('link', '#')
@@ -108,6 +115,10 @@ if entries:
             "image": image_url,
             "date": published
         })
+
+        # 核心防護：每處理一則新聞暫停 4 秒，防止觸發免費 API 頻率限制
+        if idx < 4:
+            time.sleep(4)
 
 # 4. 寫入 data/news.json
 os.makedirs("data", exist_ok=True)
