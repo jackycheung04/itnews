@@ -7,13 +7,22 @@ import google.generativeai as genai
 api_key = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-# 使用最新的 Gemini 2.0 Flash 模型（若失敗則自動備用 gemini-1.5-flash-latest）
-try:
-    model = genai.GenerativeModel('gemini-2.0-flash')
-except Exception:
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+# 備選模型清單（按優先順序嘗試）
+CANDIDATE_MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash-latest', 'gemini-1.5-flash', 'gemini-1.5-pro']
 
-# 2. 設定 RSS 來源（加上 User-Agent 避免被網站阻擋）
+def get_working_model():
+    for model_name in CANDIDATE_MODELS:
+        try:
+            m = genai.GenerativeModel(model_name)
+            return m, model_name
+        except Exception:
+            continue
+    return genai.GenerativeModel('gemini-1.5-flash'), 'gemini-1.5-flash'
+
+model, used_model_name = get_working_model()
+print(f"目前使用的 AI 模型：{used_model_name}")
+
+# 2. 設定 RSS 來源
 rss_url = "https://techcrunch.com/feed/"
 feed = feedparser.parse(rss_url, agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
 
@@ -28,7 +37,7 @@ for entry in feed.entries[:5]:
     link = entry.link
     published = entry.get('published', 'Today')
 
-    # 嘗試抓取圖片網址（若抓不到則使用預設圖）
+    # 預設抓取圖片網址
     image_url = "src/img/dummy/img2.jpg"
     if 'media_content' in entry and len(entry.media_content) > 0:
         image_url = entry.media_content[0].get('url', image_url)
@@ -38,7 +47,11 @@ for entry in feed.entries[:5]:
                 image_url = l.get('href', image_url)
                 break
 
-    # 4. 請 Gemini 進行繁體中文翻譯與總結
+    # 預設使用原始英文資料（保底機制）
+    final_title = original_title
+    final_summary = original_summary
+
+    # 4. 嘗試請 Gemini 進行繁體中文翻譯與總結
     prompt = f"""
     請將以下英文 IT 新聞總結並翻譯成吸引人的繁體中文：
     標題：{original_title}
@@ -59,18 +72,27 @@ for entry in feed.entries[:5]:
                 text_res = text_res[4:].strip()
         
         ai_data = json.loads(text_res.strip())
-        
-        news_list.append({
-            "title": ai_data.get("title", original_title),
-            "summary": ai_data.get("summary", original_summary),
-            "link": link,
-            "image": image_url,
-            "date": published
-        })
-        print(f"成功處理新聞：{ai_data.get('title')}")
+        final_title = ai_data.get("title", original_title)
+        final_summary = ai_data.get("summary", original_summary)
+        print(f"✅ AI 成功翻譯：{final_title}")
     except Exception as e:
-        print(f"處理新聞『{original_title}』失敗: {e}")
+        print(f"⚠️ AI 處理失敗，改用原始新聞內容：{e}")
 
+    # ⚠️ 關鍵修正：不論 AI 是否成功，都一定會將新聞寫入清單！
+    news_list.append({
+        "title": final_title,
+        "summary": final_summary,
+        "link": link,
+        "image": image_url,
+        "date": published
+    })
+
+# 5. 寫入 data/news.json
+os.makedirs("data", exist_ok=True)
+with open("data/news.json", "w", encoding="utf-8") as f:
+    json.dump(news_list, f, ensure_ascii=False, indent=4)
+
+print(f"🎉 新聞更新成功！共寫入 {len(news_list)} 則新聞至 news.json")
 # 5. 寫入 data/news.json
 os.makedirs("data", exist_ok=True)
 with open("data/news.json", "w", encoding="utf-8") as f:
