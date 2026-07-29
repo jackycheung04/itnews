@@ -42,11 +42,11 @@ def translate_text(title, summary):
     print("❌ 所有 AI 模型皆失敗，暫時改用英文原文")
     return title, summary
 
-# 2. 設定 RSS 來源與完整瀏覽器請求頭 (防止網站阻擋)
+# 2. 設定 RSS 來源與完整瀏覽器請求頭
 RSS_SOURCES = [
-    "[https://techcrunch.com/feed/](https://techcrunch.com/feed/)",
-    "[https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml](https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml)",
-    "[https://www.wired.com/feed/category/gear/latest/rss](https://www.wired.com/feed/category/gear/latest/rss)"
+    "https://techcrunch.com/feed/",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "https://www.wired.com/feed/category/gear/latest/rss"
 ]
 
 headers = {
@@ -57,21 +57,26 @@ headers = {
 
 entries = []
 for url in RSS_SOURCES:
-    print(f"嘗試抓取 RSS: {url}")
+    # 🧹 自動清除複製貼上可能產生的 Markdown 超連結格式
+    clean_url = url
+    if "](" in url:
+        clean_url = url.split("](")[-1].replace(")", "")
+        
+    print(f"嘗試抓取 RSS: {clean_url}")
     try:
-        resp = requests.get(url, headers=headers, timeout=10)
+        resp = requests.get(clean_url, headers=headers, timeout=10)
         if resp.status_code == 200:
             feed = feedparser.parse(resp.text)
             if feed.entries and len(feed.entries) > 0:
                 entries = feed.entries
-                print(f"🎉 成功從 {url} 抓取到 {len(entries)} 則新聞！")
+                print(f"🎉 成功從 {clean_url} 抓取到 {len(entries)} 則新聞！")
                 break
             else:
-                print(f"⚠️ {url} 回傳內容不包含新聞文章")
+                print(f"⚠️ {clean_url} 回傳內容不包含新聞文章")
         else:
-            print(f"⚠️ {url} 回傳 HTTP 狀態碼 {resp.status_code}")
+            print(f"⚠️ {clean_url} 回傳 HTTP 狀態碼 {resp.status_code}")
     except Exception as e:
-        print(f"抓取 {url} 失敗: {e}")
+        print(f"抓取 {clean_url} 失敗: {e}")
 
 news_list = []
 
