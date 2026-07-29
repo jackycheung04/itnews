@@ -1,19 +1,18 @@
 import os
 import json
 import time
+import re
 import requests
 import feedparser
-import google.generativeai as genai
+from google import genai
+from google.genai import errors
 
-# 1. 設定 Gemini API
+# 1. 初始化新版 Gemini API Client
 api_key = os.environ.get("GEMINI_API_KEY")
-genai.configure(api_key=api_key)
+client = genai.Client(api_key=api_key)
 
-# 💡 關鍵修改：
-# 1. 使用帶有明確版本號的 1.5-flash-002，避免 404 找不到模型
-# 2. 將 1.5 排在第一順位，避開目前可能被限制的 2.0 額度
-# 3. 加上最基礎的 gemini-pro 作為終極備用
-MODELS = ['gemini-1.5-flash-002', 'gemini-2.0-flash', 'gemini-pro']
+# 當前官方標準模型名稱
+MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash']
 
 def translate_text(title, summary):
     prompt = f"""
@@ -24,31 +23,46 @@ def translate_text(title, summary):
     請嚴格回傳一個純 JSON 格式（不要包含 markdown 的 ```json 標籤），格式如下：
     {{"title": "繁體中文新聞標題", "summary": "150字左右的繁體中文核心總結"}}
     """
+    
     for m_name in MODELS:
-        try:
-            model = genai.GenerativeModel(m_name)
-            res = model.generate_content(prompt)
-            text = res.text.strip()
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = client.models.generate_content(
+                    model=m_name,
+                    contents=prompt
+                )
+                text = response.text.strip()
+                
+                # 清除 markdown codeblock 標籤
+                if "```" in text:
+                    text = text.split("```")[1]
+                    if text.startswith("json"):
+                        text = text[4:].strip()
+                
+                # 嘗試解析 JSON
+                data = json.loads(text.strip())
+                if "title" in data and "summary" in data:
+                    print(f"✅ AI 模型 [{m_name}] 翻譯成功：{data['title']}")
+                    return data["title"], data["summary"]
             
-            # 清除 markdown codeblock 標籤
-            if "```" in text:
-                text = text.split("```")[1]
-                if text.startswith("json"):
-                    text = text[4:].strip()
-            
-            data = json.loads(text.strip())
-            if "title" in data and "summary" in data:
-                print(f"✅ AI 模型 [{m_name}] 翻譯成功：{data['title']}")
-                return data["title"], data["summary"]
-        except Exception as e:
-            print(f"⚠️ 模型 {m_name} 嘗試失敗: {e}")
-            time.sleep(3)
-            continue
-            
-    print("❌ 所有 AI 模型皆失敗，暫時改用英文原文")
+            except errors.APIError as e:
+                # 針對 429 超過速率限制進行自動等待重試
+                if getattr(e, 'code', None) == 429 or "429" in str(e):
+                    wait_time = 20 * (attempt + 1)
+                    print(f"⏳ 觸發 API 頻率限制 (429)，自動等待 {wait_time} 秒後進行第 {attempt + 1} 次重試...")
+                    time.sleep(wait_time)
+                else:
+                    print(f"⚠️ 模型 {m_name} API 錯誤: {e}")
+                    break
+            except Exception as e:
+                print(f"⚠️ 模型 {m_name} 解析或處理失敗: {e}")
+                break
+
+    print("❌ 所有 AI 模型與重試皆嘗試完畢，暫時改用英文原文")
     return title, summary
 
-# 2. 設定 RSS 來源與完整瀏覽器請求頭
+# 2. RSS 來源設定
 RSS_SOURCES = [
     "https://techcrunch.com/feed/",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
@@ -85,7 +99,7 @@ for url in RSS_SOURCES:
 
 news_list = []
 
-# 3. 處理新聞
+# 3. 處理新聞並進行翻譯
 if entries:
     for idx, entry in enumerate(entries[:5]):
         orig_title = entry.get('title', '')
@@ -113,11 +127,11 @@ if entries:
             "date": published
         })
 
-        # 💡 關鍵修改：延長緩衝時間至 15 秒，徹底解決頻繁請求限制
+        # 新聞間間隔 15 秒，避免連續請求觸發免費額度紅線
         if idx < 4:
             time.sleep(15)
 
-# 4. 寫入 data/news.json
+# 4. 寫入 JSON 檔案
 os.makedirs("data", exist_ok=True)
 if news_list:
     with open("data/news.json", "w", encoding="utf-8") as f:
