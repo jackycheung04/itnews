@@ -1,5 +1,12 @@
 [
     {
+        "title": "Google brings its age-assurance technology to Android developers worldwide",
+        "summary": "Google is expanding its Play Age Signals API, giving Android developers a privacy-preserving way to tailor experiences based on users’ age ranges.",
+        "link": "https://techcrunch.com/2026/07/29/google-is-rolling-out-its-age-assurance-tech-for-apps-worldwide-by-year-end/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Wed, 29 Jul 2026 17:00:00 +0000"
+    },
+    {
         "title": "Elon Musk’s X settles multiyear legal battle with the World Federation of Advertisers",
         "summary": "X sued the WFA in 2024 for conducting what it called a \"systematic illegal boycott\" of the platform after it saw a decline in advertising revenue following Musk's $44 billion takeover of the social network.",
         "link": "https://techcrunch.com/2026/07/29/elon-musks-x-settles-multiyear-legal-battle-with-the-world-federation-of-advertisers/",
@@ -26,12 +33,5 @@
         "link": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 14:41:06 +0000"
-    },
-    {
-        "title": "‘No one’s making a phone like this’: Light’s co-founders on building for the anti-smartphone generation",
-        "summary": "With the&#160;Light Phone,&#160;Kaiwei Tang&#160;and&#160;Joe Hollier&#160;have spent over a decade exploring the value of simplicity in our relationship to technology, partnering along the way with players like&#160;Andrew Yang, Kendrick Lamar, and Pete Davidson. Now, with a new flip phone and a growing wave of “attention activists” pushing back against Big Tech, they think the rest of [&#8230;]",
-        "link": "https://techcrunch.com/video/no-ones-making-a-phone-like-this-lights-co-founders-on-building-for-the-anti-smartphone-generation/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 14:00:00 +0000"
     }
 ]
