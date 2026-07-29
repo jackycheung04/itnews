@@ -9,12 +9,8 @@ import google.generativeai as genai
 api_key = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-# 使用最新的 Gemini 2.0 / 2.5 系列模型名稱
-MODELS = [
-    'gemini-2.5-flash',
-    'gemini-2.0-flash',
-    'gemini-2.0-flash-lite'
-]
+# 移除會報錯的 2.5 版本，保留穩定且免費開放的模型
+MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash-latest']
 
 def translate_text(title, summary):
     prompt = f"""
@@ -43,7 +39,6 @@ def translate_text(title, summary):
                 return data["title"], data["summary"]
         except Exception as e:
             print(f"⚠️ 模型 {m_name} 嘗試失敗: {e}")
-            # 若遭遇頻率限制，稍等 3 秒再試下一個模型
             time.sleep(3)
             continue
             
@@ -95,7 +90,6 @@ if entries:
         link = entry.get('link', '#')
         published = entry.get('published', 'Today')
 
-        # 嘗試抓取圖片網址
         image_url = "src/img/dummy/img2.jpg"
         if 'media_content' in entry and len(entry.media_content) > 0:
             image_url = entry.media_content[0].get('url', image_url)
@@ -116,9 +110,9 @@ if entries:
             "date": published
         })
 
-        # 核心防護：每處理一則新聞暫停 4 秒，防止觸發免費 API 頻率限制
+        # 核心防護：將緩衝時間拉長到 10 秒，絕對不觸發免費 API 每分鐘限制
         if idx < 4:
-            time.sleep(4)
+            time.sleep(10)
 
 # 4. 寫入 data/news.json
 os.makedirs("data", exist_ok=True)
