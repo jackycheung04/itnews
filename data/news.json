@@ -1,37 +1,37 @@
 [
     {
-        "title": "Google brings its age-assurance technology to Android developers worldwide",
-        "summary": "Google is expanding its Play Age Signals API, giving Android developers a privacy-preserving way to tailor experiences based on users’ age ranges.",
-        "link": "https://techcrunch.com/2026/07/29/google-is-rolling-out-its-age-assurance-tech-for-apps-worldwide-by-year-end/",
+        "title": "Thinking Machines co-founder Lilian Weng left the company citing health reasons, then joined OpenAI",
+        "summary": "Weng previously served as the VP of AI Safety Research at OpenAI.",
+        "link": "https://techcrunch.com/2026/07/29/thinking-machines-co-founder-lilian-weng-left-the-company-citing-health-reasons-then-joined-openai/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 17:00:00 +0000"
+        "date": "Wed, 29 Jul 2026 21:07:48 +0000"
     },
     {
-        "title": "Elon Musk’s X settles multiyear legal battle with the World Federation of Advertisers",
-        "summary": "X sued the WFA in 2024 for conducting what it called a \"systematic illegal boycott\" of the platform after it saw a decline in advertising revenue following Musk's $44 billion takeover of the social network.",
-        "link": "https://techcrunch.com/2026/07/29/elon-musks-x-settles-multiyear-legal-battle-with-the-world-federation-of-advertisers/",
+        "title": "Winamp aims for a comeback with a new music player powered by Deezer",
+        "summary": "Winamp is preparing to relaunch with a Deezer-powered premium music service, betting its nostalgic brand and a new all-in-one music player can stand out in today’s crowded streaming market.",
+        "link": "https://techcrunch.com/2026/07/29/winamp-aims-for-a-comeback-with-a-new-music-player-powered-by-deezer/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 15:36:48 +0000"
+        "date": "Wed, 29 Jul 2026 21:02:12 +0000"
     },
     {
-        "title": "Hint, a new AI startup co-founded by Martha Stewart, offers an AI assistant for homeowners",
-        "summary": "AI home management startup Hint, co-founded by Martha Stewart, wants to become an “AI for your home,” combining property records, maintenance schedules, home documents, and an AI assistant into a single app.",
-        "link": "https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners/",
+        "title": "The Hugging Face AI break-in, as told through an increasingly committed bear metaphor",
+        "summary": "Another way to think about the whole thing is to picture a bear at a campsite. (Really, we are going there.)",
+        "link": "https://techcrunch.com/2026/07/29/the-hugging-face-ai-break-in-as-told-through-an-increasingly-committed-bear-metaphor/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 15:35:09 +0000"
+        "date": "Wed, 29 Jul 2026 19:44:49 +0000"
     },
     {
-        "title": "Perplexity employee who worked on Comet launches an AI browser aimed at knowledge work",
-        "summary": "Polar has come out with an AI-first browser aimed at knowledge workers, and it has now raised a $5.7 million seed round led by Madrona.",
-        "link": "https://techcrunch.com/2026/07/29/perplexity-employee-who-worked-on-comet-launches-an-ai-browser-aimed-at-knowledge-work/",
+        "title": "Claude Opus 5 became downright ruthless when tasked with running a vending machine",
+        "summary": "Andon Labs' latest vending machine simulation shows Opus 5 lied and colluded its way to become the best AI capitalist ever.",
+        "link": "https://techcrunch.com/2026/07/29/claude-opus-5-became-downright-ruthless-when-tasked-with-running-a-vending-machine/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 15:00:00 +0000"
+        "date": "Wed, 29 Jul 2026 18:45:27 +0000"
     },
     {
-        "title": "Encore AI raises $30M to build AI agents that learn from customer calls",
-        "summary": "The startup analyzes calls, messages, and CRM data to identify effective sales techniques and turn them into playbooks for AI agents.",
-        "link": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls/",
+        "title": "Sorry, haters. Ferrari’s first EV is doing just fine",
+        "summary": "To the horror of commenters across the internet, the Ferrari Luce appears to be a sales success.",
+        "link": "https://techcrunch.com/2026/07/29/sorry-haters-ferraris-first-ev-is-doing-just-fine/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 14:41:06 +0000"
+        "date": "Wed, 29 Jul 2026 17:57:45 +0000"
     }
 ]
