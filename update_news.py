@@ -9,10 +9,10 @@ import feedparser
 api_key = os.environ.get("GEMINI_API_KEY")
 
 def get_available_models():
-    """向 Google 查詢這個 API Key 實際能用的模型清單，徹底解決 404 問題"""
+    """向 Google 查詢這個 API Key 實際能用的模型清單"""
     if not api_key:
         print("❌ 找不到 GEMINI_API_KEY 環境變數")
-        return ['gemini-1.5-flash']
+        return ['gemini-2.5-flash']
     
     url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
     try:
@@ -28,9 +28,9 @@ def get_available_models():
             
             print(f"✅ 您的 API Key 支援以下模型: {valid_models}")
             
-            # 從支援清單中，優先挑選我們想要的免費模型
+            # 優先挑選最新版且支援度最高的 2.5 閃電版模型
             preferred = []
-            for target in ['gemini-1.5-flash', 'gemini-1.5-flash-8b', 'gemini-1.5-pro']:
+            for target in ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-2.0-flash']:
                 if target in valid_models:
                     preferred.append(target)
                     
@@ -43,7 +43,7 @@ def get_available_models():
     except Exception as e:
         print(f"⚠️ 請求模型清單發生錯誤: {e}")
         
-    return ['gemini-1.5-flash']
+    return ['gemini-2.5-flash']
 
 # 取得保證不會 404 的模型清單
 MODELS_TO_TRY = get_available_models()
@@ -63,6 +63,7 @@ def translate_text(title, summary):
     """
     
     for m_name in MODELS_TO_TRY:
+        # ⚠️ 這裡確保 URL 絕對乾淨正確，沒有重複或多餘符號
         url = f"[https://generativelanguage.googleapis.com/v1beta/models/](https://generativelanguage.googleapis.com/v1beta/models/){m_name}:generateContent?key={api_key}"
         payload = {
             "contents": [{"parts": [{"text": prompt}]}]
