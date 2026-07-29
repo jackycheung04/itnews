@@ -9,8 +9,11 @@ import google.generativeai as genai
 api_key = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-# 移除會報錯的 2.5 版本，保留穩定且免費開放的模型
-MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash-latest']
+# 💡 關鍵修改：
+# 1. 使用帶有明確版本號的 1.5-flash-002，避免 404 找不到模型
+# 2. 將 1.5 排在第一順位，避開目前可能被限制的 2.0 額度
+# 3. 加上最基礎的 gemini-pro 作為終極備用
+MODELS = ['gemini-1.5-flash-002', 'gemini-2.0-flash', 'gemini-pro']
 
 def translate_text(title, summary):
     prompt = f"""
@@ -110,9 +113,9 @@ if entries:
             "date": published
         })
 
-        # 核心防護：將緩衝時間拉長到 10 秒，絕對不觸發免費 API 每分鐘限制
+        # 💡 關鍵修改：延長緩衝時間至 15 秒，徹底解決頻繁請求限制
         if idx < 4:
-            time.sleep(10)
+            time.sleep(15)
 
 # 4. 寫入 data/news.json
 os.makedirs("data", exist_ok=True)
