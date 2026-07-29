@@ -18,7 +18,7 @@ jobs:
           python-version: '3.10'
 
       - name: 3. 安裝必要套件
-        run: pip install feedparser google-generativeai requests
+        run: pip install requests feedparser google-genai
 
       - name: 4. 執行 AI 抓新聞腳本
         env:
