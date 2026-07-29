@@ -1,5 +1,12 @@
 [
     {
+        "title": "Discover what’s next for AI, from the SaaS reckoning to the agent security gap, at TechCrunch Disrupt 2026",
+        "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
+        "link": "https://techcrunch.com/2026/07/29/discover-whats-next-for-ai-from-the-saas-reckoning-to-the-agent-security-gap-at-techcrunch-disrupt-2026/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Wed, 29 Jul 2026 21:16:39 +0000"
+    },
+    {
         "title": "Thinking Machines co-founder Lilian Weng left the company citing health reasons, then joined OpenAI",
         "summary": "Weng previously served as the VP of AI Safety Research at OpenAI.",
         "link": "https://techcrunch.com/2026/07/29/thinking-machines-co-founder-lilian-weng-left-the-company-citing-health-reasons-then-joined-openai/",
@@ -26,12 +33,5 @@
         "link": "https://techcrunch.com/2026/07/29/claude-opus-5-became-downright-ruthless-when-tasked-with-running-a-vending-machine/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 18:45:27 +0000"
-    },
-    {
-        "title": "Sorry, haters. Ferrari’s first EV is doing just fine",
-        "summary": "To the horror of commenters across the internet, the Ferrari Luce appears to be a sales success.",
-        "link": "https://techcrunch.com/2026/07/29/sorry-haters-ferraris-first-ev-is-doing-just-fine/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 17:57:45 +0000"
     }
 ]
