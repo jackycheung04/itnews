@@ -8,27 +8,28 @@ import feedparser
 # 1. 取得環境變數中的 API Key
 api_key = os.environ.get("GEMINI_API_KEY")
 
+# ⚠️ 故意將網址拆開，防止聊天視窗將其自動轉為 Markdown 連結，確保複製貼上絕對安全
+API_HOST = "https://" + "generativelanguage.googleapis.com"
+
 def get_available_models():
     """向 Google 查詢這個 API Key 實際能用的模型清單"""
     if not api_key:
         print("❌ 找不到 GEMINI_API_KEY 環境變數")
         return ['gemini-2.5-flash']
     
-    url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
+    url = f"{API_HOST}/v1beta/models?key={api_key}"
     try:
         res = requests.get(url)
         if res.status_code == 200:
             models_data = res.json().get('models', [])
             valid_models = []
             for m in models_data:
-                # 確保模型支援生成內容
                 if 'generateContent' in m.get('supportedGenerationMethods', []):
                     name = m.get('name').replace('models/', '')
                     valid_models.append(name)
             
             print(f"✅ 您的 API Key 支援以下模型: {valid_models}")
             
-            # 優先挑選最新版且支援度最高的 2.5 閃電版模型
             preferred = []
             for target in ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-2.0-flash']:
                 if target in valid_models:
@@ -37,7 +38,7 @@ def get_available_models():
             if preferred:
                 return preferred
             elif valid_models:
-                return valid_models[:2] # 如果都沒有，隨便抓前兩個能用的
+                return valid_models[:2] 
         else:
             print(f"⚠️ 獲取模型清單失敗 ({res.status_code})")
     except Exception as e:
@@ -63,13 +64,12 @@ def translate_text(title, summary):
     """
     
     for m_name in MODELS_TO_TRY:
-        # ⚠️ 這裡確保 URL 絕對乾淨正確，沒有重複或多餘符號
-        url = f"[https://generativelanguage.googleapis.com/v1beta/models/](https://generativelanguage.googleapis.com/v1beta/models/){m_name}:generateContent?key={api_key}"
+        # 安全組裝 URL
+        url = f"{API_HOST}/v1beta/models/{m_name}:generateContent?key={api_key}"
         payload = {
             "contents": [{"parts": [{"text": prompt}]}]
         }
         
-        # 每個模型最多重試 2 次 (避免死等 429)
         for attempt in range(2):
             try:
                 res = requests.post(url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
@@ -78,7 +78,6 @@ def translate_text(title, summary):
                     data = res.json()
                     text = data['candidates'][0]['content']['parts'][0]['text'].strip()
                     
-                    # 清理 Markdown 標籤
                     if text.startswith("```"):
                         text = re.sub(r"^```(?:json)?", "", text)
                         text = re.sub(r"```$", "", text).strip()
@@ -98,7 +97,7 @@ def translate_text(title, summary):
                     time.sleep(wait_time)
                 else:
                     print(f"⚠️ [{m_name}] API 錯誤 ({res.status_code}): {res.text}")
-                    break # 直接換下一個模型
+                    break 
                     
             except Exception as e:
                 print(f"⚠️ [{m_name}] 請求發生例外錯誤: {e}")
@@ -107,11 +106,11 @@ def translate_text(title, summary):
     print("❌ 所有模型皆失敗，保留英文原文")
     return title, summary
 
-# 2. 抓取 RSS
+# 2. 抓取 RSS (同樣拆開網址防止污染)
 RSS_SOURCES = [
-    "https://techcrunch.com/feed/",
-    "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
-    "https://www.wired.com/feed/category/gear/latest/rss"
+    "https://" + "techcrunch.com/feed/",
+    "https://" + "rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "https://" + "www.wired.com/feed/category/gear/latest/rss"
 ]
 
 headers = {
@@ -120,7 +119,8 @@ headers = {
 
 entries = []
 for url in RSS_SOURCES:
-    clean_url = url.split("](")[-1].replace(")", "")
+    # 雙重保險：強制清除可能殘留的 markdown 括號
+    clean_url = url.replace("]", "").replace("[", "").replace(")", "").replace("(", "")
     print(f"嘗試抓取 RSS: {clean_url}")
     try:
         resp = requests.get(clean_url, headers=headers, timeout=10)
@@ -157,7 +157,6 @@ if entries:
             "date": published
         })
 
-        # 新聞間隔 5 秒緩衝
         if idx < 4:
             time.sleep(5)
 
