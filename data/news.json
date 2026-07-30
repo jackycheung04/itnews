@@ -1,37 +1,37 @@
 [
     {
+        "title": "Microsoft is openly competing with OpenAI, Anthropic more than ever",
+        "summary": "Microsoft pitched its own homegrown AI models, harnesses, and even a Mythos competitor on Wednesday, telling Wall Street it plans for continued growth.",
+        "link": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Thu, 30 Jul 2026 00:21:06 +0000"
+    },
+    {
+        "title": "Mark Zuckerberg predicts that billions of people will have personal AI agents in five years",
+        "summary": "As Meta pours billions into AI infrastructure and agents, Zuckerberg is working to convince investors that the payoff will be worth the price.",
+        "link": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Wed, 29 Jul 2026 23:00:11 +0000"
+    },
+    {
+        "title": "Microsoft logs $3.2B from Anthropic investment, but OpenAI was a mixed bag",
+        "summary": "When Microsoft reported killer fourth-quarter earnings for its fiscal 2026 year (which ended June 30), it tucked in an interesting little tidbit about how its investments in the two biggest, and competing, AI labs are doing.",
+        "link": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Wed, 29 Jul 2026 22:46:03 +0000"
+    },
+    {
+        "title": "Zuckerberg says Meta’s enterprise AI opportunity extends beyond agents",
+        "summary": "On the company’s second-quarter earnings call Wednesday, CEO Mark Zuckerberg said Meta sees a “large enterprise opportunity” spanning AI agents, APIs, compute, and internal software.",
+        "link": "https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Wed, 29 Jul 2026 22:23:12 +0000"
+    },
+    {
         "title": "Discover what’s next for AI, from the SaaS reckoning to the agent security gap, at TechCrunch Disrupt 2026",
         "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
         "link": "https://techcrunch.com/2026/07/29/discover-whats-next-for-ai-from-the-saas-reckoning-to-the-agent-security-gap-at-techcrunch-disrupt-2026/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 21:16:39 +0000"
-    },
-    {
-        "title": "Thinking Machines co-founder Lilian Weng left the company citing health reasons, then joined OpenAI",
-        "summary": "Weng previously served as the VP of AI Safety Research at OpenAI.",
-        "link": "https://techcrunch.com/2026/07/29/thinking-machines-co-founder-lilian-weng-left-the-company-citing-health-reasons-then-joined-openai/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 21:07:48 +0000"
-    },
-    {
-        "title": "Winamp aims for a comeback with a new music player powered by Deezer",
-        "summary": "Winamp is preparing to relaunch with a Deezer-powered premium music service, betting its nostalgic brand and a new all-in-one music player can stand out in today’s crowded streaming market.",
-        "link": "https://techcrunch.com/2026/07/29/winamp-aims-for-a-comeback-with-a-new-music-player-powered-by-deezer/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 21:02:12 +0000"
-    },
-    {
-        "title": "The Hugging Face AI break-in, as told through an increasingly committed bear metaphor",
-        "summary": "Another way to think about the whole thing is to picture a bear at a campsite. (Really, we are going there.)",
-        "link": "https://techcrunch.com/2026/07/29/the-hugging-face-ai-break-in-as-told-through-an-increasingly-committed-bear-metaphor/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 19:44:49 +0000"
-    },
-    {
-        "title": "Claude Opus 5 became downright ruthless when tasked with running a vending machine",
-        "summary": "Andon Labs' latest vending machine simulation shows Opus 5 lied and colluded its way to become the best AI capitalist ever.",
-        "link": "https://techcrunch.com/2026/07/29/claude-opus-5-became-downright-ruthless-when-tasked-with-running-a-vending-machine/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 18:45:27 +0000"
     }
 ]
