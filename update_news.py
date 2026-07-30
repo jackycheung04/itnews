@@ -5,17 +5,16 @@ import re
 import requests
 import feedparser
 
-# 1. 取得環境變數中的 API Key
 api_key = os.environ.get("GEMINI_API_KEY")
 
-# ⚠️ 故意將網址拆開，防止聊天視窗將其自動轉為 Markdown 連結，確保複製貼上絕對安全
+# 安全組裝 API Host 避免 Markdown 污染
 API_HOST = "https://" + "generativelanguage.googleapis.com"
 
 def get_available_models():
-    """向 Google 查詢這個 API Key 實際能用的模型清單"""
+    """向 Google 查詢模型，並智慧過濾掉坑人的舊版本"""
     if not api_key:
         print("❌ 找不到 GEMINI_API_KEY 環境變數")
-        return ['gemini-2.5-flash']
+        return ['gemini-2.0-flash-lite']
     
     url = f"{API_HOST}/v1beta/models?key={api_key}"
     try:
@@ -26,29 +25,39 @@ def get_available_models():
             for m in models_data:
                 if 'generateContent' in m.get('supportedGenerationMethods', []):
                     name = m.get('name').replace('models/', '')
-                    valid_models.append(name)
+                    # ⚠️ 核心修正：將被 Google 封鎖新用戶的模型直接列入黑名單
+                    if name not in ['gemini-2.5-flash', 'gemini-1.5-flash']:
+                        valid_models.append(name)
             
-            print(f"✅ 您的 API Key 支援以下模型: {valid_models}")
+            print(f"✅ 您的 API Key 實際可用模型清單 (已過濾): {valid_models}")
             
+            # 優先挑選 lite 版與最新的 3.x 版，免費額度最高，最不容易 429
             preferred = []
-            for target in ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-2.0-flash']:
+            target_list = [
+                'gemini-3.1-flash-lite',
+                'gemini-3.0-flash-lite',
+                'gemini-2.0-flash-lite',
+                'gemini-3.1-pro-preview',
+                'gemini-2.0-flash'
+            ]
+            for target in target_list:
                 if target in valid_models:
                     preferred.append(target)
                     
             if preferred:
                 return preferred
             elif valid_models:
-                return valid_models[:2] 
+                return valid_models[:3] 
         else:
             print(f"⚠️ 獲取模型清單失敗 ({res.status_code})")
     except Exception as e:
         print(f"⚠️ 請求模型清單發生錯誤: {e}")
         
-    return ['gemini-2.5-flash']
+    # 預設使用最穩定的 lite 版本
+    return ['gemini-2.0-flash-lite']
 
-# 取得保證不會 404 的模型清單
 MODELS_TO_TRY = get_available_models()
-print(f"🎯 系統決定使用以下模型進行翻譯: {MODELS_TO_TRY}")
+print(f"🎯 系統決定優先使用以下模型進行翻譯: {MODELS_TO_TRY}")
 
 def translate_text(title, summary):
     if not api_key:
@@ -64,7 +73,6 @@ def translate_text(title, summary):
     """
     
     for m_name in MODELS_TO_TRY:
-        # 安全組裝 URL
         url = f"{API_HOST}/v1beta/models/{m_name}:generateContent?key={api_key}"
         payload = {
             "contents": [{"parts": [{"text": prompt}]}]
@@ -93,7 +101,7 @@ def translate_text(title, summary):
                         
                 elif res.status_code == 429:
                     wait_time = 15
-                    print(f"⏳ [{m_name}] 觸發頻率限制，等待 {wait_time} 秒後重試...")
+                    print(f"⏳ [{m_name}] 觸發頻率限制 (429)，等待 {wait_time} 秒後重試...")
                     time.sleep(wait_time)
                 else:
                     print(f"⚠️ [{m_name}] API 錯誤 ({res.status_code}): {res.text}")
@@ -106,7 +114,6 @@ def translate_text(title, summary):
     print("❌ 所有模型皆失敗，保留英文原文")
     return title, summary
 
-# 2. 抓取 RSS (同樣拆開網址防止污染)
 RSS_SOURCES = [
     "https://" + "techcrunch.com/feed/",
     "https://" + "rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
@@ -119,7 +126,6 @@ headers = {
 
 entries = []
 for url in RSS_SOURCES:
-    # 雙重保險：強制清除可能殘留的 markdown 括號
     clean_url = url.replace("]", "").replace("[", "").replace(")", "").replace("(", "")
     print(f"嘗試抓取 RSS: {clean_url}")
     try:
@@ -133,7 +139,6 @@ for url in RSS_SOURCES:
     except Exception as e:
         print(f"抓取 {clean_url} 失敗: {e}")
 
-# 3. 處理與翻譯
 news_list = []
 if entries:
     for idx, entry in enumerate(entries[:5]):
@@ -160,7 +165,6 @@ if entries:
         if idx < 4:
             time.sleep(5)
 
-# 4. 寫入檔案
 os.makedirs("data", exist_ok=True)
 if news_list:
     with open("data/news.json", "w", encoding="utf-8") as f:
