@@ -1,37 +1,37 @@
 [
     {
-        "title": "影視巨頭重磅聯手！Netflix 斥資 5 億美元取得《陰屍路》全球串流播放權",
-        "summary": "串流影音龍頭 Netflix 日前正式宣布，與 AMC 達成一項價值高達 5 億美元的重大授權協議。透過此次合作，Netflix 將取得《陰屍路》（The Walking Dead）完整宇宙系列作品的全球串流播放權，此舉預計將大幅擴充其內容庫。隨著這部席捲全球的喪屍末日經典正式登陸，全球觀眾未來將能更便利地在 Netflix 平台上重溫或追看該系列的所有精彩劇情，預期將進一步鞏固其在國際市場的統治地位。",
+        "title": "強化 AI 安全防線！Okta 傳以約 2 億美元收購新創 Permiso",
+        "summary": "身分識別巨頭 Okta 近日宣布收購 AI 安全新創公司 Permiso，據悉交易金額約為 2 億美元。隨著企業廣泛導入 AI 代理（AI Agents）及各類雲端自動化工具，如何管理「非人類身分」並防禦潛在威脅成為資安關鍵。透過此次收購，Okta 將能顯著提升其身分威脅偵測與防護能力，協助企業在雲端環境中更安全地部署人工智慧，應對日益複雜的自動化身分攻擊挑戰。",
+        "link": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Thu, 30 Jul 2026 16:09:42 +0000"
+    },
+    {
+        "title": "電動車歷史時刻：特斯拉正式達成 1,000 萬輛里程碑",
+        "summary": "特斯拉近日宣布其累計生產已正式突破 1,000 萬輛電動車。這項指標性的成就意義重大，因為這代表執行長伊隆·馬斯克（Elon Musk）已達成其核心產品目標的一半，距離解鎖高達 1 兆美元的天價薪酬方案更進一步。隨著全球電動車市場競爭日益激烈，這項數據不僅穩固了特斯拉的行業龍頭地位，也成為馬斯克在公司治理與個人績效獎勵上的關鍵里程碑。",
+        "link": "https://techcrunch.com/2026/07/30/tesla-made-its-10-millionth-ev/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Thu, 30 Jul 2026 16:00:25 +0000"
+    },
+    {
+        "title": "核融合領頭羊 Commonwealth Fusion Systems 傳出準備上市，離商業化目標再近一步",
+        "summary": "核融合技術領域的指標性新創公司 Commonwealth Fusion Systems (CFS) 近期傳出重大進展，市場預期該公司最快將於未來兩至三年內啟動公開上市計畫。作為目前全球核融合產業最受矚目的獨角獸之一，CFS 憑藉其創新的高溫超導磁鐵技術，吸引了包含比爾蓋茲在內的多方頂尖資本支持。此次上市訊號釋出，不僅象徵資本市場對潔淨能源發展前景的信心增強，更預示著核融合這項「夢幻能源」技術已逐步從實驗室階段，向商業化與規模化量產邁出關鍵的一大步。投資界正密切關注其上市進程，認為這將是全球綠能轉型的重要里程碑。",
+        "link": "https://techcrunch.com/2026/07/30/when-will-fusion-power-startup-commonwealth-fusion-systems-go-public/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Thu, 30 Jul 2026 15:45:36 +0000"
+    },
+    {
+        "title": "Meta 押注 AI 加速研發：祖克柏預告更多殺手級應用即將登場",
+        "summary": "Meta 執行長祖克柏日前向投資人透露，人工智慧技術正大幅降低開發與上架消費級應用程式的難度。在近期成功為 Facebook 社團、Marketplace 賣家、Instagram 及遊戲平台導入 AI 功能後，Meta 內部正加速研發腳步，預計未來將有更多創新產品陸續問世。透過 AI 的強大賦能，Meta 正積極轉型，試圖在產品競爭激烈的市場中，以更高效的開發流程搶佔使用者心佔率，並持續擴大其社交與商業生態系的影響力。",
+        "link": "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Thu, 30 Jul 2026 15:41:16 +0000"
+    },
+    {
+        "title": "震撼串流界！Netflix 豪砸 5 億美元取得《陰屍路》全球播放權",
+        "summary": "Netflix 近日正式簽署了一項價值高達 5 億美元的重磅授權協議。透過此次合作，Netflix 將取得《陰屍路》（The Walking Dead）宇宙系列作品的國際串流播放權。這意味著全球觀眾未來將能透過 Netflix 平台，一次暢看包含本傳及後續衍生劇在內的所有「活屍宇宙」經典內容。此舉不僅大幅擴充了 Netflix 的影視庫陣容，更被視為鞏固其全球串流龍頭地位的關鍵佈局，對於喜愛重口味影集的劇迷來說，絕對是一大福音。",
         "link": "https://techcrunch.com/2026/07/30/netflix-lands-global-streaming-deal-for-the-walking-dead/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Thu, 30 Jul 2026 15:27:08 +0000"
-    },
-    {
-        "title": "佈局 AI 算力底層：英國新創 Nscale 併購軟體大廠 Anyscale",
-        "summary": "英國人工智慧雲端服務商 Nscale 近日宣布併購軟體新創 Anyscale，此舉旨在全面掌握 AI 運算技術棧。Anyscale 以其強大的平台技術聞名，能協助企業靈活地跨資料中心與伺服器調度 AI 工作負載。透過這次收購，Nscale 不僅強化了其在算力基礎設施的競爭力，更進一步整合軟體與硬體生態，目標在瞬息萬變的 AI 雲端市場中，為客戶提供更高效、可擴展的運算解決方案，確立其在算力底層的主導地位。",
-        "link": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 30 Jul 2026 15:19:15 +0000"
-    },
-    {
-        "title": "核融合能源新星！Commonwealth Fusion Systems 再獲 10 億美元注資，加速商業電廠落地",
-        "summary": "核融合技術開發商 Commonwealth Fusion Systems（CFS）近日成功完成 10 億美元的募資。這家被視為綠能領域當紅炸子雞的新創公司，正致力於將理論轉化為現實，透過本次資金注入，將全力推進其首座商用核融合發電廠的研發與建設進程。核融合被譽為「人造太陽」，若能成功商業化，將提供近乎無窮無盡的潔淨能源，徹底改變人類的能源版圖。CFS 的這一舉措不僅展現了資本市場對核融合技術的強烈信心，也象徵著人類邁向零碳排能源時代的關鍵里程碑。",
-        "link": "https://techcrunch.com/2026/07/30/fusion-power-darling-commonwealth-fusion-systems-raises-another-1b/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 30 Jul 2026 15:17:39 +0000"
-    },
-    {
-        "title": "AI 產業人才荒：具備落地實戰能力的「前線部署工程師」成為企業爭搶目標",
-        "summary": "AI 競賽進入白熱化，企業不再只滿足於模型研發，更急需能將技術轉化為實際商業回報的關鍵人才。最新研究指出，全美僅有約 2,000 名工程師具備將 AI 大規模落地、並產出實質投資報酬率（ROI）的專業能力。這類被稱為「前線部署工程師」（Forward-deployed engineers）的新型人才，結合了系統架構與業務開發能力，成為當前 AI 產業炙手可熱的頂尖職位，企業正不惜重金展開搶人大戰。",
-        "link": "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 30 Jul 2026 15:00:00 +0000"
-    },
-    {
-        "title": "Hugging Face 遭駭事件啟示：擊敗 OpenAI 駭客，靠的是傳統資安基本功",
-        "summary": "近期 Hugging Face 遭駭客入侵，不僅引發對 AI 安全的關注，更揭露了駭客「快節奏、高調」的攻擊手法。然而，資安專家指出，這次事件真正的教訓無關 AI 技術，而是回歸最基礎的「傳統資安防禦」。面對動作頻頻的駭客，防禦方並非束手無策，關鍵在於企業是否落實身分驗證、權限管控及異常監控等核心資安防護措施。這起事件提醒科技界，在追逐 AI 創新的同時，堅實的防禦基本功才是抵禦威脅、確保數位資產安全的決勝關鍵。",
-        "link": "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 30 Jul 2026 14:48:32 +0000"
     }
 ]
