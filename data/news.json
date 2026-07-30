@@ -1,35 +1,35 @@
 [
     {
-        "title": "Microsoft is openly competing with OpenAI, Anthropic more than ever",
-        "summary": "Microsoft pitched its own homegrown AI models, harnesses, and even a Mythos competitor on Wednesday, telling Wall Street it plans for continued growth.",
+        "title": "不再只當 OpenAI 的金主！微軟公開宣示：將全力發展自家 AI 挑戰產業龍頭",
+        "summary": "微軟週三向華爾街揭露最新戰略，正式宣示將大舉擴張自研 AI 模型、工具架構及應用生態。此舉意味著微軟已不再滿足於僅作為 OpenAI 與 Anthropic 的投資者，而是轉向公開競爭，積極開發具備自主性的 AI 技術方案。面對強勁的市場需求，微軟展現出高度的成長企圖心，試圖透過自家技術護城河，在全球 AI 競賽中搶佔更具優勢的主導地位，並進一步鞏固其在雲端與軟體市場的領先基礎。",
         "link": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Thu, 30 Jul 2026 00:21:06 +0000"
     },
     {
-        "title": "Mark Zuckerberg predicts that billions of people will have personal AI agents in five years",
-        "summary": "As Meta pours billions into AI infrastructure and agents, Zuckerberg is working to convince investors that the payoff will be worth the price.",
+        "title": "祖克柏豪賭 AI 未來：預言五年內全球數十億人將擁有專屬 AI 代理人",
+        "summary": "Meta 執行長祖克柏正傾注數十億美元打造強大的 AI 基礎設施與代理人系統，藉此向投資人展示其長期戰略價值。祖克柏大膽預言，在未來五年內，全球將有數十億人使用屬於自己的個人化 AI 助理。儘管目前研發成本高昂，但 Meta 正透過積極佈局 AI 生態系，試圖將這些智慧代理人轉化為推動公司成長的核心引擎，以證明龐大的資金投入終將帶來巨大的市場回報。",
         "link": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 23:00:11 +0000"
     },
     {
-        "title": "Microsoft logs $3.2B from Anthropic investment, but OpenAI was a mixed bag",
-        "summary": "When Microsoft reported killer fourth-quarter earnings for its fiscal 2026 year (which ended June 30), it tucked in an interesting little tidbit about how its investments in the two biggest, and competing, AI labs are doing.",
+        "title": "微軟 2026 財報揭秘：押注 Anthropic 大賺 32 億美元，OpenAI 表現則成謎",
+        "summary": "微軟公布 2026 財年第四季亮眼財報，不僅營收表現強勁，更罕見披露了在兩大 AI 巨頭的投資戰績。財報顯示，微軟對 Anthropic 的佈局已成功獲利 32 億美元，成為財報亮點。相比之下，這家科技巨頭在 OpenAI 的投資表現則呈現複雜態勢，未見同樣顯著的獲利訊息。此舉凸顯微軟在生成式 AI 領域採取「雙軌並進」策略，儘管兩大夥伴互為競爭對手，微軟仍試圖透過多元化投資，確保在 AI 賽道中穩坐獲利關鍵地位。",
         "link": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 22:46:03 +0000"
     },
     {
-        "title": "Zuckerberg says Meta’s enterprise AI opportunity extends beyond agents",
-        "summary": "On the company’s second-quarter earnings call Wednesday, CEO Mark Zuckerberg said Meta sees a “large enterprise opportunity” spanning AI agents, APIs, compute, and internal software.",
+        "title": "祖克柏看好 Meta AI 版圖：企業商機不僅止於 AI 代理人",
+        "summary": "在 Meta 第二季財報會議上，執行長祖克柏強調，Meta 在企業 AI 市場擁有巨大潛力。除了市場目前關注的 AI 代理人技術外，Meta 正積極布局 API 服務、運算資源以及企業內部軟體應用。祖克柏認為，AI 帶來的商機遠超單一產品，透過整合基礎架構與軟體生態，Meta 將為企業客戶提供全方位的 AI 解決方案，開啟全新的獲利成長曲線。",
         "link": "https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 22:23:12 +0000"
     },
     {
-        "title": "Discover what’s next for AI, from the SaaS reckoning to the agent security gap, at TechCrunch Disrupt 2026",
-        "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
+        "title": "直擊 TechCrunch Disrupt 2026：AI 舞台強勢回歸，解密 SaaS 轉型與 AI 代理安全危機",
+        "summary": "TechCrunch Disrupt 2026 攜手 Google for Startups，宣布 AI 專屬舞台重磅回歸！這場年度盛會將深入探討當前科技界最炙手可熱的議題，重點聚焦於 SaaS 產業面臨的「生存決算時刻」，以及 AI 代理（AI Agents）在快速普及下所產生的資安缺口。對於渴望洞悉 AI 下一個階段發展、掌握技術與產業趨勢轉折點的投資人與開發者來說，這將是今年不容錯過的頂尖技術饗宴。",
         "link": "https://techcrunch.com/2026/07/29/discover-whats-next-for-ai-from-the-saas-reckoning-to-the-agent-security-gap-at-techcrunch-disrupt-2026/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Wed, 29 Jul 2026 21:16:39 +0000"
