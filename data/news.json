@@ -1,37 +1,37 @@
 [
     {
-        "title": "佈局 AI 算力底層：英國新創 Nscale 併購軟體公司 Anyscale",
-        "summary": "英國人工智慧雲端服務公司 Nscale 宣布正式收購軟體新創 Anyscale。Anyscale 以其強大的技術聞名，能協助企業靈活調整並擴展跨資料中心與伺服器的 AI 工作負載。透過此次併購，Nscale 意在強化其在 AI 運算架構中的影響力，整合底層硬體與高階運算軟體，藉此掌握 AI 生態系中更完整的算力堆疊，以滿足市場對於大規模 AI 推論與訓練日益增長的需求。",
+        "title": "影視巨頭重磅聯手！Netflix 斥資 5 億美元取得《陰屍路》全球串流播放權",
+        "summary": "串流影音龍頭 Netflix 日前正式宣布，與 AMC 達成一項價值高達 5 億美元的重大授權協議。透過此次合作，Netflix 將取得《陰屍路》（The Walking Dead）完整宇宙系列作品的全球串流播放權，此舉預計將大幅擴充其內容庫。隨著這部席捲全球的喪屍末日經典正式登陸，全球觀眾未來將能更便利地在 Netflix 平台上重溫或追看該系列的所有精彩劇情，預期將進一步鞏固其在國際市場的統治地位。",
+        "link": "https://techcrunch.com/2026/07/30/netflix-lands-global-streaming-deal-for-the-walking-dead/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Thu, 30 Jul 2026 15:27:08 +0000"
+    },
+    {
+        "title": "佈局 AI 算力底層：英國新創 Nscale 併購軟體大廠 Anyscale",
+        "summary": "英國人工智慧雲端服務商 Nscale 近日宣布併購軟體新創 Anyscale，此舉旨在全面掌握 AI 運算技術棧。Anyscale 以其強大的平台技術聞名，能協助企業靈活地跨資料中心與伺服器調度 AI 工作負載。透過這次收購，Nscale 不僅強化了其在算力基礎設施的競爭力，更進一步整合軟體與硬體生態，目標在瞬息萬變的 AI 雲端市場中，為客戶提供更高效、可擴展的運算解決方案，確立其在算力底層的主導地位。",
         "link": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Thu, 30 Jul 2026 15:19:15 +0000"
     },
     {
-        "title": "核融合能源界新寵兒：Commonwealth Fusion Systems 再獲 10 億美元挹注，加速商轉進程",
-        "summary": "核融合技術領域指標性新創公司 Commonwealth Fusion Systems (CFS) 近期成功完成 10 億美元的募資。這筆資金將用於加速推進該公司的核心目標——打造全球首座商業化核融合發電廠。CFS 長期致力於研發高溫超導磁鐵技術，旨在實現幾近無限且清潔的能源未來。隨著資金到位，公司將更積極從原型機研發邁向實質商轉階段，此舉不僅展現了市場對核融合商業可行性的高度信心，也象徵著人類邁向「人造太陽」零碳能源時代的里程碑又向前跨進了一大步。",
+        "title": "核融合能源新星！Commonwealth Fusion Systems 再獲 10 億美元注資，加速商業電廠落地",
+        "summary": "核融合技術開發商 Commonwealth Fusion Systems（CFS）近日成功完成 10 億美元的募資。這家被視為綠能領域當紅炸子雞的新創公司，正致力於將理論轉化為現實，透過本次資金注入，將全力推進其首座商用核融合發電廠的研發與建設進程。核融合被譽為「人造太陽」，若能成功商業化，將提供近乎無窮無盡的潔淨能源，徹底改變人類的能源版圖。CFS 的這一舉措不僅展現了資本市場對核融合技術的強烈信心，也象徵著人類邁向零碳排能源時代的關鍵里程碑。",
         "link": "https://techcrunch.com/2026/07/30/fusion-power-darling-commonwealth-fusion-systems-raises-another-1b/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Thu, 30 Jul 2026 15:17:39 +0000"
     },
     {
-        "title": "AI 產業人才荒：企業瘋搶「前線部署工程師」成為搶手新寵",
-        "summary": "AI 應用落地困難重重，企業正掀起一場人才爭奪戰。最新研究指出，美國具備推動 AI 產生實質投資報酬率（ROI）核心能力的工程師僅約 2,000 人。為了將 AI 技術規模化應用於複雜的企業場景，能深入第一線解決問題、具備實戰部署能力的「前線部署工程師（Forward-deployed engineers）」成為科技界最炙手可熱的關鍵職位。這顯示 AI 競爭已從模型研發轉向深度應用與落地實作。",
+        "title": "AI 產業人才荒：具備落地實戰能力的「前線部署工程師」成為企業爭搶目標",
+        "summary": "AI 競賽進入白熱化，企業不再只滿足於模型研發，更急需能將技術轉化為實際商業回報的關鍵人才。最新研究指出，全美僅有約 2,000 名工程師具備將 AI 大規模落地、並產出實質投資報酬率（ROI）的專業能力。這類被稱為「前線部署工程師」（Forward-deployed engineers）的新型人才，結合了系統架構與業務開發能力，成為當前 AI 產業炙手可熱的頂尖職位，企業正不惜重金展開搶人大戰。",
         "link": "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Thu, 30 Jul 2026 15:00:00 +0000"
     },
     {
-        "title": "Hugging Face 遭 OpenAI 駭客入侵警示：傳統資安防護才是 AI 時代的最後防線",
-        "summary": "近日 OpenAI 駭客針對 Hugging Face 發動了高調且迅速的攻擊，震驚科技界。然而資安專家指出，此次事件的啟示並非針對 AI 技術本身，而是重申了「傳統資安防禦」的重要性。這場入侵事件證明，儘管駭客手法激進，但若能落實基礎安全架構與防禦措施，攻擊並非不可抵禦。此事件提醒各界，在追求 AI 創新的同時，不能忽視最基本的系統加固與權限控管，這才是守護數位資產的核心關鍵。",
+        "title": "Hugging Face 遭駭事件啟示：擊敗 OpenAI 駭客，靠的是傳統資安基本功",
+        "summary": "近期 Hugging Face 遭駭客入侵，不僅引發對 AI 安全的關注，更揭露了駭客「快節奏、高調」的攻擊手法。然而，資安專家指出，這次事件真正的教訓無關 AI 技術，而是回歸最基礎的「傳統資安防禦」。面對動作頻頻的駭客，防禦方並非束手無策，關鍵在於企業是否落實身分驗證、權限管控及異常監控等核心資安防護措施。這起事件提醒科技界，在追逐 AI 創新的同時，堅實的防禦基本功才是抵禦威脅、確保數位資產安全的決勝關鍵。",
         "link": "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/",
         "image": "src/img/dummy/img2.jpg",
         "date": "Thu, 30 Jul 2026 14:48:32 +0000"
-    },
-    {
-        "title": "TechCrunch Disrupt 2026 重磅登場！亞馬遜、Replit 及 Tether 高層齊聚科技盛會",
-        "summary": "全球科技界年度盛事 TechCrunch Disrupt 2026 即將回歸！作為指標性的科技對話平台，Disrupt Stage 傳承了十餘年的深厚影響力。今年大會星光熠熠，正式宣布邀請到亞馬遜（Amazon）、Replit 及 Tether 等重量級企業領袖登台分享。這場匯集頂尖創新者與業界巨頭的舞台，將深入探討改變未來科技趨勢的關鍵議題，更多參展陣容與精彩內容也將陸續揭曉，絕對是今年不容錯過的產業巔峰對話。",
-        "link": "https://techcrunch.com/2026/07/30/techcrunch-disrupt-2026s-biggest-stage-features-leaders-from-amazon-replit-tether-with-much-more-to-come/",
-        "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 30 Jul 2026 14:00:00 +0000"
     }
 ]
