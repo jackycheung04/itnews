@@ -1,37 +1,37 @@
 [
     {
-        "title": "不再只當金主！微軟力推自家 AI 模型，正面槓上 OpenAI 與 Anthropic",
-        "summary": "微軟於週三向華爾街展示了其雄厚的技術實力，宣布將全面推廣自家的 AI 模型、開發工具與應用架構。此舉標誌著微軟的 AI 策略發生重大轉變，不僅持續深耕與 OpenAI 的合作，更展現出強烈的競爭意圖，甚至推出了對標 Mythos 等市場熱門模型的產品。透過展示自主研發的技術生態，微軟正積極向投資人證明，即便在 AI 領域面臨強敵，公司仍有足夠的創新能量與資源，確保未來在激烈的市場競爭中維持強勁的成長動能。",
-        "link": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
+        "title": "佈局 AI 算力底層：英國新創 Nscale 併購軟體公司 Anyscale",
+        "summary": "英國人工智慧雲端服務公司 Nscale 宣布正式收購軟體新創 Anyscale。Anyscale 以其強大的技術聞名，能協助企業靈活調整並擴展跨資料中心與伺服器的 AI 工作負載。透過此次併購，Nscale 意在強化其在 AI 運算架構中的影響力，整合底層硬體與高階運算軟體，藉此掌握 AI 生態系中更完整的算力堆疊，以滿足市場對於大規模 AI 推論與訓練日益增長的需求。",
+        "link": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 30 Jul 2026 00:21:06 +0000"
+        "date": "Thu, 30 Jul 2026 15:19:15 +0000"
     },
     {
-        "title": "祖克柏豪賭 AI 未來：預言五年內全球數十億人將擁有專屬 AI 助理",
-        "summary": "Meta 執行長祖克柏正全力押注人工智慧，投入數十億美元打造頂級 AI 基礎設施與智慧代理人。他向投資人釋出強烈訊號，強調這項巨額支出將帶來豐厚回報。祖克柏大膽預測，AI 代理技術將在五年內普及，屆時全球將有數十億人擁有專屬的個人化 AI 助手，深度協助日常生活與工作。儘管市場關注高昂的資本支出，但 Meta 堅信這將成為下一波科技革命的獲利核心。",
-        "link": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
+        "title": "核融合能源界新寵兒：Commonwealth Fusion Systems 再獲 10 億美元挹注，加速商轉進程",
+        "summary": "核融合技術領域指標性新創公司 Commonwealth Fusion Systems (CFS) 近期成功完成 10 億美元的募資。這筆資金將用於加速推進該公司的核心目標——打造全球首座商業化核融合發電廠。CFS 長期致力於研發高溫超導磁鐵技術，旨在實現幾近無限且清潔的能源未來。隨著資金到位，公司將更積極從原型機研發邁向實質商轉階段，此舉不僅展現了市場對核融合商業可行性的高度信心，也象徵著人類邁向「人造太陽」零碳能源時代的里程碑又向前跨進了一大步。",
+        "link": "https://techcrunch.com/2026/07/30/fusion-power-darling-commonwealth-fusion-systems-raises-another-1b/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 23:00:11 +0000"
+        "date": "Thu, 30 Jul 2026 15:17:39 +0000"
     },
     {
-        "title": "微軟 2026 財報揭秘：押注 Anthropic 獲利 32 億美元，OpenAI 表現喜憂參半",
-        "summary": "微軟發布 2026 財年第四季財報，營收表現亮眼。其中最受矚目的亮點，在於微軟首度揭露了對兩大 AI 巨頭的投資戰績：對 Anthropic 的注資成效顯著，帳面獲利高達 32 億美元；然而，作為核心戰略合作夥伴的 OpenAI，其投資回報卻呈現「好壞參半」的複雜局面。這份數據顯示微軟正透過分散投資 AI 實驗室來強化布局，但各大模型公司的獲利能力與市場潛力仍存在顯著差異，這也為微軟未來的 AI 生態戰略埋下了變數。",
-        "link": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
+        "title": "AI 產業人才荒：企業瘋搶「前線部署工程師」成為搶手新寵",
+        "summary": "AI 應用落地困難重重，企業正掀起一場人才爭奪戰。最新研究指出，美國具備推動 AI 產生實質投資報酬率（ROI）核心能力的工程師僅約 2,000 人。為了將 AI 技術規模化應用於複雜的企業場景，能深入第一線解決問題、具備實戰部署能力的「前線部署工程師（Forward-deployed engineers）」成為科技界最炙手可熱的關鍵職位。這顯示 AI 競爭已從模型研發轉向深度應用與落地實作。",
+        "link": "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 22:46:03 +0000"
+        "date": "Thu, 30 Jul 2026 15:00:00 +0000"
     },
     {
-        "title": "Meta 佈局企業 AI：祖克柏喊話潛力遠不止於「AI 代理」",
-        "summary": "在 Meta 第二季財報會議中，執行長祖克柏展現了對企業級 AI 市場的強烈野心。他強調，Meta 的目標絕不僅止於目前的 AI 代理（Agents）功能，而是要全面進軍更廣泛的市場，涵蓋 API 開發服務、算力資源共享，以及優化企業內部的軟體協作方案。這顯示 Meta 正積極將其強大的開源模型與基礎設施轉化為營收引擎，試圖在火熱的企業 AI 戰場中，為企業用戶提供全方位的技術解決方案，爭奪數位轉型的重要話語權。",
-        "link": "https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/",
+        "title": "Hugging Face 遭 OpenAI 駭客入侵警示：傳統資安防護才是 AI 時代的最後防線",
+        "summary": "近日 OpenAI 駭客針對 Hugging Face 發動了高調且迅速的攻擊，震驚科技界。然而資安專家指出，此次事件的啟示並非針對 AI 技術本身，而是重申了「傳統資安防禦」的重要性。這場入侵事件證明，儘管駭客手法激進，但若能落實基礎安全架構與防禦措施，攻擊並非不可抵禦。此事件提醒各界，在追求 AI 創新的同時，不能忽視最基本的系統加固與權限控管，這才是守護數位資產的核心關鍵。",
+        "link": "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 22:23:12 +0000"
+        "date": "Thu, 30 Jul 2026 14:48:32 +0000"
     },
     {
-        "title": "直擊 TechCrunch Disrupt 2026：AI 領域下一個風口，從 SaaS 洗牌到代理人安全危機",
-        "summary": "TechCrunch Disrupt 2026 強勢回歸，由 Google for Startups 領軍的「AI 舞台」將成為大會焦點。面對人工智慧發展的關鍵轉捩點，本次活動將深入剖析產業最迫切的議題，包含 SaaS 產業的生存大洗牌，以及企業在部署 AI 代理人（Agents）時面臨的資安隱憂。這場盛會不僅是技術趨勢的風向球，更將帶領開發者與創業家一窺後 AI 時代的創新布局，是掌握未來科技脈動的必看盛事。",
-        "link": "https://techcrunch.com/2026/07/29/discover-whats-next-for-ai-from-the-saas-reckoning-to-the-agent-security-gap-at-techcrunch-disrupt-2026/",
+        "title": "TechCrunch Disrupt 2026 重磅登場！亞馬遜、Replit 及 Tether 高層齊聚科技盛會",
+        "summary": "全球科技界年度盛事 TechCrunch Disrupt 2026 即將回歸！作為指標性的科技對話平台，Disrupt Stage 傳承了十餘年的深厚影響力。今年大會星光熠熠，正式宣布邀請到亞馬遜（Amazon）、Replit 及 Tether 等重量級企業領袖登台分享。這場匯集頂尖創新者與業界巨頭的舞台，將深入探討改變未來科技趨勢的關鍵議題，更多參展陣容與精彩內容也將陸續揭曉，絕對是今年不容錯過的產業巔峰對話。",
+        "link": "https://techcrunch.com/2026/07/30/techcrunch-disrupt-2026s-biggest-stage-features-leaders-from-amazon-replit-tether-with-much-more-to-come/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Wed, 29 Jul 2026 21:16:39 +0000"
+        "date": "Thu, 30 Jul 2026 14:00:00 +0000"
     }
 ]
