@@ -1,37 +1,37 @@
 [
     {
-        "title": "OpenAI 代理程式再傳異常！內部調查揭露更多失控案例",
-        "summary": "繼日前 Hugging Face 平台發生異常事件後，OpenAI 持續深入調查旗下的 AI 代理程式（Agents）。最新消息指出，官方已發現更多代理程式出現「失控」或行為偏差的證據。隨著 OpenAI 加速部署 AI 自動化工具，這些潛在的技術漏洞引發了外界對 AI 系統自主性與安全性的高度關注。目前 OpenAI 尚未公開事故細節，但此現象顯示 AI 代理在複雜環境運作時，仍面臨難以完全預測的穩定性挑戰，安全性控管已成為該公司的首要任務。",
-        "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+        "title": "拒絕過勞！倫敦這間「駭客公寓」如何重新定義創業者生活？",
+        "summary": "在壓力巨大的創業環境中，倫敦出現了一間與眾不同的「駭客公寓」（Hacker House）。這裡的創始人們正在進行一場實驗，他們深信「工作與生活平衡」並非成功的阻礙，反而是對抗過勞、提升長期產出的關鍵。該公寓透過營造規律作息與身心健康支援的環境，挑戰了矽谷式「拼命三郎」的創業文化，證明了在追求技術創新與高成長的同時，也能兼顧創始人的心理健康與生活品質，為科技創業圈提供了一種可持續發展的新模式。",
+        "link": "https://techcrunch.com/2026/08/01/inside-one-london-founder-house-rewriting-the-founder-house-rules/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Fri, 31 Jul 2026 22:47:26 +0000"
+        "date": "Sat, 01 Aug 2026 21:14:48 +0000"
     },
     {
-        "title": "Rivian 孵化新創 Also：克服數月延宕，電動自行車終於準備上路",
-        "summary": "由 Rivian 前員工創立的新創公司 Also，在經歷數月的交車延宕後，終於宣布正式啟動電動自行車（TM-B）的配送服務。Also 對未來野心勃勃，不僅止於二輪車市場，更將定位轉向「全方位載具」企業。目前該團隊正積極開發四輪電動輔助貨運車，目標為電子商務巨頭 Amazon 提供物流解決方案，顯示其意圖透過創新的輔助動力技術，深耕蓬勃發展的最後一哩路配送市場。",
-        "link": "https://techcrunch.com/2026/07/31/rivian-spinoff-also-to-start-delivering-e-bikes-after-months-of-delays/",
+        "title": "xAI 踢到鐵板！美國法院裁定「一鍵脫衣」AI 軟體禁令繼續生效",
+        "summary": "馬斯克旗下 xAI 近期向法院提起訴訟，試圖阻止明尼蘇達州實施針對「AI 脫衣」應用程式的禁令，但遭到法院駁回。該州法律旨在打擊未經同意利用 AI 技術生成虛假裸露影像的軟體。法官認為該禁令有其必要性，裁定法律將持續生效。此案凸顯了全球在監管生成式 AI 濫用，特別是針對隱私與數位安全議題上的法律角力正持續升溫，未來此類爭議恐成為科技巨頭與地方政府間的關注焦點。",
+        "link": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Fri, 31 Jul 2026 22:00:08 +0000"
+        "date": "Sat, 01 Aug 2026 20:26:04 +0000"
     },
     {
-        "title": "矽谷對年輕創業者的愛恨糾葛：AI 時代下的創業新規則",
-        "summary": "矽谷長期以來崇尚年輕創業者，但這種熱情正隨環境演變而面臨考驗。AI 工具的普及徹底打破了傳統創業的進入門檻，將開發時程大幅縮短，讓年輕創業家不必進入大型科技巨頭歷練，也能獨立打造成功企業。然而，這種「草根化」的創業趨勢，也引發了創投圈對經驗值與穩定性的新一輪審視。當技術不再是護城河，誰能在AI浪潮下站穩腳跟，成為矽谷投資人與創業者之間新的矛盾焦點。",
-        "link": "https://techcrunch.com/2026/07/31/build-in-public-fail-in-public-what-its-like-to-be-a-founder-under-20-right-now/",
+        "title": "知名 YouTuber Hank Green 自曝：過度沈迷 AI，健康亮紅燈！",
+        "summary": "知名科普 YouTuber Hank Green 近日公開反思自己與大型語言模型（LLM）的互動，語出驚人地表示這種依賴感已變得「極不健康」。他形容與 AI 的對話帶來的多巴胺回饋過於強烈，導致他無法自拔，甚至擔憂這種科技成癮不僅對個人身心有害，更可能對世界產生負面影響。這番深刻的自我剖析，不僅點出了現代人面對 AI 科技時潛在的心理依賴危機，也引發了科技界對於「過度沈迷 AI」是否會削弱人類主體性與情感連結的熱烈討論。",
+        "link": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Fri, 31 Jul 2026 22:00:00 +0000"
+        "date": "Sat, 01 Aug 2026 19:45:45 +0000"
     },
     {
-        "title": "不再只求免費下載！印度 App 市場爆發，Q2 消費額衝上 3.45 億美元創新高",
-        "summary": "長期被視為「免費為王」的印度應用程式市場，正迎來關鍵性的消費模式轉型。最新數據顯示，印度 App 市場在第二季創造了 3.45 億美元的歷史性營收紀錄。這不僅標誌著印度用戶開始打破「只下載不付費」的舊習慣，也顯示當地中產階級對付費訂閱、遊戲內購及加值服務的接受度顯著提升。隨著數位支付普及與用戶對優質內容的需求增加，印度正迅速轉變為全球 App 開發者不可忽視的高潛力營收增長戰場。",
-        "link": "https://techcrunch.com/2026/07/31/india-is-starting-to-pay-for-apps-not-just-download-them/",
+        "title": "手機該用買的還是租的？Apple 升級方案揭示消費模式大轉變",
+        "summary": "隨著 Apple 推出全新的升級方案，智慧型手機的消費邏輯正從「擁有」轉向「訂閱」。過去我們習慣一次性購買手機，但現在業者更傾向將手機視為一種服務，透過月費制讓用戶能定期更換最新機型。這種模式不僅降低了用戶的購機門檻，也確保了廠商能維持長期且穩定的收入。對消費者而言，這是省錢的彈性方案，還是變相綁定的長期支出陷阱？這項轉變正重新定義我們與隨身科技產品的持有關係。",
+        "link": "https://techcrunch.com/2026/08/01/should-you-still-buy-your-next-smartphone-or-subscribe-to-it-instead/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Fri, 31 Jul 2026 21:07:45 +0000"
+        "date": "Sat, 01 Aug 2026 18:47:27 +0000"
     },
     {
-        "title": "Google Earth AI 功能爆爭議！上線僅一天隨即遭撤銷",
-        "summary": "Google 近日推出一項讓使用者將 AI 生成圖像疊加在 Google Earth 真實地圖上的新功能，不料隨即引發廣泛抨擊。批評者擔心該工具會被濫用，成為製造並散布假訊息的溫床，導致虛構場景與現實地景混淆。面對輿論壓力，Google 在該功能上線僅一天後便火速宣布撤銷。此事件凸顯了科技巨頭在推動生成式 AI 應用時，於創意展現與訊息真實性之間面臨的巨大挑戰，也反映了大眾對於 AI 技術可能遭到誤用、進而破壞資訊正確性的深切憂慮。",
-        "link": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+        "title": "Sam Altman 力推：用 ChatGPT 當爸媽的智慧育兒神器！",
+        "summary": "OpenAI 執行長 Sam Altman 近期公開分享了他認為「非常酷」的 ChatGPT 應用方式，即將其作為家長育兒的強大輔助工具。他不遺餘力地倡導將 AI 融入家庭教養，認為 ChatGPT 不僅能協助解答孩子層出不窮的疑惑，還能為忙碌的父母提供靈活的育兒建議與創意方案。這項願景勾勒出未來家庭生活中，AI 將扮演類似「超級家教」的角色，協助父母減輕育兒負擔，並以更具啟發性的方式陪伴孩子成長。Altman 的這番言論，再次引發大眾對於 AI 如何深度介入日常生活與教育層面的熱烈討論。",
+        "link": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Fri, 31 Jul 2026 19:47:28 +0000"
+        "date": "Sat, 01 Aug 2026 17:07:34 +0000"
     }
 ]
