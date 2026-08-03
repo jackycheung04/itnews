@@ -1,37 +1,37 @@
 [
     {
-        "title": "拒絕過勞！倫敦這間「駭客公寓」如何重新定義創業者生活？",
-        "summary": "在壓力巨大的創業環境中，倫敦出現了一間與眾不同的「駭客公寓」（Hacker House）。這裡的創始人們正在進行一場實驗，他們深信「工作與生活平衡」並非成功的阻礙，反而是對抗過勞、提升長期產出的關鍵。該公寓透過營造規律作息與身心健康支援的環境，挑戰了矽谷式「拼命三郎」的創業文化，證明了在追求技術創新與高成長的同時，也能兼顧創始人的心理健康與生活品質，為科技創業圈提供了一種可持續發展的新模式。",
-        "link": "https://techcrunch.com/2026/08/01/inside-one-london-founder-house-rewriting-the-founder-house-rules/",
+        "title": "三星出手！全面封殺「共享家用網路」智慧電視 App 以保障安全",
+        "summary": "三星近期採取強硬資安措施，正式禁止旗下智慧電視安裝會將使用者網路連線共享給陌生人的應用程式。這類程式常被用於建立「住宅代理網路」，卻潛藏巨大的資安風險，恐導致用戶寬頻被濫用於非法用途或被當作惡意流量的跳板。這項政策反映了業界對隱私及網路安全的重視，呼籲用戶應嚴格審視裝置上的 App 權限，避免私人網路環境成為駭客攻擊或非法行為的藏身處，確保居家數位安全。",
+        "link": "https://techcrunch.com/2026/08/03/samsung-bans-smart-tv-apps-that-share-users-internet-connections-with-strangers/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Sat, 01 Aug 2026 21:14:48 +0000"
+        "date": "Mon, 03 Aug 2026 12:10:41 +0000"
     },
     {
-        "title": "xAI 踢到鐵板！美國法院裁定「一鍵脫衣」AI 軟體禁令繼續生效",
-        "summary": "馬斯克旗下 xAI 近期向法院提起訴訟，試圖阻止明尼蘇達州實施針對「AI 脫衣」應用程式的禁令，但遭到法院駁回。該州法律旨在打擊未經同意利用 AI 技術生成虛假裸露影像的軟體。法官認為該禁令有其必要性，裁定法律將持續生效。此案凸顯了全球在監管生成式 AI 濫用，特別是針對隱私與數位安全議題上的法律角力正持續升溫，未來此類爭議恐成為科技巨頭與地方政府間的關注焦點。",
-        "link": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+        "title": "Marc Benioff 力挺！新創公司 June 獲 2,000 萬美元融資，誓言化解 AI 落地難題",
+        "summary": "AI 應用普及仍有門檻，由 Salesforce 執行長 Marc Benioff 投資的新創 June 正式脫離隱身模式，並宣布獲得 2,000 萬美元種子輪融資。June 的核心願景是簡化企業部署 AI 的複雜流程，降低技術門檻。面對 AI 落地困難的產業痛點，June 計劃透過這筆資金加速開發，協助更多企業無痛導入並發揮 AI 的最大潛力，成為連接 AI 模型與實際商務應用的關鍵橋樑。",
+        "link": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Sat, 01 Aug 2026 20:26:04 +0000"
+        "date": "Mon, 03 Aug 2026 10:00:00 +0000"
     },
     {
-        "title": "知名 YouTuber Hank Green 自曝：過度沈迷 AI，健康亮紅燈！",
-        "summary": "知名科普 YouTuber Hank Green 近日公開反思自己與大型語言模型（LLM）的互動，語出驚人地表示這種依賴感已變得「極不健康」。他形容與 AI 的對話帶來的多巴胺回饋過於強烈，導致他無法自拔，甚至擔憂這種科技成癮不僅對個人身心有害，更可能對世界產生負面影響。這番深刻的自我剖析，不僅點出了現代人面對 AI 科技時潛在的心理依賴危機，也引發了科技界對於「過度沈迷 AI」是否會削弱人類主體性與情感連結的熱烈討論。",
-        "link": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+        "title": "全球記憶體荒延燒：MacBook Air 供應傳出吃緊",
+        "summary": "全球記憶體晶片短缺問題持續擴大，這場供應鏈風暴現已波及蘋果最熱銷的筆電產品——MacBook Air。受限於關鍵零組件取得不易，Apple 可能面臨產能壓力，導致該系列機型的市場供貨出現緊縮。這波短缺凸顯了全球半導體產能分配對消費電子產業的巨大影響，果粉若近期計畫入手新機，建議密切留意官方平台的到貨時間，以避免因缺貨而面臨漫長的等待。",
+        "link": "https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Sat, 01 Aug 2026 19:45:45 +0000"
+        "date": "Sun, 02 Aug 2026 21:33:59 +0000"
     },
     {
-        "title": "手機該用買的還是租的？Apple 升級方案揭示消費模式大轉變",
-        "summary": "隨著 Apple 推出全新的升級方案，智慧型手機的消費邏輯正從「擁有」轉向「訂閱」。過去我們習慣一次性購買手機，但現在業者更傾向將手機視為一種服務，透過月費制讓用戶能定期更換最新機型。這種模式不僅降低了用戶的購機門檻，也確保了廠商能維持長期且穩定的收入。對消費者而言，這是省錢的彈性方案，還是變相綁定的長期支出陷阱？這項轉變正重新定義我們與隨身科技產品的持有關係。",
-        "link": "https://techcrunch.com/2026/08/01/should-you-still-buy-your-next-smartphone-or-subscribe-to-it-instead/",
+        "title": "奧特曼的矛盾情結：AI 發展究竟該踩煞車還是加速？",
+        "summary": "在最新一集的《Equity》節目中，主持人深入剖析了 OpenAI 執行長 Sam Altman 近期的驚人言論。儘管 OpenAI 引領了全球的生成式 AI 熱潮，Altman 卻公開呼籲業界應「放緩 AI 的開發步伐」。這場關於「減速（decel）」與「加速」的論辯，不僅反映了 AI 技術失控的風險擔憂，更引發了對於產業競爭、監管責任與技術倫理的深度反思。我們將探討這種「邊加速邊踩煞車」的矛盾策略，背後究竟隱藏著什麼樣的商業考量與對人類未來的深層焦慮。",
+        "link": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Sat, 01 Aug 2026 18:47:27 +0000"
+        "date": "Sun, 02 Aug 2026 20:54:22 +0000"
     },
     {
-        "title": "Sam Altman 力推：用 ChatGPT 當爸媽的智慧育兒神器！",
-        "summary": "OpenAI 執行長 Sam Altman 近期公開分享了他認為「非常酷」的 ChatGPT 應用方式，即將其作為家長育兒的強大輔助工具。他不遺餘力地倡導將 AI 融入家庭教養，認為 ChatGPT 不僅能協助解答孩子層出不窮的疑惑，還能為忙碌的父母提供靈活的育兒建議與創意方案。這項願景勾勒出未來家庭生活中，AI 將扮演類似「超級家教」的角色，協助父母減輕育兒負擔，並以更具啟發性的方式陪伴孩子成長。Altman 的這番言論，再次引發大眾對於 AI 如何深度介入日常生活與教育層面的熱烈討論。",
-        "link": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+        "title": "網紅創業家 Balaji Srinivasan 的「網路學校」在馬來西亞慘遭叫停",
+        "summary": "曾被譽為「科技樂觀主義者前哨站」的 Network School 近期在馬來西亞遭遇挫折，據悉該項目已面臨終止營運的命運。該計畫由知名創業家與加密貨幣倡議者 Balaji Srinivasan 發起，旨在建立一個去中心化的教育與社群網絡。然而，這個試圖挑戰傳統教育體制的「邊境社群」實驗，如今顯然無法如預期般順利推動，目前該項目的後續動向與具體停擺原因仍備受科技界關注。",
+        "link": "https://techcrunch.com/2026/08/02/malaysia-is-reportedly-shutting-down-balaji-srinivasans-network-school/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Sat, 01 Aug 2026 17:07:34 +0000"
+        "date": "Sun, 02 Aug 2026 17:05:07 +0000"
     }
 ]
