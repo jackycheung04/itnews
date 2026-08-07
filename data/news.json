@@ -1,37 +1,37 @@
 [
     {
-        "title": "OpenAI 傳將跨足硬體市場！新款 AI 智慧音箱售價恐上看 400 美元",
-        "summary": "AI 龍頭 OpenAI 近期傳出正積極研發一款神秘的 AI 硬體裝置，最新消息指出，這款產品極可能定位為高階智慧音箱。據外媒報導，其定價預計落在 300 至 400 美元之間（約台幣 9,600 至 12,800 元），顯示 OpenAI 意圖透過更深度整合先進 AI 語音互動技術，挑戰現有市場格局。雖然目前關於外型設計與具體功能的細節仍未完全揭露，但此舉已引發業界高度關注，看好這款裝置有望重新定義 AI 助理在智慧家居中的應用場景。",
-        "link": "https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/",
+        "title": "Cloudflare 推出的 Kitesurf：專為 AI 代理打造的極輕量雲端瀏覽器",
+        "summary": "Cloudflare 近期發表了名為 Kitesurf 的創新產品，這是一款專門為 AI 代理（AI Agents）量身設計的雲端瀏覽器，而非提供給人類使用。與傳統的 Chromium 瀏覽器相比，Kitesurf 在處理常見的網頁自動化任務時，能顯著降低運算資源的消耗。這項技術旨在協助開發者更高效地構建基於瀏覽器的 AI 應用，大幅優化自動化作業的執行效能與成本，為 AI 代理的發展提供更輕盈、穩定的運行環境。",
+        "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 06 Aug 2026 22:43:53 +0000"
+        "date": "Fri, 07 Aug 2026 16:16:09 +0000"
     },
     {
-        "title": "登上 TechCrunch Disrupt 2026：用展位讓你的新創公司成為全場焦點",
-        "summary": "想在 TechCrunch Disrupt 2026 嶄露頭角，不一定要爭取主題演講席位！大會現正開放「展覽計畫」報名，邀請全球新創於 10 月 13 至 15 日進駐舊金山 Moscone West 會場。透過投資 12,500 美元設立專屬展位，你將能與數千名潛在投資人、客戶及合作夥伴零距離交流。這是展現品牌實力、獲取商機最直接且高效的途徑，現在就為你的新創公司搶下舞台，在全球頂尖技術盛會中發光發熱。",
-        "link": "https://techcrunch.com/2026/08/06/your-table-awaits-exhibit-at-techcrunch-disrupt-2026-to-be-seen-by-thousands/",
+        "title": "電腦品牌 Framework 發生重大資安漏洞，全體客戶個資恐外洩",
+        "summary": "知名模組化筆電製造商 Framework 近日發出緊急公告，證實公司遭遇駭客攻擊，導致資料庫遭入侵。受影響範圍涵蓋「所有」客戶，外洩資料包括姓名、電子郵件地址、電話號碼及寄送地址。雖然官方尚未提及是否有信用卡等財務資訊受損，但已建議全體用戶提高警覺，提防針對性的釣魚郵件或詐騙訊息。Framework 目前正積極調查駭客入侵管道並強化系統防護，提醒消費者近期務必留意帳戶異常狀況。",
+        "link": "https://techcrunch.com/2026/08/07/computer-maker-framework-notifies-all-customers-of-a-data-breach/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 06 Aug 2026 22:00:00 +0000"
+        "date": "Fri, 07 Aug 2026 16:09:04 +0000"
     },
     {
-        "title": "時尚圈正式認證！Vogue World 將進軍舊金山，科技與時尚界限漸趨模糊",
-        "summary": "全球時尚指標《Vogue》正式宣布，明年將把備受矚目的盛會「Vogue World」移師舊金山舉辦。這一舉動被視為時尚界對科技產業的又一次肯定，也反映出過去被戲稱為「科技直男（Tech Bros）」的工程師與科技新貴們，已正式跨越產業藩籬，成為當代時尚潮流中的關鍵要角。這場結合科技之都與頂尖時尚的盛會，象徵著矽谷文化與高端精品界正迎來史無前例的深度融合，科技圈的風格品味正逐漸演變為引領全球時尚脈動的核心力量。",
-        "link": "https://techcrunch.com/2026/08/06/vogue-just-gave-another-nod-of-approval-to-the-tech-world/",
+        "title": "TechCrunch Disrupt 2026 購票倒數！最後機會現省 400 美元",
+        "summary": "全球創新盛事 TechCrunch Disrupt 2026 早鳥優惠進入倒數最後一日！即日起，無論是創辦人、投資人還是專業與會者，凡購買門票皆可在現有折扣的基礎上，再額外折抵 100 美元。這意味著總折扣金額最高可達 400 美元，是獲取未來科技趨勢、與頂尖創投及創業先鋒交流的最佳時機。若您計畫參加這場匯聚全球科技實力的年度饗宴，請把握最後機會立即下單，以最划算的價格搶佔席位，為您的事業佈局搶得先機。",
+        "link": "https://techcrunch.com/2026/08/07/todays-the-last-day-to-get-up-to-400-off-your-techcrunch-disrupt-2026-ticket/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 06 Aug 2026 21:24:47 +0000"
+        "date": "Fri, 07 Aug 2026 15:52:33 +0000"
     },
     {
-        "title": "限時倒數：TechCrunch Disrupt 2026 門票現省 400 美元！",
-        "summary": "全球科技界盛事 TechCrunch Disrupt 2026 已開放購票！即日起至明日止，無論您是創辦人、投資人還是科技愛好者，只要現在出手購票，除了原有的早鳥優惠外，還能額外再折抵 100 美元，總折扣力度高達 400 美元。這不僅是與頂尖創新者交流、洞察市場趨勢的絕佳良機，更是以最划算價格搶下席次的最後機會，千萬別錯過這波難得的限時回饋，立即行動鎖定優惠！",
-        "link": "https://techcrunch.com/2026/08/06/get-up-to-400-off-your-techcrunch-disrupt-2026-pass-until-friday/",
+        "title": "川普政府重手砍離岸風電：砸近 40 億美元終止 12 項開發案",
+        "summary": "川普政府近期大動作整頓能源政策，成功說服開發商放棄多達 12 項離岸風電租賃合約。此舉不僅宣告這些風場計畫正式胎死腹中，更令納稅人荷包大失血，其中最新的終止案金額高達 12 億美元。總計這波「反風電」操作，已消耗國庫近 40 億美元的資金，引發外界對能源轉型政策劇烈轉向的廣泛關注與討論。",
+        "link": "https://techcrunch.com/2026/08/07/trump-administration-has-spent-nearly-4b-to-cancel-offshore-wind-farms/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 06 Aug 2026 21:20:00 +0000"
+        "date": "Fri, 07 Aug 2026 15:11:03 +0000"
     },
     {
-        "title": "駭客鎖定大型金融機構！Google 揭露「電話社交工程」勒索新手法",
-        "summary": "Google 安全研究團隊近期發出警示，指出有駭客組織正針對美國大型金融機構發動攻擊。這類攻擊不僅單純竊取敏感資料，更進一步透過偽裝成公司內部員工，以電話進行「社交工程」詐騙，誘騙受害者提供機密權限。一旦駭客取得內部管道，便會進行資料竊取並以此勒索受害者。資安專家提醒，即便是在企業內部，面對陌生的電話要求仍須保持高度警覺，切勿輕易透露任何帳號資訊或授權碼，以免成為勒索軟體的下一個目標。",
-        "link": "https://techcrunch.com/2026/08/06/google-says-hackers-are-calling-financial-firm-employees-to-hack-and-extort-victims/",
+        "title": "成為 TechCrunch Disrupt 2026 的焦點：立即申請舉辦您的專屬周邊活動！",
+        "summary": "想在國際級創投盛會 TechCrunch Disrupt 2026 留下深刻足跡嗎？無論是舉辦創辦人交流酒會、深度行業論壇、主題派對，甚至是晨間慢跑活動，只要您有創意構想，TechCrunch 團隊就將成為您的強力後盾。這不僅是展示品牌影響力的絕佳舞台，更能讓您的活動直接觸及所有蒞臨大會的產業菁英與全球投資人。立即遞交申請，將您的專屬活動納入 Disrupt 官方議程，與全球創新者建立連結，讓您的願景在矽谷盛會中綻放光芒。",
+        "link": "https://techcrunch.com/2026/08/07/host-your-own-piece-of-disrupt-apply-to-run-a-side-event-at-techcrunch-disrupt-2026/",
         "image": "src/img/dummy/img2.jpg",
-        "date": "Thu, 06 Aug 2026 19:40:46 +0000"
+        "date": "Fri, 07 Aug 2026 14:30:00 +0000"
     }
 ]
