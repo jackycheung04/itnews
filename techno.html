@@ -275,21 +275,19 @@ License: You must have a valid license from official store to legally use the th
                 <div class="relative hover-img max-h-98 overflow-hidden">
                   <!--thumbnail-->
                   <a href="#">
-                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/img22.jpg" alt="Image description">
+                   <img id="hero-img" class="max-w-full w-full mx-auto" src="src/img/dummy/img22.jpg" alt="alt title">
                   </a>
                   <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
                     <!--title-->
-                    <a href="#">
-                      <h2 class="text-3xl font-bold capitalize text-white mb-3">Amazon Shoppers Are Ditching Designer Belts for This Best-Selling</h2>
-                    </a>
-                    <p class="text-gray-100 hidden sm:inline-block">Russia says a fire on its flagship vessel in the Black Sea detonated munitions - Ukraine says it fired missiles at the Moskva</p>                                                  
+            <a id="hero-link" href="#">
+              <h2 id="hero-title" class="text-3xl font-bold capitalize text-white mb-3">載入中...</h2>
+            </a>
+            <p id="hero-summary" class="text-gray-100 hidden sm:inline-block">載入中...</p>
                     <!-- author and date -->
                     <div class="pt-2">
                       <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Techno</div>
                     </div>
                   </div>
-                </div>
-              </div>
 <div id="news-grid-container" class="flex flex-wrap -mx-3">
               <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
                 <div class="flex flex-row sm:block hover-img">
@@ -390,7 +388,7 @@ License: You must have a valid license from official store to legally use the th
                 <div class="p-4 bg-gray-100">
                   <h2 class="text-lg font-bold">Most Popular</h2>
                 </div>
-                <ul class="post-number">
+                <ul id="most-popular-list" class="post-number">
                   <li class="border-b border-gray-100 hover:bg-gray-50">
                     <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">Why the world would end without political polls</a>
                   </li>
@@ -544,87 +542,96 @@ License: You must have a valid license from official store to legally use the th
 
   <!-- Production js -->
   <!-- <script src="dist/js/scripts.js"></script> -->
-  <!-- JavaScript 動態載入新聞邏輯 -->
+<!-- JavaScript 動態載入與渲染新聞邏輯 -->
 <script>
-  let allNewsData = []; // 存放完整的 news.json 資料
-  let currentIndex = 0; // 當前已載入的新聞數量
-  const PAGE_SIZE = 6;  // 每次載入 6 篇卡片
+  let allNewsData = [];
 
   async function initNews() {
-      try {
-          // 透過 fetch 抓取 news.json，加上時間戳記防止快取
-          const res = await fetch('data/news.json?v=' + new Date().getTime());
-          allNewsData = await res.json();
-          
-          const container = document.getElementById('news-grid-container');
-          if (container) {
-              // 清空原本寫死的 HTML 靜態卡片
-              container.innerHTML = '';
-          }
-          
-          // 第一次載入：渲染前 6 篇新聞卡片
-          renderNewsGrid(0, PAGE_SIZE);
-          currentIndex = PAGE_SIZE;
+    try {
+      // 讀取 news.json，加上時間戳記防止快取
+      const res = await fetch('data/news.json?v=' + new Date().getTime());
+      allNewsData = await res.json();
 
-          // 如果新聞總數量小於等於 6 篇，直接隱藏「載入更多」按鈕
-          if (allNewsData.length <= currentIndex) {
-              const btn = document.getElementById('load-more-btn');
-              if (btn) btn.style.display = 'none';
-          }
-      } catch (err) {
-          console.error("載入新聞失敗:", err);
-      }
+      if (!allNewsData || allNewsData.length === 0) return;
+
+      // 1. 更新頂部焦點大圖卡片 (第 0 篇)
+      renderHeroNews(allNewsData[0]);
+
+      // 2. 更新下方 6 張網格卡片 (第 1 ~ 6 篇)
+      renderNewsGrid(1, 7);
+
+      // 3. 更新右側 Most Popular 熱門新聞
+      renderMostPopular(allNewsData);
+
+    } catch (err) {
+      console.error("載入新聞失敗:", err);
+    }
   }
 
-  function loadMoreNews() {
-      const nextIndex = currentIndex + PAGE_SIZE;
-      renderNewsGrid(currentIndex, nextIndex);
-      currentIndex = nextIndex;
+  // 渲染頂部大圖卡片
+  function renderHeroNews(hero) {
+    const heroImg = document.getElementById('hero-img');
+    const heroTitle = document.getElementById('hero-title');
+    const heroSummary = document.getElementById('hero-summary');
+    const heroLink = document.getElementById('hero-link');
 
-      // 當所有文章都已載入完畢，停用按鈕並變更樣式
-      if (currentIndex >= allNewsData.length) {
-          const btn = document.getElementById('load-more-btn');
-          if (btn) {
-              btn.innerText = '已顯示全部新聞';
-              btn.disabled = true;
-              btn.classList.remove('bg-red-600', 'hover:bg-red-700');
-              btn.classList.add('bg-gray-400', 'cursor-not-allowed');
-          }
-      }
+    if (heroImg && hero.image) heroImg.src = hero.image;
+    if (heroTitle) heroTitle.innerText = hero.title;
+    if (heroSummary) heroSummary.innerText = hero.summary || '';
+    if (heroLink) heroLink.href = `techno-article.html?id=0`;
   }
 
+  // 渲染網格卡片（已移除內文摘要 <p>，保持卡片簡潔）
   function renderNewsGrid(startIndex, endIndex) {
-      const container = document.getElementById('news-grid-container');
-      if (!container) return;
+    const container = document.getElementById('news-grid-container');
+    if (!container) return;
 
-      // 切片取得當次要渲染的新聞陣列
-      const itemsToRender = allNewsData.slice(startIndex, endIndex);
+    container.innerHTML = '';
 
-      itemsToRender.forEach((item, idx) => {
-          const actualIndex = startIndex + idx;
-          
-          // 生成符合原本 Tailwind CSS 排版的 HTML 卡片
-          const cardHtml = `
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                  <div class="flex flex-row sm:block hover-img">
-                      <a href="techno-article.html?id=${actualIndex}">
-                          <img class="max-w-full w-full mx-auto" src="${item.image || 'src/img/dummy/img18.jpg'}" alt="${item.title}">
-                      </a>
-                      <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                          <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="techno-article.html?id=${actualIndex}">${item.title}</a>
-                          </h3>
-                          <p class="hidden md:block text-gray-600 leading-tight mb-1">${item.summary || ''}</p>
-                          <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Techno</a>
-                      </div>
-                  </div>
-              </div>
-          `;
-          container.innerHTML += cardHtml;
-      });
+    const itemsToRender = allNewsData.slice(startIndex, endIndex);
+
+    itemsToRender.forEach((item, idx) => {
+      const actualIndex = startIndex + idx;
+      const cardHtml = `
+        <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+          <div class="flex flex-row sm:block hover-img">
+            <a href="techno-article.html?id=${actualIndex}">
+              <img class="max-w-full w-full mx-auto" src="${item.image}" alt="${item.title}" onerror="this.src='src/img/dummy/img18.jpg'">
+            </a>
+            <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+              <h3 class="text-lg font-bold leading-tight mb-2">
+                <a href="techno-article.html?id=${actualIndex}">${item.title}</a>
+              </h3>
+              <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Techno</a>
+            </div>
+          </div>
+        </div>
+      `;
+      container.innerHTML += cardHtml;
+    });
   }
 
-  // 網頁載入完成後自動執行初始化
+// 渲染右側 Most Popular 熱門新聞
+  function renderMostPopular(newsList) {
+    const container = document.getElementById('most-popular-list');
+    if (!container) return;
+
+    container.innerHTML = '';
+    // 取前 5 篇作為熱門新聞
+    const popularItems = newsList.slice(0, 5);
+
+    popularItems.forEach((item, idx) => {
+      const itemHtml = `
+        <li class="border-b border-gray-100 hover:bg-gray-50">
+          <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="techno-article.html?id=${idx}">
+            ${item.title}
+          </a>
+        </li>
+      `;
+      container.innerHTML += itemHtml;
+    });
+  }
+
   initNews();
 </script>
 </body>
