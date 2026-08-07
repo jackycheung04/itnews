@@ -166,7 +166,26 @@ if entries:
             time.sleep(5)
 
 os.makedirs("data", exist_ok=True)
-if news_list:
-    with open("data/news.json", "w", encoding="utf-8") as f:
-        json.dump(news_list, f, ensure_ascii=False, indent=4)
-    print(f"🚀 更新成功！共寫入 {len(news_list)} 則繁體中文新聞。")
+json_path = "data/news.json"
+
+existing_news = []
+# 讀取舊有新聞紀錄
+if os.path.exists(json_path):
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            existing_news = json.load(f)
+    except Exception as e:
+        print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
+
+# 比對標題去重，防止重複寫入相同新聞
+existing_titles = {item['title'] for item in existing_news}
+unique_new_items = [item for item in news_list if item['title'] not in existing_titles]
+
+# 將新新聞放在最前，舊新聞排在後面，最多保留 50 篇
+combined_news = unique_new_items + existing_news
+final_news = combined_news[:50]
+
+if final_news:
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(final_news, f, ensure_ascii=False, indent=4)
+    print(f"🚀 更新成功！新增 {len(unique_new_items)} 篇，共累積 {len(final_news)} 篇新聞。")
