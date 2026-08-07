@@ -25,10 +25,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update_news.py
 
-      - name: 5. 自動儲存 news.json 回 GitHub
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "🤖 AI 自動更新 IT 新聞" || exit 0
-        git push
+      - name: 5. 自動儲存至 GitHub
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "🤖 AI 自動更新 IT 新聞" || exit 0
+          git push
