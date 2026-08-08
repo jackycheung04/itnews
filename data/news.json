@@ -1,5 +1,40 @@
 [
     {
+        "title": "OpenAI 踩煞車！新模型 Astra 強大到能發動網路攻擊，安全疑慮引發開發放緩",
+        "summary": "OpenAI 近日透露，正在研發中的「Astra」模型已觸及「關鍵網路安全門檻」。這意味著該模型具備獨立識別並對防護嚴密的真實系統發動網路攻擊的能力。基於嚴重的安全疑慮，OpenAI 已決定主動放緩開發進程。此舉反映出人工智慧在具備高度自主能力的同時，也帶來了不可忽視的技術與資安風險。OpenAI 表示將優先進行更深入的安全評估，以確保該模型在未來發布時，不會成為惡意攻擊者的強大武器，此舉也再次引發科技界對 AI 安全性與監管的激烈討論。",
+        "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Fri, 07 Aug 2026 22:48:24 +0000"
+    },
+    {
+        "title": "花費數百萬美元換來的教訓：Rippling 推出 AI 支出追蹤工具，助企業精準控管成本",
+        "summary": "企業管理平台 Rippling 經歷了 AI 支出失控的慘痛教訓，在短短數月內燒掉數百萬美元後，決定採取行動。該公司本週正式推出「AI Spend Console」，旨在為企業提供一套完整的成本控管方案。這項新工具能精確追蹤個人及團隊在 AI 工具上的使用花費，協助企業揪出浪費資源的項目，並透過透明化的數據分析，確保每分錢都花在刀口上，避免 AI 轉型變成了燒錢災難。",
+        "link": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Fri, 07 Aug 2026 21:30:11 +0000"
+    },
+    {
+        "title": "Wacom Movink 13 驚艷登場：數位創作愛好者的質感首選",
+        "summary": "Wacom 近期推出的 Movink 13 繪圖板，以其輕巧便攜的設計與親民的價格定位，成功擄獲數位藝術創作者的目光。這款設備不僅具備 Wacom 引以為傲的精準感壓技術，還能完美融入各類創作情境，讓靈感隨時隨地不受限。對於尋求專業品質卻又不希望負擔過重預算的創作者而言，Movink 13 無疑是踏入數位藝術領域的最佳拍檔，讓你的創意夢想能以更輕鬆、更直覺的方式具象化。",
+        "link": "https://techcrunch.com/2026/08/07/wacoms-movinkpad-11-is-a-fun-and-mid-priced-entry-point-for-digital-artists/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Fri, 07 Aug 2026 21:20:00 +0000"
+    },
+    {
+        "title": "資安警報：波蘭法院、機場與醫院遭曝門戶大開，系統漏洞風險堪憂",
+        "summary": "資安研究人員近期針對波蘭網路環境進行大規模掃描，赫然發現境內多個關鍵基礎設施，包括法院、醫院及機場，皆存在嚴重的資安缺口。調查指出，這些機構普遍使用相同且缺乏更新的網頁內容管理系統，導致系統架構出現共同弱點。駭客若利用此類漏洞，極可能輕易突破防線，進而接管政府網站、竊取機敏數據，甚至癱瘓公共服務運作。此發現凸顯了政府與醫療體系在軟體資產管理與漏洞修補上的急迫性，若不儘速採取強化防護措施，恐將面臨大規模的網路攻擊威脅。",
+        "link": "https://techcrunch.com/2026/08/07/security-researchers-scanned-the-polish-web-and-found-courts-hospitals-and-airports-at-risk-of-hacks/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Fri, 07 Aug 2026 21:00:08 +0000"
+    },
+    {
+        "title": "Cloudflare 推出專為 AI 代理設計的雲端瀏覽器：Kitesurf",
+        "summary": "Cloudflare 近日發表了一款名為「Kitesurf」的雲端瀏覽器，這是一款專為 AI 代理而非人類使用者所打造的創新工具。不同於傳統笨重的 Chromium 瀏覽器，Kitesurf 針對自動化任務進行了深度優化，能以極低的算力成本執行網頁操作。這項技術突破將大幅降低開發門檻，協助工程師更高效地建構基於瀏覽器的 AI 智慧代理，是推動 AI 自動化應用落地的重要里程碑。",
+        "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Fri, 07 Aug 2026 16:16:09 +0000"
+    },
+    {
         "title": "Cloudflare 推出的 Kitesurf：專為 AI 代理打造的極輕量雲端瀏覽器",
         "summary": "Cloudflare 近期發表了名為 Kitesurf 的創新產品，這是一款專門為 AI 代理（AI Agents）量身設計的雲端瀏覽器，而非提供給人類使用。與傳統的 Chromium 瀏覽器相比，Kitesurf 在處理常見的網頁自動化任務時，能顯著降低運算資源的消耗。這項技術旨在協助開發者更高效地構建基於瀏覽器的 AI 應用，大幅優化自動化作業的執行效能與成本，為 AI 代理的發展提供更輕盈、穩定的運行環境。",
         "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
