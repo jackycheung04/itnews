@@ -259,51 +259,54 @@ License: You must have a valid license from official store to legally use the th
       </div>
     </div>
 
-    <!-- block news -->
-    <div class="bg-gray-50 py-6">
-      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-        <div class="flex flex-row flex-wrap">
-          <!-- Left -->
-          <div class="flex-shrink max-w-full w-full lg:w-2/3  overflow-hidden">
-            <div class="w-full py-3">
-              <h2 class="text-gray-800 text-2xl font-bold">
-                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Techno
-              </h2>
-            </div>
-            <div class="flex flex-row flex-wrap -mx-3">
-              <div class="flex-shrink max-w-full w-full lg:w-2/3 px-3 pb-5">
-                <div class="relative hover-img max-h-98 overflow-hidden">
-                  <!--thumbnail-->
-                  <a href="#">
-                   <img id="hero-img" class="max-w-full w-full mx-auto" src="src/img/dummy/img22.jpg" alt="alt title">
-                  </a>
-                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
-                    <!--title-->
-            <a id="hero-link" href="#">
-              <h2 id="hero-title" class="text-3xl font-bold capitalize text-white mb-3">載入中...</h2>
-            </a>
-            <p id="hero-summary" class="text-gray-100 hidden sm:inline-block">載入中...</p>
- <!-- author and date -->
-            <div class="pt-2">
-              <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Techno</div>
-            </div>
-          </div>
-        </div>
+   <!-- block news -->
+      <div class="bg-gray-50 py-6">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex flex-row flex-wrap">
 
-      <!-- 下方 6 張小卡片的網格容器 -->
-      <div id="news-grid-container" class="flex flex-wrap -mx-3">
-      </div>
+            <!-- 左側 2/3 主欄位 -->
+            <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
+              <div class="w-full py-3">
+                <h2 class="text-gray-800 text-2xl font-bold">
+                  <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Techno
+                </h2>
+              </div>
 
-      <!-- 載入更多新聞按鈕 -->
-      <div class="w-full text-center my-6">
-        <button id="load-more-btn" onclick="loadMoreNews()" class="py-2 px-6 bg-red-600 hover:bg-red-700 text-white font-bold rounded transition-colors duration-200">
-          載入更多新聞
-        </button>
-      </div>
-     </div>
-    </div>
+              <!-- 頂部焦點大圖卡片 -->
+              <div class="flex flex-row flex-wrap -mx-3">
+                <div class="flex-shrink max-w-full w-full px-3 pb-5">
+                  <div class="relative hover-img max-h-98 overflow-hidden">
+                    <a href="#">
+                      <img id="hero-img" class="max-w-full w-full mx-auto" src="src/img/dummy/img22.jpg" alt="hero title">
+                    </a>
+                    <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                      <!--title-->
+                      <a id="hero-link" href="#">
+                        <h2 id="hero-title" class="text-3xl font-bold capitalize text-white mb-3">載入中...</h2>
+                      </a>
+                      <p id="hero-summary" class="text-gray-100 hidden sm:inline-block">載入中...</p>
+                      <!-- author and date -->
+                      <div class="pt-2">
+                        <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Techno</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-    <!-- right -->
+              <!-- 下方 6 張新聞小卡片容器 -->
+              <div id="news-grid-container" class="flex flex-wrap -mx-3">
+              </div>
+
+              <!-- 載入更多新聞按鈕 -->
+              <div class="w-full text-center my-6">
+                <button id="load-more-btn" onclick="loadMoreNews()" class="py-2 px-6 bg-red-600 hover:bg-red-700 text-white font-bold rounded transition-colors duration-200">
+                  載入更多新聞
+                </button>
+              </div>
+            </div> <!-- 正確關閉左側 lg:w-2/3 欄位 -->
+
+            <!-- right -->
     <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-14 lg:pb-8 order-first lg:order-last">
             <div class="w-full bg-white">
               <div class="mb-6">
