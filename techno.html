@@ -471,12 +471,21 @@ License: You must have a valid license from official store to legally use the th
 <script>
   let allNewsData = [];
 
+  // 自動解析各種可能的圖片欄位名稱
+  function getImageUrl(item) {
+    if (!item) return 'src/img/dummy/img22.jpg';
+    return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img22.jpg';
+  }
+
   async function initNews() {
     try {
       const res = await fetch('data/news.json?v=' + new Date().getTime());
       allNewsData = await res.json();
 
       if (!allNewsData || allNewsData.length === 0) return;
+
+      // 🔍 除錯用：請在瀏覽器按 F12 -> Console 查看 JSON 的實際欄位
+      console.log("新聞數據載入成功，第一筆資料為:", allNewsData[0]);
 
       // 1. 渲染頂部大圖卡片 (第 0 篇)
       renderHeroNews(allNewsData[0]);
@@ -492,7 +501,7 @@ License: You must have a valid license from official store to legally use the th
     }
   }
 
-  // 1. 頂部焦點大圖卡片（真實圖片 + 50字摘要截斷）
+  // 1. 頂部焦點大圖卡片
   function renderHeroNews(hero) {
     if (!hero) return;
 
@@ -503,7 +512,7 @@ License: You must have a valid license from official store to legally use the th
 
     // 帶入真實圖片
     if (heroImg) {
-      heroImg.src = hero.image || hero.image_url || 'src/img/dummy/img22.jpg';
+      heroImg.src = getImageUrl(hero);
       heroImg.alt = hero.title || '';
     }
 
@@ -511,7 +520,7 @@ License: You must have a valid license from official store to legally use the th
     if (heroTitle) heroTitle.textContent = hero.title || '';
     if (heroLink) heroLink.href = `techno-article.html?id=${hero.id !== undefined ? hero.id : 0}`;
 
-    // 🎯 限制摘要顯示在 50 字以內
+    // 限制摘要顯示在 50 字以內
     if (heroSummary) {
       const rawSummary = hero.summary || hero.description || '';
       heroSummary.textContent = rawSummary.length > 50 
@@ -520,7 +529,7 @@ License: You must have a valid license from official store to legally use the th
     }
   }
 
-  // 2. 下方 6 張新聞小卡片（帶入真實圖片）
+  // 2. 下方 6 張新聞小卡片
   function renderNewsGrid(start, end) {
     const container = document.getElementById('news-grid-container');
     if (!container) return;
@@ -530,14 +539,13 @@ License: You must have a valid license from official store to legally use the th
 
     items.forEach((item, idx) => {
       const articleId = item.id !== undefined ? item.id : (start + idx);
-      const imageUrl = item.image || item.image_url || 'src/img/dummy/img22.jpg';
+      const imageUrl = getImageUrl(item);
       const itemTitle = item.title || '無標題文章';
 
       const cardHtml = `
         <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 mb-4">
           <div class="relative hover-img max-h-48 overflow-hidden rounded">
             <a href="techno-article.html?id=${articleId}">
-              <!-- 🎯 帶入對應的真實圖片連結 -->
               <img class="max-w-full w-full mx-auto h-40 object-cover" src="${imageUrl}" alt="${itemTitle}">
             </a>
           </div>
