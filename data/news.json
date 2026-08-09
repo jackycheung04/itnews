@@ -1,5 +1,40 @@
 [
     {
+        "title": "亞馬遜德州數據中心計畫引爭議：恐成為全美最大氣候污染源",
+        "summary": "亞馬遜近期在德州規劃興建一座大型數據中心，為滿足龐大的電力需求，公司計畫在當地直接興建一座專屬發電廠。然而，根據最新報導，這座發電廠因能源使用規模極高，預計將成為美國境內最大的氣候污染源。此舉引發外界高度關注，批評聲音質疑這與亞馬遜過去宣稱的永續發展與減碳目標背道而馳，即便該公司長期投入綠能建設，但在處理數據中心電力擴張的同時，如何解決伴隨而來的巨大環境代價，已成為其企業社會責任的一大挑戰。",
+        "link": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Sat, 08 Aug 2026 21:24:02 +0000"
+    },
+    {
+        "title": "OpenAI 併購簡報新創 NextSlide，頂尖人才正式加入 ChatGPT 團隊",
+        "summary": "AI 巨頭 OpenAI 近日宣布完成對簡報軟體新創公司 NextSlide 的收購。NextSlide 團隊隨後證實，全體成員已正式加入 OpenAI 並投入 ChatGPT 的開發工作。儘管雙方尚未透露具體的交易細節與產品整合規劃，但市場推測，此舉旨在強化 ChatGPT 在視覺簡報與自動化生成內容方面的競爭力。隨著 NextSlide 團隊的加入，未來 ChatGPT 有望在商業應用與簡報製作領域帶來更具交互性、更直覺的創新功能，進一步完善 OpenAI 的辦公效率生態系。",
+        "link": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Sat, 08 Aug 2026 19:41:13 +0000"
+    },
+    {
+        "title": "X 平台重大變革：取消既有分潤機制，改推「原創內容獎勵」計畫",
+        "summary": "X 平台（前身為 Twitter）正式宣佈將終止現行的廣告收入共享計畫。官方認為該模式存在「錯位」問題，因此決定以全新的「原創內容獎勵」（Original Content Rewards）計畫取而代之。此舉旨在透過調整獎勵機制，更精準地鼓勵用戶投入高品質的原創內容創作。目前 X 正逐步停止舊有的分潤管道，後續創作者將需依循新的標準爭取報酬，顯示平台正試圖透過內容品質導向的策略，重新構建其創作者經濟生態系。",
+        "link": "https://techcrunch.com/2026/08/08/x-replaces-misaligned-revenue-sharing-program-with-original-content-rewards/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Sat, 08 Aug 2026 16:34:22 +0000"
+    },
+    {
+        "title": "Kindle Scribe Colorsoft 評測：彩色螢幕體驗滿分，但高昂售價值得買單嗎？",
+        "summary": "亞馬遜推出的新款 Kindle Scribe Colorsoft 憑藉輕薄設計與迷人的彩色螢幕表現，確實為閱讀與筆記體驗增添了不少樂趣。然而，儘管該裝置外型精美且功能性強，但面對其高昂的市場定價與較大的機身尺寸，對於一般的普羅大眾而言，它並非一款生活必需品。如果您不是專業的數位創作者或重度閱讀愛好者，現階段或許還有更具性價比的選擇。總體來說，這是一款表現優異的精品級設備，但在決定入手前，建議先衡量其價格是否與您的實際使用頻率相符。",
+        "link": "https://techcrunch.com/2026/08/08/the-kindle-scribe-colorsoft-is-a-lot-of-fun-but-its-not-a-must-have/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Sat, 08 Aug 2026 16:00:00 +0000"
+    },
+    {
+        "title": "Google 揭秘：為何駭客組織需要專屬代號？專家帶你了解資安命名的幕後真相",
+        "summary": "Google 近期調整了內部識別駭客組織的命名機制。為了揭開這套系統的神秘面紗，外媒 TechCrunch 特別專訪了全球頂尖的資安追蹤專家。文中探討了企業為何需要為駭客團體編列「代號」，這不僅僅是為了識別，更是為了在複雜的威脅情資中建立標準化分類，方便資安人員快速鎖定對手特徵、分析攻擊模式，並提升跨組織間的防禦協作效率。這套命名藝術背後，隱藏著資安界與犯罪集團長期鬥智的策略思維。",
+        "link": "https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/",
+        "image": "src/img/dummy/img2.jpg",
+        "date": "Sat, 08 Aug 2026 15:00:00 +0000"
+    },
+    {
         "title": "OpenAI 踩煞車！新模型 Astra 強大到能發動網路攻擊，安全疑慮引發開發放緩",
         "summary": "OpenAI 近日透露，正在研發中的「Astra」模型已觸及「關鍵網路安全門檻」。這意味著該模型具備獨立識別並對防護嚴密的真實系統發動網路攻擊的能力。基於嚴重的安全疑慮，OpenAI 已決定主動放緩開發進程。此舉反映出人工智慧在具備高度自主能力的同時，也帶來了不可忽視的技術與資安風險。OpenAI 表示將優先進行更深入的安全評估，以確保該模型在未來發布時，不會成為惡意攻擊者的強大武器，此舉也再次引發科技界對 AI 安全性與監管的激烈討論。",
         "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
