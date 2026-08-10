@@ -1,5 +1,40 @@
 [
     {
+        "title": "Meta 全新 Glimmer AI 模型亮相：揭秘祖克柏的超級智慧野心",
+        "summary": "Meta 最新發布的開源權重模型「Glimmer」引發業界高度關注，這不僅是技術上的革新，更體現了祖克柏對於未來「個人化超級智慧」的發展願景。透過 Glimmer，我們能一窺 Meta 在 AI 領域的戰略佈局，同時也揭示了當前 AI 生態中，關於「使用者自主權」與「存取權限」之間日益明顯的科技鴻溝。此模型的出現，正推動著 AI 走向更開放且去中心化的競爭格局。",
+        "link": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+        "image": "https://techcrunch.com/wp-content/uploads/2024/09/GettyImages-2173579243.jpg?resize=1200,799",
+        "date": "Mon, 10 Aug 2026 16:20:13 +0000"
+    },
+    {
+        "title": "軍工級需求爆發！電池新創 Sila 獲五角大廈 14 億美元鉅額貸款",
+        "summary": "面對全球軍事設備對高效能電池的迫切需求，美國五角大廈向電池材料新創公司 Sila 挹注 14 億美元貸款。這筆關鍵資金將用於擴張該公司位於華盛頓州的生產基地，加速推進下一代電池材料的量產計畫。隨著國防現代化進程加速，Sila 的矽陽極技術被視為提升軍用硬體續航力與效能的關鍵戰略資源，此次注資不僅協助公司擴大產能，更強化了美國在電池供應鏈的關鍵自主性。",
+        "link": "https://techcrunch.com/2026/08/10/sila-lands-1-4b-pentagon-loan-as-militaries-demand-more-batteries/",
+        "image": "https://techcrunch.com/wp-content/uploads/2024/06/Sila_KAshton-01.jpg?resize=1200,800",
+        "date": "Mon, 10 Aug 2026 15:22:42 +0000"
+    },
+    {
+        "title": "昔日死對頭握手言和！Archer 宣佈收購競爭對手 Wisk Aero",
+        "summary": "電動垂直起降飛行器（eVTOL）領域迎來重大整合，Archer Aviation 正式宣佈收購其競爭對手 Wisk Aero。這兩家公司過去曾因商業機密竊取案對簿公堂，雙方關係一度劍拔弩張。然而隨著此次收購案敲定，昔日的法庭宿敵正式走上合併之路。這場收購不僅終結了長期的專利與商業糾紛，更整合了雙方的技術與資源，預計將大幅重塑未來城市空中交通（UAM）的市場競爭版圖，加速電動飛行載具的商業化進程。",
+        "link": "https://techcrunch.com/2026/08/10/archer-buys-former-rival-wisk-aero/",
+        "image": "https://techcrunch.com/wp-content/uploads/2025/02/Midnight-1.jpg?resize=1200,675",
+        "date": "Mon, 10 Aug 2026 15:09:39 +0000"
+    },
+    {
+        "title": "物流巨頭 Ceva Logistics 遭駭，外洩風暴席捲銀行、電商與 Steam 玩家",
+        "summary": "全球物流巨頭 Ceva Logistics 近期遭遇嚴重網路攻擊，導致大量客戶個資外洩。此次資安事故影響深遠，不僅波及依賴其物流服務的各大零售商與銀行體系，連 Steam 遊戲玩家的相關數據也未能倖免。駭客成功竊取了這些企業交付貨物時所儲存的機敏個資，目前受影響範圍正持續擴大，引發業界對供應鏈資安防護的高度警戒與擔憂。",
+        "link": "https://techcrunch.com/2026/08/10/a-data-breach-at-shipping-giant-ceva-logistics-is-rippling-across-banks-retailers-steam-gamers-and-beyond/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/shipping-2288991285.jpg?resize=1200,878",
+        "date": "Mon, 10 Aug 2026 14:20:19 +0000"
+    },
+    {
+        "title": "註冊過 Klaviyo 嗎？小心你的密碼可能已被數十家廣告商看光！",
+        "summary": "知名行銷自動化平台 Klaviyo 近日爆發重大資安漏洞。由於網站出現系統錯誤，導致部分用戶的密碼在輸入過程中，被意外洩露給了第三方廣告追蹤工具。據統計，這些敏感數據可能已被數十家廣告商接收。Klaviyo 目前已緊急修復此問題，並建議所有用戶立即更改密碼並啟用雙重驗證（2FA），以確保帳號安全，避免遭到未經授權的存取。",
+        "link": "https://techcrunch.com/2026/08/10/signed-up-for-klaviyo-dozens-of-advertisers-may-have-seen-your-password/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/klaviyo-2283003642.jpg?resize=1200,800",
+        "date": "Mon, 10 Aug 2026 14:14:43 +0000"
+    },
+    {
         "title": "深陷風暴仍豪擲 4 億美元！對沖基金 Situational Awareness 重押 AI 晶片新創 Source Foundry",
         "summary": "儘管面臨經營挑戰，主攻人工智慧領域的對沖基金 Situational Awareness 仍展現驚人決斷力，宣布挹注 4 億美元鉅資於晶片新創公司 Source Foundry。這筆重大投資顯示出該基金即便身陷風暴，仍極度看好 AI 硬體基礎建設的發展前景，並持續透過大手筆布局，企圖在競爭激烈的 AI 晶片賽道中搶佔關鍵戰略位置，此舉也為充滿變數的投資市場注入了一劑強心針。",
         "link": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
