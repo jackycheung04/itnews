@@ -112,27 +112,24 @@ License: You must have a valid license from official store to legally use the th
               </div>
               
               <!-- Article Title -->
-              <h1 class="text-gray-900 text-3xl sm:text-4xl font-bold mb-4 leading-tight">
-                {{ TITLE }}
-              </h1>
+             <!-- Title -->
+<h1 id="article-title" class="text-3xl font-bold mb-4"></h1>
 
-              <!-- Author & Date -->
-              <div class="flex items-center text-sm text-gray-500 mb-6">
-                <span>作者：AI 編輯器</span>
-                <span class="mx-2">•</span>
-                <span>{{ DATE }}</span>
-              </div>
+<!-- Author & Date -->
+<div class="flex items-center text-sm text-gray-500 mb-6">
+    <span>作者：AI 編輯器</span>
+    <span class="mx-2">•</span>
+    <span id="article-date"></span>
+</div>
 
-              <!-- Main Cover Image -->
-              <div class="mb-6">
-                <img class="max-w-full w-full h-auto rounded" src="{{ IMAGE_URL }}" alt="{{ TITLE }}">
-              </div>
+<!-- Main Cover Image -->
+<div class="mb-6">
+    <img id="article-img" class="max-w-full w-full h-auto rounded" src="" alt="">
+</div>
 
-              <!-- Article Body -->
-              <div class="text-gray-800 text-lg leading-relaxed space-y-6">
-                {{ CONTENT }}
-              </div>
-
+<!-- Article Body -->
+<div id="article-content" class="text-gray-800 text-lg leading-relaxed space-y-6"></div>
+              
               <!-- Back to Techno -->
               <div class="mt-8 pt-6 border-t border-gray-200">
                 <a href="techno.html" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-6 rounded text-sm transition-colors">
@@ -204,5 +201,74 @@ License: You must have a valid license from official store to legally use the th
       </div>
     </div>
   </footer>
+  <script>
+  async function loadArticleDetail() {
+    try {
+      // 1. 解析 URL 網址參數 (例如 ?id=2)
+      const urlParams = new URLSearchParams(window.location.search);
+      const rawId = urlParams.get('id');
+      const articleId = rawId !== null ? parseInt(rawId, 10) : 0;
+
+      // 2. 抓取最新新聞資料庫 news.json
+      const res = await fetch('data/news.json?v=' + new Date().getTime());
+      const newsList = await res.json();
+
+      if (!newsList || newsList.length === 0) {
+        alert("找不到新聞資料！");
+        return;
+      }
+
+      // 3. 依據 id (或陣列索引) 尋找對應文章
+      let article = newsList.find(item => item.id === articleId);
+      if (!article) {
+        // 若沒有匹配 id，預設取陣列第 articleId 筆或第 0 筆
+        article = newsList[articleId] || newsList[0];
+      }
+
+      // 4. 更新瀏覽器分頁標題
+      document.title = `${article.title} - Tailnews`;
+
+      // 5. 將資料填入網頁 DOM 元素
+      const titleEl = document.getElementById('article-title');
+      const dateEl = document.getElementById('article-date');
+      const imgEl = document.getElementById('article-img');
+      const contentEl = document.getElementById('article-content');
+      const sourceLinkEl = document.getElementById('article-source-link');
+
+      if (titleEl) titleEl.textContent = article.title || '無標題';
+      if (dateEl) dateEl.textContent = article.date || '';
+      
+      if (imgEl) {
+        imgEl.src = article.image || 'src/img/dummy/img2.jpg';
+        imgEl.alt = article.title || '';
+      }
+
+      if (contentEl) {
+        // 優先顯示完整的 content，若無則顯示 summary
+        const fullText = article.content || article.summary || '暫無文章內文細節。';
+        
+        // 自動將換行符號切割為獨立段落 <p>
+        const formattedHtml = fullText
+          .split('\n')
+          .filter(paragraph => paragraph.trim() !== '')
+          .map(paragraph => `<p class="mb-4 text-gray-800 leading-relaxed text-lg">${paragraph.trim()}</p>`)
+          .join('');
+
+        contentEl.innerHTML = formattedHtml;
+      }
+
+      if (sourceLinkEl) {
+        sourceLinkEl.href = article.link || '#';
+      }
+
+    } catch (err) {
+      console.error("載入文章內容失敗:", err);
+    }
+  }
+
+  // 頁面載入完成後執行
+  document.addEventListener('DOMContentLoaded', loadArticleDetail);
+</script>
+  
 </body>
 </html>
