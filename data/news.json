@@ -1,5 +1,40 @@
 [
     {
+        "title": "OpenAI 完成 70 億美元員工股份回購，估值再創新高！",
+        "summary": "OpenAI 近日完成規模高達 70 億美元的員工股份收購計畫，此舉不僅強化了公司在 AI 領域的統治地位，更顯示出市場對其未來的高度信心。然而，隨著這筆鉅額資金流入員工口袋，外界也打趣地表示，舊金山的房市壓力恐怕又要面臨新一輪的挑戰。這次回購鞏固了 OpenAI 作為科技界「印鈔機」的地位，也讓其團隊與投資人更加緊密地綁定在一起，持續推進生成式 AI 的發展邊界。",
+        "link": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024",
+        "date": "Tue, 11 Aug 2026 00:03:18 +0000"
+    },
+    {
+        "title": "AI 攻擊日益猖獗，OpenAI 推出全新資安防禦模型助陣",
+        "summary": "隨著 AI 驅動的網路攻擊手段不斷進化，OpenAI 正式擴大其名為「Daybreak」的資安防禦計畫。作為該計畫的核心升級，OpenAI 推出了一款專為網路安全訓練的全新 AI 模型。這項技術旨在協助資安團隊更主動地識別威脅、進行漏洞檢測並強化防禦韌性。面對日趨嚴峻的網路安全挑戰，OpenAI 試圖透過這款專用模型，為企業建立更高效、更聰明的安全防線，協助防禦者在 AI 競賽中搶佔先機。",
+        "link": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1200,798",
+        "date": "Mon, 10 Aug 2026 23:56:15 +0000"
+    },
+    {
+        "title": "貝佐斯跨足體壇！傳亞馬遜創辦人有望入主英超勁旅利物浦",
+        "summary": "全球首富之一、亞馬遜創辦人傑夫·貝佐斯（Jeff Bezos）在體育投資領域傳出重大進展。據外媒報導，貝佐斯目前正積極接觸，極有可能完成其人生中首筆職業運動隊伍的股權收購，目標鎖定英國足球界的頂尖名門——利物浦足球俱樂部（Liverpool FC）。若此筆交易順利達成，將象徵貝佐斯正式跨足全球熱度最高的職業足球賽事，並為其龐大的商業版圖再添指標性資產，市場正密切關注這項交易對紅軍未來的經營策略影響。",
+        "link": "https://techcrunch.com/2026/08/10/jeff-bezos-might-finally-get-his-hands-on-a-sports-team/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2281425916.jpg?w=1024",
+        "date": "Mon, 10 Aug 2026 23:16:44 +0000"
+    },
+    {
+        "title": "矽谷大亂鬥：獨角獸 Rippling 反告小新創 Runlayer，揭開商業間諜羅生門",
+        "summary": "知名人力資源軟體獨角獸 Rippling 近期陷入法律攻防，正式對小型新創公司 Runlayer 提起反訴。整起事件起因於上個月 Runlayer 的先行控告，指控 Rippling 竊取其產品創意。這場訴訟不僅是兩家公司間的角力，更為充滿變數的科技市場敲響警鐘，提醒創業者與企業投資人：在產品開發與商業合作的灰色地帶，知識產權的保護與隱私邊界已成為高度敏感的戰場，稍有不慎便可能引發激烈的法律對抗。",
+        "link": "https://techcrunch.com/2026/08/10/now-rippling-is-counter-suing-tiny-startup-runlayer/",
+        "image": "https://techcrunch.com/wp-content/uploads/2023/01/GettyImages-1384240404.jpg?resize=1200,798",
+        "date": "Mon, 10 Aug 2026 22:26:54 +0000"
+    },
+    {
+        "title": "Google 共同創辦人謝爾蓋·布林豪擲 1 億美元，槓上加州富豪稅提案",
+        "summary": "Google 共同創辦人謝爾蓋·布林（Sergey Brin）近期動作頻頻，已投入 1 億美元資金，旨在抵制加州即將公投的「40 號提案」（Prop 40）。該提案若通過，將針對加州億萬富翁的淨資產徵收一次性 5% 的特別稅。布林的鉅額捐款凸顯了矽谷巨頭對於高額財富稅的高度警戒。這場財富保衛戰不僅牽動加州科技圈敏感神經，也再次引發大眾對於貧富差距及富人稅合理性的熱烈辯論。",
+        "link": "https://techcrunch.com/2026/08/10/google-co-founder-sergey-brin-has-now-spent-100-million-to-fight-the-billionaire-tax/",
+        "image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-542842326.jpg?resize=1200,800",
+        "date": "Mon, 10 Aug 2026 21:20:04 +0000"
+    },
+    {
         "title": "Meta 全新 Glimmer AI 模型亮相：揭秘祖克柏的超級智慧野心",
         "summary": "Meta 最新發布的開源權重模型「Glimmer」引發業界高度關注，這不僅是技術上的革新，更體現了祖克柏對於未來「個人化超級智慧」的發展願景。透過 Glimmer，我們能一窺 Meta 在 AI 領域的戰略佈局，同時也揭示了當前 AI 生態中，關於「使用者自主權」與「存取權限」之間日益明顯的科技鴻溝。此模型的出現，正推動著 AI 走向更開放且去中心化的競爭格局。",
         "link": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
