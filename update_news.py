@@ -104,18 +104,25 @@ def translate_text(title, summary):
         return title, summary, summary
 
     prompt = f"""
-    請將以下英文 IT 新聞總結並翻譯成繁體中文：
-    標題：{title}
-    內容：{summary}
+    請針對以下英文 IT 新聞進行深度擴充與詳細報導（使用繁體中文）：
+    原始標題：{title}
+    原始摘要：{summary}
+
+    請以專業科技記者與產業分析師的角度，將此新聞擴充為一篇約 1500 至 2000 字的深度新聞專題報導。
+
+    內文（content）請務必包含以下四大面向，並分段撰寫：
+    1. 【事件背景與起因】：說明此事件發生的前因後果與市場脈絡。
+    2. 【核心細節與技術解析】：深入剖析該技術、產品或決策的具體細節。
+    3. 【產業影響與市場分析】：分析此事件對科技產業、競爭對手及廣大使用者的影響。
+    4. 【未來展望與結語】：總結此事件的長遠意義及未來可能的發展趨勢。
 
     請嚴格回傳一個純 JSON 格式（不要包含 markdown 的 ```json 標籤），格式如下：
     {{
-        "title": "繁體中文新聞標題",
+        "title": "吸引人的繁體中文新聞標題",
         "summary": "50字左右的簡明摘要 (供列表卡片使用)",
-        "content": "300-500字詳細的繁體中文新聞內文，分2-3個段落，用換行分隔"
+        "content": "約1500-2000字的深度報導內文，各段落之間請直接用換行分隔"
     }}
     """
-
     for m_name in MODELS_TO_TRY:
         url = f"{API_HOST}/v1beta/models/{m_name}:generateContent?key={api_key}"
         payload = {"contents": [{"parts": [{"text": prompt}]}]}
