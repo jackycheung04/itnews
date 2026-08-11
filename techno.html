@@ -470,11 +470,13 @@ License: You must have a valid license from official store to legally use the th
 <!-- JavaScript 動態載入與渲染新聞邏輯 -->
 <script>
   let allNewsData = [];
+  let currentGridIndex = 1; // 從第 1 篇開始（第 0 篇留給頂部焦點大圖）
+  const BATCH_SIZE = 6;     // 每次點擊「載入更多」多顯示 6 篇
 
   // 自動解析各種可能的圖片欄位名稱
   function getImageUrl(item) {
-    if (!item) return 'src/img/dummy/img22.jpg';
-    return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img22.jpg';
+    if (!item) return 'src/img/dummy/img2.jpg';
+    return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img2.jpg';
   }
 
   async function initNews() {
@@ -484,17 +486,22 @@ License: You must have a valid license from official store to legally use the th
 
       if (!allNewsData || allNewsData.length === 0) return;
 
-      // 🔍 除錯用：請在瀏覽器按 F12 -> Console 查看 JSON 的實際欄位
-      console.log("新聞數據載入成功，第一筆資料為:", allNewsData[0]);
+      console.log("新聞數據載入成功，總篇數:", allNewsData.length);
 
-      // 1. 渲染頂部大圖卡片 (第 0 篇)
+      // 1. 渲染頂部焦點大圖 (第 0 篇)
       renderHeroNews(allNewsData[0]);
 
-      // 2. 渲染下方 6 張小卡片 (第 1 ~ 6 篇)
-      renderNewsGrid(1, 7);
+      // 2. 渲染第一批下方小卡片 (第 1 ~ 6 篇)
+      renderNextNewsGridBatch();
 
       // 3. 渲染右側 Most Popular 熱門新聞
       renderMostPopular(allNewsData);
+
+      // 4. 綁定「載入更多」按鈕點擊事件
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
+      }
 
     } catch (err) {
       console.error("載入新聞失敗:", err);
@@ -504,41 +511,35 @@ License: You must have a valid license from official store to legally use the th
   // 1. 頂部焦點大圖卡片
   function renderHeroNews(hero) {
     if (!hero) return;
-
     const heroImg = document.getElementById('hero-img');
     const heroTitle = document.getElementById('hero-title');
     const heroSummary = document.getElementById('hero-summary');
     const heroLink = document.getElementById('hero-link');
 
-    // 帶入真實圖片
     if (heroImg) {
       heroImg.src = getImageUrl(hero);
       heroImg.alt = hero.title || '';
     }
-
-    // 帶入標題與連結
     if (heroTitle) heroTitle.textContent = hero.title || '';
     if (heroLink) heroLink.href = `techno-article.html?id=${hero.id !== undefined ? hero.id : 0}`;
 
-    // 限制摘要顯示在 50 字以內
     if (heroSummary) {
       const rawSummary = hero.summary || hero.description || '';
-      heroSummary.textContent = rawSummary.length > 50 
-        ? rawSummary.substring(0, 50) + '...' 
-        : rawSummary;
+      heroSummary.textContent = rawSummary.length > 50 ? rawSummary.substring(0, 50) + '...' : rawSummary;
     }
   }
 
-  // 2. 下方 6 張新聞小卡片
-  function renderNewsGrid(start, end) {
+  // 2. 下方新聞小卡片（分批追加載入）
+  function renderNextNewsGridBatch() {
     const container = document.getElementById('news-grid-container');
+    const loadMoreBtn = document.getElementById('load-more-btn');
     if (!container) return;
 
-    container.innerHTML = '';
-    const items = allNewsData.slice(start, end);
+    const end = currentGridIndex + BATCH_SIZE;
+    const items = allNewsData.slice(currentGridIndex, end);
 
     items.forEach((item, idx) => {
-      const articleId = item.id !== undefined ? item.id : (start + idx);
+      const articleId = item.id !== undefined ? item.id : (currentGridIndex + idx);
       const imageUrl = getImageUrl(item);
       const itemTitle = item.title || '無標題文章';
 
@@ -551,9 +552,7 @@ License: You must have a valid license from official store to legally use the th
           </div>
           <div class="pt-2">
             <h2 class="text-base font-bold line-clamp-2">
-              <a href="techno-article.html?id=${articleId}" class="hover:text-red-600 transition-colors">
-                ${itemTitle}
-              </a>
+              <a href="techno-article.html?id=${articleId}" class="hover:text-red-600 transition-colors">${itemTitle}</a>
             </h2>
             <div class="pt-1 text-xs text-gray-500">
               <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Techno
@@ -561,8 +560,15 @@ License: You must have a valid license from official store to legally use the th
           </div>
         </div>
       `;
-      container.innerHTML += cardHtml;
+      container.insertAdjacentHTML('beforeend', cardHtml);
     });
+
+    currentGridIndex = end;
+
+    // 若已顯示完所有新聞，自動隱藏「載入更多」按鈕
+    if (currentGridIndex >= allNewsData.length && loadMoreBtn) {
+      loadMoreBtn.style.display = 'none';
+    }
   }
 
   // 3. 右側 Most Popular 熱門新聞
@@ -588,6 +594,7 @@ License: You must have a valid license from official store to legally use the th
     });
   }
 
+  // 啟動載入
   initNews();
 </script>
 </body>
