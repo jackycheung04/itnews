@@ -103,7 +103,7 @@ def translate_text(title, summary):
     if not api_key:
         return title, summary, summary
 
-   prompt = f"""
+    prompt = f"""
     請將以下英文 IT 新聞總結並翻譯成繁體中文：
     標題：{title}
     內容：{summary}
