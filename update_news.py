@@ -7,8 +7,6 @@ import feedparser
 import requests
 
 api_key = os.environ.get("GEMINI_API_KEY")
-
-# 安全組裝 API Host 避免 Markdown 污染
 API_HOST = "https://" + "generativelanguage.googleapis.com"
 
 
@@ -25,16 +23,12 @@ def get_available_models():
             models_data = res.json().get("models", [])
             valid_models = []
             for m in models_data:
-                if "generateContent" in m.get(
-                    "supportedGenerationMethods", []
-                ):
+                if "generateContent" in m.get("supportedGenerationMethods", []):
                     name = m.get("name").replace("models/", "")
                     if name not in ["gemini-2.5-flash", "gemini-1.5-flash"]:
                         valid_models.append(name)
 
-            print(
-                f"✅ 您的 API Key 實際可用模型清單 (已過濾): {valid_models}"
-            )
+            print(f"✅ 可用模型清單: {valid_models}")
 
             preferred = []
             target_list = [
@@ -48,12 +42,7 @@ def get_available_models():
                 if target in valid_models:
                     preferred.append(target)
 
-            if preferred:
-                return preferred
-            elif valid_models:
-                return valid_models[:3]
-        else:
-            print(f"⚠️ 獲取模型清單失敗 ({res.status_code})")
+            return preferred if preferred else valid_models[:3]
     except Exception as e:
         print(f"⚠️ 請求模型清單發生錯誤: {e}")
 
@@ -61,11 +50,10 @@ def get_available_models():
 
 
 MODELS_TO_TRY = get_available_models()
-print(f"🎯 系統決定優先使用以下模型進行翻譯: {MODELS_TO_TRY}")
 
 
 def get_real_image_url(article_url):
-    """🎯 核心新增：前往文章內頁抓取 og:image 或 twitter:image 高解析度封面圖"""
+    """前往文章內頁抓取 og:image 或 twitter:image 高解析度封面圖"""
     if not article_url or article_url == "#":
         return None
 
@@ -80,17 +68,11 @@ def get_real_image_url(article_url):
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.text, "html.parser")
 
-            # 1. 優先抓取 og:image
-            og_img = soup.find("meta", property="og:image") or soup.find(
-                "meta", attrs={"name": "og:image"}
-            )
+            og_img = soup.find("meta", property="og:image") or soup.find("meta", attrs={"name": "og:image"})
             if og_img and og_img.get("content"):
                 return og_img["content"]
 
-            # 2. 次選 twitter:image
-            tw_img = soup.find("meta", property="twitter:image") or soup.find(
-                "meta", attrs={"name": "twitter:image"}
-            )
+            tw_img = soup.find("meta", property="twitter:image") or soup.find("meta", attrs={"name": "twitter:image"})
             if tw_img and tw_img.get("content"):
                 return tw_img["content"]
     except Exception as e:
@@ -101,7 +83,7 @@ def get_real_image_url(article_url):
 
 def translate_text(title, summary):
     if not api_key:
-        return title, summary, summary
+        return None, None, None  # 沒有 API Key 時回傳 None，跳過此篇
 
     prompt = f"""
     請針對以下英文 IT 新聞進行深度擴充與詳細報導（使用繁體中文）：
@@ -138,9 +120,7 @@ def translate_text(title, summary):
 
                 if res.status_code == 200:
                     data = res.json()
-                    text = data["candidates"][0]["content"]["parts"][0][
-                        "text"
-                    ].strip()
+                    text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
                     if text.startswith("```"):
                         text = re.sub(r"^```(?:json)?", "", text)
@@ -149,109 +129,28 @@ def translate_text(title, summary):
                     try:
                         result = json.loads(text)
                         if "title" in result and "summary" in result:
-                            print(
-                                f"✅ [{m_name}] 翻譯成功：{result['title']}"
-                            )
+                            print(f"✅ [{m_name}] 翻譯成功：{result['title']}")
                             return result["title"], result["summary"], result.get("content", result["summary"])
                     except json.JSONDecodeError:
                         print(f"⚠️ JSON 解析失敗，原始回傳: {text}")
-                        return title, summary, summary
 
                 elif res.status_code == 429:
-                    wait_time = 15
-                    print(
-                        f"⏳ [{m_name}] 觸發頻率限制 (429)，等待 {wait_time}"
-                        " 秒後重試..."
-                    )
-                    time.sleep(wait_time)
+                    print(f"⏳ [{m_name}] 觸發頻率限制 (429)，等待 10 秒後重試...")
+                    time.sleep(10)
                 else:
-                    print(
-                        f"⚠️ [{m_name}] API 錯誤 ({res.status_code}):"
-                        f" {res.text}"
-                    )
                     break
 
             except Exception as e:
-                print(f"⚠️ [{m_name}] 請求發生例外錯誤: {e}")
+                print(f"⚠️ [{m_name}] 請求發生錯誤: {e}")
                 break
 
-    print("❌ 所有模型皆失敗，保留英文原文")
-    return title, summary, summary
+    print("❌ 所有模型翻譯皆失敗")
+    return None, None, None
 
 
-RSS_SOURCES = [
-    "https://" + "techcrunch.com/feed/",
-    "https://" + "rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
-    "https://" + "www.wired.com/feed/category/gear/latest/rss",
-]
-
-headers = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-    )
-}
-
-entries = []
-for url in RSS_SOURCES:
-    clean_url = (
-        url.replace("]", "").replace("[", "").replace(")", "").replace("(", "")
-    )
-    print(f"嘗試抓取 RSS: {clean_url}")
-    try:
-        resp = requests.get(clean_url, headers=headers, timeout=10)
-        if resp.status_code == 200:
-            feed = feedparser.parse(resp.text)
-            if feed.entries:
-                entries = feed.entries
-                print(
-                    f"🎉 成功從 {clean_url} 抓取 {len(entries)} 則新聞！"
-                )
-                break
-    except Exception as e:
-        print(f"抓取 {clean_url} 失敗: {e}")
-
-news_list = []
-if entries:
-    for idx, entry in enumerate(entries[:12]):
-        orig_title = entry.get("title", "")
-        orig_summary = entry.get("summary", entry.get("description", ""))
-        link = entry.get("link", "#")
-        published = entry.get("published", "Today")
-
-        print(f"📷 正在解析第 {idx+1}/5 篇真實圖片...")
-        # 1. 優先爬取網頁 Meta (og:image / twitter:image)
-        image_url = get_real_image_url(link)
-
-        # 2. 若網頁沒抓到，退回檢查 RSS 結構中的圖片標籤
-        if not image_url:
-            if "media_content" in entry and len(entry.media_content) > 0:
-                image_url = entry.media_content[0].get("url")
-            elif "media_thumbnail" in entry and len(entry.media_thumbnail) > 0:
-                image_url = entry.media_thumbnail[0].get("url")
-            elif "enclosures" in entry and len(entry.enclosures) > 0:
-                image_url = entry.enclosures[0].get("href")
-
-        # 3. 最終備用圖
-        if not image_url:
-            image_url = "src/img/dummy/img2.jpg"
-
-        print(f"🔄 正在翻譯第 {idx+1}/5 篇...")
-        zh_title, zh_summary, zh_content = translate_text(orig_title, orig_summary)
-
-        news_list.append(
-    {
-        "title": zh_title,
-        "summary": zh_summary,
-        "content": zh_content,
-        "link": link,
-        "image": image_url,
-        "date": published,
-    }
-)
-
-        if idx < 4:
-            time.sleep(10)
-
+# ----------------------------------------------------------------
+# 1. 先讀取歷史新聞紀錄（用於去重與追加）
+# ----------------------------------------------------------------
 os.makedirs("data", exist_ok=True)
 json_path = "data/news.json"
 
@@ -263,18 +162,104 @@ if os.path.exists(json_path):
     except Exception as e:
         print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
 
-existing_titles = {item["title"] for item in existing_news}
-unique_new_items = [
-    item for item in news_list if item["title"] not in existing_titles
+# 記錄所有已存在新聞的「網址 link」（網址是唯一的，用來去重最精確）
+existing_links = {item.get("link") for item in existing_news if item.get("link")}
+
+
+# ----------------------------------------------------------------
+# 2. 抓取 RSS 來源
+# ----------------------------------------------------------------
+RSS_SOURCES = [
+    "https://techcrunch.com/feed/",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "https://www.wired.com/feed/category/gear/latest/rss",
 ]
 
-combined_news = unique_new_items + existing_news
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+entries = []
+
+for url in RSS_SOURCES:
+    print(f"嘗試抓取 RSS: {url}")
+    try:
+        resp = requests.get(url, headers=headers, timeout=10)
+        if resp.status_code == 200:
+            feed = feedparser.parse(resp.text)
+            if feed.entries:
+                entries = feed.entries
+                print(f"🎉 成功從 {url} 抓取 {len(entries)} 則新聞！")
+                break
+    except Exception as e:
+        print(f"抓取 {url} 失敗: {e}")
+
+
+# ----------------------------------------------------------------
+# 3. 檢查去重並翻譯「全新新聞」（每次最多處理 5 篇新新聞）
+# ----------------------------------------------------------------
+new_news_list = []
+max_new_articles = 5
+
+if entries:
+    for entry in entries:
+        # 如果已經處理滿 5 篇新新聞，就停止
+        if len(new_news_list) >= max_new_articles:
+            break
+
+        link = entry.get("link", "#")
+
+        # 🌟 關鍵去重：若該網址已在 news.json 中，直接 skip！不花 API 也不重複翻譯
+        if link in existing_links:
+            print(f"⏩ 跳過已存在的新聞: {entry.get('title')}")
+            continue
+
+        orig_title = entry.get("title", "")
+        orig_summary = entry.get("summary", entry.get("description", ""))
+        published = entry.get("published", "Today")
+
+        print(f"\n📷 [全新新聞 {len(new_news_list)+1}/{max_new_articles}] 正在解析圖片...")
+        image_url = get_real_image_url(link)
+
+        if not image_url:
+            if "media_content" in entry and len(entry.media_content) > 0:
+                image_url = entry.media_content[0].get("url")
+            elif "media_thumbnail" in entry and len(entry.media_thumbnail) > 0:
+                image_url = entry.media_thumbnail[0].get("url")
+            elif "enclosures" in entry and len(entry.enclosures) > 0:
+                image_url = entry.enclosures[0].get("href")
+
+        if not image_url:
+            image_url = "src/img/dummy/img2.jpg"
+
+        print(f"🔄 正在翻譯與擴寫: {orig_title[:30]}...")
+        zh_title, zh_summary, zh_content = translate_text(orig_title, orig_summary)
+
+        # 只有在 Gemini 翻譯成功的情況下才寫入（避免英文半成品進入 JSON）
+        if zh_title and zh_summary:
+            new_news_list.append({
+                "title": zh_title,
+                "summary": zh_summary,
+                "content": zh_content,
+                "link": link,
+                "image": image_url,
+                "date": published
+            })
+            # 成功處理一篇後停頓 3 秒，保護 API 不觸發頻率限制
+            time.sleep(3)
+
+
+# ----------------------------------------------------------------
+# 4. 合併新舊資料、更新 ID 並存檔
+# ----------------------------------------------------------------
+# 全新新聞放在最前面，舊新聞排後面
+combined_news = new_news_list + existing_news
+
+# 保留最多 50 篇歷史紀錄
 final_news = combined_news[:50]
+
+# 為所有文章重新編號 ID
+for idx, item in enumerate(final_news):
+    item["id"] = idx
 
 if final_news:
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(final_news, f, ensure_ascii=False, indent=4)
-    print(
-        f"🚀 更新成功！新增 {len(unique_new_items)} 篇，共累積"
-        f" {len(final_news)} 篇新聞。"
-    )
+    print(f"\n🚀 更新成功！新增了 {len(new_news_list)} 篇新聞，目前資料庫共保留 {len(final_news)} 篇。")
