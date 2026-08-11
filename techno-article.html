@@ -146,16 +146,7 @@ License: You must have a valid license from official store to legally use the th
                 <div class="p-4 bg-gray-100">
                   <h2 class="text-lg font-bold">Most Popular</h2>
                 </div>
-                <ul class="post-number">
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">Why the world would end without political polls</a>
-                  </li>
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">Meet The Man Who Designed The Ducati Monster</a>
-                  </li>
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">2020 Audi R8 Spyder spy shots release</a>
-                  </li>
+                <ul id="most-popular-list" class="post-number">
                 </ul>
               </div>
             </div>
@@ -204,31 +195,27 @@ License: You must have a valid license from official store to legally use the th
   <script>
   async function loadArticleDetail() {
     try {
-      // 1. 解析 URL 網址參數 (例如 ?id=2)
+      // 1. 解析網址 URL 參數 (例如 ?id=2)
       const urlParams = new URLSearchParams(window.location.search);
       const rawId = urlParams.get('id');
       const articleId = rawId !== null ? parseInt(rawId, 10) : 0;
 
-      // 2. 抓取最新新聞資料庫 news.json
+      // 2. 抓取最新新聞資料 news.json
       const res = await fetch('data/news.json?v=' + new Date().getTime());
       const newsList = await res.json();
 
-      if (!newsList || newsList.length === 0) {
-        alert("找不到新聞資料！");
-        return;
-      }
+      if (!newsList || newsList.length === 0) return;
 
-      // 3. 依據 id (或陣列索引) 尋找對應文章
+      // 3. 依據 id 尋找對應文章
       let article = newsList.find(item => item.id === articleId);
       if (!article) {
-        // 若沒有匹配 id，預設取陣列第 articleId 筆或第 0 筆
         article = newsList[articleId] || newsList[0];
       }
 
-      // 4. 更新瀏覽器分頁標題
-      document.title = `${article.title} - Tailnews`;
+      // 4. 更新網頁頁籤標題
+      document.title = `${article.title || '新聞'} - Tailnews`;
 
-      // 5. 將資料填入網頁 DOM 元素
+      // 5. 填入主文章 DOM 元素
       const titleEl = document.getElementById('article-title');
       const dateEl = document.getElementById('article-date');
       const imgEl = document.getElementById('article-img');
@@ -237,36 +224,54 @@ License: You must have a valid license from official store to legally use the th
 
       if (titleEl) titleEl.textContent = article.title || '無標題';
       if (dateEl) dateEl.textContent = article.date || '';
-      
+
       if (imgEl) {
-        imgEl.src = article.image || 'src/img/dummy/img2.jpg';
+        imgEl.src = article.image || article.image_url || 'src/img/dummy/img2.jpg';
         imgEl.alt = article.title || '';
       }
 
       if (contentEl) {
-        // 優先顯示完整的 content，若無則顯示 summary
-        const fullText = article.content || article.summary || '暫無文章內文細節。';
-        
-        // 自動將換行符號切割為獨立段落 <p>
-        const formattedHtml = fullText
-          .split('\n')
-          .filter(paragraph => paragraph.trim() !== '')
-          .map(paragraph => `<p class="mb-4 text-gray-800 leading-relaxed text-lg">${paragraph.trim()}</p>`)
-          .join('');
-
-        contentEl.innerHTML = formattedHtml;
+        const fullText = article.content || article.summary || '';
+        const paragraphs = fullText.split('\n').filter(p => p.trim() !== '');
+        contentEl.innerHTML = paragraphs.map(p => `<p class="mb-4 leading-relaxed text-gray-800 text-lg">${p.trim()}</p>`).join('');
       }
 
       if (sourceLinkEl) {
         sourceLinkEl.href = article.link || '#';
       }
 
+      // 6. 渲染右側 Most Popular 熱門新聞
+      renderMostPopular(newsList);
+
     } catch (err) {
       console.error("載入文章內容失敗:", err);
     }
   }
 
-  // 頁面載入完成後執行
+  // 渲染右側 Most Popular 熱門新聞
+  function renderMostPopular(newsList) {
+    const container = document.getElementById('most-popular-list');
+    if (!container) return;
+
+    container.innerHTML = '';
+    const popularItems = newsList.slice(0, 5);
+
+    popularItems.forEach((item, idx) => {
+      const id = item.id !== undefined ? item.id : idx;
+      const title = item.title || '無標題文章';
+
+      const itemHtml = `
+        <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="techno-article.html?id=${id}">
+            <span class="text-xl font-bold text-gray-300 mr-3 flex-shrink-0">${idx + 1}</span>
+            <span class="line-clamp-2">${title}</span>
+          </a>
+        </li>
+      `;
+      container.innerHTML += itemHtml;
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', loadArticleDetail);
 </script>
   
