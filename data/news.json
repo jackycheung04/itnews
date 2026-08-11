@@ -1,5 +1,45 @@
 [
     {
+        "title": "Uber 出清機器人公司 Serve 全部持股，合作關係生變",
+        "summary": "Uber 意外拋售持有的機器人公司 Serve 全數股份，顯示雙方在商業策略上已出現分歧，合作關係趨於疏遠。",
+        "content": "近日，機器人外送公司 Serve Robotics 遭遇突發變動，其長期合作夥伴 Uber 意外宣布出清所持有的全部股份。這一舉動令外界感到驚訝，也標誌著兩家企業長期以來的緊密連結正式畫下句點。過去，Uber 不僅是 Serve 的投資者，雙方在自動化配送領域也保持著高度的協同效應。\n\n根據分析，此次撤資背後反映出兩家公司在商業發展路徑上的顯著差異。隨著市場環境變化，Uber 的業務策略已轉向更廣泛的自動化佈局，而 Serve 則需在獨立營運中證明其商業模式的可行性。這次股權結構的調整，反映出雙方在市場定位與未來發展願景上的脫鉤，未來兩者在自動化配送領域的競爭或合作態勢，將成為市場關注的焦點。",
+        "link": "https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/",
+        "image": "https://techcrunch.com/wp-content/uploads/2022/05/Serve-Uber-Eats.jpg?resize=1200,801",
+        "date": "Tue, 11 Aug 2026 20:02:02 +0000"
+    },
+    {
+        "title": "FBI 警告：網路犯罪分子駭入個人帳號竊取私密照片進行勒索",
+        "summary": "FBI 發布最新警告，指出駭客正鎖定成人與未成年人，透過駭入其網路帳號竊取私密影像，並以此進行威脅勒索。",
+        "content": "美國聯邦調查局（FBI）近日發布一份重要資安警報，指出網路犯罪分子正積極針對各年齡層的用戶，包括成人與未成年人，發動針對性的駭客攻擊。這些犯罪份子會透過各種技術手段非法存取受害者的個人網路帳號，意圖竊取其中的私密照片與影片。此類犯罪行為的核心目的在於獲取能對受害者進行「性勒索」的籌碼，透過威脅將這些影像散布給受害者的親友、同事或公開至網路上，強迫受害者支付金錢或其他利益。\n\n根據 FBI 的說明，這類威脅並未因受害者年齡而有差異，未成年人因缺乏警覺，往往成為這類勒索活動的高風險群體。駭客通常會利用釣魚郵件、社交工程或竊取密碼等方式突破個人帳戶的防線。一旦私密影像落入不法之徒手中，受害者極易陷入焦慮與恐懼，進而落入長期的勒索循環。FBI 強調，此舉已嚴重威脅個人數位隱私與心理健康，並呼籲大眾採取更嚴格的資安防護措施。\n\n為了降低風險，FBI 建議用戶務必啟用多重身份驗證（MFA），確保帳號即使密碼外洩也能多一層防護。同時，應定期檢查帳號活動紀錄，並避免在雲端儲存空間或社交平台上傳送及保存高度私密的影像。若不幸遭到勒索，當局強烈建議受害者不要支付任何款項，因為這無法保證駭客會銷毀檔案，反而可能引來更多勒索，受害者應儘速向當地執法部門報案，並尋求專業資安協助以減少傷害。",
+        "link": "https://techcrunch.com/2026/08/11/fbi-says-cybercriminals-are-hacking-into-victims-online-accounts-to-steal-their-intimate-pictures/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/teenagers-smartphones.jpg?resize=1200,800",
+        "date": "Tue, 11 Aug 2026 19:38:23 +0000"
+    },
+    {
+        "title": "OpenAI 正式推出 Linux 版 ChatGPT 桌面應用程式",
+        "summary": "OpenAI 終於為 Linux 用戶帶來了專屬的 ChatGPT 桌面應用程式，讓 Linux 社群也能享有更便利、整合度更高的 AI 使用體驗。",
+        "content": "OpenAI 近日正式宣布，為 Linux 作業系統推出了專屬的 ChatGPT 桌面應用程式。這項消息對於廣大的開源社群及 Linux 用戶來說意義重大，因為在此之前，使用者僅能透過網頁瀏覽器存取 ChatGPT，或是依賴社群開發的第三方工具。如今，官方原生應用的推出將提供更穩定、順暢的操作體驗。\n\n這款全新的 Linux 版桌面應用程式，旨在提供與 macOS 及 Windows 版本相似的功能，包括快速啟動指令、更便捷的視窗切換與整合性互動。對於習慣使用 Linux 環境進行開發、研究或文書處理的專業人士而言，這款應用程式將能進一步提升工作效率，讓使用者能更靈活地在工作流程中運用 ChatGPT 的強大 AI 能力。\n\n目前，OpenAI 尚未透露該版本的具體分發細節（如支援的套件格式），但預計將持續優化該平台的使用者體驗。隨著此舉的推出，OpenAI 展現了其跨平台支援的決心，確保不同作業系統的用戶都能平等地存取這項先進的生成式 AI 技術，也進一步鞏固了 ChatGPT 在多元開發環境中的應用地位。",
+        "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024",
+        "date": "Tue, 11 Aug 2026 19:15:35 +0000"
+    },
+    {
+        "title": "Google Gemini 應用程式用戶數突破 10 億大關",
+        "summary": "Google 旗下的 AI 助手 Gemini 用戶數已正式達到 10 億規模，展現出與 OpenAI 的 ChatGPT 並駕齊驅的強勁競爭力。",
+        "content": "Google 旗下的 AI 聊天機器人 Gemini 近日達成重要里程碑，其應用程式的全球用戶數正式突破 10 億大關。這一數據反映了 Google 在將人工智慧技術全面整合進 Android 生態系統以及搜尋引擎服務後，已成功將 AI 服務普及至廣大的用戶群體中，顯示出該平台在市場上的高度影響力與滲透率。\n\n與此同時，Gemini 正緊追其主要競爭對手 OpenAI 的 ChatGPT。根據數據顯示，ChatGPT 於今年 6 月時便已率先突破每月 10 億活躍用戶的門檻。目前兩大 AI 巨頭在市場上勢均力敵，隨著雙方持續優化模型性能與擴展應用場景，這場關於生成式 AI 的用戶爭奪戰預計將持續升溫，並推動科技行業進一步的技術創新。",
+        "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
+        "date": "Tue, 11 Aug 2026 18:49:12 +0000"
+    },
+    {
+        "title": "Bluesky 活躍用戶數持續下滑，戰略重心轉向應用程式之外",
+        "summary": "在經歷選後用戶激增潮一年後，去中心化社群平台 Bluesky 的行動端活躍用戶數持續下降，但剩餘用戶群體仍保持相對高的互動熱度。",
+        "content": "在經歷了去年美國大選後的用戶爆發性增長後，去中心化社群媒體平台 Bluesky 的行動應用程式正面臨用戶流失的挑戰。根據最新數據顯示，該平台的活躍用戶數已連續數月出現下滑趨勢。儘管如此，留下的核心用戶群體仍展現出極高的忠誠度與互動參與度，顯示出平台在黏著度方面仍具備一定的韌性。\n\n面對應用程式內用戶增長的瓶頸，Bluesky 似乎正在調整其發展策略，將戰略重心擴展至單一應用程式之外。該平台持續推動「AT Protocol」生態系統的開發，致力於打造一個更具開放性與去中心化的社群網路架構。透過開放協議，Bluesky 期望吸引更多開發者與外部服務加入，從而降低對單一 App 的依賴，並透過多元化的社群應用場景，建立更穩固的生態根基。\n\n分析指出，Bluesky 目前的處境反映了新興社群平台在熱潮退去後，必須面對的成長轉型期。未來的競爭關鍵將在於，Bluesky 能否成功將其去中心化的技術願景轉化為更廣泛的實用價值，而不僅僅是作為 X（前 Twitter）的替代品。透過分散式架構帶來的彈性，Bluesky 或許能走出傳統中心化社群平台的困境，但在用戶基礎縮減的現狀下，其擴張策略是否奏效，仍有待市場與時間的進一步驗證。",
+        "link": "https://techcrunch.com/2026/08/11/blueskys-active-user-base-is-shrinking-as-its-focus-expands-beyond-the-app/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/01/bluesky-GettyImages-2185144073.jpg?w=1024",
+        "date": "Tue, 11 Aug 2026 17:46:14 +0000"
+    },
+    {
         "title": "OpenAI 完成 70 億美元員工股份回購，估值再創新高！",
         "summary": "OpenAI 近日完成規模高達 70 億美元的員工股份收購計畫，此舉不僅強化了公司在 AI 領域的統治地位，更顯示出市場對其未來的高度信心。然而，隨著這筆鉅額資金流入員工口袋，外界也打趣地表示，舊金山的房市壓力恐怕又要面臨新一輪的挑戰。這次回購鞏固了 OpenAI 作為科技界「印鈔機」的地位，也讓其團隊與投資人更加緊密地綁定在一起，持續推進生成式 AI 的發展邊界。",
         "link": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
