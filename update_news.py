@@ -101,15 +101,19 @@ def get_real_image_url(article_url):
 
 def translate_text(title, summary):
     if not api_key:
-        return title, summary
+        return title, summary, summary
 
-    prompt = f"""
-    請將以下英文 IT 新聞總結並翻譯成吸引人的繁體中文：
+   prompt = f"""
+    請將以下英文 IT 新聞總結並翻譯成繁體中文：
     標題：{title}
     內容：{summary}
 
     請嚴格回傳一個純 JSON 格式（不要包含 markdown 的 ```json 標籤），格式如下：
-    {{"title": "繁體中文新聞標題", "summary": "150字左右的繁體中文核心總結"}}
+    {{
+        "title": "繁體中文新聞標題",
+        "summary": "50字左右的簡明摘要 (供列表卡片使用)",
+        "content": "300-500字詳細的繁體中文新聞內文，分2-3個段落，用換行分隔"
+    }}
     """
 
     for m_name in MODELS_TO_TRY:
@@ -141,10 +145,10 @@ def translate_text(title, summary):
                             print(
                                 f"✅ [{m_name}] 翻譯成功：{result['title']}"
                             )
-                            return result["title"], result["summary"]
+                            return result["title"], result["summary"], result.get("content", result["summary"])
                     except json.JSONDecodeError:
                         print(f"⚠️ JSON 解析失敗，原始回傳: {text}")
-                        return title, summary
+                        return title, summary, summary
 
                 elif res.status_code == 429:
                     wait_time = 15
@@ -165,7 +169,7 @@ def translate_text(title, summary):
                 break
 
     print("❌ 所有模型皆失敗，保留英文原文")
-    return title, summary
+    return title, summary, summary
 
 
 RSS_SOURCES = [
@@ -225,17 +229,18 @@ if entries:
             image_url = "src/img/dummy/img2.jpg"
 
         print(f"🔄 正在翻譯第 {idx+1}/5 篇...")
-        zh_title, zh_summary = translate_text(orig_title, orig_summary)
+        zh_title, zh_summary, zh_content = translate_text(orig_title, orig_summary)
 
         news_list.append(
-            {
-                "title": zh_title,
-                "summary": zh_summary,
-                "link": link,
-                "image": image_url,
-                "date": published,
-            }
-        )
+    {
+        "title": zh_title,
+        "summary": zh_summary,
+        "content": zh_content,
+        "link": link,
+        "image": image_url,
+        "date": published,
+    }
+)
 
         if idx < 4:
             time.sleep(5)
