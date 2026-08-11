@@ -212,7 +212,7 @@ for url in RSS_SOURCES:
 
 news_list = []
 if entries:
-    for idx, entry in enumerate(entries[:5]):
+    for idx, entry in enumerate(entries[:12]):
         orig_title = entry.get("title", "")
         orig_summary = entry.get("summary", entry.get("description", ""))
         link = entry.get("link", "#")
