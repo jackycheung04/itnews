@@ -108,19 +108,19 @@ def translate_text(title, summary):
     原始標題：{title}
     原始摘要：{summary}
 
-    請以專業科技記者與產業分析師的角度，將此新聞擴充為一篇約 1500 至 2000 字的深度新聞專題報導。
+    請以專業科技記者角度，將此新聞擴充為約 800 至 1200 字的深度報導。
 
-    內文（content）請務必包含以下四大面向，並分段撰寫：
-    1. 【事件背景與起因】：說明此事件發生的前因後果與市場脈絡。
-    2. 【核心細節與技術解析】：深入剖析該技術、產品或決策的具體細節。
-    3. 【產業影響與市場分析】：分析此事件對科技產業、競爭對手及廣大使用者的影響。
-    4. 【未來展望與結語】：總結此事件的長遠意義及未來可能的發展趨勢。
+    內文（content）請包含以下四大面向並分段撰寫：
+    1. 【事件背景與起因】
+    2. 【核心細節與技術解析】
+    3. 【產業影響與市場分析】
+    4. 【未來展望與結語】
 
-    請嚴格回傳一個純 JSON 格式（不要包含 markdown 的 ```json 標籤），格式如下：
+    請嚴格回傳純 JSON 格式（不要包含 markdown 的 ```json 標籤）：
     {{
-        "title": "吸引人的繁體中文新聞標題",
-        "summary": "50字左右的簡明摘要 (供列表卡片使用)",
-        "content": "約1500-2000字的深度報導內文，各段落之間請直接用換行分隔"
+        "title": "繁體中文新聞標題",
+        "summary": "50字左右的簡明摘要",
+        "content": "800-1200字的深度報導內文，各段落用換行分隔"
     }}
     """
     for m_name in MODELS_TO_TRY:
@@ -133,7 +133,7 @@ def translate_text(title, summary):
                     url,
                     json=payload,
                     headers={"Content-Type": "application/json"},
-                    timeout=30,
+                    timeout=60,
                 )
 
                 if res.status_code == 200:
@@ -250,7 +250,7 @@ if entries:
 )
 
         if idx < 4:
-            time.sleep(5)
+            time.sleep(10)
 
 os.makedirs("data", exist_ok=True)
 json_path = "data/news.json"
