@@ -1091,7 +1091,7 @@ License: You must have a valid license from official store to legally use the th
         if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
         if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
 
-        // 2. 更新底部 Techno 輪播區塊 (前 6 則新聞)
+       // 2. 更新底部 Techno 輪播區塊 (前 6 則新聞)
         const carouselList = document.getElementById('techno-carousel-list');
         if (carouselList) {
           const top6 = newsList.slice(0, 6); // 取出最新的 6 則新聞
@@ -1101,26 +1101,30 @@ License: You must have a valid license from official store to legally use the th
             const url = `techno-article.html?id=${id}`;
             return `
               <li class="splide__slide">
-                <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden group">
-                  <div class="overflow-hidden h-48">
+                <div class="w-full pb-3 h-full flex flex-col bg-white">
+                  <!-- 🌟 關鍵修復：限制容器高度 h-48 並裁切超出部分 -->
+                  <div class="hover-img bg-white overflow-hidden h-48 w-full flex-shrink-0">
                     <a href="${url}">
-                      <img src="${item.image || ''}" alt="${item.title || ''}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                      <!-- 🌟 關鍵修復：object-cover 確保圖片滿版不拉伸縮放 -->
+                      <img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" src="${item.image || ''}" alt="${item.title || ''}">
                     </a>
                   </div>
-                  <div class="p-4">
-                    <h3 class="font-bold text-base mb-2 line-clamp-2">
+                  <div class="py-3 px-6 flex flex-col flex-grow justify-between">
+                    <h3 class="text-lg font-bold leading-tight mb-2 line-clamp-2">
                       <a href="${url}" class="hover:text-red-600 transition-colors">
                         ${item.title || ''}
                       </a>
                     </h3>
-                    <span class="text-xs text-red-600 font-semibold">| Techno</span>
+                    <a href="${url}" class="text-gray-500 text-xs">
+                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Techno
+                    </a>
                   </div>
                 </div>
               </li>
             `;
           }).join('');
 
-          // 重新初始化/啟動 Splide 輪播組件
+          // 重新初始化 Splide 輪播組件
           if (typeof Splide !== 'undefined') {
             new Splide('#techno-carousel', {
               type       : 'loop',
@@ -1134,6 +1138,7 @@ License: You must have a valid license from official store to legally use the th
               }
             }).mount();
           }
+        }
         }
       })
       .catch(error => {
