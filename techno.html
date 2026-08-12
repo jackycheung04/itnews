@@ -277,7 +277,7 @@ License: You must have a valid license from official store to legally use the th
                 <div class="flex-shrink max-w-full w-full px-3 pb-5">
                   <div class="relative hover-img max-h-98 overflow-hidden">
                     <a href="#">
-                      <img id="hero-img" class="max-w-full w-full mx-auto" src="src/img/dummy/img22.jpg" alt="hero title">
+                      <img id="hero-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="hero title">
                     </a>
                     <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
                       <!--title-->
@@ -517,9 +517,11 @@ License: You must have a valid license from official store to legally use the th
     const heroLink = document.getElementById('hero-link');
 
     if (heroImg) {
-      heroImg.src = getImageUrl(hero);
-      heroImg.alt = hero.title || '';
-    }
+    heroImg.src = getImageUrl(hero);
+    heroImg.alt = hero.title || '';
+    heroImg.classList.remove('opacity-0');
+    heroImg.classList.add('opacity-100');
+}
     if (heroTitle) heroTitle.textContent = hero.title || '';
     if (heroLink) heroLink.href = `techno-article.html?id=${hero.id !== undefined ? hero.id : 0}`;
 
