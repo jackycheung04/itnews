@@ -1094,28 +1094,34 @@ License: You must have a valid license from official store to legally use the th
        // 2. 更新底部 Techno 輪播區塊 (前 6 則新聞)
         const carouselList = document.getElementById('techno-carousel-list');
         if (carouselList) {
-          const top6 = newsList.slice(0, 6); // 取出最新的 6 則新聞
+          const top6 = newsList.slice(0, 6);
           
           carouselList.innerHTML = top6.map(item => {
             const id = item.id !== undefined ? item.id : 0;
             const url = `techno-article.html?id=${id}`;
             return `
               <li class="splide__slide">
-                <div class="w-full pb-3 h-full flex flex-col bg-white">
-                  <!-- 🌟 關鍵修復：限制容器高度 h-48 並裁切超出部分 -->
+                <!-- 全卡片容器：統一背景色和圓角 -->
+                <div class="w-full h-full flex flex-col bg-white rounded overflow-hidden">
+                  
+                  <!-- 🌟 關鍵修復點 1：固定圖片容器高度 h-48 並裁切 -->
                   <div class="hover-img bg-white overflow-hidden h-48 w-full flex-shrink-0">
                     <a href="${url}">
-                      <!-- 🌟 關鍵修復：object-cover 確保圖片滿版不拉伸縮放 -->
-                      <img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" src="${item.image || ''}" alt="${item.title || ''}">
+                      <!-- 🌟 關鍵修復點 2：object-cover 確保圖片齊整填滿容器，不留空白 -->
+                      <img class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" src="${item.image || ''}" alt="${item.title || ''}">
                     </a>
                   </div>
-                  <div class="py-3 px-6 flex flex-col flex-grow justify-between">
-                    <h3 class="text-lg font-bold leading-tight mb-2 line-clamp-2">
-                      <a href="${url}" class="hover:text-red-600 transition-colors">
-                        ${item.title || ''}
-                      </a>
-                    </h3>
-                    <a href="${url}" class="text-gray-500 text-xs">
+
+                  <!-- 內容容器：使用 flex-grow 確保文字部分齊高 -->
+                  <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                      <h3 class="text-base font-bold leading-snug mb-3 line-clamp-2 text-gray-900">
+                        <a href="${url}" class="hover:text-red-600 transition-colors">
+                          ${item.title || ''}
+                        </a>
+                      </h3>
+                    </div>
+                    <a href="${url}" class="text-gray-500 text-xs mt-auto">
                       <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Techno
                     </a>
                   </div>
@@ -1137,8 +1143,8 @@ License: You must have a valid license from official store to legally use the th
                 1024: { perPage: 2 }
               }
             }).mount();
-        }
-        }
+          }
+        } // 結束更新底部 Techno 輪播區塊
       })
       .catch(error => {
         console.error('載入新聞失敗:', error);
