@@ -1,12 +1,39 @@
 [
     {
+        "title": "打破十年性別疆界：Bumble 宣布重大改版，終結「女性優先」強制規則",
+        "summary": "以「女性主動出擊」聞名的交友軟體 Bumble 宣布調整核心機制，正式開放男性亦可發起對話，意圖在激烈的競爭市場中尋求轉型與用戶增長。",
+        "content": "【事件背景與起因】\n自 2014 年由惠特妮·沃爾夫·赫德（Whitney Wolfe Herd）創立以來，Bumble 一直以「賦權女性」為品牌核心價值，並以其獨特的機制——即在異性配對中，必須由女性率先發送訊息，若 24 小時內未回覆則配對失效——在交友軟體市場中建立鮮明的市場定位。這項規則曾被視為對抗網路騷擾、給予女性更多掌控權的革新舉措。然而，隨著全球數位社交習慣的變遷，Bumble 近期面臨用戶成長停滯與股價下滑的壓力。根據公司內部調查顯示，許多用戶反映「強制女性先發話」的規定在節奏快速的現代交友環境中顯得過於繁瑣，甚至造成溝通門檻。為了挽回流失的年輕世代用戶，Bumble 決定放棄這項執行長達十年的招牌規則，試圖在傳統品牌價值與用戶體驗的易用性之間取得平衡。\n\n【核心細節與技術解析】\n此次改版並非完全廢除女性優先的傳統，而是引入了名為「Opening Moves」（開場白）的新功能。在新的系統架構下，用戶可以設置一個特定的問題或開場白，這讓配對成功的雙方能夠有更多元的互動選擇。技術層面上，Bumble 優化了其演算法與訊息傳遞介面，將主動權交還給使用者。現在，男性用戶不僅可以回應女性的「開場白」，在某些設定條件下，亦可直接發送訊息啟動對話。這項變動不僅是介面調整，更涉及後端配對邏輯的重組。透過引導用戶設置有趣的開場問題，Bumble 希望能降低社交焦慮，利用數據驅動的提示來提升配對後的對話完成率。對於開發團隊而言，這是在確保安全性與防騷擾機制的前提下，對平台互動模型進行的重大迭代。\n\n【產業影響與市場分析】\n從市場角度來看，Bumble 此舉是對其核心競爭對手 Tinder 與 Hinge 的直接回應。長期以來，Tinder 憑藉簡單直覺的滑動機制佔據市場龍頭，而 Hinge 則以深度社交為訴求穩步成長。Bumble 原本的「女性優先」策略在品牌初期是絕佳的差異化行銷點，但隨著品牌逐漸成熟，這一策略反而限制了產品的延展性。分析師認為，Bumble 的市場占有率正在遭受排擠，此次改版反映了公司急於尋求增長的壓力。資本市場對此反應謹慎，投資人憂心這是否會淡化 Bumble 的核心品牌特色（Unique Selling Point）。然而，若能透過新機制提升用戶的留存率（Retention Rate）與互動深度，Bumble 或許能成功從「小眾訴求」轉型為更廣泛的大眾化社交平台。\n\n【未來展望與結語】\nBumble 的這次轉向象徵了一個時代的結束，也標誌著數位社交產業進入了更務實的發展階段。在人工智慧與演算法主導的今日，單靠一種社交儀式感已不足以鎖定使用者，更便捷、更高效的配對體驗才是競爭關鍵。未來，Bumble 是否能透過「開場白」功能解決用戶的互動痛點，並在保持原有社群女性友好氛圍的同時，順利容納更廣泛的男性主動需求，將是決定品牌能否重回成長軌道的關鍵。這不僅是一場產品改版，更是一場關於如何在保持初衷與順應市場需求之間尋找平衡的存亡之戰。隨著數位交友文化的持續演進，Bumble 的轉型實驗將成為觀察全球交友軟體產業變遷的重要指標。",
+        "link": "https://techcrunch.com/2026/08/11/bumble-ditches-its-rule-that-kept-men-from-making-the-first-move/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/Bumble-menmessagefirst.png?w=1200",
+        "date": "Tue, 11 Aug 2026 13:59:26 +0000",
+        "id": 0
+    },
+    {
+        "title": "北韓駭客滲透防線：FBI 揭露遠端 IT 員工假冒身份潛入美國政府機構",
+        "summary": "FBI 近期揭露北韓遠端 IT 員工利用偽造身份滲透美國政府機構，透過複雜的詐欺手法竊取企業與政府資源，這顯示遠端工作文化已成為國家級威脅的新突破口。",
+        "content": "【事件背景與起因】\n美國聯邦調查局（FBI）近日發布了一份震撼 IT 產業與政府資安單位的警告，指出北韓當局正透過派遣大量偽裝成「遠端 IT 員工」的人員，成功滲透至美國政府機構以及各類私人企業。這項調查結果顯示，北韓並非僅在遠端進行純粹的駭客攻擊，而是採取了更為隱蔽的「社會工程」手段，直接將代理人安插進目標組織的核心 IT 運作中。根據 FBI 的報告，這些北韓 IT 工作者通常會使用假身分、偽造的學經歷以及竊取的美國公民資料，申請各類專案合約或全職遠端職位。其最終目的除了獲取高薪以規避國際制裁、為北韓核武計畫籌措資金外，更重要的是利用合法員工的身分，獲取機敏內部系統的存取權限，進行長期的情報蒐集與滲透。\n\n【核心細節與技術解析】\n這場滲透行動展現了極高的組織化程度。北韓駭客集團利用名為「筆記型電腦農場（Laptop Farms）」的技術手段，即在北韓或中國境內建立數百台電腦的機房，透過 VPN 技術連接至美國各地的住宅 IP 位址，藉此規避資安系統對異常登入位置的偵測。在面試階段，這些應徵者通常會安排操持流利英語的「代打」參與視訊面試，並使用 AI 生成的虛擬影像技術（Deepfake）來通過生物識別驗證。一旦成功受聘，他們便會與真正的目標單位進行日常工作往來，甚至按時交付程式碼。然而，在這些看似正常的程式碼背後，卻可能隱藏著精心設計的後門（Backdoor）或惡意漏洞，允許北韓當局在未來隨時發動網路攻擊或竊取加密貨幣資產。FBI 強調，這些個體的專業程度極高，能夠完成軟體開發、系統維護等高技術含量工作，這讓企業在缺乏嚴格審核的遠端招聘環境下，幾乎難以察覺其真實身份。\n\n【產業影響與市場分析】\n此事件對全球企業，特別是高度仰賴遠端開發模式的科技產業敲響了警鐘。過去，企業在招聘遠端人才時往往將重點放在技術測試，卻忽略了對員工身份背景的深層查核。這波浪潮暴露了「遠端工作合規性」的巨大漏洞。市場分析指出，這不僅僅是資安問題，更涉及了供應鏈信任的崩塌。若這些駭客掌握了金融、能源或國防等關鍵基礎設施的原始碼，後果不堪設想。此外，加密貨幣交易平台也是這些人員的重點目標，他們曾利用職位便利，直接操縱冷錢包或參與內線交易。隨著這類威脅浮出檯面，預計全球各大企業將開始強化「去中心化身份驗證（DID）」與背景調查流程，而那些標榜「全遠端且不需面訪」的招聘模式，未來恐面臨更嚴格的合規監管壓力，市場對於身份驗證服務（Identity Verification）的需求亦將呈指數級增長。\n\n【未來展望與結語】\n面對國家級別的滲透威脅，單一企業的資安防護已顯得勢單力薄。未來，防範北韓遠端 IT 威脅將成為各國政府與私人企業的共同課題。各機構需採取「零信任架構（Zero Trust Architecture）」，嚴格限制任何遠端連線的存取權限，並引入更為嚴謹的行為分析與身份審核機制。除了技術層面的防禦，國際間的資訊共享機制同樣至關重要。FBI 的此次警示不僅是為了破獲個別案例，更是為了建立全球預警網絡，以遏止北韓非法資金與技術獲取的管道。總結來說，遠端工作雖為人才全球化帶來了效率，但也同時打開了新的安全大門。企業必須在「便利」與「安全」之間重新取得平衡，唯有透過更透明的招聘履歷驗證，以及對內部員工系統存取權限的嚴格控管，才能有效抵禦這類跨國性的組織化威脅，確保關鍵基礎設施不受國家級行為體的惡意操控。",
+        "link": "https://techcrunch.com/2026/08/11/north-korean-remote-it-staffer-worked-for-us-government-agency-says-fbi/",
+        "image": "https://techcrunch.com/wp-content/uploads/2025/03/kim-jong-un-north-korea-tv.jpg?resize=1200,673",
+        "date": "Tue, 11 Aug 2026 13:40:30 +0000",
+        "id": 1
+    },
+    {
+        "title": "重塑串流音樂秩序：Spotify 祭出「AI 人格」標籤，全面封殺生成式音樂入侵推薦演算法",
+        "summary": "Spotify 宣布針對 AI 生成的虛擬藝術家推出「AI Persona」標籤，並將其排除在編輯推薦與演算法之外，旨在維護真人藝術家的創作價值，防範生成式內容氾濫。",
+        "content": "【事件背景與起因】\n近年來，生成式 AI 技術的爆發式成長徹底改變了音樂創作的遊戲規則。只需數個指令，各類平台即可產出模仿特定風格、甚至複製真人聲紋的曲目，導致串流平台上充斥著大量低成本的 AI 生成音樂。這些內容不僅稀釋了傳統音樂人的曝光率，更引發了版權爭議與品質良莠不齊的擔憂。Spotify 作為全球最大的音訊串流平台，長期以來致力於連結藝術家與聽眾，然而「演算法」原本用於發掘潛力新星的機制，正逐漸被大量 AI 自動化內容淹沒。此次 Spotify 推出的「AI Persona」標籤計畫，正是為了應對音樂市場日益嚴峻的「人工 vs. 數位」分水嶺，試圖在技術創新與藝術家權益保護之間取得平衡，防止平台淪為垃圾資訊與低品質生成物的溫床。\n\n【核心細節與技術解析】\nSpotify 的這項新政策核心在於透明度與隔離機制。新推出的「AI Persona」標籤將直接顯示於藝術家的個人檔案頁面上，讓聽眾在點擊播放前即可辨識該音樂人是否為 AI 產物。更關鍵的是，Spotify 將透過後端演算法過濾，將這些標示為「AI Persona」的內容從其強大的編輯推薦系統（Editorial Playlists）以及個人化推薦演算法（如 Discover Weekly, Release Radar）中剔除。這意味著，AI 生成的虛擬藝術家將失去進入大眾主流視野的關鍵途徑。在技術實作上，Spotify 可能會結合音樂內容特徵偵測與藝術家後台登錄審核，確保 AI 生成內容的標註準確性。此舉並非禁止 AI 音樂存在，而是將其歸入「非主流」區域，確保演算法推薦資源能優先供給人類藝術家，維持音樂市場的生態純淨。\n\n【產業影響與市場分析】\n此舉對音樂產業鏈將產生深遠影響。首先，這對專業音樂人而言是一項利多，能夠緩解他們在演算法競爭中遭受 AI 淹沒的焦慮感，保障了創作價值的辨識度。其次，對於音樂發行商與廠牌來說，這意味著「AI 代工」的商業模式面臨了巨大的天花板，靠量產 AI 音樂來獲取串流分潤的「刷榜」策略將面臨失效。然而，市場分析也指出，此舉可能引發部分 AI 創作者的反彈，認為這構成了對新型態藝術創作的歧視。此外，隨著 AI 逐漸成為專業創作輔助工具，如何界定「完全由 AI 生成」與「AI 輔助創作」的邊界，將成為 Spotify 下一步面臨的法規與技術挑戰。這項決策同時也暗示了 Spotify 採取了一種「防禦性策略」，優先保護其音樂版權合作夥伴（各大唱片公司）的利益，以避免平台生態過度數位化而喪失情感連結這一核心競爭力。\n\n【未來展望與結語】\nSpotify 的這項政策不僅僅是針對 AI 的管制，更是串流音樂產業治理邁向成熟的里程碑。它釋出了一個清晰的訊號：即使科技進步，人類的創作靈魂與情感連結依然是平台的護城河。展望未來，AI 與音樂產業的整合已是不可逆的趨勢，但這種整合必須建立在透明、公平與尊重藝術價值的框架之上。預期未來其他競爭平台如 Apple Music 或 YouTube Music 也將跟進類似的標示或治理政策。這場「真人 vs. AI」的拉鋸戰不會因這項標籤計畫而結束，反而會促使音樂產業開始思考如何建立更精細的權利歸屬與分潤機制。對於聽眾而言，這意味著我們將迎來一個更具備辨識能力的數位音樂環境，而在人工智慧飛速迭代的時代，這份「確認來源」的權力，或許正是維護音樂藝術初心的最後一道防線。",
+        "link": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/AI-Personas-Header.jpg?resize=1200,683",
+        "date": "Tue, 11 Aug 2026 13:00:00 +0000",
+        "id": 2
+    },
+    {
         "title": "萬米高空的資安警報：達美航空遭遇「邪惡雙子」Wi-Fi 攻擊事件深度剖析",
         "summary": "達美航空一架航班發生空中架設假 Wi-Fi 熱點事件。此舉引發資安界對機上網路環境安全性的高度關注，並促使業界重新檢視航空通訊與乘客數據的防護機制。",
         "content": "【事件背景與起因】\n近日，達美航空（Delta Air Lines）經歷了一場罕見且令人不安的飛航資安事件。據媒體報導，一架處於飛行途中的客機上，竟出現了一個由不明人士惡意架設的假 Wi-Fi 熱點。該熱點企圖誘使機上乘客連結，以獲取未經授權的網路存取權限。為了防範潛在的資安威脅，達美航空機組人員在察覺異常後，不得不採取緊急措施，將飛機上合法的機上 Wi-Fi 系統暫時關閉約 30 分鐘，以切斷攻擊者的操作空間。雖然目前無證據顯示乘客的私人數據遭到大量外洩，但此事件已在航空業與資安社群引發軒然大波。這不僅是單純的技術搗亂，更暴露了在封閉的飛行空間內，個人行動裝置與公共網路連結時所面臨的結構性脆弱點。\n\n【核心細節與技術解析】\n從資安技術的角度觀察，這極可能是一起典型的「邪惡雙子」（Evil Twin）攻擊。攻擊者通常會攜帶輕便且具備無線訊號發射功能的硬體設備（如搭載 Wi-Fi Pineapple 或修改過的 Raspberry Pi 等微型電腦），在機艙內模擬出一個與航空公司官方 Wi-Fi 名稱極為相似的熱點。當乘客為了追求便利而忽略名稱細微差異，或誤連到訊號強度更強的假熱點時，攻擊者便可執行「中間人攻擊」（Man-in-the-Middle, MitM）。透過這種方式，攻擊者能即時監控、側錄，甚至竄改乘客傳輸的數據包。在飛行途中，由於所有乘客處於密閉的區域網路內，一旦攻擊者成功植入釣魚頁面或竊取身分認證資訊，其破壞力遠高於地面的公共場所。達美航空此次快速切斷網路的決定，雖然影響了乘客體驗，卻是阻斷攻擊傳播路徑最有效的防禦手段。\n\n【產業影響與市場分析】\n此事件為全球航空業敲響了資安警鐘。長期以來，機上 Wi-Fi 的核心邏輯在於「開放式存取」，雖然部分航空公司採取了計費或認證登入機制，但在訊號安全層面的防禦部署往往落後於地面的企業網路。隨著數位轉型，機上購物、機上娛樂串流以及乘客攜帶裝置辦公已成常態，高敏感數據在機艙內的流動量劇增。資安專家指出，航空公司必須重新定義機上網路的邊界安全，例如強制採用更高等級的加密協定（如 WPA3），並導入更嚴格的偵測系統（IDS/IPS），即時掃描並隔離機艙內的異常頻譜行為。此外，若航空公司無法保證網路連結的絕對安全性，未來可能面臨嚴格的監管稽核，甚至損及品牌的乘客信任度。\n\n【未來展望與結語】\n面對日益複雜的機上網路威脅，航空公司的安全防禦不能僅止於「發現異常後斷網」的被動反應。未來，航空硬體供應商應考慮開發更具防禦性的機上路由器，內建對抗「邪惡雙子」攻擊的頻譜分析功能，能夠在偵測到未授權的同名熱點時自動干擾或強制排除。同時，對於乘客而言，這起事件也是一記沈重的提醒：在任何公共場所，包括萬米高空，使用免費或看似官方的 Wi-Fi 時，務必保持戒心，盡量使用 VPN（虛擬私人網路）進行加密連線。達美航空此次事件雖然未演變成災難性的數據洩漏，但它提醒了全球運輸業者，隨著飛行體驗數位化，資安已成為航空安全中不可或缺的「第五維度」。唯有透過硬體防護升級、主動監測機制及乘客資安意識的同步提升，才能確保在科技便利與個人隱私之間取得平衡。",
         "link": "https://techcrunch.com/2026/08/11/delta-investigating-after-someone-set-up-fake-wi-fi-network-mid-flight/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/delta-wi-fi-sign-plane.jpg?resize=1200,679",
         "date": "Tue, 11 Aug 2026 15:40:46 +0000",
-        "id": 0
+        "id": 3
     },
     {
         "title": "現象級手遊《Block Blast!》登陸 Apple Arcade：不僅是去廣告，更是一場訂閱制的價值轉型",
@@ -15,7 +42,7 @@
         "link": "https://techcrunch.com/2026/08/11/2025s-most-downloaded-game-block-blast-is-going-ad-free-on-apple-arcade/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/Apple-Arcade-Puzzle-Block-Blast-plus_inline.jpg.large_2x.jpg?resize=856,1200",
         "date": "Tue, 11 Aug 2026 15:33:59 +0000",
-        "id": 1
+        "id": 4
     },
     {
         "title": "豪賭智慧移動未來：Rivian 執行長 RJ Scaringe 如何佈局電動車、機器人與自動駕駛的整合藍圖",
@@ -24,7 +51,7 @@
         "link": "https://techcrunch.com/2026/08/11/rivian-ceo-rj-scaringe-is-betting-on-evs-robots-and-autonomy-all-at-once-hell-explain-why-at-disrupt-2026/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/RJ-Scaringe-Disrupt-Stage-2026.png?w=1200",
         "date": "Tue, 11 Aug 2026 15:30:00 +0000",
-        "id": 2
+        "id": 5
     },
     {
         "title": "預測市場的法律邊界：FlightAware 對決 Kalshi，數據授權與博弈平台的權利角力",
@@ -33,7 +60,7 @@
         "link": "https://techcrunch.com/2026/08/11/flightaware-sues-kalshi-over-flight-cancellation-prediction-markets/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/flightaware-sues-kalshi.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 15:23:58 +0000",
-        "id": 3
+        "id": 6
     },
     {
         "title": "核融合能源里程碑：Kyoto Fusioneering 啟動關鍵燃料循環裝置開發，領跑商業化進程",
@@ -42,7 +69,7 @@
         "link": "https://techcrunch.com/2026/08/11/kyoto-fusioneering-starts-work-on-key-fusion-power-plant-device/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/UNITY-3-kyoto-fusioneering.jpg?resize=1200,675",
         "date": "Tue, 11 Aug 2026 15:00:00 +0000",
-        "id": 4
+        "id": 7
     },
     {
         "title": "名人光環下的數位灰區：Phoebe Gates 與 Sophia Kianni 的創業項目 Phia 捲入「Cookie Stuffing」爭議",
@@ -51,7 +78,7 @@
         "link": "https://techcrunch.com/2026/08/11/phoebe-gates-and-sophia-kianni-reportedly-knew-phia-was-cookie-stuffing-for-months/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2264853771.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 21:39:58 +0000",
-        "id": 5
+        "id": 8
     },
     {
         "title": "創投寒冬中的熱錢奇蹟：Accel 宣布完成 5.5 億美元印度基金募資，深度解讀其戰略佈局",
@@ -60,7 +87,7 @@
         "link": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/accel.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 21:39:11 +0000",
-        "id": 6
+        "id": 9
     },
     {
         "title": "Uber 撤資機器人新創 Serve Robotics：結盟關係生變，外送自動化布局進入分水嶺",
@@ -69,7 +96,7 @@
         "link": "https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/",
         "image": "https://techcrunch.com/wp-content/uploads/2022/05/Serve-Uber-Eats.jpg?resize=1200,801",
         "date": "Tue, 11 Aug 2026 20:02:02 +0000",
-        "id": 7
+        "id": 10
     },
     {
         "title": "FBI 示警：網路勒索手法升級，駭客入侵個人帳戶竊取私密影像進行恐嚇",
@@ -78,7 +105,7 @@
         "link": "https://techcrunch.com/2026/08/11/fbi-says-cybercriminals-are-hacking-into-victims-online-accounts-to-steal-their-intimate-pictures/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/teenagers-smartphones.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 19:38:23 +0000",
-        "id": 8
+        "id": 11
     },
     {
         "title": "打破平台藩籬：OpenAI 正式推出 ChatGPT Linux 桌面客戶端，重塑開源開發者體驗",
@@ -87,7 +114,7 @@
         "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 19:15:35 +0000",
-        "id": 9
+        "id": 12
     },
     {
         "title": "AI 賽道新里程碑：Google Gemini 用戶數突破 10 億，語音交互成互動核心",
@@ -96,7 +123,7 @@
         "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 18:49:12 +0000",
-        "id": 10
+        "id": 13
     },
     {
         "title": "去中心化社交的迷途與轉型：Bluesky 用戶增長放緩背後的戰略博弈",
@@ -105,7 +132,7 @@
         "link": "https://techcrunch.com/2026/08/11/blueskys-active-user-base-is-shrinking-as-its-focus-expands-beyond-the-app/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/01/bluesky-GettyImages-2185144073.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:46:14 +0000",
-        "id": 11
+        "id": 14
     },
     {
         "title": "What’s Scaleup Europe, the $5.7B fund that just backed satellite company ICEYE?",
@@ -114,7 +141,7 @@
         "link": "https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1066714342.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 17:41:49 +0000",
-        "id": 12
+        "id": 15
     },
     {
         "title": "OpenAI 高層再洗牌：營運長 Brad Lightcap 離職，開啟 AI 產業人才流動新篇章",
@@ -123,7 +150,7 @@
         "link": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/brad-lightcap-GettyImages-2147824375-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:41:34 +0000",
-        "id": 13
+        "id": 16
     },
     {
         "title": "AI 領域的震撼彈：River AI 甫成立兩月即獲 11 億美元融資，重新定義個人化代理技術",
@@ -132,7 +159,7 @@
         "link": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/River-AI-Igor-Babuschkin.jpeg?resize=1197,1200",
         "date": "Tue, 11 Aug 2026 17:41:22 +0000",
-        "id": 14
+        "id": 17
     },
     {
         "title": "AI 挑戰世紀難題：Anthropic 未發表模型在「黎曼猜想」驗證取得突破性進展",
@@ -141,7 +168,7 @@
         "link": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 16:25:20 +0000",
-        "id": 15
+        "id": 18
     },
     {
         "title": "深耕國防版圖：Joby Aviation 收購 Resonant Sciences，強攻軍用空中載具市場",
@@ -150,7 +177,7 @@
         "link": "https://techcrunch.com/2026/08/11/joby-aviation-builds-out-defense-business-with-500m-acquisition/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/joby-flight-2.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 16:06:08 +0000",
-        "id": 16
+        "id": 19
     },
     {
         "title": "名人光環背後的道德爭議：Phoebe Gates 創辦的 Phia 遭控涉及「Cookie Stuffing」獲利醜聞",
@@ -159,7 +186,7 @@
         "link": "https://techcrunch.com/2026/08/11/phoebe-gates-and-sophia-kianni-reportedly-knew-phia-was-cookie-stuffing-for-months/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2264853771.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 21:39:58 +0000",
-        "id": 17
+        "id": 20
     },
     {
         "title": "創投寒冬中的奇蹟：Accel 閃電募資 5.5 億美元，展現對印度科技生態的堅定信心",
@@ -168,7 +195,7 @@
         "link": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/accel.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 21:39:11 +0000",
-        "id": 18
+        "id": 21
     },
     {
         "title": "Uber 閃電拋售 Serve Robotics 全部股權：自動配送領域的戰略分歧與技術博弈",
@@ -177,7 +204,7 @@
         "link": "https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/",
         "image": "https://techcrunch.com/wp-content/uploads/2022/05/Serve-Uber-Eats.jpg?resize=1200,801",
         "date": "Tue, 11 Aug 2026 20:02:02 +0000",
-        "id": 19
+        "id": 22
     },
     {
         "title": "FBI 發布緊急安全警告：網路犯罪份子鎖定私人影像，擴大勒索詐騙手段",
@@ -186,7 +213,7 @@
         "link": "https://techcrunch.com/2026/08/11/fbi-says-cybercriminals-are-hacking-into-victims-online-accounts-to-steal-their-intimate-pictures/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/teenagers-smartphones.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 19:38:23 +0000",
-        "id": 20
+        "id": 23
     },
     {
         "title": "Linux 生態系里程碑：OpenAI 正式推出 ChatGPT 原生桌面應用程式",
@@ -195,7 +222,7 @@
         "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 19:15:35 +0000",
-        "id": 21
+        "id": 24
     },
     {
         "title": "邁向十億用戶里程碑：Google Gemini 如何重塑 AI 互動生態與商業戰略",
@@ -204,7 +231,7 @@
         "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 18:49:12 +0000",
-        "id": 22
+        "id": 25
     },
     {
         "title": "Bluesky’s active user base is shrinking as its focus expands beyond the app",
@@ -213,7 +240,7 @@
         "link": "https://techcrunch.com/2026/08/11/blueskys-active-user-base-is-shrinking-as-its-focus-expands-beyond-the-app/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/01/bluesky-GettyImages-2185144073.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:46:14 +0000",
-        "id": 23
+        "id": 26
     },
     {
         "title": "歐洲戰略自主新佈局：深度解析 57 億美元規模基金 Scaleup Europe 與其首投標的 ICEYE",
@@ -222,7 +249,7 @@
         "link": "https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1066714342.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 17:41:49 +0000",
-        "id": 24
+        "id": 27
     },
     {
         "title": "OpenAI 高層人事大地震：營運長 Brad Lightcap 宣告離職，創始核心成員接連出走引關注",
@@ -231,7 +258,7 @@
         "link": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/brad-lightcap-GettyImages-2147824375-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:41:34 +0000",
-        "id": 25
+        "id": 28
     },
     {
         "title": "AI 領域史無前例的豪賭：River AI 甫成立兩月即斬獲 11 億美元融資，重塑個人代理新賽道",
@@ -240,7 +267,7 @@
         "link": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/River-AI-Igor-Babuschkin.jpeg?resize=1197,1200",
         "date": "Tue, 11 Aug 2026 17:41:22 +0000",
-        "id": 26
+        "id": 29
     },
     {
         "title": "人工智慧挑戰數學聖杯：Anthropic 未發布模型在「黎曼猜想」研究取得重大突破",
@@ -249,7 +276,7 @@
         "link": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 16:25:20 +0000",
-        "id": 27
+        "id": 30
     },
     {
         "title": "Joby Aviation builds out defense business with $500M acquisition",
@@ -258,7 +285,7 @@
         "link": "https://techcrunch.com/2026/08/11/joby-aviation-builds-out-defense-business-with-500m-acquisition/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/joby-flight-2.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 16:06:08 +0000",
-        "id": 28
+        "id": 31
     },
     {
         "title": "Phia 陷入「網頁劫持」爭議：Phoebe Gates 與 Sophia Kianni 如何應對商業倫理危機？",
@@ -267,7 +294,7 @@
         "link": "https://techcrunch.com/2026/08/11/phoebe-gates-and-sophia-kianni-reportedly-knew-phia-was-cookie-stuffing-for-months/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2264853771.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 21:39:58 +0000",
-        "id": 29
+        "id": 32
     },
     {
         "title": "創投寒冬下的逆勢突圍：Accel 完成 5.5 億美元印度基金募資，深度解讀其背後的戰略佈局",
@@ -276,7 +303,7 @@
         "link": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/accel.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 21:39:11 +0000",
-        "id": 30
+        "id": 33
     },
     {
         "title": "Uber surprised robotics company Serve by selling its entire stake",
@@ -285,7 +312,7 @@
         "link": "https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/",
         "image": "https://techcrunch.com/wp-content/uploads/2022/05/Serve-Uber-Eats.jpg?resize=1200,801",
         "date": "Tue, 11 Aug 2026 20:02:02 +0000",
-        "id": 31
+        "id": 34
     },
     {
         "title": "FBI 發布重磅資安警告：駭客鎖定雲端帳號，奪取私密影像進行勒索",
@@ -294,7 +321,7 @@
         "link": "https://techcrunch.com/2026/08/11/fbi-says-cybercriminals-are-hacking-into-victims-online-accounts-to-steal-their-intimate-pictures/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/teenagers-smartphones.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 19:38:23 +0000",
-        "id": 32
+        "id": 35
     },
     {
         "title": "跨越系統藩籬：OpenAI 正式推出 Linux 版 ChatGPT 桌面應用程式",
@@ -303,7 +330,7 @@
         "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 19:15:35 +0000",
-        "id": 33
+        "id": 36
     },
     {
         "title": "邁向十億用戶里程碑：Google Gemini 如何重塑 AI 互動生態與商業佈局",
@@ -312,7 +339,7 @@
         "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 18:49:12 +0000",
-        "id": 34
+        "id": 37
     },
     {
         "title": "去中心化社交的隱憂：Bluesky 活躍用戶數下滑，正尋求從 App 轉型為技術架構底層",
@@ -321,7 +348,7 @@
         "link": "https://techcrunch.com/2026/08/11/blueskys-active-user-base-is-shrinking-as-its-focus-expands-beyond-the-app/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/01/bluesky-GettyImages-2185144073.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:46:14 +0000",
-        "id": 35
+        "id": 38
     },
     {
         "title": "歐洲戰略自主新篇章：Scaleup Europe 啟動 57 億美元基金，首筆重押衛星先驅 ICEYE",
@@ -330,7 +357,7 @@
         "link": "https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1066714342.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 17:41:49 +0000",
-        "id": 36
+        "id": 39
     },
     {
         "title": "OpenAI 核心架構再洗牌：營運長 Brad Lightcap 離職引發人工智慧產業震盪",
@@ -339,7 +366,7 @@
         "link": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/brad-lightcap-GettyImages-2147824375-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:41:34 +0000",
-        "id": 37
+        "id": 40
     },
     {
         "title": "AI 創投圈震撼彈：River AI 成立僅兩月獲 11 億美元融資，xAI 共同創辦人再戰個人代理技術",
@@ -348,7 +375,7 @@
         "link": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/River-AI-Igor-Babuschkin.jpeg?resize=1197,1200",
         "date": "Tue, 11 Aug 2026 17:41:22 +0000",
-        "id": 38
+        "id": 41
     },
     {
         "title": "人工智慧挑戰百年數學謎題：Anthropic 未公開模型在「黎曼猜想」研究取得重大突破",
@@ -357,7 +384,7 @@
         "link": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 16:25:20 +0000",
-        "id": 39
+        "id": 42
     },
     {
         "title": "深耕國防版圖：Joby Aviation 以 5 億美元收購 Resonant Sciences，搶攻 eVTOL 軍事應用市場",
@@ -366,6 +393,6 @@
         "link": "https://techcrunch.com/2026/08/11/joby-aviation-builds-out-defense-business-with-500m-acquisition/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/joby-flight-2.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 16:06:08 +0000",
-        "id": 40
+        "id": 43
     }
 ]
