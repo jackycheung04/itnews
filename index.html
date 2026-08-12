@@ -480,102 +480,14 @@ License: You must have a valid license from official store to legally use the th
             <div class="flex-shrink max-w-full w-full py-12 overflow-hidden">
               <div class="w-full py-3">
                 <h2 class="text-white text-2xl font-bold text-shadow-black">
-                  <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>American
+                  <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Techno
                 </h2>
               </div>
-              <div id="post-carousel" class="splide post-carousel">
+              <div id="techno-carousel" class="splide post-carousel">
                 <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="w-full pb-3">
-                        <div class="hover-img bg-white">
-                          <a href="">
-                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/img14.jpg" alt="alt title">
-                          </a>
-                          <div class="py-3 px-6">
-                            <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                            </h3>
-                            <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="w-full pb-3">
-                        <div class="hover-img bg-white">
-                          <a href="">
-                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/img15.jpg" alt="alt title">
-                          </a>
-                          <div class="py-3 px-6">
-                            <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                            </h3>
-                            <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="w-full pb-3">
-                        <div class="hover-img bg-white">
-                          <a href="">
-                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/img16.jpg" alt="alt title">
-                          </a>
-                          <div class="py-3 px-6">
-                            <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                            </h3>
-                            <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="w-full pb-3">
-                        <div class="hover-img bg-white">
-                          <a href="">
-                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/img17.jpg" alt="alt title">
-                          </a>
-                          <div class="py-3 px-6">
-                            <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                            </h3>
-                            <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="w-full pb-3">
-                        <div class="hover-img bg-white">
-                          <a href="">
-                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/img18.jpg" alt="alt title">
-                          </a>
-                          <div class="py-3 px-6">
-                            <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                            </h3>
-                            <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="w-full pb-3">
-                        <div class="hover-img bg-white">
-                          <a href="">
-                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/img1.jpg" alt="alt title">
-                          </a>
-                          <div class="py-3 px-6">
-                            <h3 class="text-lg font-bold leading-tight mb-2">
-                              <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                            </h3>
-                            <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
+                  <ul class="splide__list" id="techno-carousel-list">
+                    
+                      
                   </ul>
                 </div>
               </div>
@@ -1154,49 +1066,77 @@ License: You must have a valid license from official store to legally use the th
   <!-- <script src="dist/js/scripts.js"></script> -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // 加上時間戳記 (?t=...) 強制 GitHub Pages 抓取最新檔案，避免被快取卡住
+    // 加上時間戳記強制抓取最新新聞
     fetch('data/news.json?t=' + new Date().getTime())
       .then(response => {
-        if (!response.ok) {
-          throw new Error("找不到 news.json 檔案");
-        }
+        if (!response.ok) throw new Error("找不到 news.json 檔案");
         return response.json();
       })
       .then(newsList => {
-        const titleEl = document.getElementById('techno-title');
-        
-        // 如果抓到的資料是空的
-        if (!newsList || newsList.length === 0) {
-          if (titleEl) titleEl.innerText = "目前沒有新聞，請檢查資料來源";
-          return;
-        }
+        if (!newsList || newsList.length === 0) return;
 
+        // 1. 更新頂部 Techno 大卡片 (最新第 1 則)
         const latestNews = newsList[0];
+        const titleEl = document.getElementById('techno-title');
         const linkEl = document.getElementById('techno-link');
         const titleLinkEl = document.getElementById('techno-title-link');
         const imgEl = document.getElementById('techno-img');
 
-        // 填入標題與圖片
         if (titleEl && latestNews.title) titleEl.innerText = latestNews.title;
         if (imgEl && latestNews.image) imgEl.src = latestNews.image;
 
-        // 🌟 核心修改：改為指向站內長文章分頁，並在同分頁開啟
         const articleId = latestNews.id !== undefined ? latestNews.id : 0;
         const internalUrl = `techno-article.html?id=${articleId}`;
 
-        if (linkEl) { 
-          linkEl.href = internalUrl; 
-          linkEl.removeAttribute('target'); 
-        }
-        if (titleLinkEl) { 
-          titleLinkEl.href = internalUrl; 
-          titleLinkEl.removeAttribute('target'); 
+        if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
+        if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
+
+        // 2. 更新底部 Techno 輪播區塊 (前 6 則新聞)
+        const carouselList = document.getElementById('techno-carousel-list');
+        if (carouselList) {
+          const top6 = newsList.slice(0, 6); // 取出最新的 6 則新聞
+          
+          carouselList.innerHTML = top6.map(item => {
+            const id = item.id !== undefined ? item.id : 0;
+            const url = `techno-article.html?id=${id}`;
+            return `
+              <li class="splide__slide">
+                <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden group">
+                  <div class="overflow-hidden h-48">
+                    <a href="${url}">
+                      <img src="${item.image || ''}" alt="${item.title || ''}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-base mb-2 line-clamp-2">
+                      <a href="${url}" class="hover:text-red-600 transition-colors">
+                        ${item.title || ''}
+                      </a>
+                    </h3>
+                    <span class="text-xs text-red-600 font-semibold">| Techno</span>
+                  </div>
+                </div>
+              </li>
+            `;
+          }).join('');
+
+          // 重新初始化/啟動 Splide 輪播組件
+          if (typeof Splide !== 'undefined') {
+            new Splide('#techno-carousel', {
+              type       : 'loop',
+              perPage    : 3,
+              perMove    : 1,
+              gap        : '1.25rem',
+              pagination : false,
+              breakpoints: {
+                768: { perPage: 1 },
+                1024: { perPage: 2 }
+              }
+            }).mount();
+          }
         }
       })
       .catch(error => {
-        // 如果發生錯誤，直接將錯誤訊息顯示在新聞標題上
-        const titleEl = document.getElementById('techno-title');
-        if (titleEl) titleEl.innerText = "載入錯誤：" + error.message;
         console.error('載入新聞失敗:', error);
       });
   });
