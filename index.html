@@ -1180,20 +1180,21 @@ License: You must have a valid license from official store to legally use the th
         if (titleEl && latestNews.title) titleEl.innerText = latestNews.title;
         if (imgEl && latestNews.image) imgEl.src = latestNews.image;
 
-        // 確保真的有連結，才加上 target="_blank" (這樣才不會點了狂開空分頁)
-        if (latestNews.link && latestNews.link !== "#") {
-          if (linkEl) { 
-            linkEl.href = latestNews.link; 
-            linkEl.target = "_blank"; 
-          }
-          if (titleLinkEl) { 
-            titleLinkEl.href = latestNews.link; 
-            titleLinkEl.target = "_blank"; 
-          }
+        // 🌟 核心修改：改為指向站內長文章分頁，並在同分頁開啟
+        const articleId = latestNews.id !== undefined ? latestNews.id : 0;
+        const internalUrl = `techno-article.html?id=${articleId}`;
+
+        if (linkEl) { 
+          linkEl.href = internalUrl; 
+          linkEl.removeAttribute('target'); 
+        }
+        if (titleLinkEl) { 
+          titleLinkEl.href = internalUrl; 
+          titleLinkEl.removeAttribute('target'); 
         }
       })
       .catch(error => {
-        // 如果發生錯誤，直接將錯誤訊息顯示在新聞標題上，方便你一眼看出問題！
+        // 如果發生錯誤，直接將錯誤訊息顯示在新聞標題上
         const titleEl = document.getElementById('techno-title');
         if (titleEl) titleEl.innerText = "載入錯誤：" + error.message;
         console.error('載入新聞失敗:', error);
