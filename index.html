@@ -1091,7 +1091,7 @@ License: You must have a valid license from official store to legally use the th
         if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
         if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
 
-        // 2. 更新底部 Techno 輪播區塊 (強制硬性限制圖片高度 180px 與裁切)
+        // 2. 更新底部 Techno 輪播區塊 (恢復圖 2 的大圖片黃金比例)
         const carouselList = document.getElementById('techno-carousel-list');
         if (carouselList) {
           const top6 = newsList.slice(0, 6);
@@ -1101,30 +1101,32 @@ License: You must have a valid license from official store to legally use the th
             const url = `techno-article.html?id=${id}`;
             return `
               <li class="splide__slide">
-                <div class="bg-white rounded overflow-hidden shadow-sm" style="display: flex; flex-direction: column; height: 100%;">
-                  <!-- 圖片容器：硬性固定高度 180px -->
-                  <div style="height: 180px !important; width: 100% !important; overflow: hidden !important; position: relative !important; flex-shrink: 0 !important;">
+                <div class="w-full pb-3 bg-white">
+                  <!-- 圖片容器：使用 aspect-ratio: 16/10 恢復圖 2 的圖片高度與比例 -->
+                  <div class="hover-img bg-white overflow-hidden" style="width: 100%;">
                     <a href="${url}">
-                      <!-- <img> 強制最高優先權 (style + !important)，無視所有外部 CSS -->
                       <img src="${item.image || ''}" alt="${item.title || ''}" 
-                           style="width: 100% !important; height: 180px !important; max-height: 180px !important; object-fit: cover !important; display: block !important;">
+                           class="w-full transition-transform duration-300 hover:scale-105"
+                           style="width: 100% !important; aspect-ratio: 16 / 10 !important; object-fit: cover !important; display: block !important;">
                     </a>
                   </div>
-                  <!-- 文字區塊 -->
-                  <div class="p-4" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
-                    <h3 class="font-bold text-base mb-2 line-clamp-2" style="color: #111827;">
+                  <!-- 下方文字區塊 (完全還原圖 2 的排版與字體大小) -->
+                  <div class="py-3 px-6 bg-white">
+                    <h3 class="text-lg font-bold leading-tight mb-2 line-clamp-2">
                       <a href="${url}" class="hover:text-red-600 transition-colors">
                         ${item.title || ''}
                       </a>
                     </h3>
-                    <span class="text-xs text-red-600 font-semibold" style="margin-top: auto;">| Techno</span>
+                    <a href="${url}" class="text-gray-500 text-xs">
+                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Techno
+                    </a>
                   </div>
                 </div>
               </li>
             `;
           }).join('');
 
-          // 重新初始化/啟動 Splide 輪播組件
+          // 重新初始化 Splide 輪播組件
           if (typeof Splide !== 'undefined') {
             new Splide('#techno-carousel', {
               type       : 'loop',
