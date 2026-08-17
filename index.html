@@ -302,22 +302,26 @@ License: You must have a valid license from official store to legally use the th
           </div>
         </article>
 
-        <!-- 第一行右：Architecture -->
-        <article class="flex-shrink max-w-full w-full sm:w-1/2 px-3 mb-4">
-          <div class="relative hover-img max-h-48 overflow-hidden rounded-lg">
-            <a href="#">
-              <img class="max-w-full w-full mx-auto h-auto object-cover" src="src/img/dummy/img3.jpg" alt="Image description">
-            </a>
-            <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
-              <a href="#">
-                <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Minimalist Designs Are Starting To Be Popular With The Next Generation</h2>
-              </a>
-              <div class="pt-1">
-                <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div><span>Architecture</span></div>
-              </div>
-            </div>
-          </div>
-        </article>
+        <!-- 第一行右：Ecosystem -->
+<article class="flex-shrink max-w-full w-full sm:w-1/2 px-3 mb-4">
+  <div class="relative hover-img max-h-48 overflow-hidden rounded-lg">
+    <a id="ecosystem-link" href="#">
+      <img id="ecosystem-img" class="max-w-full w-full mx-auto h-auto object-cover" src="src/img/dummy/img3.jpg" alt="Ecosystem">
+    </a>
+    <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+      <a id="ecosystem-title-link" href="#">
+        <h2 id="ecosystem-title" class="text-lg font-bold capitalize leading-tight text-white mb-1">載入中...</h2>
+      </a>
+      <div class="pt-1">
+        <div class="text-gray-100">
+          <a id="ecosystem-tag-link" href="ecosystem.html">
+            <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div><span>Ecosystem</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
 
         <!-- 第二行左：Interior -->
         <article class="flex-shrink max-w-full w-full sm:w-1/2 px-3 mb-4">
@@ -1075,26 +1079,31 @@ License: You must have a valid license from official store to legally use the th
       .then(newsList => {
         if (!newsList || newsList.length === 0) return;
 
-        // 1. 更新頂部 Techno 大卡片 (最新第 1 則)
-        const latestNews = newsList[0];
-        const titleEl = document.getElementById('techno-title');
-        const linkEl = document.getElementById('techno-link');
-        const titleLinkEl = document.getElementById('techno-title-link');
-        const imgEl = document.getElementById('techno-img');
+        // ==========================================
+        // 1. Techno 區塊處理
+        // ==========================================
+        const technoNews = newsList.filter(item => !item.category || item.category === 'Techno');
+        if (technoNews.length > 0) {
+          const latestNews = technoNews[0];
+          const titleEl = document.getElementById('techno-title');
+          const linkEl = document.getElementById('techno-link');
+          const titleLinkEl = document.getElementById('techno-title-link');
+          const imgEl = document.getElementById('techno-img');
 
-        if (titleEl && latestNews.title) titleEl.innerText = latestNews.title;
-        if (imgEl && latestNews.image) imgEl.src = latestNews.image;
+          if (titleEl && latestNews.title) titleEl.innerText = latestNews.title;
+          if (imgEl && latestNews.image) imgEl.src = latestNews.image;
 
-        const articleId = latestNews.id !== undefined ? latestNews.id : 0;
-        const internalUrl = `techno-article.html?id=${articleId}`;
+          const articleId = latestNews.id !== undefined ? latestNews.id : 0;
+          const internalUrl = `techno-article.html?id=${articleId}`;
 
-        if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
-        if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
+          if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
+          if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
+        }
 
-        // 2. 更新底部 Techno 輪播區塊 (恢復圖 2 的大圖片黃金比例)
+        // 底部 Techno 輪播列表
         const carouselList = document.getElementById('techno-carousel-list');
-        if (carouselList) {
-          const top6 = newsList.slice(0, 6);
+        if (carouselList && technoNews.length > 0) {
+          const top6 = technoNews.slice(0, 6);
           
           carouselList.innerHTML = top6.map(item => {
             const id = item.id !== undefined ? item.id : 0;
@@ -1102,7 +1111,6 @@ License: You must have a valid license from official store to legally use the th
             return `
               <li class="splide__slide">
                 <div class="w-full pb-3 bg-white">
-                  <!-- 圖片容器：使用 aspect-ratio: 16/10 恢復圖 2 的圖片高度與比例 -->
                   <div class="hover-img bg-white overflow-hidden" style="width: 100%;">
                     <a href="${url}">
                       <img src="${item.image || ''}" alt="${item.title || ''}" 
@@ -1110,7 +1118,6 @@ License: You must have a valid license from official store to legally use the th
                            style="width: 100% !important; aspect-ratio: 16 / 10 !important; object-fit: cover !important; display: block !important;">
                     </a>
                   </div>
-                  <!-- 下方文字區塊 (完全還原圖 2 的排版與字體大小) -->
                   <div class="py-3 px-6 bg-white">
                     <h3 class="text-lg font-bold leading-tight mb-2 line-clamp-2">
                       <a href="${url}" class="hover:text-red-600 transition-colors">
@@ -1126,7 +1133,6 @@ License: You must have a valid license from official store to legally use the th
             `;
           }).join('');
 
-          // 重新初始化 Splide 輪播組件
           if (typeof Splide !== 'undefined') {
             new Splide('#techno-carousel', {
               type       : 'loop',
@@ -1140,6 +1146,28 @@ License: You must have a valid license from official store to legally use the th
               }
             }).mount();
           }
+        }
+
+        // ==========================================
+       // 2. Ecosystem (初創生態) 卡片處理
+        // ==========================================
+        const ecosystemNews = newsList.filter(item => item.category === 'Ecosystem');
+        if (ecosystemNews.length > 0) {
+          const latestEco = ecosystemNews[0];
+          const ecoArticleId = latestEco.id !== undefined ? latestEco.id : 0;
+          const ecoArticleUrl = `ecosystem-article.html?id=${ecoArticleId}`;
+
+          const ecoTitleEl = document.getElementById('ecosystem-title');
+          const ecoImgEl = document.getElementById('ecosystem-img');
+          const ecoLinkEl = document.getElementById('ecosystem-link');
+          const ecoTitleLinkEl = document.getElementById('ecosystem-title-link');
+          const ecoTagLinkEl = document.getElementById('ecosystem-tag-link');
+
+          if (ecoTitleEl && latestEco.title) ecoTitleEl.innerText = latestEco.title;
+          if (ecoImgEl && latestEco.image) ecoImgEl.src = latestEco.image;
+          if (ecoLinkEl) ecoLinkEl.href = ecoArticleUrl;
+          if (ecoTitleLinkEl) ecoTitleLinkEl.href = ecoArticleUrl;
+          if (ecoTagLinkEl) ecoTagLinkEl.href = 'ecosystem.html'; // 點擊分類標籤進入 ecosystem.html
         }
       })
       .catch(error => {
