@@ -230,28 +230,34 @@ License: You must have a valid license from official store to legally use the th
       return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img2.jpg';
     }
 
-    async function initNews() {
-      try {
-        const res = await fetch('data/news.json?v=' + new Date().getTime());
-        allNewsData = await res.json();
+   async function initNews() {
+  try {
+    const res = await fetch('data/news.json?v=' + new Date().getTime());
+    const rawData = await res.json();
 
-        if (!allNewsData || allNewsData.length === 0) return;
+    // 篩選 category 為 techno 的文章（自動轉換小寫比對）
+    allNewsData = rawData.filter(item => item.category && item.category.toLowerCase() === 'techno');
 
-        console.log("新聞數據載入成功，總篇數:", allNewsData.length);
-
-        renderHeroNews(allNewsData[0]);
-        renderNextNewsGridBatch();
-        renderMostPopular(allNewsData);
-
-        const loadMoreBtn = document.getElementById('load-more-btn');
-        if (loadMoreBtn) {
-          loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
-        }
-
-      } catch (err) {
-        console.error("載入新聞失敗:", err);
-      }
+    if (!allNewsData || allNewsData.length === 0) {
+      console.warn("未找到 Techno 分類的新聞數據");
+      return;
     }
+
+    console.log("Techno 新聞載入成功，總篇數:", allNewsData.length);
+
+    renderHeroNews(allNewsData[0]);
+    renderNextNewsGridBatch();
+    renderMostPopular(allNewsData);
+
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
+    }
+
+  } catch (err) {
+    console.error("載入新聞失敗:", err);
+  }
+}
 
     function renderHeroNews(hero) {
       if (!hero) return;
