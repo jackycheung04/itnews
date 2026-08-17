@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecosystem - Tailnews</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+  <!-- 導覽列 -->
+  <nav class="bg-black py-4 px-8 flex justify-between items-center border-b border-gray-800">
+    <a href="index.html" class="text-2xl font-bold text-white">Tailnews</a>
+    <div class="space-x-6 text-sm">
+      <a href="index.html" class="hover:text-red-500">Home</a>
+      <a href="techno.html" class="hover:text-red-500">Techno</a>
+      <a href="ecosystem.html" class="text-red-500 font-bold border-b-2 border-red-500 pb-1">Ecosystem</a>
+    </div>
+  </nav>
+
+  <!-- 主內容區塊 -->
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-white mb-6">
+      <span class="inline-block h-6 border-l-4 border-red-600 mr-3"></span>Ecosystem 初創生態
+    </h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- 左側：主要新聞列表 (佔 2 欄) -->
+      <div class="lg:col-span-2 space-y-8">
+        
+        <!-- 頭條大卡片 -->
+        <div id="main-feature" class="bg-white text-black rounded overflow-hidden shadow">
+          <a id="hero-link" href="#">
+            <img id="hero-img" src="src/img/dummy/img2.jpg" class="w-full object-cover" style="aspect-ratio: 16/9;">
+          </a>
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-3">
+              <a id="hero-title-link" href="#" class="hover:text-red-600" id="hero-title">載入中...</a>
+            </h2>
+            <p id="hero-summary" class="text-gray-600 text-sm mb-4">摘要載入中...</p>
+            <span class="text-xs text-gray-400" id="hero-date"></span>
+          </div>
+        </div>
+
+        <!-- 下方 6 宮格新聞 -->
+        <div id="eco-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- 動態渲染 -->
+        </div>
+      </div>
+
+      <!-- 右側：Most Popular 熱門排行 (佔 1 欄) -->
+      <div class="space-y-6">
+        <div class="bg-gray-100 text-black p-4 rounded">
+          <h3 class="text-lg font-bold border-b pb-2 mb-4 border-gray-300">Most Popular</h3>
+          <ol id="popular-list" class="space-y-4">
+            <!-- 動態渲染熱門列表 -->
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('data/news.json?t=' + new Date().getTime())
+        .then(res => res.json())
+        .then(data => {
+          const ecoNews = data.filter(item => item.category === 'Ecosystem');
+          if (!ecoNews || ecoNews.length === 0) return;
+
+          // 1. 渲染大頭條
+          const hero = ecoNews[0];
+          const heroUrl = `ecosystem-article.html?id=${hero.id}`;
+          document.getElementById('hero-title-link').innerText = hero.title;
+          document.getElementById('hero-title-link').href = heroUrl;
+          document.getElementById('hero-link').href = heroUrl;
+          document.getElementById('hero-img').src = hero.image;
+          document.getElementById('hero-summary').innerText = hero.summary;
+          document.getElementById('hero-date').innerText = hero.date || '';
+
+          // 2. 渲染下方網格 (第 2~7 篇)
+          const gridNews = ecoNews.slice(1, 7);
+          const gridEl = document.getElementById('eco-grid');
+          gridEl.innerHTML = gridNews.map(item => `
+            <div class="bg-white text-black rounded overflow-hidden shadow">
+              <a href="ecosystem-article.html?id=${item.id}">
+                <img src="${item.image}" class="w-full object-cover" style="aspect-ratio: 16/10;">
+              </a>
+              <div class="p-4">
+                <h3 class="font-bold text-base mb-2 line-clamp-2">
+                  <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600">${item.title}</a>
+                </h3>
+                <span class="text-xs text-gray-500">Ecosystem</span>
+              </div>
+            </div>
+          `).join('');
+
+          // 3. 渲染右側 Popular
+          const popEl = document.getElementById('popular-list');
+          popEl.innerHTML = ecoNews.slice(0, 5).map((item, idx) => `
+            <li class="flex items-start space-x-3">
+              <span class="text-2xl font-bold text-gray-400">${idx + 1}</span>
+              <a href="ecosystem-article.html?id=${item.id}" class="text-sm font-semibold hover:text-red-600 line-clamp-2">${item.title}</a>
+            </li>
+          `).join('');
+        });
+    });
+  </script>
+</body>
+</html>
