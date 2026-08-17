@@ -7,48 +7,97 @@
   <link rel="stylesheet" href="src/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- 導覽列 -->
-  <nav class="bg-black py-4 px-8 flex justify-between items-center border-b border-gray-800">
-    <a href="index.html" class="text-2xl font-bold text-white">Tailnews</a>
-    <div class="space-x-6 text-sm">
-      <a href="index.html" class="hover:text-red-500">Home</a>
-      <a href="techno.html" class="hover:text-red-500">Techno</a>
-      <a href="ecosystem.html" class="text-red-500 font-bold">Ecosystem</a>
+  <!-- 全站標準頂部導覽列 -->
+  <header class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-14 text-sm">
+      <a href="index.html" class="text-2xl font-bold tracking-wider text-white">Tailnews</a>
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="index.html" class="hover:text-red-500 py-4">Home</a>
+        <a href="#" class="hover:text-red-500 py-4">Pages ▾</a>
+        <a href="#" class="hover:text-red-500 py-4">Sport</a>
+        <a href="techno.html" class="hover:text-red-500 py-4">Techno</a>
+        <a href="ecosystem.html" class="text-red-500 font-bold border-b-2 border-red-500 py-4">Ecosystem</a>
+        <a href="travel.html" class="hover:text-red-500 py-4">Travel</a>
+        <a href="future.html" class="hover:text-red-500 py-4">Future</a>
+        <a href="#" class="hover:text-red-500 py-4">More</a>
+      </nav>
+      <div>
+        <button class="text-gray-300 hover:text-white">🔍</button>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- 文章主體 -->
-  <main class="max-w-4xl mx-auto px-4 py-10">
-    <div class="mb-4 text-xs text-red-500 font-semibold tracking-wider uppercase">
-      <a href="ecosystem.html" class="hover:underline">Ecosystem 初創生態</a>
-    </div>
+  <!-- 主內容區 -->
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- 左側文章區域 (佔 2 欄) -->
+      <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded border border-gray-200 shadow-sm">
+        <div class="text-xs text-red-600 font-bold mb-2">Ecosystem</div>
+        
+        <h1 id="article-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight">
+          文章載入中...
+        </h1>
 
-    <h1 id="article-title" class="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-      文章載入中...
-    </h1>
+        <div id="article-date" class="text-xs text-gray-400 mb-6 border-b pb-3">
+          發佈日期：載入中...
+        </div>
 
-    <div class="text-sm text-gray-400 mb-6 pb-4 border-b border-gray-800" id="article-date">
-      發佈日期：載入中...
-    </div>
+        <div class="mb-6 rounded overflow-hidden">
+          <img id="article-img" src="" class="w-full object-cover max-h-[450px]" alt="News Image">
+        </div>
 
-    <!-- 封面大圖 -->
-    <div class="mb-8 rounded overflow-hidden">
-      <img id="article-img" src="" class="w-full object-cover max-h-[500px]" alt="News Image">
-    </div>
+        <article id="article-content" class="text-gray-700 leading-relaxed space-y-4 text-base">
+          <p>內文讀取中...</p>
+        </article>
 
-    <!-- 文章內文 -->
-    <article id="article-content" class="prose prose-invert max-w-none text-gray-300 leading-relaxed space-y-6 text-lg">
-      <p>內文讀取中...</p>
-    </article>
+        <div class="mt-8 pt-4 border-t border-gray-200">
+          <a href="ecosystem.html" class="inline-block bg-black hover:bg-gray-800 text-white text-xs px-4 py-2 rounded font-semibold">
+            ← 返回 Ecosystem 列表
+          </a>
+        </div>
+      </div>
 
-    <div class="mt-12 pt-6 border-t border-gray-800">
-      <a href="ecosystem.html" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-bold">
-        ← 返回 Ecosystem 列表
-      </a>
+      <!-- 右側邊欄 (佔 1 欄) -->
+      <div class="space-y-6">
+        <!-- Most Popular -->
+        <div class="bg-white p-5 rounded border border-gray-200 shadow-sm">
+          <h3 class="text-base font-bold text-gray-900 border-b pb-3 mb-4 border-gray-200">Most Popular</h3>
+          <ol id="popular-list" class="space-y-4">
+            <!-- 動態渲染熱門排行 -->
+          </ol>
+        </div>
+
+        <!-- 300x250 廣告區塊 -->
+        <div class="bg-gray-200 p-4 rounded text-center border border-gray-300 flex flex-col items-center justify-center min-h-[300px]">
+          <span class="text-xs text-gray-500 mb-2 font-semibold tracking-wider">ADVERTISEMENT</span>
+          <div class="w-[300px] h-[250px] bg-black text-white flex flex-col items-center justify-center p-4">
+            <span class="text-sm font-bold tracking-widest mb-1">ADVERTISEMENT</span>
+            <span class="text-xs text-gray-400 mb-4">300X250</span>
+            <button class="border border-white px-3 py-1 text-xs hover:bg-white hover:text-black transition">CONTACT US</button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
+
+  <!-- 頁尾 -->
+  <footer class="bg-black text-white mt-12 py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+      <div>
+        <span class="text-lg font-bold text-white block mb-1">Tailnews</span>
+        <p>Tailnews News Template for news magazine, newspaper and news portal.</p>
+      </div>
+      <div class="mt-4 md:mt-0 space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="techno.html" class="hover:underline">Techno</a>
+        <a href="ecosystem.html" class="hover:underline">Ecosystem</a>
+      </div>
+    </div>
+  </footer>
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -58,28 +107,35 @@
       fetch('data/news.json?t=' + new Date().getTime())
         .then(res => res.json())
         .then(newsList => {
+          // 渲染主文章內容
           const article = newsList.find(item => item.id === articleId);
 
           if (article) {
-            document.title = `${article.title} - Ecosystem`;
+            document.title = `${article.title} - Tailnews`;
             document.getElementById('article-title').innerText = article.title;
-            document.getElementById('article-date').innerText = `發佈日期：${article.date || 'Today'}`;
+            document.getElementById('article-date').innerText = `發佈日期：${article.date || ''}`;
             document.getElementById('article-img').src = article.image;
 
-            // 處理換行格式並渲染內文
             const contentEl = document.getElementById('article-content');
             if (article.content) {
               const paragraphs = article.content.split('\n').filter(p => p.trim() !== '');
               contentEl.innerHTML = paragraphs.map(p => `<p class="mb-4">${p}</p>`).join('');
             } else {
-              contentEl.innerHTML = `<p>${article.summary}</p>`;
+              contentEl.innerHTML = `<p>${article.summary || ''}</p>`;
             }
           } else {
             document.getElementById('article-title').innerText = "找不到該篇文章";
           }
-        })
-        .catch(err => {
-          console.error("載入文章失敗:", err);
+
+          // 渲染 Most Popular 側邊欄
+          const ecoNews = newsList.filter(item => item.category === 'Ecosystem');
+          const popEl = document.getElementById('popular-list');
+          popEl.innerHTML = ecoNews.slice(0, 5).map((item, idx) => `
+            <li class="flex items-start space-x-3 border-b border-gray-100 pb-3 last:border-0">
+              <span class="text-xl font-bold text-gray-300 leading-none">${idx + 1}</span>
+              <a href="ecosystem-article.html?id=${item.id}" class="text-xs font-semibold text-gray-800 hover:text-red-600 line-clamp-2 leading-snug">${item.title}</a>
+            </li>
+          `).join('');
         });
     });
   </script>
