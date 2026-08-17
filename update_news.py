@@ -83,10 +83,10 @@ def get_real_image_url(article_url):
 
 def translate_text(title, summary):
     if not api_key:
-        return None, None, None  # 沒有 API Key 時回傳 None，跳過此篇
+        return None, None, None
 
     prompt = f"""
-    請針對以下英文 IT 新聞進行深度擴充與詳細報導（使用繁體中文）：
+    請針對以下英文科技新聞進行深度擴充與詳細報導（使用繁體中文）：
     原始標題：{title}
     原始摘要：{summary}
 
@@ -149,7 +149,7 @@ def translate_text(title, summary):
 
 
 # ----------------------------------------------------------------
-# 1. 先讀取歷史新聞紀錄（用於去重與追加）
+# 1. 讀取舊新聞紀錄並自動補齊 category 欄位
 # ----------------------------------------------------------------
 os.makedirs("data", exist_ok=True)
 json_path = "data/news.json"
@@ -159,103 +159,115 @@ if os.path.exists(json_path):
     try:
         with open(json_path, "r", encoding="utf-8") as f:
             existing_news = json.load(f)
+            # 相容性升級：確保舊資料都有 category 欄位
+            for item in existing_news:
+                if "category" not in item:
+                    item["category"] = "Techno"
     except Exception as e:
         print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
 
-# 記錄所有已存在新聞的「網址 link」（網址是唯一的，用來去重最精確）
 existing_links = {item.get("link") for item in existing_news if item.get("link")}
 
 
 # ----------------------------------------------------------------
-# 2. 抓取 RSS 來源
+# 2. 定義各分類及其對應的 RSS 來源
 # ----------------------------------------------------------------
-RSS_SOURCES = [
-    "https://techcrunch.com/feed/",
-    "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
-    "https://www.wired.com/feed/category/gear/latest/rss",
-]
+CATEGORIES_RSS = {
+    "Techno": [
+        "https://techcrunch.com/feed/",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+        "https://www.wired.com/feed/category/gear/latest/rss",
+    ],
+    "Ecosystem": [
+        "https://techcrunch.com/category/startups/feed/",
+        "https://www.techinasia.com/feed",
+    ],
+}
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-entries = []
-
-for url in RSS_SOURCES:
-    print(f"嘗試抓取 RSS: {url}")
-    try:
-        resp = requests.get(url, headers=headers, timeout=10)
-        if resp.status_code == 200:
-            feed = feedparser.parse(resp.text)
-            if feed.entries:
-                entries = feed.entries
-                print(f"🎉 成功從 {url} 抓取 {len(entries)} 則新聞！")
-                break
-    except Exception as e:
-        print(f"抓取 {url} 失敗: {e}")
-
-
-# ----------------------------------------------------------------
-# 3. 檢查去重並翻譯「全新新聞」（每次最多處理 5 篇新新聞）
-# ----------------------------------------------------------------
 new_news_list = []
-max_new_articles = 5
+max_new_per_category = 3  # 每個分類每次最多抓取 3 篇新新聞
 
-if entries:
-    for entry in entries:
-        # 如果已經處理滿 5 篇新新聞，就停止
-        if len(new_news_list) >= max_new_articles:
+
+# ----------------------------------------------------------------
+# 3. 分類抓取、去重與翻譯
+# ----------------------------------------------------------------
+for category_name, rss_urls in CATEGORIES_RSS.items():
+    cat_new_count = 0
+    print(f"\n==========================================")
+    print(f"🔍 開始處理分類：[{category_name}]")
+    print(f"==========================================")
+
+    for url in rss_urls:
+        if cat_new_count >= max_new_per_category:
             break
 
-        link = entry.get("link", "#")
+        print(f"嘗試抓取 RSS: {url}")
+        try:
+            resp = requests.get(url, headers=headers, timeout=10)
+            if resp.status_code != 200:
+                continue
 
-        # 🌟 關鍵去重：若該網址已在 news.json 中，直接 skip！不花 API 也不重複翻譯
-        if link in existing_links:
-            print(f"⏩ 跳過已存在的新聞: {entry.get('title')}")
-            continue
+            feed = feedparser.parse(resp.text)
+            if not feed.entries:
+                continue
 
-        orig_title = entry.get("title", "")
-        orig_summary = entry.get("summary", entry.get("description", ""))
-        published = entry.get("published", "Today")
+            for entry in feed.entries:
+                if cat_new_count >= max_new_per_category:
+                    break
 
-        print(f"\n📷 [全新新聞 {len(new_news_list)+1}/{max_new_articles}] 正在解析圖片...")
-        image_url = get_real_image_url(link)
+                link = entry.get("link", "#")
 
-        if not image_url:
-            if "media_content" in entry and len(entry.media_content) > 0:
-                image_url = entry.media_content[0].get("url")
-            elif "media_thumbnail" in entry and len(entry.media_thumbnail) > 0:
-                image_url = entry.media_thumbnail[0].get("url")
-            elif "enclosures" in entry and len(entry.enclosures) > 0:
-                image_url = entry.enclosures[0].get("href")
+                # 去重檢查
+                if link in existing_links:
+                    print(f"⏩ 跳過已存在新聞: {entry.get('title')[:30]}...")
+                    continue
 
-        if not image_url:
-            image_url = "src/img/dummy/img2.jpg"
+                orig_title = entry.get("title", "")
+                orig_summary = entry.get("summary", entry.get("description", ""))
+                published = entry.get("published", "Today")
 
-        print(f"🔄 正在翻譯與擴寫: {orig_title[:30]}...")
-        zh_title, zh_summary, zh_content = translate_text(orig_title, orig_summary)
+                print(f"\n📷 [{category_name} 新聞 {cat_new_count + 1}/{max_new_per_category}] 解析圖片中...")
+                image_url = get_real_image_url(link)
 
-        # 只有在 Gemini 翻譯成功的情況下才寫入（避免英文半成品進入 JSON）
-        if zh_title and zh_summary:
-            new_news_list.append({
-                "title": zh_title,
-                "summary": zh_summary,
-                "content": zh_content,
-                "link": link,
-                "image": image_url,
-                "date": published
-            })
-            # 成功處理一篇後停頓 3 秒，保護 API 不觸發頻率限制
-            time.sleep(3)
+                if not image_url:
+                    if "media_content" in entry and len(entry.media_content) > 0:
+                        image_url = entry.media_content[0].get("url")
+                    elif "media_thumbnail" in entry and len(entry.media_thumbnail) > 0:
+                        image_url = entry.media_thumbnail[0].get("url")
+                    elif "enclosures" in entry and len(entry.enclosures) > 0:
+                        image_url = entry.enclosures[0].get("href")
+
+                if not image_url:
+                    image_url = "src/img/dummy/img2.jpg"
+
+                print(f"🔄 正在翻譯與擴寫 ({category_name}): {orig_title[:30]}...")
+                zh_title, zh_summary, zh_content = translate_text(orig_title, orig_summary)
+
+                if zh_title and zh_summary:
+                    new_news_list.append({
+                        "title": zh_title,
+                        "summary": zh_summary,
+                        "content": zh_content,
+                        "link": link,
+                        "image": image_url,
+                        "date": published,
+                        "category": category_name  # 🌟 標註所屬分類
+                    })
+                    existing_links.add(link)
+                    cat_new_count += 1
+                    time.sleep(3)
+
+        except Exception as e:
+            print(f"抓取 {url} 失敗: {e}")
 
 
 # ----------------------------------------------------------------
 # 4. 合併新舊資料、更新 ID 並存檔
 # ----------------------------------------------------------------
-# 全新新聞放在最前面，舊新聞排後面
 combined_news = new_news_list + existing_news
+final_news = combined_news[:50]  # 保留最新 50 篇
 
-# 保留最多 50 篇歷史紀錄
-final_news = combined_news[:50]
-
-# 為所有文章重新編號 ID
 for idx, item in enumerate(final_news):
     item["id"] = idx
 
