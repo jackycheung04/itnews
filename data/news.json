@@ -1,12 +1,73 @@
 [
     {
+        "title": "資安警報響徹全球：蘋果發布異常規模「間諜軟體」威脅通知背後的深層危機",
+        "summary": "蘋果近期向全球多國用戶發送了異常大量的間諜軟體威脅通知，引發資安界高度關注。本次報導深入分析此波攻擊的技術特徵、對蘋果生態系統的衝擊，以及在動盪地緣政治下，個人行動裝置安全所面臨的嚴峻挑戰。",
+        "content": "【事件背景與起因】\n近期，全球數以千計的蘋果用戶手機中，同步彈出了一則令人不安的系統通知：「蘋果偵測到您正成為傭兵間諜軟體攻擊的目標」。根據資安研究機構與蘋果官方的初步調查，此次發布的威脅通知數量達到了「前所未有」的規模，且受害者廣泛分布於全球多個國家。長期以來，蘋果公司透過「威脅通知（Threat Notifications）」機制，針對國家級駭客或受特定背景支持的攻擊者進行預警。然而，此次通知的激增並非單一事件，而是顯示出全球針對特定政治異議人士、記者、人權工作者及關鍵基礎設施人員的數位監視活動已進入「高發期」。資安專家指出，這波通知的異常數量，反映了間諜軟體產業鏈正以驚人的速度擴張，使得針對性的數位攻擊不再局限於少數高價值目標，而是呈現出大規模、系統性的擴散趨勢。\n\n【核心細節與技術解析】\n此次威脅通知所指涉的「傭兵間諜軟體」（Mercenary Spyware），與傳統的網路釣魚或病毒攻擊截然不同。這類軟體通常具備高度隱蔽性，往往採用「零點擊（Zero-click）」攻擊手段，用戶無需點擊任何連結，僅需接收一則訊息或一個無形的數據包，裝置的核心權限便可能遭到入侵。技術層面而言，這些軟體通常由擁有極高研發能力的私營企業（如 NSO Group 等）開發，並販售給特定主權國家政府。它們擅長利用作業系統內部的未公開漏洞（Zero-day exploits）繞過蘋果的安全沙盒（Sandbox）防禦。蘋果此次發出大規模通知，正是基於其後端威脅情報系統偵測到了異常的請求模式與遠端控制伺服器（C2）的交互特徵。這意味著，攻擊者可能正在試圖繞過蘋果的「封鎖模式（Lockdown Mode）」或針對 iOS 最底層的記憶體管理機制進行滲透，技術手段極為精密，且具備規避傳統資安軟體偵測的能力。\n\n【產業影響與市場分析】\n這起事件再度將蘋果「隱私堡壘」的行銷承諾與現實防禦能力之間的張力推向風口浪尖。從產業視角觀察，蘋果的通知機制既是保護用戶的防線，也是衡量全球網路戰激化程度的晴雨表。對於科技業而言，這波攻擊潮突顯了軟體供應鏈的脆弱性；即便蘋果已投入巨資強化硬體加密與軟體隔離，但只要作業系統仍存在複雜的代碼架構，傭兵間諜軟體就有可乘之機。市場分析認為，此事將迫使蘋果在未來的 iOS 更新中，加速推動更極端的安全架構革新。此外，這也對全球資安產業提出了警訊：單純依靠終端防護已不足以抵禦國家級的資源投入，未來資安市場將更強調雲端端點偵測與回應（EDR）的整合，以及針對跨平台間諜軟體供應商的國際法規限制與制裁，將成為科技巨頭與各國政府必須共同面對的法律課題。\n\n【未來展望與結語】\n面對日益猖獗的數位監視浪潮，蘋果用戶應如何自處？未來，這類威脅通知恐將成為新常態。對於一般大眾而言，雖然被視為「高價值目標」的機率相對較低，但資安素養的提升已刻不容緩。蘋果建議用戶應即時更新系統以修復漏洞，並啟用「封鎖模式」來降低攻擊面，同時避免使用不明來源的設定描述檔或點擊可疑連結。展望未來，隨著生成式 AI 技術被用於自動化漏洞挖掘與社交工程詐騙，數位防禦與攻擊之間的軍備競賽將愈演愈烈。蘋果此次主動揭露大規模攻擊，展現了其保護用戶隱私的堅定立場，但要終結這種侵犯，不僅需要軟體巨頭的技術升級，更需要國際社會對於傭兵間諜軟體買賣行為建立更嚴格的全球規範。在數位時代，安全已不再是單純的產品功能，而是用戶行使數位人權的必要基石。",
+        "link": "https://techcrunch.com/2026/08/17/unprecedented-number-of-apple-users-received-recent-spyware-alert-say-investigators/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/iphone-spyware-alert-2024.jpg?resize=1200,800",
+        "date": "Mon, 17 Aug 2026 20:18:35 +0000",
+        "category": "Techno",
+        "id": 0
+    },
+    {
+        "title": "全球新創風向標：TechCrunch Disrupt 2026 早鳥優惠倒數，搶攻舊金山科技創新前哨",
+        "summary": "全球指標性新創盛會 TechCrunch Disrupt 2026 將於舊金山登場。主辦方宣布早鳥優惠將於 8 月 21 日截止，透過此次活動，創業者不僅能獲取創投機遇，更將深度剖析未來科技產業的核心發展趨勢。",
+        "content": "【事件背景與起因】\n\n每年秋季，全球科技界與創投圈的目光皆聚焦於加州舊金山，因為 TechCrunch Disrupt 總能精準捕捉到當年度最前沿的創業趨勢。這場由全球最具影響力的科技媒體之一 TechCrunch 所舉辦的盛會，不僅僅是一場展示活動，更被視為新創公司募資、建立人脈以及與潛在併購者對接的核心場域。隨著 TechCrunch Disrupt 2026 的籌備工作進入白熱化階段，主辦方近日發布了重要訊息：為了鼓勵更多早期創業者參與，將針對購票者提供高達 300 美元的早鳥優惠，此優惠將於 8 月 21 日截止。此次活動預計於 10 月 13 日至 15 日在舊金山市中心的 Moscone West 會展中心舉行，屆時將匯集全球投資人、技術專家及媒體，共同探討下一個改變世界的商業模式。\n\n【核心細節與技術解析】\n\nTechCrunch Disrupt 2026 的核心價值在於「Startup Battlefield」競賽與多場深度圓桌論壇。從技術角度來看，本屆大會預計將深入探討生成式 AI 的商業化路徑、氣候科技的規模化進程，以及去中心化金融在現實經濟中的應用。Moscone West 將化身為一個巨大的科技實驗場，透過專題演講與互動工作坊，解構當前企業在面對雲端運算架構升級、網路安全威脅與數據隱私政策時的技術布局。對於參會的新創團隊而言，這不僅是一個展示產品原型（MVP）的舞台，更是一個與業界領袖交流的絕佳機會，透過現場的技術交流與演示，創業者能更清晰地定位產品在當前科技生態系中的技術護城河與競爭優勢。\n\n【產業影響與市場分析】\n\n從宏觀的經濟視角觀察，TechCrunch Disrupt 2026 的召開時間正值全球經濟結構調整的關鍵期。隨著通膨壓力與地緣政治的不確定性影響，創投市場的融資邏輯已從「不惜代價追求成長」轉向「重視單位經濟效益與獲利能力」。本次大會將成為觀察市場景氣的風向標，投資人將在此尋找具備真實應用價值而非僅止於炒作的技術專案。對於舊金山灣區而言，此類盛事亦有助於鞏固其作為全球創新中心的不動地位，吸引人才回流並促進產業鏈的垂直整合。各大科技巨頭亦常於此場合宣布合作計畫或進行策略投資，這使得參與者的每一分資本投入，都具備極高的戰略性回報價值。\n\n【未來展望與結語】\n\n面對快速變化的數位時代，能夠在 Disrupt 這樣的高規格平台上獲得曝光，對於初創企業的市場信任建立至關重要。距離 8 月 21 日的早鳥優惠截止日期僅剩數週，這對於計畫在年底前啟動融資或產品發布的新創公司而言，是一場時間與機會的競賽。展望未來，TechCrunch Disrupt 將繼續推動創新生態系的邊界，協助創業者將概念轉化為具備影響力的產品。對於所有渴望在科技浪潮中佔據一席之地的從業者來說，這次會議不僅是獲取知識與資源的殿堂，更是確認未來幾年產業軌跡的重要節點。隨著 10 月的臨近，全球新創圈正屏息以待，準備在舊金山這片科技熱土上，見證下一場科技革命的雛形。",
+        "link": "https://techcrunch.com/2026/08/17/save-up-to-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/",
+        "image": "https://techcrunch.com/wp-content/uploads/2025/09/Disrupt-2025-Space-Stage-Even-Rogers.jpg?resize=1200,800",
+        "date": "Mon, 17 Aug 2026 19:33:51 +0000",
+        "category": "Techno",
+        "id": 1
+    },
+    {
+        "title": "音樂社交的新篇章：Spotify 推出「Playlist Notes」功能，讓歌單訴說情感故事",
+        "summary": "Spotify 正式推出「Playlist Notes」功能，讓用戶與編輯能為歌單中的曲目撰寫註記與故事，不僅強化了音樂與人的情感連結，更被視為串流平台轉型社交媒體的重要策略。",
+        "content": "【事件背景與起因】\n長期以來，串流音樂平台被視為冰冷的演算法與龐大數據庫的集合體，用戶在 Spotify 上進行收藏或分享時，往往僅止於連結轉發，缺乏情感層面的深入交流。隨著音樂社群意識抬頭，用戶對於「音樂策展」的需求日益增加，不僅希望聽見好音樂，更渴望分享音樂背後的感悟。為了填補這項社交鴻溝，Spotify 正式宣布推出「Playlist Notes」功能。此功能的核心概念在於賦予歌單創作者與官方編輯「說故事」的權力。過去，歌單僅是一連串曲目的排列，如今，透過 Notes 功能，音樂不再只是背景音，而是成為表達自我的一種語言。對於 Spotify 而言，此舉是為了回應市場對於更深度互動的需求，試圖將音樂收聽從「單向接收」轉變為「雙向溝通」。\n\n【核心細節與技術解析】\nPlaylist Notes 功能的操作邏輯相當直觀且具備高度的創意空間。當用戶建立或編輯歌單時，可以針對特定的單曲或整個歌單添加註記，內容可包含文字說明、情感敘述、或是推薦這首歌的理由。值得注意的是，這項功能不僅開放給一般用戶使用，Spotify 的官方策展編輯團隊也將同步跟進。在諸如「RapCaviar」、「Today's Top Hits」等具指標性的頂級歌單中，聽眾將能看見官方編輯分享的選曲洞察與幕後花絮。從技術層面分析，這不僅是單純的文字介面插入，Spotify 還同步優化了前端顯示，確保這些註記能夠在行動裝置與桌面端流暢呈現，同時不干擾核心的播放體驗。此舉透過輕量化的社交互動層（Social Layer），在既有的串流架構下增加了新的資訊維度，讓音樂的「上下文（Context）」被具象化。\n\n【產業影響與市場分析】\n從市場策略角度觀察，Spotify 此舉具有深遠的戰略意義。首先，這直接增加了用戶在平台的停留時間，鼓勵用戶花更多心思經營個人歌單，從而提高平台的忠誠度。其次，這是一種精明的競品防禦策略。在 TikTok 等短影音平台利用音樂片段創造爆紅趨勢的今日，Spotify 正面臨如何將「外部音樂社交」回流至「自有App內」的壓力。透過 Notes 功能，Spotify 試圖將社群討論的焦點從外部社交平台拉回 App 內，創造屬於自己的音樂生態系話語權。此外，對於音樂產業而言，此功能為藝術家提供了新的行銷切入點。當編輯能夠寫下為什麼這首歌被選入重要歌單的具體理由時，這不僅是背書，更是一種有效的推廣路徑。對於創作者而言，能以文字直接與聽眾溝通，無疑強化了粉絲經濟的經營基礎。\n\n【未來展望與結語】\n展望未來，Playlist Notes 或許只是 Spotify 邁向「音樂社交媒體」的第一步。隨著 AI 技術的成熟，未來我們或許能看到 Spotify 進一步整合生成式 AI，協助用戶生成音樂靈感註記，或是將這些註記轉化為更具互動性的語音訊息。雖然目前的 Notes 功能仍處於相對初步的文字分享階段，但已成功點燃了音樂愛好者之間的社群熱情。隨著此功能的推廣，Spotify 有望重新定義數位音樂的消費方式——音樂不再只是數據序列，而是承載著用戶記憶、編輯專業與創作者靈魂的載體。儘管這類社交功能的擴張必須小心處理用戶隱私與版面混雜的問題，但就目前的發展態勢來看，Spotify 顯然已經找對了方向，在串流服務競爭白熱化的當下，透過「情感連結」建立的護城河，或許才是留住用戶最有效的解方。",
+        "link": "https://techcrunch.com/2026/08/17/spotifys-new-playlist-notes-let-users-and-editors-explain-their-song-picks/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/Spotify-PlaylistNotes.png?w=1200",
+        "date": "Mon, 17 Aug 2026 19:24:43 +0000",
+        "category": "Techno",
+        "id": 2
+    },
+    {
+        "title": "生成式 AI 新星崛起：Higgsfield 完成 4 億美元 B 輪融資，估值八個月內暴增至 54 億美元",
+        "summary": "由前 Snap 高管 Alex Mashrabov 創立的 AI 影音創作平台 Higgsfield，在最新一輪募資中獲得 4 億美元，估值躍升至 54 億美元，展現其在生成式 AI 領域的強勁成長動能。",
+        "content": "【事件背景與起因】\n生成式 AI 賽道競爭日益激烈，不僅止於文字生成或靜態圖像，影音創作已成為各大科技巨擘與新創公司爭奪的下一個戰場。Higgsfield 這家由前 Snap 高管 Alex Mashrabov 領軍的 AI 新創公司，近期完成了一筆震撼市場的 4 億美元 B 輪融資，使其公司估值在短短八個月內暴增四倍，達到 54 億美元的驚人水準。這筆融資不僅是對 Higgsfield 技術實力的肯定，更反映出資本市場對於「創作者經濟」結合「AI 影音工具」的高昂熱情。Mashrabov 作為曾推動 Snap 影像技術發展的資深人才，其創業項目從一開始就鎖定於解決 AI 生成內容在品質、控制力與易用性之間的平衡，這使得 Higgsfield 在眾多同類初創公司中迅速脫穎而出。\n\n【核心細節與技術解析】\nHiggsfield 的核心產品旨在賦予普通用戶高品質的 AI 影像與短影音創作能力。與傳統影視特效軟體不同，Higgsfield 透過深度學習模型，將複雜的渲染過程簡化為直觀的操作介面，讓用戶能透過文字描述或是簡單的草圖快速生成高品質的動態影像。其技術優勢在於對光影質感、人體動作連續性以及場景深度理解的精準控制，解決了過去 AI 影片常出現的「動作崩壞」或「模糊感」等技術痛點。此外，該平台強調「移動端優先」的策略，這與 Mashrabov 在 Snap 累積的產品設計哲學不謀而合。透過高度最佳化的模型運行效率，Higgsfield 允許用戶在智慧型手機上即可完成大規模的影音生成作業，這對於碎片化內容創作需求旺盛的社交媒體市場而言，無疑是一項殺手級的技術突破。\n\n【產業影響與市場分析】\nHiggsfield 的崛起不僅標誌著 AI 影音產業的成熟，更對現有的影視製作生態產生了深遠影響。當生成內容的成本降至趨近於零，且品質足以媲美專業剪輯軟體，傳統內容創作者的門檻將大幅降低。然而，这也引發了市場對於內容原創性與版權的擔憂。目前 AI 產業正面臨「技術升級快」與「法規監管緊」的拉鋸戰。市場分析認為，Higgsfield 此次估值的高速飛躍，除了技術領先外，亦與其商業模式的潛在變現能力有關。透過吸引龐大的創作者群體，並與廣告平台、社群媒體進行深度整合，Higgsfield 展現了成為下一個「創意軟體帝國」的潛力，這也讓投資人願意給予其高額溢價，以在生成式 AI 普及浪潮中提前卡位。\n\n【未來展望與結語】\n展望未來，Higgsfield 面臨的挑戰將是如何在持續變化的技術環境中維持領先地位。隨著 OpenAI 的 Sora、Google 的 Veo 等巨頭產品陸續問世，AI 影音市場的戰火將從「誰能做出來」轉變為「誰的工具最好用、最能精確控制」。Higgsfield 下一步的戰略布局預計將側重於增強模型的可控性（Controllability）以及開發針對企業用戶的商用解決方案。儘管市場對於 AI 泡沫化的警訊時有所聞，但 Higgsfield 用實實在在的估值增長證明，只要產品能有效賦能個人用戶並解決真實痛點，市場依然會給予強大的資金支持。作為生成式 AI 演進路徑上的關鍵參與者，Higgsfield 的表現將持續引領影音創作領域走向去中心化與高度自動化的新時代。",
+        "link": "https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2259021916.jpg?w=1024",
+        "date": "Mon, 17 Aug 2026 19:04:27 +0000",
+        "category": "Ecosystem",
+        "id": 3
+    },
+    {
+        "title": "以聲滅火革新產業：Sonic Fire Tech 獲 1500 萬美元融資，重塑消防安全防線",
+        "summary": "新創公司 Sonic Fire Tech 成功籌集 1500 萬美元，將推廣其開創性的「聲波滅火」技術，目標涵蓋商業廚房至住宅大樓，徹底改變傳統消防模式。",
+        "content": "【事件背景與起因】\n\n傳統消防產業長期依賴水、泡沫或化學乾粉等物理介質來抑制火勢，然而這些方式往往會對設備、建築結構或珍貴資產造成二次損害，且在反應速度上存在物理限制。針對此痛點，新創公司 Sonic Fire Tech 近期宣佈完成 1500 萬美元的融資輪，這筆資金標誌著該公司從實驗室研發邁向全面市場化的關鍵時刻。Sonic Fire Tech 的崛起並非偶然，在全球都市化程度加劇、高密度建築火災風險日益嚴峻的背景下，投資界對於能「防患於未然」且具備非侵入性特質的滅火方案展現出高度關注。此次融資的成功，反映了資本市場對於突破性硬體技術（Deep Tech）重拾信心，並期待透過聲學物理的創新，解決火災發生初期處理不當所造成的災難性後果。\n\n【核心細節與技術解析】\n\nSonic Fire Tech 的核心技術源自於聲波對燃燒過程的物理干擾。簡單來說，火災的燃燒本質上是由燃油蒸氣與氧氣組成的氣體反應，而特定頻率與強度的聲波能透過聲壓（Sound Pressure）改變空氣流動，並對火源周圍的氧氣層進行「震盪剝離」。這種技術無需使用任何滅火劑，透過精準的聲波投射，能迅速將火焰與燃料供應源截斷。與傳統自動噴淋系統不同，該技術不僅能進行區域性滅火，更能在火苗初起時進行「非接觸式」干預，這對於精密電子設備、數據中心或是商業廚房這類易燃油煙密集的場域而言，具備無與倫比的優勢。不僅滅火過程不留殘餘物，且安裝架構更為輕量化，只需配置聲波傳感器與發射器，即可實現在既有建築結構中進行低干擾的佈建。\n\n【產業影響與市場分析】\n\n此項技術對全球消防與建築安全產業具備深遠影響。目前市場對於商業廚房火災的防控成本極高，既有的自動滅火系統不僅維護費用高昂，且噴灑後的清理與停業時間更是業主的沈重負擔。Sonic Fire Tech 的聲波系統若能大規模落地，將顯著降低業主的營運維護成本，並改變保險精算模型中的風險評估數據。分析師指出，隨著物聯網（IoT）感測器的整合，這套系統能與火災偵測器聯動，實現從「偵測到滅火」的毫秒級自動化反應，這將使公寓大樓的消防標準從單純的「警示」升級為「主動防禦」。此外，對於儲能電池（如鋰電池）火災，聲波滅火技術展示了比傳統水噴霧更具潛力的抑制效果，有望解決當前新能源產業最頭痛的火災安全問題。\n\n【未來展望與結語】\n\n儘管 Sonic Fire Tech 在技術上取得了顯著進展，但未來仍面臨法規驗證與市場接受度的雙重考驗。消防行業屬於高度監管的產業，各國的建築防火條例更新速度緩慢，如何取得國際主流的安全認證（如 UL、CE 等）將是其首要任務。然而，隨著 1500 萬美元資金到位，公司計畫擴大研發團隊，並加強與各國消防法規制定單位的合作，進行更多的實地壓力測試。總結而言，Sonic Fire Tech 的成功不僅是一次融資勝利，更是物理科學與工程學應用於防災領域的一次里程碑。如果這項「聲波滅火」技術能順利在城市基礎設施中普及，人類處理火災的邏輯將從「善後與控制」轉向「精準干預」，這不僅是商業模式的創新，更是守護全球生命財產安全的一場革命性技術轉型。",
+        "link": "https://techcrunch.com/2026/08/17/sound-powered-fire-protection-startup-gets-15m-to-snuff-out-fires-before-they-turn-catastrophic/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2208003026.jpg?resize=1200,800",
+        "date": "Mon, 17 Aug 2026 18:32:27 +0000",
+        "category": "Ecosystem",
+        "id": 4
+    },
+    {
+        "title": "非洲防衛科技崛起：Terra Industries 完成 5,200 萬美元種子輪融資，重塑全球南方戰略基礎設施",
+        "summary": "專注於全球南方市場的非洲防衛科技公司 Terra Industries，近日宣布獲得 1,800 萬美元追加投資，使其種子輪融資總額達到 5,200 萬美元，展現其在建構區域戰略安全基礎設施的強大潛力與投資吸引力。",
+        "content": "【事件背景與起因】\n在全球地緣政治局勢日益複雜的背景下，傳統的防衛基礎設施建設往往受限於高昂的跨國部署成本與針對已開發國家的技術壟斷。Terra Industries 的出現，正是在此全球安全秩序重構的關鍵時刻填補了缺口。作為一家立足於非洲、服務於「全球南方」（Global South）的新興防衛科技公司，Terra Industries 近期宣布完成新一輪 1,800 萬美元的資金注入，使該公司的種子輪融資總額累計達到 5,200 萬美元。此輪融資不僅刷新了非洲防衛科技領域的募資紀錄，更反映出國際資本對於新興市場自主化防衛需求的高度認可。此次資金將主要用於加速其在戰略據點的硬體建設，以及深化區域安全防禦系統的在地化研發，協助開發中國家在不依賴外部巨額援助的情況下，建構更具韌性的基礎防禦體系。\n\n【核心細節與技術解析】\nTerra Industries 的技術核心在於將模組化、高韌性與數位化管理結合，打造出一套針對嚴苛環境與資源有限地區的防禦解決方案。不同於傳統防衛企業依賴大型軍事基地的設計思維，Terra Industries 採用「分散式基礎設施」架構。其產品線涵蓋智慧監控網路、能源獨立的指揮中樞，以及抗干擾的通訊模組。透過運用邊緣運算（Edge Computing）技術，其系統能在通訊中斷的極端狀況下維持運作，並即時分析區域內的潛在威脅。此外，該公司強調技術的「可維護性與可複製性」，即利用在地化的建材與簡化的組裝模組，將防衛設施的建設成本降低至傳統軍工產業的一半以下，同時確保符合國際安全標準，使這類解決方案在基礎建設較為薄弱的地區依然具備高度的可落地性。\n\n【產業影響與市場分析】\n長期以來，全球防衛科技市場被北美、歐洲及東亞的巨頭所壟斷，開發中國家往往淪為昂貴防衛產品的單向消費者。Terra Industries 的崛起標誌著「反向創新」模式在軍工領域的萌芽。透過解決全球南方特有的地理與安全痛點，該公司正在創造一個全新的利基市場。從市場角度來看，非洲及其他南方國家正處於數位化轉型與基礎建設升級的交匯期，對於邊境控管、關鍵設施保護及反恐情報的需求正在急劇膨脹。投資人之所以看好 Terra Industries，不僅是因為其技術門檻，更在於其創造了一套符合「成本效益」的防衛生態系統，這對於預算有限但安全威脅上升的政府來說，具有極強的吸引力。這種商業模式極可能對既有的全球國防供應鏈產生破壞式創新，促使大型軍工集團開始審視其對新興市場的定價與服務策略。\n\n【未來展望與結語】\n展望未來，Terra Industries 的目標遠不止於提供防禦硬體，而是希望建立一套覆蓋全球南方的「區域安全數據層」。隨著種子輪資金到位，公司計畫將業務版圖進一步向東南亞及拉丁美洲延伸，推動區域內的資安聯防與技術交流。然而，該公司亦面臨著嚴峻的挑戰，包括各國複雜的法規限制、地緣政治陣營的選邊站壓力，以及如何平衡技術輸出與國際制裁規範的關係。總體而言，Terra Industries 的成功融資象徵著防衛科技已從傳統的軍備競賽，轉向更側重於「韌性基礎設施」的服務產業。若能持續深化技術在地化並確保穩定的供應鏈，Terra Industries 將不僅僅是一家防衛科技公司，更有望成為推動開發中國家自主安全戰略的核心推手，重新定義全球南方在國際安全架構中的話語權。",
+        "link": "https://techcrunch.com/2026/08/17/terra-industries-closes-52m-seed-round-to-build-defense-infrastructure-for-the-global-south/",
+        "image": "https://techcrunch.com/wp-content/uploads/2026/02/Terra-Industries-drone.jpg?resize=1200,903",
+        "date": "Mon, 17 Aug 2026 15:06:07 +0000",
+        "category": "Ecosystem",
+        "id": 5
+    },
+    {
         "title": "支付巨擘轉型關鍵佈局：Stripe 傳以 70 億美元收購 AI 網關新創 OpenRouter",
         "summary": "金融科技龍頭 Stripe 傳出將以超過 70 億美元的高價收購 AI 網關新創 OpenRouter。此舉標誌著 Stripe 正試圖將其支付基礎設施的影響力，延伸至 AI 模型調用與開發領域，整合 AI 應用層的「支付與路由」。",
         "content": "【事件背景與起因】\n在人工智慧競賽進入「應用落地」的白熱化階段後，支付巨頭 Stripe 的戰略路徑出現了重大轉折。根據業界最新傳出的消息，Stripe 正計畫以超過 70 億美元的驚人估值，正式併購 AI 網關（AI Gateway）領域的後起之秀 OpenRouter。這項收購消息並非空穴來風，OpenRouter 的執行長此前曾公開形容該公司為「AI 界的 Stripe」，這不僅是一種市場定位的類比，更隱喻了雙方在業務邏輯上的高度共鳴：即為開發者提供一套標準化、高可用性且無痛集成的基礎設施。\n\nStripe 過去十年透過「一行程式碼」改變了網路支付，如今面對 AI 時代，其核心挑戰在於如何在支付之外，掌握 AI 模型調用的金流與數據流。此次收購背後的動機，源於企業對於多元模型切換需求日益增長，開發者不再滿足於單一 AI 提供商，而 OpenRouter 正是這類需求的最佳介面。對於 Stripe 而言，併購 OpenRouter 意味著直接切入「AI 基礎設施」的核心環節，確保開發者在調用模型時，不僅是技術層面的路由，更包括後續的計費與結算，皆在 Stripe 的生態系內完成。\n\n【核心細節與技術解析】\nOpenRouter 的核心競爭力在於其簡化的「統一 API 介面」。在目前的 AI 產業鏈中，開發者若想在 Claude、GPT-4、Llama 等不同模型間切換，必須應對複雜且各異的 API 文件與授權機制。OpenRouter 提供了一層中間件，使得開發者僅需透過一個單一 API，即可無縫連接全球主流與開源模型。這層「網關」不僅解決了技術相容性問題，更具備了負載均衡與成本優化功能，能自動根據使用者的需求選擇性價比最優的模型路徑。\n\n若 Stripe 將此技術納入麾下，技術架構將可能出現重大整合。未來，Stripe 的開發者控制面板可能直接嵌入模型選擇器，並透過 Stripe 自有的 billing 系統，實現對不同 AI 模型調用的即時精細化計費。此外，OpenRouter 的分散式路由技術，能有效降低模型調用的延遲並提高穩定性，這對於極度講求 SLA（服務水準協議）的 Stripe 企業客戶群而言，是極具吸引力的價值主張。這種整合不僅是技術的疊加，更是「API 經濟」的一次深度進化，將 AI 推理請求轉化為可預測、可計費的數位資產流。\n\n【產業影響與市場分析】\n此項收購若屬實，將對 AI 開發者生態系產生深遠衝擊。首先，這可能打破當前由 OpenAI 或 Anthropic 等模型研發公司主導的「圍牆花園」。透過 Stripe 的資本與通路推動，OpenRouter 的開放架構可能迅速成為產業標準，降低企業部署多模型架構的門檻，削弱單一模型廠商對開發者的綁定力。\n\n從市場格局來看，這是支付商正式向「AI 中介層」宣戰的信號。目前 AI 市場面臨極大的碎片化問題，各家模型不僅功能迥異，計費單位與模式也缺乏統一標準，這導致企業在使用 AI 時面臨管理上的混亂。Stripe 若成功併購，等於是將「支付透明度」引入了「AI 計算成本」中，這對企業財務長（CFO）而言，無疑是管理 AI 支出的最佳工具。此外，對於其他支付同業或大型雲端供應商（如 AWS、Azure）而言，Stripe 的動作預示了「模型路由」將成為下一波兵家必爭之地，這可能會引發一連串針對 AI 基礎設施工具的併購與反併購浪潮。\n\n【未來展望與結語】\n展望未來，Stripe 與 OpenRouter 的結合預示著一個「AI 即服務」（AI-as-a-Service）的全面金融化時代。當 AI 模型調用變得像轉帳一樣頻繁且標準化時，Stripe 的角色將從單純的「金流轉運站」演變為「人工智慧算力經濟的操盤手」。儘管 70 億美元的收購金額在當前 AI 泡沫隱憂的背景下顯得相當激進，但考慮到 Stripe 意圖搶佔 AI 應用時代「基礎建設供應商」的戰略定位，這筆投資或許只是其龐大佈局的第一步。\n\n總結而言，此次收購反映了科技產業的共識：未來的軟體開發，核心將圍繞著模型的調度與成本控制。Stripe 透過吸收 OpenRouter，不僅鞏固了其在開發者生態中的核心地位，更為其未來幾年的營收增長開闢了 AI 模型調用與租賃的新戰場。對於開發者而言，一個整合了支付便利性與模型靈活性的一站式平台即將誕生，這將大幅降低企業轉型 AI 的行政成本與技術門檻。然而，市場也將密切關注 Stripe 如何在保持 OpenRouter 開放性的前提下，同時實現商業變現，這將成為該併購案能否長期成功的關鍵考驗。",
         "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
         "image": "https://techcrunch.com/wp-content/uploads/2024/04/Stripe-resized.webp?resize=1200,674",
         "date": "Sun, 16 Aug 2026 20:57:04 +0000",
-        "id": 0
+        "id": 6,
+        "category": "Techno"
     },
     {
         "title": "元宇宙泡沫後的信任危機：為什麼大眾與市場對祖克柏的 AI 願景仍抱持保留態度？",
@@ -15,7 +76,8 @@
         "link": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2239280474.jpg?resize=1200,800",
         "date": "Sun, 16 Aug 2026 20:32:01 +0000",
-        "id": 1
+        "id": 7,
+        "category": "Techno"
     },
     {
         "title": "Anthropic 執行長 Dario Amodei：AI 爭議的本質，是一場深層的「信任危機」",
@@ -24,7 +86,8 @@
         "link": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261514463.jpg?w=1024",
         "date": "Sun, 16 Aug 2026 16:53:51 +0000",
-        "id": 2
+        "id": 8,
+        "category": "Techno"
     },
     {
         "title": "電動空中計程車的飛行軌跡之變：eVTOL 產業從「願景」走向「落地」的挑戰與轉折",
@@ -33,7 +96,8 @@
         "link": "https://techcrunch.com/2026/08/16/techcrunch-mobility-the-shifting-flight-path-of-electric-air-taxis/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/joby-aviation-GettyImages-2272907562.jpg?resize=1200,800",
         "date": "Sun, 16 Aug 2026 16:04:00 +0000",
-        "id": 3
+        "id": 9,
+        "category": "Techno"
     },
     {
         "title": "深層滲透與地緣政治博弈：伊朗支持的駭客如何衝擊美國水利基礎設施",
@@ -42,7 +106,8 @@
         "link": "https://techcrunch.com/2026/08/14/what-we-know-about-the-alleged-iranian-hacks-on-u-s-water-utilities/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/water-treatment-facility-monitoring-equipment.jpg?resize=1200,800",
         "date": "Fri, 14 Aug 2026 19:04:32 +0000",
-        "id": 4
+        "id": 10,
+        "category": "Techno"
     },
     {
         "title": "AI 倫理的黑暗面：Grok 被控遭濫用製作不雅影像，引發生成式 AI 安全性重審",
@@ -51,7 +116,8 @@
         "link": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
         "date": "Sat, 15 Aug 2026 21:29:19 +0000",
-        "id": 5
+        "id": 11,
+        "category": "Techno"
     },
     {
         "title": "揭開 AI 身份標記技術：Anthropic 如何透過浮水印為 Claude 模型建立信任機制",
@@ -60,7 +126,8 @@
         "link": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
         "image": "https://techcrunch.com/wp-content/uploads/2024/01/Magnifying-glasses.jpg?resize=1200,840",
         "date": "Sat, 15 Aug 2026 18:58:39 +0000",
-        "id": 6
+        "id": 12,
+        "category": "Techno"
     },
     {
         "title": "航太巨頭的軟體野心：SpaceX 完成收購 AI 程式開發平台 Cursor",
@@ -69,7 +136,8 @@
         "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/07/cursor.jpg?resize=1200,800",
         "date": "Sat, 15 Aug 2026 16:30:00 +0000",
-        "id": 7
+        "id": 13,
+        "category": "Techno"
     },
     {
         "title": "AI 帳號安全拉警報：如何偵測你的 ChatGPT 與 AI 平台是否已遭駭客入侵？",
@@ -78,7 +146,8 @@
         "link": "https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have-been-hacked/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/broken-lock.jpg?resize=1200,823",
         "date": "Sat, 15 Aug 2026 16:10:00 +0000",
-        "id": 8
+        "id": 14,
+        "category": "Techno"
     },
     {
         "title": "核融合投資狂潮：解析全球融資逾 1 億美元的頂尖技術玩家與產業賽局",
@@ -87,7 +156,8 @@
         "link": "https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m/",
         "image": "https://techcrunch.com/wp-content/uploads/2024/07/GettyImages-1455925032.jpg?resize=1200,675",
         "date": "Sat, 15 Aug 2026 13:15:20 +0000",
-        "id": 9
+        "id": 15,
+        "category": "Techno"
     },
     {
         "title": "金融科技巨震：傳 PayPal 正與 Stripe 及 Advent 洽談私有化或被收購案",
@@ -96,7 +166,8 @@
         "link": "https://techcrunch.com/2026/08/14/talks-to-sell-paypal-to-stripe-and-advent-are-heating-up/",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/GettyImages-1584248812.jpg?w=1200",
         "date": "Fri, 14 Aug 2026 22:43:24 +0000",
-        "id": 10
+        "id": 16,
+        "category": "Techno"
     },
     {
         "title": "無人駕駛重卡正式駛入加州高速公路：Aurora 與 Kodiak 開啟物流運輸新篇章",
@@ -105,7 +176,8 @@
         "link": "https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/KODIAK_GEN5_HIGHWAY_3.jpg?resize=1200,801",
         "date": "Fri, 14 Aug 2026 20:37:49 +0000",
-        "id": 11
+        "id": 17,
+        "category": "Techno"
     },
     {
         "title": "創投界清流之聲：Thrive Capital 創辦人 Joshua Kushner 警告 AI 泡沫化的投資紀律危機",
@@ -114,7 +186,8 @@
         "link": "https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2184416821.jpg?w=1024",
         "date": "Fri, 14 Aug 2026 19:33:00 +0000",
-        "id": 12
+        "id": 18,
+        "category": "Techno"
     },
     {
         "title": "拒絕拖延與遺忘：Marco Arment 新作「Unforgetful」如何重新定義提醒機制？",
@@ -123,7 +196,8 @@
         "link": "https://techcrunch.com/2026/08/14/unforgetful-is-a-new-reminders-app-for-people-who-cant-stop-hitting-snooze/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/person-remembering-reminder-GettyImages-1420814839.jpg?resize=1200,801",
         "date": "Fri, 14 Aug 2026 16:21:04 +0000",
-        "id": 13
+        "id": 19,
+        "category": "Techno"
     },
     {
         "title": "Google 鬆綁 AI 浮水印政策：讓圖像生成更具彈性，但隱形安全標記仍是底線",
@@ -132,7 +206,8 @@
         "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
         "date": "Fri, 14 Aug 2026 16:13:40 +0000",
-        "id": 14
+        "id": 20,
+        "category": "Techno"
     },
     {
         "title": "賽琳娜·戈梅茲身陷法律風波：心理健康平台 Wondermind 遭投資人控訴詐欺",
@@ -141,7 +216,8 @@
         "link": "https://techcrunch.com/2026/08/13/investors-sue-selena-gomez-alleging-fraud-tied-to-her-mental-health-startup/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2202517874.jpg?resize=1200,800",
         "date": "Thu, 13 Aug 2026 22:12:40 +0000",
-        "id": 15
+        "id": 21,
+        "category": "Techno"
     },
     {
         "title": "Flock Safety 強推「審計輔助工具」監控警務濫權：技術黑箱引發信任危機",
@@ -150,7 +226,8 @@
         "link": "https://techcrunch.com/2026/08/13/flock-says-its-new-tool-will-help-identify-police-abuse-but-hasnt-explained-how-it-works/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/flock-camera-pole.jpg?resize=1200,799",
         "date": "Thu, 13 Aug 2026 22:02:04 +0000",
-        "id": 16
+        "id": 22,
+        "category": "Techno"
     },
     {
         "title": "當 iPhone 鎖定畫面跳出「間諜軟體」警告：Apple 安全防禦機制的深度解讀",
@@ -159,7 +236,8 @@
         "link": "https://techcrunch.com/2026/08/13/if-apple-sends-you-a-push-notification-alerting-you-to-a-spyware-attack-take-it-seriously/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/ios-notification-threat-apple-hero.jpg?resize=1200,814",
         "date": "Thu, 13 Aug 2026 21:50:11 +0000",
-        "id": 17
+        "id": 23,
+        "category": "Techno"
     },
     {
         "title": "人工智慧成本戰開打：Writer 推出新型 AI 模型與架構，力求大幅降低企業部署成本",
@@ -168,7 +246,8 @@
         "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
         "image": "https://techcrunch.com/wp-content/uploads/2023/09/May-Habib-Disrupt-2023.jpg?resize=1200,800",
         "date": "Thu, 13 Aug 2026 21:13:24 +0000",
-        "id": 18
+        "id": 24,
+        "category": "Techno"
     },
     {
         "title": "人工智慧淘金潮下的資本角力：Databricks 如何以 1,900 億美元估值完成 50 億美元融資？",
@@ -177,7 +256,8 @@
         "link": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
         "image": "https://techcrunch.com/wp-content/uploads/2021/04/Ali_Ghodsi.jpg?resize=1200,1200",
         "date": "Thu, 13 Aug 2026 20:14:39 +0000",
-        "id": 19
+        "id": 25,
+        "category": "Techno"
     },
     {
         "title": "Anthropic 的 AI 水印爭議：當「追蹤技術」成為職場與學術界的雙面刃",
@@ -186,7 +266,8 @@
         "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg?w=1024",
         "date": "Wed, 12 Aug 2026 22:26:37 +0000",
-        "id": 20
+        "id": 26,
+        "category": "Techno"
     },
     {
         "title": "核能新創 Fermi 重組核心領導層：前任總裁 Lee McIntire 接掌，力圖重振 AI 能源版圖",
@@ -195,7 +276,8 @@
         "link": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
         "image": "https://techcrunch.com/wp-content/uploads/2014/08/2468396121_7c6c132c8e_b.jpg?w=1000",
         "date": "Wed, 12 Aug 2026 22:24:00 +0000",
-        "id": 21
+        "id": 27,
+        "category": "Techno"
     },
     {
         "title": "太空維修新紀元：諾斯洛普·格魯曼的機械人太空船如何延續衛星生命",
@@ -204,7 +286,8 @@
         "link": "https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/MRV-Arms-2.jpg?resize=1200,800",
         "date": "Wed, 12 Aug 2026 20:53:41 +0000",
-        "id": 22
+        "id": 28,
+        "category": "Techno"
     },
     {
         "title": "Twitch 宣布默認使用直播內容訓練 AI 模型：創作者權益與數據歸屬的拉鋸戰",
@@ -213,7 +296,8 @@
         "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
         "image": "https://techcrunch.com/wp-content/uploads/2024/03/twitch-reflection.jpg?resize=1200,799",
         "date": "Wed, 12 Aug 2026 20:10:40 +0000",
-        "id": 23
+        "id": 29,
+        "category": "Techno"
     },
     {
         "title": "外送平台監管風暴：Grubhub 支付 2,400 萬美元和解金，賠償計畫正式啟動",
@@ -222,7 +306,8 @@
         "link": "https://techcrunch.com/2026/08/12/grubhubs-24m-ftc-settlement-is-finally-reaching-diners-and-drivers/",
         "image": "https://techcrunch.com/wp-content/uploads/2023/07/HeaderMobileUpdate_FINAL-1-867x1024-1.png?w=861",
         "date": "Wed, 12 Aug 2026 18:34:21 +0000",
-        "id": 24
+        "id": 30,
+        "category": "Techno"
     },
     {
         "title": "Google Gemini 勢不可擋：用戶數突破 10 億里程碑，語音交互與圖像生成成為核心推力",
@@ -231,7 +316,8 @@
         "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 18:49:12 +0000",
-        "id": 25
+        "id": 31,
+        "category": "Techno"
     },
     {
         "title": "深耕國防版圖：Joby Aviation 以 5 億美元收購 Resonant Sciences，搶攻 eVTOL 軍事化轉型商機",
@@ -240,7 +326,8 @@
         "link": "https://techcrunch.com/2026/08/11/joby-aviation-builds-out-defense-business-with-500m-acquisition/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/joby-flight-2.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 16:06:08 +0000",
-        "id": 26
+        "id": 32,
+        "category": "Techno"
     },
     {
         "title": "萬米高空中的數位陷阱：達美航空遭遇非法 Wi-Fi 釣魚攻擊事件深度解析",
@@ -249,7 +336,8 @@
         "link": "https://techcrunch.com/2026/08/11/delta-investigating-after-someone-set-up-fake-wi-fi-network-mid-flight/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/delta-wi-fi-sign-plane.jpg?resize=1200,679",
         "date": "Tue, 11 Aug 2026 15:40:46 +0000",
-        "id": 27
+        "id": 33,
+        "category": "Techno"
     },
     {
         "title": "益智遊戲霸主正式入駐 Apple Arcade：Block Blast! 如何改寫移動遊戲商業模式？",
@@ -258,7 +346,8 @@
         "link": "https://techcrunch.com/2026/08/11/2025s-most-downloaded-game-block-blast-is-going-ad-free-on-apple-arcade/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/Apple-Arcade-Puzzle-Block-Blast-plus_inline.jpg.large_2x.jpg?resize=856,1200",
         "date": "Tue, 11 Aug 2026 15:33:59 +0000",
-        "id": 28
+        "id": 34,
+        "category": "Techno"
     },
     {
         "title": "賭上轉型之路：Rivian 執行長 RJ Scaringe 如何在電動車、機器人與自動駕駛的三重賽道中突圍",
@@ -267,7 +356,8 @@
         "link": "https://techcrunch.com/2026/08/11/rivian-ceo-rj-scaringe-is-betting-on-evs-robots-and-autonomy-all-at-once-hell-explain-why-at-disrupt-2026/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/RJ-Scaringe-Disrupt-Stage-2026.png?w=1200",
         "date": "Tue, 11 Aug 2026 15:30:00 +0000",
-        "id": 29
+        "id": 35,
+        "category": "Techno"
     },
     {
         "title": "去中心化社群的十字路口：Bluesky 用戶增長放緩背後的戰略轉型",
@@ -276,7 +366,8 @@
         "link": "https://techcrunch.com/2026/08/11/blueskys-active-user-base-is-shrinking-as-its-focus-expands-beyond-the-app/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/01/bluesky-GettyImages-2185144073.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:46:14 +0000",
-        "id": 30
+        "id": 36,
+        "category": "Techno"
     },
     {
         "title": "歐洲戰略自主的里程碑：剖析 57 億美元規模的 Scaleup Europe 與其首筆重注 ICEYE 的深意",
@@ -285,7 +376,8 @@
         "link": "https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1066714342.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 17:41:49 +0000",
-        "id": 31
+        "id": 37,
+        "category": "Techno"
     },
     {
         "title": "OpenAI 核心戰將離職：營運長 Brad Lightcap 去職後的策略意義與佈局",
@@ -294,7 +386,8 @@
         "link": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/brad-lightcap-GettyImages-2147824375-1.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 17:41:34 +0000",
-        "id": 32
+        "id": 38,
+        "category": "Techno"
     },
     {
         "title": "AI 領域史無前例的豪賭：River AI 甫成立兩月即斬獲 11 億美元融資，重塑個人代理格局",
@@ -303,7 +396,8 @@
         "link": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/River-AI-Igor-Babuschkin.jpeg?resize=1197,1200",
         "date": "Tue, 11 Aug 2026 17:41:22 +0000",
-        "id": 33
+        "id": 39,
+        "category": "Techno"
     },
     {
         "title": "AI 挑戰世紀難題：Anthropic 未發表模型在黎曼猜想研究取得突破性進展",
@@ -312,7 +406,8 @@
         "link": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 16:25:20 +0000",
-        "id": 34
+        "id": 40,
+        "category": "Techno"
     },
     {
         "title": "創投界的新醜聞：Phoebe Gates 的電商新創 Phia 捲入「Cookie Stuffing」非法獲利爭議",
@@ -321,7 +416,8 @@
         "link": "https://techcrunch.com/2026/08/11/phoebe-gates-and-sophia-kianni-reportedly-knew-phia-was-cookie-stuffing-for-months/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2264853771.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 21:39:58 +0000",
-        "id": 35
+        "id": 41,
+        "category": "Techno"
     },
     {
         "title": "創投寒冬中的熱錢風向標：Accel 閃電募集 5.5 億美元印度基金，重押數位轉型浪潮",
@@ -330,7 +426,8 @@
         "link": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/accel.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 21:39:11 +0000",
-        "id": 36
+        "id": 42,
+        "category": "Techno"
     },
     {
         "title": "結盟破局：Uber 出清自動送貨機器人新創 Serve Robotics 全數持股背後的戰略盤算",
@@ -339,7 +436,8 @@
         "link": "https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/",
         "image": "https://techcrunch.com/wp-content/uploads/2022/05/Serve-Uber-Eats.jpg?resize=1200,801",
         "date": "Tue, 11 Aug 2026 20:02:02 +0000",
-        "id": 37
+        "id": 43,
+        "category": "Techno"
     },
     {
         "title": "FBI 發布重磅警報：駭客鎖定私密影像進行勒索，數位隱私安全面臨嚴峻挑戰",
@@ -348,7 +446,8 @@
         "link": "https://techcrunch.com/2026/08/11/fbi-says-cybercriminals-are-hacking-into-victims-online-accounts-to-steal-their-intimate-pictures/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/08/teenagers-smartphones.jpg?resize=1200,800",
         "date": "Tue, 11 Aug 2026 19:38:23 +0000",
-        "id": 38
+        "id": 44,
+        "category": "Techno"
     },
     {
         "title": "OpenAI 正式推出 ChatGPT Linux 桌面版：填補開發者生態系關鍵拼圖",
@@ -357,6 +456,7 @@
         "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
         "image": "https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024",
         "date": "Tue, 11 Aug 2026 19:15:35 +0000",
-        "id": 39
+        "id": 45,
+        "category": "Techno"
     }
 ]
