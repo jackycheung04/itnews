@@ -179,8 +179,8 @@ CATEGORIES_RSS = {
         "https://www.wired.com/feed/category/gear/latest/rss",
     ],
     "Ecosystem": [
-        "https://techcrunch.com/category/startups/feed/",
         "https://www.techinasia.com/feed",
+        "https://techcrunch.com/category/startups/feed/",
     ],
 }
 
