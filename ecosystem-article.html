@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章內頁 - Ecosystem</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+  <!-- 導覽列 -->
+  <nav class="bg-black py-4 px-8 flex justify-between items-center border-b border-gray-800">
+    <a href="index.html" class="text-2xl font-bold text-white">Tailnews</a>
+    <div class="space-x-6 text-sm">
+      <a href="index.html" class="hover:text-red-500">Home</a>
+      <a href="techno.html" class="hover:text-red-500">Techno</a>
+      <a href="ecosystem.html" class="text-red-500 font-bold">Ecosystem</a>
+    </div>
+  </nav>
+
+  <!-- 文章主體 -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <div class="mb-4 text-xs text-red-500 font-semibold tracking-wider uppercase">
+      <a href="ecosystem.html" class="hover:underline">Ecosystem 初創生態</a>
+    </div>
+
+    <h1 id="article-title" class="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+      文章載入中...
+    </h1>
+
+    <div class="text-sm text-gray-400 mb-6 pb-4 border-b border-gray-800" id="article-date">
+      發佈日期：載入中...
+    </div>
+
+    <!-- 封面大圖 -->
+    <div class="mb-8 rounded overflow-hidden">
+      <img id="article-img" src="" class="w-full object-cover max-h-[500px]" alt="News Image">
+    </div>
+
+    <!-- 文章內文 -->
+    <article id="article-content" class="prose prose-invert max-w-none text-gray-300 leading-relaxed space-y-6 text-lg">
+      <p>內文讀取中...</p>
+    </article>
+
+    <div class="mt-12 pt-6 border-t border-gray-800">
+      <a href="ecosystem.html" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-bold">
+        ← 返回 Ecosystem 列表
+      </a>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = parseInt(urlParams.get('id'), 10);
+
+      fetch('data/news.json?t=' + new Date().getTime())
+        .then(res => res.json())
+        .then(newsList => {
+          const article = newsList.find(item => item.id === articleId);
+
+          if (article) {
+            document.title = `${article.title} - Ecosystem`;
+            document.getElementById('article-title').innerText = article.title;
+            document.getElementById('article-date').innerText = `發佈日期：${article.date || 'Today'}`;
+            document.getElementById('article-img').src = article.image;
+
+            // 處理換行格式並渲染內文
+            const contentEl = document.getElementById('article-content');
+            if (article.content) {
+              const paragraphs = article.content.split('\n').filter(p => p.trim() !== '');
+              contentEl.innerHTML = paragraphs.map(p => `<p class="mb-4">${p}</p>`).join('');
+            } else {
+              contentEl.innerHTML = `<p>${article.summary}</p>`;
+            }
+          } else {
+            document.getElementById('article-title').innerText = "找不到該篇文章";
+          }
+        })
+        .catch(err => {
+          console.error("載入文章失敗:", err);
+        });
+    });
+  </script>
+</body>
+</html>
