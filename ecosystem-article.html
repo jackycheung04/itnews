@@ -1,143 +1,267 @@
+<!--
+Template Name: Tailnews - Tailwind News Template
+Author: Aribudin
+Website: https://www.tailwindtemplate.net
+Contact: support@tailwindtemplate.net
+Purchase: https://themes.tailwindtemplate.net/tailnews
+License: You must have a valid license from official store to legally use the theme for your project.
+-->
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>文章內頁 - Ecosystem</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title  -->
+  <title>Ecosystem | Tailnews</title>
+  <meta name="description" content="Ecosystem Article">
+
+  <!-- Development css -->
   <link rel="stylesheet" href="src/css/style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon  -->
+  <link rel="icon" href="src/img/favicon.jpg">
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="text-gray-700 pt-9 sm:pt-10">
+  <!-- ========== { HEADER }==========  -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+     <nav class="bg-black">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex justify-between">
+            <div class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">Tailnews</div>
+            
+            <div class="flex flex-row">
+              <!-- nav menu -->
+              <ul class="navbar hidden lg:flex lg:flex-row text-gray-400 text-sm items-center font-bold">
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="index.html">Home</a>
+                </li>
+                <li class="dropdown relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="#">Pages</a>
 
-  <!-- 全站標準頂部導覽列 -->
-  <header class="bg-black text-white">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-14 text-sm">
-      <a href="index.html" class="text-2xl font-bold tracking-wider text-white">Tailnews</a>
-      <nav class="hidden md:flex space-x-6 items-center">
-        <a href="index.html" class="hover:text-red-500 py-4">Home</a>
-        <a href="#" class="hover:text-red-500 py-4">Pages ▾</a>
-        <a href="#" class="hover:text-red-500 py-4">Sport</a>
-        <a href="techno.html" class="hover:text-red-500 py-4">Techno</a>
-        <a href="ecosystem.html" class="text-red-500 font-bold border-b-2 border-red-500 py-4">Ecosystem</a>
-        <a href="travel.html" class="hover:text-red-500 py-4">Travel</a>
-        <a href="future.html" class="hover:text-red-500 py-4">Future</a>
-        <a href="#" class="hover:text-red-500 py-4">More</a>
-      </nav>
-      <div>
-        <button class="text-gray-300 hover:text-white">🔍</button>
-      </div>
-    </div>
-  </header>
+                  <ul class="dropdown-menu font-normal absolute left-0 right-auto top-full z-50 border-b-0 text-left bg-white text-gray-700 border border-gray-100" style="min-width: 12rem;">
+                    <li class="subdropdown relative hover:bg-gray-50">
+                      <a class="block py-2 px-6 border-b border-gray-100" href="#">Homepage</a>
+                      <ul class="dropdown-menu absolute left-full right-auto transform top-full z-50 border-b-0 text-left -mt-10 ml-0 mr-0 bg-white border border-gray-100" style="min-width: 12rem;">
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="index.html">Homepage 1</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="#">Sport</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="techno.html">Techno</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900 bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent text-white" href="ecosystem.html">Ecosystem</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="#">Travel</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="#">Future</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="#">More</a>
+                </li>
+              </ul>
 
-  <!-- 主內容區 -->
-  <main class="max-w-7xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      
-      <!-- 左側文章區域 (佔 2 欄) -->
-      <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded border border-gray-200 shadow-sm">
-        <div class="text-xs text-red-600 font-bold mb-2">Ecosystem</div>
-        
-        <h1 id="article-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight">
-          文章載入中...
-        </h1>
+              <!-- search form & mobile nav -->
+              <div class="flex flex-row items-center text-gray-300">
+                <div class="search-dropdown relative border-r lg:border-l border-gray-800 hover:bg-gray-900">
+                  <button class="block py-3 px-6 border-b-2 border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="open bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                  </button>
+                </div>
 
-        <div id="article-date" class="text-xs text-gray-400 mb-6 border-b pb-3">
-          發佈日期：載入中...
+                <div class="relative hover:bg-gray-800 block lg:hidden">
+                  <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                    <span class="sr-only">Mobile menu</span>
+                    <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg> Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+     </nav>
+  </header><!-- end header -->
 
-        <div class="mb-6 rounded overflow-hidden">
-          <img id="article-img" src="" class="w-full object-cover max-h-[450px]" alt="News Image">
-        </div>
+  <!-- =========={ MAIN }==========  -->
+  <main id="content">
+    <div class="bg-gray-50 py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <!-- Left Article Content -->
+          <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
+            <div class="w-full py-3">
+              <!-- Breadcrumbs / Category -->
+              <div class="mb-2">
+                <a href="ecosystem.html" class="text-xs text-red-600 font-bold uppercase border-b-2 border-red-600 pb-1">Ecosystem</a>
+              </div>
+              
+              <!-- Article Title -->
+              <h1 id="article-title" class="text-3xl font-bold mb-4"></h1>
 
-        <article id="article-content" class="text-gray-700 leading-relaxed space-y-4 text-base">
-          <p>內文讀取中...</p>
-        </article>
+              <!-- Author & Date -->
+              <div class="flex items-center text-sm text-gray-500 mb-6">
+                <span>作者：AI 編輯器</span>
+                <span class="mx-2">•</span>
+                <span id="article-date"></span>
+              </div>
 
-        <div class="mt-8 pt-4 border-t border-gray-200">
-          <a href="ecosystem.html" class="inline-block bg-black hover:bg-gray-800 text-white text-xs px-4 py-2 rounded font-semibold">
-            ← 返回 Ecosystem 列表
-          </a>
-        </div>
-      </div>
+              <!-- Main Cover Image -->
+              <div class="mb-6">
+                <img id="article-img" class="max-w-full w-full h-auto rounded" src="" alt="">
+              </div>
 
-      <!-- 右側邊欄 (佔 1 欄) -->
-      <div class="space-y-6">
-        <!-- Most Popular -->
-        <div class="bg-white p-5 rounded border border-gray-200 shadow-sm">
-          <h3 class="text-base font-bold text-gray-900 border-b pb-3 mb-4 border-gray-200">Most Popular</h3>
-          <ol id="popular-list" class="space-y-4">
-            <!-- 動態渲染熱門排行 -->
-          </ol>
-        </div>
+              <!-- Article Body -->
+              <div id="article-content" class="text-gray-800 text-lg leading-relaxed space-y-6"></div>
+              
+              <!-- Back to Ecosystem -->
+              <div class="mt-8 pt-6 border-t border-gray-200">
+                <a href="ecosystem.html" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-6 rounded text-sm transition-colors">
+                  ← 返回 Ecosystem 分類頁
+                </a>
+              </div>
+            </div>
+          </div>
 
-        <!-- 300x250 廣告區塊 -->
-        <div class="bg-gray-200 p-4 rounded text-center border border-gray-300 flex flex-col items-center justify-center min-h-[300px]">
-          <span class="text-xs text-gray-500 mb-2 font-semibold tracking-wider">ADVERTISEMENT</span>
-          <div class="w-[300px] h-[250px] bg-black text-white flex flex-col items-center justify-center p-4">
-            <span class="text-sm font-bold tracking-widest mb-1">ADVERTISEMENT</span>
-            <span class="text-xs text-gray-400 mb-4">300X250</span>
-            <button class="border border-white px-3 py-1 text-xs hover:bg-white hover:text-black transition">CONTACT US</button>
+          <!-- Right Sidebar -->
+          <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-3 lg:pb-8">
+            <div class="w-full bg-white">
+              <div class="mb-6">
+                <div class="p-4 bg-gray-100">
+                  <h2 class="text-lg font-bold">Most Popular</h2>
+                </div>
+                <ul id="most-popular-list" class="post-number">
+                </ul>
+              </div>
+            </div>
+
+            <!-- Advertisement Sidebar -->
+            <div class="text-sm py-6 sticky top-20">
+              <div class="w-full text-center">
+                <a class="uppercase text-gray-400 text-xs" href="#">Advertisement</a>
+                <a href="#">
+                  <img class="mx-auto mt-2" src="src/img/ads/250.jpg" alt="advertisement area">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-  </main>
+  </main><!-- end main -->
 
-  <!-- 頁尾 -->
-  <footer class="bg-black text-white mt-12 py-8">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-      <div>
-        <span class="text-lg font-bold text-white block mb-1">Tailnews</span>
-        <p>Tailnews News Template for news magazine, newspaper and news portal.</p>
-      </div>
-      <div class="mt-4 md:mt-0 space-x-4">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="techno.html" class="hover:underline">Techno</a>
-        <a href="ecosystem.html" class="hover:underline">Ecosystem</a>
+  <!-- =========={ FOOTER }==========  -->
+  <footer class="bg-black text-gray-400">
+    <div id="footer-content" class="relative pt-8 xl:pt-16 pb-6 xl:pb-12">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2 overflow-hidden">
+        <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
+          <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16 mb-6 lg:mb-0">
+            <div class="flex items-center mb-2">
+              <span class="text-3xl leading-normal mb-2 font-bold text-gray-100">TailNews</span>
+            </div>
+            <p>Tailwind News Template for build great newspaper, magazine and news portal.</p>
+          </div>
+          <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
+            <div class="flex flex-wrap flex-row">
+              <div class="flex-shrink max-w-full w-1/2 md:w-1/4 mb-6 lg:mb-0">
+                <h4 class="text-base leading-normal mb-3 uppercase text-gray-100">Product</h4>
+                <ul>
+                  <li class="py-1 hover:text-white"><a href="index.html">Home</a></li>
+                  <li class="py-1 hover:text-white"><a href="techno.html">Techno</a></li>
+                  <li class="py-1 hover:text-white"><a href="ecosystem.html">Ecosystem</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+  async function loadArticleDetail() {
+    try {
       const urlParams = new URLSearchParams(window.location.search);
-      const articleId = parseInt(urlParams.get('id'), 10);
+      const rawId = urlParams.get('id');
+      const articleId = rawId !== null ? parseInt(rawId, 10) : 0;
 
-      fetch('data/news.json?t=' + new Date().getTime())
-        .then(res => res.json())
-        .then(newsList => {
-          // 渲染主文章內容
-          const article = newsList.find(item => item.id === articleId);
+      const res = await fetch('data/news.json?v=' + new Date().getTime());
+      const newsList = await res.json();
 
-          if (article) {
-            document.title = `${article.title} - Tailnews`;
-            document.getElementById('article-title').innerText = article.title;
-            document.getElementById('article-date').innerText = `發佈日期：${article.date || ''}`;
-            document.getElementById('article-img').src = article.image;
+      if (!newsList || newsList.length === 0) return;
 
-            const contentEl = document.getElementById('article-content');
-            if (article.content) {
-              const paragraphs = article.content.split('\n').filter(p => p.trim() !== '');
-              contentEl.innerHTML = paragraphs.map(p => `<p class="mb-4">${p}</p>`).join('');
-            } else {
-              contentEl.innerHTML = `<p>${article.summary || ''}</p>`;
-            }
-          } else {
-            document.getElementById('article-title').innerText = "找不到該篇文章";
-          }
+      let article = newsList.find(item => item.id === articleId);
+      if (!article) {
+        article = newsList[articleId] || newsList[0];
+      }
 
-          // 渲染 Most Popular 側邊欄
-          const ecoNews = newsList.filter(item => item.category === 'Ecosystem');
-          const popEl = document.getElementById('popular-list');
-          popEl.innerHTML = ecoNews.slice(0, 5).map((item, idx) => `
-            <li class="flex items-start space-x-3 border-b border-gray-100 pb-3 last:border-0">
-              <span class="text-xl font-bold text-gray-300 leading-none">${idx + 1}</span>
-              <a href="ecosystem-article.html?id=${item.id}" class="text-xs font-semibold text-gray-800 hover:text-red-600 line-clamp-2 leading-snug">${item.title}</a>
-            </li>
-          `).join('');
-        });
+      document.title = `${article.title || '新聞'} - Tailnews`;
+
+      const titleEl = document.getElementById('article-title');
+      const dateEl = document.getElementById('article-date');
+      const imgEl = document.getElementById('article-img');
+      const contentEl = document.getElementById('article-content');
+
+      if (titleEl) titleEl.textContent = article.title || '無標題';
+      if (dateEl) dateEl.textContent = article.date || '';
+
+      if (imgEl) {
+        imgEl.src = article.image || article.image_url || 'src/img/dummy/img2.jpg';
+        imgEl.alt = article.title || '';
+      }
+
+      if (contentEl) {
+        const fullText = article.content || article.summary || '';
+        const paragraphs = fullText.split('\n').filter(p => p.trim() !== '');
+        contentEl.innerHTML = paragraphs.map(p => `<p class="mb-4 leading-relaxed text-gray-800 text-lg">${p.trim()}</p>`).join('');
+      }
+
+      renderMostPopular(newsList);
+
+    } catch (err) {
+      console.error("載入文章內容失敗:", err);
+    }
+  }
+
+  function renderMostPopular(newsList) {
+    const container = document.getElementById('most-popular-list');
+    if (!container) return;
+
+    container.innerHTML = '';
+    const popularItems = newsList.slice(0, 5);
+
+    popularItems.forEach((item, idx) => {
+      const id = item.id !== undefined ? item.id : idx;
+      const title = item.title || '無標題文章';
+
+      const itemHtml = `
+        <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="ecosystem-article.html?id=${id}">
+            <span class="text-xl font-bold text-gray-300 mr-3 flex-shrink-0">${idx + 1}</span>
+            <span class="line-clamp-2">${title}</span>
+          </a>
+        </li>
+      `;
+      container.innerHTML += itemHtml;
     });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadArticleDetail);
   </script>
 </body>
 </html>
