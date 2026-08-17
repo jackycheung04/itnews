@@ -1,136 +1,327 @@
+<!--
+Template Name: Tailnews - Tailwind News Template
+Author: Aribudin
+Website: https://www.tailwindtemplate.net
+Contact: support@tailwindtemplate.net
+Purchase: https://themes.tailwindtemplate.net/tailnews
+License: You must have a valid license from official store to legally use the theme for your project.
+-->
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecosystem - Tailnews</title>
-  <link rel="stylesheet" href="src/css/style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-800">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- 全站標準頂部導覽列 -->
-  <header class="bg-black text-white">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-14 text-sm">
-      <a href="index.html" class="text-2xl font-bold tracking-wider text-white">Tailnews</a>
-      <nav class="hidden md:flex space-x-6 items-center">
-        <a href="index.html" class="hover:text-red-500 py-4">Home</a>
-        <a href="#" class="hover:text-red-500 py-4">Pages ▾</a>
-        <a href="#" class="hover:text-red-500 py-4">Sport</a>
-        <a href="techno.html" class="hover:text-red-500 py-4">Techno</a>
-        <a href="ecosystem.html" class="text-red-500 font-bold border-b-2 border-red-500 py-4">Ecosystem</a>
-        <a href="travel.html" class="hover:text-red-500 py-4">Travel</a>
-        <a href="future.html" class="hover:text-red-500 py-4">Future</a>
-        <a href="#" class="hover:text-red-500 py-4">More</a>
-      </nav>
-      <div>
-        <button class="text-gray-300 hover:text-white">🔍</button>
-      </div>
-    </div>
+  <!-- Title  -->
+  <title>Ecosystem | Tailnews</title>
+  <meta name="description" content="Tailwind CSS News Template">
+
+  <!-- Development css -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon  -->
+  <link rel="icon" href="src/img/favicon.jpg">
+</head>
+<body class="text-gray-700 pt-9 sm:pt-10">
+  <!-- ========== { HEADER }==========  -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+     <nav class="bg-black">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex justify-between">
+            <div class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">Tailnews</div>
+            
+            <div class="flex flex-row">
+              <!-- nav menu -->
+              <ul class="navbar hidden lg:flex lg:flex-row text-gray-400 text-sm items-center font-bold">
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="index.html">Home</a>
+                </li>
+                <li class="dropdown relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="#">Pages</a>
+
+                  <ul class="dropdown-menu font-normal absolute left-0 right-auto top-full z-50 border-b-0 text-left bg-white text-gray-700 border border-gray-100" style="min-width: 12rem;">
+                    <li class="subdropdown relative hover:bg-gray-50">
+                      <a class="block py-2 px-6 border-b border-gray-100" href="#">Homepage</a>
+                      <ul class="dropdown-menu absolute left-full right-auto transform top-full z-50 border-b-0 text-left -mt-10 ml-0 mr-0 bg-white border border-gray-100" style="min-width: 12rem;">
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="index.html">Homepage 1</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="index-2.html">Homepage 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="subdropdown relative hover:bg-gray-50">
+                      <a class="block py-2 px-6 border-b border-gray-100" href="#">Pages</a>
+                      <ul class="dropdown-menu absolute left-full right-auto transform top-full z-50 border-b-0 text-left -mt-10 ml-0 mr-0 bg-white border border-gray-100" style="min-width: 12rem;">
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="404.html">404</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="author.html">Author</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="category.html">Category</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="search.html">Search</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="page.html">Page</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="contact-us.html">Contact</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="ecosystem.html">Ecosystem</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="techno.html">Techno</a>
+                </li>
+              </ul>
+
+              <!-- search form & mobile nav -->
+              <div class="flex flex-row items-center text-gray-300">
+                <div class="search-dropdown relative border-r lg:border-l border-gray-800 hover:bg-gray-900">
+                  <button class="block py-3 px-6 border-b-2 border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="open bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="close bi bi-x-lg" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                      <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu absolute left-auto right-0 top-full z-50 text-left bg-white text-gray-700 border border-gray-100 mt-1 p-3" style="min-width: 15rem;">
+                    <div class="flex flex-wrap items-stretch w-full relative">
+                      <input type="text" class="flex-shrink flex-grow max-w-full leading-5 w-px flex-1 relative py-2 px-5 text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="text" placeholder="Search..." aria-label="search">
+                      <div class="flex -mr-px">
+                        <button class="flex items-center py-2 px-5 -ml-1 leading-5 text-gray-100 bg-black hover:text-white hover:bg-gray-900 focus:outline-none" type="submit">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative hover:bg-gray-800 block lg:hidden">
+                  <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                    <span class="sr-only">Mobile menu</span>
+                    <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg> Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </nav>
   </header>
 
-  <!-- 主內容區 -->
-  <main class="max-w-7xl mx-auto px-4 py-8">
-    <!-- 分類標題 -->
-    <div class="flex items-center mb-6">
-      <div class="h-5 w-1 bg-red-600 mr-2"></div>
-      <h1 class="text-2xl font-bold text-gray-900">Ecosystem</h1>
-    </div>
+  <!-- =========={ MAIN }==========  -->
+  <main id="content">
+    <div class="bg-gray-50 py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      
-      <!-- 左側主要新聞列表 (佔 2 欄) -->
-      <div class="lg:col-span-2 space-y-8">
-        
-        <!-- 頭條新聞大圖 -->
-        <div class="bg-white rounded overflow-hidden shadow-sm border border-gray-200">
-          <a id="hero-link" href="#">
-            <img id="hero-img" src="" class="w-full object-cover max-h-[420px]" alt="Hero Image">
-          </a>
-          <div class="p-6">
-            <h2 class="text-2xl font-bold mb-3 text-gray-900">
-              <a id="hero-title-link" href="#" class="hover:text-red-600">載入中...</a>
-            </h2>
-            <p id="hero-summary" class="text-gray-600 text-sm mb-4 line-clamp-2">摘要載入中...</p>
-            <span class="text-xs text-gray-400" id="hero-date"></span>
+          <!-- 左側 2/3 主欄位 -->
+          <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
+            <div class="w-full py-3">
+              <h2 class="text-gray-800 text-2xl font-bold">
+                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Ecosystem
+              </h2>
+            </div>
+
+            <!-- 頂部焦點大圖卡片 -->
+            <div class="flex flex-row flex-wrap -mx-3">
+              <div class="flex-shrink max-w-full w-full px-3 pb-5">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                  <a id="hero-link" href="#">
+                    <img id="hero-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="hero title">
+                  </a>
+                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                    <a href="#" id="hero-link-title">
+                      <h2 id="hero-title" class="text-3xl font-bold capitalize text-white mb-3">載入中...</h2>
+                    </a>
+                    <p id="hero-summary" class="text-gray-100 hidden sm:inline-block">載入中...</p>
+                    <div class="pt-2">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Ecosystem</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 下方新聞小卡片容器 -->
+            <div id="news-grid-container" class="flex flex-wrap -mx-3"></div>
+
+            <!-- 載入更多新聞按鈕 -->
+            <div class="w-full text-center my-6">
+              <button id="load-more-btn" class="py-2 px-6 bg-red-600 hover:bg-red-700 text-white font-bold rounded transition-colors duration-200">
+                載入更多新聞
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- 下方新聞網格 -->
-        <div id="eco-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <!-- 動態渲染 6 宮格新聞 -->
+          <!-- 右側側邊欄 -->
+          <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-14 lg:pb-8 order-first lg:order-last">
+            <div class="w-full bg-white">
+              <div class="mb-6">
+                <div class="p-4 bg-gray-100">
+                  <h2 class="text-lg font-bold">Most Popular</h2>
+                </div>
+                <ul id="most-popular-list" class="post-number"></ul>
+              </div>
+            </div>
+
+            <div class="text-sm py-6 sticky">
+              <div class="w-full text-center">
+                <a class="uppercase" href="#">Advertisement</a>
+                <a href="#">
+                  <img class="mx-auto" src="src/img/ads/250.jpg" alt="advertisement area">
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <!-- 右側邊欄 (佔 1 欄) -->
-      <div class="space-y-6">
-        <!-- Most Popular -->
-        <div class="bg-white p-5 rounded border border-gray-200 shadow-sm">
-          <h3 class="text-base font-bold text-gray-900 border-b pb-3 mb-4 border-gray-200">Most Popular</h3>
-          <ol id="popular-list" class="space-y-4">
-            <!-- 動態渲染熱門排行 -->
-          </ol>
-        </div>
-
-        <!-- 300x250 廣告區塊 -->
-        <div class="bg-gray-200 p-4 rounded text-center border border-gray-300 flex flex-col items-center justify-center min-h-[300px]">
-          <span class="text-xs text-gray-500 mb-2 font-semibold tracking-wider">ADVERTISEMENT</span>
-          <div class="w-[300px] h-[250px] bg-black text-white flex flex-col items-center justify-center p-4">
-            <span class="text-sm font-bold tracking-widest mb-1">ADVERTISEMENT</span>
-            <span class="text-xs text-gray-400 mb-4">300X250</span>
-            <button class="border border-white px-3 py-1 text-xs hover:bg-white hover:text-black transition">CONTACT US</button>
-          </div>
-        </div>
-      </div>
-
     </div>
   </main>
 
+  <!-- =========={ FOOTER }==========  -->
+  <footer class="bg-black text-gray-400">
+    <div class="footer-dark">
+      <div class="container py-4 border-t border-gray-200 border-opacity-10">
+        <div class="row">
+          <div class="col-12 col-md text-center">
+            <p class="d-block my-3">Copyright © Tailnews | All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor & Theme JS -->
+  <script src="src/vendors/hc-sticky/dist/hc-sticky.js"></script>
+  <script src="src/js/theme.js"></script>
+
+  <!-- JavaScript 動態載入與渲染新聞邏輯 -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      fetch('data/news.json?t=' + new Date().getTime())
-        .then(res => res.json())
-        .then(data => {
-          const ecoNews = data.filter(item => item.category === 'Ecosystem');
-          if (!ecoNews || ecoNews.length === 0) return;
+    let allNewsData = [];
+    let currentGridIndex = 1; 
+    const BATCH_SIZE = 6;     
+    const ARTICLE_PAGE = 'ecosystem-article.html';
 
-          // 1. 渲染頭條大圖
-          const hero = ecoNews[0];
-          const heroUrl = `ecosystem-article.html?id=${hero.id}`;
-          document.getElementById('hero-title-link').innerText = hero.title;
-          document.getElementById('hero-title-link').href = heroUrl;
-          document.getElementById('hero-link').href = heroUrl;
-          document.getElementById('hero-img').src = hero.image;
-          document.getElementById('hero-summary').innerText = hero.summary || '';
-          document.getElementById('hero-date').innerText = hero.date || '';
+    function getImageUrl(item) {
+      if (!item) return 'src/img/dummy/img2.jpg';
+      return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img2.jpg';
+    }
 
-          // 2. 渲染網格新聞
-          const gridNews = ecoNews.slice(1, 7);
-          const gridEl = document.getElementById('eco-grid');
-          gridEl.innerHTML = gridNews.map(item => `
-            <div class="bg-white rounded overflow-hidden shadow-sm border border-gray-200 flex flex-col">
-              <a href="ecosystem-article.html?id=${item.id}">
-                <img src="${item.image}" class="w-full object-cover h-36">
+    async function initNews() {
+      try {
+        const res = await fetch('data/news.json?v=' + new Date().getTime());
+        allNewsData = await res.json();
+
+        if (!allNewsData || allNewsData.length === 0) return;
+
+        console.log("新聞數據載入成功，總篇數:", allNewsData.length);
+
+        renderHeroNews(allNewsData[0]);
+        renderNextNewsGridBatch();
+        renderMostPopular(allNewsData);
+
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        if (loadMoreBtn) {
+          loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
+        }
+
+      } catch (err) {
+        console.error("載入新聞失敗:", err);
+      }
+    }
+
+    function renderHeroNews(hero) {
+      if (!hero) return;
+      const heroImg = document.getElementById('hero-img');
+      const heroTitle = document.getElementById('hero-title');
+      const heroSummary = document.getElementById('hero-summary');
+      const heroLink = document.getElementById('hero-link');
+      const heroLinkTitle = document.getElementById('hero-link-title');
+      const articleId = hero.id !== undefined ? hero.id : 0;
+      const articleUrl = `${ARTICLE_PAGE}?id=${articleId}`;
+
+      if (heroImg) {
+        heroImg.src = getImageUrl(hero);
+        heroImg.alt = hero.title || '';
+        heroImg.classList.remove('opacity-0');
+        heroImg.classList.add('opacity-100');
+      }
+      if (heroTitle) heroTitle.textContent = hero.title || '';
+      if (heroLink) heroLink.href = articleUrl;
+      if (heroLinkTitle) heroLinkTitle.href = articleUrl;
+
+      if (heroSummary) {
+        const rawSummary = hero.summary || hero.description || '';
+        heroSummary.textContent = rawSummary.length > 80 ? rawSummary.substring(0, 80) + '...' : rawSummary;
+      }
+    }
+
+    function renderNextNewsGridBatch() {
+      const container = document.getElementById('news-grid-container');
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      if (!container) return;
+
+      const end = currentGridIndex + BATCH_SIZE;
+      const items = allNewsData.slice(currentGridIndex, end);
+
+      items.forEach((item, idx) => {
+        const articleId = item.id !== undefined ? item.id : (currentGridIndex + idx);
+        const imageUrl = getImageUrl(item);
+        const itemTitle = item.title || '無標題文章';
+
+        const cardHtml = `
+          <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 mb-4">
+            <div class="relative hover-img max-h-48 overflow-hidden rounded">
+              <a href="${ARTICLE_PAGE}?id=${articleId}">
+                <img class="max-w-full w-full mx-auto h-40 object-cover" src="${imageUrl}" alt="${itemTitle}">
               </a>
-              <div class="p-3 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-sm mb-2 line-clamp-2 text-gray-900">
-                  <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600">${item.title}</a>
-                </h3>
-                <span class="text-xs text-red-600 font-semibold">| Ecosystem</span>
-              </div>
             </div>
-          `).join('');
+            <div class="pt-2">
+              <h3 class="text-base font-bold leading-tight mb-2">
+                <a class="hover:text-red-600" href="${ARTICLE_PAGE}?id=${articleId}">${itemTitle}</a>
+              </h3>
+            </div>
+          </div>
+        `;
+        container.insertAdjacentHTML('beforeend', cardHtml);
+      });
 
-          // 3. 渲染 Most Popular
-          const popEl = document.getElementById('popular-list');
-          popEl.innerHTML = ecoNews.slice(0, 5).map((item, idx) => `
-            <li class="flex items-start space-x-3 border-b border-gray-100 pb-3 last:border-0">
-              <span class="text-xl font-bold text-gray-300 leading-none">${idx + 1}</span>
-              <a href="ecosystem-article.html?id=${item.id}" class="text-xs font-semibold text-gray-800 hover:text-red-600 line-clamp-2 leading-snug">${item.title}</a>
-            </li>
-          `).join('');
-        });
-    });
+      currentGridIndex = end;
+
+      if (currentGridIndex >= allNewsData.length) {
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+      }
+    }
+
+    function renderMostPopular(data) {
+      const popularList = document.getElementById('most-popular-list');
+      if (!popularList) return;
+      popularList.innerHTML = '';
+
+      const popularItems = data.slice(0, 5);
+      popularItems.forEach((item, index) => {
+        const articleId = item.id !== undefined ? item.id : index;
+        const itemTitle = item.title || '無標題文章';
+
+        const li = document.createElement('li');
+        li.className = 'border-b border-gray-100 hover:bg-gray-50';
+        li.innerHTML = `
+          <a class="text-base font-bold px-6 py-3 flex flex-row items-center hover:text-red-600" href="${ARTICLE_PAGE}?id=${articleId}">
+            ${itemTitle}
+          </a>
+        `;
+        popularList.appendChild(li);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initNews);
   </script>
 </body>
 </html>
