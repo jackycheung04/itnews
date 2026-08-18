@@ -1040,7 +1040,7 @@ License: You must have a valid license from official store to legally use the th
         // ==========================================
        // 2. Ecosystem (初創生態) 卡片處理
         // ==========================================
-        const ecosystemNews = newsList.filter(item => item.category === 'Ecosystem');
+        const ecosystemNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'ecosystem');
         if (ecosystemNews.length > 0) {
           const latestEco = ecosystemNews[0];
           const ecoArticleId = latestEco.id !== undefined ? latestEco.id : 0;
@@ -1058,7 +1058,7 @@ License: You must have a valid license from official store to legally use the th
           if (ecoTitleLinkEl) ecoTitleLinkEl.href = ecoArticleUrl;
           if (ecoTagLinkEl) ecoTagLinkEl.href = 'ecosystem.html';
 
-          // ========== 新增：渲染 8 張 Ecosystem 卡片 ==========
+          // 渲染 8 張 Ecosystem 卡片
           const latest8 = ecosystemNews.slice(0, 8);
           const container = document.getElementById('ecosystem-news-grid');
           if (container) {
@@ -1079,6 +1079,7 @@ License: You must have a valid license from official store to legally use the th
               </div>
             `).join('');
           }
+        }
       })
       .catch(error => {
         console.error('載入新聞失敗:', error);
