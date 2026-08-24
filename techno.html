@@ -15,7 +15,7 @@ License: You must have a valid license from official store to legally use the th
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title  -->
-  <title>Techno | Tailnews</title>
+  <title>Pulse | Tailnews</title>
   <meta name="description" content="Tailwind CSS News Template">
 
   <!-- Development css -->
@@ -75,7 +75,7 @@ License: You must have a valid license from official store to legally use the th
                 </li>
                 <!-- 當前頁面高亮 -->
                 <li class="relative border-l border-gray-800 hover:bg-gray-900">
-                  <a class="block py-3 px-6 border-b-2 border-red-600 text-white" href="techno.html">Techno</a>
+                  <a class="block py-3 px-6 border-b-2 border-red-600 text-white" href="techno.html">Pulse</a>
                 </li>
                 <li class="relative border-l border-gray-800 hover:bg-gray-900">
                   <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="ecosystem.html">Ecosystem</a>
@@ -142,7 +142,7 @@ License: You must have a valid license from official store to legally use the th
           <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
             <div class="w-full py-3">
               <h2 class="text-gray-800 text-2xl font-bold">
-                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Techno
+                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Pulse
               </h2>
             </div>
 
@@ -159,7 +159,7 @@ License: You must have a valid license from official store to legally use the th
                     </a>
                     <p id="hero-summary" class="text-gray-100 hidden sm:inline-block">載入中...</p>
                     <div class="pt-2">
-                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Techno</div>
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Pulse</div>
                     </div>
                   </div>
                 </div>
@@ -237,15 +237,15 @@ License: You must have a valid license from official store to legally use the th
     const res = await fetch('data/news.json?v=' + new Date().getTime());
     const rawData = await res.json();
 
-    // 篩選 category 為 techno 的文章（自動轉換小寫比對）
-    allNewsData = rawData.filter(item => item.category && item.category.toLowerCase() === 'techno');
+    // 篩選 category 為 Pulse 的文章（自動轉換小寫比對）
+    allNewsData = rawData.filter(item => item.category && item.category.toLowerCase() === 'pulse');
 
     if (!allNewsData || allNewsData.length === 0) {
-      console.warn("未找到 Techno 分類的新聞數據");
+      console.warn("未找到 Pulse 分類的新聞數據");
       return;
     }
 
-    console.log("Techno 新聞載入成功，總篇數:", allNewsData.length);
+    console.log("Pulse 新聞載入成功，總篇數:", allNewsData.length);
 
     renderHeroNews(allNewsData[0]);
     renderNextNewsGridBatch();
