@@ -512,9 +512,10 @@ License: You must have a valid license from official store to legally use the th
   </h2>
 </div>
 
-<div id="ecosystem-news-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-6">
+<div id="ecosystem-news-grid" class="flex flex-row flex-wrap -mx-3">
   <!-- JS 會自動注入 8 筆 Ecosystem 新聞 -->
-</div>    <!-- block news -->
+</div>
+<!-- block news -->
     <div class="bg-gray-50 py-6">
       <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
         <div class="flex flex-row flex-wrap">
@@ -1041,18 +1042,20 @@ const ecosystemNews = newsList.filter(item => item.category && item.category.toL
           const container = document.getElementById('ecosystem-news-grid');
           if (container) {
             container.innerHTML = latest8.map(item => `
-              <div class="bg-white overflow-hidden flex flex-col justify-between">
-                <div>
-                  <a href="ecosystem-article.html?id=${item.id}" class="block overflow-hidden mb-3">
-                    <img class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300" src="${item.image}" alt="${item.title}">
+              <div class="flex-shrink max-w-full w-full sm:w-1/2 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a href="ecosystem-article.html?id=${item.id}">
+                    <img class="max-w-full w-full mx-auto" src="${item.image}" alt="${item.title}" style="aspect-ratio: 16/10; object-fit: cover;">
                   </a>
-                  <h3 class="text-base font-bold text-gray-900 line-clamp-2 mb-2 leading-snug">
-                    <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600 transition-colors">${item.title}</a>
-                  </h3>
-                  <p class="text-gray-600 text-xs line-clamp-2 mb-3">${item.summary || ''}</p>
-                </div>
-                <div class="text-xs text-red-600 font-bold uppercase tracking-wider">
-                  | Ecosystem
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600 transition-colors">${item.title}</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 line-clamp-2 mb-2 text-sm">${item.summary || ''}</p>
+                    <a href="ecosystem-article.html?id=${item.id}" class="text-gray-500 text-xs">
+                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Ecosystem
+                    </a>
+                  </div>
                 </div>
               </div>
             `).join('');
