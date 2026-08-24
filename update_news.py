@@ -162,7 +162,7 @@ if os.path.exists(json_path):
             # 相容性升級：確保舊資料都有 category 欄位
             for item in existing_news:
                 if "category" not in item:
-                    item["category"] = "Techno"
+                    item["category"] = "Pulse"
     except Exception as e:
         print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
 
@@ -173,7 +173,7 @@ existing_links = {item.get("link") for item in existing_news if item.get("link")
 # 2. 定義各分類及其對應的 RSS 來源
 # ----------------------------------------------------------------
 CATEGORIES_RSS = {
-    "Techno": [
+    "Pulse": [
         "https://techcrunch.com/feed/",
         "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
         "https://www.wired.com/feed/category/gear/latest/rss",
