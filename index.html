@@ -1038,6 +1038,21 @@ License: You must have a valid license from official store to legally use the th
         // ==========================================
 const ecosystemNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'ecosystem');
         if (ecosystemNews.length > 0) {
+          // A. 更新右上方 Ecosystem 小卡片（第一篇最新的 Ecosystem）
+          const topEco = ecosystemNews[0];
+          const ecoTitle = document.getElementById('ecosystem-title');
+          const ecoLink = document.getElementById('ecosystem-link');
+          const ecoTitleLink = document.getElementById('ecosystem-title-link');
+          const ecoImg = document.getElementById('ecosystem-img');
+
+          if (ecoTitle && topEco.title) ecoTitle.innerText = topEco.title;
+          if (ecoImg && topEco.image) ecoImg.src = topEco.image;
+          
+          const ecoUrl = `ecosystem-article.html?id=${topEco.id !== undefined ? topEco.id : 0}`;
+          if (ecoLink) { ecoLink.href = ecoUrl; ecoLink.removeAttribute('target'); }
+          if (ecoTitleLink) { ecoTitleLink.href = ecoUrl; ecoTitleLink.removeAttribute('target'); }
+
+          // B. 更新下方 8 筆網格列表
           const latest8 = ecosystemNews.slice(0, 8);
           const container = document.getElementById('ecosystem-news-grid');
           if (container) {
