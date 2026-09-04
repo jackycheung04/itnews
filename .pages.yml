@@ -1,7 +1,11 @@
+media:
+  input: src/img
+  output: /src/img
 collections:
   - name: biztech_manual
     label: "BizTech 原創文章"
-    folder: data/manual_articles
+    type: folder
+    path: "data/manual_articles"
     format: json
     fields:
       - name: title
@@ -14,7 +18,7 @@ collections:
         default: "Patrick Cheung"
       - name: date
         label: "發布日期"
-        type: datetime
+        type: date
       - name: image
         label: "封面圖片網址"
         type: string
