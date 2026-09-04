@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <title>文章詳情 - IT News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>IT News</strong> 科技脈動</a>
+                </header>
+                
+                <section id="article-container">
+                    <header class="major">
+                        <h2 id="art-title">載入中...</h2>
+                    </header>
+                    <p><strong id="art-meta"></strong></p>
+                    <hr />
+                    <span class="image main"><img id="art-img" src="" alt="" style="max-height: 400px; object-fit: cover;" /></span>
+                    <div id="art-content" style="line-height: 1.8; font-size: 1.1em;">
+                        <p>正在載入文章內容...</p>
+                    </div>
+                    <hr />
+                    <ul class="actions">
+                        <li><a href="biztech.html" class="button">返回 BizTech 列表</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+        <div id="sidebar">
+            <div class="inner">
+                <nav id="menu">
+                    <header class="major">
+                        <h2>導覽選單</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="pulse.html">Pulse 脈動</a></li>
+                        <li><a href="ecosystem.html">Ecosystem 生態系</a></li>
+                        <li><a href="biztech.html">BizTech 商業科技</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const artId = urlParams.get('id');
+
+        fetch('data/news.json')
+            .then(response => response.json())
+            .then(data => {
+                const article = data.find(item => String(item.id) === String(artId));
+                
+                if (!article) {
+                    document.getElementById('article-container').innerHTML = '<h2>找不到此文章</h2><p><a href="biztech.html">返回列表</a></p>';
+                    return;
+                }
+
+                document.getElementById('art-title').innerText = article.title;
+                document.getElementById('art-meta').innerText = `作者：${article.author || 'Cheung Chun'} | 發布日期：${article.date}`;
+                
+                if (article.image) {
+                    document.getElementById('art-img').src = article.image;
+                } else {
+                    document.getElementById('art-img').style.display = 'none';
+                }
+
+                // 支援 Rich Text 內文換行與格式
+                document.getElementById('art-content').innerHTML = article.content.replace(/\n/g, '<br>');
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('article-container').innerHTML = '<p>載入文章失敗。</p>';
+            });
+    </script>
+</body>
+</html>
