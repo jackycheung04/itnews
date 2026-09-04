@@ -2,6 +2,7 @@ import json
 import os
 import re
 import time
+import glob  # 🌟 新增：用於讀取本地資料夾
 from bs4 import BeautifulSoup
 import feedparser
 import requests
@@ -159,18 +160,56 @@ if os.path.exists(json_path):
     try:
         with open(json_path, "r", encoding="utf-8") as f:
             existing_news = json.load(f)
-            # 相容性升級：確保舊資料都有 category 欄位
             for item in existing_news:
                 if "category" not in item:
                     item["category"] = "Pulse"
     except Exception as e:
         print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
 
-existing_links = {item.get("link") for item in existing_news if item.get("link")}
+# 🌟 隔離手動文章：舊紀錄中只保留 RSS 自動抓取的新聞，避免手寫文章重複
+existing_rss_news = [item for item in existing_news if not item.get("is_manual")]
+existing_links = {item.get("link") for item in existing_rss_news if item.get("link")}
 
 
 # ----------------------------------------------------------------
-# 2. 定義各分類及其對應的 RSS 來源
+# 1.5 優先讀取 Pages CMS 手寫發布的原創文章 (🌟 新增區塊)
+# ----------------------------------------------------------------
+manual_news_list = []
+print("\n==========================================")
+print("📝 處理 Pages CMS 手動原創文章")
+print("==========================================")
+manual_files = glob.glob("data/manual_articles/*.json")
+for file_path in manual_files:
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if data.get("title"):
+                # 取得內文前 120 字作為摘要，並去除 HTML 或 Markdown 標籤的干擾
+                raw_content = str(data.get("content", ""))
+                auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
+                
+                manual_news_list.append({
+                    "title": data.get("title", ""),
+                    "author": data.get("author", "Cheung Chun"),
+                    "date": data.get("date", time.strftime("%Y-%m-%d")),
+                    "summary": auto_summary,
+                    "content": raw_content,
+                    "image": data.get("image") or "src/img/dummy/img2.jpg",
+                    "category": "BizTech",
+                    "source": "BizTech 原創",
+                    "is_manual": True,
+                    "link": f"manual_{os.path.basename(file_path)}" # 給予獨立辨識碼避免被去重
+                })
+                print(f"✅ 成功載入原創文章：{data.get('title')}")
+    except Exception as e:
+        print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
+
+# 將手動文章按日期新到舊排序
+manual_news_list.sort(key=lambda x: x.get("date", ""), reverse=True)
+
+
+# ----------------------------------------------------------------
+# 2. 定義各分類及其對應的 RSS 來源 (🌟 新增 BizTech 來源)
 # ----------------------------------------------------------------
 CATEGORIES_RSS = {
     "Pulse": [
@@ -182,6 +221,9 @@ CATEGORIES_RSS = {
         "https://www.techinasia.com/feed",
         "https://techcrunch.com/category/startups/feed/",
     ],
+    "BizTech": [
+        "https://www.ciodive.com/feeds/news/"
+    ]
 }
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -225,7 +267,7 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
 
                 orig_title = entry.get("title", "")
                 orig_summary = entry.get("summary", entry.get("description", ""))
-                published = entry.get("published", "Today")
+                published = getattr(entry, 'published', time.strftime("%Y-%m-%d"))
 
                 print(f"\n📷 [{category_name} 新聞 {cat_new_count + 1}/{max_new_per_category}] 解析圖片中...")
                 image_url = get_real_image_url(link)
@@ -252,7 +294,8 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
                         "link": link,
                         "image": image_url,
                         "date": published,
-                        "category": category_name  # 🌟 標註所屬分類
+                        "category": category_name,
+                        "is_manual": False # 🌟 標註為非手寫自動抓取
                     })
                     existing_links.add(link)
                     cat_new_count += 1
@@ -263,9 +306,10 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
 
 
 # ----------------------------------------------------------------
-# 4. 合併新舊資料、更新 ID 並存檔
+# 4. 合併新舊資料、更新 ID 並存檔 (🌟 手動文章置頂邏輯)
 # ----------------------------------------------------------------
-combined_news = new_news_list + existing_news
+# 排序邏輯：手動原創文章最優先 (置頂) -> 最新抓取的翻譯新聞 -> 舊有的自動抓取新聞
+combined_news = manual_news_list + new_news_list + existing_rss_news
 final_news = combined_news[:50]  # 保留最新 50 篇
 
 for idx, item in enumerate(final_news):
@@ -274,4 +318,4 @@ for idx, item in enumerate(final_news):
 if final_news:
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(final_news, f, ensure_ascii=False, indent=4)
-    print(f"\n🚀 更新成功！新增了 {len(new_news_list)} 篇新聞，目前資料庫共保留 {len(final_news)} 篇。")
+    print(f"\n🚀 更新成功！載入 {len(manual_news_list)} 篇原創，新增 {len(new_news_list)} 篇翻譯，目前資料庫共保留 {len(final_news)} 篇。")
