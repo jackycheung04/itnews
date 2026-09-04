@@ -1,10 +1,10 @@
 media:
   input: src/img
   output: /src/img
-collections:
+content:
   - name: biztech_manual
     label: "BizTech 原創文章"
-    type: folder
+    type: collection
     path: "data/manual_articles"
     filename: "{slug}.json"
     format: json
