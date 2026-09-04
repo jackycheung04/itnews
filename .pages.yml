@@ -6,6 +6,7 @@ collections:
     label: "BizTech 原創文章"
     type: folder
     path: "data/manual_articles"
+    filename: "{slug}.json"
     format: json
     fields:
       - name: title
