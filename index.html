@@ -996,8 +996,8 @@ const ecosystemNews = newsList.filter(item => item.category && item.category.toL
 // BizTech 完整區塊動態渲染處理
 // ==========================================
 function renderBizTech() {
+  // 確保陣列有資料才執行
   if (typeof newsList === 'undefined' || !Array.isArray(newsList) || newsList.length === 0) {
-    setTimeout(renderBizTech, 500);
     return;
   }
 
@@ -1077,14 +1077,16 @@ function renderBizTech() {
   }
 }
 
-// 獨立執行
-document.addEventListener("DOMContentLoaded", renderBizTech);
-        
+// 當 DOM 載入完成後，我們同時監聽，並且也直接在原本的 fetch 成功後呼叫它
+document.addEventListener("DOMContentLoaded", () => {
+  // 延遲一點點等 newsList 被 fetch 填入
+  setTimeout(renderBizTech, 300);
+});
       })
       .catch(error => {
         console.error('載入新聞失敗:', error);
       });
-  });
+ });
 </script>
 </body>
 </html>
