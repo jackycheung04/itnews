@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <title>BizTech - 商業科技深度報導</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>IT News</strong> 科技脈動</a>
+                </header>
+                
+                <section>
+                    <header class="major">
+                        <h2>BizTech 商業科技專區</h2>
+                    </header>
+                    <p>結合站長原創深度觀點與全球頂尖 CIO 商業科技洞察。</p>
+                    
+                    <div id="biztech-list" class="posts">
+                        <!-- 動態載入新聞列表 -->
+                        <p>載入中...</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- 側邊導覽列 -->
+        <div id="sidebar">
+            <div class="inner">
+                <nav id="menu">
+                    <header class="major">
+                        <h2>導覽選單</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="pulse.html">Pulse 脈動</a></li>
+                        <li><a href="ecosystem.html">Ecosystem 生態系</a></li>
+                        <li><a href="biztech.html">BizTech 商業科技</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        fetch('data/news.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('biztech-list');
+                const biztechNews = data.filter(item => item.category === 'BizTech');
+                
+                if (biztechNews.length === 0) {
+                    container.innerHTML = '<p>目前尚無 BizTech 相關文章。</p>';
+                    return;
+                }
+
+                let html = '';
+                biztechNews.forEach(item => {
+                    // 判斷是否為手寫原創文章，給予置頂標籤
+                    let badge = item.is_manual ? '<span style="background:#f56a6a; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.8em; margin-right:8px;">原創置頂</span>' : '';
+                    let targetLink = item.is_manual ? `biztech-article.html?id=${item.id}` : item.link;
+                    let targetAttr = item.is_manual ? '' : 'target="_blank"';
+
+                    html += `
+                        <article style="margin-bottom: 2em; border-bottom: 1px solid rgba(210, 215, 217, 0.75); padding-bottom: 1.5em;">
+                            <a href="${targetLink}" ${targetAttr} class="image"><img src="${item.image || 'src/img/dummy/img2.jpg'}" alt="" style="max-height: 200px; object-fit: cover;" /></a>
+                            <h3>${badge}${item.title}</h3>
+                            <p><small>發布日期：${item.date} | 來源：${item.source || 'BizTech'}</small></p>
+                            <p>${item.summary}</p>
+                            <ul class="actions">
+                                <li><a href="${targetLink}" ${targetAttr} class="button">閱讀全文</a></li>
+                            </ul>
+                        </article>
+                    `;
+                });
+                container.innerHTML = html;
+            })
+            .catch(err => {
+                document.getElementById('biztech-list').innerHTML = '<p>載入新聞失敗，請稍後再試。</p>';
+                console.error(err);
+            });
+    </script>
+</body>
+</html>
