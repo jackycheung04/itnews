@@ -520,162 +520,74 @@ License: You must have a valid license from official store to legally use the th
   <!-- JS 會自動注入 8 筆 Ecosystem 新聞 -->
 </div>
 <!-- block news -->
-    <div class="bg-gray-50 py-6">
-      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-        <div class="flex flex-row flex-wrap">
-          <!-- Left -->
-          <div class="flex-shrink max-w-full w-full lg:w-2/3  overflow-hidden">
-            <div class="w-full py-3">
-              <h2 class="text-gray-800 text-2xl font-bold">
-                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Asian
-              </h2>
-            </div>
-            <div class="flex flex-row flex-wrap -mx-3">
-              <div class="flex-shrink max-w-full w-full px-3 pb-5">
-                <div class="relative hover-img max-h-98 overflow-hidden">
-                  <!--thumbnail-->
-                  <a href="#">
-                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/img2.jpg" alt="Image description">
+<!-- ========== { BizTech Section (取代原本的 Asia 區塊) }========== -->
+<div class="bg-gray-50 py-6">
+  <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+    <!-- Section Header -->
+    <div class="flex flex-row flex-wrap items-center justify-between mb-4">
+      <div class="my-1">
+        <h2 class="text-3xl font-bold"><span class="inline-block h-5 border-l-4 border-red-600 mr-2"></span>BizTech</h2>
+      </div>
+    </div>
+    
+    <div class="flex flex-row flex-wrap">
+      <!-- Left Main Content -->
+      <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
+        <!-- Main Featured Post (主大卡片) -->
+        <div class="w-full pb-6">
+          <div class="relative hover-img max-h-96 overflow-hidden rounded-lg">
+            <a id="home-biztech-main-link" href="#">
+              <img id="home-biztech-main-img" class="max-w-full w-full mx-auto h-auto object-cover" src="src/img/dummy/img1.jpg" alt="BizTech Main">
+            </a>
+            <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+              <a id="home-biztech-main-title-link" href="#">
+                <h2 id="home-biztech-main-title" class="text-2xl font-bold capitalize leading-tight text-white mb-2">載入中...</h2>
+              </a>
+              <p id="home-biztech-main-summary" class="hidden sm:block text-gray-200 text-sm line-clamp-2 mb-2"></p>
+              <div class="pt-1">
+                <div class="text-gray-100 flex items-center">
+                  <span id="home-biztech-badge"></span>
+                  <a href="biztech.html" class="flex items-center text-xs uppercase font-bold text-gray-300 hover:text-white">
+                    <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div><span>BizTech</span>
                   </a>
-                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
-                    <!--title-->
-                    <a href="#">
-                      <h2 class="text-3xl font-bold capitalize text-white mb-3">Amazon Shoppers Are Ditching Designer Belts for This Best-Selling</h2>
-                    </a>
-                    <p class="text-gray-100 hidden sm:inline-block">This is a wider card with supporting text below as a natural lead-in to additional content. This very helpfull for generate default content..</p>                                                  
-                    <!-- author and date -->
-                    <div class="pt-2">
-                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Europe</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="">
-                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/img27.jpg" alt="alt title">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 leading-tight mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="">
-                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/img3.jpg" alt="alt title">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 leading-tight mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="">
-                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/img4.jpg" alt="alt title">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 leading-tight mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="">
-                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/img5.jpg" alt="alt title">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 leading-tight mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="">
-                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/img6.jpg" alt="alt title">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 leading-tight mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="">
-                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/img7.jpg" alt="alt title">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 leading-tight mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a class="text-gray-500" href="#"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Europe</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- right -->
-          <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-14 lg:pb-8 order-first lg:order-last">
-            <div class="w-full bg-white">
-              <div class="mb-6">
-                <div class="p-4 bg-gray-100">
-                  <h2 class="text-lg font-bold">Most Popular</h2>
-                </div>
-                <ul class="post-number">
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">Why the world would end without political polls</a>
-                  </li>
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">Meet The Man Who Designed The Ducati Monster</a>
-                  </li>
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">2020 Audi R8 Spyder spy shots release</a>
-                  </li>
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">Lamborghini makes Huracán GT3 racer faster for 2019</a>
-                  </li>
-                  <li class="border-b border-gray-100 hover:bg-gray-50">
-                    <a class="text-lg font-bold px-6 py-3 flex flex-row items-center" href="#">ZF plans $14 billion autonomous vehicle push, concept van</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="text-sm py-6 sticky">
-              <div class="w-full text-center">
-                <a class="uppercase" href="#">Advertisement</a>
-                <a href="#">
-                  <img class="mx-auto" src="src/img/ads/250.jpg" alt="advertisement area">
-                </a>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Sub Grid Posts (下方文章網格) -->
+        <div id="home-biztech-grid" class="flex flex-row flex-wrap -mx-3">
+          <!-- 動態載入網格文章 -->
+        </div>
+      </div>
+
+      <!-- Right Sidebar (Most Popular & Ads) -->
+      <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-3 lg:pb-8">
+        <div class="w-full bg-white">
+          <div class="mb-6">
+            <div class="p-4 bg-gray-100">
+              <h2 class="text-lg font-bold">Most Popular</h2>
+            </div>
+            <ul id="home-biztech-popular-list" class="post-number">
+              <!-- 動態載入熱門排行榜 -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Advertisement Sidebar -->
+        <div class="text-sm py-6 sticky top-20">
+          <div class="w-full text-center">
+            <a class="uppercase text-gray-400 text-xs" href="#">Advertisement</a>
+            <a href="#">
+              <img class="mx-auto mt-2" src="src/img/ads/250.jpg" alt="advertisement area">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
     <!-- block news -->
     <div class="bg-gray-50 py-6">
@@ -1082,25 +994,81 @@ const ecosystemNews = newsList.filter(item => item.category && item.category.toL
         }
         
         // ==========================================
-        // 3. BizTech 卡片處理 (新增這段)
-        // ==========================================
-        const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
-        if (biztechNews.length > 0) {
-          const topBiz = biztechNews[0];
-          const bizTitle = document.getElementById('biztech-title');
-          const bizLink = document.getElementById('biztech-link');
-          const bizTitleLink = document.getElementById('biztech-title-link');
-          const bizImg = document.getElementById('biztech-img');
+// BizTech 完整區塊處理 (首頁版面)
+// ==========================================
+const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
+if (biztechNews.length > 0) {
+  // 1. 更新主大卡片
+  const topBiz = biztechNews[0];
+  const mainTitle = document.getElementById('home-biztech-main-title');
+  const mainSummary = document.getElementById('home-biztech-main-summary');
+  const mainImg = document.getElementById('home-biztech-main-img');
+  const mainLink = document.getElementById('home-biztech-main-link');
+  const mainTitleLink = document.getElementById('home-biztech-main-title-link');
+  const badgeContainer = document.getElementById('home-biztech-badge');
 
-          if (bizTitle && topBiz.title) bizTitle.innerText = topBiz.title;
-          if (bizImg && topBiz.image) bizImg.src = topBiz.image;
+  if (mainTitle && topBiz.title) mainTitle.innerText = topBiz.title;
+  if (mainSummary && topBiz.summary) mainSummary.innerText = topBiz.summary;
+  if (mainImg && topBiz.image) mainImg.src = topBiz.image;
+  
+  const mainUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
+  if (mainLink) { mainLink.href = mainUrl; mainLink.removeAttribute('target'); }
+  if (mainTitleLink) { mainTitleLink.href = mainUrl; mainTitleLink.removeAttribute('target'); }
 
-          const bizUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
-          if (bizLink) { bizLink.href = bizUrl; bizLink.removeAttribute('target'); }
-          if (bizTitleLink) { bizTitleLink.href = bizUrl; bizTitleLink.removeAttribute('target'); }
-        }
-        
-      })
+  if (badgeContainer) {
+    badgeContainer.innerHTML = topBiz.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">專題採訪</span>' : '';
+  }
+
+  // 2. 更新下方文章網格 (取第 2 篇之後的 BizTech 文章)
+  const subGridNews = biztechNews.slice(1, 7);
+  const gridContainer = document.getElementById('home-biztech-grid');
+  if (gridContainer) {
+    gridContainer.innerHTML = subGridNews.map(item => {
+      const id = item.id !== undefined ? item.id : 0;
+      const url = `biztech-article.html?id=${id}`;
+      const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '';
+      return `
+        <div class="flex-shrink max-w-full w-full sm:w-1/2 px-3 pb-6">
+          <div class="flex flex-row sm:block hover-img">
+            <a href="${url}">
+              <img class="max-w-full w-full mx-auto" src="${item.image || ''}" alt="${item.title || ''}" style="aspect-ratio: 16/10; object-fit: cover;">
+            </a>
+            <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+              <h3 class="text-lg font-bold leading-tight mb-2">
+                <a href="${url}" class="hover:text-red-600 transition-colors line-clamp-2">${item.title || ''}</a>
+              </h3>
+              <p class="hidden md:block text-gray-600 line-clamp-2 mb-2 text-sm">${item.summary || ''}</p>
+              <div class="text-gray-500 text-xs flex items-center">
+                ${badgeHtml}
+                <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>BizTech
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 3. 更新右側 Most Popular 熱門排行榜
+  const popularListEl = document.getElementById('home-biztech-popular-list');
+  if (popularListEl) {
+    const popularItems = biztechNews.slice(0, 5);
+    popularListEl.innerHTML = popularItems.map((item, idx) => {
+      const id = item.id !== undefined ? item.id : idx;
+      const title = item.title || '無標題文章';
+      const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '';
+      return `
+        <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="biztech-article.html?id=${id}">
+            <span class="text-xl font-bold text-gray-300 mr-3 flex-shrink-0">${idx + 1}</span>
+            ${badgeHtml}
+            <span class="line-clamp-2">${title}</span>
+          </a>
+        </li>
+      `;
+    }).join('');
+  }
+}
       .catch(error => {
         console.error('載入新聞失敗:', error);
       });
