@@ -1,94 +1,364 @@
-<!DOCTYPE HTML>
-<html lang="zh-Hant">
+<!--
+Template Name: Tailnews - Tailwind News Template
+Author: Aribudin
+Website: https://www.tailwindtemplate.net
+Contact: support@tailwindtemplate.net
+Purchase: https://themes.tailwindtemplate.net/tailnews
+License: You must have a valid license from official store to legally use the theme for your project.
+-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>BizTech - 商業科技深度報導</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title  -->
+  <title>BizTech | Tailnews</title>
+  <meta name="description" content="Tailwind CSS News Template">
+
+  <!-- Development css -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon  -->
+  <link rel="icon" href="src/img/favicon.jpg">
 </head>
-<body class="is-preload">
-    <div id="wrapper">
-        <div id="main">
-            <div class="inner">
-                <header id="header">
-                    <a href="index.html" class="logo"><strong>IT News</strong> 科技脈動</a>
-                </header>
+<body class="text-gray-700 pt-9 sm:pt-10">
+  <!-- ========== { HEADER }==========  -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+     <nav class="bg-black">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex justify-between">
+            <div class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">Tailnews</div>
+            
+            <div class="flex flex-row">
+              <!-- nav menu -->
+              <ul class="navbar hidden lg:flex lg:flex-row text-gray-400 text-sm items-center font-bold">
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="index.html">Home</a>
+                </li>
                 
-                <section>
-                    <header class="major">
-                        <h2>BizTech 商業科技專區</h2>
-                    </header>
-                    <p>結合站長原創深度觀點與全球頂尖 CIO 商業科技洞察。</p>
-                    
-                    <div id="biztech-list" class="posts">
-                        <!-- 動態載入新聞列表 -->
-                        <p>載入中...</p>
+                <!-- Pages 下拉選單 -->
+                <li class="dropdown relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white flex items-center gap-1" href="#">
+                    Pages
+                    <svg class="w-3 h-3 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </a>
+                  <ul class="dropdown-menu font-normal absolute left-0 right-auto top-full z-50 border-b-0 text-left bg-white text-gray-700 border border-gray-100" style="min-width: 12rem;">
+                    <li class="subdropdown relative hover:bg-gray-50">
+                      <a class="block py-2 px-6 border-b border-gray-100" href="#">Homepage</a>
+                      <ul class="dropdown-menu absolute left-full right-auto transform top-full z-50 border-b-0 text-left -mt-10 ml-0 mr-0 bg-white border border-gray-100" style="min-width: 12rem;">
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="index.html">Homepage 1</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="index-2.html">Homepage 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="subdropdown relative hover:bg-gray-50">
+                      <a class="block py-2 px-6 border-b border-gray-100" href="#">Pages</a>
+                      <ul class="dropdown-menu absolute left-full right-auto transform top-full z-50 border-b-0 text-left -mt-10 ml-0 mr-0 bg-white border border-gray-100" style="min-width: 12rem;">
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="404.html">404</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="author.html">Author</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="category.html">Category</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="search.html">Search</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="page.html">Page</a></li>
+                        <li class="relative hover:bg-gray-50"><a class="block py-2 px-6 border-b border-gray-100" href="contact-us.html">Contact</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="sport.html">Sport</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="techno.html">Pulse</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="ecosystem.html">Ecosystem</a>
+                </li>
+                <!-- 當前頁面高亮 -->
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-red-600 text-white" href="biztech.html">BizTech</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="travel.html">Travel</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="future.html">Future</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent hover:text-white" href="more.html">More</a>
+                </li>
+              </ul>
+
+              <!-- 搜尋按鈕與手機版選單 -->
+              <div class="flex flex-row items-center text-gray-300">
+                <div class="search-dropdown relative border-l border-gray-800 hover:bg-gray-900">
+                  <button class="block py-3 px-6 border-b-2 border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="open bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="close bi bi-x-lg" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                      <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu absolute left-auto right-0 top-full z-50 text-left bg-white text-gray-700 border border-gray-100 mt-1 p-3" style="min-width: 15rem;">
+                    <div class="flex flex-wrap items-stretch w-full relative">
+                      <input type="text" class="flex-shrink flex-grow max-w-full leading-5 w-px flex-1 relative py-2 px-5 text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="text" placeholder="Search..." aria-label="search">
+                      <div class="flex -mr-px">
+                        <button class="flex items-center py-2 px-5 -ml-1 leading-5 text-gray-100 bg-black hover:text-white hover:bg-gray-900 focus:outline-none" type="submit">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                          </svg>
+                        </button>
+                      </div>
                     </div>
-                </section>
+                  </div>
+                </div>
+
+                <div class="relative hover:bg-gray-800 block lg:hidden">
+                  <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                    <span class="sr-only">Mobile menu</span>
+                    <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg> Menu
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        
-        <!-- 側邊導覽列 -->
-        <div id="sidebar">
-            <div class="inner">
-                <nav id="menu">
-                    <header class="major">
-                        <h2>導覽選單</h2>
-                    </header>
-                    <ul>
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="pulse.html">Pulse 脈動</a></li>
-                        <li><a href="ecosystem.html">Ecosystem 生態系</a></li>
-                        <li><a href="biztech.html">BizTech 商業科技</a></li>
-                    </ul>
-                </nav>
+     </nav>
+  </header>
+
+  <!-- =========={ MAIN }==========  -->
+  <main id="content">
+    <div class="bg-gray-50 py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+
+          <!-- 左側 2/3 主欄位 -->
+          <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
+            <div class="w-full py-3">
+              <h2 class="text-gray-800 text-2xl font-bold">
+                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>BizTech
+              </h2>
             </div>
+
+            <!-- 頂部焦點大圖卡片 -->
+            <div class="flex flex-row flex-wrap -mx-3">
+              <div class="flex-shrink max-w-full w-full px-3 pb-5">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                  <a id="hero-link" href="#">
+                    <img id="hero-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="hero title">
+                  </a>
+                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                    <a href="#" id="hero-link-title">
+                      <h2 id="hero-title" class="text-3xl font-bold capitalize text-white mb-3">載入中...</h2>
+                    </a>
+                    <p id="hero-summary" class="text-gray-100 hidden sm:inline-block">載入中...</p>
+                    <div class="pt-2">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>BizTech</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 下方新聞小卡片容器 -->
+            <div id="news-grid-container" class="flex flex-wrap -mx-3"></div>
+
+            <!-- 載入更多新聞按鈕 -->
+            <div class="w-full text-center my-6">
+              <button id="load-more-btn" class="py-2 px-6 bg-red-600 hover:bg-red-700 text-white font-bold rounded transition-colors duration-200">
+                載入更多新聞
+              </button>
+            </div>
+          </div>
+
+          <!-- 右側側邊欄 -->
+          <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-14 lg:pb-8 order-first lg:order-last">
+            <div class="w-full bg-white">
+              <div class="mb-6">
+                <div class="p-4 bg-gray-100">
+                  <h2 class="text-lg font-bold">Most Popular</h2>
+                </div>
+                <ul id="most-popular-list" class="post-number"></ul>
+              </div>
+            </div>
+
+            <div class="text-sm py-6 sticky">
+              <div class="w-full text-center">
+                <a class="uppercase" href="#">Advertisement</a>
+                <a href="#">
+                  <img class="mx-auto" src="src/img/ads/250.jpg" alt="advertisement area">
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
+  </main>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+  <!-- =========={ FOOTER }==========  -->
+  <footer class="bg-black text-gray-400">
+    <div class="footer-dark">
+      <div class="container py-4 border-t border-gray-200 border-opacity-10">
+        <div class="row">
+          <div class="col-12 col-md text-center">
+            <p class="d-block my-3">Copyright © Tailnews | All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        fetch('data/news.json')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('biztech-list');
-                const biztechNews = data.filter(item => item.category === 'BizTech');
-                
-                if (biztechNews.length === 0) {
-                    container.innerHTML = '<p>目前尚無 BizTech 相關文章。</p>';
-                    return;
-                }
+  <!-- Vendor & Theme JS -->
+  <script src="src/vendors/hc-sticky/dist/hc-sticky.js"></script>
+  <script src="src/js/theme.js"></script>
 
-                let html = '';
-                biztechNews.forEach(item => {
-                    // 判斷是否為手寫原創文章，給予置頂標籤
-                    let badge = item.is_manual ? '<span style="background:#f56a6a; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.8em; margin-right:8px;">原創置頂</span>' : '';
-                    let targetLink = item.is_manual ? `biztech-article.html?id=${item.id}` : item.link;
-                    let targetAttr = item.is_manual ? '' : 'target="_blank"';
+  <!-- JavaScript 動態載入與渲染新聞邏輯 -->
+  <script>
+    let allNewsData = [];
+    let currentGridIndex = 1; 
+    const BATCH_SIZE = 6;     
+    const ARTICLE_PAGE = 'biztech-article.html';
 
-                    html += `
-                        <article style="margin-bottom: 2em; border-bottom: 1px solid rgba(210, 215, 217, 0.75); padding-bottom: 1.5em;">
-                            <a href="${targetLink}" ${targetAttr} class="image"><img src="${item.image || 'src/img/dummy/img2.jpg'}" alt="" style="max-height: 200px; object-fit: cover;" /></a>
-                            <h3>${badge}${item.title}</h3>
-                            <p><small>發布日期：${item.date} | 來源：${item.source || 'BizTech'}</small></p>
-                            <p>${item.summary}</p>
-                            <ul class="actions">
-                                <li><a href="${targetLink}" ${targetAttr} class="button">閱讀全文</a></li>
-                            </ul>
-                        </article>
-                    `;
-                });
-                container.innerHTML = html;
-            })
-            .catch(err => {
-                document.getElementById('biztech-list').innerHTML = '<p>載入新聞失敗，請稍後再試。</p>';
-                console.error(err);
-            });
-    </script>
+    function getImageUrl(item) {
+      if (!item) return 'src/img/dummy/img2.jpg';
+      return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img2.jpg';
+    }
+
+    async function initNews() {
+      try {
+        const res = await fetch('data/news.json?v=' + new Date().getTime());
+        const rawData = await res.json();
+
+        // 篩選 category 為 biztech 的文章
+        allNewsData = rawData.filter(item => item.category && item.category.toLowerCase() === 'biztech');
+
+        if (!allNewsData || allNewsData.length === 0) {
+          console.warn("未找到 BizTech 分類的新聞數據");
+          return;
+        }
+
+        console.log("BizTech 新聞載入成功，總篇數:", allNewsData.length);
+
+        renderHeroNews(allNewsData[0]);
+        renderNextNewsGridBatch();
+        renderMostPopular(allNewsData);
+
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        if (loadMoreBtn) {
+          loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
+        }
+
+      } catch (err) {
+        console.error("載入新聞失敗:", err);
+      }
+    }
+
+    function renderHeroNews(hero) {
+      if (!hero) return;
+      const heroImg = document.getElementById('hero-img');
+      const heroTitle = document.getElementById('hero-title');
+      const heroSummary = document.getElementById('hero-summary');
+      const heroLink = document.getElementById('hero-link');
+      const heroLinkTitle = document.getElementById('hero-link-title');
+      const articleId = hero.id !== undefined ? hero.id : 0;
+      const articleUrl = `${ARTICLE_PAGE}?id=${articleId}`;
+
+      if (heroImg) {
+        heroImg.src = getImageUrl(hero);
+        heroImg.alt = hero.title || '';
+        heroImg.classList.remove('opacity-0');
+        heroImg.classList.add('opacity-100');
+      }
+
+      // 如果是手寫專題採訪文章，加上「專題採訪」標籤
+      let badgeHtml = hero.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded mr-2 inline-block font-normal align-middle">專題採訪</span>' : '';
+      if (heroTitle) heroTitle.innerHTML = badgeHtml + (hero.title || '');
+
+      if (heroLink) heroLink.href = articleUrl;
+      if (heroLinkTitle) heroLinkTitle.href = articleUrl;
+
+      if (heroSummary) {
+        const rawSummary = hero.summary || hero.description || '';
+        heroSummary.textContent = rawSummary.length > 80 ? rawSummary.substring(0, 80) + '...' : rawSummary;
+      }
+    }
+
+    function renderNextNewsGridBatch() {
+      const container = document.getElementById('news-grid-container');
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      if (!container) return;
+
+      const end = currentGridIndex + BATCH_SIZE;
+      const items = allNewsData.slice(currentGridIndex, end);
+
+      items.forEach((item, idx) => {
+        const articleId = item.id !== undefined ? item.id : (currentGridIndex + idx);
+        const imageUrl = getImageUrl(item);
+        const itemTitle = item.title || '無標題文章';
+        
+        // 網格卡片中的「專題採訪」標籤
+        let badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-1 inline-block align-middle">專題採訪</span>' : '';
+
+        const cardHtml = `
+          <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 mb-4">
+            <div class="relative hover-img max-h-48 overflow-hidden rounded">
+              <a href="${ARTICLE_PAGE}?id=${articleId}">
+                <img class="max-w-full w-full mx-auto h-40 object-cover" src="${imageUrl}" alt="${itemTitle}">
+              </a>
+            </div>
+            <div class="pt-2">
+              <h3 class="text-base font-bold leading-tight mb-2">
+                ${badgeHtml}<a class="hover:text-red-600" href="${ARTICLE_PAGE}?id=${articleId}">${itemTitle}</a>
+              </h3>
+            </div>
+          </div>
+        `;
+        container.insertAdjacentHTML('beforeend', cardHtml);
+      });
+
+      currentGridIndex = end;
+
+      if (currentGridIndex >= allNewsData.length) {
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+      }
+    }
+
+    function renderMostPopular(data) {
+      const popularList = document.getElementById('most-popular-list');
+      if (!popularList) return;
+      popularList.innerHTML = '';
+
+      const popularItems = data.slice(0, 5);
+      popularItems.forEach((item, index) => {
+        const articleId = item.id !== undefined ? item.id : index;
+        const itemTitle = item.title || '無標題文章';
+        
+        // 熱門排行榜中的「專題採訪」標籤
+        let badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '';
+
+        const li = document.createElement('li');
+        li.className = 'border-b border-gray-100 hover:bg-gray-50';
+        li.innerHTML = `
+          <a class="text-base font-bold px-6 py-3 flex flex-row items-center hover:text-red-600" href="${ARTICLE_PAGE}?id=${articleId}">
+            ${badgeHtml}<span class="truncate">${itemTitle}</span>
+          </a>
+        `;
+        popularList.appendChild(li);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initNews);
+  </script>
 </body>
 </html>
