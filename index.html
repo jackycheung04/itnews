@@ -1080,6 +1080,26 @@ const ecosystemNews = newsList.filter(item => item.category && item.category.toL
             `).join('');
           }
         }
+        
+        // ==========================================
+        // 3. BizTech 卡片處理 (新增這段)
+        // ==========================================
+        const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
+        if (biztechNews.length > 0) {
+          const topBiz = biztechNews[0];
+          const bizTitle = document.getElementById('biztech-title');
+          const bizLink = document.getElementById('biztech-link');
+          const bizTitleLink = document.getElementById('biztech-title-link');
+          const bizImg = document.getElementById('biztech-img');
+
+          if (bizTitle && topBiz.title) bizTitle.innerText = topBiz.title;
+          if (bizImg && topBiz.image) bizImg.src = topBiz.image;
+
+          const bizUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
+          if (bizLink) { bizLink.href = bizUrl; bizLink.removeAttribute('target'); }
+          if (bizTitleLink) { bizTitleLink.href = bizUrl; bizTitleLink.removeAttribute('target'); }
+        }
+        
       })
       .catch(error => {
         console.error('載入新聞失敗:', error);
