@@ -1,0 +1,25 @@
+media:
+  folder: src/img
+collections:
+  - name: biztech_manual
+    label: BizTech 原創文章
+    folder: data/manual_articles
+    format: json
+    fields:
+      - name: title
+        label: 文章標題
+        type: string
+        required: true
+      - name: author
+        label: 作者
+        type: string
+        default: "Patrick Cheung"
+      - name: date
+        label: 發布日期
+        type: datetime
+      - name: image
+        label: 封面圖片網址 (貼上圖片連結即可)
+        type: string
+      - name: content
+        label: 文章內文
+        type: rich-text
