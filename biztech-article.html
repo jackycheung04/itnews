@@ -59,6 +59,22 @@ License: You must have a valid license from official store to legally use the th
     border-radius: 0.5rem;
     margin: 1.5rem 0;
   }
+    /* 內文圖片與圖說樣式 */
+  #article-content figure {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  #article-content figure img {
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+  #article-content figcaption {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
 </style>
 </head>
 <body class="text-gray-700 pt-9 sm:pt-10">
@@ -276,12 +292,19 @@ License: You must have a valid license from official store to legally use the th
         let badgeHtml = article.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded mr-2 inline-block font-normal align-middle">專題採訪</span>' : '';
         titleEl.innerHTML = badgeHtml + (article.title || '無標題');
       }
+      
+      const subtitleEl = document.getElementById('article-subtitle');
+      if (subtitleEl) subtitleEl.textContent = article.subtitle || article.summary || '';
+      
       if (dateEl) dateEl.textContent = article.date || '';
 
       if (imgEl) {
         imgEl.src = article.image || article.image_url || 'src/img/dummy/img2.jpg';
         imgEl.alt = article.title || '';
       }
+      
+      const imgCaptionEl = document.getElementById('article-img-caption');
+      if (imgCaptionEl) imgCaptionEl.textContent = article.image_caption || '';
 
       if (contentEl) {
         let rawContent = article.content || article.summary || '';
