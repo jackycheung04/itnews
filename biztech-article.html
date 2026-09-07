@@ -27,6 +27,39 @@ License: You must have a valid license from official store to legally use the th
   <!-- Favicon  -->
   <link rel="icon" href="src/img/favicon.jpg">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+  /* 修正文章內文排版與樣式 */
+  #article-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 1.125rem;
+    color: #374151;
+  }
+  #article-content h1, #article-content h2, #article-content h3, #article-content h4 {
+    font-weight: 700;
+    color: #111827;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  #article-content h1 { font-size: 2.25rem; }
+  #article-content h2 { font-size: 1.75rem; }
+  #article-content h3 { font-size: 1.35rem; }
+  #article-content a {
+    color: #dc2626;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  #article-content a:hover {
+    color: #991b1b;
+  }
+  #article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+  }
+</style>
 </head>
 <body class="text-gray-700 pt-9 sm:pt-10">
   <!-- ========== { HEADER }==========  -->
@@ -249,8 +282,19 @@ License: You must have a valid license from official store to legally use the th
       }
 
       if (contentEl) {
-        const fullText = article.content || article.summary || '';
-        contentEl.innerHTML = marked.parse(fullText);
+        let rawContent = article.content || article.summary || '';
+        
+        // 1. 若內容含 Markdown 標記，先經由 Marked 解析
+        if (typeof marked !== 'undefined') {
+          rawContent = marked.parse(rawContent);
+        }
+
+        // 2. 自動將文字中未加上 <a> 標籤的 URL 轉為可點擊超連結
+        const urlRegex = /(https?:\/\/[^\s<]+)/g;
+        // 避免重複替換已經在 href="" 裡面的網址
+        rawContent = rawContent.replace(/(?<!href=")(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+
+        contentEl.innerHTML = rawContent;
       }
 
       renderMostPopular(newsList);
