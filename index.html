@@ -881,7 +881,7 @@ License: You must have a valid license from official store to legally use the th
     const topBiz = biztechNews[0];
     const mainUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
 
-    // 0. 解決問題 3：更新最上方右側的 BizTech 小卡片
+    // 0. 更新最上方右側的 BizTech 小卡片
     const heroTitle = document.getElementById('biztech-title');
     const heroImg = document.getElementById('biztech-img');
     const heroLink = document.getElementById('biztech-link');
@@ -892,7 +892,7 @@ License: You must have a valid license from official store to legally use the th
     if (heroLink) { heroLink.href = mainUrl; heroLink.removeAttribute('target'); }
     if (heroTitleLink) { heroTitleLink.href = mainUrl; heroTitleLink.removeAttribute('target'); }
 
-    // 1. 解決問題 1：更新主大卡片 (強制 16/9 比例，避免圖片過大)
+    // 1. 修正主大卡片尺寸：強制最大高度 280px 對齊 Latest news
     const mainTitle = document.getElementById('home-biztech-main-title');
     const mainSummary = document.getElementById('home-biztech-main-summary');
     const mainImg = document.getElementById('home-biztech-main-img');
@@ -904,9 +904,9 @@ License: You must have a valid license from official store to legally use the th
     if (mainSummary && topBiz.summary) mainSummary.innerText = topBiz.summary;
     if (mainImg && topBiz.image) {
       mainImg.src = topBiz.image;
-      mainImg.style.aspectRatio = "16/9";
-      mainImg.style.objectFit = "cover";
       mainImg.style.width = "100%";
+      mainImg.style.maxHeight = "280px"; // 限制卡片高度，與 Latest News 一致
+      mainImg.style.objectFit = "cover";
     }
     
     if (mainLink) { mainLink.href = mainUrl; mainLink.removeAttribute('target'); }
@@ -916,7 +916,7 @@ License: You must have a valid license from official store to legally use the th
       badgeContainer.innerHTML = topBiz.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">專題採訪</span>' : '';
     }
 
-    // 2. 解決問題 2：更新下方文章網格 (改為 sm:w-1/3，完美呈現 3x2 排版並縮小圖片)
+    // 2. 更新下方文章網格 (3x2 排版)
     const subGridNews = biztechNews.slice(1, 7);
     const gridContainer = document.getElementById('home-biztech-grid');
     if (gridContainer) {
