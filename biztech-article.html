@@ -26,6 +26,7 @@ License: You must have a valid license from official store to legally use the th
 
   <!-- Favicon  -->
   <link rel="icon" href="src/img/favicon.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="text-gray-700 pt-9 sm:pt-10">
   <!-- ========== { HEADER }==========  -->
@@ -249,8 +250,7 @@ License: You must have a valid license from official store to legally use the th
 
       if (contentEl) {
         const fullText = article.content || article.summary || '';
-        const paragraphs = fullText.split('\n').filter(p => p.trim() !== '');
-        contentEl.innerHTML = paragraphs.map(p => `<p class="mb-4 leading-relaxed text-gray-800 text-lg">${p.trim()}</p>`).join('');
+        contentEl.innerHTML = marked.parse(fullText);
       }
 
       renderMostPopular(newsList);
