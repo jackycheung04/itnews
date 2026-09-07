@@ -21,8 +21,9 @@ content:
         label: "發布日期"
         type: date
       - name: image
-        label: "封面圖片網址"
-        type: string
+        label: 封面圖片
+        widget: image # 或者 file，視 PagesCMS 支援的元件而定
+        media_folder: src/img # 設定你圖片上傳後要存放的資料夾
       - name: content
         label: "文章內文"
         type: rich-text
