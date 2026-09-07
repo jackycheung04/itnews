@@ -13,6 +13,9 @@ content:
         label: "文章標題"
         type: string
         required: true
+      - name: subtitle
+        label: "文章小標題 / 摘要"
+        type: string
       - name: author
         label: "作者"
         type: string
@@ -23,6 +26,9 @@ content:
       - name: image
         label: "封面圖片"
         type: image
+      - name: image_caption
+        label: "封面圖片註明"
+        type: string
       - name: content
         label: "文章內文"
         type: rich-text
