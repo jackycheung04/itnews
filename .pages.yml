@@ -1,6 +1,6 @@
 media:
   input: src/img
-  output: /src/img
+  output: src/img
 content:
   - name: biztech_manual
     label: "BizTech 原創文章"
