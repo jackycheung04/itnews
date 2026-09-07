@@ -878,8 +878,21 @@ License: You must have a valid license from official store to legally use the th
     const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
     if (biztechNews.length === 0) return;
 
-    // 1. 更新主大卡片
     const topBiz = biztechNews[0];
+    const mainUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
+
+    // 0. 解決問題 3：更新最上方右側的 BizTech 小卡片
+    const heroTitle = document.getElementById('biztech-title');
+    const heroImg = document.getElementById('biztech-img');
+    const heroLink = document.getElementById('biztech-link');
+    const heroTitleLink = document.getElementById('biztech-title-link');
+
+    if (heroTitle && topBiz.title) heroTitle.innerText = topBiz.title;
+    if (heroImg && topBiz.image) heroImg.src = topBiz.image;
+    if (heroLink) { heroLink.href = mainUrl; heroLink.removeAttribute('target'); }
+    if (heroTitleLink) { heroTitleLink.href = mainUrl; heroTitleLink.removeAttribute('target'); }
+
+    // 1. 解決問題 1：更新主大卡片 (強制 16/9 比例，避免圖片過大)
     const mainTitle = document.getElementById('home-biztech-main-title');
     const mainSummary = document.getElementById('home-biztech-main-summary');
     const mainImg = document.getElementById('home-biztech-main-img');
@@ -889,9 +902,13 @@ License: You must have a valid license from official store to legally use the th
 
     if (mainTitle && topBiz.title) mainTitle.innerText = topBiz.title;
     if (mainSummary && topBiz.summary) mainSummary.innerText = topBiz.summary;
-    if (mainImg && topBiz.image) mainImg.src = topBiz.image;
+    if (mainImg && topBiz.image) {
+      mainImg.src = topBiz.image;
+      mainImg.style.aspectRatio = "16/9";
+      mainImg.style.objectFit = "cover";
+      mainImg.style.width = "100%";
+    }
     
-    const mainUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
     if (mainLink) { mainLink.href = mainUrl; mainLink.removeAttribute('target'); }
     if (mainTitleLink) { mainTitleLink.href = mainUrl; mainTitleLink.removeAttribute('target'); }
 
@@ -899,7 +916,7 @@ License: You must have a valid license from official store to legally use the th
       badgeContainer.innerHTML = topBiz.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">專題採訪</span>' : '';
     }
 
-    // 2. 更新下方文章網格 (取第 2 篇之後的 BizTech 文章，完美對齊圖 2 排版)
+    // 2. 解決問題 2：更新下方文章網格 (改為 sm:w-1/3，完美呈現 3x2 排版並縮小圖片)
     const subGridNews = biztechNews.slice(1, 7);
     const gridContainer = document.getElementById('home-biztech-grid');
     if (gridContainer) {
@@ -908,13 +925,13 @@ License: You must have a valid license from official store to legally use the th
         const url = `biztech-article.html?id=${id}`;
         const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '';
         return `
-          <div class="flex-shrink max-w-full w-full sm:w-1/2 px-3 pb-6">
+          <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-6">
             <div class="flex flex-row sm:block hover-img">
               <a href="${url}">
                 <img class="max-w-full w-full mx-auto" src="${item.image || ''}" alt="${item.title || ''}" style="aspect-ratio: 16/10; object-fit: cover;">
               </a>
               <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                <h3 class="text-lg font-bold leading-tight mb-2">
+                <h3 class="text-lg font-bold leading-tight mb-2 mt-2">
                   <a href="${url}" class="hover:text-red-600 transition-colors line-clamp-2">${item.title || ''}</a>
                 </h3>
                 <p class="hidden md:block text-gray-600 line-clamp-2 mb-2 text-sm">${item.summary || ''}</p>
@@ -962,7 +979,7 @@ License: You must have a valid license from official store to legally use the th
       .then(newsList => {
         if (!newsList || newsList.length === 0) return;
 
-        // 1. Pulse 區塊處理 (原封不動保留)
+        // 1. Pulse 區塊處理
         const technoNews = newsList.filter(item => !item.category || item.category === 'Pulse');
         if (technoNews.length > 0) {
           const latestNews = technoNews[0];
@@ -1027,7 +1044,7 @@ License: You must have a valid license from official store to legally use the th
           }
         }
 
-        // 2. Ecosystem 區塊處理 (原封不動保留)
+        // 2. Ecosystem 區塊處理
         const ecosystemNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'ecosystem');
         if (ecosystemNews.length > 0) {
           const topEco = ecosystemNews[0];
@@ -1053,7 +1070,7 @@ License: You must have a valid license from official store to legally use the th
                     <img class="max-w-full w-full mx-auto" src="${item.image}" alt="${item.title}" style="aspect-ratio: 16/10; object-fit: cover;">
                   </a>
                   <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
+                    <h3 class="text-lg font-bold leading-tight mb-2 mt-2">
                       <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600 transition-colors">${item.title}</a>
                     </h3>
                     <p class="hidden md:block text-gray-600 line-clamp-2 mb-2 text-sm">${item.summary || ''}</p>
@@ -1067,7 +1084,7 @@ License: You must have a valid license from official store to legally use the th
           }
         }
 
-        // 3. BizTech 區塊處理 (直接在資料抓到後安全呼叫)
+        // 3. BizTech 區塊處理
         renderBizTech(newsList);
       })
       .catch(error => {
