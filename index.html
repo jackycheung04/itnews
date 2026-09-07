@@ -869,141 +869,15 @@ License: You must have a valid license from official store to legally use the th
   <!-- Production js -->
   <!-- <script src="dist/js/scripts.js"></script> -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // 加上時間戳記強制抓取最新新聞
-    fetch('data/news.json?t=' + new Date().getTime())
-      .then(response => {
-        if (!response.ok) throw new Error("找不到 news.json 檔案");
-        return response.json();
-      })
-      .then(newsList => {
-        if (!newsList || newsList.length === 0) return;
+  // ==========================================
+  // BizTech 獨立渲染函式
+  // ==========================================
+  function renderBizTech(newsList) {
+    if (!Array.isArray(newsList) || newsList.length === 0) return;
 
-        // ==========================================
-        // 1. Pulse 區塊處理
-        // ==========================================
-        const technoNews = newsList.filter(item => !item.category || item.category === 'Pulse');
-        if (technoNews.length > 0) {
-          const latestNews = technoNews[0];
-          const titleEl = document.getElementById('techno-title');
-          const linkEl = document.getElementById('techno-link');
-          const titleLinkEl = document.getElementById('techno-title-link');
-          const imgEl = document.getElementById('techno-img');
+    const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
+    if (biztechNews.length === 0) return;
 
-          if (titleEl && latestNews.title) titleEl.innerText = latestNews.title;
-          if (imgEl && latestNews.image) imgEl.src = latestNews.image;
-
-          const articleId = latestNews.id !== undefined ? latestNews.id : 0;
-          const internalUrl = `techno-article.html?id=${articleId}`;
-
-          if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
-          if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
-        }
-
-        // 底部 Techno 輪播列表
-        const carouselList = document.getElementById('techno-carousel-list');
-        if (carouselList && technoNews.length > 0) {
-          const top6 = technoNews.slice(0, 6);
-          
-          carouselList.innerHTML = top6.map(item => {
-            const id = item.id !== undefined ? item.id : 0;
-            const url = `techno-article.html?id=${id}`;
-            return `
-              <li class="splide__slide">
-                <div class="w-full pb-3 bg-white">
-                  <div class="hover-img bg-white overflow-hidden" style="width: 100%;">
-                    <a href="${url}">
-                      <img src="${item.image || ''}" alt="${item.title || ''}" 
-                           class="w-full transition-transform duration-300 hover:scale-105"
-                           style="width: 100% !important; aspect-ratio: 16 / 10 !important; object-fit: cover !important; display: block !important;">
-                    </a>
-                  </div>
-                  <div class="py-3 px-6 bg-white">
-                    <h3 class="text-lg font-bold leading-tight mb-2 line-clamp-2">
-                      <a href="${url}" class="hover:text-red-600 transition-colors">
-                        ${item.title || ''}
-                      </a>
-                    </h3>
-                    <a href="${url}" class="text-gray-500 text-xs">
-                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Pulse
-                    </a>
-                  </div>
-                </div>
-              </li>
-            `;
-          }).join('');
-
-          if (typeof Splide !== 'undefined') {
-            new Splide('#techno-carousel', {
-              type       : 'loop',
-              perPage    : 3,
-              perMove    : 1,
-              gap        : '1.25rem',
-              pagination : false,
-              breakpoints: {
-                768: { perPage: 1 },
-                1024: { perPage: 2 }
-              }
-            }).mount();
-          }
-        }
-
-        // ==========================================
-       // 2. Ecosystem (初創生態) 卡片處理
-        // ==========================================
-const ecosystemNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'ecosystem');
-        if (ecosystemNews.length > 0) {
-          // A. 更新右上方 Ecosystem 小卡片（第一篇最新的 Ecosystem）
-          const topEco = ecosystemNews[0];
-          const ecoTitle = document.getElementById('ecosystem-title');
-          const ecoLink = document.getElementById('ecosystem-link');
-          const ecoTitleLink = document.getElementById('ecosystem-title-link');
-          const ecoImg = document.getElementById('ecosystem-img');
-
-          if (ecoTitle && topEco.title) ecoTitle.innerText = topEco.title;
-          if (ecoImg && topEco.image) ecoImg.src = topEco.image;
-          
-          const ecoUrl = `ecosystem-article.html?id=${topEco.id !== undefined ? topEco.id : 0}`;
-          if (ecoLink) { ecoLink.href = ecoUrl; ecoLink.removeAttribute('target'); }
-          if (ecoTitleLink) { ecoTitleLink.href = ecoUrl; ecoTitleLink.removeAttribute('target'); }
-
-          // B. 更新下方 8 筆網格列表
-          const latest8 = ecosystemNews.slice(0, 8);
-          const container = document.getElementById('ecosystem-news-grid');
-          if (container) {
-            container.innerHTML = latest8.map(item => `
-              <div class="flex-shrink max-w-full w-full sm:w-1/2 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
-                <div class="flex flex-row sm:block hover-img">
-                  <a href="ecosystem-article.html?id=${item.id}">
-                    <img class="max-w-full w-full mx-auto" src="${item.image}" alt="${item.title}" style="aspect-ratio: 16/10; object-fit: cover;">
-                  </a>
-                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
-                    <h3 class="text-lg font-bold leading-tight mb-2">
-                      <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600 transition-colors">${item.title}</a>
-                    </h3>
-                    <p class="hidden md:block text-gray-600 line-clamp-2 mb-2 text-sm">${item.summary || ''}</p>
-                    <a href="ecosystem-article.html?id=${item.id}" class="text-gray-500 text-xs">
-                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Ecosystem
-                    </a>
-                  </div>
-                </div>
-              </div>
-            `).join('');
-          }
-        }
-        
-// ==========================================
-// BizTech 完整區塊動態渲染處理
-// ==========================================
-function renderBizTech() {
-  // 確保陣列有資料才執行
-  if (typeof newsList === 'undefined' || !Array.isArray(newsList) || newsList.length === 0) {
-    return;
-  }
-
-  const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
-
-  if (biztechNews.length > 0) {
     // 1. 更新主大卡片
     const topBiz = biztechNews[0];
     const mainTitle = document.getElementById('home-biztech-main-title');
@@ -1025,7 +899,7 @@ function renderBizTech() {
       badgeContainer.innerHTML = topBiz.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">專題採訪</span>' : '';
     }
 
-    // 2. 更新下方文章網格 (取第 2 篇之後的 BizTech 文章)
+    // 2. 更新下方文章網格 (取第 2 篇之後的 BizTech 文章，完美對齊圖 2 排版)
     const subGridNews = biztechNews.slice(1, 7);
     const gridContainer = document.getElementById('home-biztech-grid');
     if (gridContainer) {
@@ -1075,18 +949,131 @@ function renderBizTech() {
       }).join('');
     }
   }
-}
 
-// 當 DOM 載入完成後，我們同時監聽，並且也直接在原本的 fetch 成功後呼叫它
-document.addEventListener("DOMContentLoaded", () => {
-  // 延遲一點點等 newsList 被 fetch 填入
-  setTimeout(renderBizTech, 300);
-});
+  // ==========================================
+  // 主程式：載入 JSON 並同步驅動所有區塊
+  // ==========================================
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch('data/news.json?t=' + new Date().getTime())
+      .then(response => {
+        if (!response.ok) throw new Error("找不到 news.json 檔案");
+        return response.json();
+      })
+      .then(newsList => {
+        if (!newsList || newsList.length === 0) return;
+
+        // 1. Pulse 區塊處理 (原封不動保留)
+        const technoNews = newsList.filter(item => !item.category || item.category === 'Pulse');
+        if (technoNews.length > 0) {
+          const latestNews = technoNews[0];
+          const titleEl = document.getElementById('techno-title');
+          const linkEl = document.getElementById('techno-link');
+          const titleLinkEl = document.getElementById('techno-title-link');
+          const imgEl = document.getElementById('techno-img');
+
+          if (titleEl && latestNews.title) titleEl.innerText = latestNews.title;
+          if (imgEl && latestNews.image) imgEl.src = latestNews.image;
+
+          const articleId = latestNews.id !== undefined ? latestNews.id : 0;
+          const internalUrl = `techno-article.html?id=${articleId}`;
+
+          if (linkEl) { linkEl.href = internalUrl; linkEl.removeAttribute('target'); }
+          if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
+        }
+
+        const carouselList = document.getElementById('techno-carousel-list');
+        if (carouselList && technoNews.length > 0) {
+          const top6 = technoNews.slice(0, 6);
+          carouselList.innerHTML = top6.map(item => {
+            const id = item.id !== undefined ? item.id : 0;
+            const url = `techno-article.html?id=${id}`;
+            return `
+              <li class="splide__slide">
+                <div class="w-full pb-3 bg-white">
+                  <div class="hover-img bg-white overflow-hidden" style="width: 100%;">
+                    <a href="${url}">
+                      <img src="${item.image || ''}" alt="${item.title || ''}" 
+                           class="w-full transition-transform duration-300 hover:scale-105"
+                           style="width: 100% !important; aspect-ratio: 16 / 10 !important; object-fit: cover !important; display: block !important;">
+                    </a>
+                  </div>
+                  <div class="py-3 px-6 bg-white">
+                    <h3 class="text-lg font-bold leading-tight mb-2 line-clamp-2">
+                      <a href="${url}" class="hover:text-red-600 transition-colors">
+                        ${item.title || ''}
+                      </a>
+                    </h3>
+                    <a href="${url}" class="text-gray-500 text-xs">
+                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Pulse
+                    </a>
+                  </div>
+                </div>
+              </li>
+            `;
+          }).join('');
+
+          if (typeof Splide !== 'undefined') {
+            new Splide('#techno-carousel', {
+              type       : 'loop',
+              perPage    : 3,
+              perMove    : 1,
+              gap        : '1.25rem',
+              pagination : false,
+              breakpoints: {
+                768: { perPage: 1 },
+                1024: { perPage: 2 }
+              }
+            }).mount();
+          }
+        }
+
+        // 2. Ecosystem 區塊處理 (原封不動保留)
+        const ecosystemNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'ecosystem');
+        if (ecosystemNews.length > 0) {
+          const topEco = ecosystemNews[0];
+          const ecoTitle = document.getElementById('ecosystem-title');
+          const ecoLink = document.getElementById('ecosystem-link');
+          const ecoTitleLink = document.getElementById('ecosystem-title-link');
+          const ecoImg = document.getElementById('ecosystem-img');
+
+          if (ecoTitle && topEco.title) ecoTitle.innerText = topEco.title;
+          if (ecoImg && topEco.image) ecoImg.src = topEco.image;
+          
+          const ecoUrl = `ecosystem-article.html?id=${topEco.id !== undefined ? topEco.id : 0}`;
+          if (ecoLink) { ecoLink.href = ecoUrl; ecoLink.removeAttribute('target'); }
+          if (ecoTitleLink) { ecoTitleLink.href = ecoUrl; ecoTitleLink.removeAttribute('target'); }
+
+          const latest8 = ecosystemNews.slice(0, 8);
+          const container = document.getElementById('ecosystem-news-grid');
+          if (container) {
+            container.innerHTML = latest8.map(item => `
+              <div class="flex-shrink max-w-full w-full sm:w-1/2 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a href="ecosystem-article.html?id=${item.id}">
+                    <img class="max-w-full w-full mx-auto" src="${item.image}" alt="${item.title}" style="aspect-ratio: 16/10; object-fit: cover;">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a href="ecosystem-article.html?id=${item.id}" class="hover:text-red-600 transition-colors">${item.title}</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 line-clamp-2 mb-2 text-sm">${item.summary || ''}</p>
+                    <a href="ecosystem-article.html?id=${item.id}" class="text-gray-500 text-xs">
+                      <span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Ecosystem
+                    </a>
+                  </div>
+                </div>
+              </div>
+            `).join('');
+          }
+        }
+
+        // 3. BizTech 區塊處理 (直接在資料抓到後安全呼叫)
+        renderBizTech(newsList);
       })
       .catch(error => {
         console.error('載入新聞失敗:', error);
       });
- });
+  });
 </script>
 </body>
 </html>
