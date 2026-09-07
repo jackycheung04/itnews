@@ -525,7 +525,9 @@ License: You must have a valid license from official store to legally use the th
     <!-- Section Header -->
     <div class="flex flex-row flex-wrap items-center justify-between mb-4">
       <div class="my-1">
-        <h2 class="text-gray-800 font-bold text-xl mb-4 border-l-2 border-red-600 pl-2">BizTech</h2>
+        <h2 class="text-gray-800 text-2xl font-bold">
+  <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>BizTech
+</h2>
       </div>
     </div>
     
@@ -534,7 +536,7 @@ License: You must have a valid license from official store to legally use the th
       <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
         <!-- Main Featured Post (主大卡片) -->
         <div class="w-full pb-6">
-          <div class="relative hover-img max-h-96 overflow-hidden rounded-lg">
+          <div class="relative hover-img max-h-98 overflow-hidden rounded-lg">
             <a id="home-biztech-main-link" href="#">
               <img id="home-biztech-main-img" class="max-w-full w-full mx-auto h-auto object-cover" src="src/img/dummy/img1.jpg" alt="BizTech Main">
             </a>
@@ -904,11 +906,7 @@ License: You must have a valid license from official store to legally use the th
     if (mainSummary && topBiz.summary) mainSummary.innerText = topBiz.summary;
   if (mainImg && topBiz.image) {
       mainImg.src = topBiz.image;
-      mainImg.className = "w-full transition-transform duration-300 hover:scale-105";
-      mainImg.style.width = "100%";
-      mainImg.style.aspectRatio = "16 / 9";
-      mainImg.style.objectFit = "cover";
-      mainImg.style.display = "block";
+      mainImg.className = "max-w-full w-full mx-auto h-auto";
     }
     
     if (mainLink) { mainLink.href = mainUrl; mainLink.removeAttribute('target'); }
