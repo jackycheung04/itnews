@@ -902,12 +902,13 @@ License: You must have a valid license from official store to legally use the th
 
     if (mainTitle && topBiz.title) mainTitle.innerText = topBiz.title;
     if (mainSummary && topBiz.summary) mainSummary.innerText = topBiz.summary;
-   if (mainImg && topBiz.image) {
+  if (mainImg && topBiz.image) {
       mainImg.src = topBiz.image;
+      mainImg.className = "w-full transition-transform duration-300 hover:scale-105";
       mainImg.style.width = "100%";
-      mainImg.style.height = "auto";
-      mainImg.style.maxHeight = "";
+      mainImg.style.aspectRatio = "16 / 9";
       mainImg.style.objectFit = "cover";
+      mainImg.style.display = "block";
     }
     
     if (mainLink) { mainLink.href = mainUrl; mainLink.removeAttribute('target'); }
