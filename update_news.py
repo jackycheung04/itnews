@@ -189,17 +189,19 @@ for file_path in manual_files:
                 auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
                 
                 manual_news_list.append({
-                    "title": data.get("title", ""),
-                    "author": data.get("author", "Cheung Chun"),
-                    "date": data.get("date", time.strftime("%Y-%m-%d")),
-                    "summary": auto_summary,
-                    "content": raw_content,
-                    "image": data.get("image") or "src/img/dummy/img2.jpg",
-                    "category": "BizTech",
-                    "source": "BizTech 原創",
-                    "is_manual": True,
-                    "link": f"manual_{os.path.basename(file_path)}" # 給予獨立辨識碼避免被去重
-                })
+            "title": data.get("title", ""),
+            "subtitle": data.get("subtitle", "") or data.get("sub_title", ""),
+            "image_caption": data.get("image_caption", "") or data.get("caption", ""),
+            "author": data.get("author", "Cheung Chun"),
+            "date": data.get("date", time.strftime("%Y-%m-%d")),
+            "summary": data.get("subtitle") or auto_summary,
+            "content": raw_content,
+            "image": data.get("image") or "src/img/dummy/img2.jpg",
+            "category": "BizTech",
+            "source": "BizTech 原創",
+            "is_manual": True,
+            "link": f"manual_{os.path.basename(file_path)}"
+        })
                 print(f"✅ 成功載入原創文章：{data.get('title')}")
     except Exception as e:
         print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
