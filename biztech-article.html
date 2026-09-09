@@ -294,7 +294,9 @@ License: You must have a valid license from official store to legally use the th
       }
       
       const subtitleEl = document.getElementById('article-subtitle');
-      if (subtitleEl) subtitleEl.textContent = article.subtitle || article.sub_title || '';
+      if (subtitleEl) {
+  subtitleEl.textContent = article.subtitle || article.sub_title || article.summary || '';
+}
       
       if (dateEl) dateEl.textContent = article.date || '';
 
