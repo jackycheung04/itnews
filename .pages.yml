@@ -41,8 +41,8 @@ content:
   - name: insights_manual
     label: "Insights 原創文章"
     type: collection
-    path: "data/manual_articles"
-    filename: "insights_{slug}.json"
+    path: "data/insights_manual_articles"  # 🌟 改為獨立資料夾
+    filename: "{slug}.json"
     format: json
     fields:
       - name: category
