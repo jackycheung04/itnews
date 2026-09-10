@@ -178,7 +178,7 @@ manual_news_list = []
 print("\n==========================================")
 print("📝 處理 Pages CMS 手動原創文章")
 print("==========================================")
-manual_files = glob.glob("data/manual_articles/*.json")
+manual_files = glob.glob("data/manual_articles/*.json") + glob.glob("data/insights_manual_articles/*.json")
 for file_path in manual_files:
     try:
         with open(file_path, "r", encoding="utf-8") as f:
@@ -197,8 +197,8 @@ for file_path in manual_files:
             "summary": data.get("subtitle") or auto_summary,
             "content": raw_content,
             "image": data.get("image") or "src/img/dummy/img2.jpg",
-            "category": "BizTech",
-            "source": "BizTech 原創",
+           "category": data.get("category", "BizTech"),
+    "source": f"{data.get('category', 'BizTech')} 原創",
             "is_manual": True,
             "link": f"manual_{os.path.basename(file_path)}"
         })
