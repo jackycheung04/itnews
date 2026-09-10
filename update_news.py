@@ -227,7 +227,8 @@ CATEGORIES_RSS = {
         "https://www.ciodive.com/feeds/news/"
     ],
     "Insights": [
-        "https://techcrunch.com/category/opinion/feed/",
+        "https://sifted.eu/feed",
+        "https://techcrunch.com/tag/opinion/feed/",
     ]
 }
 
