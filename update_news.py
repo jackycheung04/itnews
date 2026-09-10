@@ -231,7 +231,11 @@ CATEGORIES_RSS = {
     ]
 }
 
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+headers = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 new_news_list = []
 max_new_per_category = 3  # 每個分類每次最多抓取 3 篇新新聞
 
@@ -252,7 +256,9 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
         print(f"嘗試抓取 RSS: {url}")
         try:
             resp = requests.get(url, headers=headers, timeout=10)
+            print(f"📡 RSS 回應狀態碼: {resp.status_code}")
             if resp.status_code != 200:
+                print(f"❌ 無法讀取 RSS (HTTP {resp.status_code}): {url}")
                 continue
 
             feed = feedparser.parse(resp.text)
