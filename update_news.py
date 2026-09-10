@@ -225,6 +225,9 @@ CATEGORIES_RSS = {
     ],
     "BizTech": [
         "https://www.ciodive.com/feeds/news/"
+    ],
+    "Insights": [  # 🌟 新增 Insights 自動抓取來源
+        "https://review.firstround.com/feed.xml"
     ]
 }
 
