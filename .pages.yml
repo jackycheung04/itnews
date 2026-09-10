@@ -9,6 +9,47 @@ content:
     filename: "{slug}.json"
     format: json
     fields:
+      - name: category
+        label: "文章分類"
+        type: string
+        default: "BizTech"
+        hidden: true
+      - name: title
+        label: "文章標題"
+        type: string
+        required: true
+      - name: subtitle
+        label: "文章小標題 / 摘要"
+        type: string
+      - name: author
+        label: "作者"
+        type: string
+        default: "Patrick Cheung"
+      - name: date
+        label: "發布日期"
+        type: date
+      - name: image
+        label: "封面圖片"
+        type: image
+      - name: image_caption
+        label: "封面圖片註明"
+        type: string
+      - name: content
+        label: "文章內文"
+        type: rich-text
+
+  - name: insights_manual
+    label: "Insights 原創文章"
+    type: collection
+    path: "data/manual_articles"
+    filename: "insights_{slug}.json"
+    format: json
+    fields:
+      - name: category
+        label: "文章分類"
+        type: string
+        default: "Insights"
+        hidden: true
       - name: title
         label: "文章標題"
         type: string
