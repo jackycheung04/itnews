@@ -227,7 +227,7 @@ CATEGORIES_RSS = {
         "https://www.ciodive.com/feeds/news/"
     ],
     "Insights": [
-        "https://venturebeat.com/feed/",
+        "https://restofworld.org/feed/",
     ]
 }
 
