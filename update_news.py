@@ -227,7 +227,7 @@ CATEGORIES_RSS = {
         "https://www.ciodive.com/feeds/news/"
     ],
     "Insights": [
-        "https://review.firstround.com/rss"
+        "https://www.technologyreview.com/feed/"
     ]
 }
 
