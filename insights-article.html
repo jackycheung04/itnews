@@ -337,7 +337,7 @@ License: You must have a valid license from official store to legally use the th
     if (!container) return;
 
     container.innerHTML = '';
-    const popularItems = newsList.slice(0, 5);
+    const popularItems = newsList.filter(item => item.category === 'Insights').slice(0, 5);
 
     popularItems.forEach((item, idx) => {
       const id = item.id !== undefined ? item.id : idx;
