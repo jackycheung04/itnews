@@ -187,22 +187,23 @@ for file_path in manual_files:
                 # 取得內文前 120 字作為摘要，並去除 HTML 或 Markdown 標籤的干擾
                 raw_content = str(data.get("content", ""))
                 auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
-                
-               manual_news_list.append({
-                "title": data.get("title", ""),
-                "subtitle": data.get("subtitle", "") or data.get("sub_title", ""),
-                "image_caption": data.get("image_caption", "") or data.get("caption", ""),
-                "author": data.get("author", ""),
-                "date": data.get("date", time.strftime("%Y-%m-%d")),
-                "summary": data.get("subtitle") or auto_summary,
-                "content": raw_content,
-                "image": data.get("image") or "src/img/dummy/img2.jpg",
-                "category": data.get("category", "BizTech"),
-                "source": f"{data.get('category', 'BizTech')} 原創",
-                "is_pinned": data.get("is_pinned", False),  # 👈 必須補上這一行！
-                "is_manual": True,
-                "link": f"manual_{os.path.basename(file_path)}"
-            })
+
+                manual_news_list.append({
+                    "title": data.get("title", ""),
+                    "subtitle": data.get("subtitle", "") or data.get("sub_title", ""),
+                    "image_caption": data.get("image_caption", "") or data.get("caption", ""),
+                    "author": data.get("author", "Cheung Chun"),
+                    "date": data.get("date", time.strftime("%Y-%m-%d")),
+                    "summary": data.get("subtitle") or auto_summary,
+                    "content": raw_content,
+                    "image": data.get("image") or "src/img/dummy/img2.jpg",
+                    "category": data.get("category", "BizTech"),
+                    "source": f"{data.get('category', 'BizTech')} 原創",
+                    "is_pinned": data.get("is_pinned", False),
+                    "is_manual": True,
+                    "link": f"manual_{os.path.basename(file_path)}"
+                })
+
                 print(f"✅ 成功載入原創文章：{data.get('title')}")
     except Exception as e:
         print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
