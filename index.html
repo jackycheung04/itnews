@@ -266,32 +266,33 @@ License: You must have a valid license from official store to legally use the th
         <div class="flex flex-row flex-wrap">
           <!--Start left cover-->
          <!--Start left cover-->
-              <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+            <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
                 <div class="relative hover-img max-h-98 overflow-hidden">
-                  <!-- 主圖連結 -->
-                  <a id="hero-spotlight-link" href="#">
-                    <img id="hero-spotlight-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0 h-98 object-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="Spotlight Hero">
-                  </a>
-                  
-                  <!-- 遮罩與文字內容 -->
-                        <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
-                            <!-- 1. 文章標題 -->
-                            <a id="hero-spotlight-link-title" href="#">
-                                <h2 id="hero-spotlight-title" class="text-2xl lg:text-3xl font-bold capitalize text-white mb-2 leading-snug">載入中...</h2>
+                    <!-- 主圖連結 -->
+                    <a id="hero-spotlight-link" href="#">
+                        <img id="hero-spotlight-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0 h-98 object-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E">
+                    </a>
+
+                    <!-- 遮罩與文字內容 -->
+                    <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                        <!-- 1. 文章標題 -->
+                        <a id="hero-spotlight-link-title" href="#">
+                            <h2 id="hero-spotlight-title" class="text-2xl lg:text-3xl font-bold capitalize text-white mb-2 leading-snug">載入中...</h2>
+                        </a>
+
+                        <!-- 2. 文章摘要 -->
+                        <p id="hero-spotlight-summary" class="text-gray-100 text-sm hidden sm:block line-clamp-2 mb-2">載入中...</p>
+
+                        <!-- 3. 分類標籤 (放在摘要下方，帶紅色直線) -->
+                        <div class="pt-1 text-gray-100 text-xs sm:text-sm">
+                            <a href="spotlight.html">
+                                <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div><span>Spotlight</span>
                             </a>
-
-                            <!-- 2. 文章摘要 -->
-                            <p id="hero-spotlight-summary" class="text-gray-100 text-sm hidden sm:block line-clamp-2 mb-2">載入中...</p>
-
-                            <!-- 3. 分類標籤 (放在摘要下方，帶紅色直線) -->
-                            <div class="pt-1 text-gray-100 text-xs sm:text-sm">
-                                <a href="spotlight.html">
-                                    <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div><span>Spotlight</span>
-                                </a>
-                                <span id="hero-spotlight-badge" class="hidden"></span>
-                            </div>
-                        </div>
-              </div>
+                            <span id="hero-spotlight-badge" class="hidden"></span>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
 <!-- 右側 4 張小卡片區塊 (完整對齊結構) -->
     <div class="flex-shrink max-w-full w-full lg:w-1/2 px-3">
       <div class="flex flex-row flex-wrap -mx-3">
