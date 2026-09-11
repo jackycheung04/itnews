@@ -265,22 +265,32 @@ License: You must have a valid license from official store to legally use the th
         <!-- big grid 1 -->
         <div class="flex flex-row flex-wrap">
           <!--Start left cover-->
-          <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
-            <div class="relative hover-img max-h-98 overflow-hidden">
-              <a href="#">
-                <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/img1.jpg" alt="Image description">
-              </a>
-              <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
-                <a href="#">
-                  <h2 class="text-3xl font-bold capitalize text-white mb-3">Amazon Shoppers Are Ditching Designer Belts for This Best-Selling</h2>
-                </a>
-                <p class="text-gray-100 hidden sm:inline-block">This is a wider card with supporting text below as a natural lead-in to additional content. This very helpfull for generate default content..</p>
-                <div class="pt-2">
-                  <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Europe</div>
+         <!--Start left cover-->
+              <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                  <!-- 主圖連結 -->
+                  <a id="hero-spotlight-link" href="#">
+                    <img id="hero-spotlight-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0 h-98 object-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="Spotlight Hero">
+                  </a>
+                  
+                  <!-- 遮罩與文字內容 -->
+                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                    <!-- 分類與專題採訪標籤 -->
+                    <div class="mb-2 flex items-center gap-2">
+                      <span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded font-bold">Spotlight</span>
+                      <span id="hero-spotlight-badge"></span>
+                    </div>
+
+                    <!-- 文章標題 -->
+                    <a id="hero-spotlight-link-title" href="#">
+                      <h2 id="hero-spotlight-title" class="text-2xl lg:text-3xl font-bold capitalize text-white mb-2 leading-snug">載入中...</h2>
+                    </a>
+
+                    <!-- 文章摘要 -->
+                    <p id="hero-spotlight-summary" class="text-gray-100 text-sm hidden sm:block line-clamp-2 mb-1">載入中...</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 <!-- 右側 4 張小卡片區塊 (完整對齊結構) -->
     <div class="flex-shrink max-w-full w-full lg:w-1/2 px-3">
       <div class="flex flex-row flex-wrap -mx-3">
@@ -787,6 +797,49 @@ License: You must have a valid license from official store to legally use the th
   <!-- <script src="dist/js/scripts.js"></script> -->
 <script>
   // ==========================================
+  // Spotlight Hero 左側大卡片渲染函式 (新增)
+  // ==========================================
+  function renderHeroSpotlight(newsList) {
+    if (!Array.isArray(newsList) || newsList.length === 0) return;
+
+    // 1. 篩選 category 為 spotlight 的文章
+    const spotlightNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'spotlight');
+    if (spotlightNews.length === 0) return;
+
+    // 2. 優先選取 is_manual 為 true (專題採訪) 的文章，若無則預設取第一篇 Spotlight
+    const heroArticle = spotlightNews.find(item => item.is_manual) || spotlightNews[0];
+    const articleId = heroArticle.id !== undefined ? heroArticle.id : 0;
+    const articleUrl = `spotlight-article.html?id=${articleId}`;
+
+    // 3. 取得 DOM 元素
+    const heroImg = document.getElementById('hero-spotlight-img');
+    const heroTitle = document.getElementById('hero-spotlight-title');
+    const heroSummary = document.getElementById('hero-spotlight-summary');
+    const heroLink = document.getElementById('hero-spotlight-link');
+    const heroTitleLink = document.getElementById('hero-spotlight-link-title');
+    const heroBadge = document.getElementById('hero-spotlight-badge');
+
+    // 4. 填入內容與連結
+    if (heroImg && heroArticle.image) {
+      heroImg.src = heroArticle.image;
+      heroImg.alt = heroArticle.title || '';
+      heroImg.classList.remove('opacity-0');
+      heroImg.classList.add('opacity-100');
+    }
+    if (heroTitle && heroArticle.title) heroTitle.innerText = heroArticle.title;
+    if (heroSummary && heroArticle.summary) heroSummary.innerText = heroArticle.summary;
+
+    if (heroLink) heroLink.href = articleUrl;
+    if (heroTitleLink) heroTitleLink.href = articleUrl;
+
+    if (heroBadge) {
+      heroBadge.innerHTML = heroArticle.is_manual 
+        ? '<span class="bg-black/60 backdrop-blur text-white text-xs px-2.5 py-1 rounded border border-gray-400 font-normal">專題採訪</span>' 
+        : '';
+    }
+  }
+
+  // ==========================================
   // BizTech 獨立渲染函式
   // ==========================================
   function renderBizTech(newsList) {
@@ -974,6 +1027,9 @@ License: You must have a valid license from official store to legally use the th
       })
       .then(newsList => {
         if (!newsList || newsList.length === 0) return;
+
+        // 0. 首頁左側 Hero Spotlight 大卡片 (新增呼叫)
+        renderHeroSpotlight(newsList);
 
         // 1. Pulse 區塊處理
         const technoNews = newsList.filter(item => !item.category || item.category === 'Pulse');
