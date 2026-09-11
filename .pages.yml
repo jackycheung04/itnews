@@ -9,6 +9,10 @@ content:
     filename: "{slug}.json"
     format: json
     fields:
+      - name: is_pinned
+        label: "是否置頂 (欄位卡片置頂)"
+        type: boolean
+        default: false
       - name: category
         label: "文章分類"
         type: string
@@ -45,6 +49,10 @@ content:
     filename: "{slug}.json"
     format: json
     fields:
+      - name: is_pinned
+        label: "是否置頂 (欄位卡片置頂)"
+        type: boolean
+        default: false
       - name: category
         label: "文章分類"
         type: string
@@ -81,6 +89,10 @@ content:
     filename: "{slug}.json"
     format: json
     fields:
+      - name: is_pinned
+        label: "是否置頂 (欄位卡片置頂)"
+        type: boolean
+        default: false
       - name: category
         label: "文章分類"
         type: string
@@ -105,6 +117,10 @@ content:
         type: image
       - name: image_caption
         label: "封面圖片註明"
+        type: string
+      - name: content
+        label: "文章內文"
+        type: rich-text
         type: string
       - name: content
         label: "文章內文"
