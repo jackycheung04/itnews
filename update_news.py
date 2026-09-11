@@ -2,7 +2,8 @@ import json
 import os
 import re
 import time
-import glob  # 🌟 新增：用於讀取本地資料夾
+import glob
+import yaml  # 🌟 新增：用於解析 .md 檔案的 YAML Frontmatter
 from bs4 import BeautifulSoup
 import feedparser
 import requests
@@ -166,54 +167,75 @@ if os.path.exists(json_path):
     except Exception as e:
         print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
 
-# 🌟 隔離手動文章：舊紀錄中只保留 RSS 自動抓取的新聞，避免手寫文章重複
 existing_rss_news = [item for item in existing_news if not item.get("is_manual")]
 existing_links = {item.get("link") for item in existing_rss_news if item.get("link")}
 
 
 # ----------------------------------------------------------------
-# 1.5 優先讀取 Pages CMS 手寫發布的原創文章 (🌟 新增區塊)
+# 1.5 優先讀取 Pages CMS 手寫發布的原創文章 (🌟 同時支援 .json 與 .md)
 # ----------------------------------------------------------------
 manual_news_list = []
 print("\n==========================================")
-print("📝 處理 Pages CMS 手動原創文章")
+print("📝 處理 Pages CMS 手動原創文章 (.json & .md)")
 print("==========================================")
-manual_files = glob.glob("data/manual_articles/*.json") + glob.glob("data/insights_manual_articles/*.json") + glob.glob("data/spotlight_manual_articles/*.json")
+
+# 同時搜尋 .json 與 .md 檔案
+manual_files = (
+    glob.glob("data/manual_articles/*.json") + glob.glob("data/manual_articles/*.md") +
+    glob.glob("data/insights_manual_articles/*.json") + glob.glob("data/insights_manual_articles/*.md") +
+    glob.glob("data/spotlight_manual_articles/*.json") + glob.glob("data/spotlight_manual_articles/*.md")
+)
+
 for file_path in manual_files:
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if data.get("title"):
-                # 取得內文前 120 字作為摘要，並去除 HTML 或 Markdown 標籤的干擾
-                raw_content = str(data.get("content", ""))
-                auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
+        data = {}
+        # 根據副檔名採用不同的解析方式
+        if file_path.endswith(".json"):
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        elif file_path.endswith(".md"):
+            with open(file_path, "r", encoding="utf-8") as f:
+                md_content = f.read()
+            # 解析 Markdown 的 YAML Frontmatter
+            if md_content.startswith("---"):
+                parts = md_content.split("---", 2)
+                if len(parts) >= 3:
+                    data = yaml.safe_load(parts[1]) or {}
+                    data["content"] = parts[2].strip()
+                else:
+                    data["content"] = md_content
+            else:
+                data["content"] = md_content
 
-                manual_news_list.append({
-                    "title": data.get("title", ""),
-                    "subtitle": data.get("subtitle", "") or data.get("sub_title", ""),
-                    "image_caption": data.get("image_caption", "") or data.get("caption", ""),
-                    "author": data.get("author", "Cheung Chun"),
-                    "date": data.get("date", time.strftime("%Y-%m-%d")),
-                    "summary": data.get("subtitle") or auto_summary,
-                    "content": raw_content,
-                    "image": data.get("image") or "src/img/dummy/img2.jpg",
-                    "category": data.get("category", "BizTech"),
-                    "source": f"{data.get('category', 'BizTech')} 原創",
-                    "is_pinned": data.get("is_pinned", False),
-                    "is_manual": True,
-                    "link": f"manual_{os.path.basename(file_path)}"
-                })
+        if data.get("title"):
+            raw_content = str(data.get("content", ""))
+            auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
 
-                print(f"✅ 成功載入原創文章：{data.get('title')}")
+            manual_news_list.append({
+                "title": data.get("title", ""),
+                "subtitle": data.get("subtitle", "") or data.get("sub_title", ""),
+                "image_caption": data.get("image_caption", "") or data.get("caption", ""),
+                "author": data.get("author", "Cheung Chun"),
+                "date": str(data.get("date", time.strftime("%Y-%m-%d"))),
+                "summary": data.get("subtitle") or auto_summary,
+                "content": raw_content,
+                "image": data.get("image") or "src/img/dummy/img2.jpg",
+                "category": data.get("category", "BizTech"),
+                "source": f"{data.get('category', 'BizTech')} 原創",
+                "is_pinned": data.get("is_pinned", False),
+                "is_manual": True,
+                "link": f"manual_{os.path.basename(file_path)}"
+            })
+
+            print(f"✅ 成功載入原創文章 ({file_path.split('.')[-1].upper()}): {data.get('title')}")
     except Exception as e:
         print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
 
-# 將手動文章按日期新到舊排序
 manual_news_list.sort(key=lambda x: x.get("date", ""), reverse=True)
 
 
 # ----------------------------------------------------------------
-# 2. 定義各分類及其對應的 RSS 來源 (🌟 新增 BizTech 來源)
+# 2. 定義各分類及其對應的 RSS 來源
 # ----------------------------------------------------------------
 CATEGORIES_RSS = {
     "Pulse": [
@@ -240,7 +262,7 @@ headers = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 new_news_list = []
-max_new_per_category = 3  # 每個分類每次最多抓取 3 篇新新聞
+max_new_per_category = 3
 
 
 # ----------------------------------------------------------------
@@ -259,9 +281,7 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
         print(f"嘗試抓取 RSS: {url}")
         try:
             resp = requests.get(url, headers=headers, timeout=10)
-            print(f"📡 RSS 回應狀態碼: {resp.status_code}")
             if resp.status_code != 200:
-                print(f"❌ 無法讀取 RSS (HTTP {resp.status_code}): {url}")
                 continue
 
             feed = feedparser.parse(resp.text)
@@ -274,18 +294,14 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
 
                 link = entry.get("link", "#")
 
-                # 去重檢查
                 if link in existing_links:
-                    print(f"⏩ 跳過已存在新聞: {entry.get('title')[:30]}...")
                     continue
 
                 orig_title = entry.get("title", "")
                 orig_summary = entry.get("summary", entry.get("description", ""))
                 published = getattr(entry, 'published', time.strftime("%Y-%m-%d"))
 
-                print(f"\n📷 [{category_name} 新聞 {cat_new_count + 1}/{max_new_per_category}] 解析圖片中...")
                 image_url = get_real_image_url(link)
-
                 if not image_url:
                     if "media_content" in entry and len(entry.media_content) > 0:
                         image_url = entry.media_content[0].get("url")
@@ -297,7 +313,6 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
                 if not image_url:
                     image_url = "src/img/dummy/img2.jpg"
 
-                print(f"🔄 正在翻譯與擴寫 ({category_name}): {orig_title[:30]}...")
                 zh_title, zh_summary, zh_content = translate_text(orig_title, orig_summary)
 
                 if zh_title and zh_summary:
@@ -309,7 +324,7 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
                         "image": image_url,
                         "date": published,
                         "category": category_name,
-                        "is_manual": False # 🌟 標註為非手寫自動抓取
+                        "is_manual": False
                     })
                     existing_links.add(link)
                     cat_new_count += 1
@@ -320,11 +335,10 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
 
 
 # ----------------------------------------------------------------
-# 4. 合併新舊資料、更新 ID 並存檔 (🌟 手動文章置頂邏輯)
+# 4. 合併新舊資料、更新 ID 並存檔
 # ----------------------------------------------------------------
-# 排序邏輯：手動原創文章最優先 (置頂) -> 最新抓取的翻譯新聞 -> 舊有的自動抓取新聞
 combined_news = manual_news_list + new_news_list + existing_rss_news
-final_news = combined_news[:50]  # 保留最新 50 篇
+final_news = combined_news[:50]
 
 for idx, item in enumerate(final_news):
     item["id"] = idx
