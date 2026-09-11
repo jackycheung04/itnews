@@ -150,7 +150,7 @@ def translate_text(title, summary):
 
 
 # ----------------------------------------------------------------
-# 1. 讀取舊新聞紀錄並自動補齊 category 欄位
+# 1. 讀取舊新聞紀錄（完整保留手動文章與 RSS 翻譯）
 # ----------------------------------------------------------------
 os.makedirs("data", exist_ok=True)
 json_path = "data/news.json"
@@ -166,16 +166,17 @@ if os.path.exists(json_path):
     except Exception as e:
         print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
 
+existing_manual_news = [item for item in existing_news if item.get("is_manual")]
 existing_rss_news = [item for item in existing_news if not item.get("is_manual")]
 existing_links = {item.get("link") for item in existing_rss_news if item.get("link")}
 
 
 # ----------------------------------------------------------------
-# 1.5 優先讀取 Pages CMS 手寫發布的原創文章 (.json & .md 內建解析)
+# 1.5 優先讀取資料夾內最新的 Pages CMS 手寫原創文章 (.json & .md)
 # ----------------------------------------------------------------
 manual_news_list = []
 print("\n==========================================")
-print("📝 處理 Pages CMS 手動原創文章 (.json & .md)")
+print("📝 處理資料夾內的 Pages CMS 手動原創文章 (.json & .md)")
 print("==========================================")
 
 manual_files = (
@@ -194,12 +195,16 @@ for file_path in manual_files:
             with open(file_path, "r", encoding="utf-8") as f:
                 md_content = f.read()
             
-            # 內建簡易 Frontmatter 解析器（無需安裝 pyyaml 套件）
             if md_content.startswith("---"):
                 parts = md_content.split("---", 2)
                 if len(parts) >= 3:
                     frontmatter_text = parts[1]
-                    data["content"] = parts[2].strip()
+                    raw_md_body = parts[2].strip()
+                    
+                    paragraphs = raw_md_body.split("\n\n")
+                    html_content = "".join([f"<p>{p.strip()}</p>" for p in paragraphs if p.strip()])
+                    data["content"] = html_content if html_content else raw_md_body
+                    
                     for line in frontmatter_text.strip().split("\n"):
                         if ":" in line:
                             k, v = line.split(":", 1)
@@ -216,8 +221,13 @@ for file_path in manual_files:
                 data["content"] = md_content
 
         if data.get("title"):
-            raw_content = str(data.get("content", ""))
-            auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
+            raw_content = data.get("content") or data.get("body") or ""
+            
+            if raw_content and not raw_content.strip().startswith("<"):
+                paragraphs = raw_content.split("\n\n")
+                raw_content = "".join([f"<p>{p.strip()}</p>" for p in paragraphs if p.strip()])
+
+            auto_summary = data.get("summary") or data.get("subtitle") or "原創深度報導"
 
             manual_news_list.append({
                 "title": data.get("title", ""),
@@ -225,7 +235,7 @@ for file_path in manual_files:
                 "image_caption": data.get("image_caption", "") or data.get("caption", ""),
                 "author": data.get("author", "Cheung Chun"),
                 "date": str(data.get("date", time.strftime("%Y-%m-%d"))),
-                "summary": data.get("subtitle") or auto_summary,
+                "summary": auto_summary,
                 "content": raw_content,
                 "image": data.get("image") or "src/img/dummy/img2.jpg",
                 "category": data.get("category", "BizTech"),
@@ -239,7 +249,9 @@ for file_path in manual_files:
     except Exception as e:
         print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
 
-manual_news_list.sort(key=lambda x: x.get("date", ""), reverse=True)
+all_manual_map = {item["link"]: item for item in (existing_manual_news + manual_news_list)}
+combined_manual_news = list(all_manual_map.values())
+combined_manual_news.sort(key=lambda x: x.get("date", ""), reverse=True)
 
 
 # ----------------------------------------------------------------
@@ -345,7 +357,7 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
 # ----------------------------------------------------------------
 # 4. 合併新舊資料、更新 ID 並存檔
 # ----------------------------------------------------------------
-combined_news = manual_news_list + new_news_list + existing_rss_news
+combined_news = combined_manual_news + new_news_list + existing_rss_news
 final_news = combined_news[:50]
 
 for idx, item in enumerate(final_news):
@@ -354,4 +366,4 @@ for idx, item in enumerate(final_news):
 if final_news:
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(final_news, f, ensure_ascii=False, indent=4)
-    print(f"\n🚀 更新成功！載入 {len(manual_news_list)} 篇原創，新增 {len(new_news_list)} 篇翻譯，目前資料庫共保留 {len(final_news)} 篇。")
+    print(f"\n🚀 更新成功！載入 {len(combined_manual_news)} 篇原創，新增 {len(new_news_list)} 篇翻譯，目前資料庫共保留 {len(final_news)} 篇。")
