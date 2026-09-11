@@ -178,7 +178,7 @@ manual_news_list = []
 print("\n==========================================")
 print("📝 處理 Pages CMS 手動原創文章")
 print("==========================================")
-manual_files = glob.glob("data/manual_articles/*.json") + glob.glob("data/insights_manual_articles/*.json")
+manual_files = glob.glob("data/manual_articles/*.json") + glob.glob("data/insights_manual_articles/*.json") + glob.glob("data/spotlight_manual_articles/*.json")
 for file_path in manual_files:
     try:
         with open(file_path, "r", encoding="utf-8") as f:
