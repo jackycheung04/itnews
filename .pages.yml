@@ -83,12 +83,11 @@ content:
         type: rich-text
 
   - name: spotlight_manual
-    label: "Spotlight 專題採訪"
+    label: Spotlight 專題採訪
     type: collection
     path: "data/spotlight_manual_articles"
-    filename: "{slug}.json"
-    format: json
-    extension: json
+    format: yaml-frontmatter
+    extension: md
     fields:
       - name: is_pinned
         label: "是否置頂 (欄位卡片置頂)"
