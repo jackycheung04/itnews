@@ -904,7 +904,7 @@ License: You must have a valid license from official store to legally use the th
 
     if (mainTitle && topBiz.title) mainTitle.innerText = topBiz.title;
     if (mainSummary && topBiz.summary) mainSummary.innerText = topBiz.summary;
-  if (mainImg && topBiz.image) {
+    if (mainImg && topBiz.image) {
       mainImg.src = topBiz.image;
       mainImg.className = "max-w-full w-full mx-auto h-auto";
     }
@@ -1086,6 +1086,23 @@ License: You must have a valid license from official store to legally use the th
 
         // 3. BizTech 區塊處理
         renderBizTech(newsList);
+
+        // 4. Insights 區塊處理 (更新首頁右上右下角小卡片)
+        const insightsNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'insights');
+        if (insightsNews.length > 0) {
+          const topInsights = insightsNews[0];
+          const insightsTitle = document.getElementById('insights-card-title');
+          const insightsImg = document.getElementById('insights-card-img');
+          const insightsLink = document.getElementById('insights-card-link');
+          const insightsTitleLink = document.getElementById('insights-card-title-link');
+
+          const insightsUrl = `insights-article.html?id=${topInsights.id !== undefined ? topInsights.id : 0}`;
+
+          if (insightsTitle && topInsights.title) insightsTitle.innerText = topInsights.title;
+          if (insightsImg && topInsights.image) insightsImg.src = topInsights.image;
+          if (insightsLink) { insightsLink.href = insightsUrl; insightsLink.removeAttribute('target'); }
+          if (insightsTitleLink) { insightsTitleLink.href = insightsUrl; insightsTitleLink.removeAttribute('target'); }
+        }
       })
       .catch(error => {
         console.error('載入新聞失敗:', error);
