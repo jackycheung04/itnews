@@ -372,4 +372,4 @@ for idx, item in enumerate(final_news):
 if final_news:
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(final_news, f, ensure_ascii=False, indent=4)
-    print(f"\n🚀 更新成功！載入 {len(manual_news_list)} 篇原創，新增 {len(new_news_list)} 篇翻譯，目前資料庫共保留 {len(final_news)} 篇。")-
+    print(f"\n🚀 更新成功！載入 {len(manual_news_list)} 篇原創，新增 {len(new_news_list)} 篇翻譯，目前資料庫共保留 {len(final_news)} 篇。")
