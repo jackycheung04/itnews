@@ -1,71 +1,334 @@
+<!--
+Template Name: Tailnews - Tailwind News Template
+Author: Aribudin
+Website: https://www.tailwindtemplate.net
+Contact: support@tailwindtemplate.net
+Purchase: https://themes.tailwindtemplate.net/tailnews
+License: You must have a valid license from official store to legally use the theme for your project.
+-->
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Spotlight 文章內頁 - Tailnews</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Spotlight | Tailnews</title>
+  <meta name="description" content="Spotlight Article">
+
+  <!-- Development css -->
   <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="src/img/favicon.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+  /* 修正文章內文排版與樣式 */
+  #article-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 1.125rem;
+    color: #374151;
+  }
+  #article-content h1, #article-content h2, #article-content h3, #article-content h4 {
+    font-weight: 700;
+    color: #111827;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  #article-content h1 { font-size: 2.25rem; }
+  #article-content h2 { font-size: 1.75rem; }
+  #article-content h3 { font-size: 1.35rem; }
+  #article-content a {
+    color: #dc2626;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  #article-content a:hover {
+    color: #991b1b;
+  }
+  #article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  /* 內文圖片與圖說樣式 */
+  #article-content figure {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  #article-content figure img {
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+  #article-content figcaption {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+</style>
 </head>
-<body class="text-gray-800 pt-12 bg-white">
+<body class="text-gray-700 pt-9 sm:pt-10">
+  <!-- ========== { HEADER }========== -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+     <nav class="bg-black">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex justify-between">
+            <div class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">Tailnews</div>
+            
+            <div class="flex flex-row">
+              <!-- nav menu -->
+              <ul class="navbar hidden lg:flex lg:flex-row text-gray-400 text-sm items-center font-bold">
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="index.html">Home</a>
+                </li>
+                
+                <!-- Spotlight 當前頁面高亮 -->
+                <li class="relative border-l border-gray-800 hover:bg-gray-900 bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent text-white" href="spotlight.html">Spotlight</a>
+                </li>
 
-  <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-    <div class="container mx-auto px-4 flex justify-between items-center h-12">
-      <a href="index.html" class="text-xl font-bold text-gray-900">Tailnews</a>
-      <a href="spotlight.html" class="text-sm font-semibold text-red-600">← 返回 Spotlight 列表</a>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="biztech.html">BizTech</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="insights.html">Insights</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="ecosystem.html">Ecosystem</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="techno.html">Pulse</a>
+                </li>
+              </ul>
+
+              <!-- search form & mobile nav -->
+              <div class="flex flex-row items-center text-gray-300">
+                <div class="search-dropdown relative border-r lg:border-l border-gray-800 hover:bg-gray-900">
+                  <button class="block py-3 px-6 border-b-2 border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="open bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="relative hover:bg-gray-800 block lg:hidden">
+                  <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                    <span class="sr-only">Mobile menu</span>
+                    <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg> Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </nav>
+  </header><!-- end header -->
+
+  <!-- =========={ MAIN }========== -->
+  <main id="content">
+    <div class="bg-gray-50 py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <!-- Left Article Content -->
+          <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
+            <div class="w-full py-3">
+              <!-- Breadcrumbs / Category -->
+              <div class="mb-2">
+                <a href="spotlight.html" class="text-xs text-red-600 font-bold uppercase border-b-2 border-red-600 pb-1">Spotlight 專題採訪</a>
+              </div>
+              
+              <!-- Article Title -->
+              <h1 id="article-title" class="text-3xl font-bold mb-4"></h1>
+              <p id="article-subtitle" class="text-gray-500 text-lg mb-4 leading-normal"></p>
+
+              <!-- Author & Date -->
+              <div class="flex items-center text-sm text-gray-500 mb-6">
+                <span id="article-author">作者：Patrick Cheung</span>
+                <span class="mx-2">•</span>
+                <span id="article-date"></span>
+              </div>
+
+              <!-- Main Cover Image -->
+              <div class="mb-6">
+                <img id="article-img" class="max-w-full w-full h-auto rounded" src="" alt="">
+                <p id="article-img-caption" class="text-center text-gray-500 text-sm italic mt-2 mb-6"></p>
+              </div>
+
+              <!-- Article Body -->
+              <div id="article-content" class="text-gray-800 text-lg leading-relaxed space-y-6"></div>
+              
+              <!-- Back to Spotlight -->
+              <div class="mt-8 pt-6 border-t border-gray-200">
+                <a href="spotlight.html" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-6 rounded text-sm transition-colors">
+                  ← 返回 Spotlight 分類頁
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-3 lg:pb-8">
+            <div class="w-full bg-white">
+              <div class="mb-6">
+                <div class="p-4 bg-gray-100">
+                  <h2 class="text-lg font-bold">Most Popular Spotlight</h2>
+                </div>
+                <ul id="most-popular-list" class="post-number">
+                </ul>
+              </div>
+            </div>
+
+            <!-- Advertisement Sidebar -->
+            <div class="text-sm py-6 sticky top-20">
+              <div class="w-full text-center">
+                <a class="uppercase text-gray-400 text-xs" href="#">Advertisement</a>
+                <a href="#">
+                  <img class="mx-auto mt-2" src="src/img/ads/250.jpg" alt="advertisement area">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </main><!-- end main -->
 
-  <main class="py-10 max-w-4xl mx-auto px-4">
-    <article id="article-container">
-      <p class="text-gray-500 text-center py-20">文章載入中...</p>
-    </article>
-  </main>
+  <!-- =========={ FOOTER }========== -->
+  <footer class="bg-black text-gray-400">
+    <div id="footer-content" class="relative pt-8 xl:pt-16 pb-6 xl:pb-12">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2 overflow-hidden">
+        <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
+          <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16 mb-6 lg:mb-0">
+            <div class="flex items-center mb-2">
+              <span class="text-3xl leading-normal mb-2 font-bold text-gray-100">TailNews</span>
+            </div>
+            <p>Tailwind News Template for build great newspaper, magazine and news portal.</p>
+          </div>
+          <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
+            <div class="flex flex-wrap flex-row">
+              <div class="flex-shrink max-w-full w-1/2 md:w-1/4 mb-6 lg:mb-0">
+                <h4 class="text-base leading-normal mb-3 uppercase text-gray-100">Product</h4>
+                <ul>
+                  <li class="py-1 hover:text-white"><a href="index.html">Home</a></li>
+                  <li class="py-1 hover:text-white"><a href="spotlight.html">Spotlight</a></li>
+                  <li class="py-1 hover:text-white"><a href="biztech.html">BizTech</a></li>
+                  <li class="py-1 hover:text-white"><a href="insights.html">Insights</a></li>
+                  <li class="py-1 hover:text-white"><a href="ecosystem.html">Ecosystem</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+  async function loadArticleDetail() {
+    try {
       const urlParams = new URLSearchParams(window.location.search);
-      const articleId = urlParams.get('id');
+      const rawId = urlParams.get('id');
+      const articleId = rawId !== null ? parseInt(rawId, 10) : 0;
 
-      fetch('data/news.json')
-        .then(res => res.json())
-        .then(newsList => {
-          const article = newsList.find(item => String(item.id) === String(articleId));
-          const container = document.getElementById('article-container');
+      const res = await fetch('data/news.json?v=' + new Date().getTime());
+      const newsList = await res.json();
 
-          if (!article) {
-            container.innerHTML = '<p class="text-gray-500 text-center py-10">找不到指定的文章。</p>';
-            return;
-          }
+      if (!newsList || newsList.length === 0) return;
 
-          document.getElementById('page-title').innerText = `${article.title} - Spotlight`;
+      let article = newsList.find(item => item.id === articleId);
+      if (!article) {
+        article = newsList.find(item => item.category === 'Spotlight') || newsList[0];
+      }
 
-          container.innerHTML = `
-            <div class="mb-6">
-              <span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded font-semibold">Spotlight 專題採訪</span>
-              <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-4 leading-tight">${article.title}</h1>
-              ${article.subtitle ? `<p class="text-xl text-gray-600 font-medium mb-4">${article.subtitle}</p>` : ''}
-              <div class="flex items-center text-sm text-gray-500 space-x-4 border-y py-2">
-                <span>作者：${article.author || 'Patrick Cheung'}</span>
-                <span>•</span>
-                <span>${article.date || ''}</span>
-              </div>
-            </div>
+      document.title = `${article.title || '新聞'} - Tailnews`;
 
-            ${article.image ? `
-              <div class="mb-8">
-                <img src="${article.image}" class="w-full h-auto max-h-[500px] object-cover rounded" alt="${article.title}">
-                ${article.image_caption ? `<p class="text-xs text-gray-400 text-center mt-2">${article.image_caption}</p>` : ''}
-              </div>
-            ` : ''}
+      const titleEl = document.getElementById('article-title');
+      const dateEl = document.getElementById('article-date');
+      const authorEl = document.getElementById('article-author');
+      const imgEl = document.getElementById('article-img');
+      const contentEl = document.getElementById('article-content');
 
-            <div class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
-              ${article.content || article.summary || '尚無內文。'}
-            </div>
-          `;
-        });
+      if (titleEl) {
+        let badgeHtml = '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded mr-2 inline-block font-normal align-middle">Spotlight</span>';
+        titleEl.innerHTML = badgeHtml + (article.title || '無標題');
+      }
+      
+      const subtitleEl = document.getElementById('article-subtitle');
+      if (subtitleEl) {
+        subtitleEl.textContent = article.subtitle || article.sub_title || article.summary || '';
+      }
+      
+      if (authorEl) authorEl.textContent = `作者：${article.author || 'Patrick Cheung'}`;
+      if (dateEl) dateEl.textContent = article.date || '';
+
+      if (imgEl) {
+        imgEl.src = article.image || article.image_url || 'src/img/dummy/img2.jpg';
+        imgEl.alt = article.title || '';
+      }
+      
+      const imgCaptionEl = document.getElementById('article-img-caption');
+      if (imgCaptionEl) imgCaptionEl.textContent = article.image_caption || '';
+
+      if (contentEl) {
+        let rawContent = article.content || article.summary || '';
+        
+        // 1. 若內容含 Markdown 標記，經由 Marked 解析
+        if (typeof marked !== 'undefined') {
+          rawContent = marked.parse(rawContent);
+        }
+
+        // 2. 自動將文字中未加上 <a> 標籤的 URL 轉為可點擊超連結
+        rawContent = rawContent.replace(/(?<!href=")(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+
+        contentEl.innerHTML = rawContent;
+      }
+
+      renderMostPopular(newsList);
+
+    } catch (err) {
+      console.error("載入文章內容失敗:", err);
+    }
+  }
+
+  function renderMostPopular(newsList) {
+    const container = document.getElementById('most-popular-list');
+    if (!container) return;
+
+    container.innerHTML = '';
+    const popularItems = newsList.filter(item => item.category === 'Spotlight').slice(0, 5);
+    const displayItems = popularItems.length > 0 ? popularItems : newsList.slice(0, 5);
+
+    displayItems.forEach((item, idx) => {
+      const id = item.id !== undefined ? item.id : idx;
+      const title = item.title || '無標題文章';
+      let badgeHtml = '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">Spotlight</span>';
+
+      const itemHtml = `
+        <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="spotlight-article.html?id=${id}">
+            <span class="text-xl font-bold text-gray-300 mr-3 flex-shrink-0">${idx + 1}</span>
+            ${badgeHtml}
+            <span class="line-clamp-2">${title}</span>
+          </a>
+        </li>
+      `;
+      container.innerHTML += itemHtml;
     });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadArticleDetail);
   </script>
 </body>
 </html>
