@@ -121,7 +121,3 @@ content:
       - name: content
         label: "文章內文"
         type: rich-text
-        type: string
-      - name: content
-        label: "文章內文"
-        type: rich-text
