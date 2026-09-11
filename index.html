@@ -802,10 +802,10 @@ License: You must have a valid license from official store to legally use the th
   // ==========================================
   function getFeaturedArticle(articles) {
     if (!Array.isArray(articles) || articles.length === 0) return null;
-    return articles.find(item => item.is_pinned) 
-        || articles.find(item => item.is_manual) 
+    return articles.find(item => item.is_pinned === true || item.is_pinned === 'true')
+        || articles.find(item => item.is_manual)
         || articles[0];
-  }
+}
 
   // ==========================================
   // 0. Spotlight Hero 左側大卡片渲染函式
