@@ -88,6 +88,7 @@ content:
     path: "data/spotlight_manual_articles"
     filename: "{slug}.json"
     format: json
+    extension: json
     fields:
       - name: is_pinned
         label: "是否置頂 (欄位卡片置頂)"
