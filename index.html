@@ -261,37 +261,36 @@ License: You must have a valid license from official store to legally use the th
 
     <!-- hero big grid -->
     <div class="bg-white py-6">
-        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-            <!-- big grid 1 -->
-            <div class="flex flex-row flex-wrap">
-                <!--Start left cover-->
-                <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
-                    <div class="relative hover-img max-h-98 overflow-hidden">
-                        <!-- 主圖連結 -->
-                        <a id="hero-spotlight-link" href="#">
-                            <img id="hero-spotlight-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0 h-98 object-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E">
-                        </a>
-
-                        <!-- 遮罩與文字內容 -->
-                        <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
-                            <!-- 分類標籤 (紅色直條 + Spotlight) -->
-                            <div class="mb-2 flex items-center text-white text-xs font-bold">
-                                <span class="inline-block w-1 h-3.5 bg-red-600 mr-1.5 rounded-full"></span>
-                                <span>Spotlight</span>
-                                <span id="hero-spotlight-badge" class="hidden"></span>
-                            </div>
-
-                            <!-- 文章標題 -->
-                            <a id="hero-spotlight-link-title" href="#">
-                                <h2 id="hero-spotlight-title" class="text-2xl lg:text-3xl font-bold capitalize text-white mb-2 leading-snug">載入中...</h2>
-                            </a>
-
-                            <!-- 文章摘要 -->
-                            <p id="hero-spotlight-summary" class="text-gray-100 text-sm hidden sm:block line-clamp-2 mb-1">載入中...</p>
-                        </div>
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <!-- big grid 1 -->
+        <div class="flex flex-row flex-wrap">
+          <!--Start left cover-->
+         <!--Start left cover-->
+              <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                  <!-- 主圖連結 -->
+                  <a id="hero-spotlight-link" href="#">
+                    <img id="hero-spotlight-img" class="max-w-full w-full mx-auto bg-gray-200 transition-opacity duration-300 opacity-0 h-98 object-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="Spotlight Hero">
+                  </a>
+                  
+                  <!-- 遮罩與文字內容 -->
+                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                    <!-- 分類與專題採訪標籤 -->
+                    <div class="mb-2 flex items-center text-white text-xs font-bold">
+                      <span class="inline-block w-1 h-3.5 bg-red-600 mr-1.5 rounded-full"></span>
+                      <span>Spotlight</span>
                     </div>
+
+                    <!-- 文章標題 -->
+                    <a id="hero-spotlight-link-title" href="#">
+                      <h2 id="hero-spotlight-title" class="text-2xl lg:text-3xl font-bold capitalize text-white mb-2 leading-snug">載入中...</h2>
+                    </a>
+
+                    <!-- 文章摘要 -->
+                    <p id="hero-spotlight-summary" class="text-gray-100 text-sm hidden sm:block line-clamp-2 mb-1">載入中...</p>
+                  </div>
                 </div>
-                <!--End left cover-->
+              </div>
 <!-- 右側 4 張小卡片區塊 (完整對齊結構) -->
     <div class="flex-shrink max-w-full w-full lg:w-1/2 px-3">
       <div class="flex flex-row flex-wrap -mx-3">
@@ -841,8 +840,10 @@ License: You must have a valid license from official store to legally use the th
     if (heroTitleLink) heroTitleLink.href = articleUrl;
 
     if (heroBadge) {
-        heroBadge.innerHTML = '';
+    heroBadge.innerHTML = '';
+}
     }
+  }
 
   // ==========================================
   // BizTech 獨立渲染函式
