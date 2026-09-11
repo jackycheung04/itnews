@@ -797,21 +797,29 @@ License: You must have a valid license from official store to legally use the th
   <!-- <script src="dist/js/scripts.js"></script> -->
 <script>
   // ==========================================
-  // Spotlight Hero 左側大卡片渲染函式 (新增)
+  // 通用置頂選取工具函式
+  // 優先順序：1. 置頂文章 (is_pinned) -> 2. 專題採訪 (is_manual) -> 3. 第一篇最新文章
+  // ==========================================
+  function getFeaturedArticle(articles) {
+    if (!Array.isArray(articles) || articles.length === 0) return null;
+    return articles.find(item => item.is_pinned) 
+        || articles.find(item => item.is_manual) 
+        || articles[0];
+  }
+
+  // ==========================================
+  // 0. Spotlight Hero 左側大卡片渲染函式
   // ==========================================
   function renderHeroSpotlight(newsList) {
     if (!Array.isArray(newsList) || newsList.length === 0) return;
 
-    // 1. 篩選 category 為 spotlight 的文章
     const spotlightNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'spotlight');
-    if (spotlightNews.length === 0) return;
+    const heroArticle = getFeaturedArticle(spotlightNews);
+    if (!heroArticle) return;
 
-    // 2. 優先選取 is_manual 為 true (專題採訪) 的文章，若無則預設取第一篇 Spotlight
-    const heroArticle = spotlightNews.find(item => item.is_manual) || spotlightNews[0];
     const articleId = heroArticle.id !== undefined ? heroArticle.id : 0;
     const articleUrl = `spotlight-article.html?id=${articleId}`;
 
-    // 3. 取得 DOM 元素
     const heroImg = document.getElementById('hero-spotlight-img');
     const heroTitle = document.getElementById('hero-spotlight-title');
     const heroSummary = document.getElementById('hero-spotlight-summary');
@@ -819,7 +827,6 @@ License: You must have a valid license from official store to legally use the th
     const heroTitleLink = document.getElementById('hero-spotlight-link-title');
     const heroBadge = document.getElementById('hero-spotlight-badge');
 
-    // 4. 填入內容與連結
     if (heroImg && heroArticle.image) {
       heroImg.src = heroArticle.image;
       heroImg.alt = heroArticle.title || '';
@@ -833,9 +840,13 @@ License: You must have a valid license from official store to legally use the th
     if (heroTitleLink) heroTitleLink.href = articleUrl;
 
     if (heroBadge) {
-      heroBadge.innerHTML = heroArticle.is_manual 
-        ? '<span class="bg-black/60 backdrop-blur text-white text-xs px-2.5 py-1 rounded border border-gray-400 font-normal">專題採訪</span>' 
-        : '';
+      if (heroArticle.is_pinned) {
+        heroBadge.innerHTML = '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded font-normal">置頂精選</span>';
+      } else if (heroArticle.is_manual) {
+        heroBadge.innerHTML = '<span class="bg-black/60 backdrop-blur text-white text-xs px-2.5 py-1 rounded border border-gray-400 font-normal">專題採訪</span>';
+      } else {
+        heroBadge.innerHTML = '';
+      }
     }
   }
 
@@ -848,10 +859,11 @@ License: You must have a valid license from official store to legally use the th
     const biztechNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'biztech');
     if (biztechNews.length === 0) return;
 
-    const topBiz = biztechNews[0];
+    // 右側下方小卡片 (優先取置頂)
+    const topBiz = getFeaturedArticle(biztechNews);
     const mainUrl = `biztech-article.html?id=${topBiz.id !== undefined ? topBiz.id : 0}`;
 
-    // 0. 更新最上方右側的 BizTech 小卡片
+    // 0. 更新最上方右側下方的 BizTech 小卡片
     const heroTitle = document.getElementById('biztech-title');
     const heroImg = document.getElementById('biztech-img');
     const heroLink = document.getElementById('biztech-link');
@@ -862,7 +874,7 @@ License: You must have a valid license from official store to legally use the th
     if (heroLink) { heroLink.href = mainUrl; heroLink.removeAttribute('target'); }
     if (heroTitleLink) { heroTitleLink.href = mainUrl; heroTitleLink.removeAttribute('target'); }
 
-    // 1. BizTech 主大卡片
+    // 1. BizTech 主大卡片 (下邊欄目)
     const mainTitle = document.getElementById('home-biztech-main-title');
     const mainSummary = document.getElementById('home-biztech-main-summary');
     const mainImg = document.getElementById('home-biztech-main-img');
@@ -881,7 +893,9 @@ License: You must have a valid license from official store to legally use the th
     if (mainTitleLink) { mainTitleLink.href = mainUrl; mainTitleLink.removeAttribute('target'); }
 
     if (badgeContainer) {
-      badgeContainer.innerHTML = topBiz.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">專題採訪</span>' : '';
+      badgeContainer.innerHTML = topBiz.is_pinned 
+        ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">置頂精選</span>' 
+        : (topBiz.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded mr-2 inline-block font-normal">專題採訪</span>' : '');
     }
 
     // 2. BizTech 網格 (3x2)
@@ -891,7 +905,7 @@ License: You must have a valid license from official store to legally use the th
       gridContainer.innerHTML = subGridNews.map(item => {
         const id = item.id !== undefined ? item.id : 0;
         const url = `biztech-article.html?id=${id}`;
-        const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '';
+        const badgeHtml = item.is_pinned ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">置頂</span>' : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '');
         return `
           <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-6">
             <div class="flex flex-row sm:block hover-img">
@@ -921,7 +935,7 @@ License: You must have a valid license from official store to legally use the th
       popularListEl.innerHTML = popularItems.map((item, idx) => {
         const id = item.id !== undefined ? item.id : idx;
         const title = item.title || '無標題文章';
-        const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '';
+        const badgeHtml = item.is_pinned ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">置頂</span>' : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '');
         return `
           <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
             <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="biztech-article.html?id=${id}">
@@ -936,7 +950,7 @@ License: You must have a valid license from official store to legally use the th
   }
 
   // ==========================================
-  // Insights 獨立渲染函式 (原 Latest news 區塊)
+  // Insights 獨立渲染函式
   // ==========================================
   function renderInsightsSection(newsList) {
     if (!Array.isArray(newsList) || newsList.length === 0) return;
@@ -944,7 +958,7 @@ License: You must have a valid license from official store to legally use the th
     const insightsNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'insights');
     if (insightsNews.length === 0) return;
 
-    const topInsights = insightsNews[0];
+    const topInsights = getFeaturedArticle(insightsNews);
     const mainUrl = `insights-article.html?id=${topInsights.id !== undefined ? topInsights.id : 0}`;
 
     // 1. 渲染主大卡片
@@ -962,7 +976,9 @@ License: You must have a valid license from official store to legally use the th
     if (mainTitleLink) mainTitleLink.href = mainUrl;
 
     if (badgeContainer) {
-      badgeContainer.innerHTML = topInsights.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded inline-block font-normal">專題採訪</span>' : '';
+      badgeContainer.innerHTML = topInsights.is_pinned 
+        ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded inline-block font-normal">置頂精選</span>' 
+        : (topInsights.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-0.5 rounded inline-block font-normal">專題採訪</span>' : '');
     }
 
     // 2. 渲染 3x2 文章網格
@@ -972,7 +988,7 @@ License: You must have a valid license from official store to legally use the th
       gridContainer.innerHTML = subGridNews.map(item => {
         const id = item.id !== undefined ? item.id : 0;
         const url = `insights-article.html?id=${id}`;
-        const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '';
+        const badgeHtml = item.is_pinned ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">置頂</span>' : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '');
         return `
           <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-6">
             <div class="flex flex-row sm:block hover-img">
@@ -1002,7 +1018,7 @@ License: You must have a valid license from official store to legally use the th
       popularListEl.innerHTML = popularItems.map((item, idx) => {
         const id = item.id !== undefined ? item.id : idx;
         const title = item.title || '無標題文章';
-        const badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '';
+        const badgeHtml = item.is_pinned ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">置頂</span>' : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '');
         return `
           <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
             <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="insights-article.html?id=${id}">
@@ -1028,13 +1044,13 @@ License: You must have a valid license from official store to legally use the th
       .then(newsList => {
         if (!newsList || newsList.length === 0) return;
 
-        // 0. 首頁左側 Hero Spotlight 大卡片 (新增呼叫)
+        // 0. 首頁左側 Hero Spotlight 大卡片 (Spotlight 類別置頂)
         renderHeroSpotlight(newsList);
 
-        // 1. Pulse 區塊處理
-        const technoNews = newsList.filter(item => !item.category || item.category === 'Pulse');
+        // 1. Pulse 區塊處理 (右上小卡片 1 - Pulse 類別置頂)
+        const technoNews = newsList.filter(item => !item.category || item.category.toLowerCase() === 'pulse');
         if (technoNews.length > 0) {
-          const latestNews = technoNews[0];
+          const latestNews = getFeaturedArticle(technoNews);
           const titleEl = document.getElementById('techno-title');
           const linkEl = document.getElementById('techno-link');
           const titleLinkEl = document.getElementById('techno-title-link');
@@ -1050,6 +1066,7 @@ License: You must have a valid license from official store to legally use the th
           if (titleLinkEl) { titleLinkEl.href = internalUrl; titleLinkEl.removeAttribute('target'); }
         }
 
+        // Pulse 輪播圖
         const carouselList = document.getElementById('techno-carousel-list');
         if (carouselList && technoNews.length > 0) {
           const top6 = technoNews.slice(0, 6);
@@ -1096,10 +1113,10 @@ License: You must have a valid license from official store to legally use the th
           }
         }
 
-        // 2. Ecosystem 區塊處理
+        // 2. Ecosystem 區塊處理 (右上小卡片 2 - Ecosystem 類別置頂)
         const ecosystemNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'ecosystem');
         if (ecosystemNews.length > 0) {
-          const topEco = ecosystemNews[0];
+          const topEco = getFeaturedArticle(ecosystemNews);
           const ecoTitle = document.getElementById('ecosystem-title');
           const ecoLink = document.getElementById('ecosystem-link');
           const ecoTitleLink = document.getElementById('ecosystem-title-link');
@@ -1136,13 +1153,13 @@ License: You must have a valid license from official store to legally use the th
           }
         }
 
-        // 3. BizTech 區塊處理
+        // 3. BizTech 區塊處理 (右下小卡片 1 - BizTech 類別置頂)
         renderBizTech(newsList);
 
-        // 4. Insights 小卡片處理 (首頁右上區塊右下角)
+        // 4. Insights 小卡片處理 (右下小卡片 2 - Insights 類別置頂)
         const insightsNews = newsList.filter(item => item.category && item.category.toLowerCase() === 'insights');
         if (insightsNews.length > 0) {
-          const topInsights = insightsNews[0];
+          const topInsights = getFeaturedArticle(insightsNews);
           const insightsTitle = document.getElementById('insights-card-title');
           const insightsImg = document.getElementById('insights-card-img');
           const insightsLink = document.getElementById('insights-card-link');
@@ -1156,7 +1173,7 @@ License: You must have a valid license from official store to legally use the th
           if (insightsTitleLink) { insightsTitleLink.href = insightsUrl; insightsTitleLink.removeAttribute('target'); }
         }
 
-        // 5. Insights 深度主專區處理 (原 Latest news 區塊)
+        // 5. Insights 深度主專區處理
         renderInsightsSection(newsList);
       })
       .catch(error => {
