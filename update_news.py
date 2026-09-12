@@ -179,7 +179,6 @@ print("\n==========================================")
 print("📝 處理 Pages CMS 手動原創文章")
 print("==========================================")
 
-# 擴充搜尋：同時抓取 .json 與 .md 檔案
 folders = [
     "data/manual_articles", 
     "data/insights_manual_articles", 
@@ -193,17 +192,14 @@ for folder in folders:
 for file_path in manual_files:
     try:
         data = {}
-        # 處理 JSON 檔案 (恢復為最原本穩定成功的讀取方式)
         if file_path.endswith(".json"):
             with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
         
-        # 處理 Markdown 檔案 (專為 Spotlight 區塊解析與轉譯)
         elif file_path.endswith(".md"):
             with open(file_path, "r", encoding="utf-8") as f:
                 md_content = f.read()
             
-            # 解析 Markdown 的 Frontmatter
             if md_content.startswith("---"):
                 parts = md_content.split("---", 2)
                 if len(parts) >= 3:
@@ -216,18 +212,35 @@ for file_path in manual_files:
                             k, v = line.split(":", 1)
                             data[k.strip()] = v.strip().strip("'").strip('"')
                     
-                    # 將 Markdown 的純文字換行轉換為網頁 HTML 段落標籤
+                    # 🌟 新增：Markdown 語法轉 HTML 標籤
+                    # 1. 轉換標題 (H1, H2, H3)
+                    body = re.sub(r'^### (.*?)$', r'<h3>\1</h3>', body, flags=re.MULTILINE)
+                    body = re.sub(r'^## (.*?)$', r'<h2>\1</h2>', body, flags=re.MULTILINE)
+                    body = re.sub(r'^# (.*?)$', r'<h1>\1</h1>', body, flags=re.MULTILINE)
+                    # 2. 轉換粗體 (**文字**)
+                    body = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', body)
+                    # 3. 轉換連結 ([文字](網址))，並加上顏色與底線確保可見度
+                    body = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" target="_blank" style="color: blue; text-decoration: underline;">\1</a>', body)
+                    
+                    # 4. 轉換段落 (避免將標題包入 <p> 標籤)
                     body = body.replace('\r\n', '\n')
-                    data["content"] = "".join([f"<p>{p.strip()}</p>" for p in body.split("\n\n") if p.strip()])
+                    html_blocks = []
+                    for p in body.split("\n\n"):
+                        p = p.strip()
+                        if p:
+                            if p.startswith("<h"): 
+                                html_blocks.append(p)
+                            else:
+                                html_blocks.append(f"<p>{p.replace('\n', '<br>')}</p>")
+                    data["content"] = "".join(html_blocks)
                 else:
                     data["content"] = md_content.replace("\n", "<br>")
             else:
                 data["content"] = md_content.replace("\n", "<br>")
 
-        # 確保相容所有欄位，統一推播至前端
         if data.get("title"):
             raw_content = str(data.get("content") or data.get("body") or "")
-            auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
+            auto_summary = re.sub(r'<[^>]+>', '', raw_content)[:120] + "..." if raw_content else "原創深度報導"
 
             manual_news_list.append({
                 "title": data.get("title", ""),
@@ -244,12 +257,10 @@ for file_path in manual_files:
                 "is_manual": True,
                 "link": f"manual_{os.path.basename(file_path)}"
             })
-
             print(f"✅ 成功載入原創文章：{data.get('title')} ({file_path.split('.')[-1].upper()})")
     except Exception as e:
         print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
 
-# 將手動文章按日期新到舊排序
 manual_news_list.sort(key=lambda x: x.get("date", ""), reverse=True)
 # ----------------------------------------------------------------
 # 2. 定義各分類及其對應的 RSS 來源 (🌟 新增 BizTech 來源)
