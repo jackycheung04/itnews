@@ -118,6 +118,6 @@ content:
       - name: image_caption
         label: "封面圖片註明"
         type: string
-      - name: content
+      - name: body
         label: "文章內文"
         type: rich-text
