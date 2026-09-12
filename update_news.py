@@ -193,41 +193,40 @@ for folder in folders:
 for file_path in manual_files:
     try:
         data = {}
-        # 處理 JSON 檔案
+        # 處理 JSON 檔案 (恢復為最原本穩定成功的讀取方式)
         if file_path.endswith(".json"):
             with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
         
-        # 處理 Markdown 檔案
+        # 處理 Markdown 檔案 (專為 Spotlight 區塊解析與轉譯)
         elif file_path.endswith(".md"):
             with open(file_path, "r", encoding="utf-8") as f:
                 md_content = f.read()
             
-            # 手動解析 Markdown 的 Frontmatter (以 --- 分隔的部分)
+            # 解析 Markdown 的 Frontmatter
             if md_content.startswith("---"):
                 parts = md_content.split("---", 2)
                 if len(parts) >= 3:
                     frontmatter = parts[1]
                     body = parts[2].strip()
                     
-                    # 將 Frontmatter 轉為字典
                     for line in frontmatter.split("\n"):
                         line = line.strip()
                         if ":" in line:
                             k, v = line.split(":", 1)
-                            k = k.strip()
-                            v = v.strip().strip("'").strip('"')
-                            data[k] = v
+                            data[k.strip()] = v.strip().strip("'").strip('"')
                     
-                    data["content"] = body
+                    # 將 Markdown 的純文字換行轉換為網頁 HTML 段落標籤
+                    body = body.replace('\r\n', '\n')
+                    data["content"] = "".join([f"<p>{p.strip()}</p>" for p in body.split("\n\n") if p.strip()])
                 else:
-                    data["content"] = md_content
+                    data["content"] = md_content.replace("\n", "<br>")
             else:
-                data["content"] = md_content
+                data["content"] = md_content.replace("\n", "<br>")
 
-        # 這裡完全照搬你原本成功的資料結構
+        # 確保相容所有欄位，統一推播至前端
         if data.get("title"):
-            raw_content = str(data.get("content", ""))
+            raw_content = str(data.get("content") or data.get("body") or "")
             auto_summary = raw_content[:120] + "..." if raw_content else "原創深度報導"
 
             manual_news_list.append({
