@@ -222,7 +222,7 @@ for file_path in manual_files:
                     # 3. 轉換連結 ([文字](網址))，並加上顏色與底線確保可見度
                     body = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" target="_blank" style="color: blue; text-decoration: underline;">\1</a>', body)
                     
-                    # 4. 轉換段落 (避免將標題包入 <p> 標籤)
+                   # 4. 轉換段落 (避免將標題包入 <p> 標籤)
                     body = body.replace('\r\n', '\n')
                     html_blocks = []
                     for p in body.split("\n\n"):
@@ -231,7 +231,8 @@ for file_path in manual_files:
                             if p.startswith("<h"): 
                                 html_blocks.append(p)
                             else:
-                                html_blocks.append(f"<p>{p.replace('\n', '<br>')}</p>")
+                                p_html = p.replace('\n', '<br>')
+                                html_blocks.append(f"<p>{p_html}</p>")
                     data["content"] = "".join(html_blocks)
                 else:
                     data["content"] = md_content.replace("\n", "<br>")
