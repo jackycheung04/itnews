@@ -290,7 +290,7 @@ License: You must have a valid license from official store to legally use the th
 
       if (titleEl) {
         // 如果是手寫專題採訪文章，加上「專題採訪」標籤
-        let badgeHtml = article.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded mr-2 inline-block font-normal align-middle">專題採訪</span>' : '';
+        let badgeHtml = article.is_manual ? '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded mr-2 hidden font-normal align-middle">專題採訪</span>' : '';
         titleEl.innerHTML = badgeHtml + (article.title || '無標題');
       }
       
@@ -342,7 +342,7 @@ License: You must have a valid license from official store to legally use the th
     popularItems.forEach((item, idx) => {
       const id = item.id !== undefined ? item.id : idx;
       const title = item.title || '無標題文章';
-      let badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '';
+      let badgeHtml = item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 hidden shrink-0 align-middle">專題採訪</span>' : '';
 
       const itemHtml = `
         <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
