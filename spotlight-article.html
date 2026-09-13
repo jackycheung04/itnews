@@ -291,8 +291,7 @@ License: You must have a valid license from official store to legally use the th
       const contentEl = document.getElementById('article-content');
 
       if (titleEl) {
-        let badgeHtml = '<span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded mr-2 inline-block font-normal align-middle">Spotlight</span>';
-        titleEl.innerHTML = badgeHtml + (article.title || '無標題');
+        titleEl.innerHTML = article.title || '無標題';
       }
       
       const subtitleEl = document.getElementById('article-subtitle');
@@ -346,14 +345,13 @@ License: You must have a valid license from official store to legally use the th
       let badgeHtml = '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">Spotlight</span>';
 
       const itemHtml = `
-        <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-          <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="spotlight-article.html?id=${id}">
-            <span class="text-xl font-bold text-gray-300 mr-3 flex-shrink-0">${idx + 1}</span>
-            ${badgeHtml}
-            <span class="line-clamp-2">${title}</span>
-          </a>
-        </li>
-      `;
+  <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+    <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="spotlight-article.html?id=${id}">
+      <span class="text-xl font-bold text-gray-300 mr-3 flex-shrink-0">${idx + 1}</span>
+      <span class="line-clamp-2">${title}</span>
+    </a>
+  </li>
+`;
       container.innerHTML += itemHtml;
     });
   }
