@@ -891,7 +891,7 @@ License: You must have a valid license from official store to legally use the th
       popularListEl.innerHTML = popularItems.map((item, idx) => {
         const id = item.id !== undefined ? item.id : idx;
         const title = item.title || '無標題文章';
-        const badgeHtml = item.is_pinned ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">置頂</span>' : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">專題採訪</span>' : '');
+        const badgeHtml = item.is_pinned ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block shrink-0 align-middle">置頂</span>' : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 hidden shrink-0 align-middle">專題採訪</span>' : '');
         return `
           <li class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
             <a class="text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600" href="biztech-article.html?id=${id}">
