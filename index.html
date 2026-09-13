@@ -785,8 +785,8 @@ License: You must have a valid license from official store to legally use the th
         const id = item.id !== undefined ? item.id : 0;
         const url = `spotlight-article.html?id=${id}`;
         const badgeHtml = item.is_pinned 
-          ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">置頂</span>' 
-          : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 inline-block">專題採訪</span>' : '');
+          ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 hidden">置頂</span>' 
+          : (item.is_manual ? '<span class="bg-red-600 text-white text-xs px-2 py-0.5 rounded mr-2 hidden">專題採訪</span>' : '');
 
         return `
           <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
