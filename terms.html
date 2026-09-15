@@ -23,7 +23,7 @@
 
   <!-- 讀取與渲染 Markdown 邏輯 -->
   <script>
-   fetch('data/terms.md')
+   fetch('data/legal/terms.md')
   .then(response => response.text())
   .then(text => {
     const content = text.replace(/^---[\s\S]*?---/, '');
