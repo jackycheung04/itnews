@@ -122,7 +122,11 @@ content:
         label: "文章內文"
         type: rich-text
         
-      - name: legal_privacy
+      - name: body
+        label: "文章內文"
+        type: rich-text
+        
+  - name: legal_privacy
     label: "Privacy Policy (隱私權)"
     type: file
     file: "data/privacy.md"
