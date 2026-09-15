@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - EPICReach</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header 區塊 (保持與 index.html 一致) -->
+  <header class="bg-black text-white px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold tracking-wider">EPICReach</a>
+  </header>
+
+  <!-- 主要內容區 -->
+  <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+    <div id="content" class="bg-white p-8 md:p-12 rounded-lg shadow-sm prose max-w-none">
+      <p class="text-gray-400">載入中...</p>
+    </div>
+  </main>
+
+  <!-- 讀取與渲染 Markdown 邏輯 -->
+  <script>
+    fetch('data/privacy.md')
+      .then(response => response.text())
+      .then(text => {
+        // 移除 Frontmatter (若有 --- 包裹的標題資料)
+        const content = text.replace(/^---[\s\S]*?---/, '');
+        document.getElementById('content').innerHTML = marked.parse(content);
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML = '<h2>Privacy Policy</h2><p>內容準備中...</p>';
+      });
+  </script>
+</body>
+</html>
