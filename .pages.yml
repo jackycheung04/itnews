@@ -121,31 +121,31 @@ content:
       - name: body
         label: "文章內文"
         type: rich-text
-      - name: legal_pages
-    label: "Legal 法律條款"
+        
+      - name: legal_privacy
+    label: "Privacy Policy (隱私權)"
     type: file
-    files:
-      - name: privacy
-        label: "Privacy Policy (隱私權政策)"
-        file: "data/privacy.md"
-        fields:
-          - name: title
-            label: "頁面標題"
-            type: string
-            default: "Privacy Policy"
-            required: true
-          - name: body
-            label: "條款內文"
-            type: rich-text
-      - name: terms
-        label: "Terms of Use (服務條款)"
-        file: "data/terms.md"
-        fields:
-          - name: title
-            label: "頁面標題"
-            type: string
-            default: "Terms of Use"
-            required: true
-          - name: body
-            label: "條款內文"
-            type: rich-text
+    file: "data/privacy.md"
+    fields:
+      - name: title
+        label: "頁面標題"
+        type: string
+        default: "Privacy Policy"
+        required: true
+      - name: body
+        label: "條款內文"
+        type: rich-text
+
+  - name: legal_terms
+    label: "Terms of Use (服務條款)"
+    type: file
+    file: "data/terms.md"
+    fields:
+      - name: title
+        label: "頁面標題"
+        type: string
+        default: "Terms of Use"
+        required: true
+      - name: body
+        label: "條款內文"
+        type: rich-text
