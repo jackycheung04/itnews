@@ -126,29 +126,16 @@ content:
         label: "文章內文"
         type: rich-text
         
-  - name: legal_privacy
-    label: "Privacy Policy (隱私權)"
-    type: file
-    file: "data/privacy.md"
+  - name: legal_pages
+    label: "Legal 法律條款"
+    type: collection
+    path: "data/legal"
+    format: yaml-frontmatter
+    extension: md
     fields:
       - name: title
         label: "頁面標題"
         type: string
-        default: "Privacy Policy"
-        required: true
-      - name: body
-        label: "條款內文"
-        type: rich-text
-
-  - name: legal_terms
-    label: "Terms of Use (服務條款)"
-    type: file
-    file: "data/terms.md"
-    fields:
-      - name: title
-        label: "頁面標題"
-        type: string
-        default: "Terms of Use"
         required: true
       - name: body
         label: "條款內文"
