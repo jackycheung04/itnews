@@ -23,7 +23,7 @@
 
   <!-- 讀取與渲染 Markdown 邏輯 -->
   <script>
-    fetch('data/privacy.md')
+    fetch('data/legal/privacy.md')
       .then(response => response.text())
       .then(text => {
         // 移除 Frontmatter (若有 --- 包裹的標題資料)
