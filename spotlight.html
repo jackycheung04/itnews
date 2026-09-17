@@ -118,7 +118,7 @@ License: You must have a valid license from official store to legally use the th
                 </div>
 
                 <div class="relative hover:bg-gray-800 block lg:hidden">
-                  <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                  <button type="button" class="custom-menu-btn block py-3 px-6 border-b-2 border-transparent">
                     <span class="sr-only">Mobile menu</span>
                     <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -132,10 +132,10 @@ License: You must have a valid license from official store to legally use the th
      </nav>
   </header>
 
-  <!-- Mobile menu (圖 1 正確右側抽屜結構) -->
-<div id="mobile-menu" class="fixed inset-0 z-50 flex justify-end hidden">
+  <!-- Mobile menu (圖 1 正確右側抽屜結構 - 避開 theme.js 衝突) -->
+<div id="custom-drawer-menu" class="fixed inset-0 z-50 flex justify-end invisible opacity-0 transition-all duration-300">
   <!-- 背景黑色半透明遮罩 -->
-  <div class="back-menu fixed inset-0 bg-black bg-opacity-60 transition-opacity duration-300"></div>
+  <div class="back-menu absolute inset-0 bg-black bg-opacity-60"></div>
 
   <!-- 右側選單抽屜 -->
   <nav class="relative z-10 w-4/5 max-w-xs h-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 overflow-y-auto flex flex-col justify-between shadow-2xl transition-transform duration-300 transform translate-x-full">
@@ -151,24 +151,12 @@ License: You must have a valid license from official store to legally use the th
       <!-- 選單列表 -->
       <nav class="py-2 font-semibold">
         <ul class="flex flex-col text-left">
-          <li>
-            <a href="index.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a>
-          </li>
-          <li>
-            <a href="spotlight.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-red-600 font-bold">Spotlight</a>
-          </li>
-          <li>
-            <a href="techno.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Pulse</a>
-          </li>
-          <li>
-            <a href="ecosystem.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Ecosystem</a>
-          </li>
-          <li>
-            <a href="biztech.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">BizTech</a>
-          </li>
-          <li>
-            <a href="insights.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Insights</a>
-          </li>
+          <li><a href="index.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a></li>
+          <li><a href="spotlight.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-red-600 font-bold">Spotlight</a></li>
+          <li><a href="techno.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Pulse</a></li>
+          <li><a href="ecosystem.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Ecosystem</a></li>
+          <li><a href="biztech.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">BizTech</a></li>
+          <li><a href="insights.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Insights</a></li>
         </ul>
       </nav>
     </div>
@@ -178,7 +166,8 @@ License: You must have a valid license from official store to legally use the th
       <p>Copyright EPICReach - All rights reserved</p>
     </div>
   </nav>
-</div><!-- End Mobile menu -->
+</div>
+<!-- End Mobile menu -->
   
   <!-- =========={ MAIN }========== -->
   <main id="content">
@@ -271,16 +260,18 @@ License: You must have a valid license from official store to legally use the th
 <!-- 手機版選單與搜尋列控制腳本 -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // 1. 手機版右側抽屜選單邏輯
-    const menuBtn = document.querySelector('.menu-mobile');
+    // 1. 手機版右側抽屜選單邏輯 (避開主題預設 JS)
+    const menuBtn = document.querySelector('.custom-menu-btn');
     const closeBtn = document.querySelector('.close-mobile-menu');
-    const backdrop = document.querySelector('.back-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenu = document.getElementById('custom-drawer-menu');
+    const backdrop = mobileMenu ? mobileMenu.querySelector('.back-menu') : null;
     const navDrawer = mobileMenu ? mobileMenu.querySelector('nav') : null;
 
     function openMenu() {
       if (!mobileMenu || !navDrawer) return;
-      mobileMenu.classList.remove('hidden');
+      // 顯示容器與背景遮罩
+      mobileMenu.classList.remove('invisible', 'opacity-0');
+      // 滑入抽屜
       setTimeout(() => {
         navDrawer.classList.remove('translate-x-full');
       }, 10);
@@ -288,9 +279,11 @@ License: You must have a valid license from official store to legally use the th
 
     function closeMenu() {
       if (!mobileMenu || !navDrawer) return;
+      // 滑出抽屜
       navDrawer.classList.add('translate-x-full');
+      // 隱藏容器與背景遮罩
       setTimeout(() => {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.add('invisible', 'opacity-0');
       }, 300);
     }
 
@@ -298,7 +291,7 @@ License: You must have a valid license from official store to legally use the th
     if (closeBtn) closeBtn.addEventListener('click', closeMenu);
     if (backdrop) backdrop.addEventListener('click', closeMenu);
 
-    // 2. 搜尋 Dropdown 切換邏輯
+    // 2. 搜尋 Dropdown 切換邏輯 (維持不變)
     const searchDropdown = document.querySelector('.search-dropdown');
     if (searchDropdown) {
       const searchBtn = searchDropdown.querySelector('button');
