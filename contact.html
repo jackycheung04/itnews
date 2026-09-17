@@ -4,38 +4,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <title>Contact Us - EPICReach</title>
   <meta name="description" content="EPICReach - 聯絡我們">
 
+  <!-- 引入全站核心 CSS (包含 Header 與導覽列樣式) -->
   <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS & Markdown 解析器 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
   <style>
-    body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
-    .legal-content h1, .legal-content h2, .legal-content h3 { font-weight: 700; color: #111827; margin-top: 1.75rem; margin-bottom: 0.75rem; }
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    /* 客製化 Markdown 文章排版與字體質感 */
+    .legal-content h1, .legal-content h2, .legal-content h3 {
+      font-weight: 700;
+      color: #111827;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
     .legal-content h1 { font-size: 1.5rem; }
     .legal-content h2 { font-size: 1.25rem; }
-    .legal-content p { color: #374151; line-height: 1.8; margin-bottom: 1.25rem; font-size: 0.95rem; }
-    .legal-content ul, .legal-content ol { margin-bottom: 1.25rem; padding-left: 1.25rem; color: #374151; line-height: 1.8; }
+    .legal-content p {
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .legal-content ul, .legal-content ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.25rem;
+      color: #374151;
+      line-height: 1.8;
+    }
     .legal-content li { margin-bottom: 0.5rem; }
   </style>
 </head>
-<body class="text-gray-700 bg-gray-50 flex flex-col min-h-screen pt-16">
+<body class="text-gray-700 bg-gray-50 flex flex-col min-h-screen pt-12">
 
   <!-- ========== { HEADER } ========== -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-black">
-     <nav class="xl:container mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="index.html" class="text-2xl font-bold text-white">EPICReach</a>
-        <ul class="flex space-x-6 text-white text-sm font-semibold">
-          <li><a class="hover:text-gray-300 transition-colors" href="index.html">Home</a></li>
-          <li><a class="hover:text-gray-300 transition-colors" href="spotlight.html">Spotlight</a></li>
-          <li><a class="hover:text-gray-300 transition-colors" href="techno.html">Pulse</a></li>
-          <li><a class="hover:text-gray-300 transition-colors" href="ecosystem.html">Ecosystem</a></li>
-          <li><a class="hover:text-gray-300 transition-colors" href="biztech.html">BizTech</a></li>
-          <li><a class="hover:text-gray-300 transition-colors" href="insights.html">Insights</a></li>
-        </ul>
+  <header class="fixed top-0 left-0 right-0 z-50">
+     <nav class="bg-black">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex justify-between">
+            <a href="index.html" class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">EPICReach</a>
+            
+            <div class="flex flex-row">
+              <!-- nav menu -->
+              <ul class="navbar hidden lg:flex lg:flex-row text-white text-sm items-center font-bold">
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 text-white hover:text-white border-b-2 border-transparent" href="index.html">Home</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 text-white hover:text-white border-b-2 border-transparent" href="spotlight.html">Spotlight</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 text-white hover:text-white border-b-2 border-transparent" href="techno.html">Pulse</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 text-white hover:text-white border-b-2 border-transparent" href="ecosystem.html">Ecosystem</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 text-white hover:text-white border-b-2 border-transparent" href="biztech.html">BizTech</a>
+                </li>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 text-white hover:text-white border-b-2 border-transparent" href="insights.html">Insights</a>
+                </li>
+              </ul>
+
+              <!-- search dropdown -->
+              <div class="flex flex-row items-center text-gray-300">
+                <div class="search-dropdown relative border-r lg:border-l border-gray-800 hover:bg-gray-900">
+                  <button class="block py-3 px-6 border-b-2 border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="open bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
      </nav>
   </header>
 
@@ -46,22 +102,22 @@
     </div>
   </main>
 
+  <!-- JS 抓取 Markdown 檔案並渲染 -->
   <script>
-    // 修正讀取路徑為 data/contact/contact.md
     fetch('data/contact/contact.md')
       .then(response => {
         if (!response.ok) throw new Error('File not found');
         return response.text();
       })
+      .catch(() => fetch('data/contact.md').then(res => res.text()))
       .then(text => {
-        // 過濾掉 YAML Frontmatter 並渲染 Markdown
         const content = text.replace(/^---[\s\S]*?---/, '');
         document.getElementById('content').innerHTML = marked.parse(content);
       })
       .catch(err => {
         document.getElementById('content').innerHTML = `
           <h2 class="text-xl font-bold mb-4">Contact Us</h2>
-          <p class="text-gray-600">目前無法載入內容，請確認專案中已建立 <code>data/contact/contact.md</code> 檔案。</p>
+          <p class="text-gray-600">目前無法載入聯絡資訊內容，請確認倉庫中已建立 <code>data/contact/contact.md</code> 檔案。</p>
         `;
       });
   </script>
