@@ -132,51 +132,54 @@ License: You must have a valid license from official store to legally use the th
      </nav>
   </header>
 
-  <!-- Mobile menu -->
-<div id="mobile-menu" class="side-area fixed w-full h-full inset-0 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out hidden">
-  <!-- backdrop -->
-  <div class="back-menu fixed inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
-  
-  <nav class="relative z-10 w-72 max-w-full h-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 overflow-y-auto flex flex-col justify-between">
+  <!-- Mobile menu (Drawer style matching Image 1) -->
+<div id="mobile-menu" class="fixed inset-0 z-50 flex justify-end hidden">
+  <!-- 背景黑色半透明遮罩 -->
+  <div class="back-menu fixed inset-0 bg-black bg-opacity-60 transition-opacity duration-300"></div>
+
+  <!-- 右側選單抽屜主體 -->
+  <nav class="relative z-10 w-4/5 max-w-xs h-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 overflow-y-auto flex flex-col justify-between shadow-2xl transition-transform duration-300 transform translate-x-full">
     <div>
+      <!-- 頂部標題與關閉按鈕 -->
       <div class="flex flex-row justify-between items-center py-4 px-6 font-bold border-b border-gray-100 dark:border-gray-700">
-        <a href="index.html" class="text-2xl font-bold text-gray-800 dark:text-white">EPICReach</a>
-        <button type="button" class="close-mobile-menu text-gray-500 hover:text-gray-800 dark:hover:text-white text-2xl font-bold">
+        <a href="index.html" class="text-xl font-bold text-gray-800 dark:text-white">EPICReach</a>
+        <button type="button" class="close-mobile-menu text-gray-500 hover:text-gray-800 dark:hover:text-white text-2xl font-bold focus:outline-none">
           &times;
         </button>
       </div>
-      
-      <nav class="py-4 font-semibold">
+
+      <!-- 選單連結列表 -->
+      <nav class="py-2 font-semibold">
         <ul class="flex flex-col text-left">
-          <li class="relative">
-            <a href="index.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Home</a>
+          <li>
+            <a href="index.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a>
           </li>
-          <li class="relative">
-            <a href="spotlight.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50 text-red-600 font-bold">Spotlight</a>
+          <li>
+            <a href="spotlight.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-red-600 font-bold">Spotlight</a>
           </li>
-          <li class="relative">
-            <a href="techno.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a>
+          <li>
+            <a href="techno.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Pulse</a>
           </li>
-          <li class="relative">
-            <a href="ecosystem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a>
+          <li>
+            <a href="ecosystem.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Ecosystem</a>
           </li>
-          <li class="relative">
-            <a href="biztech.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a>
+          <li>
+            <a href="biztech.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">BizTech</a>
           </li>
-          <li class="relative">
-            <a href="insights.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a>
+          <li>
+            <a href="insights.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Insights</a>
           </li>
         </ul>
       </nav>
     </div>
-    
-    <!-- copyright -->
-    <div class="py-4 px-6 text-sm text-center border-t border-gray-100 dark:border-gray-700">
-      <p>Copyright <a href="index.html" class="font-bold">EPICReach</a> - All rights reserved</p>
+
+    <!-- 底部 Copyright -->
+    <div class="py-4 px-6 text-xs text-center border-t border-gray-100 dark:border-gray-700 text-gray-500">
+      <p>Copyright EPICReach - All rights reserved</p>
     </div>
   </nav>
-</div><!-- End Mobile menu -->
-
+</div>
+  
   <!-- =========={ MAIN }========== -->
   <main id="content">
     <div class="bg-gray-50 py-6">
@@ -268,31 +271,24 @@ License: You must have a valid license from official store to legally use the th
 <!-- 手機版選單與搜尋列控制腳本 -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // 1. 手機版選單邏輯
+    // 1. 手機版右側抽屜選單邏輯
     const menuBtn = document.querySelector('.menu-mobile');
     const closeBtn = document.querySelector('.close-mobile-menu');
     const backdrop = document.querySelector('.back-menu');
     const mobileMenu = document.getElementById('mobile-menu');
+    const navDrawer = mobileMenu ? mobileMenu.querySelector('nav') : null;
 
     function openMenu() {
-      if (!mobileMenu) return;
+      if (!mobileMenu || !navDrawer) return;
       mobileMenu.classList.remove('hidden');
       setTimeout(() => {
-        mobileMenu.classList.remove('-translate-x-full');
-        if (backdrop) {
-          backdrop.classList.remove('opacity-0', 'pointer-events-none');
-          backdrop.classList.add('opacity-100');
-        }
+        navDrawer.classList.remove('translate-x-full');
       }, 10);
     }
 
     function closeMenu() {
-      if (!mobileMenu) return;
-      mobileMenu.classList.add('-translate-x-full');
-      if (backdrop) {
-        backdrop.classList.remove('opacity-100');
-        backdrop.classList.add('opacity-0', 'pointer-events-none');
-      }
+      if (!mobileMenu || !navDrawer) return;
+      navDrawer.classList.add('translate-x-full');
       setTimeout(() => {
         mobileMenu.classList.add('hidden');
       }, 300);
@@ -308,7 +304,7 @@ License: You must have a valid license from official store to legally use the th
       const searchBtn = searchDropdown.querySelector('button');
       const searchMenu = searchDropdown.querySelector('.dropdown-menu');
       if (searchBtn && searchMenu) {
-        searchMenu.classList.add('hidden'); // 預設隱藏
+        searchMenu.classList.add('hidden');
         searchBtn.addEventListener('click', function (e) {
           e.stopPropagation();
           searchMenu.classList.toggle('hidden');
