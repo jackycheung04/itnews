@@ -140,3 +140,23 @@ content:
       - name: body
         label: "條款內文"
         type: rich-text
+  - name: contact_page
+    label: "Contact 聯絡我們"
+    type: collection
+    path: "data/contact"
+    format: yaml-frontmatter
+    extension: md
+    fields:
+      - name: title
+        label: "頁面標題"
+        type: string
+        required: true
+      - name: email
+        label: "聯絡 Email"
+        type: string
+      - name: phone
+        label: "聯絡電話"
+        type: string
+      - name: body
+        label: "頁面內容"
+        type: rich-text
