@@ -132,51 +132,50 @@ License: You must have a valid license from official store to legally use the th
      </nav>
   </header>
 
-  <!--dropdown submenu-->
-                  <ul class="dropdown-menu block rounded rounded-t-none top-full z-50 ml-4 py-0.5 text-left bg-white dark:bg-gray-800" style="min-width: 12rem">
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                  </ul>
-                </li><!--end submenu-->
-                <li class="relative"><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown item</a></li>
-                <li class="relative"><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown item</a></li>
-              </ul>
-            </li>
-
-            <li class="relative">
-              <a href="spotlight.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Spotlight</a>
-            </li>
-
-            <li class="relative">
-              <a href="techno.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a>
-            </li>
-            
-            <li class="relative">
-              <a href="ecosystem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a>
-            </li>
-
-            <li class="relative">
-              <a href="biztech.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a>
-            </li>
-
-            <li class="relative">
-              <a href="insights.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a>
-            </li>
-
-            <li class="relative">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50 hidden">More</a>
-            </li>
-          </ul>
-        </nav>
+  <!-- Mobile menu -->
+<div id="mobile-menu" class="side-area fixed w-full h-full inset-0 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out hidden">
+  <!-- backdrop -->
+  <div class="back-menu fixed inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+  
+  <nav class="relative z-10 w-72 max-w-full h-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 overflow-y-auto flex flex-col justify-between">
+    <div>
+      <div class="flex flex-row justify-between items-center py-4 px-6 font-bold border-b border-gray-100 dark:border-gray-700">
+        <a href="index.html" class="text-2xl font-bold text-gray-800 dark:text-white">EPICReach</a>
+        <button type="button" class="close-mobile-menu text-gray-500 hover:text-gray-800 dark:hover:text-white text-2xl font-bold">
+          &times;
+        </button>
       </div>
-      <!-- copyright -->
-      <div class="py-4 px-6 text-sm mt-6 text-center">
-        <p>Copyright <a href="#">EPICReach</a> - All right reserved</p>
-      </div>
-    </nav>
-  </div><!-- End Mobile menu -->
+      
+      <nav class="py-4 font-semibold">
+        <ul class="flex flex-col text-left">
+          <li class="relative">
+            <a href="index.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Home</a>
+          </li>
+          <li class="relative">
+            <a href="spotlight.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50 text-red-600 font-bold">Spotlight</a>
+          </li>
+          <li class="relative">
+            <a href="techno.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a>
+          </li>
+          <li class="relative">
+            <a href="ecosystem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a>
+          </li>
+          <li class="relative">
+            <a href="biztech.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a>
+          </li>
+          <li class="relative">
+            <a href="insights.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- copyright -->
+    <div class="py-4 px-6 text-sm text-center border-t border-gray-100 dark:border-gray-700">
+      <p>Copyright <a href="index.html" class="font-bold">EPICReach</a> - All rights reserved</p>
+    </div>
+  </nav>
+</div><!-- End Mobile menu -->
 
   <!-- =========={ MAIN }========== -->
   <main id="content">
