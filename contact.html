@@ -18,20 +18,36 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <style>
+<style>
   body {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   }
 
-  /* 修正 Footer 文字與 Icon 偏暗問題，使其與 index.html 完全一致 */
-  footer a {
-    color: inherit;
+  /* 消除 Tailwind Preflight 對 Footer 顏色的干擾 */
+  footer a, 
+  footer a:visited {
+    color: #9ca3af; /* 對齊 index.html 的 text-gray-400 */
   }
+  
+  footer a:hover {
+    color: #ffffff;
+  }
+
+  /* 確保社交 Icon 使用繼承色（白色/亮灰）而非 Tailwind 的預設黑色/透明色 */
+  footer ul.space-x-3 a {
+    color: #9ca3af;
+    display: inline-block;
+  }
+  
+  footer ul.space-x-3 a:hover {
+    color: #f3f4f6; /* text-gray-100 */
+  }
+
   footer svg {
     fill: currentColor;
   }
 
-  /* 客製化 Markdown 文章排版與字體質感 */
+  /* Markdown 文章樣式 */
   .legal-content h1, .legal-content h2, .legal-content h3 {
     font-weight: 700;
     color: #111827;
