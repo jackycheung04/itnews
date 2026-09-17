@@ -199,48 +199,53 @@ License: You must have a valid license from official store to legally use the th
                     Dropdown item
                   </a>
 
-                  <!--dropdown submenu-->
-                  <ul class="dropdown-menu block rounded rounded-t-none top-full z-50 ml-4 py-0.5 text-left bg-white dark:bg-gray-800" style="min-width: 12rem">
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                    <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
-                  </ul>
-                </li><!--end submenu-->
-                <li class="relative"><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown item</a></li>
-                <li class="relative"><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown item</a></li>
+                  <!-- 1. News (包含 Dropdown 子選單) - 隱藏 -->
+            <li class="relative hidden">
+              <a class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">News</a>
+              <!--dropdown submenu-->
+              <ul class="dropdown-menu block rounded rounded-t-none top-full z-50 ml-4 py-0.5 text-left bg-white dark:bg-gray-800" style="min-width: 12rem">
+                <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
+                <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
+                <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
+                <li><a class="block w-full py-2 px-5 border-b border-gray-100 hover:bg-gray-50" href="#">Dropdown sub item</a></li>
               </ul>
             </li>
 
-            <li class="spotlight.html">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Spotlight</a>
+            <!-- 2. Spotlight (修正 href 與 class) -->
+            <li class="relative">
+              <a href="spotlight.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Spotlight</a>
             </li>
 
+            <!-- 3. Pulse (對應 techno.html，調至 Ecosystem 前面) -->
             <li class="relative">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a>
-            </li>
-            
-            <li class="relative">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a>
+              <a href="techno.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a>
             </li>
 
+            <!-- 4. Ecosystem -->
             <li class="relative">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a>
+              <a href="ecosystem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a>
             </li>
 
+            <!-- 5. BizTech -->
             <li class="relative">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a>
+              <a href="biztech.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a>
             </li>
 
+            <!-- 6. Insights -->
             <li class="relative">
-              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50 hidden">More</a>
+              <a href="insights.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a>
+            </li>
+
+            <!-- 7. More (隱藏) -->
+            <li class="relative hidden">
+              <a href="#" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">More</a>
             </li>
           </ul>
         </nav>
       </div>
       <!-- copyright -->
       <div class="py-4 px-6 text-sm mt-6 text-center">
-        <p>Copyright <a href="#">EPICReach</a> - All right reserved</p>
+        <p>Copyright <a href="index.html">EPICReach</a> - All right reserved</p>
       </div>
     </nav>
   </div><!-- End Mobile menu -->
