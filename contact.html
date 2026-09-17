@@ -22,26 +22,20 @@
     .legal-content li { margin-bottom: 0.5rem; }
   </style>
 </head>
-<body class="text-gray-700 bg-gray-50 flex flex-col min-h-screen pt-12">
+<body class="text-gray-700 bg-gray-50 flex flex-col min-h-screen pt-16">
 
   <!-- ========== { HEADER } ========== -->
-  <header class="fixed top-0 left-0 right-0 z-50">
-     <nav class="bg-black">
-        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-          <div class="flex justify-between">
-            <a href="index.html" class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">EPICReach</a>
-            <div class="flex flex-row">
-              <ul class="navbar hidden lg:flex lg:flex-row text-white text-sm items-center font-bold">
-                <li class="relative border-l border-gray-800 hover:bg-gray-900"><a class="block py-3 px-6 text-white" href="index.html">Home</a></li>
-                <li class="relative border-l border-gray-800 hover:bg-gray-900"><a class="block py-3 px-6 text-white" href="spotlight.html">Spotlight</a></li>
-                <li class="relative border-l border-gray-800 hover:bg-gray-900"><a class="block py-3 px-6 text-white" href="techno.html">Pulse</a></li>
-                <li class="relative border-l border-gray-800 hover:bg-gray-900"><a class="block py-3 px-6 text-white" href="ecosystem.html">Ecosystem</a></li>
-                <li class="relative border-l border-gray-800 hover:bg-gray-900"><a class="block py-3 px-6 text-white" href="biztech.html">BizTech</a></li>
-                <li class="relative border-l border-gray-800 hover:bg-gray-900"><a class="block py-3 px-6 text-white" href="insights.html">Insights</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black">
+     <nav class="xl:container mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-bold text-white">EPICReach</a>
+        <ul class="flex space-x-6 text-white text-sm font-semibold">
+          <li><a class="hover:text-gray-300 transition-colors" href="index.html">Home</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="spotlight.html">Spotlight</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="techno.html">Pulse</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="ecosystem.html">Ecosystem</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="biztech.html">BizTech</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="insights.html">Insights</a></li>
+        </ul>
      </nav>
   </header>
 
@@ -53,20 +47,21 @@
   </main>
 
   <script>
-    fetch('data/legal/contact.md')
+    // 修正讀取路徑為 data/contact/contact.md
+    fetch('data/contact/contact.md')
       .then(response => {
         if (!response.ok) throw new Error('File not found');
         return response.text();
       })
-      .catch(() => fetch('data/contact.md').then(res => res.text()))
       .then(text => {
+        // 過濾掉 YAML Frontmatter 並渲染 Markdown
         const content = text.replace(/^---[\s\S]*?---/, '');
         document.getElementById('content').innerHTML = marked.parse(content);
       })
       .catch(err => {
         document.getElementById('content').innerHTML = `
           <h2 class="text-xl font-bold mb-4">Contact Us</h2>
-          <p class="text-gray-600">目前無法載入內容，請確認專案中已建立 <code>data/legal/contact.md</code> 檔案。</p>
+          <p class="text-gray-600">目前無法載入內容，請確認專案中已建立 <code>data/contact/contact.md</code> 檔案。</p>
         `;
       });
   </script>
