@@ -262,35 +262,35 @@
   </footer>
 
   <!-- 1. 手機版選單控制腳本 -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const menuBtn = document.getElementById('menu-mobile-btn');
-      const closeBtn = document.getElementById('close-menu-btn');
-      const sideArea = document.getElementById('side-area');
-      const backMenu = document.querySelector('.back-menu');
+  <!-- 手機版選單控制腳本 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuBtn = document.getElementById('menu-mobile-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const sideArea = document.getElementById('side-area');
+    const backMenu = document.querySelector('.back-menu');
 
-      if (menuBtn && sideArea) {
-        menuBtn.addEventListener('click', function() {
-          sideArea.classList.remove('hidden');
-        });
+    function openMenu(e) {
+      if (e) e.preventDefault();
+      if (sideArea) {
+        sideArea.classList.remove('hidden');
+        sideArea.style.setProperty('display', 'block', 'important');
       }
+    }
 
-      if (closeBtn && sideArea) {
-        closeBtn.addEventListener('click', function() {
-          sideArea.classList.add('hidden');
-        });
+    function closeMenu(e) {
+      if (e) e.preventDefault();
+      if (sideArea) {
+        sideArea.classList.add('hidden');
+        sideArea.style.setProperty('display', 'none', 'important');
       }
+    }
 
-      // 點擊背景空白處關閉選單
-      if (backMenu && sideArea) {
-        backMenu.addEventListener('click', function(e) {
-          if (e.target === backMenu) {
-            sideArea.classList.add('hidden');
-          }
-        });
-      }
-    });
-  </script>
+    if (menuBtn) menuBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (backMenu) backMenu.addEventListener('click', closeMenu);
+  });
+</script>
 
   <!-- 2. JS 抓取 Markdown 檔案並渲染 -->
   <script>
