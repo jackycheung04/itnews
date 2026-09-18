@@ -116,7 +116,7 @@
 
               <!-- 手機版選單按鈕 (Hamburger) -->
               <div class="flex items-center lg:hidden pl-2">
-                <button type="button" onclick="document.getElementById('my-mobile-menu').style.display='block'" class="text-gray-300 hover:text-white p-2 focus:outline-none" aria-label="Open Menu">
+                <button type="button" onclick="openMobileMenu()" class="text-gray-300 hover:text-white p-2 focus:outline-none" aria-label="Open Menu">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                   </svg>
@@ -129,34 +129,36 @@
      </nav>
   </header>
 
-<!-- 獨立手機版選單 (使用 Tailwind 強制覆蓋，確保不受 style.css 影響) -->
-  <div id="my-mobile-menu" class="fixed inset-0 z-[9999]" style="display: none;">
-    <!-- 半透明背景遮罩 (點擊這裡也會關閉選單) -->
-    <div onclick="document.getElementById('my-mobile-menu').style.display='none'" class="fixed inset-0 bg-gray-900 bg-opacity-70 cursor-pointer"></div>
-    
-    <!-- 右側滑出的白色選單區塊 -->
-    <nav class="fixed top-0 right-0 w-64 h-full bg-white shadow-2xl overflow-y-auto flex flex-col z-50">
-      <!-- 頂部標題與關閉按鈕 -->
-      <div class="flex justify-between items-center p-4 border-b border-gray-100">
-        <span class="font-bold text-gray-800 text-lg">EPICReach</span>
-        <button type="button" onclick="document.getElementById('my-mobile-menu').style.display='none'" class="text-gray-400 hover:text-gray-800 p-1">
-          <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 16 16">
+<!-- 手機版側邊選單 (完全對齊最新圖 1 樣式，包含絲滑滑出動畫) -->
+  <div id="side-area" class="fixed inset-0 z-[9999] opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+    <!-- 半透明黑色背景遮罩 -->
+    <div onclick="closeMobileMenu()" class="fixed inset-0 bg-gray-900 bg-opacity-40 cursor-pointer"></div>
+
+    <!-- 右側滑出面板 -->
+    <nav id="mobile-nav" class="fixed top-0 right-0 w-64 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-50 overflow-y-auto">
+      
+      <!-- 頂部 Header：EPICReach 靠左，X 關閉按鈕靠右 -->
+      <div class="flex justify-between items-center py-4 px-6 border-b border-gray-100">
+        <span class="font-bold text-gray-900 text-[18px]">EPICReach</span>
+        <button type="button" onclick="closeMobileMenu()" class="text-gray-400 hover:text-gray-600 focus:outline-none p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg>
         </button>
       </div>
-      
-      <!-- 選單連結 -->
-      <ul class="flex flex-col w-full text-gray-700 text-base">
-        <li><a href="index.html" class="block py-3 px-5 border-b border-gray-100 hover:bg-gray-50">Home</a></li>
-        <li><a href="spotlight.html" class="block py-3 px-5 border-b border-gray-100 hover:bg-gray-50">Spotlight</a></li>
-        <li><a href="techno.html" class="block py-3 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a></li>
-        <li><a href="ecosystem.html" class="block py-3 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a></li>
-        <li><a href="biztech.html" class="block py-3 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a></li>
-        <li><a href="insights.html" class="block py-3 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a></li>
+
+      <!-- 選單列表 (字體 16px，淡灰底線，行距對齊圖 1) -->
+      <ul class="flex flex-col w-full text-gray-700 mt-1">
+        <li><a href="index.html" class="block py-3.5 px-6 border-b border-gray-100 text-[16px] font-normal hover:bg-gray-50 transition-colors">Home</a></li>
+        <li><a href="spotlight.html" class="block py-3.5 px-6 border-b border-gray-100 text-[16px] font-normal hover:bg-gray-50 transition-colors">Spotlight</a></li>
+        <li><a href="techno.html" class="block py-3.5 px-6 border-b border-gray-100 text-[16px] font-normal hover:bg-gray-50 transition-colors">Pulse</a></li>
+        <li><a href="ecosystem.html" class="block py-3.5 px-6 border-b border-gray-100 text-[16px] font-normal hover:bg-gray-50 transition-colors">Ecosystem</a></li>
+        <li><a href="biztech.html" class="block py-3.5 px-6 border-b border-gray-100 text-[16px] font-normal hover:bg-gray-50 transition-colors">BizTech</a></li>
+        <li><a href="insights.html" class="block py-3.5 px-6 border-b border-gray-100 text-[16px] font-normal hover:bg-gray-50 transition-colors">Insights</a></li>
       </ul>
-      
-      <div class="py-4 px-6 text-sm mt-auto mb-4 text-center text-gray-400 border-t border-gray-100">
+
+      <!-- 底部版權宣告 (對齊圖 1 文字) -->
+      <div class="py-6 px-4 text-[14px] text-gray-400 mt-auto text-center">
         <p>Copyright EPICReach</p>
       </div>
     </nav>
@@ -247,7 +249,35 @@
       </div>
     </div>
   </footer>
+  
+<!-- 控制選單滑出/隱藏動畫的 JavaScript -->
+<script>
+  function openMobileMenu() {
+    const sideArea = document.getElementById('side-area');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (sideArea && mobileNav) {
+      // 顯示背景遮罩
+      sideArea.classList.remove('opacity-0', 'pointer-events-none');
+      sideArea.classList.add('opacity-100', 'pointer-events-auto');
+      // 將選單從右側滑入
+      mobileNav.classList.remove('translate-x-full');
+      mobileNav.classList.add('translate-x-0');
+    }
+  }
 
+  function closeMobileMenu() {
+    const sideArea = document.getElementById('side-area');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (sideArea && mobileNav) {
+      // 隱藏背景遮罩
+      sideArea.classList.remove('opacity-100', 'pointer-events-auto');
+      sideArea.classList.add('opacity-0', 'pointer-events-none');
+      // 將選單退回右側
+      mobileNav.classList.remove('translate-x-0');
+      mobileNav.classList.add('translate-x-full');
+    }
+  }
+</script>
   
    <!-- 2. JS 抓取 Markdown 檔案並渲染 -->
   <script>
