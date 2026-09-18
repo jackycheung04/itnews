@@ -69,14 +69,29 @@
   }
   .legal-content li { margin-bottom: 0.5rem; }
   /* ========================================== */
-  /* 強制賦予手機選單與背景遮罩絲滑動畫效果       */
+  /* 強制覆蓋原廠選單的顯示方式與滑動動畫         */
   /* ========================================== */
   .side-area {
-    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
   
+  /* 當主題展開選單時（通常會透過 JS 或額外 class 啟動，此處同時支援常見的開關類別） */
+  .side-area.active,
+  .side-area:not([style*="display: none"]) {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .side-menu {
-    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .side-area.active .side-menu,
+  .side-area:not([style*="display: none"]) .side-menu {
+    transform: translateX(0) !important;
   }
 </style>
 </head>
