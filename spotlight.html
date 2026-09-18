@@ -132,42 +132,39 @@ License: You must have a valid license from official store to legally use the th
      </nav>
   </header>
 
-  <!-- Mobile menu (圖 1 正確右側抽屜結構 - 避開 theme.js 衝突) -->
-<div id="custom-drawer-menu" class="fixed inset-0 z-50 flex justify-end invisible opacity-0 transition-all duration-300">
-  <!-- 背景黑色半透明遮罩 -->
-  <div class="back-menu absolute inset-0 bg-black bg-opacity-60"></div>
-
-  <!-- 右側選單抽屜 -->
-  <nav class="relative z-10 w-4/5 max-w-xs h-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 overflow-y-auto flex flex-col justify-between shadow-2xl transition-transform duration-300 transform translate-x-full">
-    <div>
-      <!-- 頂部列：右側 EPICReach 與 X 關閉按鈕 -->
-      <div class="flex flex-row justify-between items-center py-4 px-6 font-bold border-b border-gray-100 dark:border-gray-700">
-        <a href="index.html" class="text-xl font-bold text-gray-800 dark:text-white">EPICReach</a>
-        <button type="button" class="close-mobile-menu text-gray-500 hover:text-gray-800 dark:hover:text-white text-2xl font-bold focus:outline-none">
-          &times;
-        </button>
+<!-- 原汁原味的 index.html Mobile menu 區塊 -->
+  <div class="side-area fixed w-full h-full inset-0 z-50">
+    <!-- bg open -->
+    <div class="back-menu fixed bg-gray-900 bg-opacity-70 w-full h-full inset-x-0 top-0">
+      <div class="cursor-pointer text-white absolute right-64 p-2">
+        <svg class="bi bi-x" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+        </svg>
       </div>
-
-      <!-- 選單列表 -->
-      <nav class="py-2 font-semibold">
-        <ul class="flex flex-col text-left">
-          <li><a href="index.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a></li>
-          <li><a href="spotlight.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-red-600 font-bold">Spotlight</a></li>
-          <li><a href="techno.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Pulse</a></li>
-          <li><a href="ecosystem.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Ecosystem</a></li>
-          <li><a href="biztech.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">BizTech</a></li>
-          <li><a href="insights.html" class="block py-3 px-6 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">Insights</a></li>
-        </ul>
-      </nav>
     </div>
 
-    <!-- 底部 Copyright -->
-    <div class="py-4 px-6 text-xs text-center border-t border-gray-100 dark:border-gray-700 text-gray-500">
-      <p>Copyright EPICReach - All rights reserved</p>
-    </div>
-  </nav>
-</div>
-<!-- End Mobile menu -->
+    <!-- Mobile navbar -->
+    <nav id="mobile-nav" class="side-menu flex flex-col w-64 fixed top-0 bg-white dark:bg-gray-800 h-full overflow-auto z-40">
+      <div class="mb-auto">
+        <nav class="relative flex flex-wrap">
+          <div class="text-center py-4 w-full font-bold border-b border-gray-100">EPICReach</div>
+          <ul id="side-menu" class="w-full float-none flex flex-col">
+            <li class="relative"><a href="index.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Home</a></li>
+            <li class="relative"><a href="spotlight.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Spotlight</a></li>
+            <li class="relative"><a href="techno.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a></li>
+            <li class="relative"><a href="ecosystem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a></li>
+            <li class="relative"><a href="biztech.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a></li>
+            <li class="relative"><a href="insights.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- copyright -->
+      <div class="py-4 px-6 text-sm mt-6 text-center">
+        <p>Copyright <a href="#">EPICReach</a> - All right reserved</p>
+      </div>
+    </nav>
+  </div><!-- End Mobile menu -->
   
   <!-- =========={ MAIN }========== -->
   <main id="content">
