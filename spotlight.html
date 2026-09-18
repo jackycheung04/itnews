@@ -254,61 +254,6 @@ License: You must have a valid license from official store to legally use the th
 <script src="src/vendors/hc-sticky/dist/hc-sticky.js"></script>
 <script src="src/js/theme.js"></script>
 
-<!-- 手機版選單與搜尋列控制腳本 -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // 1. 手機版右側抽屜選單邏輯 (避開主題預設 JS)
-    const menuBtn = document.querySelector('.custom-menu-btn');
-    const closeBtn = document.querySelector('.close-mobile-menu');
-    const mobileMenu = document.getElementById('custom-drawer-menu');
-    const backdrop = mobileMenu ? mobileMenu.querySelector('.back-menu') : null;
-    const navDrawer = mobileMenu ? mobileMenu.querySelector('nav') : null;
-
-    function openMenu() {
-      if (!mobileMenu || !navDrawer) return;
-      // 顯示容器與背景遮罩
-      mobileMenu.classList.remove('invisible', 'opacity-0');
-      // 滑入抽屜
-      setTimeout(() => {
-        navDrawer.classList.remove('translate-x-full');
-      }, 10);
-    }
-
-    function closeMenu() {
-      if (!mobileMenu || !navDrawer) return;
-      // 滑出抽屜
-      navDrawer.classList.add('translate-x-full');
-      // 隱藏容器與背景遮罩
-      setTimeout(() => {
-        mobileMenu.classList.add('invisible', 'opacity-0');
-      }, 300);
-    }
-
-    if (menuBtn) menuBtn.addEventListener('click', openMenu);
-    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-    if (backdrop) backdrop.addEventListener('click', closeMenu);
-
-    // 2. 搜尋 Dropdown 切換邏輯 (維持不變)
-    const searchDropdown = document.querySelector('.search-dropdown');
-    if (searchDropdown) {
-      const searchBtn = searchDropdown.querySelector('button');
-      const searchMenu = searchDropdown.querySelector('.dropdown-menu');
-      if (searchBtn && searchMenu) {
-        searchMenu.classList.add('hidden');
-        searchBtn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          searchMenu.classList.toggle('hidden');
-        });
-        document.addEventListener('click', function (e) {
-          if (!searchDropdown.contains(e.target)) {
-            searchMenu.classList.add('hidden');
-          }
-        });
-      }
-    }
-  });
-</script>
-
 <!-- JavaScript 動態載入與渲染新聞邏輯 -->
 <script>
   let allNewsData = [];
