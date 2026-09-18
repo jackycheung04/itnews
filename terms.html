@@ -15,7 +15,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS & Markdown 解析器 -->
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
   <style>
@@ -85,6 +84,16 @@
                     </svg>
                   </button>
                 </div>
+
+                 <!-- 手機版選單按鈕 (保留 Menu 字樣與精確樣式) -->
+                <div class="relative hover:bg-gray-800 block lg:hidden">
+                  <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                    <span class="sr-only">Mobile menu</span>
+                    <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg> Menu
+                  </button>
+                </div>
               </div>
 
             </div>
@@ -92,6 +101,40 @@
         </div>
      </nav>
   </header>
+
+  <!-- 原汁原味的 index.html Mobile menu 區塊 -->
+  <div class="side-area fixed w-full h-full inset-0 z-50">
+    <!-- bg open -->
+    <div class="back-menu fixed bg-gray-900 bg-opacity-70 w-full h-full inset-x-0 top-0">
+      <div class="cursor-pointer text-white absolute right-64 p-2">
+        <svg class="bi bi-x" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Mobile navbar -->
+    <nav id="mobile-nav" class="side-menu flex flex-col w-64 fixed top-0 bg-white dark:bg-gray-800 h-full overflow-auto z-40">
+      <div class="mb-auto">
+        <nav class="relative flex flex-wrap">
+          <div class="text-center py-4 w-full font-bold border-b border-gray-100">EPICReach</div>
+          <ul id="side-menu" class="w-full float-none flex flex-col">
+            <li class="relative"><a href="index.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Home</a></li>
+            <li class="relative"><a href="spotlight.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Spotlight</a></li>
+            <li class="relative"><a href="techno.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Pulse</a></li>
+            <li class="relative"><a href="ecosystem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Ecosystem</a></li>
+            <li class="relative"><a href="biztech.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">BizTech</a></li>
+            <li class="relative"><a href="insights.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Insights</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- copyright -->
+      <div class="py-4 px-6 text-sm mt-6 text-center">
+        <p>Copyright <a href="#">EPICReach</a> - All right reserved</p>
+      </div>
+    </nav>
+  </div><!-- End Mobile menu -->
 
   <!-- ========== { 主要內容區 } ========== -->
   <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
@@ -189,6 +232,12 @@
     </div>
   </div><!--End footer copyright-->
 </footer><!-- end footer -->
+
+  <!-- ================= 這裡才是讓選單滑出最完美的關鍵 ================= -->
+  <!-- 載入原本主題的 JS 檔案，讓它自己處理 click 事件和滑順動畫 -->
+  <script src="src/vendors/hc-sticky/dist/hc-sticky.js"></script>
+  <script src="src/js/theme.js"></script>
+  <!-- ============================================================== -->
 
   <!-- JS 抓取 Markdown 檔案並渲染 -->
   <script>
