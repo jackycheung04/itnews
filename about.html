@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Privacy Policy - EPICReach</title>
-  <meta name="description" content="EPICReach - 隱私權政策">
+  <title>About EPICReach - EPICReach</title>
+  <meta name="description" content="About EPICReach - 關於 EPICReach">
 
   <!-- 引入全站核心 CSS (包含 Header 與導覽列樣式) -->
   <link rel="stylesheet" href="src/css/style.css">
@@ -243,20 +243,20 @@
 
   <!-- JS 抓取 Markdown 檔案並渲染 -->
   <script>
-    fetch('data/legal/privacy.md')
+    fetch('data/about/about.md')
       .then(response => {
         if (!response.ok) throw new Error('File not found');
         return response.text();
       })
-      .catch(() => fetch('data/privacy.md').then(res => res.text()))
+      .catch(() => fetch('data/about.md').then(res => res.text()))
       .then(text => {
         const content = text.replace(/^---[\s\S]*?---/, '');
         document.getElementById('content').innerHTML = marked.parse(content);
       })
       .catch(err => {
         document.getElementById('content').innerHTML = `
-          <h2 class="text-xl font-bold mb-4">Privacy Policy</h2>
-          <p class="text-gray-600">目前無法載入隱私權政策內容，請確認倉庫中已建立 <code>data/legal/privacy.md</code> 檔案。</p>
+          <h2 class="text-xl font-bold mb-4">ABOUT EPICREACH</h2>
+          <p class="text-gray-600">目前無法載入內容，請確認倉庫中已建立 <code>data/about/about.md</code> 檔案。</p>
         `;
       });
   </script>
