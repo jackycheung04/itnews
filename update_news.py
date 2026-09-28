@@ -247,7 +247,7 @@ for file_path in manual_files:
                 "title": data.get("title", ""),
                 "subtitle": data.get("subtitle", "") or data.get("sub_title", ""),
                 "image_caption": data.get("image_caption", "") or data.get("caption", ""),
-                "author": data.get("author", "Cheung Chun"),
+                "author": data.get("author", "Cathy Yu"),
                 "date": data.get("date", time.strftime("%Y-%m-%d")),
                 "summary": data.get("subtitle") or auto_summary,
                 "content": raw_content,
