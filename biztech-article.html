@@ -219,7 +219,7 @@ License: You must have a valid license from official store to legally use the th
 
               <!-- Author & Date -->
               <div class="flex items-center text-sm text-gray-500 mb-6">
-                <span>作者：AI 編輯器</span>
+                <span id="article-author">作者：Patrick</span>
                 <span class="mx-2">•</span>
                 <span id="article-date"></span>
               </div>
@@ -407,6 +407,7 @@ License: You must have a valid license from official store to legally use the th
 
       const titleEl = document.getElementById('article-title');
       const dateEl = document.getElementById('article-date');
+      const authorEl = document.getElementById('article-author');
       const imgEl = document.getElementById('article-img');
       const contentEl = document.getElementById('article-content');
 
@@ -422,6 +423,21 @@ License: You must have a valid license from official store to legally use the th
 }
       
       if (dateEl) dateEl.textContent = article.date || '';
+
+      if (authorEl) {
+  const isManual =
+    article.is_manual === true ||
+    article.is_manual === 'true';
+
+  const authorName =
+    isManual &&
+    typeof article.author === 'string' &&
+    article.author.trim()
+      ? article.author.trim()
+      : 'Theo Cheung';
+
+  authorEl.textContent = `作者：${authorName}`;
+}
 
       if (imgEl) {
         imgEl.src = article.image || article.image_url || 'src/img/dummy/img2.jpg';
