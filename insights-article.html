@@ -423,7 +423,21 @@ License: You must have a valid license from official store to legally use the th
 }
       
       if (dateEl) dateEl.textContent = article.date || '';
-      
+
+      if (authorEl) {
+  const isManual =
+    article.is_manual === true ||
+    article.is_manual === 'true';
+
+  const authorName =
+    isManual &&
+    typeof article.author === 'string' &&
+    article.author.trim()
+      ? article.author.trim()
+      : 'Patrick';
+
+  authorEl.textContent = `作者：${authorName}`;
+}
 
       if (imgEl) {
         imgEl.src = article.image || article.image_url || 'src/img/dummy/img2.jpg';
