@@ -160,3 +160,16 @@ content:
       - name: body
         label: "頁面內容"
         type: rich-text
+  - name: about_page
+    label: "About EPICReach 關於我們"
+    type: file
+    path: "data/about/about.md"
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: "頁面標題"
+        type: string
+        required: true
+      - name: body
+        label: "頁面內容"
+        type: rich-text  
