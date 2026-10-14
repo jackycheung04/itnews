@@ -81,6 +81,97 @@ def get_real_image_url(article_url):
 
     return None
 
+def get_article_text(article_url):
+    """抓取新聞原文正文；抓取失敗時回傳空字串。"""
+    if not article_url or article_url == "#":
+        return ""
+
+    try:
+        req_headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            )
+        }
+
+        resp = requests.get(
+            article_url,
+            headers=req_headers,
+            timeout=15
+        )
+
+        if resp.status_code != 200:
+            print(
+                f"⚠️ 無法抓取新聞正文 "
+                f"(HTTP {resp.status_code}): {article_url}"
+            )
+            return ""
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        # 移除不需要的網頁元素
+        for tag in soup([
+            "script", "style", "nav", "header",
+            "footer", "aside", "form", "noscript", "svg"
+        ]):
+            tag.decompose()
+
+        # 優先尋找新聞正文
+        candidates = []
+
+        article_tag = soup.find("article")
+        if article_tag:
+            candidates.append(article_tag)
+
+        for selector in [
+            "[role='main']",
+            "main",
+            ".article-body",
+            ".article-content",
+            ".post-content",
+            ".entry-content"
+        ]:
+            element = soup.select_one(selector)
+            if element:
+                candidates.append(element)
+
+        # 選取文字最多的候選區域
+        best_text = ""
+
+        for element in candidates:
+            text = element.get_text("\n", strip=True)
+            text = "\n".join(
+                line.strip()
+                for line in text.splitlines()
+                if line.strip()
+            )
+
+            if len(text) > len(best_text):
+                best_text = text
+
+        # 正文不足時，不當作成功抓取
+        if len(best_text) < 500:
+            print(
+                f"⚠️ 正文不足 500 字元，"
+                f"可能未能完整抓取: {article_url}"
+            )
+            return ""
+
+        # 限制長度，避免輸入內容過長
+        best_text = best_text[:12000]
+
+        print(
+            f"✅ 成功抓取新聞正文，"
+            f"共 {len(best_text)} 個字元"
+        )
+
+        return best_text
+
+    except Exception as e:
+        print(f"⚠️ 抓取新聞正文失敗: {e}")
+        return ""
+
 
 def translate_text(title, summary):
     if not api_key:
