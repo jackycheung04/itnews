@@ -15,7 +15,7 @@ def get_available_models():
     """向 Google 查詢模型，並智慧過濾掉舊版本"""
     if not api_key:
         print("❌ 找不到 GEMINI_API_KEY 環境變數")
-        return ["gemini-2.0-flash-lite"]
+        return ["gemini-3.1-flash-lite"]
 
     url = f"{API_HOST}/v1beta/models?key={api_key}"
     try:
@@ -35,7 +35,7 @@ def get_available_models():
             target_list = [
                 "gemini-3.1-flash-lite",
                 "gemini-3.0-flash-lite",
-                "gemini-2.0-flash-lite",
+                "gemini-3.1-flash-lite",
                 "gemini-3.1-pro-preview",
                 "gemini-2.0-flash",
             ]
