@@ -15,11 +15,11 @@ def get_available_models():
     """向 Google 查詢模型，並智慧過濾掉舊版本"""
     if not api_key:
         print("❌ 找不到 GEMINI_API_KEY 環境變數")
-        return ["gemini-3.1-flash-lite"]
+        return ["gemini-3.5-flash-lite"]
 
     url = f"{API_HOST}/v1beta/models?key={api_key}"
     try:
-        res = requests.get(url)
+        res = requests.get(url, timeout=15)
         if res.status_code == 200:
             models_data = res.json().get("models", [])
             valid_models = []
@@ -33,11 +33,11 @@ def get_available_models():
 
             preferred = []
             target_list = [
+                "gemini-3.5-flash-lite",
                 "gemini-3.1-flash-lite",
-                "gemini-3.0-flash-lite",
-                "gemini-3.1-flash-lite",
+                "gemini-3.6-flash",
+                "gemini-3.8-flash",
                 "gemini-3.1-pro-preview",
-                "gemini-2.0-flash",
             ]
             for target in target_list:
                 if target in valid_models:
@@ -47,7 +47,7 @@ def get_available_models():
     except Exception as e:
         print(f"⚠️ 請求模型清單發生錯誤: {e}")
 
-    return ["gemini-2.0-flash-lite"]
+    return ["gemini-3.5-flash-lite"]
 
 
 MODELS_TO_TRY = get_available_models()
@@ -355,15 +355,28 @@ os.makedirs("data", exist_ok=True)
 json_path = "data/news.json"
 
 existing_news = []
+
 if os.path.exists(json_path):
     try:
         with open(json_path, "r", encoding="utf-8") as f:
-            existing_news = json.load(f)
-            for item in existing_news:
-                if "category" not in item:
-                    item["category"] = "Pulse"
+            loaded_news = json.load(f)
+
+        if not isinstance(loaded_news, list):
+            raise ValueError("data/news.json 的頂層資料不是 JSON 清單")
+
+        if not all(isinstance(item, dict) for item in loaded_news):
+            raise ValueError("data/news.json 含有格式不正確的文章紀錄")
+
+        existing_news = loaded_news
+
+        for item in existing_news:
+            if "category" not in item:
+                item["category"] = "Pulse"
+
     except Exception as e:
-        print(f"⚠️ 讀取舊新聞紀錄失敗: {e}")
+        raise RuntimeError(
+            f"無法安全讀取 {json_path}，已停止更新以保護舊資料：{e}"
+        ) from e
 
 # 🌟 隔離手動文章：舊紀錄中只保留 RSS 自動抓取的新聞，避免手寫文章重複
 existing_rss_news = [item for item in existing_news if not item.get("is_manual")]
