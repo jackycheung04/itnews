@@ -2,13 +2,389 @@ import json
 import os
 import re
 import time
-import glob  # 🌟 新增：用於讀取本地資料夾
+import glob  # 用於讀取本地資料夾
+import hashlib
+import html
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from bs4 import BeautifulSoup
 import feedparser
 import requests
 
 api_key = os.environ.get("GEMINI_API_KEY")
 API_HOST = "https://" + "generativelanguage.googleapis.com"
+
+
+# ----------------------------------------------------------------
+# EPICReach 永久文章庫設定
+# ----------------------------------------------------------------
+EPICREACH_BASE_URL = os.environ.get("EPICREACH_BASE_URL", "https://www.epic-reach.net").rstrip("/")
+ARCHIVE_DIR = "articles"
+ARCHIVE_INDEX_PATH = "data/archive-index.json"
+
+ARCHIVE_ALLOWED_TAGS = {
+    "p", "br", "h1", "h2", "h3", "h4", "strong", "b", "em", "i",
+    "ul", "ol", "li", "blockquote", "a", "img", "hr", "code", "pre"
+}
+
+
+def normalize_source_url(url):
+    """正規化來源網址，避免追蹤參數或 fragment 影響固定識別碼。"""
+    if not url:
+        return ""
+    try:
+        parsed = urlsplit(str(url).strip())
+        if not parsed.scheme or not parsed.netloc:
+            return str(url).strip().split("#", 1)[0]
+        ignored = {"fbclid", "gclid", "mc_cid", "mc_eid"}
+        kept = []
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True):
+            if key.lower().startswith("utm_") or key.lower() in ignored:
+                continue
+            kept.append((key, value))
+        path = parsed.path or "/"
+        return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), path, urlencode(kept, doseq=True), ""))
+    except Exception:
+        return str(url).strip().split("#", 1)[0]
+
+
+def get_archive_key(item):
+    """為每篇文章取得穩定的來源鍵；RSS 以來源網址為準，原創文章以檔案鍵為準。"""
+    explicit_key = item.get("_archive_key") or item.get("archive_key")
+    if explicit_key:
+        return str(explicit_key)
+
+    link = str(item.get("link") or "").strip()
+    if link and link.startswith(("http://", "https://")):
+        return "rss:" + normalize_source_url(link)
+
+    # 舊版手動文章只有 manual_<檔名> 連結：移除副檔名後建立相容鍵。
+    if link.startswith("manual_"):
+        basename = os.path.basename(link)
+        stem = os.path.splitext(basename)[0]
+        return "manual:" + str(item.get("category") or "BizTech") + ":" + stem
+
+    fallback = "|".join([
+        str(item.get("category") or "Pulse").strip().lower(),
+        re.sub(r"\s+", " ", str(item.get("title") or "").strip()).lower(),
+        str(item.get("date") or "").strip(),
+    ])
+    return "article:" + fallback
+
+
+def get_stable_article_id(item):
+    """以穩定來源鍵生成固定識別碼，不使用 news.json 中會變動的數字 id。"""
+    key = get_archive_key(item)
+    digest = hashlib.sha256(key.encode("utf-8")).hexdigest()[:20]
+    return "a-" + digest
+
+
+def plain_text(value):
+    return re.sub(r"\s+", " ", BeautifulSoup(str(value or ""), "html.parser").get_text(" ", strip=True)).strip()
+
+
+def safe_content_html(raw_content):
+    """移除文章內容內的 script/危險屬性，只保留常用文章格式。"""
+    raw = str(raw_content or "").strip()
+    if not raw:
+        return "<p>本文暫無可顯示的內文。</p>"
+
+    # AI 翻譯內容通常是純文字；按段落處理，避免將文字中的比較符號誤當標籤。
+    if not re.search(r"</?(?:p|br|h[1-4]|strong|b|em|i|ul|ol|li|blockquote|a|img|hr|code|pre)\b", raw, re.I):
+        paragraphs = [part.strip() for part in re.split(r"\n\s*\n|\r?\n", raw) if part.strip()]
+        return "".join(f"<p class=\"mb-4 leading-relaxed text-gray-800 text-lg\">{html.escape(part)}</p>" for part in paragraphs)
+
+    soup = BeautifulSoup(raw, "html.parser")
+    for bad in soup.find_all(["script", "style", "iframe", "object", "embed", "form", "input", "button", "svg", "video", "audio"]):
+        bad.decompose()
+
+    for tag in list(soup.find_all(True)):
+        if tag.name not in ARCHIVE_ALLOWED_TAGS:
+            tag.unwrap()
+            continue
+
+        allowed_attrs = {}
+        if tag.name == "a":
+            href = str(tag.get("href") or "").strip()
+            parsed = urlsplit(href)
+            if href and (parsed.scheme.lower() in {"http", "https", "mailto"} or not parsed.scheme):
+                allowed_attrs["href"] = href
+                if parsed.scheme.lower() in {"http", "https"}:
+                    allowed_attrs["target"] = "_blank"
+                    allowed_attrs["rel"] = "noopener noreferrer"
+        elif tag.name == "img":
+            src = str(tag.get("src") or "").strip()
+            parsed = urlsplit(src)
+            if src and (parsed.scheme.lower() in {"http", "https"} or not parsed.scheme) and not src.lower().startswith(("javascript:", "data:")):
+                if src.startswith("src/"):
+                    src = "../" + src
+                allowed_attrs["src"] = src
+                allowed_attrs["alt"] = str(tag.get("alt") or "")
+                allowed_attrs["loading"] = "lazy"
+        if tag.name in {"p", "h1", "h2", "h3", "h4", "ul", "ol", "li", "blockquote", "code", "pre"}:
+            original_class = tag.get("class")
+            if original_class and isinstance(original_class, list):
+                allowed_attrs["class"] = " ".join(str(v) for v in original_class if re.fullmatch(r"[A-Za-z0-9 _:-]{1,160}", str(v)))
+        tag.attrs = allowed_attrs
+
+    return "".join(str(child) for child in soup.contents)
+
+
+def site_asset_path(image_value):
+    """將根目錄相對圖片路徑轉成 articles/ 子目錄可使用的路徑。"""
+    value = str(image_value or "src/img/dummy/img2.jpg").strip()
+    if value.startswith(("http://", "https://", "data:")) or value.startswith("/"):
+        return value
+    return "../" + value.lstrip("./")
+
+
+def absolute_site_url(path):
+    if str(path).startswith(("http://", "https://")):
+        return str(path)
+    return EPICREACH_BASE_URL + "/" + str(path).lstrip("/")
+
+
+def date_sort_value(value):
+    """支援 ISO 日期及 RSS 常見日期格式，供文章索引排序。"""
+    raw = str(value or "").strip()
+    if not raw:
+        return 0.0
+    try:
+        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.timestamp()
+    except Exception:
+        pass
+    try:
+        dt = parsedate_to_datetime(raw)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.timestamp()
+    except Exception:
+        pass
+    try:
+        return datetime.strptime(raw[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc).timestamp()
+    except Exception:
+        return 0.0
+
+
+def atomic_write_json(path, payload):
+    """先寫暫存檔再原子替換，避免中途失敗造成 JSON 檔案損毀。"""
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    temp_path = path + ".tmp"
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(temp_path, path)
+
+
+def render_archive_html(item, stable_id, permalink, template_path="techno-article.html"):
+    """以現有 techno-article.html 版面建立伺服器可直接讀取的靜態文章頁。"""
+    title = str(item.get("title") or "EPICReach 文章").strip()
+    summary = plain_text(item.get("summary") or item.get("subtitle") or item.get("content") or title)[:220]
+    category = str(item.get("category") or "Pulse").strip()
+    date_text = str(item.get("date") or "").strip()
+    author = str(item.get("author") or "").strip()
+    content_html = safe_content_html(item.get("content") or item.get("summary") or "")
+    image_value = item.get("image") or item.get("image_url") or "src/img/dummy/img2.jpg"
+    image_src = site_asset_path(image_value)
+    absolute_image = absolute_site_url(str(image_value))
+    canonical_url = absolute_site_url(permalink)
+
+    category_pages = {
+        "Spotlight": "spotlight.html", "Pulse": "techno.html",
+        "Ecosystem": "ecosystem.html", "BizTech": "biztech.html",
+        "Biztech": "biztech.html", "Insights": "insights.html"
+    }
+    category_page = category_pages.get(category, "techno.html")
+
+    if os.path.exists(template_path):
+        template = open(template_path, "r", encoding="utf-8").read()
+    else:
+        # 防止範本意外缺失時完全無法保存文章。
+        template = """<!doctype html><html lang=\"zh-Hant\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>{{ TITLE }} | EPICReach</title><meta name=\"description\" content=\"{{ SUMMARY }}\"><link rel=\"stylesheet\" href=\"../src/css/style.css\"></head><body class=\"text-gray-700\"><main class=\"max-w-4xl mx-auto p-6\"><a href=\"../{{ CATEGORY_PAGE }}\">返回 {{ CATEGORY }}</a><h1 class=\"text-3xl font-bold my-6\">{{ ARTICLE_TITLE }}</h1><p class=\"text-gray-500\">{{ ARTICLE_DATE }}</p><img class=\"w-full h-auto my-6\" src=\"{{ IMAGE_SRC }}\" alt=\"{{ ARTICLE_TITLE }}\"><article>{{ ARTICLE_CONTENT }}</article></main></body></html>"""
+
+    template = template.replace("<title>{{ TITLE }} | EpicReach</title>", f"<title>{html.escape(title)} | EPICReach</title>")
+    template = template.replace('<meta name="description" content="{{ SUMMARY }}">', f'<meta name="description" content="{html.escape(summary, quote=True)}">')
+
+    # 靜態 HTML head：社群爬蟲不需執行 JavaScript 就能讀到正確文章資訊。
+    social_meta = (
+        f'<link rel="canonical" href="{html.escape(canonical_url, quote=True)}">\n'
+        f'<meta property="og:type" content="article">\n'
+        f'<meta property="og:url" content="{html.escape(canonical_url, quote=True)}">\n'
+        f'<meta property="og:title" content="{html.escape(title, quote=True)}">\n'
+        f'<meta property="og:description" content="{html.escape(summary, quote=True)}">\n'
+        f'<meta property="og:image" content="{html.escape(absolute_image, quote=True)}">\n'
+        f'<meta name="twitter:card" content="summary_large_image">\n'
+        f'<meta name="twitter:title" content="{html.escape(title, quote=True)}">\n'
+        f'<meta name="twitter:description" content="{html.escape(summary, quote=True)}">\n'
+        f'<meta name="twitter:image" content="{html.escape(absolute_image, quote=True)}">'
+    )
+    desc_tag = f'<meta name="description" content="{html.escape(summary, quote=True)}">'
+    if desc_tag in template:
+        template = template.replace(desc_tag, desc_tag + "\n  " + social_meta, 1)
+
+    # 子目錄中的資源及導覽連結都要回到網站根目錄。
+    template = template.replace('href="src/css/style.css"', 'href="../src/css/style.css"')
+    template = template.replace('href="src/img/favicon.jpg"', 'href="../src/img/favicon.jpg"')
+    template = template.replace('src="src/', 'src="../src/')
+    template = template.replace('src="../src/../src/', 'src="../src/')
+    template = template.replace('src="src/js/', 'src="../src/js/')
+    template = template.replace('src="src/vendors/', 'src="../src/vendors/')
+    for page in ["index", "spotlight", "techno", "ecosystem", "biztech", "insights", "contact"]:
+        template = re.sub(r'href="' + re.escape(page) + r'\.html(?=["?#])', 'href="../' + page + '.html', template)
+    template = template.replace("bg-gray-900 text-white", "")
+
+    # 將原本依賴 data/news.json 數字 id 的動態區塊，換成可直接閱讀的固定文章內容。
+    article_block = f"""<h1 id="article-title" class="text-3xl font-bold mb-4">{html.escape(title)}</h1>
+<div class="flex items-center text-sm text-gray-500 mb-6">{f'<span>作者：{html.escape(author)}</span><span class="mx-2">•</span>' if author else ''}<span>{html.escape(date_text)}</span></div>
+<div class="mb-6"><img id="article-img" class="max-w-full w-full h-auto rounded" src="{html.escape(image_src, quote=True)}" alt="{html.escape(title, quote=True)}" loading="lazy"></div>
+<div id="article-content" class="text-gray-800 text-lg leading-relaxed space-y-6">{content_html}</div>"""
+    template, count = re.subn(r'<h1 id="article-title".*?<div id="article-content".*?</div>', article_block, template, count=1, flags=re.S)
+    if count != 1:
+        raise RuntimeError("無法在 techno-article.html 範本定位文章主內容區，為避免產生格式錯誤的文章頁，已停止。")
+
+    # 分類導覽和返回按鈕對應文章本身的分類。
+    template = re.sub(
+        r'<a href="(?:\.\./)?techno\.html" class="text-xs text-red-600 font-bold uppercase border-b-2 border-red-600 pb-1">Pulse</a>',
+        f'<a href="../{html.escape(category_page, quote=True)}" class="text-xs text-red-600 font-bold uppercase border-b-2 border-red-600 pb-1">{html.escape(category)}</a>',
+        template,
+        count=1
+    )
+    template = re.sub(
+        r'<a href="(?:\.\./)?techno\.html" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-6 rounded text-sm transition-colors">\s*← 返回 Pulse 分類頁\s*</a>',
+        f'<a href="../{html.escape(category_page, quote=True)}" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-6 rounded text-sm transition-colors">← 返回 {html.escape(category)} 分類頁</a>',
+        template,
+        count=1
+    )
+
+    # 以永久索引顯示側欄熱門文章，而不是使用會變動的新聞數字 id。
+    script_start = template.rfind("  <script>\n  async function loadArticleDetail()")
+    if script_start >= 0:
+        script_end = template.find("</script>", script_start)
+        if script_end < 0:
+            raise RuntimeError("文章範本中的 JavaScript 區塊不完整。")
+        script_end += len("</script>")
+        stable_script = """<script>
+  (async function renderMostPopular() {
+    const container = document.getElementById('most-popular-list');
+    if (!container) return;
+    try {
+      const response = await fetch('../data/archive-index.json');
+      if (!response.ok) return;
+      const articles = await response.json();
+      container.replaceChildren();
+      articles.slice(0, 5).forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = 'border-b border-gray-100 hover:bg-gray-50 transition-colors';
+        const link = document.createElement('a');
+        link.className = 'text-sm font-bold px-4 py-3 flex flex-row items-center hover:text-red-600';
+        link.href = item.permalink || '#';
+        const number = document.createElement('span');
+        number.className = 'text-xl font-bold text-gray-300 mr-3 flex-shrink-0';
+        number.textContent = String(index + 1);
+        const title = document.createElement('span');
+        title.className = 'line-clamp-2';
+        title.textContent = item.title || '無標題文章';
+        link.append(number, title);
+        li.append(link);
+        container.append(li);
+      });
+    } catch (error) {
+      console.error('載入文章索引失敗', error);
+    }
+  })();
+</script>"""
+        template = template[:script_start] + stable_script + template[script_end:]
+
+    # 替換範本缺失時使用的佔位符；亦避免遺留模板字串。
+    template = (template
+        .replace("{{ TITLE }}", html.escape(title))
+        .replace("{{ SUMMARY }}", html.escape(summary, quote=True))
+        .replace("{{ ARTICLE_TITLE }}", html.escape(title))
+        .replace("{{ ARTICLE_DATE }}", html.escape(date_text))
+        .replace("{{ ARTICLE_CONTENT }}", content_html)
+        .replace("{{ IMAGE_SRC }}", html.escape(image_src, quote=True))
+        .replace("{{ CATEGORY }}", html.escape(category))
+        .replace("{{ CATEGORY_PAGE }}", html.escape(category_page, quote=True)))
+    return template
+
+
+def get_archive_metadata(item):
+    stable_id = get_stable_article_id(item)
+    permalink = f"/articles/{stable_id}.html"
+    return {
+        "stable_id": stable_id,
+        "title": str(item.get("title") or ""),
+        "summary": str(item.get("summary") or item.get("subtitle") or plain_text(item.get("content") or "")[:220]),
+        "image": str(item.get("image") or item.get("image_url") or "src/img/dummy/img2.jpg"),
+        "date": str(item.get("date") or ""),
+        "category": str(item.get("category") or "Pulse"),
+        "permalink": permalink,
+        "author": str(item.get("author") or ""),
+        "source": str(item.get("source") or ""),
+        "is_manual": bool(item.get("is_manual")),
+        "link": str(item.get("link") or "")
+    }
+
+
+def update_permanent_archive(combined_news):
+    """生成缺少的靜態文章頁，更新完整索引；絕不刪除舊文章檔案。"""
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    os.makedirs("data", exist_ok=True)
+
+    archive_records = {}
+    if os.path.exists(ARCHIVE_INDEX_PATH):
+        try:
+            with open(ARCHIVE_INDEX_PATH, "r", encoding="utf-8") as f:
+                loaded_index = json.load(f)
+            if not isinstance(loaded_index, list):
+                raise ValueError("文章索引頂層資料不是 JSON 清單")
+            for record in loaded_index:
+                if not isinstance(record, dict) or not record.get("stable_id") or not record.get("permalink"):
+                    raise ValueError("文章索引包含格式不完整的紀錄")
+                archive_records[record["stable_id"]] = record
+        except Exception as e:
+            raise RuntimeError(f"無法安全讀取 {ARCHIVE_INDEX_PATH}，已停止更新以保護永久文章索引：{e}") from e
+
+    # 先為完整合併清單建立永久頁，再保留最新 50 篇給舊版首頁/分類頁使用。
+    seen_in_batch = set()
+    deduped_news = []
+    for item in combined_news:
+        stable_id = get_stable_article_id(item)
+        permalink = f"/articles/{stable_id}.html"
+        item["stable_id"] = stable_id
+        item["permalink"] = permalink
+        item["_archive_key"] = get_archive_key(item)
+
+        if stable_id in seen_in_batch:
+            print(f"⏩ 跳過重複文章：{item.get('title', '（無標題）')}")
+            continue
+        seen_in_batch.add(stable_id)
+        deduped_news.append(item)
+
+        page_path = os.path.join(ARCHIVE_DIR, f"{stable_id}.html")
+        if not os.path.exists(page_path):
+            page_html = render_archive_html(item, stable_id, permalink)
+            temp_path = page_path + ".tmp"
+            with open(temp_path, "w", encoding="utf-8") as f:
+                f.write(page_html)
+            os.replace(temp_path, page_path)
+            print(f"🗂️ 建立永久文章：{permalink}")
+
+        # 更新可供分類頁載入更多使用的文章資訊；不清除索引中較舊的紀錄。
+        archive_records[stable_id] = get_archive_metadata(item)
+
+    sorted_records = sorted(
+        archive_records.values(),
+        key=lambda record: date_sort_value(record.get("date")),
+        reverse=True
+    )
+    atomic_write_json(ARCHIVE_INDEX_PATH, sorted_records)
+    print(f"🗃️ 永久文章索引已更新，共 {len(sorted_records)} 篇；舊文章檔案不會自動刪除。")
+    return deduped_news
 
 
 def get_available_models():
@@ -468,7 +844,8 @@ for file_path in manual_files:
                 "source": f"{data.get('category', 'BizTech')} 原創",
                 "is_pinned": str(data.get("is_pinned", "")).lower() == "true",
                 "is_manual": True,
-                "link": f"manual_{os.path.basename(file_path)}"
+                "link": f"manual_{os.path.basename(file_path)}",
+                "_archive_key": "manual:" + os.path.splitext(os.path.relpath(file_path).replace("\\", "/"))[0]
             })
             print(f"✅ 成功載入原創文章：{data.get('title')} ({file_path.split('.')[-1].upper()})")
     except Exception as e:
@@ -586,7 +963,8 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
                         "image": image_url,
                         "date": published,
                         "category": category_name,
-                        "is_manual": False # 🌟 標註為非手寫自動抓取
+                        "is_manual": False,
+                        "_archive_key": "rss:" + normalize_source_url(link)
                     })
                     existing_links.add(link)
                     cat_new_count += 1
@@ -597,16 +975,24 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
 
 
 # ----------------------------------------------------------------
-# 4. 合併新舊資料、更新 ID 並存檔 (🌟 手動文章置頂邏輯)
+# 4. 合併、建立永久文章頁及完整索引，再更新最新 50 篇新聞 JSON
 # ----------------------------------------------------------------
-# 排序邏輯：手動原創文章最優先 (置頂) -> 最新抓取的翻譯新聞 -> 舊有的自動抓取新聞
+# 排序邏輯：手動原創文章最優先 -> 新抓取的翻譯新聞 -> 舊有 RSS 新聞。
 combined_news = manual_news_list + new_news_list + existing_rss_news
-final_news = combined_news[:50]  # 保留最新 50 篇
 
+# 為所有可用文章建立永久網址和索引；這一步一定在截取最新 50 篇之前執行。
+combined_news = update_permanent_archive(combined_news)
+
+# 舊網站仍使用 data/news.json 的數字 id，暫時保留以維持相容；新文章連結會改用 permalink。
+final_news = combined_news[:50]
 for idx, item in enumerate(final_news):
     item["id"] = idx
 
 if final_news:
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(final_news, f, ensure_ascii=False, indent=4)
-    print(f"\n🚀 更新成功！載入 {len(manual_news_list)} 篇原創，新增 {len(new_news_list)} 篇翻譯，目前資料庫共保留 {len(final_news)} 篇。")
+    atomic_write_json(json_path, final_news)
+    print(
+        f"\n🚀 更新成功！載入 {len(manual_news_list)} 篇原創，新增 {len(new_news_list)} 篇翻譯，"
+        f"目前最新清單保留 {len(final_news)} 篇；永久文章索引累積保存更多文章。"
+    )
+else:
+    print("⚠️ 本次沒有可寫入的新聞；為保護資料，未覆寫 data/news.json。")
