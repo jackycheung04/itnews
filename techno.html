@@ -277,11 +277,13 @@ License: You must have a valid license from official store to legally use the th
         const permalink = item.permalink.trim();
         // 文章索引中的永久網址應指向本站 articles/；拒絕非本站路徑格式。
         if (/^(?:\/)?articles\/[A-Za-z0-9._-]+\.html$/.test(permalink)) {
-          return permalink.startsWith('/') ? permalink : '/' + permalink;
+          // Use a path relative to this page so local previews also work when
+          // the repository is served from a subfolder (e.g. /itnews/).
+          return permalink.replace(/^\/+/, '');
         }
       }
       if (item && typeof item.stable_id === 'string' && /^a-[a-f0-9]+$/.test(item.stable_id)) {
-        return '/articles/' + item.stable_id + '.html';
+        return 'articles/' + item.stable_id + '.html';
       }
       const articleId = item && item.id !== undefined ? item.id : fallbackIndex;
       return ARTICLE_PAGE + '?id=' + encodeURIComponent(articleId == null ? 0 : articleId);
