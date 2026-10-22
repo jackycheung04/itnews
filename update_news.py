@@ -22,6 +22,8 @@ API_HOST = "https://" + "generativelanguage.googleapis.com"
 EPICREACH_BASE_URL = os.environ.get("EPICREACH_BASE_URL", "https://www.epic-reach.net").rstrip("/")
 ARCHIVE_DIR = "articles"
 ARCHIVE_INDEX_PATH = "data/archive-index.json"
+# GitHub Actions can set this to sync Pages CMS changes without fetching new RSS/AI articles.
+ARCHIVE_SYNC_ONLY = os.environ.get("ARCHIVE_SYNC_ONLY", "").strip().lower() in {"1", "true", "yes"}
 
 ARCHIVE_ALLOWED_TAGS = {
     "p", "br", "h1", "h2", "h3", "h4", "strong", "b", "em", "i",
@@ -331,7 +333,7 @@ def get_archive_metadata(item):
 
 
 def update_permanent_archive(combined_news):
-    """生成缺少的靜態文章頁，更新完整索引；絕不刪除舊文章檔案。"""
+    """建立缺少的永久文章頁，更新來源已改動的頁面及完整索引；不刪除舊文章。"""
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
     os.makedirs("data", exist_ok=True)
 
@@ -349,7 +351,8 @@ def update_permanent_archive(combined_news):
         except Exception as e:
             raise RuntimeError(f"無法安全讀取 {ARCHIVE_INDEX_PATH}，已停止更新以保護永久文章索引：{e}") from e
 
-    # 先為完整合併清單建立永久頁，再保留最新 50 篇給舊版首頁/分類頁使用。
+    # 先為完整合併清單建立／同步永久頁，再保留最新 50 篇給舊版首頁/分類頁使用。
+    # Pages CMS 原始檔每次都會重新載入，因此需同步至相同固定網址。
     seen_in_batch = set()
     deduped_news = []
     for item in combined_news:
@@ -366,15 +369,38 @@ def update_permanent_archive(combined_news):
         deduped_news.append(item)
 
         page_path = os.path.join(ARCHIVE_DIR, f"{stable_id}.html")
-        if not os.path.exists(page_path):
+        try:
+            # 重渲染現有來源項目；只有 HTML 實際不同才寫檔。
+            # CMS 更新標題、摘要、圖片、日期或內文時，永久網址不變但內容會同步更新。
             page_html = render_archive_html(item, stable_id, permalink)
-            temp_path = page_path + ".tmp"
-            with open(temp_path, "w", encoding="utf-8") as f:
-                f.write(page_html)
-            os.replace(temp_path, page_path)
-            print(f"🗂️ 建立永久文章：{permalink}")
+            existing_page_html = None
+            if os.path.exists(page_path):
+                with open(page_path, "r", encoding="utf-8") as f:
+                    existing_page_html = f.read()
 
-        # 更新可供分類頁載入更多使用的文章資訊；不清除索引中較舊的紀錄。
+            if existing_page_html != page_html:
+                temp_path = page_path + ".tmp"
+                try:
+                    with open(temp_path, "w", encoding="utf-8") as f:
+                        f.write(page_html)
+                    os.replace(temp_path, page_path)
+                finally:
+                    if os.path.exists(temp_path):
+                        try:
+                            os.remove(temp_path)
+                        except OSError:
+                            pass
+
+                if existing_page_html is None:
+                    print(f"🗂️ 建立永久文章：{permalink}")
+                else:
+                    print(f"🔄 更新永久文章：{permalink}")
+        except Exception as e:
+            raise RuntimeError(
+                f"建立或更新永久文章失敗（{permalink}），已停止本次更新以避免索引與文章頁不一致：{e}"
+            ) from e
+
+        # 更新分類頁使用的索引資訊；不清除索引中較舊的文章紀錄。
         archive_records[stable_id] = get_archive_metadata(item)
 
     sorted_records = sorted(
@@ -383,7 +409,7 @@ def update_permanent_archive(combined_news):
         reverse=True
     )
     atomic_write_json(ARCHIVE_INDEX_PATH, sorted_records)
-    print(f"🗃️ 永久文章索引已更新，共 {len(sorted_records)} 篇；舊文章檔案不會自動刪除。")
+    print(f"🗃️ 永久文章索引已更新，共 {len(sorted_records)} 篇；不會自動刪除舊文章檔案或舊索引紀錄。")
     return deduped_news
 
 
@@ -426,7 +452,7 @@ def get_available_models():
     return ["gemini-3.5-flash-lite"]
 
 
-MODELS_TO_TRY = get_available_models()
+MODELS_TO_TRY = [] if ARCHIVE_SYNC_ONLY else get_available_models()
 
 
 def get_real_image_url(article_url):
@@ -852,6 +878,25 @@ for file_path in manual_files:
         print(f"⚠️ 讀取手動文章 {file_path} 失敗: {e}")
 
 manual_news_list.sort(key=lambda x: x.get("date", ""), reverse=True)
+
+# Pages CMS push events use this path to sync manual articles immediately without RSS crawling or AI calls.
+if ARCHIVE_SYNC_ONLY:
+    print("\n🔁 執行 Pages CMS 同步模式：不抓取 RSS、不呼叫生成式 AI。")
+    sync_news = manual_news_list + existing_rss_news
+    sync_news = update_permanent_archive(sync_news)
+    final_news = sync_news[:50]
+    for idx, item in enumerate(final_news):
+        item["id"] = idx
+    if final_news:
+        atomic_write_json(json_path, final_news)
+        print(
+            f"✅ Pages CMS 同步完成：讀取 {len(manual_news_list)} 篇手動文章，"
+            f"最新清單保留 {len(final_news)} 篇，永久文章索引已更新。"
+        )
+    else:
+        print("⚠️ 沒有可寫入的文章；為保護資料，未覆寫 data/news.json。")
+    raise SystemExit(0)
+
 # ----------------------------------------------------------------
 # 2. 定義各分類及其對應的 RSS 來源 (🌟 新增 BizTech 來源)
 # ----------------------------------------------------------------
