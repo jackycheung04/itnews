@@ -255,10 +255,11 @@ License: You must have a valid license from official store to legally use the th
 <script src="src/js/theme.js"></script>
 
 <!-- JavaScript 動態載入與渲染新聞邏輯 -->
+<!-- JavaScript 動態載入與渲染新聞邏輯：永久文章索引優先，news.json 作後備 -->
 <script>
   let allNewsData = [];
-  let currentGridIndex = 1; 
-  const BATCH_SIZE = 6;     
+  let currentGridIndex = 1;
+  const BATCH_SIZE = 6;
   const ARTICLE_PAGE = 'spotlight-article.html';
 
   function getImageUrl(item) {
@@ -266,33 +267,100 @@ License: You must have a valid license from official store to legally use the th
     return item.image || item.image_url || item.img || item.urlToImage || item.thumbnail || item.cover || 'src/img/dummy/img2.jpg';
   }
 
+  function escapeHtml(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (char) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char];
+    });
+  }
+
+  function safeImageUrl(value) {
+    const url = String(value || 'src/img/dummy/img2.jpg').trim();
+    if (/^(https?:\/\/|\/|src\/|\.\.\/)/i.test(url)) return url;
+    return 'src/img/dummy/img2.jpg';
+  }
+
+  function getArticleUrl(item, fallbackIndex) {
+    if (item && typeof item.permalink === 'string' && item.permalink.trim()) {
+      const permalink = item.permalink.trim();
+      if (/^(?:\/)?articles\/[A-Za-z0-9._-]+\.html$/.test(permalink)) {
+        // 相對路徑可支援 GitHub Pages 的專案子路徑及本機 Live Server。
+        return permalink.replace(/^\/+/, '');
+      }
+    }
+    if (item && typeof item.stable_id === 'string' && /^a-[a-f0-9]+$/.test(item.stable_id)) {
+      return 'articles/' + item.stable_id + '.html';
+    }
+    const articleId = item && item.id !== undefined ? item.id : fallbackIndex;
+    return ARTICLE_PAGE + '?id=' + encodeURIComponent(articleId == null ? 0 : articleId);
+  }
+
+  async function fetchJson(path) {
+    const response = await fetch(path + (path.includes('?') ? '&' : '?') + 'v=' + Date.now(), { cache: 'no-store' });
+    if (!response.ok) throw new Error(path + ' 回應狀態碼 ' + response.status);
+    return response.json();
+  }
+
+  function isSpotlightArticle(item) {
+    return item && typeof item.category === 'string' && item.category.trim().toLowerCase() === 'spotlight';
+  }
+
+  function sortArticlesNewestFirst(items) {
+    return items.sort((a, b) => {
+      const dateA = Date.parse(a && a.date ? a.date : '');
+      const dateB = Date.parse(b && b.date ? b.date : '');
+      const timeA = Number.isFinite(dateA) ? dateA : 0;
+      const timeB = Number.isFinite(dateB) ? dateB : 0;
+      return timeB - timeA;
+    });
+  }
+
+  function deduplicateArticles(items) {
+    const seen = new Set();
+    return items.filter((item) => {
+      const key = item.stable_id || item.permalink || item.link || ((item.title || '').trim() + '|' + (item.date || ''));
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   async function initNews() {
+    const loadMoreBtn = document.getElementById('load-more-btn');
     try {
-      const res = await fetch('data/news.json?v=' + new Date().getTime());
-      const rawData = await res.json();
-
-      // 篩選 category 為 spotlight 的文章
-      allNewsData = rawData.filter(item => item.category && item.category.toLowerCase() === 'spotlight');
-
-      if (!allNewsData || allNewsData.length === 0) {
-        console.warn("未找到 Spotlight 分類的新聞數據");
+      const archiveData = await fetchJson('data/archive-index.json');
+      if (!Array.isArray(archiveData)) throw new Error('永久文章索引格式不是清單');
+      allNewsData = deduplicateArticles(sortArticlesNewestFirst(archiveData.filter(isSpotlightArticle)));
+      if (!allNewsData.length) throw new Error('永久文章索引暫無此分類文章，改用最新清單');
+      console.log('Spotlight 永久文章索引載入成功，總篇數：', allNewsData.length);
+    } catch (archiveError) {
+      console.warn('載入永久文章索引失敗，改用 data/news.json：', archiveError);
+      try {
+        const latestData = await fetchJson('data/news.json');
+        if (!Array.isArray(latestData)) throw new Error('news.json 格式不是清單');
+        allNewsData = deduplicateArticles(sortArticlesNewestFirst(latestData.filter(isSpotlightArticle)));
+        console.log('Spotlight 最新新聞後備清單載入成功，總篇數：', allNewsData.length);
+      } catch (newsError) {
+        console.error('載入新聞失敗：', newsError);
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
         return;
       }
-
-      console.log("Spotlight 新聞載入成功，總篇數:", allNewsData.length);
-
-      renderHeroNews(allNewsData[0]);
-      renderNextNewsGridBatch();
-      renderMostPopular(allNewsData);
-
-      const loadMoreBtn = document.getElementById('load-more-btn');
-      if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
-      }
-
-    } catch (err) {
-      console.error("載入新聞失敗:", err);
     }
+
+    if (!allNewsData.length) {
+      console.warn('未找到 Spotlight 分類的文章數據');
+      if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+      return;
+    }
+
+    currentGridIndex = 1;
+    if (loadMoreBtn) {
+      loadMoreBtn.style.display = '';
+      loadMoreBtn.disabled = false;
+      loadMoreBtn.addEventListener('click', renderNextNewsGridBatch);
+    }
+    renderHeroNews(allNewsData[0]);
+    renderNextNewsGridBatch();
+    renderMostPopular(allNewsData);
   }
 
   function renderHeroNews(hero) {
@@ -302,25 +370,21 @@ License: You must have a valid license from official store to legally use the th
     const heroSummary = document.getElementById('hero-summary');
     const heroLink = document.getElementById('hero-link');
     const heroLinkTitle = document.getElementById('hero-link-title');
-    const articleId = hero.id !== undefined ? hero.id : 0;
-    const articleUrl = `${ARTICLE_PAGE}?id=${articleId}`;
+    const articleUrl = getArticleUrl(hero, 0);
 
     if (heroImg) {
-      heroImg.src = getImageUrl(hero);
+      heroImg.src = safeImageUrl(getImageUrl(hero));
       heroImg.alt = hero.title || '';
       heroImg.classList.remove('opacity-0');
       heroImg.classList.add('opacity-100');
     }
-
-    // 如果是手寫專題採訪文章，加上「專題採訪」標籤
-    let badgeHtml = '';
-    if (heroTitle) heroTitle.innerHTML = badgeHtml + (hero.title || '');
-
+    if (heroTitle) {
+      heroTitle.textContent = hero.title || '';
+    }
     if (heroLink) heroLink.href = articleUrl;
     if (heroLinkTitle) heroLinkTitle.href = articleUrl;
-
     if (heroSummary) {
-      const rawSummary = hero.summary || hero.description || '';
+      const rawSummary = hero.summary || hero.subtitle || hero.description || '';
       heroSummary.textContent = rawSummary.length > 80 ? rawSummary.substring(0, 80) + '...' : rawSummary;
     }
   }
@@ -330,61 +394,52 @@ License: You must have a valid license from official store to legally use the th
     const loadMoreBtn = document.getElementById('load-more-btn');
     if (!container) return;
 
-    const end = currentGridIndex + BATCH_SIZE;
-    const items = allNewsData.slice(currentGridIndex, end);
+    const start = currentGridIndex;
+    const end = Math.min(start + BATCH_SIZE, allNewsData.length);
+    const items = allNewsData.slice(start, end);
 
-    items.forEach((item, idx) => {
-      const articleId = item.id !== undefined ? item.id : (currentGridIndex + idx);
-      const imageUrl = getImageUrl(item);
-      const itemTitle = item.title || '無標題文章';
-      
-      // 網格卡片中的「專題採訪」標籤
-      let badgeHtml = '';
-
+    items.forEach((item, offset) => {
+      const articleUrl = getArticleUrl(item, start + offset);
+      const imageUrl = escapeHtml(safeImageUrl(getImageUrl(item)));
+      const itemTitle = escapeHtml(item.title || '無標題文章');
+      const badgeHtml = '';
       const cardHtml = `
         <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 mb-4">
           <div class="relative hover-img max-h-48 overflow-hidden rounded">
-            <a href="${ARTICLE_PAGE}?id=${articleId}">
-              <img class="max-w-full w-full mx-auto h-40 object-cover" src="${imageUrl}" alt="${itemTitle}">
+            <a href="${escapeHtml(articleUrl)}">
+              <img class="max-w-full w-full mx-auto h-40 object-cover" src="${imageUrl}" alt="${itemTitle}" loading="lazy">
             </a>
           </div>
           <div class="pt-2">
             <h3 class="text-base font-bold leading-tight mb-2">
-              ${badgeHtml}<a class="hover:text-red-600" href="${ARTICLE_PAGE}?id=${articleId}">${itemTitle}</a>
+              ${badgeHtml}<a class="hover:text-red-600" href="${escapeHtml(articleUrl)}">${itemTitle}</a>
             </h3>
           </div>
-        </div>
-      `;
+        </div>`;
       container.insertAdjacentHTML('beforeend', cardHtml);
     });
 
     currentGridIndex = end;
-
-    if (currentGridIndex >= allNewsData.length) {
-      if (loadMoreBtn) loadMoreBtn.style.display = 'none';
-    }
+    if (loadMoreBtn) loadMoreBtn.style.display = currentGridIndex < allNewsData.length ? '' : 'none';
   }
 
   function renderMostPopular(data) {
     const popularList = document.getElementById('most-popular-list');
     if (!popularList) return;
-    popularList.innerHTML = '';
-
-    const popularItems = data.slice(0, 5);
-    popularItems.forEach((item, index) => {
-      const articleId = item.id !== undefined ? item.id : index;
-      const itemTitle = item.title || '無標題文章';
-      
-      // 熱門排行榜中的「專題採訪」標籤
-      let badgeHtml = '';
-
+    popularList.replaceChildren();
+    data.slice(0, 5).forEach((item, index) => {
       const li = document.createElement('li');
       li.className = 'border-b border-gray-100 hover:bg-gray-50';
-      li.innerHTML = `
-        <a class="text-base font-bold px-6 py-3 flex flex-row items-center hover:text-red-600" href="${ARTICLE_PAGE}?id=${articleId}">
-          ${badgeHtml}<span class="truncate">${itemTitle}</span>
-        </a>
-      `;
+      const link = document.createElement('a');
+      link.className = 'text-base font-bold px-6 py-3 flex flex-row items-center hover:text-red-600';
+      link.href = getArticleUrl(item, index);
+      const badgeHtml = '';
+      if (badgeHtml) link.insertAdjacentHTML('beforeend', badgeHtml);
+      const title = document.createElement('span');
+      title.className = 'truncate';
+      title.textContent = item.title || '無標題文章';
+      link.appendChild(title);
+      li.appendChild(link);
       popularList.appendChild(li);
     });
   }

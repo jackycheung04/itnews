@@ -2,11 +2,17 @@ name: Auto Update IT News
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天香港時間早上 8 點自動執行
-  workflow_dispatch:      # 允許手動點擊按鈕測試
+    - cron: '0 0 * * *'  # 每天香港時間早上 8 點完整更新 AI 新聞
+  workflow_dispatch:      # 允許手動執行完整新聞更新
+  push:
+    paths:
+      - 'data/manual_articles/**'
+      - 'data/insights_manual_articles/**'
+      - 'data/spotlight_manual_articles/**'
 
 jobs:
   update-news:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: 1. 取得專案程式碼
@@ -20,15 +26,51 @@ jobs:
       - name: 3. 安裝必要套件
         run: pip install requests feedparser google-genai beautifulsoup4
 
-      - name: 4. 執行 AI 抓新聞腳本
+      - name: 4. 執行完整 AI 新聞更新
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update_news.py
 
-      - name: 5. 自動儲存至 GitHub
+      - name: 5. 儲存更新結果至 GitHub
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "🤖 AI 自動更新 IT 新聞" || exit 0
-          git push
+          git add data/news.json data/archive-index.json articles
+          if git diff --cached --quiet; then
+            echo "沒有需要提交的更新。"
+          else
+            git commit -m "🤖 AI 自動更新 IT 新聞"
+            git push
+          fi
+
+  sync-manual-archive:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. 取得專案程式碼
+        uses: actions/checkout@v3
+
+      - name: 2. 安裝 Python 環境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. 安裝必要套件
+        run: pip install requests feedparser google-genai beautifulsoup4
+
+      - name: 4. 同步 Pages CMS 手動文章（不抓取 RSS 或呼叫生成式 AI）
+        env:
+          ARCHIVE_SYNC_ONLY: '1'
+        run: python update_news.py
+
+      - name: 5. 儲存手動文章同步結果至 GitHub
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/news.json data/archive-index.json articles
+          if git diff --cached --quiet; then
+            echo "沒有需要提交的手動文章同步更新。"
+          else
+            git commit -m "📝 同步 Pages CMS 文章至永久文章庫"
+            git push
+          fi
