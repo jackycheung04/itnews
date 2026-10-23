@@ -1,12 +1,14 @@
 ---
-title: About EPICReach
+title: 關於 EPICReach
 ---
-### **About EPICReach** 
+### **關於 EPICReach**
 
-**EPICReach** is a digital publication exploring the stories, innovations, and ideas shaping our digital future. 
+**EPICReach** ，專注剖析科技浪潮的新人新事，著重介紹初創(Start Up)、投資者，以及科技企業旳技術與商業模式。EPICReach直擊核心科技技術與商業痛點，發掘數碼轉型、智能體經濟與新興生態中，真正具備實質影響力的創新故事、生存智慧與實踐路徑。
 
-Our Mission We aim to uncover meaningful developments in technology, business, innovation, and digital transformation. 
+- **AIGC 與智能體經濟：** 探索人工智能如何賦能個人與精簡團隊，重塑未來工作方式、協同工作流與組織形態。
+- **科技與商業創新：** 聚焦深科技、數字金融（如合規穩定幣與 RWA 代幣化）及實幹型初創的真實發展。
+- **跨境生態與出海：** 追蹤香港作為超級聯繫人，連結大灣區至中東、東盟等「出海新走廊」的宏觀機遇。
 
-What We Cover Technology, artificial intelligence, digital transformation, business innovation, startups, investment, and emerging digital ecosystems. 
+### 聯絡我們
 
-Contact Us For enquiries, collaboration opportunities, or other questions, please visit our Contact Us page.
+如欲查詢、尋求媒體合作或有任何專業交流，歡迎瀏覽「聯絡我們」頁面，與我們攜手探索數碼未來的無限可能。
