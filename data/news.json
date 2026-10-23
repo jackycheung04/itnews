@@ -19,6 +19,25 @@
     "id": 0
   },
   {
+    "title": "一人成軍：解碼 2026 CVCF 的「一人企業」（OPC）與 AI 原生創業潮",
+    "subtitle": "",
+    "image_caption": "",
+    "author": "余晴",
+    "date": "2026-10-22",
+    "summary": "過去在香港談到創業，總脫離不了「租辦公室、組成 10 人團隊」的既定印象。然而，翻開 2026 年數碼港創業投資論壇（CVCF）的最新議程，顛覆傳統的全新概念正躍居核心舞台——「一人企業」（One-Person Company, OPC）與...",
+    "content": "過去在香港談到創業，總脫離不了「租辦公室、組成 10 人團隊」的既定印象。然而，翻開 2026 年數碼港創業投資論壇（CVCF）的最新議程，顛覆傳統的全新概念正躍居核心舞台——「一人企業」（One-Person Company, OPC）與智能體經濟（Agentic Economy）。\n\n這項變革最令人興奮，正是徹底打破了「團隊規模等於企業產值」的舊有迷思。為什麼 2026 年是「一人企業」（OPC）的爆發元年？綜合今屆 CVCF 關於創業新形態與智能體經濟的深度討論，AI 原生創業正迎來三大結構性轉變：\n\n邊際成本歸零：AI 智能體解鎖個人極限\n\n隨著 AI 智能體（AI Agents）與實時推理技術成為日常基礎設施，獨立創辦人能夠高效整合超越其個人時間與專業範疇的商業能力。從市場調查研究、產品開發到交付營運，AI 智能體逐步承擔起繁複任務。獨立創辦人透過 AI 協同，隨時足以創造昔日中型團隊的產值。\n\n營運模式重塑：AI 原生創業與循環收入\n\nOPC 不再只是孤軍奮戰的自由工作者，而是透過平台生態與企業協作，在更廣闊的經濟體系中確立定位。創辦人能專注於包裝核心專業能力與開拓客戶群，並構建可持續的循環收入模式。\n\n數碼支付與鏈上基建：無縫融入全球經濟網絡\n\n數碼支付、產權及鏈上基礎設施為一人企業提供了流暢的價值交換工具。即使極度精實的小型團隊也能跨越地域限制，直接參與全球規模的商業協作與結算。\n\n精實創業的終極形態\n\n以 2026 年 CVCF 議程所展現的趨勢來看，當團隊邊際成本大幅降低，傳統的創業與擴張模式正被全面重寫。對於新一代的技術創辦人而言，辦公室規模不再是實力的證明，如何善用 AI 原生的工作流與線上基礎設施，打造出屬於自己的「一人企業」，正是這個時代最強大的生存密碼。",
+    "image": "src/img/opc-epic-reach.jpeg",
+    "category": "BizTech",
+    "source": "BizTech 原創",
+    "is_pinned": false,
+    "is_manual": true,
+    "link": "manual_2026-cvcf-opc-ai.json",
+    "_archive_key": "manual:data/manual_articles/2026-cvcf-opc-ai",
+    "stable_id": "a-c994b3aa2e91ece58b49",
+    "permalink": "/articles/a-c994b3aa2e91ece58b49.html",
+    "id": 1
+  },
+  {
     "title": "對企業而言，謹慎的AI時代已經開啟。",
     "subtitle": "隨著成本、政策問題和人才問題的不斷累積，人工智慧領域「全力以赴、不加煞車」的做法正被更務實的策略所取代。",
     "image_caption": "",
@@ -35,7 +54,7 @@
     "_archive_key": "manual:data/manual_articles/ai",
     "stable_id": "a-3fe3d3ce37ab9b13a81a",
     "permalink": "/articles/a-3fe3d3ce37ab9b13a81a.html",
-    "id": 1
+    "id": 2
   },
   {
     "title": "Applied Intuition 實現產品市場契合的路徑——這位市值 150 億美元的創辦人打造成功公司的秘訣",
@@ -54,7 +73,7 @@
     "_archive_key": "manual:data/insights_manual_articles/applied-intuition-150-yuan",
     "stable_id": "a-fa3d1ecb307f16fa6c3b",
     "permalink": "/articles/a-fa3d1ecb307f16fa6c3b.html",
-    "id": 2
+    "id": 3
   },
   {
     "title": "新一代重塑創意未來 釋放 AIGC 跨領域潛力",
@@ -73,7 +92,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-aigc",
     "stable_id": "a-66cd8291c7980f122078",
     "permalink": "/articles/a-66cd8291c7980f122078.html",
-    "id": 3
+    "id": 4
   },
   {
     "title": "中大破解幽門螺旋菌「自我保護」機制 首揭鎳離子精準運輸機制",
@@ -92,7 +111,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12--2",
     "stable_id": "a-63d0aa37b40c911034e5",
     "permalink": "/articles/a-63d0aa37b40c911034e5.html",
-    "id": 4
+    "id": 5
   },
   {
     "title": "香港科大與自閉症中心成立「自閉症數據聯盟」 以AI破解診斷瓶頸 助千萬家庭跨境協作",
@@ -111,7 +130,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-ai-1",
     "stable_id": "a-163afe4671dded3981e0",
     "permalink": "/articles/a-163afe4671dded3981e0.html",
-    "id": 5
+    "id": 6
   },
   {
     "title": "AI 攻防進入「機器速度」時代　Fortinet：企業須兼顧 AI 賦能保安與 AI 保安管治",
@@ -130,7 +149,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-ai-fortinet-ai-ai",
     "stable_id": "a-2d2ad4254ad08b75a96e",
     "permalink": "/articles/a-2d2ad4254ad08b75a96e.html",
-    "id": 6
+    "id": 7
   },
   {
     "title": "穗港新質生產力賦能中心揭牌 促兩地科創融合",
@@ -149,7 +168,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-",
     "stable_id": "a-066243cdb4e03b71f283",
     "permalink": "/articles/a-066243cdb4e03b71f283.html",
-    "id": 7
+    "id": 8
   },
   {
     "title": "科技園與中電舉辦住宅電氣化研討會 探討減碳路徑",
@@ -168,7 +187,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12--1",
     "stable_id": "a-22dc23da59845c952b45",
     "permalink": "/articles/a-22dc23da59845c952b45.html",
-    "id": 8
+    "id": 9
   },
   {
     "title": "數碼港論壇探討 AI 推動創意產業轉型",
@@ -187,7 +206,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-ai",
     "stable_id": "a-8058c7e90cc819fd406f",
     "permalink": "/articles/a-8058c7e90cc819fd406f.html",
-    "id": 9
+    "id": 10
   },
   {
     "title": "新一代重塑創意未來 釋放 AIGC 跨領域潛力",
@@ -206,7 +225,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/aigc",
     "stable_id": "a-9fe104a1dbfd13098946",
     "permalink": "/articles/a-9fe104a1dbfd13098946.html",
-    "id": 10
+    "id": 11
   },
   {
     "title": "數碼港論壇探討 AI 推動創意產業轉型",
@@ -225,7 +244,7 @@
     "_archive_key": "manual:data/spotlight_manual_articles/ai",
     "stable_id": "a-a7b20ea3d24332b4fe18",
     "permalink": "/articles/a-a7b20ea3d24332b4fe18.html",
-    "id": 11
+    "id": 12
   },
   {
     "title": "如何避免公司陷入溝通危機",
@@ -244,7 +263,7 @@
     "_archive_key": "manual:data/insights_manual_articles/insights",
     "stable_id": "a-789e043c2dab70e2f2e1",
     "permalink": "/articles/a-789e043c2dab70e2f2e1.html",
-    "id": 12
+    "id": 13
   },
   {
     "title": "新一代重塑創意未來 釋放 AIGC 跨領域潛力",
@@ -263,7 +282,7 @@
     "_archive_key": "manual:data/manual_articles/biztech",
     "stable_id": "a-15cc411e600b55922afe",
     "permalink": "/articles/a-15cc411e600b55922afe.html",
-    "id": 13
+    "id": 14
   },
   {
     "title": "當AIagent放假去：MIT將13個Claude丟上虛擬孤島，竟意外學會「遊戲」與跳級技能",
@@ -274,7 +293,7 @@
     "date": "Fri, 23 Oct 2026 00:45:37 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 14,
+    "id": 15,
     "stable_id": "a-0e096c0addc47043a073",
     "permalink": "/articles/a-0e096c0addc47043a073.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
@@ -288,7 +307,7 @@
     "date": "Thu, 22 Oct 2026 23:50:41 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 15,
+    "id": 16,
     "stable_id": "a-cd2b48ca83345c1a3e39",
     "permalink": "/articles/a-cd2b48ca83345c1a3e39.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/"
@@ -302,7 +321,7 @@
     "date": "Thu, 22 Oct 2026 23:15:00 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 16,
+    "id": 17,
     "stable_id": "a-6a8336044684cba566f5",
     "permalink": "/articles/a-6a8336044684cba566f5.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/"
@@ -316,7 +335,7 @@
     "date": "Thu, 22 Oct 2026 22:08:24 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 17,
+    "id": 18,
     "stable_id": "a-1df9bc9ffbf9cda2516e",
     "permalink": "/articles/a-1df9bc9ffbf9cda2516e.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
@@ -330,7 +349,7 @@
     "date": "Thu, 22 Oct 2026 20:00:00 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 18,
+    "id": 19,
     "stable_id": "a-f2a532ad52d6e1efc2e6",
     "permalink": "/articles/a-f2a532ad52d6e1efc2e6.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/22/the-secret-to-fast-startup-growth-isnt-early-sales-top-names-in-tech-say/"
@@ -344,7 +363,7 @@
     "date": "Thu, 22 Oct 2026 18:38:47 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 19,
+    "id": 20,
     "stable_id": "a-109878dc96e93e59df1d",
     "permalink": "/articles/a-109878dc96e93e59df1d.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/22/former-openai-science-lead-launches-warp-science-to-automate-wet-labs-with-robots/"
@@ -358,7 +377,7 @@
     "date": "Thu, 22 Oct 2026 16:15:00 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 20,
+    "id": 21,
     "stable_id": "a-1582da8691c339bf8664",
     "permalink": "/articles/a-1582da8691c339bf8664.html",
     "_archive_key": "rss:https://www.ciodive.com/news/jpmorgan-chase-goldman-sachs-AI-security/833764/"
@@ -372,7 +391,7 @@
     "date": "Thu, 22 Oct 2026 14:28:00 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 21,
+    "id": 22,
     "stable_id": "a-454f57be24ca7dd705ff",
     "permalink": "/articles/a-454f57be24ca7dd705ff.html",
     "_archive_key": "rss:https://www.ciodive.com/news/agentic-ai-cyberattacks-harnesses-crowdstrike/833739/"
@@ -386,7 +405,7 @@
     "date": "Thu, 22 Oct 2026 07:00:00 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 22,
+    "id": 23,
     "stable_id": "a-beb42a9aee550f204b28",
     "permalink": "/articles/a-beb42a9aee550f204b28.html",
     "_archive_key": "rss:https://www.ciodive.com/news/cognizant-google-cloud-gemini-ai-forward-deployed-engineers/833647/"
@@ -400,7 +419,7 @@
     "date": "Thu, 22 Oct 2026 18:56:43 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 23,
+    "id": 24,
     "stable_id": "a-d9f4359113992e38e88a",
     "permalink": "/articles/a-d9f4359113992e38e88a.html",
     "_archive_key": "rss:https://sifted.eu/articles/palantir-louis-mosley-european-tech-sovereignty/"
@@ -414,7 +433,7 @@
     "date": "Thu, 22 Oct 2026 16:49:43 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 24,
+    "id": 25,
     "stable_id": "a-135ccf262f1504bdabd6",
     "permalink": "/articles/a-135ccf262f1504bdabd6.html",
     "_archive_key": "rss:https://sifted.eu/articles/aaron-rosenberg-radical-ventures-podcast/"
@@ -428,7 +447,7 @@
     "date": "Thu, 22 Oct 2026 05:00:56 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 25,
+    "id": 26,
     "stable_id": "a-172261ca8c1837866500",
     "permalink": "/articles/a-172261ca8c1837866500.html",
     "_archive_key": "rss:https://sifted.eu/articles/irelands-ai-scene/"
@@ -442,7 +461,7 @@
     "date": "Thu, 22 Oct 2026 00:17:54 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 26,
+    "id": 27,
     "stable_id": "a-22a55f84a7be0830ff0f",
     "permalink": "/articles/a-22a55f84a7be0830ff0f.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/21/tesla-says-it-will-start-selling-cybercabs-by-end-of-year/"
@@ -456,7 +475,7 @@
     "date": "Wed, 21 Oct 2026 22:51:22 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 27,
+    "id": 28,
     "stable_id": "a-4a1ae3eab8c04e7eeb55",
     "permalink": "/articles/a-4a1ae3eab8c04e7eeb55.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/"
@@ -470,7 +489,7 @@
     "date": "Wed, 21 Oct 2026 22:45:34 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 28,
+    "id": 29,
     "stable_id": "a-73683c5019217f46744a",
     "permalink": "/articles/a-73683c5019217f46744a.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/"
@@ -484,7 +503,7 @@
     "date": "Wed, 21 Oct 2026 21:16:20 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 29,
+    "id": 30,
     "stable_id": "a-93113caa7f84d7311c28",
     "permalink": "/articles/a-93113caa7f84d7311c28.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/"
@@ -498,7 +517,7 @@
     "date": "Wed, 21 Oct 2026 20:57:40 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 30,
+    "id": 31,
     "stable_id": "a-f0591db04ac458138a23",
     "permalink": "/articles/a-f0591db04ac458138a23.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/"
@@ -512,7 +531,7 @@
     "date": "Wed, 21 Oct 2026 18:51:56 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 31,
+    "id": 32,
     "stable_id": "a-db6fb4d02dd095f14700",
     "permalink": "/articles/a-db6fb4d02dd095f14700.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/"
@@ -526,7 +545,7 @@
     "date": "Wed, 21 Oct 2026 15:53:00 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 32,
+    "id": 33,
     "stable_id": "a-6b876e7370dac1ba98b1",
     "permalink": "/articles/a-6b876e7370dac1ba98b1.html",
     "_archive_key": "rss:https://www.ciodive.com/news/5-tech-trends-cios-architect/833649/"
@@ -540,7 +559,7 @@
     "date": "Wed, 21 Oct 2026 10:09:06 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 33,
+    "id": 34,
     "stable_id": "a-f74fd6edd4e3f640d929",
     "permalink": "/articles/a-f74fd6edd4e3f640d929.html",
     "_archive_key": "rss:https://www.ciodive.com/news/CIOs-brace-higher-memory-costs-2027-global-it-spend-hike/833579/"
@@ -554,7 +573,7 @@
     "date": "Wed, 21 Oct 2026 07:00:00 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 34,
+    "id": 35,
     "stable_id": "a-31498480e61f2205809a",
     "permalink": "/articles/a-31498480e61f2205809a.html",
     "_archive_key": "rss:https://www.ciodive.com/news/corporate-boards-cybersecurity-ai-oversight-bdo/833523/"
@@ -568,7 +587,7 @@
     "date": "Wed, 21 Oct 2026 14:23:23 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 35,
+    "id": 36,
     "stable_id": "a-ce32eb020ca01e2e3606",
     "permalink": "/articles/a-ce32eb020ca01e2e3606.html",
     "_archive_key": "rss:https://sifted.eu/articles/former-h-company-cto-seeks-30m-for-new-startup/"
@@ -582,7 +601,7 @@
     "date": "Wed, 21 Oct 2026 14:14:55 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 36,
+    "id": 37,
     "stable_id": "a-07187d642704058de7b4",
     "permalink": "/articles/a-07187d642704058de7b4.html",
     "_archive_key": "rss:https://sifted.eu/articles/legora-funding-round-series-e-legal-tech/"
@@ -596,7 +615,7 @@
     "date": "Wed, 21 Oct 2026 10:40:47 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 37,
+    "id": 38,
     "stable_id": "a-a11a6d8abdeb1245155f",
     "permalink": "/articles/a-a11a6d8abdeb1245155f.html",
     "_archive_key": "rss:https://sifted.eu/articles/personal-ai-assistants/"
@@ -610,7 +629,7 @@
     "date": "Tue, 20 Oct 2026 23:01:23 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 38,
+    "id": 39,
     "stable_id": "a-1fb6fd3c610123162711",
     "permalink": "/articles/a-1fb6fd3c610123162711.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
@@ -624,7 +643,7 @@
     "date": "Tue, 20 Oct 2026 22:57:57 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 39,
+    "id": 40,
     "stable_id": "a-048a2c7307aec808350c",
     "permalink": "/articles/a-048a2c7307aec808350c.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/"
@@ -638,7 +657,7 @@
     "date": "Tue, 20 Oct 2026 22:24:02 +0000",
     "category": "Pulse",
     "is_manual": false,
-    "id": 40,
+    "id": 41,
     "stable_id": "a-132bf806492139602bd8",
     "permalink": "/articles/a-132bf806492139602bd8.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/"
@@ -652,7 +671,7 @@
     "date": "Tue, 20 Oct 2026 17:55:12 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 41,
+    "id": 42,
     "stable_id": "a-ba7f2c9ec6090f2d5243",
     "permalink": "/articles/a-ba7f2c9ec6090f2d5243.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/"
@@ -666,7 +685,7 @@
     "date": "Mon, 19 Oct 2026 07:30:00 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 42,
+    "id": 43,
     "stable_id": "a-ecb2d1c3cc9f3a42cf87",
     "permalink": "/articles/a-ecb2d1c3cc9f3a42cf87.html",
     "_archive_key": "rss:https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/"
@@ -680,7 +699,7 @@
     "date": "Fri, 16 Oct 2026 16:30:00 +0000",
     "category": "Ecosystem",
     "is_manual": false,
-    "id": 43,
+    "id": 44,
     "stable_id": "a-50d78af934332a92c7f7",
     "permalink": "/articles/a-50d78af934332a92c7f7.html",
     "_archive_key": "rss:https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/"
@@ -694,7 +713,7 @@
     "date": "Tue, 20 Oct 2026 16:05:57 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 44,
+    "id": 45,
     "stable_id": "a-06ff7a797c89f41cf13f",
     "permalink": "/articles/a-06ff7a797c89f41cf13f.html",
     "_archive_key": "rss:https://www.ciodive.com/news/kraft-group-CIO-AI-trust/833529/"
@@ -708,7 +727,7 @@
     "date": "Tue, 20 Oct 2026 13:07:15 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 45,
+    "id": 46,
     "stable_id": "a-973973c55c6485725e82",
     "permalink": "/articles/a-973973c55c6485725e82.html",
     "_archive_key": "rss:https://www.ciodive.com/news/alaska-airlines-taps-cvs-health-exec-new-tech-role/833493/"
@@ -722,7 +741,7 @@
     "date": "Tue, 20 Oct 2026 08:00:00 -0400",
     "category": "BizTech",
     "is_manual": false,
-    "id": 46,
+    "id": 47,
     "stable_id": "a-020c1e3a638a569aa119",
     "permalink": "/articles/a-020c1e3a638a569aa119.html",
     "_archive_key": "rss:https://www.ciodive.com/news/ai-billing-spikes-threaten-businesses-operational-strain/833397/"
@@ -736,7 +755,7 @@
     "date": "Tue, 20 Oct 2026 21:02:11 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 47,
+    "id": 48,
     "stable_id": "a-7d6a49afd76361f40959",
     "permalink": "/articles/a-7d6a49afd76361f40959.html",
     "_archive_key": "rss:https://sifted.eu/articles/starling-founder-anne-boden-sold-final-stake-at-cut-price-1-7bn-valuation-reports-say/"
@@ -750,23 +769,9 @@
     "date": "Tue, 20 Oct 2026 14:28:27 GMT",
     "category": "Insights",
     "is_manual": false,
-    "id": 48,
+    "id": 49,
     "stable_id": "a-e3428a3401130af5b4cc",
     "permalink": "/articles/a-e3428a3401130af5b4cc.html",
     "_archive_key": "rss:https://sifted.eu/articles/nvidia-germany-europe-uk-france-jensen-huang-invests/"
-  },
-  {
-    "title": "規模才是真正的入場券：歐洲金融科技界正掀起「交易基礎模型」AI 競賽",
-    "summary": "歐洲金融科技巨頭如 Starling、Revolut 與 Lendable 紛紛投入開發自家的「交易基礎模型」（TFM），透過 Nvidia 技術與海量數據在 AI 時代建立競爭壁壘。",
-    "content": "歐洲金融科技產業正在經歷一場由人工智慧驅動的新軍備競賽。上週，英國數位銀行 Starling 成為最新一家宣佈與 Nvidia 合作的歐洲金融科技公司，其核心目標是建立所謂的「交易基礎模型」（TFM），這項發展預示著 TFM 的普及可能徹底重塑歐洲金融科技市場的競爭格局。\n\n在此之前，市場上已有 Revolut 和 Lendable 等業者著手打造專屬的交易基礎模型。Nvidia 企業人工智慧部門金融科技策略與業務發展主管 Matt Amtower 指出，金融科技公司正透過這些強大的模型，將傳統資料與交易、財務記錄、客戶支援互動及法規遵循等多維度數據進行深度整合，進而創造出極具競爭力的精準洞察。\n\n然而，這類技術的研發成本極高，規模也成為新進者的最高門檻。例如，巴西金融巨頭 Nubank 在 AI 領域投入甚早，其在 2024 年第四季的財報中便指出，該公司利用自家非生成式 AI 模型服務了約 9700 萬名活躍客戶中的 5200 萬人。同時，如 Starling 等業者也透過與技術巨頭的合作，積極將 AI 應用於反洗錢、風險管理與客戶服務等核心業務，力求在效率與安全性上取得突破。\n\n儘管 TFM 展現出強大的自動化潛力與優化營運的商機，但業界專家也提醒，這類高度依賴專有數據的模型在實施過程中仍面臨不少挑戰。除了技術整合的複雜度外，如何確保模型在處理龐大交易時的穩定性與準確性，依然是各家金融科技公司必須審慎應對的課題。\n\n資深記者分析指出，從 Revolut、Lendable 到 Starling 的相繼投入來看，歐洲金融科技界對 AI 的依賴已從過去的表面應用，深入到核心交易架構的重塑。然而，由於 TFM 的開發高度取決於龐大的用戶規模與數據累積，未來小型新創公司要在這一領域挑戰既有巨頭，其難度恐將隨著技術壁壘的堆高而變得更加嚴峻。",
-    "link": "https://sifted.eu/articles/transactional-foundation-models/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/20100249/fintech-ai-1-scaled.png",
-    "date": "Tue, 20 Oct 2026 11:00:53 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "id": 49,
-    "stable_id": "a-de117340718df6c195db",
-    "permalink": "/articles/a-de117340718df6c195db.html",
-    "_archive_key": "rss:https://sifted.eu/articles/transactional-foundation-models/"
   }
 ]
