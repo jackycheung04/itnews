@@ -10,7 +10,7 @@
     "image": "src/img/epic-reach-opc-1.png",
     "category": "BizTech",
     "source": "BizTech 原創",
-    "is_pinned": false,
+    "is_pinned": true,
     "is_manual": true,
     "link": "manual_cvcf.json",
     "_archive_key": "manual:data/manual_articles/cvcf",
