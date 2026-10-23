@@ -10,20 +10,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-  },
-  {
-    "stable_id": "a-f12055ee25684898b620",
-    "title": "2026 CVCF 推進創業新規律",
-    "summary": "留給OPC創業者的思考",
-    "image": "src/img/epic-reach-opc.png",
-    "date": "2026-10-23",
-    "category": "BizTech",
-    "permalink": "/articles/a-f12055ee25684898b620.html",
-    "author": "余晴",
-    "source": "BizTech 原創",
-    "is_manual": true,
-    "link": "manual_2026-cvcf.json"
+    "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+    "source_path": ""
   },
   {
     "stable_id": "a-57254dd3cb9775a454c9",
@@ -36,7 +24,8 @@
     "author": "余晴",
     "source": "BizTech 原創",
     "is_manual": true,
-    "link": "manual_cvcf.json"
+    "link": "manual_cvcf.json",
+    "source_path": "data/manual_articles/cvcf.json"
   },
   {
     "stable_id": "a-cd2b48ca83345c1a3e39",
@@ -49,7 +38,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/"
+    "link": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/",
+    "source_path": ""
   },
   {
     "stable_id": "a-6a8336044684cba566f5",
@@ -62,7 +52,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/"
+    "link": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
+    "source_path": ""
   },
   {
     "stable_id": "a-1df9bc9ffbf9cda2516e",
@@ -75,7 +66,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+    "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+    "source_path": ""
   },
   {
     "stable_id": "a-1582da8691c339bf8664",
@@ -88,7 +80,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/jpmorgan-chase-goldman-sachs-AI-security/833764/"
+    "link": "https://www.ciodive.com/news/jpmorgan-chase-goldman-sachs-AI-security/833764/",
+    "source_path": ""
   },
   {
     "stable_id": "a-f2a532ad52d6e1efc2e6",
@@ -101,7 +94,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/22/the-secret-to-fast-startup-growth-isnt-early-sales-top-names-in-tech-say/"
+    "link": "https://techcrunch.com/2026/10/22/the-secret-to-fast-startup-growth-isnt-early-sales-top-names-in-tech-say/",
+    "source_path": ""
   },
   {
     "stable_id": "a-d9f4359113992e38e88a",
@@ -114,7 +108,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/palantir-louis-mosley-european-tech-sovereignty/"
+    "link": "https://sifted.eu/articles/palantir-louis-mosley-european-tech-sovereignty/",
+    "source_path": ""
   },
   {
     "stable_id": "a-109878dc96e93e59df1d",
@@ -127,7 +122,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/22/former-openai-science-lead-launches-warp-science-to-automate-wet-labs-with-robots/"
+    "link": "https://techcrunch.com/2026/10/22/former-openai-science-lead-launches-warp-science-to-automate-wet-labs-with-robots/",
+    "source_path": ""
   },
   {
     "stable_id": "a-454f57be24ca7dd705ff",
@@ -140,7 +136,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/agentic-ai-cyberattacks-harnesses-crowdstrike/833739/"
+    "link": "https://www.ciodive.com/news/agentic-ai-cyberattacks-harnesses-crowdstrike/833739/",
+    "source_path": ""
   },
   {
     "stable_id": "a-135ccf262f1504bdabd6",
@@ -153,7 +150,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/aaron-rosenberg-radical-ventures-podcast/"
+    "link": "https://sifted.eu/articles/aaron-rosenberg-radical-ventures-podcast/",
+    "source_path": ""
   },
   {
     "stable_id": "a-5fc1df566f80d32cf8da",
@@ -205,7 +203,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/cognizant-google-cloud-gemini-ai-forward-deployed-engineers/833647/"
+    "link": "https://www.ciodive.com/news/cognizant-google-cloud-gemini-ai-forward-deployed-engineers/833647/",
+    "source_path": ""
   },
   {
     "stable_id": "a-172261ca8c1837866500",
@@ -218,7 +217,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/irelands-ai-scene/"
+    "link": "https://sifted.eu/articles/irelands-ai-scene/",
+    "source_path": ""
   },
   {
     "stable_id": "a-134ba425f0fb06043647",
@@ -257,7 +257,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/21/tesla-says-it-will-start-selling-cybercabs-by-end-of-year/"
+    "link": "https://techcrunch.com/2026/10/21/tesla-says-it-will-start-selling-cybercabs-by-end-of-year/",
+    "source_path": ""
   },
   {
     "stable_id": "a-c994b3aa2e91ece58b49",
@@ -270,7 +271,8 @@
     "author": "余晴",
     "source": "BizTech 原創",
     "is_manual": true,
-    "link": "manual_2026-cvcf-opc-ai.json"
+    "link": "manual_2026-cvcf-opc-ai.json",
+    "source_path": "data/manual_articles/2026-cvcf-opc-ai.json"
   },
   {
     "stable_id": "a-4a1ae3eab8c04e7eeb55",
@@ -283,7 +285,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/"
+    "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+    "source_path": ""
   },
   {
     "stable_id": "a-73683c5019217f46744a",
@@ -296,7 +299,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/"
+    "link": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+    "source_path": ""
   },
   {
     "stable_id": "a-93113caa7f84d7311c28",
@@ -309,7 +313,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/"
+    "link": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+    "source_path": ""
   },
   {
     "stable_id": "a-f0591db04ac458138a23",
@@ -322,7 +327,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/"
+    "link": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+    "source_path": ""
   },
   {
     "stable_id": "a-6b876e7370dac1ba98b1",
@@ -335,7 +341,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/5-tech-trends-cios-architect/833649/"
+    "link": "https://www.ciodive.com/news/5-tech-trends-cios-architect/833649/",
+    "source_path": ""
   },
   {
     "stable_id": "a-db6fb4d02dd095f14700",
@@ -348,7 +355,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/"
+    "link": "https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/",
+    "source_path": ""
   },
   {
     "stable_id": "a-ce32eb020ca01e2e3606",
@@ -361,7 +369,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/former-h-company-cto-seeks-30m-for-new-startup/"
+    "link": "https://sifted.eu/articles/former-h-company-cto-seeks-30m-for-new-startup/",
+    "source_path": ""
   },
   {
     "stable_id": "a-07187d642704058de7b4",
@@ -374,7 +383,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/legora-funding-round-series-e-legal-tech/"
+    "link": "https://sifted.eu/articles/legora-funding-round-series-e-legal-tech/",
+    "source_path": ""
   },
   {
     "stable_id": "a-f74fd6edd4e3f640d929",
@@ -387,7 +397,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/CIOs-brace-higher-memory-costs-2027-global-it-spend-hike/833579/"
+    "link": "https://www.ciodive.com/news/CIOs-brace-higher-memory-costs-2027-global-it-spend-hike/833579/",
+    "source_path": ""
   },
   {
     "stable_id": "a-31498480e61f2205809a",
@@ -400,7 +411,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/corporate-boards-cybersecurity-ai-oversight-bdo/833523/"
+    "link": "https://www.ciodive.com/news/corporate-boards-cybersecurity-ai-oversight-bdo/833523/",
+    "source_path": ""
   },
   {
     "stable_id": "a-a11a6d8abdeb1245155f",
@@ -413,7 +425,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/personal-ai-assistants/"
+    "link": "https://sifted.eu/articles/personal-ai-assistants/",
+    "source_path": ""
   },
   {
     "stable_id": "a-1fb6fd3c610123162711",
@@ -426,7 +439,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+    "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+    "source_path": ""
   },
   {
     "stable_id": "a-048a2c7307aec808350c",
@@ -439,7 +453,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/"
+    "link": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
+    "source_path": ""
   },
   {
     "stable_id": "a-132bf806492139602bd8",
@@ -452,7 +467,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/"
+    "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+    "source_path": ""
   },
   {
     "stable_id": "a-7d6a49afd76361f40959",
@@ -465,7 +481,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/starling-founder-anne-boden-sold-final-stake-at-cut-price-1-7bn-valuation-reports-say/"
+    "link": "https://sifted.eu/articles/starling-founder-anne-boden-sold-final-stake-at-cut-price-1-7bn-valuation-reports-say/",
+    "source_path": ""
   },
   {
     "stable_id": "a-06ff7a797c89f41cf13f",
@@ -478,7 +495,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/kraft-group-CIO-AI-trust/833529/"
+    "link": "https://www.ciodive.com/news/kraft-group-CIO-AI-trust/833529/",
+    "source_path": ""
   },
   {
     "stable_id": "a-ba7f2c9ec6090f2d5243",
@@ -491,7 +509,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/"
+    "link": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
+    "source_path": ""
   },
   {
     "stable_id": "a-973973c55c6485725e82",
@@ -504,7 +523,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/alaska-airlines-taps-cvs-health-exec-new-tech-role/833493/"
+    "link": "https://www.ciodive.com/news/alaska-airlines-taps-cvs-health-exec-new-tech-role/833493/",
+    "source_path": ""
   },
   {
     "stable_id": "a-e3428a3401130af5b4cc",
@@ -517,7 +537,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://sifted.eu/articles/nvidia-germany-europe-uk-france-jensen-huang-invests/"
+    "link": "https://sifted.eu/articles/nvidia-germany-europe-uk-france-jensen-huang-invests/",
+    "source_path": ""
   },
   {
     "stable_id": "a-020c1e3a638a569aa119",
@@ -530,7 +551,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://www.ciodive.com/news/ai-billing-spikes-threaten-businesses-operational-strain/833397/"
+    "link": "https://www.ciodive.com/news/ai-billing-spikes-threaten-businesses-operational-strain/833397/",
+    "source_path": ""
   },
   {
     "stable_id": "a-de117340718df6c195db",
@@ -569,7 +591,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/"
+    "link": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/",
+    "source_path": ""
   },
   {
     "stable_id": "a-0c1ffadc8d6d31f5dcad",
@@ -725,7 +748,8 @@
     "author": "",
     "source": "",
     "is_manual": false,
-    "link": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/"
+    "link": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+    "source_path": ""
   },
   {
     "stable_id": "a-9096f1f6ffd4dbe111be",
@@ -1219,7 +1243,8 @@
     "author": "Patrick Cheung",
     "source": "BizTech 原創",
     "is_manual": true,
-    "link": "manual_ai.json"
+    "link": "manual_ai.json",
+    "source_path": "data/manual_articles/ai.json"
   },
   {
     "stable_id": "a-fa3d1ecb307f16fa6c3b",
@@ -1232,7 +1257,8 @@
     "author": "小編",
     "source": "Insights 原創",
     "is_manual": true,
-    "link": "manual_applied-intuition-150-yuan.json"
+    "link": "manual_applied-intuition-150-yuan.json",
+    "source_path": "data/insights_manual_articles/applied-intuition-150-yuan.json"
   },
   {
     "stable_id": "a-66cd8291c7980f122078",
@@ -1245,7 +1271,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12-aigc.md"
+    "link": "manual_2026-09-12-aigc.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12-aigc.md"
   },
   {
     "stable_id": "a-63d0aa37b40c911034e5",
@@ -1258,7 +1285,8 @@
     "author": "Cathy Yu",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12--2.md"
+    "link": "manual_2026-09-12--2.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12--2.md"
   },
   {
     "stable_id": "a-163afe4671dded3981e0",
@@ -1271,7 +1299,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12-ai-1.md"
+    "link": "manual_2026-09-12-ai-1.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12-ai-1.md"
   },
   {
     "stable_id": "a-2d2ad4254ad08b75a96e",
@@ -1284,7 +1313,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12-ai-fortinet-ai-ai.md"
+    "link": "manual_2026-09-12-ai-fortinet-ai-ai.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12-ai-fortinet-ai-ai.md"
   },
   {
     "stable_id": "a-066243cdb4e03b71f283",
@@ -1297,7 +1327,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12-.md"
+    "link": "manual_2026-09-12-.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12-.md"
   },
   {
     "stable_id": "a-22dc23da59845c952b45",
@@ -1310,7 +1341,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12--1.md"
+    "link": "manual_2026-09-12--1.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12--1.md"
   },
   {
     "stable_id": "a-8058c7e90cc819fd406f",
@@ -1323,7 +1355,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_2026-09-12-ai.md"
+    "link": "manual_2026-09-12-ai.md",
+    "source_path": "data/spotlight_manual_articles/2026-09-12-ai.md"
   },
   {
     "stable_id": "a-9fe104a1dbfd13098946",
@@ -1336,7 +1369,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_aigc.json"
+    "link": "manual_aigc.json",
+    "source_path": "data/spotlight_manual_articles/aigc.json"
   },
   {
     "stable_id": "a-a7b20ea3d24332b4fe18",
@@ -1349,7 +1383,8 @@
     "author": "Patrick Cheung",
     "source": "Spotlight 原創",
     "is_manual": true,
-    "link": "manual_ai.json"
+    "link": "manual_ai.json",
+    "source_path": "data/spotlight_manual_articles/ai.json"
   },
   {
     "stable_id": "a-789e043c2dab70e2f2e1",
@@ -1362,7 +1397,8 @@
     "author": "Patrick Cheung",
     "source": "Insights 原創",
     "is_manual": true,
-    "link": "manual_insights.json"
+    "link": "manual_insights.json",
+    "source_path": "data/insights_manual_articles/insights.json"
   },
   {
     "stable_id": "a-15cc411e600b55922afe",
@@ -1375,6 +1411,7 @@
     "author": "Patrick Cheung",
     "source": "BizTech 原創",
     "is_manual": true,
-    "link": "manual_biztech.json"
+    "link": "manual_biztech.json",
+    "source_path": "data/manual_articles/biztech.json"
   }
 ]

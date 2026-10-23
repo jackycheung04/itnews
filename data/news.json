@@ -14,6 +14,7 @@
     "is_manual": true,
     "link": "manual_cvcf.json",
     "_archive_key": "manual:data/manual_articles/cvcf",
+    "_source_path": "data/manual_articles/cvcf.json",
     "stable_id": "a-57254dd3cb9775a454c9",
     "permalink": "/articles/a-57254dd3cb9775a454c9.html",
     "id": 0
@@ -33,6 +34,7 @@
     "is_manual": true,
     "link": "manual_2026-cvcf-opc-ai.json",
     "_archive_key": "manual:data/manual_articles/2026-cvcf-opc-ai",
+    "_source_path": "data/manual_articles/2026-cvcf-opc-ai.json",
     "stable_id": "a-c994b3aa2e91ece58b49",
     "permalink": "/articles/a-c994b3aa2e91ece58b49.html",
     "id": 1
@@ -52,6 +54,7 @@
     "is_manual": true,
     "link": "manual_ai.json",
     "_archive_key": "manual:data/manual_articles/ai",
+    "_source_path": "data/manual_articles/ai.json",
     "stable_id": "a-3fe3d3ce37ab9b13a81a",
     "permalink": "/articles/a-3fe3d3ce37ab9b13a81a.html",
     "id": 2
@@ -71,6 +74,7 @@
     "is_manual": true,
     "link": "manual_applied-intuition-150-yuan.json",
     "_archive_key": "manual:data/insights_manual_articles/applied-intuition-150-yuan",
+    "_source_path": "data/insights_manual_articles/applied-intuition-150-yuan.json",
     "stable_id": "a-fa3d1ecb307f16fa6c3b",
     "permalink": "/articles/a-fa3d1ecb307f16fa6c3b.html",
     "id": 3
@@ -90,6 +94,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12-aigc.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-aigc",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12-aigc.md",
     "stable_id": "a-66cd8291c7980f122078",
     "permalink": "/articles/a-66cd8291c7980f122078.html",
     "id": 4
@@ -109,6 +114,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12--2.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12--2",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12--2.md",
     "stable_id": "a-63d0aa37b40c911034e5",
     "permalink": "/articles/a-63d0aa37b40c911034e5.html",
     "id": 5
@@ -128,6 +134,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12-ai-1.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-ai-1",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12-ai-1.md",
     "stable_id": "a-163afe4671dded3981e0",
     "permalink": "/articles/a-163afe4671dded3981e0.html",
     "id": 6
@@ -147,6 +154,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12-ai-fortinet-ai-ai.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-ai-fortinet-ai-ai",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12-ai-fortinet-ai-ai.md",
     "stable_id": "a-2d2ad4254ad08b75a96e",
     "permalink": "/articles/a-2d2ad4254ad08b75a96e.html",
     "id": 7
@@ -166,6 +174,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12-.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12-.md",
     "stable_id": "a-066243cdb4e03b71f283",
     "permalink": "/articles/a-066243cdb4e03b71f283.html",
     "id": 8
@@ -185,6 +194,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12--1.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12--1",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12--1.md",
     "stable_id": "a-22dc23da59845c952b45",
     "permalink": "/articles/a-22dc23da59845c952b45.html",
     "id": 9
@@ -204,6 +214,7 @@
     "is_manual": true,
     "link": "manual_2026-09-12-ai.md",
     "_archive_key": "manual:data/spotlight_manual_articles/2026-09-12-ai",
+    "_source_path": "data/spotlight_manual_articles/2026-09-12-ai.md",
     "stable_id": "a-8058c7e90cc819fd406f",
     "permalink": "/articles/a-8058c7e90cc819fd406f.html",
     "id": 10
@@ -223,6 +234,7 @@
     "is_manual": true,
     "link": "manual_aigc.json",
     "_archive_key": "manual:data/spotlight_manual_articles/aigc",
+    "_source_path": "data/spotlight_manual_articles/aigc.json",
     "stable_id": "a-9fe104a1dbfd13098946",
     "permalink": "/articles/a-9fe104a1dbfd13098946.html",
     "id": 11
@@ -242,6 +254,7 @@
     "is_manual": true,
     "link": "manual_ai.json",
     "_archive_key": "manual:data/spotlight_manual_articles/ai",
+    "_source_path": "data/spotlight_manual_articles/ai.json",
     "stable_id": "a-a7b20ea3d24332b4fe18",
     "permalink": "/articles/a-a7b20ea3d24332b4fe18.html",
     "id": 12
@@ -261,6 +274,7 @@
     "is_manual": true,
     "link": "manual_insights.json",
     "_archive_key": "manual:data/insights_manual_articles/insights",
+    "_source_path": "data/insights_manual_articles/insights.json",
     "stable_id": "a-789e043c2dab70e2f2e1",
     "permalink": "/articles/a-789e043c2dab70e2f2e1.html",
     "id": 13
@@ -280,6 +294,7 @@
     "is_manual": true,
     "link": "manual_biztech.json",
     "_archive_key": "manual:data/manual_articles/biztech",
+    "_source_path": "data/manual_articles/biztech.json",
     "stable_id": "a-15cc411e600b55922afe",
     "permalink": "/articles/a-15cc411e600b55922afe.html",
     "id": 14
