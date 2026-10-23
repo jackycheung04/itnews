@@ -3,7 +3,16 @@ name: Auto Update IT News
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天香港時間早上 8 點完整更新 AI 新聞
-  workflow_dispatch:      # 允許手動執行完整新聞更新
+  workflow_dispatch:      # 允許手動選擇完整新聞更新或只同步 CMS
+    inputs:
+      task:
+        description: '選擇執行工作：完整新聞更新，或只同步 Pages CMS 文章'
+        required: true
+        type: choice
+        options:
+          - full-update
+          - cms-sync
+        default: full-update
   push:
     paths:
       - 'data/manual_articles/**'
@@ -12,7 +21,7 @@ on:
 
 jobs:
   update-news:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.task == 'full-update')
     runs-on: ubuntu-latest
     steps:
       - name: 1. 取得專案程式碼
@@ -31,20 +40,40 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update_news.py
 
-      - name: 5. 儲存更新結果至 GitHub
+      - name: 5. 儲存更新結果至 GitHub（遇到推送衝突時重新同步）
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
+          set -e
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/news.json data/archive-index.json articles
-          if git diff --cached --quiet; then
-            echo "沒有需要提交的更新。"
-          else
+
+          for attempt in 1 2 3; do
+            git add data/news.json data/archive-index.json articles
+            if git diff --cached --quiet; then
+              echo "沒有需要提交的更新。"
+              exit 0
+            fi
+
             git commit -m "🤖 AI 自動更新 IT 新聞"
-            git push
-          fi
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "✅ 更新結果已成功推送。"
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "❌ 已重試 3 次，仍無法推送；停止以保護遠端資料。"
+              exit 1
+            fi
+
+            echo "⚠️ 遠端分支已有新提交；取得最新版本並重新生成後再試（第 $((attempt + 1)) 次）。"
+            git fetch origin "$GITHUB_REF_NAME"
+            git reset --hard FETCH_HEAD
+            python update_news.py
+          done
 
   sync-manual-archive:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.task == 'cms-sync')
     runs-on: ubuntu-latest
     steps:
       - name: 1. 取得專案程式碼
@@ -63,14 +92,34 @@ jobs:
           ARCHIVE_SYNC_ONLY: '1'
         run: python update_news.py
 
-      - name: 5. 儲存手動文章同步結果至 GitHub
+      - name: 5. 儲存手動文章同步結果至 GitHub（遇到推送衝突時重新同步）
+        env:
+          ARCHIVE_SYNC_ONLY: '1'
         run: |
+          set -e
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/news.json data/archive-index.json articles
-          if git diff --cached --quiet; then
-            echo "沒有需要提交的手動文章同步更新。"
-          else
+
+          for attempt in 1 2 3; do
+            git add data/news.json data/archive-index.json articles
+            if git diff --cached --quiet; then
+              echo "沒有需要提交的手動文章同步更新。"
+              exit 0
+            fi
+
             git commit -m "📝 同步 Pages CMS 文章至永久文章庫"
-            git push
-          fi
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "✅ Pages CMS 同步結果已成功推送。"
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "❌ 已重試 3 次，仍無法推送；停止以保護遠端資料。"
+              exit 1
+            fi
+
+            echo "⚠️ 遠端分支已有新提交；取得最新版本並重新同步 CMS 文章後再試（第 $((attempt + 1)) 次）。"
+            git fetch origin "$GITHUB_REF_NAME"
+            git reset --hard FETCH_HEAD
+            ARCHIVE_SYNC_ONLY=1 python update_news.py
+          done
