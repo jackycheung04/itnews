@@ -300,6 +300,160 @@
     "id": 14
   },
   {
+    "title": "AI與資料中心成美國期中選舉焦點，連布魯克林派對也難避話題",
+    "summary": "在美國期中選舉前夕的布魯克林活動中，AI與資料中心建設成為跨黨派與基層選民熱議焦點，反映出大眾對科技菁密與環境風險的不安。",
+    "content": "在一場於布魯克林倉庫舉辦、匯聚媒體人與科技從業人員的期中選舉前夕活動中，儘管主辦單位 Newsreel 的初衷是希望眾人放下手機、討論選舉，但整晚的對話卻不斷繞著同一個核心打轉：人工智慧、資料中心，以及對日益膨脹的科技官僚主義的反彈。對身處科技泡泡之外的民眾而言，資料中心與 AI 已經不再只是抽象技術，而是可能左右選情的實際議題。\n\n根據 Data Center Watch 的近期報告顯示，2026 年上半年因政治與社區反對，全美有近 2000 億美元的資料中心專案遭到延遲、擱置或封殺。同時，如賓州、喬治亞州、德州、紐約州和維吉尼亞州等地，也正加強對資料中心快速發展的監督與透明度。在被稱為「世界資料中心之都」的維吉尼亞州，甚至有多達數百座新資料中心正在規劃中。\n\n在活動的爐邊對話與小組討論中，紐約市議員齊·奧瑟（Chi Ossé）指出，科技巨頭執行長若提及可能消耗人類文明 10% 能源的技術，應該被召集到國會接受質詢。隨後由技術與人權研究員瑪雅·沃魯切姆（Maia Woluchem）及環境與公共衛生倡議者希拉里·弗林（Hilary Flint）主持的座談更直接顯示，當場詢問誰支持 AI 資料中心時，迎來的是一片噓聲。民眾對於科技公司疑似與地方官員進行「秘密交易」建置耗資億美元的設施感到不滿，並擔憂生活成本、環境與健康風險。\n\n討論隨後延伸至民主黨未來與鐵鏽帶社區的工會立場。儘管工會因工作機會而對資料中心持支持態度，但戰略家與講者指出，這些多數僅限於建設期間的暫時性工作，無法取代過去那種能為社區帶來代代繁榮的穩定工業。更有講者直言，這不過是過去奪走勞工職位的同一批體制力量，回來收割最後的剩餘價值。這種基層的剝奪感，不僅存在於鄉村社區，也蔓延至像布魯克林這樣、關心財富分配與社區自主權的城市角落。\n\n記者觀察指出，AI 與資料中心在美國社會引發的反彈，正逐漸從地方性的環保抗爭演變為深層的政治與階級對立。當科技產業持續以高速推進人工智慧發展時，大眾對於生活控制權喪失的焦慮，已轉化為選票上的直接表態。這場發生在紐約布魯克林的討論表明，科技巨頭與一般大眾之間的認知鴻溝正在擴大，而這道鴻溝未來恐將在更多政治賽局中浮上檯面。",
+    "link": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Newsreel-Midterm-Madness-22.jpg?resize=1200,800",
+    "date": "Sun, 01 Nov 2026 02:22:10 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+    "stable_id": "a-e8781238aac2e7c9c669",
+    "permalink": "/articles/a-e8781238aac2e7c9c669.html",
+    "id": 15
+  },
+  {
+    "title": "Apple 新任 CEO John Ternus 談 AI 戰略：我們不想為了做 AI 而做 AI",
+    "summary": "Apple 新任執行長 John Ternus 近期接受專訪，首度談及公司在 AI 領域的最新立場，強調 Apple 追求的是實用與使用者體驗，而非盲目推出 AI 功能。",
+    "content": "自今年 9 月初正式接任 Apple 執行長以來，資深高層 John Ternus 近期首次接受《Wired》知名記者 Steven Levy 的專訪。在訪談中，他公開為 Apple 目前在人工智慧（AI）領域的戰略與市場定位進行辯護。\n\n過去幾年間，市場普遍認為 Apple 在 AI 發展上落後於競爭對手，特別是經歷了多次延宕、直到今年夏天才終於正式推出功能更為強大的新版 Siri。面對外界的質疑與批評，Ternus 坦言「每個人都有自己的看法」，但他同時強調：「我非常喜歡我們現在所處的位置。」\n\nTernus 明確指出，Apple 絕對會在未來的產品中積極運用 AI 技術，但他也設定了清晰的底線：「我們不想為了做 AI 而做 AI。當我們真正做好這件事時，使用者根本不需要去思考，到底是 AI 還是傳統軟體促成了這個功能。真正重要的是，我們是否打造出他們真正喜愛的產品？」\n\n當訪談深入探討 AI 是否會對 Apple 及其生態系統帶來更顛覆性的影響，例如未來 AI 代理（Agents）是否可能讓傳統應用程式（Apps）變得不再必要時，Ternus 則持相對保留且重視人性價值的態度。他回應表示，這或許會讓生活變得非常輕鬆，但產品的創造過程本質上是一件極具人性化且個人的事，也是他們熱愛去做的事。\n\n從 John Ternus 的談話中可以看出，Apple 在面對浪潮汹涌的 AI 時代時，仍試圖在技術創新與長久以來的軟體哲學之間尋求平衡。比起盲目追逐市場熱度，這家科技巨頭似乎更傾向於將 AI 隱形化，使其自然融入使用者的日常體驗之中。然而，隨著市場對智慧化應用的期待日益高漲，Apple 如何在維持產品「人性化」溫度的同時，持續在 AI 競賽中交出亮眼成績單，將是這位新任執行長未來必須持續面對的考驗。",
+    "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2302418320.jpg?w=1024",
+    "date": "Sat, 31 Oct 2026 21:41:00 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+    "stable_id": "a-f39ea72c0908f6489a4a",
+    "permalink": "/articles/a-f39ea72c0908f6489a4a.html",
+    "id": 16
+  },
+  {
+    "title": "倒數四天！TechCrunch創辦人高峰會聚焦精準人脈與實戰策略",
+    "summary": "TechCrunch創辦人高峰會將於11月4日在波士頓登場，活動主打由Braindate支援的智慧人脈網絡，協助創辦人與創投進行深度交流。",
+    "content": "對於許多新創團隊而言，參加科技大會往往意味著在人潮洶湧的會場中碰運氣，試圖盲目尋找對業務或融資有所助益的關鍵人物。然而，即將於11月4日在波士頓SoWa發電廠（SoWa Power Station）登場的TechCrunch創辦人高峰會（TechCrunch Founder Summit），正試圖打破這種隨機碰運氣的傳統社交模式。\n\n由Fidelity Private Shares贊助的本屆高峰會，核心亮點之一便是引入由Braindate技術支援的「創辦人高峰會社交休息室」（Founder Summit Networking Lounge）。這項工具旨在讓與會者能夠針對特定主題，預先安排一對一或小組對話。無論是比較募資策略、探討招聘挑戰、尋找專攻企業級銷售（Enterprise Sales）的同路人，抑或是結識在波士頓當地建立事業的夥伴，參與者都能帶著具體問題與自身經驗進場，精準對接有著相同需求的對象。\n\n除了休息室的專屬對話，大會的各個環節也與社交體驗緊密扣合。與會者在聆聽Kent Bennett探討產品市場契合度（Product-Market Fit）、觀看創辦人向投資人進行簡報（Pitch），或是聆聽Chase Garbarino分享在波士頓創業的經驗後，都能直接將議程中引發的思考延伸至接下來的交流環節中。大會同時透過圓桌會議、分組座談以及展覽大廳（Expo Hall）等多重形式，讓講者、創辦人、投資人與營運者能在不同場域中延續對話，甚至在閉幕酒會上進行更深入的交流。\n\n值得一提的是，高峰會的影響力並不僅限於活動當天的場地之內，官方在波士頓全城規劃了一系列週邊活動（Side Events），讓交流網絡貫穿整個活動週。\n\n隨著活動倒數四天，主辦單位也祭出票價優惠方案，提供高達100美元的折扣，並推出買一送一的限時優惠，讓創辦人能攜手共同創辦人或合作夥伴一同參與。在競爭激烈的新創生態中，一場活動的價值有時不在於抄下了多少筆記，而是結識了原本素不相識、卻能在關鍵時刻帶來改變的夥伴。\n\n記者分析指出，新創活動近年來逐漸從單純的「大拜拜」轉向重質不重量的精準對接。TechCrunch透過預先媒合與主題式討論的工具，降低了創辦人建立有效人脈的摩擦成本。對於資源有限的早期團隊而言，能否在短時間內獲取具體建議並建立高價值的投資與合作網絡，往往是決定新創發展軌跡的關鍵變數。",
+    "link": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?resize=1200,800",
+    "date": "Sat, 31 Oct 2026 21:36:07 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+    "stable_id": "a-fe51b28e6f64966323d8",
+    "permalink": "/articles/a-fe51b28e6f64966323d8.html",
+    "id": 17
+  },
+  {
+    "title": "告別尷尬寒暄！TechCrunch 創辦人高峰會引入 Braindate，打造精準的高效交流體驗",
+    "summary": "TechCrunch 創辦人高峰會將於 11 月 4 日在波士頓登場，今年引入 Braindate 交流平台，協助創辦人、投資人與營運高層進行一對一或小組深度對話。",
+    "content": "在科技產業的各大會議中，往往最寶貴的交流機會不見得是在買咖啡排隊時身旁的人，而是那些已經解決了讓你深夜焦慮的難題、或是能為你的下一輪融資帶來全新視野的關鍵人物。為了讓這類對話不再只是碰運氣，預計於 11 月 4 日在波士頓 SoWa Power Station 登場的 2026 年 TechCrunch 創辦人高峰會（TechCrunch Founder Summit），今年特別導入了 Braindate 交流平台，旨在協助與會者更輕易地安排一對一或小組的現場深度會議。\n\n不同於傳統會議中隨機碰面的被動社交，Braindate 讓與會者能夠圍繞真正想討論的核心議題建立連結。無論是比較募資策略、探討招募挑戰、交換產品市場契合度（product-market fit）的心得、徵詢其他創辦人對企業銷售的看法，抑或是單純結識在波士頓及其他地區打拚的同業，對話的主軸完全由參與者的需求出發。高峰會的 Networking Lounge 將全天候提供此項服務，讓交流變得更有目的性。\n\n今年的高峰會本就圍繞著創辦人們最關切的實戰問題展開，例如：如何判斷自己是否準備好擴張團隊？如何打造更具凝聚力的組織？怎樣的簡報（pitch）才能吸引投資人點頭？如何在建立龐大的銷售團隊之前爭取到企業級客戶？活動議程透過「Build」與「Impact」雙主舞台及多場小型圓桌會議深入探討這些議題，而 Braindate 正好提供了一個延續舞台對話的延伸管道。\n\n與會者在聆聽 Bessemer Venture Partners 的 Kent Bennett 談論產品市場契合度、True Ventures 的 Dave Balter 解析簡報技巧，或是 Toast 共同創辦人 Steve Fredette 分享規模化與市場變遷的經驗後，可以立即透過 Braindate 尋找正在經歷相似挑戰的夥伴，繼續未完的討論。這種設計讓活動的價值在各個議程結束後依然得以延續。\n\n相較於規模龐大、人潮擁擠的傳統科技大會，TechCrunch 創辦人高峰會刻意維持較小巧、更具實作導向的規模。除了主舞台演講，現場還規劃了互動圓桌會議、創辦人現場簡報壓力測試、以及展示擴張解決方案的展覽大廳。透過 Braindate 的輔助，主辦單位試圖將原本充滿偶然性的社交活動，轉化為參與者能夠主動形塑的深度連結。\n\n記者分析指出，對於資源有限、時間寶貴的早期新創團隊而言，這類精準配對的社交機制往往比泛泛的換名片更具實質效益。高峰會目前已開放購票，並推出買一送一的限時優惠，鼓勵創辦人攜帶共同創辦人或商業夥伴一同出席，擴大參與效益。",
+    "link": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-networking-1.jpg?resize=1200,800",
+    "date": "Fri, 30 Oct 2026 14:00:00 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
+    "stable_id": "a-5dfc137abdc9f8c66085",
+    "permalink": "/articles/a-5dfc137abdc9f8c66085.html",
+    "id": 18
+  },
+  {
+    "title": "倒數5天！TechCrunch 2026創辦人高峰會聚焦實戰演練與波士頓新創生態",
+    "summary": "倒數5天！TechCrunch 2026創辦人高峰會將於11月4日在波士頓登場，活動主打實戰經驗、互動圓桌及買一送一限時優惠。",
+    "content": "備受矚目的 TechCrunch Founder Summit 2026 即將於 11 月 4 日在波士頓的 SoWa Power Station 隆重登場。隨著活動進入倒數五天階段，主辦方祭出限時優惠，提供最高 100 美元的門票折扣，並加碼推出「買一送一」的雙人同行方案，吸引創辦人攜手共赴這場年度新創盛會。\n\n由 Fidelity Private Shares 贊助的本次高峰會，核心宗旨不僅在於啟發創意，更著重於提供實際的人脈連結、市場洞察與可落實的行動建議。活動現場規劃了三大核心亮點，包含聚焦企業建立的「Build Stage」、探討永續與規模化策略的「Impact Stage」，以及深入對話的互動圓桌會議。\n\n在「Build Stage」中，NEA 董事 Hunter Worland 將深入探討「通路勝過技術」的概念，剖析創辦人如何建立競爭優勢；Fidelity Private Shares 的 Kristen Craft、January Ventures 的 Jennifer Neundorfer 以及 THE·TEAM 的 Darren Ross 則將聯手提供實用的募資趨勢建議。此外，Techable VC 執行長 Amulya Vishwanath 將探討人工智慧的下一波商機，True Ventures 創業合夥人 Dave Balter 則分享如何透過精準簡報贏得下一次關鍵會議。\n\n另一方面，「Impact Stage」則鎖定企業規模化與永續經營的關鍵決策。Glasswing Ventures 創辦人兼管理合夥人 Rudina Seseri 將分享首輪融資後的營運抉擇，Bessemer Venture Partners 合夥人 Kurt Bennett 則聚焦於擴展規模前的產品市場契合度（Product-Market Fit）驗證。同時，活動亦涵蓋企業戰略夥伴關係、波士頓新創生態系的優勢，以及 TDK Ventures 投資總監 Tina Tosukhowong 對於產業龍頭評估標準的精闢解析。\n\n除了舞台演說，互動圓桌會議（Roundtables）提供更為小型的深度交流空間。創辦人能直接針對進入困難產業、無專職團隊時的活動策略、降低 AI 幻覺，以及在 A 輪融資前爭取大型企業客戶等實際痛點提出疑問，並與同桌同行交換實戰經驗。\n\n記者分析認為，相較於大型綜合科技展會，TechCrunch 創辦人高峰會明顯更加聚焦於新創團隊在早期發展中面臨的具體痛點。從通路的實際建構到 AI 應用的落地，活動內容緊扣當前創投市場更趨嚴格的檢視標準。隨著門票優惠倒數與現場購票價格即將調漲，對於正在尋求突破的波士頓及周邊新創團隊而言，這將是掌握最新市場風向與拓展關鍵人脈的最後機會。",
+    "link": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-Breakout-Session.jpg?resize=1200,800",
+    "date": "Fri, 30 Oct 2026 13:00:00 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
+    "stable_id": "a-d656a69ca4ecf53d0816",
+    "permalink": "/articles/a-d656a69ca4ecf53d0816.html",
+    "id": 19
+  },
+  {
+    "title": "像造車一樣生產AI資料中心？新創Runware挑戰48小時極速上線",
+    "summary": "AI基礎設施新創Runware計畫在羅馬尼亞建立產線，像組裝汽車一樣量產模組化AI資料中心，並宣稱安裝設定時間僅需48小時。",
+    "content": "隨著全球對人工智慧基礎設施的需求孔急，AI資料中心的建設速度正成為產業瓶頸。AI基礎設施公司 Runware 日前宣布一項野心勃勃的計畫：透過自動化生產線大規模預製模組化資料中心，目標像製造汽車一樣提高生產效率。\n\n今年稍早，Runware 曾推出名為「Sonic Inference Pod」的模組化資料中心，當時採工廠製造、運送至客戶端直接安裝的模式。如今，這家新創計畫進一步升級，將位於羅馬尼亞的工廠產線擴大。Runware 共同創辦人兼執行長 Flaviu Radulescu 透露，公司計畫在 2028 年前將該廠產能提升至每天 30 百萬瓦（MW），相當於每月近 1 吉瓦（GW）。相較於今年全美國預計新增的 10 吉瓦資料中心電力，這項產能規模相當驚人，也凸顯出整體產業正積極尋求更快速、更有效率的部署方式。\n\n在市場競爭方面，雖然如 Crusoe、Schneider Electric 以及輝達（Nvidia）推出的 Vera Rubin AI工廠與 DSX POD 等方案也主打預製模組化概念，但 Runware 強調其優勢在於實際建置了專屬工廠。Runware 目前擁有兩座工廠，第二座工廠預計在幾個月內完工，並於明年初正式投入營運。\n\n在實際運作上，客戶可自行提供場地，或由 Runware 協助尋覓，並在組裝後於 48 小時內完成安裝與設定上線。硬體配置方面，雖然資料中心採用標準化設計，但能根據客戶需求及最新的 GPU 晶片進行調整。Radulescu 指出，由於 GPU 晶片往往需要較長交貨期，這反而給了 Runware 充裕時間，讓內部硬體團隊能夠針對最新硬體快速調整、設計並測試基礎設施。\n\n不過，徹底顛覆傳統製造模式往往伴隨高度風險。電動車新創 Arrival 曾被估值超過 13 夏億美元，卻在傳統工廠成本壓力和量產上面臨困境，這為同欲革新製造流程的 Runware 敲響警鐘。迄今已募得超過 6000 萬美元的 Runware，計畫在去年 12 月完成 5000 萬美元 A 輪融資後，進一步推進 B 輪募資。\n\n為避免重蹈覆轍，Radulescu 強調 Runware 的成本結構大不相同。除了聘請汽車產業出身的資深廠長來把關執行外，透過設計自家系統並採購市場上廣泛供應且價格合理的標準零件，有助於維持低成本。在供應鏈與能耗方面，該公司的 pod 採用封閉式液冷系統搭配氣冷散熱器，無需額外水資源，且在 86 華氏度以下可完全靜音運作，並盡可能使用再生能源。\n\nRunware 自一個月前向外部客戶推出 Sonic pods 以來，已獲得 10 億美元的潛在訂單興趣，代表超過 20 百萬瓦的需求正在等待交付。隨著新工廠於明年初上線，Runware 是否能如期實現像造車般量產資料中心的願景，並在競爭激烈的 AI 基礎設施市場中站穩腳步，仍有待市場實際檢驗。",
+    "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Runware-Factory-.jpg?w=1200",
+    "date": "Fri, 30 Oct 2026 13:00:00 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+    "stable_id": "a-6b5f49b2637e8d596b65",
+    "permalink": "/articles/a-6b5f49b2637e8d596b65.html",
+    "id": 20
+  },
+  {
+    "title": "美銀與第一資本導入模型路由技術，以精細化管理高昂 AI 成本",
+    "summary": "面對不斷攀升的 AI 投資與運算成本，美國銀行與第一資本等金融巨頭正透過導入模型路由與小型專用模型，在維持服務效能的同時有效控制開支。",
+    "content": "隨著企業持續擴大人工智慧的採用規模，如何有效控制背後的高昂成本已成為技術領導者的重要課題。在紐約舉行的 Evident AI Symposium 上，多家大型金融機構的高階主管分享了他們在成本控管與模型調度上的最新實踐，其中「模型路由（Model routing）」與小型模型的應用正逐漸成為業界關鍵策略。\n\n美國銀行（Bank of America）技術與資訊長 Hari Gopalkrishnan 在會中透露，該行計劃在明年將 AI 預算加倍，重點在於提升其金融助理 Erica 的對話互動能力，使其具備更好的機構記憶與處理更複雜交易的潛力。然而，Gopalkrishnan 強調，並非每一次的客戶互動都需要動用到最先進且昂貴的前沿模型。透過名為「Orchestra」的 AI 路由層，美國銀行利用小型分類模型來自動分流查詢請求，將簡單的決策交由小型語言模型處理，藉此精準管理 Token 支出並降低成本。\n\n另一方面，第一資本（Capital One）則透過蒸餾開源權重模型並結合專有數據進行微調，打造出支援購車應用程式「Chat Concierge」的小型多代理模型。該公司企業 AI 首席官兼首席科學家 Prem Natarajan 指出，這項技術協助第一資本將延遲大幅降低五倍，同時使經銷商的客戶參與度提升了 50%。除了金融業的實際應用外，科技供應商也紛紛將路由功能內建於產品中，例如 Snowflake 的 Cortex AI Gateway 就已加入動態模型路由功能，協助企業自動挑選最符合效益的 AI 模型。\n\n除了成本考量，金融機構對於 AI 代理的治理與底層數據架構也採取了高度審慎的態度。Gopalkrishnan 表示，美國銀行在迎向 2027 年的 AI 策略中，將導入高度控制的護欄，確保 AI 代理在指定的執行時間內運作，且不允許其自主執行多項任務。同時，持續改進儀表板、遙測技術及反饋迴路也是不可或缺的演進方向。\n\n而在第一資本方面，Natarajan 強調穩固的數據基礎是支撐 AI 旅程的關鍵。該行透過早期移轉至雲端現代化技術堆疊，累積了大量且管理完善的數據資產。他指出，底層架構的工程與架構決策，往往會成為上方應用的強大推動力或嚴重限制，這也是為什麼第一資本一旦發現架構需要調整，便會毫不猶豫地從底部重新構建。\n\n從美銀與第一資本的實踐可以看出，企業在 AI 的早期狂熱投入後，正逐漸轉向務實的財務與架構治理。透過模型路由將算力最佳化，並搭配嚴格的代理防護與紮實的數據基礎，金融機構正試圖在創新技術與成本效益之間取得平衡。",
+    "link": "https://www.ciodive.com/news/bank-of-america-capital-one-manage-ai-costs/873112/",
+    "image": "https://imgproxy.divecdn.com/4_eC3ou0kwr51ERLVtHNlx0qI1SY5TKKKdGS9omnULE/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9IYXJpX0cuanBn.webp",
+    "date": "Wed, 28 Oct 2026 16:24:13 -0400",
+    "category": "BizTech",
+    "is_manual": false,
+    "_archive_key": "rss:https://www.ciodive.com/news/bank-of-america-capital-one-manage-ai-costs/873112/",
+    "stable_id": "a-850033e5c5531fa762ab",
+    "permalink": "/articles/a-850033e5c5531fa762ab.html",
+    "id": 21
+  },
+  {
+    "title": "Capital One 軟體產品主管：企業推動規模化 AI 最大的障礙往往不是技術",
+    "summary": "Capital One 軟體產品主管指出，企業推動 AI 規模化面臨的挑戰往往是組織協調、資料就緒度與投資回報評估，而非技術瓶頸。",
+    "content": "企業在大型組織內全面部署企業級 AI 時，經常需要應付複雜的資料資產、確保算力充足，並讓不同系統相互串聯。然而，Capital One Software 產品資深副總裁 Prashant Prahlad 指出，對許多企業而言，技術考量其實是實施 AI 計畫時最不需要擔心的問題。\n\nPrahlad 負責該公司的企業 B2B 軟體業務，專門協助客戶準備資料以擴展 AI、完成資料轉型或進行雲端遷移。在長期的客戶諮詢過程中，他發現企業真正的痛點在於無法在內部凝聚共識並建立動能。「他們在為『全面 AI』的議程進行組織動員時掙扎不已，」Prahlad 表示。\n\nPrahlad 強調，組織的資料基礎奠定了 AI 規模化的基礎。過去幾年中，專案失敗率攀升的主因往往是資料準備不足，而不是技術本身的限制。企業如何從組織層面應對 AI 用例、團隊如何看待投資回報（ROI），以及市場上過多的 AI 資訊轟炸，都會對企業的 AI 部署計畫造成負面影響。\n\n許多組織雖然下達了「AI 優先」的指令，卻缺乏相應的職權，往往試圖在組織內各個缺乏相同誘因的群體之間進行整合。此外，一線員工比高階主管更不信任 AI，也因為對自主系統缺乏控制權而感受到較大的個人風險。在投資回報方面，挑戰不僅在於如何衡量，更在於確保所有基礎設施都已到位，才能獲得準確的評估數據。多數企業尚未證明其支出的合理性，並表示需要將 AI 系統投入生產，同時提供專有敏感資料給模型來進行適當測試。在 CIO 必須向董事會報告價值的同時，這無疑是一項艱巨的任務，且多數人發現 AI 目前帶來的多半是洞察或決策輔助，而非直接的成本效益或生產力提升。\n\n另一個多數組織正面臨的挑戰是 AI 的過度飽和。企業經常遭到各家承諾廣泛成效的供應商疲勞轟炸，但 Prahlad 認為，善用現有產品並將其升級至 AI 就緒狀態，往往是更好的選擇。\n\n針對如何突破僵局，Prahlad 建議透過單一用例來摸索規模化所需的條件。IT 團隊可以藉由識別一個用例並採逆向工程方式推進，例如在組織的某個部分部署聊天室機器人，然後分析該用例周圍的資料就緒度、治理與安全性需求。某個客戶近期便透過這種資料評估，意識到自身缺乏集中式的資料策略，進而跨七個業務線建立了一個集中管理資料的團隊。雖然在組織對齊上遇到了明顯的阻力，但單一用例確實幫助他們釐清了盲點。\n\nPrahlad 指出，企業在資料與 AI 擴展就緒度的起跑點上差異極大，擁有龐大技術團隊的機構並不見得自動占優勢，這完全取決於他們採用 AI 的意圖與至今所獲得的授權。「我發現那些理應走在 AI 最前端的機構，其實並沒有想像中走得那麼前面。」\n\n【記者觀察分析】\n從 Prashard Prahlad 的觀察可以發現，當前企業導入 AI 的瓶頸已逐漸從「技術可行性」轉移至「組織治理與資料成熟度」。許多企業急於跟風推動全面 AI 化，卻忽略基層員工的抗拒心理、資料分散的現實以及明確投資回報的難度。透過單一用例切入、由跨職能專家組成的「虎牌團隊」進行實戰測試，或許是企業在盲目追求 AI 浪潮時，少數能夠穩健釐清自身盲點並建立規模化基礎的務實做法。",
+    "link": "https://www.ciodive.com/news/create-scale-ready-AI/872962/",
+    "image": "https://imgproxy.divecdn.com/wpKiSxkGkp_0oKLGkT_AmCSNZfiWstdRKRuUTictDMU/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9kaWdpdGFsX2Zsb3djaGFydC5qcGc=.webp",
+    "date": "Tue, 27 Oct 2026 16:21:19 -0400",
+    "category": "BizTech",
+    "is_manual": false,
+    "_archive_key": "rss:https://www.ciodive.com/news/create-scale-ready-AI/872962/",
+    "stable_id": "a-58f1a75ffc46bc83adf3",
+    "permalink": "/articles/a-58f1a75ffc46bc83adf3.html",
+    "id": 22
+  },
+  {
+    "title": "法國「新創國家」光環褪色？馬克宏科技雄心面臨債務危機與社會動盪考驗",
+    "summary": "法國總統馬克宏曾誓言將法國打造為新創國家，但在國家面臨債務危機與社會動盪之際，科技界對其早期承諾逐漸產生懷疑，投資額與政策支持也面臨嚴峻挑戰。",
+    "content": "過去十年來，法國總統馬克宏（Emmanuel Macron）一直是該國科技產業的重要推手。他在 2017 年上任之初，便承諾將法國轉型為「新創國家」（startup nation），透過一系列政策吸引人才、推動創新，並打造了如 Station F 等指標性創業重鎮，讓巴黎成為歐洲科技重鎮之一。然而，隨著法國陷入債務危機與不斷升溫的社會動盪，法國科技社群開始對馬克宏當年的宏偉承諾產生質疑。\n\n在馬克宏的推動下，法國新創企業在過去幾年曾迎來蓬勃發展。例如，法國政府推動了旨在支持各個發展階段新創的「法蘭西科技」（French Tech）指數，並在 2021 年設定目標，希望在 2030 年前孕育出 100 家獨角獸企業。根據 Dealroom 的數據，法國新創企業的融資金額在 2022 年達到 135 億歐元的顛峰，相較於 2016 年的 37 億歐元有了顯著成長。然而，隨後幾年的融資表現開始下滑，2023 年降至 84 億歐元，2024 年更進一步縮水。\n\n除了融資環境的變化，當前的政治與經濟局勢也為法國科技業投下陰影。近期法國社會動盪加劇，部分企業與創辦人甚至面臨實質衝擊，例如金融科技獨角獸 Qonto 的總部在週末的暴力衝突中遭到破壞，凸顯出政經危機對新創生態系造成的直接威脅。許多科技界人士坦言，儘管馬克宏政府早期確實為法國科技產業帶來了實質改變，但隨著政策走向與現實環境的落差，加上公共財政吃緊，業界對於未來發展的信心正逐漸動搖。\n\n記者分析指出，法國科技業在過去幾年間確實受惠於政府的積極扶持與親商政策，國際能見度大幅提升。然而，當宏觀經濟環境轉趨嚴峻、國家財政壓力浮現時，新創生態系對於政府依賴的弊端也隨之浮現。如何在政治動盪與資源緊縮的雙重夾擊下，維持法國作為歐洲科技樞紐的動能，將是馬克宏政府與當地創業者在剩餘任期內必須面對的艱鉅考驗。",
+    "link": "https://sifted.eu/articles/is-frances-startup-nation-falling-out-of-love-with-macron/",
+    "image": "https://content.sifted.eu/wp-content/uploads/2026/10/29152952/macron2-1024x336.png",
+    "date": "Fri, 30 Oct 2026 05:00:43 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/is-frances-startup-nation-falling-out-of-love-with-macron/",
+    "stable_id": "a-367581afae4bc2daa9e9",
+    "permalink": "/articles/a-367581afae4bc2daa9e9.html",
+    "id": 23
+  },
+  {
+    "title": "未有產品就拿下 4000 萬美元種子輪！倫敦帝國學院新創 Machenta 挑戰傳統機器人數據範式",
+    "summary": "倫敦帝國學院分拆出的機器人新創 Machenta 在沒有實體產品的情況下，獲得 Creandum 與 USV 共同領投 4000 萬美元種子輪融資，試圖顛覆機器人學習數據的傳統模式。",
+    "content": "倫敦帝國學院（Imperial College London）分拆出的機器人新創 Machenta 本週正式結束隱匿狀態（out of stealth），並宣布獲得高達 4000 萬美元的種子輪融資。這筆資金由知名創投 Creandum 與 Union Square Ventures（USV）共同領投，其中 Creandum 合夥人 Tom Henriksson 以及 USV 的 Albert Wenger 也參與了這場投資。令人矚目的是，這家備受矚目的新創在完成融資時，甚至還沒有推出具體的商業產品。\n\n今年 5 月，Creandum 的團隊抱持著懷疑態度，帶著自己的道具前往位於倫敦 Archway 的 Machenta 辦公室，對該公司的 AI 模型進行壓力測試。該模型宣稱只需透過單一示範（single demo），就能教導機器人執行特定任務。經過實測後，投資團隊對其表現改觀。Machenta 共同創辦人兼執行長 George Daves 表示，傳統機器人開發高度依賴巨量數據集與繁複的微調過程，但 Machenta 的方法旨在打破這種限制，讓機器人能夠透過極少量的示範快速掌握新技能。\n\n在機器人技術備受資本青睞的當下，Machenta 的大額融資反映出市場對深科技（deeptech）的高度熱情。然而，資本湧入也伴隨著挑戰。業內專家指出，機器人領域過去常面臨「融資過剩、產品難產」的隱憂，許多新創在獲得早期資金後，往往在邁向商業化與規模化生產時遭遇瓶頸。Machenta 雖然獲得巨額資金支持，且其技術願景企圖解決機器人訓練效率低落的痛點，但如何在沒有現成產品的情況下，將實驗室的突破性研究轉化為符合市場需求的穩定商業產品，將是這家新創團隊接下來必須面臨的關鍵考驗。",
+    "link": "https://sifted.eu/articles/creandum-usv-40m-seed-uk-robotics-lab-no-product/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1400,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/29172955/Machenta-Team-.jpg",
+    "date": "Fri, 30 Oct 2026 05:00:27 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/creandum-usv-40m-seed-uk-robotics-lab-no-product/",
+    "stable_id": "a-28920417342cbac91f74",
+    "permalink": "/articles/a-28920417342cbac91f74.html",
+    "id": 24
+  },
+  {
+    "title": "AI 代理保安需求暴增！歐洲資安新創獲投金額激增六倍，科技巨頭搶先出手收購",
+    "summary": "隨著 AI 代理應用普及，歐洲專門確保 AI 代理安全的初創企業今年獲投金額飆升六倍，大型資安供應商也紛紛出手收購，凸顯市場對 AI 互動安全的高度重視。",
+    "content": "隨著人工智慧代理（AI agents）在各領域的應用日益普及，如何確保這些自主系統的安全與合規，正成為科技界最迫切的課題。根據 Sifted 的數據顯示，今年歐洲專門為 AI 代理提供安全防護的新創公司，其獲投金額較去年同期大幅成長了六倍，顯示資本市場對此一新興賽道的高度關注。\n\n在市場需求推動下，大型資安供應商與科技巨頭已經開始積極佈局。例如，近期已有大型企業出手收購相關領域的歐洲新創，藉此補強自身在 AI 互動與指令防護上的產品線。這些新創的主要任務，如同為 AI 代理設置的「數位保鑣」，專門負責審查、過濾並限制 AI 代理的行為，防止其執行未授權的指令或遭受惡意攻擊。\n\n歐洲各地的新創團隊也紛紛獲得資金挹注，展開融資擴張。例如總部位於巴黎的 Aevus，近期便獲得由 20VC、French Founders 等機構支持的 190 萬歐元種子輪融資；其他如聚焦 AI 代理安全的各類新創，也在英國、德國及其他歐洲國家陸續完成數百萬歐元不等的融資。這些資金主要用於技術研發、團隊擴編以及產品化進程，以應對企業客戶對 AI 安全日益嚴格的要求。\n\n除了新創企業的獨立融資熱潮外，大型科技公司與風險投資機構的動向也備受矚目。像是 Salesforce 在 2024 年 12 月以 9.9 億美元收購 Own，以及 ServiceNow 收購 Dynatrace 的數位防護資產等案例，都顯示企業級軟體巨頭正透過併購快速建立 AI 安全防護能力。AI 應用的快速擴張，正帶動整個資安產業鏈的結構性轉變。\n\n記者分析指出，AI 代理從實驗性質走向企業核心業務的過程中，安全漏洞與授權風險隨之放大。雖然目前歐洲相關資安新創的融資規模出現倍數成長，且大型企業展現出強烈的收購意願，但隨著 AI 技術本身的迭代速度極快，這些資安防護新創能否持續跟上新型態的攻擊手法，仍有待市場進一步驗證。",
+    "link": "https://sifted.eu/articles/the-european-startups-making-agents-secure/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1600,quality=75,fit=cover,format=auto/wp-content/uploads/2023/08/26092822/cyber-security-risks-how-to-fix.jpg",
+    "date": "Fri, 30 Oct 2026 05:00:04 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/the-european-startups-making-agents-secure/",
+    "stable_id": "a-63c86d195e0bf570fecd",
+    "permalink": "/articles/a-63c86d195e0bf570fecd.html",
+    "id": 25
+  },
+  {
     "title": "Nvidia 據報考慮為新創雲端商 Nscale 西維州 AI 數據中心擔任貸款保證人",
     "summary": "面對投資人對 AI 資本支出的疑慮，Nvidia 傳出正考慮為雲端服務商 Nscale 的西維州資料中心提供數十億美元債務融資擔保，深化雙方財務連結。",
     "content": "人工智慧晶片巨頭 Nvidia 傳出正與 AI 雲端服務商 Nscale 進行談話，考慮為其位於西維州的 Anthropic 資料中心計畫提供高達數十億美元的債務融資擔保。這項消息最初由《The Information》於週四報導，隨後獲得《彭博社》證實。根據 Nscale 的首次公開募股（IPO）文件顯示，AI 新創公司 Anthropic 已經為該專案的第一棟建築簽下了高達 446 億美元的合約。\n\n在這種被稱為「殘值保證」（residual value guarantee）的提案架構下，若 Nscale 未能償還建設款項，Nvidia 將介入暫時接管設施，並協助尋找買家與新租戶。Nscale 正計劃以高達 35億美元的估值進行 IPO，然而該公司在落實宏大計畫的能力上正面臨市場疑慮。Anthropic 與 Nscale 的合約涵蓋西維州校園的第一棟 460 百萬瓦（megawatt）建築，預計將採用 Nvidia 的次世代 Vera Rubin 晶片。雙方亦正就第二棟建築進行大約 45 億美元的第二筆交易談話。\n\n儘管野心勃勃，Nscale 在推進專案時卻遭遇不少阻礙。截至 8 月，該公司僅有約 25,000 個先進 AI 晶片運作中，距離預計部署的近 50,0000 個晶片相去甚遠。其西維州校園的施工逕流更多次淹沒鄰近民宅，直到 9 月經過數月談話才獲得州政府認證。此外，微軟（Microsoft）本月也因該地電網電力時程延至 2030 年代，而退出了一項位於英國的 Nscale 預定站點。\n\n根據《The Information》報導，Nvidia 長期以來一直是該產業的重要財務後盾，已向新雲端商及大型客戶提供約 1,700 億美元的投資與信用支援，其中包括 9 月對 Nscale 承諾的 10 億美元可轉換融資。近期，缺乏強大現金業務支撐的獨立雲端商（neoclouds）面臨投資人壓力，包括 CoreWeave、Nebius 及 IREN 在 10 月的股價截至上週均下跌超過 30%。\n\n這項研擬中的保證不僅將加深 Nvidia 與 Nscale 的財務連結，也有助於為其晶片確保一名重大客戶。Anthropic 作為 AI 運算能力的最大買家之一，其基礎設施支出分散在多家晶片製造商。然而，隨著 Anthropic 本週提交 IPO 申請，黑石集團（Blackstone）已向投資人警告，該公司 IPO 後可能獲得低於投資級的信用評等。垃圾級評等將拉高 Anthropic 的借款成本，並可能促使其持續依賴財務更雄厚的夥伴來背書債務。\n\n記者觀察指出，晶片大廠直接出面為客戶的基礎設施貸款擔任保證人，反映出當前 AI 產業鏈在龐大資金壓力與投資人日漸謹慎的氛圍下，正透過更緊密的資本綁定來維持硬體建設的推進。隨著 Anthropic 即將上市及其信用評等面臨潛在挑戰，Nvidia 介入保固 Nscale 的舉動，不僅是為了確保自家新世代晶片的出海口，也凸顯了上游晶片商在下游雲端與 AI 應用商融資鏈條中所扮演的關鍵穩定角色。",
@@ -311,7 +465,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
     "stable_id": "a-557c05b2fa6b12facf88",
     "permalink": "/articles/a-557c05b2fa6b12facf88.html",
-    "id": 15
+    "id": 26
   },
   {
     "title": "Salesforce 持續擴大收購版圖：傳以 3.75 億美元收購國防 AI 新創 Rune",
@@ -325,7 +479,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
     "stable_id": "a-34e1a72f146ff3c3e786",
     "permalink": "/articles/a-34e1a72f146ff3c3e786.html",
-    "id": 16
+    "id": 27
   },
   {
     "title": "主打用戶隱私的 AI 助理新創 Ollie 宣布關閉，營運僅維持至 11 月 6 日",
@@ -339,7 +493,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
     "stable_id": "a-76000277983786babbeb",
     "permalink": "/articles/a-76000277983786babbeb.html",
-    "id": 17
+    "id": 28
   },
   {
     "title": "華爾街老牌律所 Weil Gotshal 面臨解散，AI 新創 Crosby 驚喜出手競標資產",
@@ -353,7 +507,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/30/ai-law-firm-crosby-bids-on-disintegrating-famed-firm-weil-gotshal/",
     "stable_id": "a-12510affae01b7f3e2f5",
     "permalink": "/articles/a-12510affae01b7f3e2f5.html",
-    "id": 18
+    "id": 29
   },
   {
     "title": "新創公司 Satlyt 達成關鍵里程碑：成功測試軌道分散式運算，朝太空虛擬資料中心再邁一步",
@@ -367,7 +521,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/",
     "stable_id": "a-616a40564a139788b163",
     "permalink": "/articles/a-616a40564a139788b163.html",
-    "id": 19
+    "id": 30
   },
   {
     "title": "餐廳推薦 App Zest 推出文字訊息 AI 助理：整合好友口味、發起投票還能直接訂位",
@@ -381,7 +535,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
     "stable_id": "a-2532610112c74ae3a6e8",
     "permalink": "/articles/a-2532610112c74ae3a6e8.html",
-    "id": 20
+    "id": 31
   },
   {
     "title": "亞馬遜執行長 Jassy 看好 AI 驅動，預期 AWS 未來十年內營收將衝破 1 兆美元",
@@ -395,7 +549,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/jassy-sees-aws-hitting-1t-revenue/873369/",
     "stable_id": "a-cdc5fa5f985eb94bf3be",
     "permalink": "/articles/a-cdc5fa5f985eb94bf3be.html",
-    "id": 21
+    "id": 32
   },
   {
     "title": "希爾頓看好自主式AI潛力：執行長預期將徹底革新飯店客戶體驗與營運成本",
@@ -409,7 +563,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/hilton-expects-agentic-ai-to-simplify-the-hotel-customer-experience/873329/",
     "stable_id": "a-6e7618d2f6f90f076276",
     "permalink": "/articles/a-6e7618d2f6f90f076276.html",
-    "id": 22
+    "id": 33
   },
   {
     "title": "迎戰年底購物季高峰，Gap Inc. 導入 AI 招募工具「Bridgette」分擔繁瑣行政作業",
@@ -423,7 +577,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/gap-ai-hiring-tool-bridgette/873233/",
     "stable_id": "a-5a9a4d21600f38f17a23",
     "permalink": "/articles/a-5a9a4d21600f38f17a23.html",
-    "id": 23
+    "id": 34
   },
   {
     "title": "打破首爾集中化：南韓如何透過四大新創城市押注全球科技未來？",
@@ -437,7 +591,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/south-korea-is-betting-on-startups-brnd/",
     "stable_id": "a-9b889f36a4ec43ef81e2",
     "permalink": "/articles/a-9b889f36a4ec43ef81e2.html",
-    "id": 24
+    "id": 35
   },
   {
     "title": "前 EQT 投資人 Doreen Huber 加入 Interface Capital，聚焦「極度可怕」AI 代理時代的資安投資",
@@ -451,7 +605,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/eqt-doreen-huber-interface-capital-cyber-startups-scary-ai-agents/",
     "stable_id": "a-84136eb0ea14be047684",
     "permalink": "/articles/a-84136eb0ea14be047684.html",
-    "id": 25
+    "id": 36
   },
   {
     "title": "歐洲AI新創面臨融資與人才雙重壓力，近半數對「赴美發展」持開放態度",
@@ -465,7 +619,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/talent-tops-european-ai-startups-concerns-as-funding-pressures-mount/",
     "stable_id": "a-bc1f2f12b2023ddfdf48",
     "permalink": "/articles/a-bc1f2f12b2023ddfdf48.html",
-    "id": 26
+    "id": 37
   },
   {
     "title": "無神論者也能申請！肯塔基大學行政人員獲批「拒用AI」宗教豁免",
@@ -479,7 +633,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
     "stable_id": "a-c574d4b29b984d1e1eb6",
     "permalink": "/articles/a-c574d4b29b984d1e1eb6.html",
-    "id": 27
+    "id": 38
   },
   {
     "title": "亞馬遜執行長：Prime Video營收邁入百億美元規模且已實現獲利",
@@ -493,7 +647,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/",
     "stable_id": "a-f7e24c9e6a4651cdbc64",
     "permalink": "/articles/a-f7e24c9e6a4651cdbc64.html",
-    "id": 28
+    "id": 39
   },
   {
     "title": "直指兆美元營收！亞馬遜執行長Jassy：AWS將迎來歷史機遇，但眼前得先砸重本擴建AI基礎設施",
@@ -507,7 +661,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
     "stable_id": "a-2b7d0a89aa1785804ff3",
     "permalink": "/articles/a-2b7d0a89aa1785804ff3.html",
-    "id": 29
+    "id": 40
   },
   {
     "title": "前 Palantir 高管創辦 Dream 獲 a16z 1,700 萬美元種子輪融資，打造建築業專用 AI 世界模型",
@@ -521,7 +675,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
     "stable_id": "a-f5227dc3706f64a307fd",
     "permalink": "/articles/a-f5227dc3706f64a307fd.html",
-    "id": 30
+    "id": 41
   },
   {
     "title": "AI 代理身分管理新創 Mintive 獲 700 萬美元種子輪融資，豪華天使投資陣容備受矚目",
@@ -535,7 +689,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/29/agent-identity-startup-mintive-lands-cowboy-ventures-coatue-angels-jeff-dean-andrej-karpathy/",
     "stable_id": "a-2e5d8155fd6e3e74ab4c",
     "permalink": "/articles/a-2e5d8155fd6e3e74ab4c.html",
-    "id": 31
+    "id": 42
   },
   {
     "title": "聚焦實戰經驗與規模化挑戰：TechCrunch 創辦人高峰會 11 月 4 日波士頓登場",
@@ -549,7 +703,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/10/29/who-will-you-learn-from-in-6-days-at-techcrunch-founder-summit-meet-the-founders-and-investors-taking-the-stage/",
     "stable_id": "a-82d060daf48c99444a16",
     "permalink": "/articles/a-82d060daf48c99444a16.html",
-    "id": 32
+    "id": 43
   },
   {
     "title": "微軟與谷歌財報交出亮眼AI雲端營收，但獲利模式面臨商業化考驗",
@@ -563,7 +717,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/Microsoft-Google-booming-AI/873258/",
     "stable_id": "a-542f515f4630de349ff5",
     "permalink": "/articles/a-542f515f4630de349ff5.html",
-    "id": 33
+    "id": 44
   },
   {
     "title": "華爾街巨頭砸630億美元押注Anthropic運算基建，資深CIO面臨成本與記憶體雙重壓力",
@@ -577,7 +731,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/tech-bytes-big-banks-back-anthropic-compute-buildout/873245/",
     "stable_id": "a-8f67998ae4b13733b397",
     "permalink": "/articles/a-8f67998ae4b13733b397.html",
-    "id": 34
+    "id": 45
   },
   {
     "title": "CIO 的升遷關鍵：洞察 AI 炒作與建立信任比精通技術更重要",
@@ -591,7 +745,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/must-have-qualities-of-CIO/873097/",
     "stable_id": "a-83c8d539ea154bda7da5",
     "permalink": "/articles/a-83c8d539ea154bda7da5.html",
-    "id": 35
+    "id": 46
   },
   {
     "title": "英國財政部創業顧問離職直言：創辦人應停止抱怨，世上沒有「神奇搖錢樹」",
@@ -605,7 +759,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/uk-budget-alex-depledge-advisor-startups/",
     "stable_id": "a-0293b04c6457c40a564e",
     "permalink": "/articles/a-0293b04c6457c40a564e.html",
-    "id": 36
+    "id": 47
   },
   {
     "title": "英國AI晶片新創 Fractile 氣勢如虹 再獲 5.4 英鎊 C 輪融資",
@@ -619,7 +773,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/exclusive-fractile-series-c/",
     "stable_id": "a-33b84e4f87e3786dcce8",
     "permalink": "/articles/a-33b84e4f87e3786dcce8.html",
-    "id": 37
+    "id": 48
   },
   {
     "title": "歐洲新創徵才陷入基建落後危機？專家指亂用AI恐踩歐盟法規紅線",
@@ -633,160 +787,6 @@
     "_archive_key": "rss:https://sifted.eu/articles/are-europes-fastest-growing-startups-hiring-wrong-brnd/",
     "stable_id": "a-5a16dbc62de5e40e499d",
     "permalink": "/articles/a-5a16dbc62de5e40e499d.html",
-    "id": 38
-  },
-  {
-    "title": "拒絕 Datadog 收購！AI 雲端資安新創 Upwind 獲 4 億美元 C 輪融資，估值達 38 億美元",
-    "summary": "AI 雲端資安新創 Upwind 拒絕 Datadog 的同價收購提案，轉而完成由 Bessemer Venture Partners 領投的 4 億美元 C 輪融資，估值高達 38 億美元。",
-    "content": "總部位於舊金山的 AI 雲端基礎設施資安新創 Upwind 近日宣佈完成 4 億美元的 C 輪融資，公司估值達到 3.8 億美元。此輪融資由 Bessemer Venture Partners 領投，現有投資者 Greylock Partners 與 Craft Ventures 也參與其中。值得注意的是，這筆融資距離該公司前一次在九個月前完成的 2.5 億美元融資（當時估值為 1.5 億美元）僅有短短數月。\n\n根據知情人士透露，這筆籌備數月的融資差點在最後關頭破局，原因在於上市監控軟體大廠 Datadog 曾試圖出資收購該公司。然而，知情人士指出，Datadog 的收購報價並未提供高於創投投資人所給予的 3.8 億美元估值溢價，這使得 Upwind 最終決定維持獨立營運。\n\n成立僅四年的 Upwind 在 AI 驅動的資安威脅快速攀升下成長迅猛。知情人士的財務數據顯示，該新創每季的經常性收入（ARR）穩定增加 2,000 萬至 3,000 萬美元，預計今年底的 ARR 將達到約 900 萬美元。這意味著無論是創投還是 Datadog，對該公司的估價皆超過其預測 ARR 的 40 倍。相較於今年稍早另一家高速成長的資安新創 Cyera 曾獲得高達 80 倍 ARR 的估值，Upwind 的倍數雖低於 Cyera，但在軟體公司中仍處於相對高檔。\n\nTheory Ventures 普通合夥人 Tomasz Tunguz 近期在其部落格中撰文指出，繼 AI 程式碼工具與客服軟體之後，網路安全正準備成為企業願意付費的第三大 AI 軟體浪潮。Upwind 創辦人 Amiram Shachar 先前曾將其雲端支出管理新創 Spot.io 以 4.5 億美元出售給 NetApp。此次 Upwind 選擇婉拒收購，顯示其管理層相信公司長遠的獨立價值將超越 Datadog 提出的收購價碼。\n\n不過，從產業現實來看，由於近年完成首次公開募股（IPO）的資安公司寥寥無幾，最終走向併購依然是多數新創常見的歸宿。知情人士指出，Upwind 目前仍持續吸引外界的收購興趣。該公司主打的「運行時」（runtime）資安防禦技術，能在活躍服務中即時發出警報並修復攻擊與漏洞，能否支撐其獨立發展的雄心，仍有待市場與時間的進一步檢驗。",
-    "link": "https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/",
-    "image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1197780051.jpg?resize=1200,800",
-    "date": "Wed, 28 Oct 2026 23:15:00 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/",
-    "stable_id": "a-41e3e6c04d66df378798",
-    "permalink": "/articles/a-41e3e6c04d66df378798.html",
-    "id": 39
-  },
-  {
-    "title": "蘋果首款觸控 MacBook Pro 登場：頂規配置突破 1.4 萬美元天價",
-    "summary": "蘋果正式推出首款具備觸控螢幕的 MacBook Pro，起跳價 2,899 美元起，若選配至頂級規格，價格更飆破 1.4 萬美元，創下筆電定價新極限。",
-    "content": "蘋果（Apple）正式跨入觸控螢幕 MacBook Pro 的全新時代，但這項革新也伴隨著令人咋舌的高昂代價。根據蘋果官方的配置工具顯示，全新的觸控 MacBook Pro 14 吋頂規版本定價為 14,249 美元，而 16 吋版本更高達 14,549 美元，相較於上一代 16 吋機型最高 10,149 美元的售價，直接將筆電的天花板大幅推高了 4,400 美元。\n\n即使是系列的基本入門款，14 吋的觸控 MacBook Pro 起跳價也達到 2,899 美元，在當前經濟環境下已是不小的負擔。這批全新高階機種全面搭載蘋果頂級的 M5 Max 晶片，配備 18 核心 CPU 與 40 核心 GPU，展現強悍的運算效能。\n\n然而，如此極端的定價背後，也反映出當前科技產業面臨的現實壓力。持續延燒的記憶體短缺問題，加上人工智慧（AI）對硬體資源近乎無底洞的需求，都對零組件成本造成巨大推力。從配置選項中即可見一斑：將儲存空間升級至 4TB SSD 需額外加價 1,000 美元，8TB 增加 3,000 美元，若選擇全新的 16TB 規格則要價 7,000 美元。此外，升級 128GB 記憶體需花費 2,000 美元，奈米紋理玻璃則要價 150 美元。\n\n撇開驚人的價格不談，這次產品線的更新對蘋果而言具有指標性意義。這距離蘋果首次在筆電上試驗 Touch Bar 功能已近十年；在經歷了當年放棄該功能的波折後，蘋果如今終於準備好全面擁抱觸控螢幕的筆電產品。\n\n根據蘋果的規劃，全新觸控 MacBook Pro 將於 10 月 30 日開放預購，並預計於 11 月 6 日正式上市。\n\n從市場定位來看，蘋果此次推出的頂規配置不僅是針對一般專業工作者，更瞄準了高度依賴硬體運算的 AI 開發與極端負載需求。然而，動輒破萬美元的造價，也讓這款產品更像是一項技術展示與極致效能的延伸，其高昂門檻意味著它僅會服務於極少數預算無限的頂級專業市場。",
-    "link": "https://techcrunch.com/2026/10/28/apples-touchscreen-macbook-pro-pushes-laptop-pricing-to-a-new-extreme/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-lifestyle-travel-261028_big.jpg.large_2x.jpg?w=1200",
-    "date": "Wed, 28 Oct 2026 22:47:50 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/10/28/apples-touchscreen-macbook-pro-pushes-laptop-pricing-to-a-new-extreme/",
-    "stable_id": "a-e51fe574071b0cc8c981",
-    "permalink": "/articles/a-e51fe574071b0cc8c981.html",
-    "id": 40
-  },
-  {
-    "title": "微軟首度公開 Azure 實際營收：上季達 332 億美元、年增 48%",
-    "summary": "微軟首次公開雲端運算服務 Azure 的實際營收金額，上季創下 332 億美元，年增 48%，展現與最大對手 AWS 競爭的強勁實力。",
-    "content": "微軟長期以來從未主動公開 Azure 的實際季度美元營收，通常僅會公布成長百分比或以模糊方式描述里程碑。不過，在最新公布的財報中，微軟打破慣例，揭露 Azure 在 7 月至 9 月的季度中，創造了高達 332 億美元的營收，較去年同期大幅成長 48%。\n\n這項數據的公開，讓投資人能夠更直接地將 Azure 的表現與競爭對手 Amazon Web Services（AWS）及 Google Cloud 進行對比。同日公布財報的 Alphabet 指出，Google Cloud 在同一季度營收達到 307 億美元，這使得 Azure 在金額上稍微超前。不過，涵蓋 Google Workspace 訂閱的 Google Cloud，其營收較去年同期大約翻倍，成長速度約為 Azure 的兩倍。\n\n根據微軟自身的數據，提供企業租用運算能力以運行應用程式、SaaS 並建構 AI 模型的 Azure，如今已成為該公司規模最大且成長最快產品線，大約佔微軟整體 923 億美元季度營收的 36%。此外，Azure 的營收表現也優於分析師原先預期的 323 億美元約 8.5 億美元，其 48% 的成長率更超越了財務長 Amy Hood 在 7 月法說會上預估的 44% 至 45%。\n\n在組織架構方面，Azure 目前被歸類於微軟本季新推出的兩個主要業務部門之一「Agents and Infra」。該部門將 Azure 與微軟的 M365 雲端業務整合，上季營收達到 76.8 億美元，較去年同期成長 25%。\n\n亞馬遜將於週四公布財報，市場分析師同樣預期其雲端服務 AWS 的營收將持續成長。長期以來，AWS 一直穩居全球最大雲端服務商的龍頭寶座，目前市場普遍認為微軟短期內尚無法完全超越它。然而，隨著各大雲端巨頭紛紛攤開實際的美元營收數據，全球雲端市場的競爭態勢已然更加白熱化。",
-    "link": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/04/dollar-signs-data-center.png?w=1024",
-    "date": "Wed, 28 Oct 2026 21:58:32 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
-    "stable_id": "a-96590c1fa665b625441c",
-    "permalink": "/articles/a-96590c1fa665b625441c.html",
-    "id": 41
-  },
-  {
-    "title": "Wiz 技術長警告 PHP 漏洞只是開端，AI 正加速資安漏洞的挖掘與攻擊",
-    "summary": "Google 旗下 Wiz 技術長 Tomer Schwartz 近期受訪指出，PHP 漏洞的善後工作仍在進行，並警告 AI 將加速新型漏洞的挖掘與利用，傳統手動修補方式將難以應付未來的資安挑戰。",
-    "content": "上週，支撐全球約 70% 網站的開源程式語言 PHP 爆出兩項重大漏洞，引發全球企業緊急修補系統，甚至有部分組織選擇將網站暫時離線以防止遭受攻擊。雖然這場 PHP 危機在許多人的社群動態中逐漸退燒，但資安領域的善後工作遠遠尚未結束。\n\n在 TechCrunch 的《Equity》Podcast 最新一集中，主持人 Rebecca Bellan 邀請了 Google 旗下雲端資安公司 Wiz 的防護與應用程式安全技術長（CTO of Exposure Management & AppSec）Tomer Schwartz 深入探討此事件。當時，Wiz 與 OpenAI、研究團隊 Calif 以及 PHP 官方團隊一同參與了這場與時間賽跑的緊急漏洞修補工作。\n\n在節目中，Schwartz 回顧了當時內部的緊急應變過程，並探討了早期階段的新創公司如何在架構設計之初就將資安納入考量。更令人關注的是，他提出一項嚴肅的產業警訊：這次的 PHP 漏洞事件恐怕只是個開端。隨著人工智慧（AI）技術的發展，新型漏洞被挖掘與利用的速度正在大幅加快，這意味著傳統依賴人工逐一修補漏洞的方式，在規模與速度上都將無法應對未來的資安威脅。\n\n從這場危機中可以看出，基礎開源軟體的安全漏洞往往牽一髮而動全身，對全球網路生態構成巨大壓力。隨著攻擊者與防守者同樣開始善用 AI 技術，資安防禦的自動化與即時性已成必然趨勢。如何協助新創團隊在產品開發初期就建立穩固的安全防線，並利用自動化工具應對未來的「漏洞爆發期」（vulnpocalypse），將是科技產業接下來必須面對的核心課題。",
-    "link": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/10/tomer-wiz.jpeg?resize=1200,800",
-    "date": "Wed, 28 Oct 2026 19:05:46 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
-    "stable_id": "a-927a81175fe81bc77654",
-    "permalink": "/articles/a-927a81175fe81bc77654.html",
-    "id": 42
-  },
-  {
-    "title": "資安大廠 Wiz 技術長警告：AI 時代加劇老舊程式碼漏洞危機，「漏洞末日」恐將來臨",
-    "summary": "Google 旗下的 Wiz 技術長 Tomer Schwartz 指出，隨著 AI 加速漏洞被挖掘與利用，網路老舊程式碼恐面臨「漏洞末日」。",
-    "content": "上週，支撐全球約 70% 網站的開源程式語言 PHP 爆出兩個重大漏洞，迫使許多企業緊急修補系統，甚至有組織在漏洞修復前選擇將網站暫時下線。這場風波雖然暫時從社群動態中淡出，但資安清理工作遠未結束。發現這些漏洞的研究人員更警告，這僅僅是個開始，隨著人工智慧改變了新型漏洞被發現與利用的速度，網路安全正面臨全新的挑戰。\n\nGoogle 旗下的資安獨角獸 Wiz，其曝光管理與應用程式安全（AppSec）技術長 Tomer Schwartz 近日作客 TechCrunch 的《Equity》Podcast 節目，深入剖析了當時由 Wiz、OpenAI、研究集團 Calif 以及 PHP 團隊三方聯手緊急修補漏洞的內幕。Schwartz 在節目中指出，若非借助人工智慧的強大能力，Wiz 根本無法在短短一個週末內透過客製化工具測試數十種構想，進而順利找出這些隱藏超過十年卻突然變得可被利用的漏洞。\n\n這場危機凸顯了網際網路基礎設施長期面臨的結構性問題。Schwartz 與主持人 Rebecca Bellan 在節目中探討了這場與時間賽跑的幕後修補過程、早期新創公司如何在產品開發初期就將安全性納入考量，以及為什麼傳統上依靠人工手動修補的方式已經無法應對未來的規模與速度。此外，他們也談到了協同揭露漏洞時幾乎無可避免的資訊外洩風險，以及目前仍未完成修補的對象與小型企業 WordPress 網站經營者的實際風險。\n\n從這起 PHP 漏洞事件中可以觀察到，現代開源生態系統雖然支撐了龐大的網際網路運作，但也伴隨著極高的維護隱患。隨著 AI 工具的普及，攻擊者與防守者挖掘漏洞的速度都被大幅拉升，這意味著資安防護將不再只是被動的補漏洞，而是必須轉向更具主動性與自動化的架構。Wiz 技術長的警告顯示，未來的資安挑戰將更為頻繁且劇烈，企業必須正視老舊程式碼所帶來的潛在風險。",
-    "link": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
-    "image": "https://techcrunch.com/wp-content/uploads/2024/07/GettyImages-2162704124.jpg?resize=1200,800",
-    "date": "Wed, 28 Oct 2026 18:50:39 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
-    "stable_id": "a-ae14fd150c567b30dff0",
-    "permalink": "/articles/a-ae14fd150c567b30dff0.html",
-    "id": 43
-  },
-  {
-    "title": "倒數 7 天！TechCrunch 創辦人峰會將於波士頓登場，門票優惠即將截止",
-    "summary": "TechCrunch 創辦人峰會將於 11 月 4 日在波士頓 SoWa Power Station 舉行，提供實戰策略與人脈交流，目前早鳥優惠倒數中。",
-    "content": "備受矚目的 TechCrunch 創辦人峰會（TechCrunch Founder Summit）進入最後倒數 7 天，活動將於 11 月 4 日在波士頓的 SoWa Power Station 正式登場。主辦單位提醒，高達 100 美元的門票折扣與「買一送一」的共同創辦人同行優惠即將截止，欲參與的創業家與投資人需把握最後機會。\n\n這場為期一天的峰會被定位為創辦人 100 門課程（Founder 101 bootcamp），旨在協助新創團隊應對從零到一的真實挑戰。活動內容主打實戰導向，涵蓋募資、團隊招募、產品市場契合度（product-market fit）、AI 策略及業務成長等核心議題。現場將設置兩個問答分會場以及兩個互動圓桌討論室，讓與會者能與具備豐富經驗的營運者和投資人進行直接對話。\n\n除了議程與圓桌討論外，峰會亦安排了現場簡報（Live pitching）與投資人回饋環節，協助創辦人打磨商業故事並理解市場定位。同時，活動導入 Braindate 平台進行高影響力的人脈媒結，並結合波士頓當地的官方周邊活動，擴大在地新創社群的連結。\n\n本次峰會邀請多位重量級產業講者分享實務經驗，包括 Bessemer Venture Partners 的 Kent Bennett 將探討如何驗證客戶需求；Cogent Security 的 Vineet Edupuganti 聚焦於招募與打造高績效團隊；HqO 的 Chase Garbarino 則分享在矽谷以外地區打造標竿企業的挑戰。此外，True Ventures 的 Dave Balter 與 TDK Ventures 的 Tina Tosukhowong 也將分別就簡報技巧與投資人評估標準提供專業見解。\n\n記者分析指出，對於處於早期發展階段的新創團隊而言，這類聚焦實戰與人脈的區域性峰會，往往能提供比大型綜合科技展會更具針對性的資源。隨著活動日期逼近，各項票價優惠的倒數，也反映出主辦方在活動前夕衝刺最後出席率的常見節奏。對創辦人來說，如何在短暫的一天議程中精準對接所需的投資人與策略夥伴，將是評估這類活動效益的關鍵。",
-    "link": "https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/",
-    "image": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?resize=1200,800",
-    "date": "Wed, 28 Oct 2026 13:00:00 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/",
-    "stable_id": "a-98d37905edfc653bfb0a",
-    "permalink": "/articles/a-98d37905edfc653bfb0a.html",
-    "id": 44
-  },
-  {
-    "title": "資安界證實 PHP 爆發首起成功漏洞利用，CISA 緊急納入已知漏洞清單",
-    "summary": "資安研究人員與美國 CISA 確認 PHP 關鍵漏洞遭到實際利用，駭客成功實現遠端程式碼執行，引發全球網路安全警戒。",
-    "content": "資安研究人員與美國政府權責機關近日確認，全球廣泛使用的開源腳本語言 PHP 首次出現確切的成功漏洞利用案例。這項發展打破了先前安全社群對威脅警告遲遲未落實的疑慮，也讓支撐全球約七成網站的核心技術再度面臨嚴峻的安全考驗。\n\n過去一週以來，駭客持續嘗試利用編號為 CVE-2026-109618 的記憶體損壞（memory-corruption）漏洞，以及編號為 CVE-2026-109619 的陳舊內部請求狀態（stale internal request-state）漏洞。人工智慧公司 Perplexity 的研究人員率先透過蜜罐（honeypot）感測器偵測到這項活動，並確認有威脅行為者已成功達成遠端程式碼執行（RCE）。\n\nPerplexity 偵測與回應主管 Adel Karimi 在社群平台 X 上指出，這已是獲得證實、具備可用記憶體洩漏的 RCE，而非單純的程式崩潰與可疑處理程序。Expel 首席威脅研究員 Marcus Hutchins 也對此項發現表示背書，認為這是自上週危機爆發以來，他所見過「品質最高」的 PHP 漏洞利用確證。Hutchins 進一步引述了一起針對執行 PHP 8.4.26 的 Apache mod_php 安裝環境之成功利用嘗試的技術細節。\n\n面對情勢升級，美國網路安全暨基礎設施安全局（CISA）於週一正式將這兩個漏洞納入「已知利用漏洞」（Known Exploited Vulnerabilities）目錄中。雖然官方未明確說明更新目錄的具體契機，但官員指出此舉是基於主動利用的評估標準。\n\n在此之前，安全研究社群因缺乏明確證據而承受不少壓力。VulnCheck 研究人員曾公開批評廣泛流傳的概念驗證（PoC）品質低落；Shadowserver Foundation 也在週一表示，由於缺乏可靠資訊，決定暫不發布受影響實例的數據。不過，Shadowserver 仍公布了停止支援（end-of-life）版本的統計數據，光是在美國境內就有高達 26,300 個此類實例。軟體進入停止支援狀態後，製造商將不再提供安全性修補程式，用戶必須升級至新版本才能獲得官方支援。\n\n從此次事件的發展脈絡來看，PHP 作為全球大多數網站的底層技術，其安全性連動著龐大的網路生態。儘管資安社群對於早期威脅情報的透明度與驗證標準曾有爭議，但隨著 Perplexity 等機構捕捉到具體的遠端程式碼執行證據，防禦方已無法繼續觀望。對企業與系統管理者而言，當務之急不僅是修補已知漏洞，更需正視龐大未獲官方支援的舊版系統所帶來的潛在風險。",
-    "link": "https://www.ciodive.com/news/cisa-security-researchers-exploitation-php-flaws/873116/",
-    "image": "https://imgproxy.divecdn.com/tJcQND7y1Rub4sehryhr-z_s9Swzf3gMNfyNZxasokU/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy04MDgxNTc4MzIuanBn.webp",
-    "date": "Wed, 28 Oct 2026 16:40:00 -0400",
-    "category": "BizTech",
-    "is_manual": false,
-    "_archive_key": "rss:https://www.ciodive.com/news/cisa-security-researchers-exploitation-php-flaws/873116/",
-    "stable_id": "a-e81bd12ffc5a33aff6bd",
-    "permalink": "/articles/a-e81bd12ffc5a33aff6bd.html",
-    "id": 45
-  },
-  {
-    "title": "美國期中選舉將至：AI 監管呼聲高漲，橫跨國會攻防與產業界危機",
-    "summary": "隨著美國期中選舉逼近，AI 監管成為選民與政界焦點。面對 AI 代理擅入銀行帳戶等安全隱患，國會與產業界正面臨日益急迫的立法與風險管理壓力。",
-    "content": "隨著 11 月 3 日期中選舉的臨近，美國聯邦層級推動人工智慧（AI）監管的聲浪正顯著升溫。近期民調顯示，跨黨派選民對政府加強 AI 監督的支持度持續攀升，候選人和政治團體也紛紛將 AI 議題納入競選主軸，聚焦於安全風險、勞動市場衝擊以及數據中心基礎設施擴建所帶來的成本等問題。\n\n莫理斯·福斯特律師事務所（Morrison Foerster）國會調查業務聯席主席 Carlos Uriarte 指出，兩黨選民都希望為 AI 設立防護欄，候選人們也注意到了這點；不過對多數選民而言，AI 仍屬於經濟議題的一部分，而非獨立的單一投票考量。相對地，企業領袖面臨的風險正逐步升高。上週《Axios》報導指出，大型美國銀行正開始限制第三方 AI 代理，主因是出現了 AI 代理存取客戶帳戶並可能超出用戶指示行事的實際案例。這類「失控 AI」事件，進一步加劇了外界對立即建立監管機制的呼聲。\n\n儘管社會對 AI 安全的關注度提高，華盛頓的國會議員在如何規範產業上依然存在分歧。參議院的兩黨 AI 安全立法談判在 9 月下旬陷入僵局，主要爭端在於模型發布前的測試應如何進行，例如測試是否應強制執行，以及應由政府專家主導還是交由企業自行評估。眾議院方面，議員 Jay Obernolte 與 Lori Trahan 曾提出跨黨派法案，授權商務部在認定先進 AI 模型呈現「迫在眉睫的災難性風險」時，可暫停或限制其開發與部署；但眾議院能源和商業委員會主席 Brett Guthrie 則表示不願在「殘餘期」（lame-duck session）匆忙推動複雜立法。\n\n在聯邦法規遲遲未決之際，加州與紐約州等地方政府已開始自行推動安全防護措施。同時，美國總統唐納·川普（Donald Trump）與 Google、Anthropic、Meta 及 OpenAI 等科技巨頭領袖於 9 月 29 日簽署了一項旨在加強前沿 AI 系統防護的自願性承諾。然而，川普先前曾將 AI 安全疑慮斥為「騙局」，引發民主黨高層強烈抨擊。非營利組織「未來生命研究所」（Future Life Institute）的聯合倡議者 Wes McEnany 認為，若共和黨在期中選舉表現不佳，將迫使當局重新審視其反對加強 AI 防護的立場。\n\n企業治理層面，隨著風險更加具體，財務長（CFO）等高階主管的角色也隨之吃重。瑞德史密斯律師事務所（Reed Smith）全球 AI 業務聯席主席 Tyler Thompson 強調，CFO 在評估部署成本時，必須涵蓋軟體、整合、人工審查、安全、合規、保險及錯誤成本，「廠商說安全」已不再能構成合格的治理計畫。展望未來，縱使國會控制權變換未必能立即促成新的聯邦 AI 法規，但專家分析指出，這仍可能導致國會透過文件調閱、聽證會及發動調查等方式，對 AI 開發商展開更為積極的監督與審查。",
-    "link": "https://www.ciodive.com/news/ai-regulation-push-gains-steam-ahead-midterms/872929/",
-    "image": "https://imgproxy.divecdn.com/Q_kj1dUDueuqJgj0vFRMQNhHUG0dkR5lJxb_gLeoF4k/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjk4NzAzNDYzXy1fQUlfcHJvdGVzdHMuanBn.webp",
-    "date": "Wed, 28 Oct 2026 07:00:00 -0400",
-    "category": "BizTech",
-    "is_manual": false,
-    "_archive_key": "rss:https://www.ciodive.com/news/ai-regulation-push-gains-steam-ahead-midterms/872929/",
-    "stable_id": "a-d41d19dafcf5f2f8ec19",
-    "permalink": "/articles/a-d41d19dafcf5f2f8ec19.html",
-    "id": 46
-  },
-  {
-    "title": "企業AI規模化落地難題：加拿大豐業銀行與利寶互助保險如何兼顧創新與成本？",
-    "summary": "在紐約舉行的Evident AI Symposium上，多位金融與保險業高管分享了在擴展AI應用規模的同時，如何透過員工培訓與成本管理來最大化技術價值的實務經驗。",
-    "content": "隨著人工智慧在各行各業的滲透率不斷加深，企業在追求技術創新的同時，如何有效控制成本並提升員工的AI使用能力，已成為當前IT決策者的核心課題。在紐約舉行的 Evident AI Symposium 上，來自加拿大豐業銀行（Scotiabank）與利寶互助保險（Liberty Mutual）等大型機構的IT高管，分享了他們在規模化部署AI時的策略與平衡之道。\n\n利寶互助保險全球資訊長 Monica Caldas 在研討會中指出，建立員工的「AI流利度」與直覺是實現技術價值的關鍵。為此，該公司推出了多模型介面「LibertyGPT」，讓員工能夠接觸多種可用模型，並動手打造專屬的AI輔助工具。Caldas 強調，員工不能像透過閱讀書籍那樣學會游泳，必須實際浸潤其中。截至目前，利寶互助保險的員工已經建立超過 3 萬個日常營運助理，在負責任的前提下大幅擴展了AI的內部使用。\n\n另一方面，加拿大豐業銀行資訊長兼集團主管 Tim Clark 則坦言，如何在提供員工充足AI能力的同時，將他們「拉回成本現實」，是過去一段時間面臨的挑戰。豐業銀行於今年 4 月推出「Scotia Intelligence」，旨在平衡員工對AI工具的存取與成本控管。這項統一了全行AI能力、平台與治理機架構的系統，目前已向超過 7 萬名員工推廣，協助管理階層辨識價值、精進使用率並擴展服務。\n\n安全與可見性成為豐業銀行方法的基石。透過建立監控與提升AI價值生成的框架，豐業銀行能夠更精準地評估特定任務最適合的模型，未來更計畫讓員工享有完整的模型選擇權，在合適的場景下策略性地採用較簡單的開源權重模型。\n\n安永（EY）美洲金融服務AI領導者 Sameer Gupta 在面板討論中指出，銀行業目前正採用多種工具和方法來管理成本，包括利用網關將工作負載路由至最適合完成特定任務的模型。不過，成本管理本質上仍是技術與員工行為之間的平衡。利寶互助保險採取了前線部署工程模型（forward deployed engineering model）來推動FinOps能力，並簡化員工教育；豐業銀行則透過在初期提供完整的AI能力與培訓，有效遏止了「影子AI」的蔓延，防止員工私下採購缺乏價值的工具。\n\n從兩家金融巨頭的實踐可以看出，企業在推進AI規模化時，技術架構、財務維運（FinOps）與教育培訓缺一不可。唯有將成本管控內化至日常營運與員工行為中，組織才能在長期的AI競賽中維持效益與創新的平衡。",
-    "link": "https://www.ciodive.com/news/scotiabank-liberty-mutual-scale-ai-watch-costs/872809/",
-    "image": "https://imgproxy.divecdn.com/byB4rrtHDONunWk4P5CV7ytLAXGcjuGZQrVyb8k_bm8/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9QYW5lbF9waWMuanBn.webp",
-    "date": "Mon, 26 Oct 2026 16:05:13 -0400",
-    "category": "BizTech",
-    "is_manual": false,
-    "_archive_key": "rss:https://www.ciodive.com/news/scotiabank-liberty-mutual-scale-ai-watch-costs/872809/",
-    "stable_id": "a-4e523720d154afe2085c",
-    "permalink": "/articles/a-4e523720d154afe2085c.html",
-    "id": 47
-  },
-  {
-    "title": "AI 時代高階人才市場分裂：尋找完美候選人已成過去式，企業該如何調整招聘策略？",
-    "summary": "AI 時代重塑歐洲高階人才市場，人才池出現明顯分裂。專家建議企業應捨棄尋找完美候選人的迷思，專注於具體商業成果與果斷的招聘流程。",
-    "content": "在人工智慧（AI）浪潮的推動下，歐洲高階經理人市場正面臨結構性轉變。根據人才 CRM 平台 Thrive 針對超過 9,000 次高階主管搜尋數據顯示，市場呈現高度集中化，其中僅有 100 位候選人出現在五分之一以上的搜尋中，其需求量是平均候選人的 37 倍。這顯示出高階人才市場正在分裂為兩個截然不同的族群：一端是具備深厚 AI 應用能力的領導者，另一端則是擁有成熟營運經驗的傳統管理者，而兩者兼具的人才目前仍屬少數。\n\n成長型企業在擴展團隊、管理複雜業務、籌措資金及取得董事會信任時，依然需要經驗豐富的營運主管；與此同時，AI 技術的普及也促使企業尋求能夠理解技術如何改變產品、營運模式與決策流程的新世代領導者。然而，這兩種能力在現今的候選人身上極少同時存在。具備 AI 前瞻性的領導者往往缺乏國際規模擴張、跨部門管理或募資的實務經驗；反之，資深營運人才雖然具備所需的領導資歷，但其 AI 熟悉度可能仍在發展中。同時擁有兩種特質的人才，如今往往有更好的選擇，甚至傾向自行創業。\n\n面對這樣的市場現實，True Search 董事總經理兼 GTM 與企業業務聯席主管 David Winch 指出，企業在擬定招聘規格時，不應直接將「具備 AI 經驗」作為一項僵化的硬性要求，而應回歸根本問題：這位領導者在未來 12、18 到 24 個月內究竟需要達成哪些實質的商業成果？對於部分企業而言，深厚的 AI 能力至關重要；但對其他企業來說，一位具備強大判斷力與學習敏捷度的資深營運者，可能更適合帶領團隊度過轉型期。若執著於在單一候選人身上集結所有理想條件，往往只會讓招聘陷入停滯。\n\n除了釐清職位需求外，招聘流程本身也是決定能否成功網羅頂尖人才關鍵的一環。高級候選人同樣在評估企業的實力與文化，若出現回饋緩慢、時程不明或面試安排鬆散等狀況，往往會向優秀候選人傳遞出企業內部混亂的信號。因此，表現優秀的企業通常會在招聘初期就明確定義具體工作內容、達成成功的關鍵指標，並在確認人選後保持流程順暢，同時透過個人化溝通積極爭取頂尖候選人。\n\n從投資的角度來看，高階主管招聘已不單純只是人力資源的功能性議題，而是企業價值創造方程式的一部分。在 AI 人才高度稀缺且市場嚴重分裂的環境下，企業若能摒棄不切實際的完美候選人期待，專注於解決核心商業問題並優化招聘效率，將能在這波轉型浪潮中建立更具競爭力的領導團隊。",
-    "link": "https://sifted.eu/articles/executive-talent-market-is-divided-in-two-brnd/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15163203/SIFTED-SUMMIT-DAY-1-Protein-Studio-Verity-Quirk.-144-scaled.jpg",
-    "date": "Wed, 28 Oct 2026 14:32:29 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/executive-talent-market-is-divided-in-two-brnd/",
-    "stable_id": "a-d7762a70b9d037481a50",
-    "permalink": "/articles/a-d7762a70b9d037481a50.html",
-    "id": 48
-  },
-  {
-    "title": "英國秋季預算案出爐：調整資本利得稅、工作簽證與青年創業津貼，力挺新創生態系",
-    "summary": "英國政府公布最新財政預算案，針對資本利得稅、簽證制度及青年創業者推出多項新政，旨在改善英國新創與規模化企業的發展環境。",
-    "content": "英國財政大臣約翰·海利（John Healey）於國會正式公布全新經濟政策與預算案，推出一系列涵蓋稅收與簽證機制的改革，期望吸引更多新創企業在英國落地並擴張規模。這項備受矚目的財政計畫獲得了英國新創社群的關注，並針對資本利得稅、工作簽證及年輕創業者祭出實質支援。\n\n為了減輕企業稅負並鼓勵長期投資，海利宣布推出「創業者稅率」（founder's rate），針對符合資格的商業資產（QEB）提供降至 10% 的優惠稅率，適用上限為 500 萬英鎊。此舉獲得英國新創業界的正面回饋，創業者與投資人普遍認為這有助於留住優秀人才並刺激國內投資意願。此外，預算案也確認英國商業銀行（British Business Bank）旗下的企業成長基金（Enterprise Capital Funds）及未來基金：英國（Future Fund: Breakthrough）將獲得額外 5.05 億英鎊的資金挹注，以持續扶持深科技等高潛力領域。\n\n除了稅務改革，簽證制度的調整也是本次預算案的焦點之一。針對英國的簽證政策，財政部計畫放寬非英國籍創辦人的相關規定，讓科技人才在當地創業與發展更加便利。業界人士分析，此舉有助於吸引全球頂尖的科技與創業人才赴英發展，進一步鞏固英國作為歐洲科技樞紐的地位。\n\n在公共採購與政府創新方面，英國政府也承諾將推動更具包容性的採購流程，協助中小企業更容易取得政府合約。同時，當局將推出「安全且負責任的人工智慧藍圖」（Responsible AI Blueprint），在推動人工智慧創新的同時，確保兼顧安全性與監管需求。\n\n整體而言，這份預算案展現了英國政府企圖透過具體政策留住本土新創、吸引國際資金的決心。然而，新創企業能否在新規下真正受惠，仍取決於後續法規落實的細緻度，以及繁瑣行政手續是否能獲得實質簡化。業界正密切關注這些財政與簽證變革在實際執行時的成效。",
-    "link": "https://sifted.eu/articles/uk-autumn-budget-2026-startups/",
-    "image": "https://content.sifted.eu/wp-content/uploads/2026/10/28141405/budget-1024x336.png",
-    "date": "Wed, 28 Oct 2026 13:51:26 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/uk-autumn-budget-2026-startups/",
-    "stable_id": "a-c980b9c3f5d3a2503184",
-    "permalink": "/articles/a-c980b9c3f5d3a2503184.html",
     "id": 49
   }
 ]
