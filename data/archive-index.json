@@ -1,5 +1,47 @@
 [
   {
+    "stable_id": "a-1129a991511286c4f206",
+    "title": "美國期中選舉民主黨大勝，科技巨頭與資料中心擴建面臨選民與地方政治阻力",
+    "summary": "美國期中選舉民主黨取得歷史性勝利，各地選民透過投票與選舉結果對資料中心擴建表達強烈反彈，加上華爾街對 AI 投資轉趨保守，使科技巨頭及馬斯克面臨更嚴峻的政治與財務挑戰。",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2207245107-1.jpg?resize=1200,765",
+    "date": "Sat, 07 Nov 2026 22:07:22 +0000",
+    "category": "Pulse",
+    "permalink": "/articles/a-1129a991511286c4f206.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+    "source_path": ""
+  },
+  {
+    "stable_id": "a-b00eb38edcfb1f6002cf",
+    "title": "家長尋求更安全的數位解方：專為兒童打造的手機與通訊設備市場興起",
+    "summary": "面對未成年使用一般智慧型手機的潛在風險，市場上湧現各種專為兒童設計的手機、家用電話與智慧手錶，透過軟體限制與聯絡人審核，協助家長把關孩子的使用安全。",
+    "image": "https://techcrunch.com/wp-content/uploads/2021/10/GettyImages-620923891.jpg?resize=1200,800",
+    "date": "Sat, 07 Nov 2026 19:00:00 +0000",
+    "category": "Pulse",
+    "permalink": "/articles/a-b00eb38edcfb1f6002cf.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/",
+    "source_path": ""
+  },
+  {
+    "stable_id": "a-0b500857767dd741eb19",
+    "title": "幣安經歷 63 億美元黑客重創後，財務長 Kaiser Ng 宣佈離職",
+    "summary": "加密貨幣交易所幣安在經歷高達 63 億美元的黑客攻擊事件僅一周後，財務長 Kaiser Ng 宣佈離職以追求新事業，職缺將由 Justin Yek 接任。",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/binance-2206279918.jpg?resize=1200,800",
+    "date": "Sat, 07 Nov 2026 17:24:07 +0000",
+    "category": "Pulse",
+    "permalink": "/articles/a-0b500857767dd741eb19.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://techcrunch.com/2026/11/07/binance-cfo-is-leaving-to-pursue-a-new-venture-after-6-3-billion-hack/",
+    "source_path": ""
+  },
+  {
     "stable_id": "a-37b8b2e310f3b5ea6288",
     "title": "AI基礎設施挑戰浮現！Crusoe將懷俄明州未完工資料中心專案售予Google",
     "summary": "AI資料中心開發難度攀升，估值達309億美元的Crusoe將懷俄明州未完工專案售予Google，Google計劃砸下17億美元繼續推進。",
@@ -123,6 +165,20 @@
     "source": "",
     "is_manual": false,
     "link": "https://sifted.eu/articles/european-startups-defence-rollups-vc-sceptical/",
+    "source_path": ""
+  },
+  {
+    "stable_id": "a-6cfdcc7880c56d903759",
+    "title": "歐洲創投最愛看什麼？Sifted 揭曉 Onstage W26 梯次最受矚目的 12 家新創",
+    "summary": "歐洲權威科技媒體 Sifted 公布 Onstage W26 梯次最受創投追捧的 12 家新創名單，聚焦於機器人、工業科技與法遵軟體等領域。",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1536,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/21172206/IMG_7477-scaled.jpg",
+    "date": "Fri, 06 Nov 2026 05:00:28 GMT",
+    "category": "Insights",
+    "permalink": "/articles/a-6cfdcc7880c56d903759.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://sifted.eu/articles/onstage-w26-cohort/",
     "source_path": ""
   },
   {
@@ -294,6 +350,20 @@
     "source_path": ""
   },
   {
+    "stable_id": "a-c6cd6eecf6a339a63336",
+    "title": "YC 新創 Discovered Materials 懸賞 100 萬美元，挑戰 AI 攻克材料科學五大難題",
+    "summary": "出身 Y Combinator 的新創 Discovered Materials 懸賞百萬美元，邀集頂尖 AI 模型挑戰材料科學領域的五大未解難題，盼為半導體與先進科技建立全新的科學驗證標準。",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/08/discoverd-materials.jpg?resize=1200,800",
+    "date": "Thu, 05 Nov 2026 13:00:00 +0000",
+    "category": "Ecosystem",
+    "permalink": "/articles/a-c6cd6eecf6a339a63336.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+    "source_path": ""
+  },
+  {
     "stable_id": "a-3181f739b1ccc6dc9cda",
     "title": "前 Revolut 員工創辦 AI 財富科技新創 Haido，獲重量級投資人背書",
     "summary": "兩名前 Revolut 員工攜手創辦 AI 個人財富科技新創 Haido，並獲得早期 Monzo 投資人 Eileen Burbidge 等資金支持，搶攻歐洲金融科技市場。",
@@ -333,6 +403,20 @@
     "source": "",
     "is_manual": false,
     "link": "https://sifted.eu/articles/memrise-mindmax-helsing-funding-round-memory/",
+    "source_path": ""
+  },
+  {
+    "stable_id": "a-3255ca92187021822dbb",
+    "title": "2026工程學未來：人手更少、工作更多與「Token至上」時代的終結",
+    "summary": "Sifted Summit 2026 探討工程學的未來，隨著生成式 AI 普及，工程師面臨工作型態轉變、精簡人力與告別過度消耗運算資源的盲目追求。",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=480,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/05004747/84E041CD-6215-44F2-B3FF-EB489AE0524A_4_5005_c.jpeg",
+    "date": "Thu, 05 Nov 2026 05:00:06 GMT",
+    "category": "Insights",
+    "permalink": "/articles/a-3255ca92187021822dbb.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://sifted.eu/articles/the-future-of-engineering-2026/",
     "source_path": ""
   },
   {
@@ -476,6 +560,20 @@
     "source_path": ""
   },
   {
+    "stable_id": "a-3c132fbe365728cf0e41",
+    "title": "TechCrunch 創辦人高峰會 2026 波士頓登場：聚焦 AI 創新、募資策略與規模化實戰",
+    "summary": "TechCrunch 創辦人高峰會 2026 於波士頓 SoWa Power Station 盛大開幕，匯聚創辦人與投資人探討 AI、募資與規模化策略。",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/01/TC-All-Stage-2025-Breakout-QA.jpg?resize=1200,800",
+    "date": "Wed, 04 Nov 2026 13:00:00 +0000",
+    "category": "Ecosystem",
+    "permalink": "/articles/a-3c132fbe365728cf0e41.html",
+    "author": "",
+    "source": "",
+    "is_manual": false,
+    "link": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
+    "source_path": ""
+  },
+  {
     "stable_id": "a-7952beb84fe001b07c9e",
     "title": "中型企業資安防護拉警報：近半數已知漏洞擱置半年未修",
     "summary": "根據 CyberFox 調查，中小企業因人力與預算限制，資安維護力不從心。近半數企業將已知漏洞放置超過半年，被迫轉向託管服務供應商（MSP）尋求技術與人力支援，以應對日益複雜的 AI 治理與防禦需求。",
@@ -491,8 +589,8 @@
   },
   {
     "stable_id": "a-9d55cff8eb2c3956e553",
-    "title": "求職信 AI 味太濃？科技業招募新標準：要「懂用」但別「過度依賴」",
-    "summary": "隨著 AI 生成內容氾濫，歐洲科技初創公司在招募時開始面臨挑戰。求職者過度依賴 AI 撰寫履歷與求職信，反而可能適得其反，企業現正尋求能活用工具、卻不失個人思考深度的應聘者。",
+    "title": "求職信AI感太重反遭拒？科技公司：擁抱AI，但別走極端",
+    "summary": "隨著AI工具普及，大量充滿AI痕跡的求職信湧入科技公司。新創企業表示，求職者應善用AI，但過度依賴反會顯得缺乏誠意與思考能力。",
     "image": "https://images.sifted.eu/cdn-cgi/image/width=1530,quality=75,fit=cover,format=auto/wp-content/uploads/2026/01/02161735/Judith_Portrait_23433_final_final-2-scaled-e1767370760179.jpeg",
     "date": "Wed, 04 Nov 2026 10:40:34 GMT",
     "category": "Insights",
@@ -547,8 +645,8 @@
   },
   {
     "stable_id": "a-1c31e2c1e69c8a4a78b0",
-    "title": "百勝集團財報亮眼：AI技術全面進駐肯德基與塔可鍾，成業務轉型關鍵引擎",
-    "summary": "旗下擁有肯德基與塔可鍾的百勝集團公布第三季財報，銷售額成長3%。財務長表示AI技術對業務具變革性，已深入廚房與得來速。",
+    "title": "百勝集團全面押注AI：從點餐到廚房管理 科技轉型重塑餐飲帝國",
+    "summary": "旗下擁有Taco Bell與KFC的百勝集團（Yum Brands）財務長Ranjith Roy指出，AI技術正對業務帶來變革性影響，全面導入廚房、得來速與管理策略中。",
     "image": "https://imgproxy.divecdn.com/2VsTw2ApHHblO10Lo7FSigSQ6kfv52-Aq4dAnfXUICg/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjg2MTA0NjgzLmpwZw==.webp",
     "date": "Tue, 03 Nov 2026 16:14:04 -0500",
     "category": "BizTech",
@@ -575,8 +673,8 @@
   },
   {
     "stable_id": "a-5f8007fbcac6727f15c9",
-    "title": "AI 推論需求激增！新創 Fal 估值翻倍達 160 億美元，最新融資狂吸 13 億美元",
-    "summary": "受惠於開源 AI 模型推論需求飆升，舊金山新創 Fal 於最新融資中募得 13 億美元，估值在短短數月內翻倍至 160 億美元。",
+    "title": "AI 影音推理需求狂飆！新創 fal 估值暴衝至 160 億美元，最新獲 Bessemer 領投 13 億美元",
+    "summary": "專注於 AI 影音與語音模型代管運行的舊金山新創 fal 需求激增，宣佈完成由 Bessemer 領投的 13 億美元融資，估值在短短數月內翻倍達到 160 億美元。",
     "image": "https://techcrunch.com/wp-content/uploads/2022/12/GettyImages-1268605503.jpg?resize=1200,420",
     "date": "Tue, 03 Nov 2026 19:34:43 +0000",
     "category": "Ecosystem",
