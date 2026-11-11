@@ -300,6 +300,132 @@
     "id": 14
   },
   {
+    "title": "X 推出內建影片剪輯工具，企圖以剪片功能吸引網紅與創作者",
+    "summary": "社群平台 X 推出全新影片剪輯工具，讓用戶能將長影片裁切為短片並直接發布，同時串聯其原生內容獎勵計畫，藉此吸引網紅並提升互動率。",
+    "content": "為了吸引更多社群媒體人才與網紅，社群平台 X 近日正式推出一項全新的內建影片剪輯工具。這項新功能主打讓用戶能夠直接在平台上，將較長的影片裁剪成具備 TikTok 節奏感的短片，並快速分享出去，藉此吸引更多目光與流量。\n\n根據 X 官方說法，這款工具的操作相當直覺，主要功能就是讓用戶能夠剪輯影片並直接發布至平台上。為了保障原創內容並提供追蹤來源，平台設計了每支剪輯短片都會帶有「Clip from」標籤，並附上連回原始影片的連結，讓其他用戶能進一步查看原創者及其相關內容。官方在社群貼文中表示，用戶只要抓取任何影片中最喜歡的時刻、加上個人觀點，就能直接在 X 平台上完成發布。\n\n除了便利的編輯功能外，這項工具也與 X 的「Original Content Rewards」獎勵計畫進行整合。平台指出，無論是原創者還是協助剪輯短片的創作者（clippers），都有機會透過短片的觀看次數獲得分潤。不過，這項獎勵計畫並非全面開放，僅適用於符合資格的創作者，且分潤金額會根據特定的觀眾互動水準來計算。\n\n長期以來，將長影片剪輯成短片以衝高觸及率和廣告收益，是社群媒體上相當熱門的技術，許多網紅甚至會額外花錢請專門的剪輯團隊來處理這類工作。如今這類手法不僅被大型企業廣泛應用於行銷活動，也常見於政治造勢之中。X 此次將剪輯功能搬上檯面並內建化，顯然是希望將這套流量密碼直接留在自家生態系中。\n\n回顧過去幾年，X 為了與 YouTube 及 Substack 等平台競爭，積極擴充支援的內容類型。該平台自 2022 年（當時仍名為 Twitter）起引入長影片功能，並在近年逐漸普及；為了吸納文字創作者，也取消了傳統的字數限制，推出僅限付費訂閱者閱讀的長篇部落格文章。今年以來，X 的動作頻頻，包括三月份推出允許創作者將部分文章內容設為付費牆的「exclusive threads」，以及七月份推出直播工作室並提撥 100 萬美元預算給直播創作者。\n\n從 X 近期的一連串產品更新來看，平台正持續透過各種工具試圖鞏固網紅經濟。內建剪輯工具的推出，不僅降低了參與短影音浪費的門檻，也透過獎勵機制試圖綁定創作者與剪輯者的利益。然而，這項功能最終能否實質帶動平台黏著度，並在競爭激烈的短影音市場中突圍，仍有待後續的實際數據與用戶接受度來驗證。",
+    "link": "https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/twitter-x-musk-graffiti-hand.jpg?resize=1200,675",
+    "date": "Wed, 11 Nov 2026 01:02:13 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
+    "stable_id": "a-91d5fcab4999bc210e82",
+    "permalink": "/articles/a-91d5fcab4999bc210e82.html",
+    "id": 15
+  },
+  {
+    "title": "OpenAI 收購 AI 旅遊新創 Odessia，網羅 Sonder 創辦人帶領旅遊技術開發",
+    "summary": "OpenAI 證實收購創立僅一年的 AI 旅遊新創 Odessia，並網羅創辦人 Francis Davidson 加入團隊，協助 OpenAI 規劃旅遊領域的未來發展。",
+    "content": "人工智慧巨頭 OpenAI 近日完成了一項具指標性的收購與人才納編。根據 AI 旅遊代理新創 Odessia 創辦人 Francis Davidson 在公告中透露，該公司已被 OpenAI 收購，而他本人也已正式加入 OpenAI，未來將協助該 AI 實驗室拓展旅遊相關技術與應用。OpenAI 發言人事後也向媒體證實了這項人事案，表示歡迎 Davidson 加入團隊。\n\n這筆交易的具體財務條款並未對外公開，但從其運作模式來看，這是一次典型的「人才併購」（acqui-hire）。成立僅一年的 Odessia 曾獲得由紅杉資本（Sequoia）領投的 600 萬美元種子前融資，並在約五個月前推出其 AI 旅遊代理工具。雖然 Davidson 指出，該工具在營運期間曾協助早期用戶規劃總價值達數百萬美元的行程，但隨著此次交易完成，該項產品已經正式關閉。\n\n談到這次收購的背景，OpenAI 發言人指出，旅遊規劃向來是聊天機器人用戶最常尋求協助的領域之一。每週有高達 12 億人次使用 ChatGPT 處理日常大小事，從理解健康問題、決定晚餐菜單、建立預算到規劃旅行，OpenAI 認為這其中存在著讓使用者體驗變得更加實用的龐大機會。事實上，早在 2025 年 7 月 OpenAI 推出 ChatGPT agent 時，就曾將旅遊列為潛在應用場景之一，且該公司目前也將 Booking.com、Expedia 和 KAYAK 等旅遊巨頭列為客戶或合作夥伴。不過，OpenAI 官方目前尚未公布任何具體的旅遊專用新產品或詳細計畫。\n\n引人關注的是創辦人 Francis Davidson 在矽谷的經歷。他在 2014 年就讀大學期間曾創立短租新創 Sonder，經營模式類似 Airbnb，專注於全球各大城市高檔公寓的短期租賃。然而，該公司在 COVID-19 疫情期間遭受重創，隨後雖透過 SPAC 上市，但融資金額不如預期，加上與萬豪酒店（Marriott）的關鍵合作破局，最終導致公司宣告破產並進行清算。儘管 Sonder 最終未能成為商業上的常勝軍，Davidson 仍被視為經歷過大風大浪、具備豐富實戰經驗的創辦人。\n\n從產業發展的角度來看，OpenAI 將 Odessia 團隊納入麾下，顯示出其正持續強化垂直領域的個人化助理應用能力。隨著旅遊規劃成為 AI 應用的熱門戰場，擁有一位具備深厚旅遊產業經驗與 AI 代理開發背景的創辦人，將為 OpenAI 未來在該領域的產品佈局提供更多可能性。不過，在 OpenAI 正式發表相關產品之前，這項人事佈局最終會轉化為怎樣的消費者功能，仍有待後續觀察。",
+    "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2207801992.jpg?resize=1200,801",
+    "date": "Tue, 10 Nov 2026 21:08:52 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+    "stable_id": "a-773f3d4d27bc0c2e9f89",
+    "permalink": "/articles/a-773f3d4d27bc0c2e9f89.html",
+    "id": 16
+  },
+  {
+    "title": "紐約州AI安全法正式上路 OpenAI與Anthropic面臨嚴格監管",
+    "summary": "紐約州正式實施重磅AI安全法，要求OpenAI與Anthropic等大型前沿開發商於2027年初前完成註冊、公開安全框架，違者將面臨百萬美元重罰。",
+    "content": "美國紐約州正準備強制執行全美最具影響力的AI安全法規之一。該州於週二正式啟動註冊入口網站，規定如 Anthropic 和 OpenAI 等大型前沿 AI 開發商，必須在 2027 年 1 月 1 日前完成註冊。這項名為《RAISE Act》的紐約州安全與透明度法案，將在年初正式生效。法案強制年營收超過 5 億美元的大型前沿開發商必須在網站上公布安全框架、在 72 小時內回報重大安全事件，並發布公開的模型透明度報告。\n\n為了落實《RAISE Act》並監督大型前沿 AI 實驗室，紐約州新成立了「數位創新、治理、誠信與信任辦公室」（DIGIT）。根據法規，單一違規的罰款最高可達 100 萬美元，後續違規罰款更高達 300 萬美元。此外，對於未能於新入口網站註冊的公司，州政府也保留採取執法行動的權利，不過發言人拒絕透露具體細節。\n\n紐約州長凱西·霍楚（Kathy Hochul）在週二的新聞記者會上表示，科技巨頭總是告訴大眾他們對 AI 的願景是無可避免的，要嘛跟上、要嘛被拋在腦後，並認為只要能贏得通往 AI 懸崖的競賽，任何附帶損害都是值得的。為此，霍楚週二同步啟動了位於紐約州立大學賓漢姆頓大學的「紐約州 AI 責任與研究中心」。該中心將獨立評估先進 AI 系統的安全性、保障性與運作狀況，並與 DIGIT 合作審查企業的安全框架。霍楚今年 1 月首次宣布該中心時，曾獲得 5500 萬美元的捐款與資本支持。\n\n霍楚強調，紐約州正在打造一個明智且具感性的 AI 監管國家級模範，這個模範將社區置於企業之上，並將人類置於強大技術之上。《RAISE Act》並非紐約州通過的唯一安全法規。去年，該州已開始執行一項法律，要求 AI 陪伴服務營運商必須定期讓使用者知道他們正在與機器人對話，並做出合理努力來偵測自殺意念與自殘行為。此外，霍楚也在 10 月簽署了另一項針對未成年人的聊天機器人類別安全法，限制欺騙性類人互動、情緒操縱或逢迎回應，以及鼓勵自殺或飲食失調等行為，該法預計於 2027 年 6 月 1 日生效。\n\n除了紐約州，其他州也紛紛通過類似的 AI 安全與透明度法案。例如加州的 SB 53 法案已於 1 月生效，強制前沿 AI 實驗室建立並公布安全框架、落實吹哨者保護，並在 15 天內回報重大安全事件；伊利諾州的 SB 315 法案則預計於 2027 年初生效，除了具備類似要求外，還涵蓋了獨立的安全合規稽核。\n\n從政策發展脈絡來看，美國各州正逐漸填補聯邦層級在 AI 監管上的空白。紐約州透過高額罰款、強制安全框架與成立專責機構（DIGIT）三管齊下，對年營收達標的大型 AI 實驗室施加實質約束。隨著《RAISE Act》與其他州級法案陸續在 2027 年前全面生效，AI 企業在追求技術突破的同時，合規成本與透明度要求已成為不可迴避的營運挑戰。",
+    "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2302996653.jpg?w=1024",
+    "date": "Tue, 10 Nov 2026 20:52:13 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+    "stable_id": "a-b108d6332cf59562e41a",
+    "permalink": "/articles/a-b108d6332cf59562e41a.html",
+    "id": 17
+  },
+  {
+    "title": "新創實驗室 PSI 利用 Anthropic 模型破解量子計算難題，探索 AI 科學發現商業化",
+    "summary": "新創實驗室 PSI 的成員利用 Anthropic 未發布的模型破解了懸決 18 年的量子計算難題，並正嘗試將 AI 驅動的科學突破轉化為商業應用。",
+    "content": "新創實驗室 Physical Superintelligence（PSI）的技術團隊成員、麻省理工學院（MIT）畢業生 David Turturean，近期利用 Anthropic 尚未正式發布的 Fable 5.2 模型，成功解決了一道困擾科學界長達 18 年的量子計算難題——「Aaronson-Ambainis 猜想」。這項猜想涉及量子電腦比傳統電腦更快解決問題的能力。提出該問題的研究人員之一 Scott Aaronson 表示，雖然他無法完全理解該證明，但由於該證明已在數學編碼語言 Lean 中進行自動形式化，並由 PSI 分享該解決方案的頂尖研究團隊進行解釋，因此他相信其正確性。\n\n這個解決方案實質上排除了量子電腦高速解決某些困難問題的一種可能路徑。Turturean 指出，這是一個負面結果，能讓學界了解不需再往該方向探索。Turturean 為了加入 PSI，甚至暫緩了在 MIT 知名電腦科學與人工智慧實驗室攻讀碩士學位的計畫。他坦言，這可能是他發表的最後一篇論文，並感慨人工智慧所能產生的影響力之重。\n\nPSI 執行長 Matt Pines 表示，該公司模型的優勢在於透過專門的模型配置和輔助工具來解決科學問題。有效的研究系統應當涵蓋許多與輔助工具、記憶系統以及模擬基礎設施相關的元素，以便廣泛且深入地切入問題。目前，PSI 的主要營收來自於利用其工具來最佳化資料中心，模擬熱能、電力、水資源和聲音等變數。然而，該公司的長遠目標是將理論物理學的突破轉化為實際技術。\n\n儘管人工智慧在數學和電腦科學等能以驗證程式碼表達的領域取得了解決方案，但在生命科學或物理學等較不抽象的學科中，過程卻更為困難。Pines 指出，物理學與數學不同，因為物理學面對的是真實世界，大自然對現實模型的正確性擁有發言權。該公司正專注於如何以最有效率的方式，透過實驗來驗證計算結果，並將其轉化為實際裝置或應用。\n\n隨著「科學新實驗室」（neolabs for science）逐漸成為具突破性科學潛力的途徑，參與者仍在摸索這個全新世界的標準。由於 PSI 必須等待 Anthropic 的模型接近發布時才能公開其成果，他們得以將結果與相關研究人員分享以深入理解。擔任 PSI 顧問的東北大學教授 Jim Halverson 指出，最佳實踐仍在成形中，保持透明度與聯繫專家是較佳的作法。隨著 AI 改變科學研究的步伐，學界與新創公司正共同面對這場結構性的變革。",
+    "link": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-10-at-10.00.33-AM.png?w=683",
+    "date": "Tue, 10 Nov 2026 19:03:52 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+    "stable_id": "a-472fa76acddf1fa0d8dd",
+    "permalink": "/articles/a-472fa76acddf1fa0d8dd.html",
+    "id": 18
+  },
+  {
+    "title": "Cyanogen 共同創辦人轉戰 AI 時代：Kora 宣佈打造 Linux 基礎桌面系統，直指微軟 Windows",
+    "summary": "曾挑戰 Google Android 的 Cyanogen 共同創辦人 Kirt McMaster 推出全新 Linux 基底桌面作業系統 Kora，主打深度整合 AI 模型與自主代理，預計 2027 年免費推出。",
+    "content": "大約在 Cyanogen 因長期未能動搖 Google Android 主導地位而關閉作業系統業務近十年後，其共同創辦人 Kirt McMaster 正將矛頭指向微軟的 Windows。他所創辦的 Kora Systems 於週二正式亮相一款基於 Linux 的全新桌面作業系統，旨在為日常工作中重度依賴人工智慧的用戶提供服務。\n\n這款作業系統預計於 2027 年以免費形式推出，將支援現有的 Intel 與 AMD 處理器 PC，以及採用高通 Snapdragon 晶片的機器。Kora 目前由約 50 名工程師組成的團隊共同開發，並高度依賴 OpenAI 的 Codex 與 Anthropic 的 Claude 等 AI 程式碼編寫工具。McMaster 指出，這些工具使開發速度至少提升了五倍，其中大部分的效率提升都發生在過去六個月內。\n根據 Statcounter 的網頁流量數據，微軟 Windows 在 10 月份全球桌面作業系統市場佔有率約達 77%，相較之下蘋果 OS X 則接近 10%。面對如此強大的市場主導地位，McMaster 認為 Kora 不需要爭奪 Windows 的全體用戶，而是精準鎖定那些大量使用 AI、並願意付費使用強大模型與服務的族群。他估計目前大約有 4500 萬至 5000 萬用戶貢獻了主要的 AI 使用量與營收，並預期這個市場到 2033 年將超越 2 億用戶。\n\n回顧過去在 Cyanogen 超過五年的經驗，McMaster 學到了依賴競爭對手的危險性。當時 Cyanogen 儘管推出了超越 Google 版本的 Android 功能，但仍高度依賴 Google 行動服務，最終限制了其建立獨立生態系統的能力。這回轉向開發 Kora，正是延續他在 Cyanogen 後期嘗試將第三方服務直接整合至作業系統的想法，讓 AI 模型與代理能夠跨應用程式運作並存取檔案，而不被侷限在單一應用程式中。\n\n這家總部位於帕羅奧圖的公司前身為由 McMaster 領導的遊戲作業系統公司 Playtron，隨著重心轉向 AI，公司於 2025 年 7 月更名為 Kora。McMaster 認為，當時如 Perplexity 與 OpenAI 等早期公司紛紛跨足 AI 驅動的網頁瀏覽器，但瀏覽器無法給予 AI 代理足夠的電腦存取權限來執行複雜任務，因此作業系統是更好的起點。這次轉型也讓 Kora 得以建立在過去三年開發 Playtron 稱為 GameOS 的 Linux 遊戲作業系統基礎上，不必從零開始。\n\n在技術架構上，Kora 建立在 Linux 與 Nix 之上，取代了 Playtron 早期 GameOS 的 Fedora Silverblue 基礎。雖然 Linux 與 Nix 是開源的，但 McMaster 表示 Kora 自身的技術（包含 Cortex AI 引擎與桌面介面）仍屬專有技術。除了 AI 功能外，遊戲依然在 Kora 的計畫之中，未來將引入 AI 工具讓開發者在系統內創作、發布與遊玩遊戲，並計劃支援 Android 應用程式。此外，Kora 團隊也與高通工程師合作近一年，針對 Snapdragon 晶片進行最佳化，並正與沙烏地阿拉伯 AI 公司 Humain 合作開發企業版 Humain OS。\n\n在商業模式方面，Kora 計劃透過綑綁 AI 模型與代理服務的訂閱方案來創造營收，其 Cortex 引擎則設計為在可能時於本地執行 AI 任務，並在需要強大算力時調用雲端模型。該公司的投資者包含三星 Next、Square Enix、Alumni Ventures、Polychain、VanEck 與 Circle 等曾支持 Playtron 的機構，雖然 McMaster 未透露總融資金額或估值，但他表示公司目前擁有的資金足以運作數年。\n\n從產業角度來看，微軟在桌面作業系統市場的壟斷地位極為鞏固，新進挑戰者要在基礎軟體上獲得大眾青睞向來困難重重。Kora 放棄與傳統 Windows 用戶正面交鋒，轉而鎖定 2027 年預估上看數千萬的高階 AI 用戶群，並透過免費基礎作業系統結合加值 AI 訂閱的模式切入，避開了早期作業系統新創常面臨的龐大軟體生態相容性困境。然而，能否在 2027 年如期推出並說服用戶日常依賴這套 Linux 系統，仍有待該公司後續生態系夥伴與硬體合作的落實情況來驗證。",
+    "link": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/kora-os.jpg?resize=1200,800",
+    "date": "Tue, 10 Nov 2026 14:00:00 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
+    "stable_id": "a-e5be64946d58598d28c7",
+    "permalink": "/articles/a-e5be64946d58598d28c7.html",
+    "id": 19
+  },
+  {
+    "title": "電動卡車新創 Harbinger 獲 2.4 億美元 D 輪融資，業務版圖拓展至國防與電池儲能",
+    "summary": "電動卡車新創 Harbinger 宣布完成 2.4 億美元 D 輪融資，總募資額突破 6.5 億美元，並持續深耕國防應用與聯邦快遞等商業合作。",
+    "content": "電動卡車新創公司 Harbinger 於 2026 年 11 月 5 日宣佈完成 2.4 億美元的 D 輪融資。這家總部位於洛杉磯的公司在過去一年內發展迅速，此次資金到位後，其歷史累計募資總額已正式突破 6.5 億美元大關。\n\n本輪 D 輪融資由 Tiger Global、Capricorn 旗下的「科技影響力基金」（technology impact fund）以及專注於國防領域的投資機構 Ridgeline 共同領投。其他參與投資的機構還包括上一輪的領投者聯邦快遞（FedEx），以及 Maniv、Greycroft 和福斯汽車（Volkswagen）背後的創投公司 Leitmotif。值得注意的是，業務觸角涵蓋 pre-IPO 新創的機構巨頭 Fidelity Management 也參與了本輪投資，市場更傳出 Harbinger 正在評估進行首次公開發行（IPO）的可能性。\n\n隨著融資推進，Harbinger 與主要客戶聯邦快遞的合作關係也顯著加深。聯邦快遞的安全與運輸資深副總裁 Paul Melander 已正式加入 Harbinger 的董事會。在此之前，聯邦快遞才剛向 Harbinger 下達了一筆包含 2,000 輛電動卡車、總價值超過 3.0 億美元的大規模訂單。\n\nHarbinger 於 2022 年由已倒閉的電動車新創 Canoo 及電池公司 QuantumScape 的前員工共同創立。創業初期，公司聚焦於開發單一電動卡車底盤，隨後逐步擴大其技術與產品組合。除了本次新增的國防應用與電池儲存技術外，Harbinger 先後收購了自動駕駛新創 Phantom AI，開始投入混合動力緊急車輛的開發，並對外展示了面向軍事用途的無人駕駛混合動力電動平台。\n\n從資深科技記者的角度觀察，Harbinger 從單一卡車底盤製造商，快速轉型為橫跨商用物流、緊急應變及軍用無人平台的多元化電動車與技術供應商，其發展路徑反映出新創公司在極端競爭的電動車市場中，必須透過多元化應用與強大機構投資人的背書來確保生存與資金鏈穩定。隨著 FedEx 不僅大舉下單更直接進入董事會，以及 Fidelity Management 等重量級機構的加入，顯示市場對其技術商業化的實質進展抱持高度期待。不過，面對日益複雜的國防供應鏈與量產壓力，Harbinger 是否能順利實現傳聞中的上市計畫，仍有待後續觀察。",
+    "link": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Harbinger-Newsroom-Thumbnail-260610.jpeg?resize=1200,800",
+    "date": "Thu, 05 Nov 2026 17:52:44 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
+    "stable_id": "a-5d2e54dc19830c0010d3",
+    "permalink": "/articles/a-5d2e54dc19830c0010d3.html",
+    "id": 20
+  },
+  {
+    "title": "歐洲生成式 AI 版權爭議升溫：法國 AI 巨頭 Mistral 槓上新版權提案引發創作者不滿",
+    "summary": "法國 AI 模型開發商 Mistral 近期公開遊說國會議員反對一項針對生成式 AI 版權的新法案，引發當地作家、記者與藝術家等創意社群的強烈反彈。",
+    "content": "法國生成式 AI 模型開發商 Mistral 近期成為當地創意社群砲轟的焦點。起因在於，這家總部位於巴黎的 AI 企業正積極遊說國會議員，投票反對一項旨在解決生成式 AI 版權問題的新法案，引發了作家、記者、音樂家及藝術家等各界人士的強烈不滿與抗議。\n\n根據外媒 Sifted 的報導，這項新法案原先旨在強化對版權所有者的保護，針對生成式 AI 在訓練過程中使用受版權保護的內容設立更嚴格規範。然而，Mistral 的強力反對動作，讓許多法國文藝創作者感到被背叛。批評者認為，AI 企業在未經授權或合理報酬的情況下大量使用人類創作來訓練模型，已經對創意產業構成威脅，而 Mistral 作為歐洲本土的 AI 旗艦企業，理應更加尊重智慧財產權。\n\n這並非 Mistral 首次在政策與監管議題上發出強音。作為歐洲少數能與美國科技巨頭匹敵的 AI 獨角獸，Mistral 過去在歐盟《人工智慧法案》（EU AI Act）的立法過程中，也曾積極參與並推動符合自身發展利益的規範。當時，該公司與其他歐洲科技企業成功爭取到對開源模型的較寬鬆管制。然而，隨著針對版權與資料使用的本土新法案浮上檯面，科技創新與創作者權益之間的衝突再度白熱化。\n\n面對排山倒海的批評，Mistral 則強調過度嚴格的法規將削弱歐洲 AI 產業在國際市場上的競爭力。該公司與部分產業人士主張，若對訓練資料施加過高限制，將使歐洲新創企業難以取得足夠的數據來訓練出具競爭力的模型，進而落後於美國和中國的同業。此外，這場爭議也反映出歐洲在追求「數位主權」的道路上，內部的深層矛盾：一方面渴望扶植足以抗衡海外巨頭的本土 AI 冠軍，另一方面又必須保護國內龐大且極具影響力的文化創意產業。\n\n資深記者分析指出，Mistral 此次槓上版權新法案，凸顯了歐洲在平衡科技創新與著作權保護時的兩難困境。隨著生成式 AI 迅速普及，如何建立既能激勵技術發展、又能保障創作者權益的制度，將是歐盟及各國政府在未來幾年內必須持續應對的核心挑戰，而類似的利益拉鋸戰在短期內恐難以平息。",
+    "link": "https://sifted.eu/articles/mistral-copyright-law-proposal/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1365,quality=75,fit=cover,format=auto/wp-content/uploads/2026/02/19143649/54318422566_164a353755_k-e1771511827167.jpg",
+    "date": "Tue, 10 Nov 2026 17:04:26 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/mistral-copyright-law-proposal/",
+    "stable_id": "a-fab789da1ca4cd98e23a",
+    "permalink": "/articles/a-fab789da1ca4cd98e23a.html",
+    "id": 21
+  },
+  {
+    "title": "黃仁勳取消出席 ElevenLabs 紐約高峰會，Nvidia 正調查其婚外情指控",
+    "summary": "Nvidia 執行長黃仁勳在公司針對其婚外情指控展開調查之際，已取消出席其投資組合公司 ElevenLabs 本週三在紐約舉辦的高峰會，同時也縮減了多項公開演講行程。",
+    "content": "Nvidia 執行長黃仁勳（Jensen Huang）已正式取消出席由其投資組合公司 ElevenLabs 於本週三在紐約舉辦的高峰會。這項決定是在 Nvidia 針對這位晶片龍頭執行長的婚外情指控展開內部調查後所做出的，同時也伴隨著黃仁勳近期逐步退出多項公開演講與活動的安排。\n\nElevenLabs 是一家備受關注的語音 AI 新創公司，本次高峰會原本預期將匯聚產業界的多位重要人物。然而，隨著黃仁勳因個人調查事件而缺席，也為這場預定在紐約舉行的活動增添了變數。除了此次峰會外，黃仁勳近期也全面調整了其公開露面的行程規劃。\n\n從產業脈絡來看，黃仁勳與 Nvidia 在人工智慧硬體市場的動向始終備受全球科技界高度關注。作為AI晶片市場的核心人物，其個人行程的變動以及公司內部的調查進展，不僅牽動著 Nvidia 的領導層動態，也引起投資人與合作夥伴的密切留意。\n\n觀察這起事件對科技產業的影響，雖然黃仁勳此次因個人相關調查而選擇暫時退居幕後、取消公開演講，但其背後的效應主要集中在領導高層的行程調整與企業治理的應對上。未來是否會對 Nvidia 的對外策略或相關投資組合公司的活動造成長遠影響，仍需視後續調查結果與其公開行程的恢復狀況而定。",
+    "link": "https://sifted.eu/articles/jensen-huang-pulls-out-of-elevenlabs-summit-amid-controversy/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2025/06/09131744/Jensen-1906-0424_6a965531-c88e-4313-a69d-a22f491e1f55-prv.png",
+    "date": "Tue, 10 Nov 2026 12:12:02 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/jensen-huang-pulls-out-of-elevenlabs-summit-amid-controversy/",
+    "stable_id": "a-542f1df5837a2ae8412e",
+    "permalink": "/articles/a-542f1df5837a2ae8412e.html",
+    "id": 22
+  },
+  {
+    "title": "深耕 AI 演算法優化，英國新創 Hiverge 獲 NVIDIA 投資並完成 1940 萬美元融資",
+    "summary": "由 DeepMind 與劍橋大學研究員創立的 Hiverge，近期完成 1940 萬美元融資。該公司開發多功能 AI 演算法優化平台，並獲 NVIDIA 挹注，顯示技術實力備受產業巨頭青睞。",
+    "content": "近期 AI 基礎建設領域再添新星。根據企業申報文件顯示，位於英國劍橋的 AI 新創公司 Hiverge 已完成 1,940 萬美元的融資。據悉，這筆資金屬於其規模更大的 A 輪融資計劃的一部分，預計將在未來幾週內正式對外公佈。\n\nHiverge 的背景陣容強大，其創始團隊由來自 Google DeepMind 的資深研究員以及劍橋大學的學術專家組成。這家公司致力於打造一個多功能的 AI 平台，其核心技術旨在為人工智慧應用提供演算法層面的深度優化。在全球 AI 模型參數規模與運算需求急劇攀升的當下，這類能夠提升運算效率、減少硬體負擔的軟體架構，正成為資本市場高度關注的領域。\n\n值得注意的是，此次融資獲得了產業巨頭 NVIDIA 的支持。NVIDIA 作為全球 AI 晶片霸主，其投資意向往往被視為衡量 AI 新創技術實力的重要指標。除了 NVIDIA 之外，本輪投資還獲得了創投機構 Plural 的領投，進一步鞏固了 Hiverge 在市場中的能見度。儘管該公司過去較為低調，且未曾在此前公開發布相關融資動態，但此次與 NVIDIA 及 Plural 的聯手，顯示其商業與技術價值已獲得一線投資人與合作夥伴的認可。\n\n回溯 Hiverge 的成長歷程，該公司於 2021 年成立，並在當年 10 月曾獲得一筆約 200 萬美元的初期資金，投資者包括了 Plural 及著名的創業家 Sten Tamkivi 等人。從種子輪到如今 A 輪的高額注資，反映了該公司在過去數年間，成功從學術研究轉向具備商業潛力的產品開發階段。\n\n記者分析：從 Hiverge 的技術定位來看，該公司並非單純投入大模型開發，而是選擇了「優化演算法」這一基礎且具備擴展性的戰略位置。在當前 AI 硬體成本昂貴且能耗議題日益敏感的環境下，這類能顯著提升運算效率的軟體平台，正成為雲端業者與大型企業極力爭取的資源。此次獲得 NVIDIA 的青睞，極可能象徵著其演算法技術與 NVIDIA 的硬體架構展現出高度的兼容性與應用價值。未來該公司能否在眾多 AI 基礎建設供應商中脫穎而出，將取決於其平台能否順利擴大生態系並成功整合進更廣泛的企業應用場景中。隨著未來幾週正式公告的到來，市場將有機會更深入了解其技術的具體應用細節。",
+    "link": "https://sifted.eu/articles/nvidia-bet-hiverge-plural-raise/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1600,quality=75,fit=cover,format=auto/wp-content/uploads/2025/09/16132740/Hiverge-Team.jpg",
+    "date": "Tue, 10 Nov 2026 11:45:36 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/nvidia-bet-hiverge-plural-raise/",
+    "stable_id": "a-d032ef539f347202c754",
+    "permalink": "/articles/a-d032ef539f347202c754.html",
+    "id": 23
+  },
+  {
     "title": "輝達執行長黃仁勳深陷疑似中國間諜美人計風波，網路迷因梗圖全面洗版",
     "summary": "輝達執行長黃仁勳驚傳遭到疑似中國間諜美人計陷害，並於日前公開坦承外遇，引發網路社群及AI迷因創作狂潮。",
     "content": "全球市值最高晶片公司輝達（Nvidia）的執行長兼共同創辦人黃仁勳，近日驚傳遭到疑似中國間諜的美人計陷害，這項震撼消息宛如火星點燃油庫，在網路上引爆熱烈議論。長期以來，黃仁勳在科技界維持著好丈夫的形象，他與妻子蘿莉自1980年代相伴至今，兩名子女也都在輝達任職。這位總是身穿招牌皮夾克、被視為科技界巨星的AI領袖，向來給人沉穩、少有荒誕行為的印象，因此這起突如其來的醜聞讓外界大感意外。\n\n事件潛在的後續影響相當深遠。輝達在美國股市占有舉足輕重的地位，其公司內部的動盪已構成市場風險。由於無數AI新創公司高度依賴輝達的晶片，高層若出現任何變動，衝擊將遠超乎公司本身。更棘手的是，輝達並未公開揭露接班計畫，一旦黃仁勳去職，誰來接掌大權仍是未知數，甚至引發了AI泡沫是否會因此破裂的討論。\n\n在嚴肅的市場疑慮之外，社群網路則迅速被各種惡搞迷因（Memes）淹沒。網友們發揮創意，結合電影《戀夏500日》、離婚律師、亞瑟小子情歌《Confessions Pt. II》MV的AI改編版，以及模仿先前某新創執行長在酷玩樂團（Coldplay）演唱會上擁抱同事遭大螢幕拍到的病毒式AI影片。許多內容更藉助AI工具生成，其中多數疑似使用輝達晶片運算。\n\n根據線上內容分析軟體公司 Copyleaks 的數據顯示，黃仁勳與相關人物遭到AI竄改的照片與影片在網路上呈爆炸性增長。僅在 X 平台上，相關的 AI 貼文就至少有 70 篇，截至週一上午已吸引約 842 萬次瀏覽與超過 6.4 萬次互動，且數字仍在持續攀升。\n\n記者分析指出，這起事件之所以在網路上掀起如此巨大的迷因浪潮，主因在於黃仁勳過去建立的公眾形象與此次指控形成強烈反差，加上輝達在當前全球AI供應鏈中的核心地位，使得這場私領域的風波迅速擴大為科技界與資本市場高度關注的焦點。不過，事件的實際政治與法律後續仍有待時間驗證，目前各界多半聚焦於網路社群的創意狂歡。",
@@ -311,7 +437,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
     "stable_id": "a-c614a161451d0b8dfa7a",
     "permalink": "/articles/a-c614a161451d0b8dfa7a.html",
-    "id": 15
+    "id": 24
   },
   {
     "title": "無視市場波動與潛在風險 傳 AI 巨頭 Anthropic 本週將敲定 IPO 估值區間",
@@ -325,7 +451,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
     "stable_id": "a-500c95be939b63d6db7a",
     "permalink": "/articles/a-500c95be939b63d6db7a.html",
-    "id": 16
+    "id": 25
   },
   {
     "title": "輝達執行長黃仁勳遭爆 去年早已聘請危機公關公司處理涉華醜聞",
@@ -339,7 +465,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
     "stable_id": "a-94703d4baaa4299d6f17",
     "permalink": "/articles/a-94703d4baaa4299d6f17.html",
-    "id": 17
+    "id": 26
   },
   {
     "title": "AI硬體工程平台Nominal勢頭猛烈：8個月內估值三級跳、飆升至30億美元",
@@ -353,7 +479,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
     "stable_id": "a-6dcec44e17d3690ee0dc",
     "permalink": "/articles/a-6dcec44e17d3690ee0dc.html",
-    "id": 18
+    "id": 27
   },
   {
     "title": "美知名餐飲外送新創 Wonder 正式密件申請 IPO，估值上看 9 十億美元",
@@ -367,7 +493,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/food-delivery-startup-wonder-files-for-ipo-as-it-explores-its-next-big-bite/",
     "stable_id": "a-82150c8ee0e96d3e6817",
     "permalink": "/articles/a-82150c8ee0e96d3e6817.html",
-    "id": 19
+    "id": 28
   },
   {
     "title": "防止AI數學胡言亂語：新創Axiom Math以AI代理完成巨著《Stacks Project》形式化驗證",
@@ -381,7 +507,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
     "stable_id": "a-2668ae845ec40919ad08",
     "permalink": "/articles/a-2668ae845ec40919ad08.html",
-    "id": 20
+    "id": 29
   },
   {
     "title": "傳英國數位銀行 Monzo 洽談新一輪融資 估值上看 7 英鎊、由 DE Shaw 領投",
@@ -395,7 +521,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/monzo-to-raise-up-to-500m/",
     "stable_id": "a-aeb00ea5b8f4f6ceb0c1",
     "permalink": "/articles/a-aeb00ea5b8f4f6ceb0c1.html",
-    "id": 21
+    "id": 30
   },
   {
     "title": "歐洲國防科技掀併購整合潮！總部阿姆斯特丹 Onodrim 獲 3 億美元 A 輪融資",
@@ -409,7 +535,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/onodrim-300-european-defence-rollup/",
     "stable_id": "a-dc19e21887274cc5557f",
     "permalink": "/articles/a-dc19e21887274cc5557f.html",
-    "id": 22
+    "id": 31
   },
   {
     "title": "企業導入AI代理的真實挑戰：你需要的不是演算法，而是乾淨的內容管理",
@@ -423,7 +549,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/the-realities-of-scaling-ai-agents-brnd/",
     "stable_id": "a-375faea9c79ffda65f65",
     "permalink": "/articles/a-375faea9c79ffda65f65.html",
-    "id": 23
+    "id": 32
   },
   {
     "title": "戒掉無限滑手機！外媒盤點 9 款助你擺脫負面資訊循環的實用 App",
@@ -437,7 +563,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/08/apps-to-distract-you-from-the-endless-cycle-of-doomscrolling/",
     "stable_id": "a-c4a97d1a424381c16df6",
     "permalink": "/articles/a-c4a97d1a424381c16df6.html",
-    "id": 24
+    "id": 33
   },
   {
     "title": "輝達董事會啟動獨立調查：執行長黃仁勳坦承曾與疑似中國間諜的女子交往",
@@ -451,7 +577,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
     "stable_id": "a-f9030dea86f8acb66336",
     "permalink": "/articles/a-f9030dea86f8acb66336.html",
-    "id": 25
+    "id": 34
   },
   {
     "title": "Snap AR眼鏡 Specs 佩戴體驗大幅升級，但 2,200 美元高昂售價與定位模糊成考驗",
@@ -465,7 +591,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
     "stable_id": "a-f0a9643a9543c8289922",
     "permalink": "/articles/a-f0a9643a9543c8289922.html",
-    "id": 26
+    "id": 35
   },
   {
     "title": "Nothing 預告首款「AI 原生」神祕裝置 12 月登場：無螢幕、非 App 的生產力工具",
@@ -479,7 +605,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
     "stable_id": "a-41a19e62c03c100607ec",
     "permalink": "/articles/a-41a19e62c03c100607ec.html",
-    "id": 27
+    "id": 36
   },
   {
     "title": "開源 AI 浪潮崛起：Hugging Face 剖析商業獲利模式與中美競爭格局",
@@ -493,7 +619,7 @@
     "_archive_key": "rss:https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
     "stable_id": "a-77dc6e9f9f95a229e317",
     "permalink": "/articles/a-77dc6e9f9f95a229e317.html",
-    "id": 28
+    "id": 37
   },
   {
     "title": "開源AI成本與風險如何權衡？Hugging Face政策長解析中國模型挑戰與商業化困境",
@@ -507,7 +633,7 @@
     "_archive_key": "rss:https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
     "stable_id": "a-63c37f26083929642d3d",
     "permalink": "/articles/a-63c37f26083929642d3d.html",
-    "id": 29
+    "id": 38
   },
   {
     "title": "Starling Bank 執行長 Raman Bhatia 傳將卸任，上任僅短短兩年面臨多重挑戰",
@@ -521,7 +647,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/starling-bank-ceo-raman-bhatia-quits-reports/",
     "stable_id": "a-bb27ff6fd7c22d1d2507",
     "permalink": "/articles/a-bb27ff6fd7c22d1d2507.html",
-    "id": 30
+    "id": 39
   },
   {
     "title": "矽谷創投巨頭紅杉資本撤出倫敦，宣稱歐洲市場「無需當地據點」",
@@ -535,7 +661,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/sequoia-closes-london-office/",
     "stable_id": "a-a68f38c7fd1e6374bc89",
     "permalink": "/articles/a-a68f38c7fd1e6374bc89.html",
-    "id": 31
+    "id": 40
   },
   {
     "title": "為什麼創辦人是糟糕的員工？Dex 執行長反向思考：新創公司都該雇用他們",
@@ -549,7 +675,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/founders-make-terrible-employees/",
     "stable_id": "a-987f2a5ee9da57295af6",
     "permalink": "/articles/a-987f2a5ee9da57295af6.html",
-    "id": 32
+    "id": 41
   },
   {
     "title": "美國期中選舉民主黨大勝，科技巨頭與資料中心擴建面臨選民與地方政治阻力",
@@ -563,7 +689,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
     "stable_id": "a-1129a991511286c4f206",
     "permalink": "/articles/a-1129a991511286c4f206.html",
-    "id": 33
+    "id": 42
   },
   {
     "title": "家長尋求更安全的數位解方：專為兒童打造的手機與通訊設備市場興起",
@@ -577,7 +703,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/",
     "stable_id": "a-b00eb38edcfb1f6002cf",
     "permalink": "/articles/a-b00eb38edcfb1f6002cf.html",
-    "id": 34
+    "id": 43
   },
   {
     "title": "幣安經歷 63 億美元黑客重創後，財務長 Kaiser Ng 宣佈離職",
@@ -591,7 +717,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/07/binance-cfo-is-leaving-to-pursue-a-new-venture-after-6-3-billion-hack/",
     "stable_id": "a-0b500857767dd741eb19",
     "permalink": "/articles/a-0b500857767dd741eb19.html",
-    "id": 35
+    "id": 44
   },
   {
     "title": "YC 新創 Discovered Materials 懸賞 100 萬美元，挑戰 AI 攻克材料科學五大難題",
@@ -605,7 +731,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
     "stable_id": "a-c6cd6eecf6a339a63336",
     "permalink": "/articles/a-c6cd6eecf6a339a63336.html",
-    "id": 36
+    "id": 45
   },
   {
     "title": "TechCrunch 創辦人高峰會 2026 波士頓登場：聚焦 AI 創新、募資策略與規模化實戰",
@@ -619,7 +745,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
     "stable_id": "a-3c132fbe365728cf0e41",
     "permalink": "/articles/a-3c132fbe365728cf0e41.html",
-    "id": 37
+    "id": 46
   },
   {
     "title": "AI 影音推理需求狂飆！新創 fal 估值暴衝至 160 億美元，最新獲 Bessemer 領投 13 億美元",
@@ -633,7 +759,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
     "stable_id": "a-5f8007fbcac6727f15c9",
     "permalink": "/articles/a-5f8007fbcac6727f15c9.html",
-    "id": 38
+    "id": 47
   },
   {
     "title": "百勝集團全面押注AI：從點餐到廚房管理 科技轉型重塑餐飲帝國",
@@ -647,7 +773,7 @@
     "_archive_key": "rss:https://www.ciodive.com/news/yum-brands-AI-strategy-earnings/873655/",
     "stable_id": "a-1c31e2c1e69c8a4a78b0",
     "permalink": "/articles/a-1c31e2c1e69c8a4a78b0.html",
-    "id": 39
+    "id": 48
   },
   {
     "title": "歐洲創投最愛看什麼？Sifted 揭曉 Onstage W26 梯次最受矚目的 12 家新創",
@@ -661,132 +787,6 @@
     "_archive_key": "rss:https://sifted.eu/articles/onstage-w26-cohort/",
     "stable_id": "a-6cfdcc7880c56d903759",
     "permalink": "/articles/a-6cfdcc7880c56d903759.html",
-    "id": 40
-  },
-  {
-    "title": "2026工程學未來：人手更少、工作更多與「Token至上」時代的終結",
-    "summary": "Sifted Summit 2026 探討工程學的未來，隨著生成式 AI 普及，工程師面臨工作型態轉變、精簡人力與告別過度消耗運算資源的盲目追求。",
-    "content": "在年度的 Sifted Summit 科技峰會上，軟體工程領域的職位與角色再次成為焦點。去年，業界的討論核心在於生成式 AI 如何改變工程師的編寫程式碼方式；然而到了 2026 年，問題已經轉變為工程師是否還能保有工作，以及這門專業將走向何方。\n\n來自業界的多位專家指出，雖然 AI 工具大幅提升了編程效率，但也帶來了不同的挑戰。Klarna 財務長兼 AI 專案負責人 Björn Waller 指出，工程師目前面臨的是更少的人手卻要處理更多的工作。Pipedrive 的資深工程總監 Simmo Saan 也坦言，AI 工具並非萬靈丹，團隊仍然需要面對軟體維護、系統架構及產品品質等根本問題。許多企業開始尋求更為務實的 AI 應用方式，而非盲目地擴大運算資源或追求不切實際的自動化。\n\n同時，招募市場與求職者的心態也正在發生變化。Pillar VC 創辦人兼合夥人 Jamie Rosen 指出，市場上開始出現大量充滿 AI 痕跡的求職履歷與求職信，這迫使新創企業必須採取應對措施來過濾雜訊。PhysicsX 的工程主管 George Papamakarios 則認為，AI 雖然無法完全取代人類的工程判斷力，但它確實正在重新定義軟體開發的標準與效率。\n\n從產業發展的脈絡來看，2026 年的工程學界正在經歷一場「去蕪存菁」的轉型期。過去幾年間那種單純依賴擴大模型規模、追求產出數量的思維模式（即所謂的 tokenmaxxing）正逐漸退燒。取而代之的是企業開始冷靜評估 AI 帶來的實質投資回報率（ROI），並重新審視工程團隊的規模與價值。\n\n記者分析認為，這場討論反映出科技產業對生成式 AI 的期待正從早期的盲目狂熱轉向理性務實。雖然 AI 顯著改變了程式碼的產出速度與軟體開發流程，但它並未消滅工程問題的本質，反而對工程師的架構思維與問題解決能力提出了更高的要求。如何在精簡人力與維持系統穩定之間取得平衡，將是未來幾年技術團隊必須持續面對的關鍵課題。",
-    "link": "https://sifted.eu/articles/the-future-of-engineering-2026/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=480,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/05004747/84E041CD-6215-44F2-B3FF-EB489AE0524A_4_5005_c.jpeg",
-    "date": "Thu, 05 Nov 2026 05:00:06 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/the-future-of-engineering-2026/",
-    "stable_id": "a-3255ca92187021822dbb",
-    "permalink": "/articles/a-3255ca92187021822dbb.html",
-    "id": 41
-  },
-  {
-    "title": "求職信AI感太重反遭拒？科技公司：擁抱AI，但別走極端",
-    "summary": "隨著AI工具普及，大量充滿AI痕跡的求職信湧入科技公司。新創企業表示，求職者應善用AI，但過度依賴反會顯得缺乏誠意與思考能力。",
-    "content": "在生成式AI工具普及的時代，許多求職者開始大量依賴大型語言模型來撰寫履歷和求職信。然而，這種現象卻為企業的招募團隊帶來了新困擾。歐洲科技界近期觀察到，無數散發著濃厚「AI味」的求職信正不斷湧入信箱，讓部分新創公司不得不思考如何應對這股浪潮。\n\n根據Sifted的報導，許多科技公司主管坦言，過度使用AI生成的內容反而適得其反。軟體開發商 Langdock 的前營運長、現為招募與人力資源諮詢顧問的 Jonathan Sinclair 指出，履歷和求職信如果充斥著AI生成的痕跡，往往會給人一種「懶惰且缺乏原創性」的印象。他認為，當求職者連自我介紹都要完全外包給機器時，很難讓招聘者感受到其真實的熱情與人格特質。\n\n不過，這並不意味著求職者應該完全排斥AI。多數新創高管的共識是：求職者應該要「AI-pilled」（擁抱AI），但不能「過度AI-pilled」。AI應被視為一種輔助工具，用來提升效率、潤飾文字或整理架構，而不是用來取代求職者本身的思考與核心內容。Langdock 的現任執行長 Dave Updegrove 也提到，利用AI來優化工作流程是合理的，但關鍵在於求職者是否能在過程中展現真實的自我，並在AI生成的基礎上加入個人的獨特見解與經驗。\n\n在面試環節中，這種「過度AI化」的副作用同樣明顯。有科技企業高層指出，部分求職者在面試時表現得過於公式化，甚至讓人懷疑他們是否只是在背誦AI產出的標準答案。Sifted的分析指出，隨著企業招募人員對AI生成內容的免疫力提升，求職者若想在競爭中脫穎而出，單靠AI產出的完美詞藻已不再是萬靈丹。\n\n記者分析認為，這場由AI引發的求職信海嘯，反映出勞動市場在AI時代的微妙轉變。當技術門檻降低、人人都能透過AI產出看似專業的申請文件時，企業對「真實性」的價值反而更加看重。未來的求職者如何在善用AI工具提高效率的同時，保留足夠的個人特色與真實洞察，將是能否通過初步篩選的關鍵所在。",
-    "link": "https://sifted.eu/articles/job-applicants-be-ai-pilled/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=1530,quality=75,fit=cover,format=auto/wp-content/uploads/2026/01/02161735/Judith_Portrait_23433_final_final-2-scaled-e1767370760179.jpeg",
-    "date": "Wed, 04 Nov 2026 10:40:34 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/job-applicants-be-ai-pilled/",
-    "stable_id": "a-9d55cff8eb2c3956e553",
-    "permalink": "/articles/a-9d55cff8eb2c3956e553.html",
-    "id": 42
-  },
-  {
-    "title": "AI基礎設施挑戰浮現！Crusoe將懷俄明州未完工資料中心專案售予Google",
-    "summary": "AI資料中心開發難度攀升，估值達309億美元的Crusoe將懷俄明州未完工專案售予Google，Google計劃砸下17億美元繼續推進。",
-    "content": "近年迅速崛起、估值達 309 億美元的丹佛資料中心開發商 Crusoe，近期證實已將位於懷俄明州東南部的一座未完工資料中心專案出售給 Google。這筆交易凸顯了在面臨設備採購、電力取得以及地方社區日益增長的阻力下，獨立資料中心開發商要按時且在預算內交付大型 AI 資料中心專案，正遭遇巨大的現實挑戰。\n\n根據了解，Crusoe當初是與黑石集團（Blackstone）背書的基礎設施公司 Tallgrass 於去年共同宣佈這項專案，原計畫將其電力容量規模逐步擴大至 10 吉瓦（gigawatts）。不過，在 Crusoe 管理期間，Google 對該專案的成本與建設時間表產生疑慮，雙方原本談合作未果，最終演變成 Google 直接接手開發。\n\nGoogle 未透露向 Crusoe 收購該未完工專案的具體金額，但已對外宣布將投入 17 億美元來開發這座資料中心園區。這也顯示大型科技巨頭在佈局 AI 運算基礎設施時，正積極介入並主導關鍵項目的建設進度。\n\n儘管懷俄明州的合作波折不斷，但這並未切斷 Crusoe 與 Google 的其他合作關係。事實上，Crusoe 目前正在德州阿馬里洛（Amarillo）附近為 Google 開發另一座資料中心。此外，懷俄明州的挫折也沒有阻擋 Crusoe 的融資氣勢，該公司在 9 月順利完成了一輪高達 39 億美元的融資，並在同月份新增了三名董事會成員，其中包括特斯拉董事會成員、Redwood Materials 創辦人 JB Straubel。\n\n回顧 Crusoe 的業務發展，其營收主要來自於向自備 GPU 的客戶出租資料中心空間、出租自有 GPU，以及販售用於執行 AI 模型的推論（inference）運算能力。目前該公司的大型專案服務對象涵蓋多位 AI 產業的重量級巨頭，例如正在德州阿比林（Abilene）分階段為 Oracle 和 OpenAI 建造園區，同時也在隔壁為微軟（Microsoft）建造一座 900 百萬瓦（megawatt）的獨立園區，預計首棟建築將於 2027 年中旬上線。Meta 同樣是其客戶，彭博社也曾報導交易商 Jane Street 與 Crusoe 簽署了一筆高達 13 億美元、為期五年的雲端合約。\n\n由執行長 Chase Lochmiller 與 Cully Cavness 創立於八年前的 Crusoe，最初是從利用原本會被燃燒掉的天然氣來經營加密貨幣挖礦起家。隨著業務轉型為 AI 基礎設施供應商，雖然成功吸引微軟、OpenAI、Oracle 等大廠青睞並獲得巨額資金挹注，但懷俄明州專案的易手也反映出，當前 AI 運算需求的爆炸性成長，正對基礎設施開發商的執行能力與資本控管帶來嚴苛的考驗。",
-    "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/09/crusoe-ceo-getty.jpg?resize=1200,800",
-    "date": "Sat, 07 Nov 2026 01:40:28 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-    "stable_id": "a-37b8b2e310f3b5ea6288",
-    "permalink": "/articles/a-37b8b2e310f3b5ea6288.html",
-    "id": 43
-  },
-  {
-    "title": "傳 OpenAI 新一輪融資再進帳 11 十億美元，估值達 1.25 兆美元",
-    "summary": "OpenAI 傳出在尚未完全關閉的新一輪融資中已籌集 11 十億美元，公司估值達到 1.25 兆美元，最終規模有望上看 20 十億美元。",
-    "content": "人工智慧巨頭 OpenAI 的最新融資進展浮出水面。根據外媒引述知情人士消息報導，該公司在目前尚未正式關閉的最新一輪融資中，已成功籌集了 11 十億美元，使其整體估值來到 1.25 兆美元之譜。\n\n這筆資金是規模更龐大融資計畫的一部分。知情人士指出，此輪融資預計將在未來幾週內正式關閉，最終總額可能達到約 20 十億美元。不過，回顧今年 9 月下旬時的市場傳聞，當時曾有報導指出 OpenAI 預計在此輪融資中尋求高達 30 十億美元的資金，目前的實際數字與當初設定的目標相比仍有一段差距。針對這項融資消息，TechCrunch 已向 OpenAI 尋求回應，若有進一步回覆將隨即更新。\n\n值得注意的是，這項融資消息傳出的數小時前，市場亦有關於其主要競爭對手 Anthropic 的動態。報導指出，Anthropic 首次公開募股（IPO）的潛在股票買家，其心理預期估值顯著低於該公司原先鎖定的目標。部分潛在買家認為，Anthropic 的估值可能僅落在 1.1 兆美元左右，與大約一個月前投資人預期的 2 兆美元相去甚遠。\n\nOpenAI 過去曾暗示將於今年進行首次公開募股，但隨後延遲了相關計畫，目前市場普遍預期該公司將於明年的某個時間點正式 IPO。然而，當前的 AI 市場環境正處於相對微妙且脆弱的階段。美國期中選舉中民主黨的勝選，加上選民對資料中心普遍抱持強烈的負面情緒，已在市場上引發陣陣不安，許多人正密切關注未來可能面臨的監管挑戰。\n\n從整體產業動態來看，無論是 OpenAI 的最新融資進展，或是市場對競爭對手 Anthropic 估值的重新評估，皆反映出資本市場對當前高飛的 AI 產業正轉趨謹慎。雖然 OpenAI 的估值依然龐大，但融資金額未達初期目標，以及整體政治與社會氛圍對資料中心擴張的疑慮，顯示出 AI 巨頭在邁向公開市場與持續燒錢擴張的道路上，正同時面臨著資本胃納與監管風險的雙重考驗。",
-    "link": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024",
-    "date": "Fri, 06 Nov 2026 22:53:46 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-    "stable_id": "a-bbbd91f92fbc9027a07b",
-    "permalink": "/articles/a-bbbd91f92fbc9027a07b.html",
-    "id": 44
-  },
-  {
-    "title": "破除軟體荒：Apple 宣佈 iPhone Duo 專用 App 已突破 10 萬大關",
-    "summary": "針對早期 iPhone Duo 遭詬病的 App 支援不足問題，Apple 近期宣佈其摺疊機專用 App 已突破 10 萬款，並透過全球開發者工作坊加速生態佈局，試圖解決顯示黑邊與介面優化等軟體痛點。",
-    "content": "當蘋果首款摺疊手機 iPhone Duo 正式問世時，初期評價曾因專用軟體資源匱乏而飽受批評。由於無法完美適配摺疊螢幕，許多 App 在執行時被迫留下難看的黑邊，甚至隱藏關鍵功能，嚴重影響了這台定價 1,999 美元旗艦裝置的使用體驗。然而，隨著蘋果近日公佈的最新數據，這場「軟體荒」似乎已迎來轉捩點。\n\n根據蘋果週五發表的最新公告，目前 App Store 上已擁有超過 10 萬款專為 iPhone Duo 優化的應用程式，且每日新增數量持續以數千款的速度增長。為了縮短開發者的轉型陣痛期，蘋果採取了主動出擊的策略，在全球 19 個城市舉辦了超過 50 場實體工作坊，吸引了逾 2,000 名開發者參與，讓開發者能直接在硬體上調適應用程式並獲得蘋果團隊的技術支援。\n\n在這一波更新名單中，不乏重量級生產力與娛樂工具。包括 Microsoft Word、Outlook、Zoom、Goodnotes，以及 NBA、NHL、Etsy、Halide Mark III 等熱門 App 均已加入優化行列。此外，蘋果也預告了 Spotify、Google Chat、ChatGPT、Canva、Tinder 以及近期備受關注的 Tesla Robotaxi 等多款應用程式，即將完成對應 iOS 27 及 iPhone Duo 的優化工作。\n\n不過，用戶需留意的是，清單中的更新並非全數同步上線。以 Spotify 為例，儘管出現在蘋果的官方名單中，但在實際測試機上，側邊黑邊的問題仍未完全消失。這顯示軟體生態的全面鋪開仍需時日，蘋果與開發者之間的同步腳步尚有進步空間。\n\n從商業角度來看，iPhone Duo 的市場熱度顯然超出了蘋果的預期。儘管起步價高達 1,999 美元，但該裝置在開放訂購後隨即在數小時內搶購一空，導致出貨日期大幅推遲至明年。蘋果在近日的財報會議中也坦言，供應鏈瓶頸導致的延遲狀況，目前仍難以精確預測何時能獲得改善。\n\n作為一名長期觀察蘋果生態系的記者，我認為這 10 萬款 App 的里程碑對蘋果至關重要，但關鍵不在於數量，而在於體驗的流暢度。摺疊螢幕不僅僅是硬體創新，更是對 iOS 互動邏輯的重新定義。過去的 iOS 設計規範多以單一平面螢幕為核心，如今必須在「摺疊」與「展開」兩種情境間做到無縫銜接。蘋果目前投入大量資源輔導開發者，反映出其深知摺疊手機能否長遠，取決於 App 在轉換型態時，是否能透過多工介面發揮出「大螢幕」的實質價值，而非僅僅是「放大版」的手機程式。未來幾個月，我們將持續關注開發者更新的速度，以及這些應用程式在實際使用中，能否真正消弭早期用戶反饋的遺憾。",
-    "link": "https://techcrunch.com/2026/11/06/the-duo-apps-are-coming-says-apple/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/09/iPhone-duo.jpeg?resize=1200,675",
-    "date": "Fri, 06 Nov 2026 21:38:05 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/06/the-duo-apps-are-coming-says-apple/",
-    "stable_id": "a-f8bb35f13c72e7258e18",
-    "permalink": "/articles/a-f8bb35f13c72e7258e18.html",
-    "id": 45
-  },
-  {
-    "title": "美國期中選舉「藍色浪潮」來襲：民意反撲恐重塑AI與資料中心產業",
-    "summary": "美國期中選舉民主黨大勝，選民在41項資料中心公投中壓倒性支持加強管制，預料將對AI產業與大型科技公司帶來更嚴格的政府監管與發展限制。",
-    "content": "本週美國期中選舉落幕，民主黨締造歷史性的勝利，這股政治版圖的變動預料將對美國科技產業帶來深遠影響。隨著新當選的民主黨籍州長與國會議員預料將推動更嚴格的法規，科技巨頭們在基礎設施擴張上恐將面臨更大的挑戰。\n\n根據統計，選民在本週二針對41項與資料中心相關的投票提案進行表決，除了其中一項之外，其餘所有提案的多數選民皆投票贊成對資料中心開發施加更多限制。即使部分選區未將資料中心直接列入選票，這項議題仍是選戰中的核心焦點，反映出地方社群對AI基礎設施耗能與擴建的強烈疑慮。\n\n針對這項政治變局對科技業的衝擊，TechCrunch 旗下的 Equity Podcast 主持人 Kirsten Korosec、Sean O'Kane 與 Anthony Ha 在最新一集中深入探討。討論焦點不僅止於正試圖為自己重新定位形象的資料中心（例如 OpenAI 的相關嘗試），也涵蓋了整體科技產業未來可能面臨的政府加強審查趨勢。\n\n除了選舉帶來的政策風向，該集節目亦觸及多項近期科技界的重大動態，包括 Google 首座衛星資料中心是否預示著未來將走向軌道資料中心時代；設計軟體公司 Canva 與網站建置商 Squarespace 的大規模裁員是否能歸咎於 AI 技術的普及；以及 Marvell 斥資 115 億美元收購 Lumentum、CrowdStrike 併購兩家 AI 資安新創等產業整併案。\n\n從選民在投票所對資料中心開發展現的高度抗拒來看，AI 基礎設施的快速擴張已不再只是技術與資金的問題，而是必須面對日益嚴峻的民主程序與社會法規考驗。隨著新一屆國會與地方首長上任，AI 產業的發展節奏與擴張成本，勢必將因這股政治與民意浪潮而面臨重新調整。",
-    "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
-    "image": "https://techcrunch.com/wp-content/uploads/2022/11/GettyImages-1368458052.jpg?resize=1200,750",
-    "date": "Fri, 06 Nov 2026 18:00:00 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
-    "stable_id": "a-b899eabe2a17ced96a22",
-    "permalink": "/articles/a-b899eabe2a17ced96a22.html",
-    "id": 46
-  },
-  {
-    "title": "無人機物流巨頭 Zipline 獲 15 億美元融資，估值衝上 215 億美元並擴大與沃爾瑪合作",
-    "summary": "自動駕駛無人機物流公司 Zipline 宣布完成 15 億美元融資，估值達到 215 億美元，並將擴大與沃爾瑪的合作，在全美新增 300 個無人機配送據點。",
-    "content": "自動駕駛無人機物流新創公司 Zipline 近期迎來發展的關鍵里程碑。該公司宣布成功募集 15 億美元的新一輪資金，推升其整體估值達到 215 億美元。伴隨資金到位，Zipline 也同步深化與零售巨頭沃爾瑪（Walmart）的合作夥伴關係，雙方達成一項全新的多年期協議，計劃在美國境內擴增 300 個無人機配送據點。\n\nZipline 與沃爾瑪自 2021 年起便展開無人機配送合作，但相較於目前雙方共同營運的 21 個活躍據點，這筆新交易無疑是一次大規模的擴張。這筆 15 億美元的融資由 Paradigm、WCM Investment Management 及 Layer Global 共同領投，並獲得 Valor Equity Partners、Fidelity Management & Research Company、Uber、Tiger Global、J.P. Morgan、ARK Invest 以及 Salesforce Ventures 等多方資本參與。\n\n成立於 2014 年的 Zipline，早期從非洲發跡，利用自動駕駛無人機在盧安達運送醫療血液，隨後將業務拓展至迦納與奈及利亞。2020 年，該公司正式進軍美國市場，為北卡羅來納州的 Novant Health 運送醫療設備與物資。隨著業務重心逐漸擴大，Zipline 在 2022 年獲得美國聯邦航空總署（FAA）的 Part 135 航空承運人認證，突破長距離商業無人機配送的重要法規門檻，並在此後陸續敲定多項合作，包括今年稍早宣佈結盟的 Uber。\n\n目前，Zipline 的無人機服務已涵蓋非洲五國、美國多座城市以及日本，運送品項橫跨食品、零售、農業與健康產品。該公司旗下擁有兩款主要無人機系統：用於短程家庭配送、載重達 8 磅且飛行半徑可達 10 英里的 Platform 2，以及專為企業與政府長距離任務設計、往返續航力達 120 英里的 Platform 1。隨著技術與法規環境成熟，Zipline 正加速將版圖延伸至全美消費市場。\n\n根據 Zipline 公布的數據，其遞送業務營收佔比在今年 3 月至 10 月間從 10.8% 大幅攀升至 34.9%。這筆鉅額資金將直接用於擴建美國本土的製造設施，並招募更多人力，以全力打造全國性的無人機物流網絡，進一步衝刺配送營收的成長。\n\n從商業發展的角度來看，Zipline 此次獲得高額融資與大型零售商的實質擴點支持，反映出資本市場對無人機能否突破最後一哩路配送瓶頸仍抱持高度期待。然而，隨著全美 300 個新配送據點的建置推進，該公司除了必須持續維持高標準的飛安與監管合規外，如何有效調度製造與營運能量，將是其能否將高額估值轉化為長期穩定獲利的關鍵考驗。",
-    "link": "https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Precision-Zip-Delivering-3QTR.jpg?resize=1200,800",
-    "date": "Thu, 05 Nov 2026 15:40:34 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/",
-    "stable_id": "a-78064385f138c3a36cc2",
-    "permalink": "/articles/a-78064385f138c3a36cc2.html",
-    "id": 47
-  },
-  {
-    "title": "不止是穿戴裝置：Aina 新款 AI 智慧戒指配備螢幕與搖桿，欲成為 AI 代理人的實體中樞",
-    "summary": "硬體新創 Aina 發表一款內建螢幕、搖桿與麥克風的智慧戒指，售價 399 美元起。該裝置旨在作為與 AI 代理人、電腦應用程式及智慧家庭設備互動的控制中樞，預計 2027 年 1 月開始出貨。",
-    "content": "隨著 AI 代理人（AI Agents）的概念逐漸從軟體層面走向實體硬體，穿戴裝置市場迎來了新的競爭者。硬體新創公司 Aina 於近日發表了一款名為「AI ring」的智慧戒指。不同於市場上僅具備健康監測功能的同類產品，Aina 的這款戒指配備了螢幕、搖桿與麥克風，目標是成為使用者與複雜數位環境之間的互動橋樑。\n\nAina 在今年 7 月成功完成了 550 萬美元的融資，其創業背景深厚。該公司此前曾開發過一款名為 Mirage 的三鍵控制器，旨在透過自定義按鍵快速操作 Mac 上的應用程式，例如在 Google Meet 會議中切換靜音或控制鏡頭。這次發表的智慧戒指正是汲取了 Mirage 的設計經驗，試圖將這種「跨應用控制」的邏輯進一步微型化。\n\n在功能層面上，這款售價 399 美元的戒指顯得相當激進。除了常見的麥克風語音輸入功能（支援 Wispr Flow 或自家引擎以進行備忘錄聽寫），它還內建了揚聲器以支援通話功能。透過機身上的小螢幕，使用者可以直接查看來自手機的通知，或是確認目前正處於何種控制模式。此外，透過內建的搖桿與手勢操作，使用者可以精確操控電腦螢幕上的應用程式，甚至是 Apple TV 等智慧家庭設備。\n\nAina 創辦人 Apoorv Shankar 在接受採訪時表示，現有的手機與筆電介面是為「瀏覽網頁」時代設計的，對於需要主動回饋的 AI 代理人而言，這並非最佳的互動方式。這款戒指正是為了提供一種更主動、更直觀的控制介面而誕生。目前市面上已有諸如 Pebble Index 01、Sandbar Stream、Oasis 及 Natura 等智慧戒指，Aina 選擇加入螢幕與搖桿等硬體規格，顯然是為了在擁擠的市場中透過強化控制力來尋求差異化。\n\n對於消費者而言，這款戒指的角色目前尚處於探索階段。根據初步體驗，它在功能上與其說是一個簡化的穿戴裝置，不如說更像是一個縮小版的智慧手錶，擁有更強的控制權限。然而，硬體功能的豐富度也伴隨著軟體成熟度的挑戰。由於部分功能仍處於開發中，用戶是否會習慣透過戒指操作日常工作，仍有待觀察。此外，這類產品的成功與否，很大程度上取決於未來 AI 代理人的普及程度，這也是為什麼 OpenAI 或 Rabbit 等公司都在探索專屬硬體的原因——他們都在賭一個每個人身邊都有多個 AI 代理人協助工作的未來。\n\n目前 Aina 的智慧戒指已開放預購，首批早鳥價為 399 美元，預計 2027 年 1 月開始出貨；早鳥優惠結束後，價格將調整為 499 美元。這款裝置顯然是為那些數位設備簇擁者與 AI 熱愛者所設計，但在 AI 硬體百家爭鳴的當下，Aina 能否讓這枚戒指成為使用者數位生活不可或缺的「搖桿」，還有待產品正式交付後，由市場與實戰體驗來給出最終答案。",
-    "link": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Aina-Ring-Hands.jpeg?resize=1200,805",
-    "date": "Thu, 05 Nov 2026 14:42:00 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
-    "stable_id": "a-764c450b16e906863c18",
-    "permalink": "/articles/a-764c450b16e906863c18.html",
-    "id": 48
-  },
-  {
-    "title": "美國 10 月科技業就業強勢反彈！AI 專才需求推動失業率降至 2.8%",
-    "summary": "受企業積極佈局 AI 帶動，美國 10 月科技職缺與就業人數雙雙回升，失業率降至 2.8%，資安與 AI 專才成市場焦點。",
-    "content": "根據 CompTIA 分析美國勞工統計局（U.S. Bureau of Labor Statistics）最新數據顯示，美國科技人才需求在 10 月迎來顯著反彈。全美各行業的雇主在該月份共增聘了超過 26,000 名資訊科技（IT）人員，科技專業人員的失業率也下滑至 2.8%，較前一個月減少了整整半個百分點。此外，作為未來人才需求關鍵指標的活躍科技職缺數量，年增率大幅跳升 18.5%，在各個經濟領域中達到 629,876 個。\n\nCompTIA 研究副總裁 Seth Robinson 表示，各行各業的雇主都在尋找具備軟體、人工智慧、網路安全、資料處理以及系統和網路能力的優秀人才，這再次凸顯了培養具備適應能力的科技技能之重要性。這種需求回溫的現象，反映出企業持續進行現代化轉型，積極延攬能將 IT 藍圖付諸實現的專業工作者。\n\n不過，ManpowerGroup 旗下公司 Experis 的北美垂直策略主管 Julie Loucks 指出，隨著企業適應新的商業運作模式，他們所尋找的科技人才面貌已經發生轉變。過去那種「什麼都會一點」的通才招募模式已逐漸退燒，企業現在更傾向尋找能協助落實具體成果的專家，將資金集中於能夠協助導入、治理、保護及擴展 AI 能力的關鍵角色。\n\nCompTIA 的分析數據也印證了這項優先順序的轉變。DevOps 工程師、基礎設施架構師、網路安全工程師與資料科學家等類別，在 10 月皆迎來雙位數的成長，顯示市場對於支援 AI 部署的技術人才需求孔急。然而，Robert Half 的數據顯示，超過 73% 的科技職缺都帶有一定的 AI 技能需求，這也導致人才需求與可用勞動力之間出現巨大的鴻溝。\n\n針對這項結構性挑戰，Nexthink 資深解決方案諮詢總監 Richard Matthews 認為，由於相關技能依然稀缺且伴隨著高昂的人力成本，市場需求已經明顯超越供給。對企業而言，未來的關鍵在於如何透過內部現有的員工來培養這些核心技能，以緩解人才短缺的壓力。",
-    "link": "https://www.ciodive.com/news/tech-workforce-AI-jobs-october/874043/",
-    "image": "https://imgproxy.divecdn.com/0OeVoyCSFMpKpud6mlVw57xTEa6tH8-Lr7ZSdXLBRKw/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjI4NzY0NTY5LmpwZw==.webp",
-    "date": "Fri, 06 Nov 2026 15:52:00 -0500",
-    "category": "BizTech",
-    "is_manual": false,
-    "_archive_key": "rss:https://www.ciodive.com/news/tech-workforce-AI-jobs-october/874043/",
-    "stable_id": "a-9f175d950ad642b7d991",
-    "permalink": "/articles/a-9f175d950ad642b7d991.html",
     "id": 49
   }
 ]
