@@ -300,6 +300,132 @@
     "id": 14
   },
   {
+    "title": "Nvidia 震撼彈：黃仁勳因醜聞辭職，民主黨議員再發起對川普政府中國晶片交易調查",
+    "summary": "Nvidia 執行長黃仁勳因醜聞辭職並同意赴國會作證。同時，美國民主黨議員針對 Nvidia 與川普政府的中國晶片銷售及營收分潤協議展開調查。",
+    "content": "科技巨頭 Nvidia 迎來震撼變局。公司創辦人黃仁勳於週四稍早無預警卸下執行長職務，並同意出席由共和黨領導的多個國會委員會舉行之閉門聽證會作證。在此之前，黃仁勳被爆出與一名遭指控為中國間諜的新加坡公司 Megaspeed 高層 Alice Huang 有染，隨後更傳出涉及多起與公司員工的婚外情醜聞。\n\n在黃仁勳請辭的同日，美國國會的民主黨人也正式對川普政府處理 Nvidia 對中國晶片銷售的手法展開調查。眾議院籌款委員會首席民主黨議員 Richard Neal 與參議院財政委員會首席民主黨議員 Ron Wyden 聯手致函商務部長 Howard Lutnick，要求商務部保留相關紀錄，並直指這項安排涉嫌違法。\n\n根據民主黨議員公開的信件內容，該筆交易的運作模式為：川普政府同意 Nvidia 向中國出售 H200 晶片，但前提是這些在台灣製造的晶片必須先運抵美國。晶片抵達後，川普隨即加上關稅，形同透過被質疑為違憲的出口稅制，從 Nvidia 的中國銷售額中抽成；隨後，商務部再行核發出口許可證。事實上，Nvidia 與 AMD 曾在 2025 年 8 月公開同意將中國晶片銷售額的 15% 分潤給美國政府，藉此換取出口許可。\n\n然而，民主黨人的調查矛頭直指商務部與行政部門。信中質疑，商務部長 Lutnick 在接獲美國情報部門通報有關 Alice Huang 的疑慮以及黃仁勳與其關係後，為何仍持續允許 Megaspeed 購買晶片？為何商務部會綠燈放行其他在登記地址沒有實體營運的亞洲公司購買 Nvidia 晶片？此外，信件也把矛頭指向 Nvidia 對川普項目的 2600 萬美元捐款（包含宴會廳項目），質疑川普是否利用對黃仁勳緋聞的掌握來換取政治捐款。值得注意的是，川普在週日播出的《60 Minutes》訪談中曾透露，他和團隊曾威脅一名未具名的 AI 高層可能入獄，隨後該高層態度「完全改變」。\n\n這已是自間諜醜聞爆發以來，針對 Nvidia 中國銷售及與川普政府互動展開的第二起國會調查。此前，由共和黨主導的眾議院美中戰略競爭特別委員會、外交委員會及情報委員會已要求黃仁勳出席閉門聽證會，並揚言若其拒絕將發出傳票。隨著黃仁勳辭職下台，他已同意配合國會調查。\n\n從商業與政治交織的脈絡來看，這起事件已超越單純的企業高層私德問題，演變成一場高度敏感的華府政治風暴。Nvidia 過去透過讓步與分潤試圖確保龐大的中國市場利益，如今卻因政治與間諜風暴遭到民主、共和兩黨的同步夾擊。隨著國會調查深入推進，川普政府的出口審批機制與跨國科技巨頭的合規操作，勢必將面臨更嚴格的公眾與法律檢視。",
+    "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205211212-1.jpg?resize=1200,800",
+    "date": "Thu, 12 Nov 2026 22:42:51 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+    "stable_id": "a-85ffa337a7126e9ae802",
+    "permalink": "/articles/a-85ffa337a7126e9ae802.html",
+    "id": 15
+  },
+  {
+    "title": "Meta消費級AI「Muse」正式解鎖外撥電話功能，限付費訂閱用戶使用",
+    "summary": "Meta旗下AI助理Muse推出美國市場外撥電話功能，協助用戶代勞繁瑣通話，目前僅開放付費訂閱用戶使用。",
+    "content": "經過今年9月的初步測試後，Meta旗下的消費級AI助理 Muse 正式在美國市場推出外撥電話功能，能代表用戶致電給美國境內的企業。不過，這項新功能並非免費開放，目前僅限付費訂閱戶使用。\n\nMeta指出，Muse目前的用戶數已突破1000萬，其核心目標是讓消費級AI成為日常主流產品，而代為撥打電話正是協助用戶處理待辦清單的關鍵方式之一。Meta首席AI人工智慧長兼超級智慧實驗室負責人王艾力（Alexandr Wang）在社群平台發文表示，這項功能可以幫用戶搞定那些大家都不想打的電話，例如有線電視公司、車管所（DMV），或是沒有提供線上訂位服務的餐廳。\n\n在此之前，這項功能僅限少數向AI申請搶先體驗的早期用戶試用。現在，只要是付費訂閱Muse的用戶都可以發起這類請求。目前Muse的訂閱方案為每週5億個Muse權杖（tokens）起跳，費用為每月20美元；若為高用量的AI用戶，則可選擇每月支付100美元以獲得3億個權杖。\n\n在市場競爭方面，Muse並非唯一具備外撥企業電話能力的AI助理。新創公司 Instinct 以及 Google 的 Gemini 也都曾提供類似的選項。然而，當AI工具確實具備處理這項任務的能力時，電話另一端的反應卻呈現兩極化。許多企業與櫃檯人員一旦發現接聽的不是真人，便會立刻掛斷電話。不過，隨著AI模仿真人語音的能力越來越好，未來要分辨客戶本人與代表客戶的AI將變得更加困難。\n\n儘管面臨這些挑戰，這項功能仍然對長期對客服現狀感到沮喪的消費者具有吸引力。長久以來，消費者被迫在複雜的語音選單中導航，接著枯坐等候真人客服接聽，若幸運的話，對方才能真正提供協助，而不是將電話轉接給其他部門。如今，消費者或許能將這些枯燥繁瑣的任務交給具備無限耐心的AI來處理。\n\n除了電話功能維持付費限定外，王艾力本週也透露，先前新增的建立Muse電子郵件地址選項，將很快向免費版用戶開放。\n\n從產業發展的角度來看，AI代理（AI agents）正逐漸從純粹的文字互動走向實際執行現實世界的任務，如代撥電話等。這類功能切中了傳統客服效率低下的痛點，確實能為消費者省去不少時間與耐性。然而，電話另一端的企業與客服人員對於自動化系統的接受度仍是未知數，若越來越多企業採取直接掛斷或過濾AI來電的策略，這類功能的實際成功率與用戶體驗恐將打折扣。此外，語音辨識與擬真技術的進步在帶來便利的同時，也伴隨著電話詐騙或身份驗證等安全隱憂，這將是Meta與同業在推廣此類服務時必須審慎應對的課題。",
+    "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/muse-calls.jpg?w=1104",
+    "date": "Thu, 12 Nov 2026 22:22:28 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+    "stable_id": "a-5a483e99fd77105cbb1a",
+    "permalink": "/articles/a-5a483e99fd77105cbb1a.html",
+    "id": 16
+  },
+  {
+    "title": "Nvidia 震撼彈：執行長黃仁勳因緋聞與國安疑雲辭職，將赴國會作證",
+    "summary": "Nvidia 共同創辦人兼執行長黃仁勳因捲入婚外情及涉嫌中國間諜的國安疑雲宣布辭職，震撼全球科技界。",
+    "content": "人工智慧晶片巨頭 Nvidia 震撼業界，領導公司長達 33 年的共同創辦人兼執行長黃仁勳於 11 月 12 日正式宣布辭職。這場風暴起因於黃仁勳坦承自身婚外情，其中涉及美國官員懷疑可能為中國間諜的新加坡 AI 基礎設施公司 Megaspeed 高層 Alice Huang。隨著醜聞如滾雪球般擴大，外媒更爆出黃仁勳與公司內部員工及直屬主管職的醫療副總裁 Kimberly Powell 曾有婚外情，引發董事會高度關注與股價波動。\n\n事件的核心不僅止於個人私生活，更觸及美中之間激烈的 AI 技術競賽與國家安全敏感神經。Megaspeed 過去兩年曾向 Nvidia 採購高達 48 億美元的晶片，美國與新加坡此前已針對該公司是否非法向中國轉移晶片展開調查。美國司法部目前已接手聯邦調查，而美國國會的多位共和黨委員會主席也去信要求黃仁勳出席閉門聽證會，針對外洩美國敏感技術的疑慮說明，黃仁勳已同意在 11 月 26 日感恩節前赴國會作證。\n\n在黃仁勳請辭後，Nvidia 董事會迅速做出人事調整，任命現任財務長柯蕾特·克雷斯（Colette Kress）兼任代理執行長，而長期擔任董事的哈維·C·瓊斯（Harvey C. Jones）則獲委任為公司史上首位董事會主席。Nvidia 將展開更廣泛的搜尋以決定永久繼任人選。同時，美國總統川普日前受訪時雖曾公開表態支持黃仁勳，稱其為「優秀的人」，但在接連爆出多起婚外情與國安疑雲後，這場危機仍重創了公司領導層的穩定性。\n\n從產業與地緣政治的角度來看，這場風暴凸顯出美國科技巨頭在美中晶片出口管制上面臨的高壓審查。Nvidia 作為全球 AI 基礎設施的核心供應商，其晶片出口政策向來動見觀瞻。黃仁勳過去積極為 Nvidia 在中國市場的業務拓展發聲，如今隨著他卸下執行長職務並將面對國會質詢，Nvidia 在後黃仁勳時代如何因應嚴格的出口管制、修復企業治理形象，並在美中角力中維持其半導體霸主地位，將是全球科技市場接下來密切關注的焦點。",
+    "link": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2205754389.jpg?w=1024",
+    "date": "Thu, 12 Nov 2026 21:35:00 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "stable_id": "a-364ea284cf4b6837ba33",
+    "permalink": "/articles/a-364ea284cf4b6837ba33.html",
+    "id": 17
+  },
+  {
+    "title": "網羅網紅不再靠大海撈針！行銷新創 Nectar 推出 AI 代理自動化網紅行銷",
+    "summary": "前 Meta 員工創立的行銷 AI 系統 Nectar 推出全新「Creator Agent」，透過自動化搜尋、篩選與合作聯繫，協助品牌高效管理網紅行銷專案。",
+    "content": "隨著網紅行銷在品牌推廣中的比重日益吃重，美國互動廣告局（Interactive Advertising Bureau）預估 2026 年美國網紅廣告支出將達到 44 億美元。然而，面對動輒數百甚至數千位合作對象，行銷團隊往往得花上數週時間在社群媒體上大海撈針、建立試算表並手動發送私訊。針對這項痛點，由前 Meta 員工暨姊妹檔 Misbah 與 Farah Uraizee 創立的 AI 行銷作業系統 Nectar，於本週四正式推出全新的「Creator Agent」。\n\nNectar 於去年結束低調營運（stealth mode），其核心技術是利用 AI 代理協助品牌處理社群媒體管理、客戶對話、內容審核、網紅合作以及競爭對手研究。此次推出的 Creator Agent 專為自動化網紅行銷而設計，能從超過 3 億個創作者檔案中進行搜尋，不僅鎖定知名網紅，也涵蓋正逐漸嶄露頭角的微型創作者。該系統會分析影片內容，評估創作者的風格是否與品牌契合，並透過上下文審查內容而非僅依據關鍵字，以確保品牌安全。\n\n除了尋找合適人選，Creator Agent 還能根據品牌的語調撰寫並發送個性化訊息、建立收集創作者資訊的自訂登陸頁面，並協助管理合約、產品贈禮與物流細節。執行長 Misbah Uraizee 指出，該系統具備專有的防護欄（guardrails），能理解影片中的語境與對話語調，確保品牌在不同社群平台上維持適當的溝通語氣。此外，該代理還會留意創作者生活中的個人里程碑（如訂婚、迎接新寶寶或完成馬拉松），主動建議發送個人化訊息或禮物，讓品牌能建立更深厚的長期關係。\n\n目前 Creator Agent 已在全球推出，支援 Instagram 與 TikTok 的創作者。Nectar 也計畫透過模型上下文協議（Model Context Protocol, MCP）提供該代理，讓團隊能夠透過 Claude、ChatGPT、Gemini、Copilot 等主流 AI 助理或自建代理來使用這項工具。\n\n這款工具的推出反映出網紅行銷正朝向高度自動化與規模化發展。今年 5 月，Nectar 才剛獲得由 Menlo Ventures 及其與 Anthropic 聯合發起的 Anthology Fund 領投的 3,000 萬美元 A 輪融資。隨著 AI 代理逐漸深入企業的日常運營，如何在大規模自動化的同時維持品牌對話的溫度與精準度，將是這類工具能否在市場上脫穎而出的關鍵。",
+    "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+    "image": "https://techcrunch.com/wp-content/uploads/2023/10/misbahfarah-together.jpg?resize=1200,676",
+    "date": "Thu, 12 Nov 2026 19:11:00 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+    "stable_id": "a-64292c0331bf18e773b3",
+    "permalink": "/articles/a-64292c0331bf18e773b3.html",
+    "id": 18
+  },
+  {
+    "title": "前 Adobe 團隊打造 AI 攝影助理 Phota Labs，標榜保留真實感自動優化日常照片",
+    "summary": "由 a16z 支持的新創 Phota Labs 推出 iOS 應用程式，利用獨家 AI 技術自動將日常快照轉化為專業級照片，同時保留使用者真實身分與影像真實感。",
+    "content": "市面上的照片編輯工具琳瑯滿目，但對於許多捕捉不佳的日常瞬間，傳統工具往往難以挽救。由 a16z 支持的新創公司 Phota Labs 推出全新 iOS 應用程式，試圖透過人工智慧改變這個痛點。該公司由曾在 Adobe 從事計算攝影產品（如 Project Indigo、Lightroom 和 Photoshop）研發的 Cecilia Zhang 與 Zach Xia 共同創辦。\n\n不同於一般需要手動調整的修圖軟體，Phota Labs 定位為使用者的「個人 AI 攝影助理」。共同創辦人 Zhang 形容，這個體驗非常主動，就像是一位虛擬攝影師瀏覽你的相機膠卷，試圖理解當下發生的場景，並在拍攝現場為你拍出理想的照片。這項服務能將廣角合照轉為較緊湊的肖像，或把自拍轉化為一般視角的照片，使用者也能選擇從微妙的微調到魚眼鏡頭或替代角度等更具戲劇性的風格。\n\n針對市面上生成式 AI 工具常在修飾模糊照片時改變當事人外貌的問題，Phota Labs 選擇自行研發底層技術。Xia 強調團隊對「真實感」的執著，他們開發了一套個性化技術，能夠學習並鎖定人物的身分特徵，在進行任何影像轉換時都確保維持原貌。此外，所有透過該應用程式編輯的圖片都會帶有隱形浮水印，以識別其經過 AI 修改。\n\n在商業模式與未來規劃方面，Phota Labs 去年獲得由 a16z 領投的 560 萬美元種子輪融資。目前該應用程式採取免費模式推出，旨在建立初期用戶群，未來計畫探索免費增值（freemium）模式並推出 Android 版本。初期目標客群鎖定喜愛在社群媒體分享大量照片卻不想繁瑣修圖的用戶，長遠則放眼希望為親友製作精美相簿的父母或長輩。\n\n從產品定位來看，Phota Labs 瞄準的是「修圖前」的影像缺陷修復，而非單純的濾鏡疊加。透過結合個人身分辨識模型與自動化助理體驗，該新創正在探索 AI 在消費級攝影中的新應用場景。不過，如何在全自動修飾與維持照片的真實記憶之間取得完美平衡，仍將是其長期吸引大眾用戶的關鍵考驗。",
+    "link": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/04_Holiday_Lights_before_after.jpg?resize=1200,867",
+    "date": "Thu, 12 Nov 2026 17:00:00 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+    "stable_id": "a-f3f4ed58f96348e2e5ba",
+    "permalink": "/articles/a-f3f4ed58f96348e2e5ba.html",
+    "id": 19
+  },
+  {
+    "title": "進軍美市場的前哨戰！九家南韓深科技新創爭奪 Disrupt 2027 參賽門票",
+    "summary": "南韓九家早期深科技新創齊聚首爾 DETO 2026 大會進行路演，爭奪明年 TechCrunch Disrupt 頂尖新創競賽席位，最終由聲音識別腦健康新創 Voinosis 脫穎而出奪冠。",
+    "content": "作為全球新創圈指標性盛事，TechCrunch Disrupt 每年的 Startup Battlefield 200 競賽總是吸引無數來自世界各地的企業，爭取在國際創投與科技社群面前發表的機會。本週在首爾舉行的 DETO 2026 科技大會上，九家南韓早期新創登台路演，全力爭取晉級明年該競賽的門票，而這九家企業均將目光鎖定美國市場，作為其整體國際擴張藍圖的一部分。\n\n這場競爭激烈的選拔涵蓋了醫療保健、金融科技、能源、半導體與人工智慧等深科技領域。最終，由前耳科外科醫師 Grace Shin 創立的 Voinosis 奪下本場比賽的冠軍。Voinosis 開發了一項透過分析語音模式（如音高、停頓、節奏與反應時間）來檢測腦部健康變化的 AI 工具，每次檢測只需不到五分鐘。該公司表示其技術已在希臘語、日語和英語中進行測試，無需針對不同語言進行額外訓練。在一項包含 146 名參與者的臨床研究中，該新創宣稱其篩查潛在認知問題的準確度達到 88%，目前正進行 A 輪融資，並已獲南韓製藥公司作為戰略投資者。\n\n除了 Voinosis 之外，其餘八家晉級角逐的南韓新創也展現了多元的技術實力。總部位於首爾的 Awesome Lab 開發了 ThermoFlux 加熱系統，利用水電解與離子化技術產生熱能，藉此降低能源消耗與碳排放，並計畫在美國市場透過供應核心 OEM 模組，與鍋爐、熱水器及 HVAC 企業合作開發產品。Crosshub 則鎖定跨境旅客的身份驗證與支付需求，其 IDBlock 平台結合了自主主權身份（SSI）與零知識證明技術，讓使用者在不洩露不必要個人隱私的情況下完成跨國身份驗證。\n\n在硬體與機器人領域，DeepFusion AI 開發了基於 4D 雷達的成像系統，結合 RF 感測器、雷達與光達，應用於自動駕駛、無人計程車及國防領域；EFLOW 則專注於開發體積更小、扭矩更大的特殊馬達與致動器，適用於機器人、無人機與衛星。醫療器材方面，Otiton Medical 推出了體溫測量及耳道耳膜影像分析設備，其 AI 模型已透過約 5,5000 張耳膜影像進行訓練，並獲得南韓醫療認證。倉儲機器人新創 Riibotics 則主打能在一日內完成倉庫機器人部署，大幅簡化系統整合與基礎設施設定。\n\n在半導體與教育科技方面，總部位於蔚山的半導體新創 Ternell 由前三星電子工程師金景祿於 2019 年創立，其開發的 T-SRAM 系統為傳統二態記憶體增加第三種狀態，經 28 奈米晶片測試顯示，記憶體容量提升 33% 至 102%，資料存取能耗則降低 55% 至 71%。另一家 EdTech 新創 Testbank 則開發了 Solve 應用程式，利用 AI 將印刷教材轉換為互動式數位版本，保留原始排版並支援自動評分。\n\n從這些南韓新創的技術佈局來看，無論是結合 AI 的醫療檢測、突破傳統限制的半導體記憶體，或是高效率的工業與移動解決方案，皆展現出強烈的企圖心。然而，要在競爭激烈的美國市場站穩腳步並實現國際擴張，這些早期企業除了透過如 Startup Battlefield 200 這類國際舞台增加曝光外，能否在實際落地時克服法規、在地化以及商業模式的挑戰，將是未來幾年持續受到市場檢視的關鍵。",
+    "link": "https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-613254398.jpg?resize=1200,800",
+    "date": "Thu, 12 Nov 2026 13:26:25 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
+    "stable_id": "a-8052193da2d39bcbd758",
+    "permalink": "/articles/a-8052193da2d39bcbd758.html",
+    "id": 20
+  },
+  {
+    "title": "黃仁勳卸任輝達執行長震撼歐洲科技圈：新創生態圈憂心最大金主退場",
+    "summary": "輝達共同創辦人黃仁勳卸任執行長職務，引發歐洲科技與創投圈的高度關注。業界擔憂這位長期大力支持歐洲人工智慧發展的關鍵推手離任後，可能對當地的 AI 新創投資與發展帶來重大變數。",
+    "content": "人工智慧產業的最強推手、晶片大廠輝達（Nvidia）共同創辦人黃仁勳驚傳卸任執行長職務，這項人事異動不僅震撼全球科技界，更在歐洲科技生態圈引起強烈反響。多年來，輝達一直是歐洲大陸最具規模的大型融資（megaround）投資者之一，黃仁勳的去職讓歐洲新創界擔憂將失去一位慷慨的關鍵支持者。\n\n回顧過去十年，輝達在歐洲的佈局堪稱深遠。自 2014 年起，該公司逐步加大對歐洲人工智慧領域的投入，不僅扶植了諸如 Mistral AI、Hugging Face 等業界重量級玩家，更透過積極的資本運作與技術合作，成為歐洲 AI 發展不可或缺的推動力。對歐洲的創投業者與新創公司而言，輝達不僅是技術供應商，更是提供資金與市場信心的重要靠山。\n\n然而，隨著這位領導晶片巨頭多年的核心人物卸任，歐洲科技界開始重新評估未來的不確定性。部分業內人士指出，黃仁勳的離去可能意味著輝達在歐洲的戰略佈局與投資風格將面臨轉變，特別是在當前歐洲 AI 基礎設施建設正處於關鍵發展階段之際，資金與資源的動向格外敏感。\n\n儘管如此，也有分析認為，歐洲 AI 新創生態圈在過去幾年中已建立起一定的自主發展能力與成熟度，不見得會因為單一高層的異動而全面停滯。然而，面對全球人工智慧競賽的白熱化，失去黃仁勳這位長期盟友，對歐洲科技界而言無疑是一個需要審慎應對的轉折點。\n\n從資深科技記者的角度來看，黃仁勳卸任對歐洲科技圈的影響，本質上反映出歐洲新創市場高度依賴少數美國科技巨頭資金與技術支持的結構性現象。雖然歐洲本地的 AI 研發實力正在增長，但在缺乏同等規模本土資本的情況下，美國晶片龍頭高層的異動直接牽動了歐洲新創的融資脈動。未來觀察重點將在於輝達新領導團隊是否會延續過去對歐洲市場的深耕策略，這將直接左右歐洲 AI 產業能否持續維持高速成長的動能。",
+    "link": "https://sifted.eu/articles/jensen-huangs-nvidia-exit-shakes-european-tech/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2025/06/09131744/Jensen-1906-0424_6a965531-c88e-4313-a69d-a22f491e1f55-prv.png",
+    "date": "Thu, 12 Nov 2026 17:19:55 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/jensen-huangs-nvidia-exit-shakes-european-tech/",
+    "stable_id": "a-23173d969ac7dd69b256",
+    "permalink": "/articles/a-23173d969ac7dd69b256.html",
+    "id": 21
+  },
+  {
+    "title": "紅杉資本才剛喊卡，Northzone 為什麼逆勢押注 Scout 計畫？",
+    "summary": "就在紅杉資本（Sequoia）終止其 Scout 專案後一週，歐洲知名創投 Northzone 反其道而行，宣佈推出 Scout 專案，引發業界對早期投資策略的新討論。",
+    "content": "在創投界對早期投資策略出現分歧之際，知名創投機構 Northzone 選擇走出一條不同的路。就在紅杉資本（Sequoia）宣佈終止其 Scout（星探）計畫的一週後，Northzone 卻宣佈正式啟動自身的 Scout 專案。Northzone 合夥人 Elena Pantazi 近期接受 Sifted Podcast 訪問，深入剖析了該機構為何在此時決定佈局 Scout 計畫背後的策略考量。\n\n根據 Northzone 的規劃，該計畫預計納入 25 位非全職的合夥人與創辦人作為 Scout，其中包括 ProxyScout、Eudia Capital 的 Jumpship Fund、Vilya Ventures 以及 Funderbeam 等業界人士。這些 Scout 將協助機構在早期階段發掘潛在的投資機會，尋找下一個具備潛力的 M-wave 早期標的，為基金注入更多來自不同背景的早期 deal flow。\n\n然而，這項舉措在當前市場環境下顯得格外引人注目。就在 Northzone 宣佈此消息的前夕，同業紅杉資本才剛剛決定收掉其經營多年的 Scout 計畫，顯示出頂尖創投對於如何高效發掘早期項目的做法正在發生轉變。各界也因此高度關注，究竟這類外部星探網絡能否在競爭激烈的歐洲早期創投市場中，持續發揮精準捕捉潛力新創的功能。\n\n從資深科技記者的角度來看，Northzone 在紅杉資本收手之際逆勢建立 Scout 計畫，反映出部分歐洲創投仍極度依賴廣泛的個人網絡來接觸最前端的早期案源。然而，非全職 Scout 模式在管理、激勵機制以及利益衝突上往往伴隨著挑戰。Northzone 能否透過這套新機制在早期投資中建立長期優勢，仍有待該計畫實際運作後的成效來驗證。",
+    "link": "https://sifted.eu/articles/sifted-podcast-northzone-northstars/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1080,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/12151628/Freya-Anne-image.png",
+    "date": "Thu, 12 Nov 2026 15:18:29 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/sifted-podcast-northzone-northstars/",
+    "stable_id": "a-2e91b09773309ee5dcb4",
+    "permalink": "/articles/a-2e91b09773309ee5dcb4.html",
+    "id": 22
+  },
+  {
+    "title": "歐洲防禦科技新星 Uforce 獲 7 億美元 A 輪融資，英國國家財富基金與 Valor 共同領投",
+    "summary": "總部位於倫敦的自主無人機新星 Uforce 宣佈完成 7 億美元 A 輪融資，由英國國家財富基金及 Valor Equity Partners 共同領投，印證了歐洲防禦科技的強勁成長動能。",
+    "content": "總部位於倫敦的國防科技新星 Uforce 近日正式宣佈完成高達 7 億美元的 A 輪融資。這筆重量級資金由英國國家財富基金（UK National Wealth Fund）與美商 Valor Equity Partners 共同領投，不僅為這家自主無人機企業注入龐大動能，也正式證實了媒體先前關於該公司正在進行大型融資的市場傳聞。\n\nUforce 專門研發應用於陸地、空中及海上的自主無人機系統。隨著地緣政治局勢轉變以及現代戰場對無人化、自動化設備的需求急遽攀升，這類結合先進人工智慧與硬體製造的國防新創公司，近年來在歐洲創投市場中備受矚目。此次獲得國家級資金與頂尖創投的雙重背書，凸顯出官方資本對本土關鍵防禦供應鏈的重視。\n\n根據報導，該公司此前的融資進展與技術實力早已吸引市場高度關注。此次 7 億美元的鉅額資金將有助於加速其產品研發、擴大生產規模，並進一步鞏固其在歐洲乃至全球自主無人機市場中的競爭地位。\n\n記者分析指出，從 Uforce 能夠順利獲得英國國家財富基金等重量級機構的共同領投來看，歐洲各國政府與資本正加速將資源投入具有戰略價值的深科技（Deeptech）領域。無人機技術在現代衝突（如烏克蘭戰事）中所展現的關鍵戰術價值，正直接轉化為創投市場對防禦科技新創的高額估值。然而，這類高度依賴政策導向與國防採購市場的新創企業，未來能否在商業化與國際合規上面對更嚴格的檢視，仍將是決定其能否站穩全球市場的關鍵考驗。",
+    "link": "https://sifted.eu/articles/drone-startup-uforce-fundraise-uk-national-wealth-fund-scoop/",
+    "image": "https://content.sifted.eu/wp-content/uploads/2026/08/11124151/Screenshot-2026-08-11-at-12.40.38-1024x505.png",
+    "date": "Thu, 12 Nov 2026 10:10:54 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/drone-startup-uforce-fundraise-uk-national-wealth-fund-scoop/",
+    "stable_id": "a-de3056da72ea86dbfc99",
+    "permalink": "/articles/a-de3056da72ea86dbfc99.html",
+    "id": 23
+  },
+  {
     "title": "輝達執行長黃仁勳深陷醜聞危機：若面臨去職，矽谷熱議可能接班人選",
     "summary": "輝達執行長黃仁勳因私人醜聞面臨保位危機，市場與業界紛紛揣測可能接班人選，從競爭對手高層到內部技術大將皆在名單之列。",
     "content": "人工智慧晶片巨頭輝達（Nvidia）執行長黃仁勳近期陷入前所未有的領導危機。根據預測市場 Kalshi 的數據，黃仁勳能否在本週保住職位的機率一度跌至僅剩 30%。這場風暴源於他坦承婚外情，且據《紐約時報》的最新報導指出，涉及對象除了被美國情報機構懷疑為中國間諜的 Alice Huang 外，還包括向黃仁勳匯報的輝達高層 Kimberly Powell。\n\n儘管黃仁勳親手打造了全球最有價值且極具影響力的企業，但董事會成員及外界目光已開始轉向可能的應變方案。目前輝達並無明確的接班計畫，若董事會最終決定將黃仁勳自執行長職位上撤換，考量到他在公司建立的巨大財富與地位，董事會極可能保留他擔任目前尚不存在的董事長一職，但日常營運仍需有人接手。\n\n針對可能接班人選，外界與分析師提出了多個備受討論的名字，其中包含輝達最大競爭對手超微（AMD）執行長暨黃仁勳遠親的蘇姿丰。不過，多數觀點認為蘇姿丰幾乎不可能在此時離開 AMD，畢竟當輝達深陷調查與風波時，正是對手擴大優勢的時機。其他被點名的還包括曾領導 Google 並具備廣泛政商經歷的 Eric Schmidt、英特爾執行長季辛格（Lip-Bus Tan 應為文章提及之 Lip-Bu Tan）、曾任 Salesforce 共同執行長與 OpenAI 董事會主席的 Bret Taylor，以及輝達內部協助開發 CUDA 關鍵軟體的副總裁 Ian Buck、硬體工程資深副總裁 Andrew Bell，甚至連黃仁勳的妻子、曾擔任微晶片工程師的 Lori Huang 也成為這場「客廳遊戲」般的猜測人選之一。\n\n從產業角度來看，這場突如其來的領導高層風暴對輝達而言無疑是一場公關與治理的嚴峻考驗。雖然目前事件仍在發展中，且黃仁勳最終去留尚無定論，但缺乏接班計畫的隱憂已被徹底放大。無論輝達最終選擇由內部技術大將接棒，或是自外部空降具有豐富經驗的管理人才，這家站在全球 AI 浪潮核心的科技巨頭都必須盡快釐清變局，以免內部動盪影響其在晶片市場的領先地位。",
@@ -311,7 +437,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
     "stable_id": "a-ec27abc34734147d71dc",
     "permalink": "/articles/a-ec27abc34734147d71dc.html",
-    "id": 15
+    "id": 24
   },
   {
     "title": "Nvidia 執行長黃仁勳陷入重大風暴：涉嫌與中國間諜交往及公司內部醜聞引發國家安全關切",
@@ -325,7 +451,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
     "stable_id": "a-395e018f3ca9ed42ba75",
     "permalink": "/articles/a-395e018f3ca9ed42ba75.html",
-    "id": 16
+    "id": 25
   },
   {
     "title": "黃仁勳深陷醜聞危機！傳輝達董事會最快週三開會討論其去留、盤後股價重挫",
@@ -339,7 +465,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
     "stable_id": "a-6b1d5d693f85d6917b1e",
     "permalink": "/articles/a-6b1d5d693f85d6917b1e.html",
-    "id": 17
+    "id": 26
   },
   {
     "title": "英國AI晶片新創Fractile完成7.2億美元C輪融資 估值突破50億英鎊",
@@ -353,7 +479,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
     "stable_id": "a-78ea64e11ba023f6eeda",
     "permalink": "/articles/a-78ea64e11ba023f6eeda.html",
-    "id": 18
+    "id": 27
   },
   {
     "title": "美國期中選舉「藍色浪潮」來襲，AI 產業將面臨更嚴格的監管與資料中心阻力",
@@ -367,7 +493,7 @@
     "_archive_key": "rss:https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
     "stable_id": "a-b899eabe2a17ced96a22",
     "permalink": "/articles/a-b899eabe2a17ced96a22.html",
-    "id": 19
+    "id": 28
   },
   {
     "title": "無人機物流巨頭 Zipline 獲 15 億美元融資，估值衝上 215 億美元並擴大沃爾瑪合作",
@@ -381,7 +507,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/",
     "stable_id": "a-78064385f138c3a36cc2",
     "permalink": "/articles/a-78064385f138c3a36cc2.html",
-    "id": 20
+    "id": 29
   },
   {
     "title": "英國AI晶片新創 Fractile 證實完成 5.4 億英鎊融資，估值一舉突破 50 億英鎊",
@@ -395,7 +521,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/fractile-confirms-540m-raise-first-revealed-by-sifted/",
     "stable_id": "a-45c62a8cfdc330476694",
     "permalink": "/articles/a-45c62a8cfdc330476694.html",
-    "id": 21
+    "id": 30
   },
   {
     "title": "Nvidia 與 Unity 參投！倫敦 DeepMind 衍生新創 Emulate 獲 7.0 億美元融資，估值達 37 億美元",
@@ -409,7 +535,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/exclusive-unity-nvidia-emulate/",
     "stable_id": "a-60f3e4d37d0f4f024bf6",
     "permalink": "/articles/a-60f3e4d37d0f4f024bf6.html",
-    "id": 22
+    "id": 31
   },
   {
     "title": "受全球科技股拋售潮波及，AI 基建新秀 Nscale 傳將延後 350 億美元 IPO 計劃",
@@ -423,7 +549,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/nscale-ipo-nvidia-delay/",
     "stable_id": "a-21f2cdfb5aaeef690f5f",
     "permalink": "/articles/a-21f2cdfb5aaeef690f5f.html",
-    "id": 23
+    "id": 32
   },
   {
     "title": "X 推出內建影片剪輯工具，企圖以剪片功能吸引網紅與創作者",
@@ -437,7 +563,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
     "stable_id": "a-91d5fcab4999bc210e82",
     "permalink": "/articles/a-91d5fcab4999bc210e82.html",
-    "id": 24
+    "id": 33
   },
   {
     "title": "OpenAI 收購 AI 旅遊新創 Odessia，網羅 Sonder 創辦人帶領旅遊技術開發",
@@ -451,7 +577,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
     "stable_id": "a-773f3d4d27bc0c2e9f89",
     "permalink": "/articles/a-773f3d4d27bc0c2e9f89.html",
-    "id": 25
+    "id": 34
   },
   {
     "title": "紐約州AI安全法正式上路 OpenAI與Anthropic面臨嚴格監管",
@@ -465,7 +591,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
     "stable_id": "a-b108d6332cf59562e41a",
     "permalink": "/articles/a-b108d6332cf59562e41a.html",
-    "id": 26
+    "id": 35
   },
   {
     "title": "新創實驗室 PSI 利用 Anthropic 模型破解量子計算難題，探索 AI 科學發現商業化",
@@ -479,7 +605,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
     "stable_id": "a-472fa76acddf1fa0d8dd",
     "permalink": "/articles/a-472fa76acddf1fa0d8dd.html",
-    "id": 27
+    "id": 36
   },
   {
     "title": "Cyanogen 共同創辦人轉戰 AI 時代：Kora 宣佈打造 Linux 基礎桌面系統，直指微軟 Windows",
@@ -493,7 +619,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
     "stable_id": "a-e5be64946d58598d28c7",
     "permalink": "/articles/a-e5be64946d58598d28c7.html",
-    "id": 28
+    "id": 37
   },
   {
     "title": "電動卡車新創 Harbinger 獲 2.4 億美元 D 輪融資，業務版圖拓展至國防與電池儲能",
@@ -507,7 +633,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
     "stable_id": "a-5d2e54dc19830c0010d3",
     "permalink": "/articles/a-5d2e54dc19830c0010d3.html",
-    "id": 29
+    "id": 38
   },
   {
     "title": "歐洲生成式 AI 版權爭議升溫：法國 AI 巨頭 Mistral 槓上新版權提案引發創作者不滿",
@@ -521,7 +647,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/mistral-copyright-law-proposal/",
     "stable_id": "a-fab789da1ca4cd98e23a",
     "permalink": "/articles/a-fab789da1ca4cd98e23a.html",
-    "id": 30
+    "id": 39
   },
   {
     "title": "黃仁勳取消出席 ElevenLabs 紐約高峰會，Nvidia 正調查其婚外情指控",
@@ -535,7 +661,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/jensen-huang-pulls-out-of-elevenlabs-summit-amid-controversy/",
     "stable_id": "a-542f1df5837a2ae8412e",
     "permalink": "/articles/a-542f1df5837a2ae8412e.html",
-    "id": 31
+    "id": 40
   },
   {
     "title": "深耕 AI 演算法優化，英國新創 Hiverge 獲 NVIDIA 投資並完成 1940 萬美元融資",
@@ -549,7 +675,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/nvidia-bet-hiverge-plural-raise/",
     "stable_id": "a-d032ef539f347202c754",
     "permalink": "/articles/a-d032ef539f347202c754.html",
-    "id": 32
+    "id": 41
   },
   {
     "title": "輝達執行長黃仁勳深陷疑似中國間諜美人計風波，網路迷因梗圖全面洗版",
@@ -563,7 +689,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
     "stable_id": "a-c614a161451d0b8dfa7a",
     "permalink": "/articles/a-c614a161451d0b8dfa7a.html",
-    "id": 33
+    "id": 42
   },
   {
     "title": "無視市場波動與潛在風險 傳 AI 巨頭 Anthropic 本週將敲定 IPO 估值區間",
@@ -577,7 +703,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
     "stable_id": "a-500c95be939b63d6db7a",
     "permalink": "/articles/a-500c95be939b63d6db7a.html",
-    "id": 34
+    "id": 43
   },
   {
     "title": "輝達執行長黃仁勳遭爆 去年早已聘請危機公關公司處理涉華醜聞",
@@ -591,7 +717,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
     "stable_id": "a-94703d4baaa4299d6f17",
     "permalink": "/articles/a-94703d4baaa4299d6f17.html",
-    "id": 35
+    "id": 44
   },
   {
     "title": "AI硬體工程平台Nominal勢頭猛烈：8個月內估值三級跳、飆升至30億美元",
@@ -605,7 +731,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
     "stable_id": "a-6dcec44e17d3690ee0dc",
     "permalink": "/articles/a-6dcec44e17d3690ee0dc.html",
-    "id": 36
+    "id": 45
   },
   {
     "title": "美知名餐飲外送新創 Wonder 正式密件申請 IPO，估值上看 9 十億美元",
@@ -619,7 +745,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/food-delivery-startup-wonder-files-for-ipo-as-it-explores-its-next-big-bite/",
     "stable_id": "a-82150c8ee0e96d3e6817",
     "permalink": "/articles/a-82150c8ee0e96d3e6817.html",
-    "id": 37
+    "id": 46
   },
   {
     "title": "防止AI數學胡言亂語：新創Axiom Math以AI代理完成巨著《Stacks Project》形式化驗證",
@@ -633,7 +759,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
     "stable_id": "a-2668ae845ec40919ad08",
     "permalink": "/articles/a-2668ae845ec40919ad08.html",
-    "id": 38
+    "id": 47
   },
   {
     "title": "傳英國數位銀行 Monzo 洽談新一輪融資 估值上看 7 英鎊、由 DE Shaw 領投",
@@ -647,7 +773,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/monzo-to-raise-up-to-500m/",
     "stable_id": "a-aeb00ea5b8f4f6ceb0c1",
     "permalink": "/articles/a-aeb00ea5b8f4f6ceb0c1.html",
-    "id": 39
+    "id": 48
   },
   {
     "title": "歐洲國防科技掀併購整合潮！總部阿姆斯特丹 Onodrim 獲 3 億美元 A 輪融資",
@@ -661,132 +787,6 @@
     "_archive_key": "rss:https://sifted.eu/articles/onodrim-300-european-defence-rollup/",
     "stable_id": "a-dc19e21887274cc5557f",
     "permalink": "/articles/a-dc19e21887274cc5557f.html",
-    "id": 40
-  },
-  {
-    "title": "企業導入AI代理的真實挑戰：你需要的不是演算法，而是乾淨的內容管理",
-    "summary": "隨著企業從AI助理邁向全自主AI代理，專家指出最大的挑戰不在技術，而是雜亂無章的資料與內容管理。若缺乏嚴格的權限控管與治理框架，錯誤將在瞬間造成重大營運損害。",
-    "content": "當企業從被動等待人類指令的AI協同助理（copilots），逐步過渡到能獨立存取資料庫、執行郵件草擬、發票處理及檔案整理等任務的自主AI代理（autonomous AI agents）時，技術帶來的便利也伴隨著更高的風險。由於這些代理能以極高速度運作，單一錯誤便可能在幾秒鐘內對企業營運造成實質打擊。在近期由智慧內容管理平台 Box 舉辦的 Sifted Talks 中，多位業界專家深入探討了企業在擴展AI代理時所面臨的真實考驗。\n\nDeliverance AI 創辦人兼執行長 Mick McNeil 指出，企業安全部署AI代理的過程，其實就像是招募一名新員工，信任與自主權必須隨著時間慢慢建立，而非在第一天就賦予業務管理系統的完全自主權。Box 解決方案工程師 Eléonore Hébrard 也強調，當AI從生成文字轉為採取自主行動並接觸資料庫時，錯誤帶來的潛在爆破半徑會顯著擴大。\n\n然而，許多企業在導入時往往搞錯了方向。Hébrard 直言：「你遇到的不是AI問題，而是內容問題。」她指出，代理有時會產生幻覺，當被餵食組織混亂、重複或過時的檔案時便容易出包。因此，在賦予代理知識之前，企業必須先整理好內部資料與上下文（context）。McNeil 補充，正如我們為人類職位定義範疇一樣，企業也必須明確指示代理在面對特定資料時該如何思考與行動。\n\n除了資料品質，安全性與治理架構更是關鍵。金融科技與AI支付公司 Ralio 共同創辦人兼技術長 Leo Rosales 表示，Ralio 採取「零信任」（zero trust）原則，假設模型可能遭到破壞並圍繞其建立防禦，明確定義代理能做與不能做的事，並在它試圖執行不在授權範圍內的任務時予以阻擋。GCR（治理、法規遵循與風險）團隊必須在試點開始前就介入，否則將成為擴展AI代理的絆腳石。\n\n在權限控管方面，Hébrard 強調代理絕不應該擁有廣泛的存取權，權限必須具備任務特定、時間限制與情境感知（context-aware），並在內容層級強制執行安全控制，以防代理將受限制的資訊洩露給錯誤的使用者。同時，AI cybersecurity 公司 Geordie AI 共同創辦人暨首席AI官 Hanah-Marie Darley 提醒，業界常濫用「人在迴路中」（human-in-the-loop）這個詞，若未明確指定決策者是誰、以及他們需要什麼資訊與上下文，反而會降低安全性。\n\nDarley 還指出，企業面臨的更大威脅可能是已部署AI代理的「沉默失敗」（silent failure），即代理在運作但組織卻無法實時掌握其行為，導致問題發生卻未觸發任何警報。McNeil 認為，企業往往過度專注於技術本身，而非現實世界的商業流程。若未能提供員工安全且管用的工具，往往會助長未獲授權的影子工具使用。Hébrard 建議，企業應在內容層級實施動態安全控制，並記錄每一個提示與推理步驟，以確保在稽核時能百分之百解釋發生的一切。\n\n從專家的分析來看，AI代理的普及並非單純的技術升級，而是對企業數位基礎建設與治理成熟度的全面檢視。當自主代理擁有直接操作系統的權力，企業若無法從源頭管好內容、權限與流程細節，隨之而來的營運風險將難以估量。未來企業能否安全收割AI紅利，取決於管理層在放手授權之前，建立了多麼嚴密的防護網。",
-    "link": "https://sifted.eu/articles/the-realities-of-scaling-ai-agents-brnd/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=512,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/09093013/Ele%CC%81onore-He%CC%81brard.jpg",
-    "date": "Mon, 09 Nov 2026 09:23:09 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/the-realities-of-scaling-ai-agents-brnd/",
-    "stable_id": "a-375faea9c79ffda65f65",
-    "permalink": "/articles/a-375faea9c79ffda65f65.html",
-    "id": 41
-  },
-  {
-    "title": "戒掉無限滑手機！外媒盤點 9 款助你擺脫負面資訊循環的實用 App",
-    "summary": "面對社群媒體的「末日滾動」現象，科技外媒盤點了 9 款能將破碎時間轉化為自我照顧、學習與創意體驗的實用 App。",
-    "content": "你是否曾打開手機只是想看一下時間或回覆訊息，回過神來卻已過了一小時，腦中只剩下名人八卦、迷因影片與各種負面新聞？這種過度沉迷於社群媒體的「末日滾動」（doomscrolling）現象近年來極為普遍。去年一項調查指出，高達 64% 的美國人坦言自己有此習慣。研究人員警告，長時間滑手機不僅會導致大腦疲勞、專注力下降與睡眠障礙，若吸收過多負面壓力內容，更會讓人感到沮喪、焦慮與情緒耗竭。\n\n儘管要打破這個循環並不容易，但如果只是想利用空檔打發時間，除了放下手機去散步或閱讀紙本書外，透過一些能提供具吸引力且具生產力內容的應用程式，也是轉移注意力的好方法。科技外媒近期整理了一份名為避免無限滑動的 App 清單，涵蓋了自我照顧、閱讀、繪圖、語言學習及益智遊戲等多個領域。\n\n在自我照顧方面，Finch 是一款透過照顧虛擬寵物來協助用戶建立健康習慣的應用程式，用戶完成喝水、散步或正念等小目標即可讓寵物成長。針對閱讀需求，Libby 則讓用戶只需憑圖書館借書證，就能免費借閱數位圖書、有聲書與雜誌。喜愛創意的使用者可以嘗試 Dudel Draw，每日挑戰將隨機幾何形狀畫成創意圖畫，還能與朋友互相比較。若想與世界保持連結卻不想看社群動態，Radio Garden 則能讓用戶聆聽全球超過 2,500 個即時廣播電台。\n\n此外，清單中也不乏訓練大腦與學習新知的工具。Elevate 提供超過 40 種認知能力訓練遊戲；Vocabulary 則主打每日單字學習與小遊戲複習；Seterra 專為地理愛好者設計了超過 300 種地圖與旗幟測驗；紐約時報旗下的 NYT Games 則整合了經典的拼字、邏輯與數字遊戲。最後，若想學習新語言，Drops 提供每次僅需五分鐘的視覺化外語學習迷你遊戲，支援超過 45 種語言。\n\n記者分析指出，這些 App 的共同邏輯在於將手機從「被動消耗時間的黑洞」轉化為「主動微型學習或休閒的工具」。雖然它們無法直接根治人們對社群媒體的依賴，但透過降低進入門檻的微型任務與遊戲化設計，確實為現代人提供了一條在碎片時間中抽離焦慮資訊循環的替代路徑。",
-    "link": "https://techcrunch.com/2026/11/08/apps-to-distract-you-from-the-endless-cycle-of-doomscrolling/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2149461717.jpg?resize=1200,900",
-    "date": "Sun, 08 Nov 2026 22:00:00 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/08/apps-to-distract-you-from-the-endless-cycle-of-doomscrolling/",
-    "stable_id": "a-c4a97d1a424381c16df6",
-    "permalink": "/articles/a-c4a97d1a424381c16df6.html",
-    "id": 42
-  },
-  {
-    "title": "輝達董事會啟動獨立調查：執行長黃仁勳坦承曾與疑似中國間諜的女子交往",
-    "summary": "輝達執行長黃仁勳坦承曾與涉嫌為中國國安部工作的女子交往。輝達董事會已宣布啟動獨立調查，但強調目前尚無跡象顯示國家安全或公司機密受損。",
-    "content": "人工智慧晶片巨頭輝達（Nvidia）董事會於週日宣布，正針對執行長黃仁勳（Jensen Huang）遭指控成為中國間諜網目標一事，展開獨立調查。同時，輝達也公開了一封黃仁勳寫給全體員工的內部備忘錄，他在信中坦承自己曾與新加坡晶片公司 Megaspeed 的前高層愛麗絲・黃（Alice Huang）有過婚外情，但未在信中直接提及對方姓名。根據今年稍早流傳於美國政策制定者間的備忘錄指稱，愛麗絲・黃曾被中國國家安全部招募，企圖對輝達執行長進行間諜活動。\n\n黃仁勳在信中表達了深深的歉意：「我虧欠我的家人和你們所有人的道歉。我對妻子不忠，我的行為傷害了她和我們的孩子。我所做的事沒有藉口，我深感抱歉。」他並坦言自己未能盡到對公司的責任：「對於輝達的同事們——包括那些與我並肩工作數十年的夥伴，以及我們的董事會、合作夥伴和全球股東：你們值得我做得更好。」\n\n隨著美國與中國在人工智慧領域的競賽白熱化，晶片（特別是輝達的產品）已成為各方關注的焦點。此外，黃仁勳與美國總統當選人川普似乎也維持著緊密的關係。川普向來是 AI（或稱「超級智慧」）產業的大力支持者。針對這起事件，輝達董事會在公告中表示，目前「沒有理由相信」國家安全或公司機密受到任何損害。董事會同時指出，黃仁勳「完全支持這項審查，並承諾全力配合」，董事會對他及其領導團隊依然「充滿信心」。這項獨立調查將由外部獨立董事與外部法律顧問共同進行。\n\n在此之前，針對媒體先前有關執行長與愛麗絲・黃關係的報導，輝達曾回應稱兩人的互動「並不尋常」，並強調該公司不會與客戶分享機密資訊。隨著這起事件浮上檯面，也凸顯了在當前地緣政治緊張與 AI 浪潮交織的背景下，高科技企業領袖面臨的安全風險已備受各界高度關注。多數蓬勃發展的 AI 相關企業近期也紛紛警告員工，必須對潛在的間諜活動保持警戒，特別是透過色情或浪漫關係作為誘餌的手段。這項獨立調查後續將如何影響輝達的高層人事及美中科技戰的動向，仍有待外部法律團隊的審查結果來釐清。",
-    "link": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294936867.jpg?resize=1200,800",
-    "date": "Sun, 08 Nov 2026 21:00:11 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
-    "stable_id": "a-f9030dea86f8acb66336",
-    "permalink": "/articles/a-f9030dea86f8acb66336.html",
-    "id": 43
-  },
-  {
-    "title": "Snap AR眼鏡 Specs 佩戴體驗大幅升級，但 2,200 美元高昂售價與定位模糊成考驗",
-    "summary": "Snap 推出開發多年的 AR 眼鏡 Specs，雖然重量減半且佩戴舒適度大增，但高達 2,200 美元的售價與模糊的實際應用場景，讓其市場前景仍充滿挑戰。",
-    "content": "Snap 旗下開發多年的 AR 眼鏡裝置 Specs 近期正式進軍市場並開放預購。根據 TechCrunch 資深記者 Lucas Ropek 在舊金山與 Snap 團隊會面並實際測試後的報導，相較於今年稍早在拉斯維加斯 CES 展出的笨重原型機，新款 Specs 在外型與佩戴舒適度上都有了顯著的改進。\n\n回顧今年初的體驗，當時的原型機重達 8 英安（約 226 克），戴在臉上不僅沉重，還會發熱並產生刺痛感。但在 10 月底於舊金山四季酒店的測試中，Snap 團隊展示的最終版本重量已減輕將近一半，來到 132 克（約 4.6 英安）。新款眼鏡提供 47mm 與 52mm 兩種尺寸以適應不同頭型，並配備彈簧鉸鏈，在長達一小時的試戴過程中，不僅佩戴舒適，也沒有出現過去的發熱問題。\n\n儘管硬體工藝大幅進步，但 Specs 的核心軟體與市場定位仍處於摸索階段。這款頭戴裝置的售價高達 2,200 美元（約新台幣 7 萬元），當記者向 Snap 工作人員詢問該設備究竟是用於娛樂遊戲還是提升生產力時，得到的答案卻相當模糊，使得裝置在功能上顯得有些方向不明。\n\n從實際應用場景來看，記者認為 Specs 在某些特定情境下表現不錯。例如結合 HBO Max 與 YouTube 的串流影音功能，在搭乘火車或大眾運輸時能提供比手機更具沉浸感的娛樂體驗；結合報紙或 Kindle 等閱讀整合，也能在移動過程中幫助使用者提升專注力；此外，如同 Meta 的智慧眼鏡，Specs 也能拍攝類似 GoPro 的照片與影片，方便用戶隨手記錄並傳送給好友。\n\n不過，對於 Snap 積極推廣的日常工作與生產力工具定位，記者抱持懷疑態度。將眼鏡戴在頭上辦公，其便利性顯然不如坐在電腦前打字，且在公眾場合佩戴外型奇特且需透過手勢操作的眼鏡，也可能面臨社會眼光與恥感的考礙。至於遊戲功能，考慮到高達 2,200 美元的售價（遠高於大多數 Xbox 主機價格），要在聖誕檔期吸引大量主流青少年玩家恐怕不容易。\n\n總體而言，Snap 團隊成功將多種使用者體驗整合至單一裝置中，其空間同步技術等成就也展現了潛力。然而，以現階段提供的功能與高昂售價來看，是否足以說服消費者掏出大筆現金，仍有待市場檢驗。",
-    "link": "https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/06/SPECS27_52_Front_View81.png?resize=1200,675",
-    "date": "Sun, 08 Nov 2026 21:00:00 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
-    "stable_id": "a-f0a9643a9543c8289922",
-    "permalink": "/articles/a-f0a9643a9543c8289922.html",
-    "id": 44
-  },
-  {
-    "title": "Nothing 預告首款「AI 原生」神祕裝置 12 月登場：無螢幕、非 App 的生產力工具",
-    "summary": "以獨特透明設計聞名的新創手機品牌 Nothing 執行長裴宇宣布，公司首款 AI 原生裝置將於 12 月正式亮相，主打無螢幕與非 App 的全新互動體驗。",
-    "content": "以獨特透明設計與獨樹一幟風格聞名的智慧型手機新創公司 Nothing，近日再度拋出震撼彈。執行長裴宇（Carl Pei）於社群平台 X 上發文透露，該公司醞釀多時的首款「AI 原生產品」（AI-native product）確定將於今年 12 月正式出貨，為大眾市場帶來全新的人工智慧硬體體驗。\n\n儘管外界對於這款神祕裝置的具體樣貌與功能仍所知有限，但裴宇在貼文中提供了一些關鍵線索。他形容這是一項「工具」，並且融入了 Nothing 產品一貫特有的性格與細膩設計。更引人注目的是，裴宇明確指出這款裝置「沒有配備新螢幕，且它不可能只是一個 App」，打破了傳統智慧型手機或軟體應用的既定框架。\n\n在此之前，市場與業界對於 Nothing 的 AI 發展方向有諸多揣測。該公司過去曾透露計畫推出結合 AI 功能的智慧眼鏡，以及具備 AI 整合能力的無線耳機。然而，裴宇最新的描述不僅指向一款「無螢幕、非 App」的生產力工具，他在言談間也似乎刻意淡化了與現有 AI 穿戴裝置的直接連結，試圖為這款新品塑造出截然不同的市場定位。\n\n在談到當前科技產業的發展浪潮時，裴宇觀察到整個產業都在尋找屬於自己的「iPhone 時刻」——無論是 AI 項鍊、AI 胸章、智慧眼鏡還是各種隨身伴侶，大家都渴望打造出能將人工智慧融入每個人生活的魔法消費性裝置。雖然他對業界的這股大膽嘗試表達了敬意，但也公開表示自己對當前情勢有著不同的解讀。\n\n目前 Nothing 尚未公布該裝置的確切發售日期，也沒有進一步揭露詳細的技術規格或售價資訊。不過，隨著 12 月的出貨期限逼近，這款主打生產力的神祕 AI 產品究竟會以何種面貌與世人見面，很快就會揭曉。\n\n從資深科技記者的角度來看，Nothing 此次刻意避開傳統的螢幕與 App 形式，選擇打造一款「無螢幕」的 AI 生產力工具，顯示該公司正試圖在競爭激烈的 AI 硬體紅海中尋找差異化路徑。當市場上的競爭者多數聚焦於智慧眼鏡或穿戴式胸章等視覺導向裝置時，Nothing 選擇了一條更具神祕感、也更具挑戰性的路線。然而，在缺乏具體功能細節與實際操作展示之前，這款產品究竟能否真正解決使用者的生產力痛點，抑或僅是一次曲高和寡的概念嘗試，仍需留待 12 月產品正式發表後才能見分曉。",
-    "link": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
-    "image": "https://techcrunch.com/wp-content/uploads/2024/02/2560x2040_5fe778b6-8919-4143-bf11-8d86af754f52_2192x.webp?resize=1200,956",
-    "date": "Wed, 04 Nov 2026 22:13:16 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
-    "stable_id": "a-41a19e62c03c100607ec",
-    "permalink": "/articles/a-41a19e62c03c100607ec.html",
-    "id": 45
-  },
-  {
-    "title": "開源 AI 浪潮崛起：Hugging Face 剖析商業獲利模式與中美競爭格局",
-    "summary": "隨著開源 AI 模型逐漸成為企業與政府的主流選擇，Hugging Face 策略長 Irene Solaiman 深入解析企業如何在開源生態中創造商業價值。",
-    "content": "開源人工智慧模型正迅速成為市場主流。不論是大型企業、政府機構還是新創公司，越來越多組織開始依賴開源方案，看中其具備的成本效益、高度控制權以及使用彈性。然而，隨著功能日益強大的 AI 模型能夠被免費取得，企業究竟該如何在這樣的生態系統中捕捉實際價值？同時，面對中國開源模型在國際市場上急起直追，美國本土的科技玩家是否還能維持領先優勢？\n\n在 TechCrunch 的《Equity》Podcast 最新一集中，主持人 Rebecca Bellan 專訪了 AI 權威平台 Hugging Face 的首席政策官兼策略資深副總裁 Irene Solaiman。雙方深入探討了新創公司在選擇以開源模型進行開發前，必須掌握的核心關鍵。這包括如何挑選合適的工具與基礎設施，以及在推動開源 AI 未來發展時，必須權衡的各種取捨與挑戰。\n\n隨著開源模型的普及，市場焦點已逐漸從「模型本身是否開源」轉移到「如何在開源基礎上建立可持續的商業模式」。過去閉源模型長期主導市場的局面正在被打破，而開源生態的蓬勃發展也為產業帶來了前所未有的靈活性。不過，隨著中國等地的開源模型展現出強勁的競爭力，美國企業在技術迭代與生態建設上面臨的壓力也隨之增加。\n\n從記者的角度來看，Hugging Face 作為開源 AI 社群的核心推手，其高層對於商業變現與全球競爭的看法，反映了當前產業轉型的關鍵十字路口。雖然開源降低了技術門檻，但企業在實際導入時，如何有效整合基礎設施並在成本與控制權之間取得平衡，將是決定其能否在開源浪潮中勝出的關鍵因素。",
-    "link": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-1849294862.jpg?w=1024",
-    "date": "Wed, 04 Nov 2026 19:30:04 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
-    "stable_id": "a-77dc6e9f9f95a229e317",
-    "permalink": "/articles/a-77dc6e9f9f95a229e317.html",
-    "id": 46
-  },
-  {
-    "title": "開源AI成本與風險如何權衡？Hugging Face政策長解析中國模型挑戰與商業化困境",
-    "summary": "Hugging Face政策長Irene Solaiman於TechCrunch節目中深入探討開源AI的成本、風險、商業價值及中美競爭。",
-    "content": "隨著企業、政府與新創公司紛紛轉向追求更低成本、更高掌控度與彈性的開源AI模型，開源生態系正逐漸成為主流。然而，當能力強大的模型變得免費且容易取得時，企業該如何在其中捕捉商業價值？同時，面對中國開源模型急起直追，美國陣營又是否能維持領先地位？\n\n在TechCrunch的《Equity》播客節目最新集數中，高級記者Rebecca Bellan專訪了AI獨角獸Hugging Face的政策長兼策略資深副總裁Irene Solaiman。雙方深入探討新創公司在基於開源模型進行開發前，必須了解的關鍵事項，涵蓋正確工具與基礎設施的選擇，以及形塑開源AI未來發展的各種權衡。\n\n節目內容首先聚焦於成本考量。許多新創、企業與政府轉向開源模型以削減成本，但Solaiman也點出，盲目追求最強大的模型並不總是最佳解法，企業必須評估何時使用大型模型反而不具經濟效益。此外，當底層模型免費提供時，究竟是誰在獲利？建立模型的企業能否真正捕捉到他們所創造的價值，是當前產業的一大難題。\n\n在國際競爭方面，中國開源模型的崛起對美國帶來了壓力。Solaiman指出，美國可能需要像輝達（Nvidia）這樣資金雄厚的巨頭介入，才有辦法打造出足以與中國競爭的開源前沿模型。若中國模型最終成為全球的預設標準，美國科技界將面臨巨大的戰略風險。\n\n除了商業與地緣政治挑戰，近來針對開源AI平台的安全攻擊也浮上檯面，引發了業界的兩難：如何在不走向封閉的前提下，確保開源生態系的安全？這些問題正考驗著所有投入開源AI發展的決策者。\n\n從記者的角度來看，這場專訪突顯出開源AI在快速普及背後的深層矛盾。雖然開源降低了技術門檻，但商業獲利模式的模糊、資安威脅的升高，以及中美在開源前沿模型上的競賽，都讓開源AI的發展充滿變數。輝達等硬體巨頭未來是否會實質介入軟體前沿模型的開發，將是觀察全球AI格局變化的重要指標。",
-    "link": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/55593309776_55e4a08b03_o.jpg?resize=1200,800",
-    "date": "Wed, 04 Nov 2026 18:44:57 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-    "stable_id": "a-63c37f26083929642d3d",
-    "permalink": "/articles/a-63c37f26083929642d3d.html",
-    "id": 47
-  },
-  {
-    "title": "Starling Bank 執行長 Raman Bhatia 傳將卸任，上任僅短短兩年面臨多重挑戰",
-    "summary": "英國知名金融科技公司 Starling Bank 執行長 Raman Bhatia 傳出即將離職，在任僅短短兩年，期間公司正面臨成長放緩及監管壓力。",
-    "content": "英國知名數位銀行 Starling Bank 執行長 Raman Bhatia 傳出即將卸任，這距離他接任該職位僅僅過去兩年。在此之際，這家總部位於倫敦的金融科技公司正努力應對成長放緩、監管挑戰以及關於其未來戰略的種種疑問。\n\n根據報導，Bhatia 的去職正值該公司面臨關鍵轉折點。Starling Bank 長期以來試圖在英國數位銀行市場中，追趕規模更大的競爭對手如 Revolut 與 Monzo。然而，其近期表現顯示出成長動能的減弱。截至三月底的財年，該行營收微幅成長 7% 達到 2.4 億英鎊，但扣除一次性項目後的稅前利潤則下滑 6%，降至 9,020 萬英鎊。\n\n除了業績成長放緩外，Starling Bank 近期也面臨一連串監管與領導層變動的考驗。創辦人 Anne Boden 於 2023 年卸任執行長職務，隨後由 Bhatia 接掌兵符。然而，該公司在合規與風險管理方面遭遇波折，導致其拓展軟體即服務（SaaS）業務的計畫受到影響。先前有報導指出，由於金融犯罪合規問題，Starling 曾遭到英國央行英格蘭銀行（Bank of England）施壓，並在 2023 年遭罰款近 2,900 萬英鎊，原因是其金融犯罪合規系統存在缺失。\n\n此外，Starling 也在尋求拓展國際市場的過程中遭遇阻礙。今年稍早，該公司放棄了將其英國模式複製到歐洲市場的計畫，決定退出愛爾蘭市場，理由是當地法規、合規要求以及市場經濟效益的考量。面對種種挑戰，Starling 仍試圖穩住陣腳，其英國業務持續進行重組，並積極在英國各地建立在地化辦公室，以加強對中小企業客戶的服務。\n\n資深科技記者分析指出，Raman Bhatia 在位短短兩年便傳出離職，凸顯出英國數位銀行在度過早期的高速擴張期後，正共同面臨如何向監管機構證明其合規能力、同時維持商業成長的沉重壓力。對於接替者而言，如何在嚴格的監管環境與激烈的市場競爭中找到平衡，將是 Starling Bank 未來能否重回高速成長軌道的最大關鍵。",
-    "link": "https://sifted.eu/articles/starling-bank-ceo-raman-bhatia-quits-reports/",
-    "image": "https://content.sifted.eu/wp-content/uploads/2026/08/26173526/starling-story-1024x336.png",
-    "date": "Wed, 04 Nov 2026 17:06:13 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/starling-bank-ceo-raman-bhatia-quits-reports/",
-    "stable_id": "a-bb27ff6fd7c22d1d2507",
-    "permalink": "/articles/a-bb27ff6fd7c22d1d2507.html",
-    "id": 48
-  },
-  {
-    "title": "矽谷創投巨頭紅杉資本撤出倫敦，宣稱歐洲市場「無需當地據點」",
-    "summary": "紅杉資本宣佈關閉營運六年的倫敦歐洲辦公室並縮減歐洲團隊，坦言不再需要當地據點，將重心轉回矽谷總部。",
-    "content": "矽谷傳奇創投巨頭紅杉資本（Sequoia Capital）透過社群平台 X 宣佈，將在營運六年後正式關閉其位於倫敦的歐洲辦公室，此舉預計將導致數名團隊成員面臨失業。該公司坦言，目前已不再認為在當地設立據點有其必要性。\n\n根據外媒報導，這項決定突顯了該創投巨頭近年來策略上的重大轉變，逐漸將營運重心重新聚焦於舊金山總部。此次受影響的倫敦辦公室團隊成員包含 Matthew Miller、Luciana Lixandru、George Robson 以及 Abidali Neemuchwala 等人。其中，Luciana Lixandru 曾於 2020 年加入紅杉並負責帶領歐洲業務，如今隨著倫敦辦公室收攤，其動向也備受業界關注。\n\n近年來，這家老牌創投在歐洲市場的佈局動作頻頻。除了在 2023 年延攬前 Accel 合夥人 Paul Murphy 加入，試圖擴展歐洲的早期投資版圖外，也曾投資如 Mistral AI 等歐洲人工智慧新創。然而，隨著倫敦辦公室關閉，紅杉未來將如何維持對歐洲投資項目的管理與參與，成為創投圈關注的焦點。\n\n面對團隊成員的去留，相關合夥人也陸續對外表達看法。部分離職成員透露，未來將轉往美國發展或投入其他人工智慧領域的創業與投資項目。紅杉資本則強調，儘管歐洲辦公室走入歷史，但團隊仍將持續評估歐洲市場的投資機會，並由舊金山總部及現有架構來支援相關業務。\n\n從近年矽谷創投圈的動向來看，大型機構在歷經幾年的全球化擴張後，近期逐漸出現資源收斂、回防本土市場的趨勢。紅杉資本此次撤出倫敦並縮編歐洲團隊，不僅反映出其組織策略的重大調整，也為向來依賴矽谷資金灌溉的歐洲新創生態系帶來了新的變數與省思。",
-    "link": "https://sifted.eu/articles/sequoia-closes-london-office/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=1926,quality=75,fit=cover,format=auto/wp-content/uploads/2020/11/27114104/sequoia.png",
-    "date": "Wed, 04 Nov 2026 14:22:35 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/sequoia-closes-london-office/",
-    "stable_id": "a-a68f38c7fd1e6374bc89",
-    "permalink": "/articles/a-a68f38c7fd1e6374bc89.html",
     "id": 49
   }
 ]
