@@ -300,6 +300,132 @@
     "id": 14
   },
   {
+    "title": "輝達執行長黃仁勳去職風暴延燒：企業資安團隊為何難防國家級情報滲透？",
+    "summary": "輝達前執行長黃仁勳因私人關係及涉嫌違規輸中調查卸任。資安專家指出，現代企業資安多半聚焦於防範黑客與實體威脅，往往難以察覺透過日常對話進行的高階情報滲透與人際情治佈局。",
+    "content": "輝達（Nvidia）長期擔任首席安全官（CSO）與產品安全負責人的大衛・瑞伯（David Reber），在今年 8 月因健康原因低調離職。短短兩個多月後，執行長黃仁勳也因一系列私生活關係引發的疑慮而卸任，其中包括與新加坡資料中心公司 Megaspeed 高層的交往，該公司正遭美國調查人員懷疑協助將輝達晶片轉運至中國。此事件隨後更擴大至另外兩起與輝達員工的婚外情報導。在 8 月底時，瑞伯曾透過 LinkedIn 表示，因兩年多前確診早發性帕金森氏症而必須以家庭與健康為重，而其職缺已由曾任職埃克森美孚及 ReversingLabs 的薩沙・茲傑拉爾（Saša Zdjelar）接任。對於高層人事變動及相關安全審查，輝達與繼任者均未做出回應。\n\n執行長與員工之間的親密關係一般由人力資源部門、法務部門及董事會處理，通常不屬於資安團隊的管轄範圍。然而，資安專家指出，任何婚外情都可能成為外國情報機構藉以脅迫、控制高階主管的施力點。特別是黃仁勳與受聯邦調查的 Megaspeed 高層之間的關係，更超越了單純的職場內部問題。儘管輝達頂級律師早在一年多前便已知悉聯邦對 Megaspeed 的調查，且公司內多數員工也對黃仁勳的辦公室戀情有所耳聞，但這些資訊是否曾流向資安團隊仍不得而知。退休高級情報官員尼可拉斯・埃夫蒂米亞德斯（Nicholas Eftimiades）指出，情報機構蒐集情資往往透過日常對話而非駭客攻擊，這讓資安團隊極難辨識風險。\n\n專家進一步分析，多數企業的資安資源普遍不足，且往往將安全定義得過於狹隘，僅著重於保護設施、防止網路攻擊與應對實體威脅，而忽略了內部威脅、外國情報機構對員工的吸收、可疑的商業關係及利益衝突。埃夫蒂米亞德斯表示，企業防範中國等情報機構的游擊戰術時，往往顯得力不從心，甚至有許多企業領導人對於資安警示僅願意提供合規最低限度的資源。隨著輝達董事會的獨立調查與聯邦調查持續進行，輝達資安團隊在事件中所掌握的資訊以及應變能力，將隨著後續調查逐漸明朗。\n\n【記者觀點分析】\n從輝達此次高層去職與地緣政治審查交織的風暴來看，企業高層往往是外國情報與商業競合鎖定的關鍵目標。當攻擊手法轉向長期的「人際滲透」與日常對話，傳統著重於防火牆與實體防禦的企業資安架構顯然存在盲點。這起事件不僅突顯出科技巨頭在出口管制與地緣政治下的高風險處境，也為整體美國產業界敲響了警鐘，顯示當前以合規為導向的資安思維，可能已無法有效因應日趨複雜的國家級情報戰術。",
+    "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang-1.jpg?w=1024",
+    "date": "Sun, 15 Nov 2026 00:08:07 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+    "stable_id": "a-40805128638ca4fec2ae",
+    "permalink": "/articles/a-40805128638ca4fec2ae.html",
+    "id": 15
+  },
+  {
+    "title": "黃仁勳去職引發科技界風暴：馬斯克與多位科技巨頭連署要求輝達復職創辦人",
+    "summary": "輝達前執行長黃仁勳因醜聞辭職後，引發產業界強烈反彈。特斯拉執行長馬斯克等科技大老與數萬名員工及股東發起連署，要求輝達董事會讓黃仁勳復職並進行公正調查。",
+    "content": "輝達（Nvidia）前執行長黃仁勳日前因坦承與一名遭美國情報單位懷疑為中國間諜的晶片高層有染而宣佈辭職，這場震撼科技界的風波持續擴大。截至週六下午，一項要求輝達董事會讓黃仁勳復職的網路連署已吸引超過 11,5000 人次簽署。\n\n根據連署網站的數據顯示，連署名單中包含 5,965 名輝達現任員工、1,108 名離職前員工，以及 63,063 名股東。除了內部員工與投資人的高度關注外，多位重量級科技領袖也加入支持行列，其中包括特斯拉與 SpaceX 執行長馬斯克（Elon Musk）、Replit 執行長阿姆賈德·馬薩德（Amjad Masad）、Epic Games 執行長提姆·斯威尼（Tim Sweeney）以及 Y Combinator 執行長加里·陳（Garry Tan）。\n\n該份連署書明確指出，簽署人「擔心黃仁勳在沒有經過有意義的正當程序（due process）情況下被免職」，並強烈要求董事會在進行獨立調查以確立事實之前，「將他迎回公司」。連署書同時呼籲董事會確保調查過程公平，並向大眾公開更多資訊。內容更直言：「黃仁勳值得享有正當程序，而非群體審判（mob justice）。」\n\n黃仁勳是在上週四請辭，此前他坦承與一名晶片高層發生婚外情。新聞報導指出，黃仁勳除了這段關係外，還涉及多起婚外情。目前黃仁勳已同意向美國國會作證，而他的去職也讓輝達股價在本週出現劇烈跌幅，外界更預期他的離去將在人工智慧（AI）產業的資金挹注上留下巨大缺口。\n\n在黃仁勳離去後，輝達已任命財務長柯蕾特·克雷斯（Colette Kress）擔任臨時執行長，同時展開尋找永久接替人選的作業。這場突如其來的領導層變動，不僅考驗著輝達內部的穩定性，也牽動著全球 AI 產業的後續發展與資本動向。",
+    "link": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2216028442.jpg?w=1024",
+    "date": "Sat, 14 Nov 2026 21:41:22 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+    "stable_id": "a-1cbe7be4eea21f7a59a1",
+    "permalink": "/articles/a-1cbe7be4eea21f7a59a1.html",
+    "id": 16
+  },
+  {
+    "title": "特斯拉正式開放 Cybercab 個人預訂：售價 29,990 美元起，每月須繳 299 美元營運費",
+    "summary": "特斯拉開放特定客戶預訂無方向盤的金色 Cybercab，售價 29,990 美元起，採限時限地政策，每月另收 299 美元營運費。執行長馬斯克坦言此月費偏高，未來將隨法規核准逐步調降並擴大全國市場。",
+    "content": "特斯拉（Tesla）於週五晚間宣佈，已開放「特定客戶」搶先預訂該公司的無方向盤、金色自駕計程車「Cybercab」，提供個人使用選項，預計交車時間為 2026 年 12 月。\n\n隨著這批買家登入訂購頁面，更多產品細節也隨之曝光。知名科技評論員馬克斯・布朗利（Marques Brownlee）在社群平台發文指出，買家必須在德州少數幾個城市「接受交車」，且 Cybercab 僅能在特定的地理圍欄（geofenced）區域內運行。在定價方面，除了車輛本身的 29,990 美元售價外，車主若要營運該車輛，還必須額外支付每月 299 美元的費用。\n\n這項每月 299 美元的營運費隨即引發討論。針對布朗利的貼文，特斯拉執行長伊隆・馬斯克（Elon Musk）坦言這筆月費「太高了」。他表示，這項費用未來應當與其他車型的特斯拉全自動輔導駕駛（FSD）及連線服務成本相匹配，大約落在每個月 115 美元左右。馬斯克同時補充，隨著特斯拉取得各地監管機構的批准，Cybercab 未來將在全美範圍內普及。\n\n特斯拉自駕軟體負責人阿肖克・埃尤斯瓦米（Ashok Elluswamy）則進一步補充了關於地理圍欄的細節。他說明，Cybercab 將在與特斯拉 robotaxi 完全相同的地理位置內進行「無人監督」的運作，專門滿足車主個人的用車需求。\n\n市場策略方面，由於先前的銷售表現不如預期，特斯拉近期已宣佈將在明年終止 Cybertruck 的生產線，並將騰出的工廠產能轉用於製造更多的 Cybercab，顯示出該公司正全力押注這款自駕車型的量產與佈局。\n\n從此次開放預訂的細節來看，特斯拉的 Cybercab 雖然踏出了商業化的一大步，但初期仍受到嚴格的地理區域限制，且高昂的月費結構也正等待特斯拉透過法規核准與規模化來進行調整。隨著預計今年底交車的期限逼近，該車款在真實用車環境中的表現與後續監管進展，將是市場持續關注的焦點。",
+    "link": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/tesla-cybercab-getty.jpg?resize=1200,834",
+    "date": "Sat, 14 Nov 2026 20:04:44 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
+    "stable_id": "a-968677ad1db1082ca9f3",
+    "permalink": "/articles/a-968677ad1db1082ca9f3.html",
+    "id": 17
+  },
+  {
+    "title": "AI硬體工程平台Nominal勢頭猛烈：8個月內估值飆升至30億美元",
+    "summary": "專為飛機與核反應爐等複雜硬體設計打造AI平台的Nominal，在獲得2.4億美元C輪融資後，8個月內估值翻倍達30億美元。",
+    "content": "專為複雜硬體工程與測試打造AI平台的新創公司Nominal，在短短8個月內展現出驚人的成長速度。該公司於週一（9日）宣佈完成一筆高達2.4億美元的C輪融資，將公司估值推升至30億美元。本輪融資由Lightspeed Venture Partners領投，Insight Partners共同領投。\n\n這距離Nominal在今年3月宣佈由Founders Fund的Trae Stephens領投、獲得1.55億美元B輪延伸融資並達到10億美元估值，僅僅過了數月。當時的B輪被形容為一筆由投資人主動發起的「預先搶案」。在此之前，Nominal的投資者陣容已包含Sequoia、General Catalyst與Lux Capital等知名創投機構。\n\n成立僅四年的Nominal總部位於奧斯汀，其核心產品是一款專門針對飛機、核反應爐及智慧工廠等複雜硬體工程與測試所設計的AI平台。執行長兼共同創辦人Cameron McCord曾任美國海軍潛艦軍官，同時也是國防科技公司Anduril的校友。目前，Nominal的客戶群已涵蓋80家商業與政府組織，其中Anduril便是其重要客戶之一。\n\n除了商業市場的拓展，Nominal在政府合約方面也有斬獲。美國空軍於10月選定該公司，提供7,120萬美元的策略性資金增加（STRATFI）投資，這項計畫需要來自空軍外部的匹配資金。\n\n從短短8個月內估值從10億美元躍升至30億美元的軌跡來看，Nominal搭上了當前國防科技與高階硬體工程自動化的雙重熱潮。結合國防背景的創辦團隊、重量級創投的資金追捧，以及來自美國空軍的實質資金挹注，顯示出市場對於能處理極端複雜實體系統的AI平台有著高度需求。不過，隨著估值快速膨脹，該公司未來能否持續將商業客戶與政府合約轉化為穩健的規模化營收，將是維持高估值的關鍵考驗。",
+    "link": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Nominal-CEO-Cameron-McCord.jpg?resize=1200,661",
+    "date": "Mon, 09 Nov 2026 19:21:46 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+    "stable_id": "a-6dcec44e17d3690ee0dc",
+    "permalink": "/articles/a-6dcec44e17d3690ee0dc.html",
+    "id": 18
+  },
+  {
+    "title": "美知名餐飲外送新創 Wonder 正式遞件申請 IPO，估值上看 9 十億美元",
+    "summary": "由連續創業家 Marc Lore 創立的餐飲外送與科技新創 Wonder，在經歷多年融資與一連串積極收購後，已正式祕密遞交首次公開募股（IPO）申請。",
+    "content": "由連續創業家 Marc Lore 於 2018 年創立的餐飲外送與科技新創公司 Wonder，近日正式向美國監管機構祕密遞交首次公開募股（IPO）申請，朝著成為上市公司邁出關鍵的一步。這項於週四宣布的里程碑，背後是該公司多年來持續進行資金募集、企業收購與市場擴張的累積成果。不過，Wonder 目前尚未公開具體的發行股份數量及預期價格區間。\n\n不同於傳統的餐飲外送應用程式，Wonder 的營運模式更為廣泛，融合了美食廣場的概念。消費者可以透過單一平台訂購來自多個餐廳品牌的餐點，並由 Wonder 自行包辦餐點準備、外送、外帶以及內用服務。創辦人 Marc Lore 過去曾創辦 Jet.com 與 Diapers.com，他讓 Wonder 上市的企圖心始終明確。今年 7 月，該公司在一輪融資中籌集超過 6.5 億美元，當時的估值高達約 9 十億美元，投資陣容包含 Accel、GV、AllianceBernstein 及 ARK Invest 等知名機構。\n\n為了鞏固市場地位並擴大營運規模，Wonder 近期動作頻頻，不僅計畫在德州展開大型擴張，目標在 2027 年底前開出超過 100 個據點，更透過一系列策略收購強化自身實力。其收購清單包含知名餐盒配送公司 Blue Apron、餐廳外送平台 Grubhub、媒體公司 Tastemade，以及擁有自動化技術的廚房機器人公司 Spyce。Spyce 的自動化技術有助於簡化餐點準備流程並提升出餐效率。\n\n此外，Wonder 也積極開拓新業務，推出名為 Wonder Create 的平台，利用人工智慧協助餐飲創業者和社群媒體網紅在不到一分鐘內設計並推出全新的餐飲概念與菜單項目。同時，該公司也與 DoorDash 達成 4.25 億美元的合作夥伴關係，將其大學校園餐飲業務拓展至 450 所大專院校及其他地點。\n\n記者分析指出，儘管 Wonder 透過積極收購與創新模式快速擴張，但上市後將面臨更嚴峻的挑戰。該公司必須在競爭日益激烈的餐飲外送市場中，正面迎戰 DoorDash 和 Uber Eats 等已經站穩腳步的強勁對手。未來 Wonder 能否將其龐大的生態系與自動化優勢轉化為穩健的公開市場獲利，將是投資人持續關注的焦點。",
+    "link": "https://techcrunch.com/2026/11/05/food-delivery-startup-wonder-files-for-ipo-as-it-explores-its-next-big-bite/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/09/wonder.jpg?resize=1200,800",
+    "date": "Thu, 05 Nov 2026 17:11:48 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/05/food-delivery-startup-wonder-files-for-ipo-as-it-explores-its-next-big-bite/",
+    "stable_id": "a-82150c8ee0e96d3e6817",
+    "permalink": "/articles/a-82150c8ee0e96d3e6817.html",
+    "id": 19
+  },
+  {
+    "title": "防止 AI 產出「數位垃圾」，新創 Axiom Math 以 AI  агент 成功形式化驗證數學巨著《Stacks Project》",
+    "summary": "新創公司 Axiom Math 利用旗下 AI 代理成功形式化驗證數學史上規模最大的資料庫之一《Stacks Project》，為 AI 與數學界建立可靠的基礎。",
+    "content": "隨著人工智慧頻頻攻克數學難題，同時也伴隨著未經嚴格檢查的證明氾濫。為了防止數學領域被 AI 產出的「數位垃圾」（AI slop）淹沒，估值達 16 億美元的新創公司 Axiom Math 選擇透過形式化驗證（formal verification）來應對這場挑戰。本週三，該公司宣布已成功將數學界最重要的參考資料庫之一《Stacks Project》進行全面形式化驗證。\n\n《Stacks Project》由哥倫比亞大學數學家 Johan de Jong 於 2005 年作為開源參考資料發起，涵蓋從大學程度的代數到最先進的代數、幾何及數論，被數學界視為現代數學的重要基礎。Axiom Math 部署的 AI 代理艦隊，成功將這部約 7,654 頁的巨著翻譯成大約 1,600 萬行經過電腦檢查的程式碼。在形式化過程中，數學家將證明重寫為 Lean 程式語言，並透過證明助理（proof assistant）逐行檢查邏輯，確保其無懈可擊。\n\nAxiom Math 的創辦人兼執行長 Carina Hong 是一位 25 歲的史丹佛大學數學博士班中輟生，該公司於 2025 年 3 月創立，並在同月獲得由 Menlo Ventures 領投的 2億美元 A 輪融資。為了克服《Stacks Project》中錯綜複雜、環環相扣的數學定義與定理，團隊並未過度干預，而是賦予 AI 代理一個鬆散的層級結構，讓它們能夠自主尋找任務並平行運作。此外，Axiom 還訓練了自己的模型來掌握數學語感，使其產出的程式碼能維持嚴謹性。\n\nAxiom Math 技術團隊成員 Ashvin Swaminathan 指出，過去在代數幾何領域中，研究人員缺乏足夠的基礎來透過 Lean 驗證新研究，而這次的突破正好填補了這個巨大缺口。隨著每個驗證過的結果成為建構塊，未來的證明便能站在已經確認的數學基礎上，而不必每次都從頭開始。\n\n這項技術的野心不僅止於純數學。隨著 AI 代理編寫越來越多的軟體程式碼，工程師長期以來面臨確保程式無蟲洞與安全漏洞的難題。Axiom 認為，數學是建立這種可靠能力的最佳領域，其建立的 Lean 形式化基礎未來也能成為 AI 代理讀取、理解並在其上構建新基礎設施的基質，避免 AI 因不良的工程選擇而停滯不前。\n\n從記者的角度來看，Axiom Math 此次的突破不僅是將人類數學經典轉化為機器可讀的程式碼，更點出了生成式 AI 發展至新階段的關鍵痛點：當 AI 的產出規模呈指數級成長時，若缺乏經過嚴格驗證的底層知識庫作支撐，終將陷入品質失控的困境。Axiom 嘗試用數學的絕對嚴謹來約束 AI 的無限擴張，這項策略是否能順利擴展至軟體工程與科學研究的其他領域，將是未來科技界持續關注的焦點。",
+    "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Axiom-Team-2.jpg?resize=1200,800",
+    "date": "Thu, 05 Nov 2026 16:16:45 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+    "stable_id": "a-2668ae845ec40919ad08",
+    "permalink": "/articles/a-2668ae845ec40919ad08.html",
+    "id": 20
+  },
+  {
+    "title": "歐洲防務科技新創 SE3 獲 Accel 領投 3000 萬美元 A 輪融資，專注無人機空間人工智慧",
+    "summary": "總部位於慕尼黑的防務科技新創 SE3 獲得由 Accel 領投的 3000 萬美元 A 輪融資，該公司正積極開發適用於無人機的空間人工智慧技術，並已與德國和烏克蘭展開合約合作。",
+    "content": "總部位於德國慕尼黑、專門為無人機開發空間人工智慧（spatial AI）技術的新創公司 SE3，於 2026 年 11 月宣布完成 3000 萬美元的 A 輪融資。本輪融資由知名創投機構 Accel 領投，參與投資的還包括 Keen Venture Partners、Seedcamp 與 Lakestar 等背後金主。\n\nSE3 成立大約兩年，目前正致力於推進與德國和烏克蘭的合約合作。隨著地緣政治緊張局勢升溫，歐洲國防科技領域正吸引大量創投資金湧入，SE3 的大額融資也反映了市場對前沿防務硬體與軟體整合的高度關注。\n\n在技術應用方面，SE3 的系統旨在協助無人機能夠在複雜且具挑戰性的環境中自主運作，特別是針對電子戰干擾等惡劣條件下，確保無人機能夠維持導航與任務執行能力。SE3 共同創辦人 Moritz Körner 指出，當前的核心挑戰在於如何在不依賴全球衛星定位系統（GPS）的情況下，讓無人機清楚自身的地理位置。\n\n近期歐洲防務科技領域正掀起一股整併與大型融資風潮，例如 Onodrim 近期獲得 3 億美元融資，而導彈新創 Hypersonica 也從 Lightspeed 與 General Catalyst 獲得 1 億歐元的 B 輪融資，估值達到約 7 億歐元。這些趨勢顯示出資本市場對於歐洲本土防務供應鏈重建的強烈信心。\n\n資深記者分析指出，SE3 獲得 Accel 等頂尖創投的青睞，突顯了投資人對於無人機在極端環境下自主導航技術的迫切需求。然而，防務新創在面對地緣政治合約擴張的同時，如何將前沿的空間 AI 技術穩定交付並規模化應用於實際戰場環境，仍是該公司未來幾年必須持續證明自己的關鍵考驗。",
+    "link": "https://sifted.eu/articles/accel-30m-spatial-ai-defence-startup-se3/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1365,quality=75,fit=cover,format=auto/wp-content/uploads/2026/06/25135155/Lukas_Portrait-scaled-e1782391930106.jpg",
+    "date": "Thu, 12 Nov 2026 09:14:59 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/accel-30m-spatial-ai-defence-startup-se3/",
+    "stable_id": "a-2cad1ac90554f2266d7c",
+    "permalink": "/articles/a-2cad1ac90554f2266d7c.html",
+    "id": 21
+  },
+  {
+    "title": "AI 代理如何重塑供應鏈？新創 Magentic 破解傳統採購的繁瑣與隱藏成本",
+    "summary": "供應鏈自動化新創 Magentic 透過部署 AI 代理處理非結構化數據，協助製造業應對採購斷鏈與行政瓶頸，推動採購部門轉型為戰略核心。",
+    "content": "製造業背後往往依賴複雜的供應鏈，涉及大量的電子郵件、文件與企業軟體數據。波士頓諮詢公司（BCG）的數據顯示，僅有 35% 的採購團隊導入了 AI，使得直接採購（即取得生產所需的實體材料與組件）在自動化進程上落後於人力資源、財務與薪酬等企業職能。根據庫存優化平台 LeanDNA 的統計，高達 64% 的製造商坦言，其製造預算中有 10% 以上是用於應對供應鏈中斷、依賴臨終生產變更或緊急採購的成本。\n\n專注於採購與供應鏈自動化的新創公司 Magentic 執行長羅賓・范・艾肯（Robin Van Aeken）指出，傳統直接採購高度依賴資深經理人的個人知識與長年人際關係，且現有的企業資源規劃（ERP）系統主要用於記錄財務結果，卻無法捕捉談判過程、供應商表現等決策脈絡。這使得 AI 難以直接介入傳統的採購流程中。為了打破僵局，Magentic 開發了能夠處理並推理非結構化數據的 AI 代理，由使用者在「人在迴圈」（human-in-the-loop）的模式下逐步訓練與信任系統。\n\nMagentic 的 AI 代理能夠從電子郵件、文件、檔案以及 CAD 數位模型等來源提取數據，自動化驗證價格與採購訂單。透過分析這些文件，系統能夠核對價格準確性、評估供應商表現、識別重新談判的機會，並在存在更便宜的現有合約時重新規劃訂單路由。此外，該技術還能修補所謂的「價值洩漏」（value leakage）——即因流程效率低下、人工失誤或錯失良機而導致企業多付費用或未能談判出節省額的隱性資金損失。世界商業與合約協會的研究指出，價值洩漏平均會消耗企業約 9% 的年度營業額。\n\n在商業模式上，Magentic 通常在合作初期採用基於成果的定價模型，僅在試驗階段抽成所產生的節省金額，直到日常營運完全自動化後再轉為客製化訂閱模式。范・艾肯分享，某家客戶在上線後的前三個月內就省下了 120 萬美元，而在隨後的六個月內更累計達到 420 萬美元的節省成效。這種快速見效的模式有助於在大企業內部建立推動自動化的動能。\n\n隨著自動化分擔了繁重的行政工作，范・艾肯認為採購團隊的面貌將徹底改變。未來的採購人員將能把心力轉向更高價值的戰略工作，例如與供應商尋求雙贏、進行價值工程以及預先防範供應鏈中斷，讓採購部門不再只是單純的成本中心，而是轉型為財務、製造與工程部門的重要戰略夥伴。\n\n記者分析指出，Magentic 的模式切中了歐洲製造業面臨低成本競爭的痛點，利用 AI 代理攻克傳統 ERP 無法記錄的非結構化談判數據。然而，儘管早期客戶的節省數據相當亮眼，製造業導入新技術往往伴隨內部流程整合與資安考量，如何在全面自動化前建立客戶對 AI 代理的長期信任，仍是該技術能否在大規模企業中普及的關鍵考驗。",
+    "link": "https://sifted.eu/articles/how-ai-is-changing-procurement-and-supply-chains/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/09093914/Copy-of-Copy-of-Magentic-0011-1-scaled.jpg",
+    "date": "Thu, 12 Nov 2026 09:00:15 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/how-ai-is-changing-procurement-and-supply-chains/",
+    "stable_id": "a-22948c188aa114671b85",
+    "permalink": "/articles/a-22948c188aa114671b85.html",
+    "id": 22
+  },
+  {
+    "title": "VC 眼中的 2026 德國新創風向：AI 基礎設施、國防科技與醫療機器人受矚目",
+    "summary": "知名創投點評 2026 年值得關注的 15 家德國新創，深科技、AI 基礎設施與國防科技成為資本追逐的核心焦點。",
+    "content": "隨著人工智慧與國防科技等大趨勢主導融資市場，今年創投業者向德國新創注入了相當可觀的資金。外媒 Sifted 邀請多位知名創投專家，共同點名了 15 家在 2026 年最受矚目的德國新創企業，涵蓋從 AI 雲端服務到醫院專用機器人等多元領域。\n\n在眾多受關注的領域中，AI 基礎設施與深科技新創特別受到資本青睞。DN Capital 合夥人 Gülseren Yalcin 指出，德國正逐漸成為強大的 AI 創新中心，不僅孕育出專注於企業應用的 AI 解決方案，更在自動化、機器人技術以及高效能運算等領域展現強勁實力。UVC Partners 合夥人 Benjamin Erhart 也認為，德國新創在結合硬體與軟體的深科技領域具備獨特優勢，特別是工業自動化與先進製造相關技術。\n\n這份 15 家新創名單展現了德國科技生態系統的廣度與深度。從聚焦 AI 新雲端與運算架構的企業，到開發醫療與工業機器人的新創，均在各自的垂直領域取得顯著進展。部分公司已獲得來自 Partech、Headline、APEX Ventures 等知名機構的資金挹注，甚至在早期融資階段就展現出強勁的市場擴展能力。\n\n資深科技記者分析指出，儘管德國新創在深科技與 AI 領域的募資表現亮眼，反映出歐洲資本對技術實力的高度肯定，但整體市場仍面臨全球競爭與商業化落地的挑戰。未來這些被點名的新創能否將技術優勢轉化為持久的市場領導地位，將取決於其規模化進程以及資本市場的後續支持力道。",
+    "link": "https://sifted.eu/articles/15-german-startups-to-watch-2026-vc/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2023/12/01144428/AdobeStock_283579063-scaled.jpeg",
+    "date": "Thu, 12 Nov 2026 05:00:50 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/15-german-startups-to-watch-2026-vc/",
+    "stable_id": "a-5f4bf4caa6926d72ea92",
+    "permalink": "/articles/a-5f4bf4caa6926d72ea92.html",
+    "id": 23
+  },
+  {
     "title": "亞馬遜推出第二代 Kindle Colorsoft：更輕薄、邊框延伸但價格昂貴",
     "summary": "亞馬遜推出全新第二代 Kindle Colorsoft 彩色電子書閱讀器，主打更輕薄的機身與無邊框設計，售價由 290 美元起。",
     "content": "亞馬遜近日針對旗下的 Kindle 產品線進行更新，推出了全新的基本款 Kindle、Paperwhite 以及備受關注的 Colorsoft。其中，第二代 Kindle Colorsoft 的起步價為 290 美元，而經外媒實測的 32GB Signature Edition 則定價 320 美元，提供石墨灰及帶有金屬質感背蓋的無花果紅（Fig）等外觀選擇。\n\n回顧亞馬遜在 2024 年首次將彩色電子紙技術引入 Kindle 系列推出第一代 Colorsoft 之後，最新一代的機型在維持 7 吋彩色 E-Ink 顯示器規格的同時，進一步做到了更輕、更薄，並採用無邊框（edge-to-edge）設計。這款螢幕在黑白內容下可維持 300ppi 的解析度，而彩色內容則為 150ppi。\n\n對於喜歡閱讀漫畫、繪本或食譜，或是習慣使用不同顏色螢幕畫重點的讀者而言，Colorsoft 帶來了更豐富的視覺體驗。不過，實測也指出，Colorsoft 的色彩表現相對柔和，並不像 iPad 那般鮮豔。使用者可以透過內建的功能調整螢幕色溫，切換至更適合夜間閱讀的偏黃暖色調，同時也具備自動亮度調節功能。\n\n在硬體細節方面，亞馬遜改善了前一代使用上的痛點。舊款機型的電源鍵位於充電埠旁邊，容易在拿取時誤觸；新一代 Colorsoft 則將電源鍵移至機身右上側，使開關機操作更加直覺。此外，Signature Edition 採用鋁合金背蓋，手感更為高級，且具備防水功能，適合在浴池或泳池畔使用。電池續航力方面，官方數據顯示單次充電可使用長達八周，雖然略遜於 Paperwhite 的十二周，但以日常電子產品而言仍屬長效。\n\n整體而言，雖然第二代 Colorsoft 在外型與設計細節上有所精進，但對於已經擁有一代 Colorsoft 的消費者來說，升級誘因相對有限。其最大的挑戰仍在於高昂的售價，對於僅需基礎閱讀功能的消費者，售價 169.99 美元的基礎款 Kindle 或 199.99 美元的 Paperwhite 依然是更具性價比的選擇，Colorsoft 則較適合預算充裕且強烈渴望彩色電子紙顯示效果的特定讀者群。",
@@ -311,7 +437,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/13/amazons-new-kindle-colorsoft-is-a-premium-e-reader-with-a-premium-price/",
     "stable_id": "a-2630c3d2709c86a396a0",
     "permalink": "/articles/a-2630c3d2709c86a396a0.html",
-    "id": 15
+    "id": 24
   },
   {
     "title": "黃仁勳卸任震動AI初創圈：VC與創辦人憂心鉅額融資與估值將迎來寒冬",
@@ -325,7 +451,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
     "stable_id": "a-ad0beb2d4469dd153914",
     "permalink": "/articles/a-ad0beb2d4469dd153914.html",
-    "id": 16
+    "id": 25
   },
   {
     "title": "美國FAA突發重大設備故障！全美航班全面暫停起飛",
@@ -339,7 +465,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/",
     "stable_id": "a-42c00cd6a0290fb3aae3",
     "permalink": "/articles/a-42c00cd6a0290fb3aae3.html",
-    "id": 17
+    "id": 26
   },
   {
     "title": "AI 代理新創 LangChain 完成 3 億美元 C 輪融資，估值躍升至 30 億美元",
@@ -353,7 +479,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
     "stable_id": "a-bdb2b6e5815f1b888f16",
     "permalink": "/articles/a-bdb2b6e5815f1b888f16.html",
-    "id": 18
+    "id": 27
   },
   {
     "title": "集螢幕與搖桿於一身：新創 Aina 推出專為 AI 代理設計的「AI 智慧戒指」",
@@ -367,7 +493,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
     "stable_id": "a-764c450b16e906863c18",
     "permalink": "/articles/a-764c450b16e906863c18.html",
-    "id": 19
+    "id": 28
   },
   {
     "title": "用AI突破材料科學瓶頸：Y Combinator新創懸賞百萬美元解題",
@@ -381,7 +507,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
     "stable_id": "a-c6cd6eecf6a339a63336",
     "permalink": "/articles/a-c6cd6eecf6a339a63336.html",
-    "id": 20
+    "id": 29
   },
   {
     "title": "三星躍升歐洲科技業關鍵推手：2026年加碼大筆資金並主導多起新創投資",
@@ -395,7 +521,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/samsung-european-tech/",
     "stable_id": "a-b341b6700465196de1e6",
     "permalink": "/articles/a-b341b6700465196de1e6.html",
-    "id": 21
+    "id": 30
   },
   {
     "title": "資深投行：歐洲科技業與亞洲連結將在未來五年內顯著加深",
@@ -409,7 +535,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/why-european-tech-asia-get-closer-next-five-years-gp-bullhound/",
     "stable_id": "a-681a4d13c0675ff62529",
     "permalink": "/articles/a-681a4d13c0675ff62529.html",
-    "id": 22
+    "id": 31
   },
   {
     "title": "軟銀領投人形機器人新創 Agile Robots 5億美元 F輪融資，估值達85億美元",
@@ -423,7 +549,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/softbank-leads-500m-round-for-agile-robots/",
     "stable_id": "a-552faa0ef1347f781dff",
     "permalink": "/articles/a-552faa0ef1347f781dff.html",
-    "id": 23
+    "id": 32
   },
   {
     "title": "Nvidia 震撼彈：黃仁勳因醜聞辭職，民主黨議員再發起對川普政府中國晶片交易調查",
@@ -437,7 +563,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
     "stable_id": "a-85ffa337a7126e9ae802",
     "permalink": "/articles/a-85ffa337a7126e9ae802.html",
-    "id": 24
+    "id": 33
   },
   {
     "title": "Meta消費級AI「Muse」正式解鎖外撥電話功能，限付費訂閱用戶使用",
@@ -451,7 +577,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
     "stable_id": "a-5a483e99fd77105cbb1a",
     "permalink": "/articles/a-5a483e99fd77105cbb1a.html",
-    "id": 25
+    "id": 34
   },
   {
     "title": "Nvidia 震撼彈：執行長黃仁勳因緋聞與國安疑雲辭職，將赴國會作證",
@@ -465,7 +591,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
     "stable_id": "a-364ea284cf4b6837ba33",
     "permalink": "/articles/a-364ea284cf4b6837ba33.html",
-    "id": 26
+    "id": 35
   },
   {
     "title": "網羅網紅不再靠大海撈針！行銷新創 Nectar 推出 AI 代理自動化網紅行銷",
@@ -479,7 +605,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
     "stable_id": "a-64292c0331bf18e773b3",
     "permalink": "/articles/a-64292c0331bf18e773b3.html",
-    "id": 27
+    "id": 36
   },
   {
     "title": "前 Adobe 團隊打造 AI 攝影助理 Phota Labs，標榜保留真實感自動優化日常照片",
@@ -493,7 +619,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
     "stable_id": "a-f3f4ed58f96348e2e5ba",
     "permalink": "/articles/a-f3f4ed58f96348e2e5ba.html",
-    "id": 28
+    "id": 37
   },
   {
     "title": "進軍美市場的前哨戰！九家南韓深科技新創爭奪 Disrupt 2027 參賽門票",
@@ -507,7 +633,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
     "stable_id": "a-8052193da2d39bcbd758",
     "permalink": "/articles/a-8052193da2d39bcbd758.html",
-    "id": 29
+    "id": 38
   },
   {
     "title": "黃仁勳卸任輝達執行長震撼歐洲科技圈：新創生態圈憂心最大金主退場",
@@ -521,7 +647,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/jensen-huangs-nvidia-exit-shakes-european-tech/",
     "stable_id": "a-23173d969ac7dd69b256",
     "permalink": "/articles/a-23173d969ac7dd69b256.html",
-    "id": 30
+    "id": 39
   },
   {
     "title": "紅杉資本才剛喊卡，Northzone 為什麼逆勢押注 Scout 計畫？",
@@ -535,7 +661,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/sifted-podcast-northzone-northstars/",
     "stable_id": "a-2e91b09773309ee5dcb4",
     "permalink": "/articles/a-2e91b09773309ee5dcb4.html",
-    "id": 31
+    "id": 40
   },
   {
     "title": "歐洲防禦科技新星 Uforce 獲 7 億美元 A 輪融資，英國國家財富基金與 Valor 共同領投",
@@ -549,7 +675,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/drone-startup-uforce-fundraise-uk-national-wealth-fund-scoop/",
     "stable_id": "a-de3056da72ea86dbfc99",
     "permalink": "/articles/a-de3056da72ea86dbfc99.html",
-    "id": 32
+    "id": 41
   },
   {
     "title": "輝達執行長黃仁勳深陷醜聞危機：若面臨去職，矽谷熱議可能接班人選",
@@ -563,7 +689,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
     "stable_id": "a-ec27abc34734147d71dc",
     "permalink": "/articles/a-ec27abc34734147d71dc.html",
-    "id": 33
+    "id": 42
   },
   {
     "title": "Nvidia 執行長黃仁勳陷入重大風暴：涉嫌與中國間諜交往及公司內部醜聞引發國家安全關切",
@@ -577,7 +703,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
     "stable_id": "a-395e018f3ca9ed42ba75",
     "permalink": "/articles/a-395e018f3ca9ed42ba75.html",
-    "id": 34
+    "id": 43
   },
   {
     "title": "黃仁勳深陷醜聞危機！傳輝達董事會最快週三開會討論其去留、盤後股價重挫",
@@ -591,7 +717,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
     "stable_id": "a-6b1d5d693f85d6917b1e",
     "permalink": "/articles/a-6b1d5d693f85d6917b1e.html",
-    "id": 35
+    "id": 44
   },
   {
     "title": "英國AI晶片新創Fractile完成7.2億美元C輪融資 估值突破50億英鎊",
@@ -605,7 +731,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
     "stable_id": "a-78ea64e11ba023f6eeda",
     "permalink": "/articles/a-78ea64e11ba023f6eeda.html",
-    "id": 36
+    "id": 45
   },
   {
     "title": "美國期中選舉「藍色浪潮」來襲，AI 產業將面臨更嚴格的監管與資料中心阻力",
@@ -619,7 +745,7 @@
     "_archive_key": "rss:https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
     "stable_id": "a-b899eabe2a17ced96a22",
     "permalink": "/articles/a-b899eabe2a17ced96a22.html",
-    "id": 37
+    "id": 46
   },
   {
     "title": "無人機物流巨頭 Zipline 獲 15 億美元融資，估值衝上 215 億美元並擴大沃爾瑪合作",
@@ -633,7 +759,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/",
     "stable_id": "a-78064385f138c3a36cc2",
     "permalink": "/articles/a-78064385f138c3a36cc2.html",
-    "id": 38
+    "id": 47
   },
   {
     "title": "英國AI晶片新創 Fractile 證實完成 5.4 億英鎊融資，估值一舉突破 50 億英鎊",
@@ -647,7 +773,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/fractile-confirms-540m-raise-first-revealed-by-sifted/",
     "stable_id": "a-45c62a8cfdc330476694",
     "permalink": "/articles/a-45c62a8cfdc330476694.html",
-    "id": 39
+    "id": 48
   },
   {
     "title": "Nvidia 與 Unity 參投！倫敦 DeepMind 衍生新創 Emulate 獲 7.0 億美元融資，估值達 37 億美元",
@@ -661,132 +787,6 @@
     "_archive_key": "rss:https://sifted.eu/articles/exclusive-unity-nvidia-emulate/",
     "stable_id": "a-60f3e4d37d0f4f024bf6",
     "permalink": "/articles/a-60f3e4d37d0f4f024bf6.html",
-    "id": 40
-  },
-  {
-    "title": "受全球科技股拋售潮波及，AI 基建新秀 Nscale 傳將延後 350 億美元 IPO 計劃",
-    "summary": "獲輝達（Nvidia）支持的英國 AI 資料中心業者 Nscale，據悉因近期全球科技股動盪，正考慮將原定於紐約進行的 350 億美元首次公開發行（IPO）延後至明年，目前公司尚未對此市場傳聞做出正式回應。",
-    "content": "近期全球科技股市場陷入劇烈震盪，投資情緒轉趨謹慎，這股寒意已波及到 AI 基礎設施領域。據報導，備受市場矚目的英國 AI 新創公司 Nscale，正評估將其規模達 350 億美元的首次公開發行（IPO）計劃延後至明年執行。Nscale 此前原定於紐約進行上市，但在當前市場不確定的環境下，這項雄心勃勃的上市時間表正面臨變數。\n\nNscale 在產業內以提供大規模 AI 運算資源而聞名，並擁有輝達（Nvidia）的戰略支持。該公司過去曾被視為 AI 基礎設施領域的「關鍵」推動者，致力於為開發者解決昂貴且稀缺的 GPU 運算效能瓶頸。除了其本身的擴張計劃外，Nscale 最近也與 AI 巨頭 Anthropic 簽署了一份價值約 450 億美元的協議，旨在提供大規模的運算能力租賃服務。這些商業動向顯示其在市場中具備極高的影響力，但也同時意味著其 IPO 表現將深受資本市場對 AI 產業估值的影響。\n\n事實上，Nscale 在資本市場的快速崛起伴隨著不少關注與爭議。近期有消息指出，該公司曾協助 TikTok 母公司字節跳動（ByteDance）繞過美國的出口禁令獲取輝達晶片，這一指控引發了外界對其合規性及與英國政府關係的疑慮。儘管 Nscale 在英國獲得了廣泛的投資支持，包括與當地大型數據中心項目相關的業務開展，但此類地緣政治相關的風險，加上當前全球科技股的拋售壓力，無疑增加了其公開募股的複雜性。\n\n值得注意的是，Nscale 的業務模式高度依賴於輝達的供應鏈。根據早前公開資訊，Nscale 已籌集 5.6 億美元的資金，並傳出正致力於進一步擴大融資規模，目標達到 17 億美元以支持更龐大的算力佈局。這種極高資本密集度的運作模式，使得 Nscale 對市場流動性極為敏感。\n\n從資深科技記者的角度分析，Nscale 的上市波折反映了 AI 基礎設施領域在「成長性」與「實質營收」之間的脆弱平衡。儘管該公司成功與 Anthropic 等產業領導者達成高額合作，但隨著投資人對於 AI 泡沫化的擔憂加劇，市場對於這類依賴硬體部署與高槓桿運作的新創公司，採取了更為保守的定價策略。延後 IPO 對於 Nscale 而言或許是一項務實的策略，旨在避開短期市場的情緒波動，待全球利率環境與科技股估值穩定後，再尋求一個更具吸引力的募資節點。然而，若該公司與字節跳動等爭議性客戶的關係持續發酵，未來在監管層面面臨的壓力，恐將成為影響其長期上市成功與否的另一項關鍵變數。",
-    "link": "https://sifted.eu/articles/nscale-ipo-nvidia-delay/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=1600,quality=75,fit=cover,format=auto/wp-content/uploads/2025/04/29153551/Glomfjord-Data-Centre-2-1-scaled-e1745937378798.jpg",
-    "date": "Wed, 11 Nov 2026 13:24:45 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/nscale-ipo-nvidia-delay/",
-    "stable_id": "a-21f2cdfb5aaeef690f5f",
-    "permalink": "/articles/a-21f2cdfb5aaeef690f5f.html",
-    "id": 41
-  },
-  {
-    "title": "X 推出內建影片剪輯工具，企圖以剪片功能吸引網紅與創作者",
-    "summary": "社群平台 X 推出全新影片剪輯工具，讓用戶能將長影片裁切為短片並直接發布，同時串聯其原生內容獎勵計畫，藉此吸引網紅並提升互動率。",
-    "content": "為了吸引更多社群媒體人才與網紅，社群平台 X 近日正式推出一項全新的內建影片剪輯工具。這項新功能主打讓用戶能夠直接在平台上，將較長的影片裁剪成具備 TikTok 節奏感的短片，並快速分享出去，藉此吸引更多目光與流量。\n\n根據 X 官方說法，這款工具的操作相當直覺，主要功能就是讓用戶能夠剪輯影片並直接發布至平台上。為了保障原創內容並提供追蹤來源，平台設計了每支剪輯短片都會帶有「Clip from」標籤，並附上連回原始影片的連結，讓其他用戶能進一步查看原創者及其相關內容。官方在社群貼文中表示，用戶只要抓取任何影片中最喜歡的時刻、加上個人觀點，就能直接在 X 平台上完成發布。\n\n除了便利的編輯功能外，這項工具也與 X 的「Original Content Rewards」獎勵計畫進行整合。平台指出，無論是原創者還是協助剪輯短片的創作者（clippers），都有機會透過短片的觀看次數獲得分潤。不過，這項獎勵計畫並非全面開放，僅適用於符合資格的創作者，且分潤金額會根據特定的觀眾互動水準來計算。\n\n長期以來，將長影片剪輯成短片以衝高觸及率和廣告收益，是社群媒體上相當熱門的技術，許多網紅甚至會額外花錢請專門的剪輯團隊來處理這類工作。如今這類手法不僅被大型企業廣泛應用於行銷活動，也常見於政治造勢之中。X 此次將剪輯功能搬上檯面並內建化，顯然是希望將這套流量密碼直接留在自家生態系中。\n\n回顧過去幾年，X 為了與 YouTube 及 Substack 等平台競爭，積極擴充支援的內容類型。該平台自 2022 年（當時仍名為 Twitter）起引入長影片功能，並在近年逐漸普及；為了吸納文字創作者，也取消了傳統的字數限制，推出僅限付費訂閱者閱讀的長篇部落格文章。今年以來，X 的動作頻頻，包括三月份推出允許創作者將部分文章內容設為付費牆的「exclusive threads」，以及七月份推出直播工作室並提撥 100 萬美元預算給直播創作者。\n\n從 X 近期的一連串產品更新來看，平台正持續透過各種工具試圖鞏固網紅經濟。內建剪輯工具的推出，不僅降低了參與短影音浪費的門檻，也透過獎勵機制試圖綁定創作者與剪輯者的利益。然而，這項功能最終能否實質帶動平台黏著度，並在競爭激烈的短影音市場中突圍，仍有待後續的實際數據與用戶接受度來驗證。",
-    "link": "https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/10/twitter-x-musk-graffiti-hand.jpg?resize=1200,675",
-    "date": "Wed, 11 Nov 2026 01:02:13 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
-    "stable_id": "a-91d5fcab4999bc210e82",
-    "permalink": "/articles/a-91d5fcab4999bc210e82.html",
-    "id": 42
-  },
-  {
-    "title": "OpenAI 收購 AI 旅遊新創 Odessia，網羅 Sonder 創辦人帶領旅遊技術開發",
-    "summary": "OpenAI 證實收購創立僅一年的 AI 旅遊新創 Odessia，並網羅創辦人 Francis Davidson 加入團隊，協助 OpenAI 規劃旅遊領域的未來發展。",
-    "content": "人工智慧巨頭 OpenAI 近日完成了一項具指標性的收購與人才納編。根據 AI 旅遊代理新創 Odessia 創辦人 Francis Davidson 在公告中透露，該公司已被 OpenAI 收購，而他本人也已正式加入 OpenAI，未來將協助該 AI 實驗室拓展旅遊相關技術與應用。OpenAI 發言人事後也向媒體證實了這項人事案，表示歡迎 Davidson 加入團隊。\n\n這筆交易的具體財務條款並未對外公開，但從其運作模式來看，這是一次典型的「人才併購」（acqui-hire）。成立僅一年的 Odessia 曾獲得由紅杉資本（Sequoia）領投的 600 萬美元種子前融資，並在約五個月前推出其 AI 旅遊代理工具。雖然 Davidson 指出，該工具在營運期間曾協助早期用戶規劃總價值達數百萬美元的行程，但隨著此次交易完成，該項產品已經正式關閉。\n\n談到這次收購的背景，OpenAI 發言人指出，旅遊規劃向來是聊天機器人用戶最常尋求協助的領域之一。每週有高達 12 億人次使用 ChatGPT 處理日常大小事，從理解健康問題、決定晚餐菜單、建立預算到規劃旅行，OpenAI 認為這其中存在著讓使用者體驗變得更加實用的龐大機會。事實上，早在 2025 年 7 月 OpenAI 推出 ChatGPT agent 時，就曾將旅遊列為潛在應用場景之一，且該公司目前也將 Booking.com、Expedia 和 KAYAK 等旅遊巨頭列為客戶或合作夥伴。不過，OpenAI 官方目前尚未公布任何具體的旅遊專用新產品或詳細計畫。\n\n引人關注的是創辦人 Francis Davidson 在矽谷的經歷。他在 2014 年就讀大學期間曾創立短租新創 Sonder，經營模式類似 Airbnb，專注於全球各大城市高檔公寓的短期租賃。然而，該公司在 COVID-19 疫情期間遭受重創，隨後雖透過 SPAC 上市，但融資金額不如預期，加上與萬豪酒店（Marriott）的關鍵合作破局，最終導致公司宣告破產並進行清算。儘管 Sonder 最終未能成為商業上的常勝軍，Davidson 仍被視為經歷過大風大浪、具備豐富實戰經驗的創辦人。\n\n從產業發展的角度來看，OpenAI 將 Odessia 團隊納入麾下，顯示出其正持續強化垂直領域的個人化助理應用能力。隨著旅遊規劃成為 AI 應用的熱門戰場，擁有一位具備深厚旅遊產業經驗與 AI 代理開發背景的創辦人，將為 OpenAI 未來在該領域的產品佈局提供更多可能性。不過，在 OpenAI 正式發表相關產品之前，這項人事佈局最終會轉化為怎樣的消費者功能，仍有待後續觀察。",
-    "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
-    "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2207801992.jpg?resize=1200,801",
-    "date": "Tue, 10 Nov 2026 21:08:52 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
-    "stable_id": "a-773f3d4d27bc0c2e9f89",
-    "permalink": "/articles/a-773f3d4d27bc0c2e9f89.html",
-    "id": 43
-  },
-  {
-    "title": "紐約州AI安全法正式上路 OpenAI與Anthropic面臨嚴格監管",
-    "summary": "紐約州正式實施重磅AI安全法，要求OpenAI與Anthropic等大型前沿開發商於2027年初前完成註冊、公開安全框架，違者將面臨百萬美元重罰。",
-    "content": "美國紐約州正準備強制執行全美最具影響力的AI安全法規之一。該州於週二正式啟動註冊入口網站，規定如 Anthropic 和 OpenAI 等大型前沿 AI 開發商，必須在 2027 年 1 月 1 日前完成註冊。這項名為《RAISE Act》的紐約州安全與透明度法案，將在年初正式生效。法案強制年營收超過 5 億美元的大型前沿開發商必須在網站上公布安全框架、在 72 小時內回報重大安全事件，並發布公開的模型透明度報告。\n\n為了落實《RAISE Act》並監督大型前沿 AI 實驗室，紐約州新成立了「數位創新、治理、誠信與信任辦公室」（DIGIT）。根據法規，單一違規的罰款最高可達 100 萬美元，後續違規罰款更高達 300 萬美元。此外，對於未能於新入口網站註冊的公司，州政府也保留採取執法行動的權利，不過發言人拒絕透露具體細節。\n\n紐約州長凱西·霍楚（Kathy Hochul）在週二的新聞記者會上表示，科技巨頭總是告訴大眾他們對 AI 的願景是無可避免的，要嘛跟上、要嘛被拋在腦後，並認為只要能贏得通往 AI 懸崖的競賽，任何附帶損害都是值得的。為此，霍楚週二同步啟動了位於紐約州立大學賓漢姆頓大學的「紐約州 AI 責任與研究中心」。該中心將獨立評估先進 AI 系統的安全性、保障性與運作狀況，並與 DIGIT 合作審查企業的安全框架。霍楚今年 1 月首次宣布該中心時，曾獲得 5500 萬美元的捐款與資本支持。\n\n霍楚強調，紐約州正在打造一個明智且具感性的 AI 監管國家級模範，這個模範將社區置於企業之上，並將人類置於強大技術之上。《RAISE Act》並非紐約州通過的唯一安全法規。去年，該州已開始執行一項法律，要求 AI 陪伴服務營運商必須定期讓使用者知道他們正在與機器人對話，並做出合理努力來偵測自殺意念與自殘行為。此外，霍楚也在 10 月簽署了另一項針對未成年人的聊天機器人類別安全法，限制欺騙性類人互動、情緒操縱或逢迎回應，以及鼓勵自殺或飲食失調等行為，該法預計於 2027 年 6 月 1 日生效。\n\n除了紐約州，其他州也紛紛通過類似的 AI 安全與透明度法案。例如加州的 SB 53 法案已於 1 月生效，強制前沿 AI 實驗室建立並公布安全框架、落實吹哨者保護，並在 15 天內回報重大安全事件；伊利諾州的 SB 315 法案則預計於 2027 年初生效，除了具備類似要求外，還涵蓋了獨立的安全合規稽核。\n\n從政策發展脈絡來看，美國各州正逐漸填補聯邦層級在 AI 監管上的空白。紐約州透過高額罰款、強制安全框架與成立專責機構（DIGIT）三管齊下，對年營收達標的大型 AI 實驗室施加實質約束。隨著《RAISE Act》與其他州級法案陸續在 2027 年前全面生效，AI 企業在追求技術突破的同時，合規成本與透明度要求已成為不可迴避的營運挑戰。",
-    "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2302996653.jpg?w=1024",
-    "date": "Tue, 10 Nov 2026 20:52:13 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-    "stable_id": "a-b108d6332cf59562e41a",
-    "permalink": "/articles/a-b108d6332cf59562e41a.html",
-    "id": 44
-  },
-  {
-    "title": "新創實驗室 PSI 利用 Anthropic 模型破解量子計算難題，探索 AI 科學發現商業化",
-    "summary": "新創實驗室 PSI 的成員利用 Anthropic 未發布的模型破解了懸決 18 年的量子計算難題，並正嘗試將 AI 驅動的科學突破轉化為商業應用。",
-    "content": "新創實驗室 Physical Superintelligence（PSI）的技術團隊成員、麻省理工學院（MIT）畢業生 David Turturean，近期利用 Anthropic 尚未正式發布的 Fable 5.2 模型，成功解決了一道困擾科學界長達 18 年的量子計算難題——「Aaronson-Ambainis 猜想」。這項猜想涉及量子電腦比傳統電腦更快解決問題的能力。提出該問題的研究人員之一 Scott Aaronson 表示，雖然他無法完全理解該證明，但由於該證明已在數學編碼語言 Lean 中進行自動形式化，並由 PSI 分享該解決方案的頂尖研究團隊進行解釋，因此他相信其正確性。\n\n這個解決方案實質上排除了量子電腦高速解決某些困難問題的一種可能路徑。Turturean 指出，這是一個負面結果，能讓學界了解不需再往該方向探索。Turturean 為了加入 PSI，甚至暫緩了在 MIT 知名電腦科學與人工智慧實驗室攻讀碩士學位的計畫。他坦言，這可能是他發表的最後一篇論文，並感慨人工智慧所能產生的影響力之重。\n\nPSI 執行長 Matt Pines 表示，該公司模型的優勢在於透過專門的模型配置和輔助工具來解決科學問題。有效的研究系統應當涵蓋許多與輔助工具、記憶系統以及模擬基礎設施相關的元素，以便廣泛且深入地切入問題。目前，PSI 的主要營收來自於利用其工具來最佳化資料中心，模擬熱能、電力、水資源和聲音等變數。然而，該公司的長遠目標是將理論物理學的突破轉化為實際技術。\n\n儘管人工智慧在數學和電腦科學等能以驗證程式碼表達的領域取得了解決方案，但在生命科學或物理學等較不抽象的學科中，過程卻更為困難。Pines 指出，物理學與數學不同，因為物理學面對的是真實世界，大自然對現實模型的正確性擁有發言權。該公司正專注於如何以最有效率的方式，透過實驗來驗證計算結果，並將其轉化為實際裝置或應用。\n\n隨著「科學新實驗室」（neolabs for science）逐漸成為具突破性科學潛力的途徑，參與者仍在摸索這個全新世界的標準。由於 PSI 必須等待 Anthropic 的模型接近發布時才能公開其成果，他們得以將結果與相關研究人員分享以深入理解。擔任 PSI 顧問的東北大學教授 Jim Halverson 指出，最佳實踐仍在成形中，保持透明度與聯繫專家是較佳的作法。隨著 AI 改變科學研究的步伐，學界與新創公司正共同面對這場結構性的變革。",
-    "link": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-10-at-10.00.33-AM.png?w=683",
-    "date": "Tue, 10 Nov 2026 19:03:52 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
-    "stable_id": "a-472fa76acddf1fa0d8dd",
-    "permalink": "/articles/a-472fa76acddf1fa0d8dd.html",
-    "id": 45
-  },
-  {
-    "title": "Cyanogen 共同創辦人轉戰 AI 時代：Kora 宣佈打造 Linux 基礎桌面系統，直指微軟 Windows",
-    "summary": "曾挑戰 Google Android 的 Cyanogen 共同創辦人 Kirt McMaster 推出全新 Linux 基底桌面作業系統 Kora，主打深度整合 AI 模型與自主代理，預計 2027 年免費推出。",
-    "content": "大約在 Cyanogen 因長期未能動搖 Google Android 主導地位而關閉作業系統業務近十年後，其共同創辦人 Kirt McMaster 正將矛頭指向微軟的 Windows。他所創辦的 Kora Systems 於週二正式亮相一款基於 Linux 的全新桌面作業系統，旨在為日常工作中重度依賴人工智慧的用戶提供服務。\n\n這款作業系統預計於 2027 年以免費形式推出，將支援現有的 Intel 與 AMD 處理器 PC，以及採用高通 Snapdragon 晶片的機器。Kora 目前由約 50 名工程師組成的團隊共同開發，並高度依賴 OpenAI 的 Codex 與 Anthropic 的 Claude 等 AI 程式碼編寫工具。McMaster 指出，這些工具使開發速度至少提升了五倍，其中大部分的效率提升都發生在過去六個月內。\n根據 Statcounter 的網頁流量數據，微軟 Windows 在 10 月份全球桌面作業系統市場佔有率約達 77%，相較之下蘋果 OS X 則接近 10%。面對如此強大的市場主導地位，McMaster 認為 Kora 不需要爭奪 Windows 的全體用戶，而是精準鎖定那些大量使用 AI、並願意付費使用強大模型與服務的族群。他估計目前大約有 4500 萬至 5000 萬用戶貢獻了主要的 AI 使用量與營收，並預期這個市場到 2033 年將超越 2 億用戶。\n\n回顧過去在 Cyanogen 超過五年的經驗，McMaster 學到了依賴競爭對手的危險性。當時 Cyanogen 儘管推出了超越 Google 版本的 Android 功能，但仍高度依賴 Google 行動服務，最終限制了其建立獨立生態系統的能力。這回轉向開發 Kora，正是延續他在 Cyanogen 後期嘗試將第三方服務直接整合至作業系統的想法，讓 AI 模型與代理能夠跨應用程式運作並存取檔案，而不被侷限在單一應用程式中。\n\n這家總部位於帕羅奧圖的公司前身為由 McMaster 領導的遊戲作業系統公司 Playtron，隨著重心轉向 AI，公司於 2025 年 7 月更名為 Kora。McMaster 認為，當時如 Perplexity 與 OpenAI 等早期公司紛紛跨足 AI 驅動的網頁瀏覽器，但瀏覽器無法給予 AI 代理足夠的電腦存取權限來執行複雜任務，因此作業系統是更好的起點。這次轉型也讓 Kora 得以建立在過去三年開發 Playtron 稱為 GameOS 的 Linux 遊戲作業系統基礎上，不必從零開始。\n\n在技術架構上，Kora 建立在 Linux 與 Nix 之上，取代了 Playtron 早期 GameOS 的 Fedora Silverblue 基礎。雖然 Linux 與 Nix 是開源的，但 McMaster 表示 Kora 自身的技術（包含 Cortex AI 引擎與桌面介面）仍屬專有技術。除了 AI 功能外，遊戲依然在 Kora 的計畫之中，未來將引入 AI 工具讓開發者在系統內創作、發布與遊玩遊戲，並計劃支援 Android 應用程式。此外，Kora 團隊也與高通工程師合作近一年，針對 Snapdragon 晶片進行最佳化，並正與沙烏地阿拉伯 AI 公司 Humain 合作開發企業版 Humain OS。\n\n在商業模式方面，Kora 計劃透過綑綁 AI 模型與代理服務的訂閱方案來創造營收，其 Cortex 引擎則設計為在可能時於本地執行 AI 任務，並在需要強大算力時調用雲端模型。該公司的投資者包含三星 Next、Square Enix、Alumni Ventures、Polychain、VanEck 與 Circle 等曾支持 Playtron 的機構，雖然 McMaster 未透露總融資金額或估值，但他表示公司目前擁有的資金足以運作數年。\n\n從產業角度來看，微軟在桌面作業系統市場的壟斷地位極為鞏固，新進挑戰者要在基礎軟體上獲得大眾青睞向來困難重重。Kora 放棄與傳統 Windows 用戶正面交鋒，轉而鎖定 2027 年預估上看數千萬的高階 AI 用戶群，並透過免費基礎作業系統結合加值 AI 訂閱的模式切入，避開了早期作業系統新創常面臨的龐大軟體生態相容性困境。然而，能否在 2027 年如期推出並說服用戶日常依賴這套 Linux 系統，仍有待該公司後續生態系夥伴與硬體合作的落實情況來驗證。",
-    "link": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/kora-os.jpg?resize=1200,800",
-    "date": "Tue, 10 Nov 2026 14:00:00 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
-    "stable_id": "a-e5be64946d58598d28c7",
-    "permalink": "/articles/a-e5be64946d58598d28c7.html",
-    "id": 46
-  },
-  {
-    "title": "電動卡車新創 Harbinger 獲 2.4 億美元 D 輪融資，業務版圖拓展至國防與電池儲能",
-    "summary": "電動卡車新創 Harbinger 宣布完成 2.4 億美元 D 輪融資，總募資額突破 6.5 億美元，並持續深耕國防應用與聯邦快遞等商業合作。",
-    "content": "電動卡車新創公司 Harbinger 於 2026 年 11 月 5 日宣佈完成 2.4 億美元的 D 輪融資。這家總部位於洛杉磯的公司在過去一年內發展迅速，此次資金到位後，其歷史累計募資總額已正式突破 6.5 億美元大關。\n\n本輪 D 輪融資由 Tiger Global、Capricorn 旗下的「科技影響力基金」（technology impact fund）以及專注於國防領域的投資機構 Ridgeline 共同領投。其他參與投資的機構還包括上一輪的領投者聯邦快遞（FedEx），以及 Maniv、Greycroft 和福斯汽車（Volkswagen）背後的創投公司 Leitmotif。值得注意的是，業務觸角涵蓋 pre-IPO 新創的機構巨頭 Fidelity Management 也參與了本輪投資，市場更傳出 Harbinger 正在評估進行首次公開發行（IPO）的可能性。\n\n隨著融資推進，Harbinger 與主要客戶聯邦快遞的合作關係也顯著加深。聯邦快遞的安全與運輸資深副總裁 Paul Melander 已正式加入 Harbinger 的董事會。在此之前，聯邦快遞才剛向 Harbinger 下達了一筆包含 2,000 輛電動卡車、總價值超過 3.0 億美元的大規模訂單。\n\nHarbinger 於 2022 年由已倒閉的電動車新創 Canoo 及電池公司 QuantumScape 的前員工共同創立。創業初期，公司聚焦於開發單一電動卡車底盤，隨後逐步擴大其技術與產品組合。除了本次新增的國防應用與電池儲存技術外，Harbinger 先後收購了自動駕駛新創 Phantom AI，開始投入混合動力緊急車輛的開發，並對外展示了面向軍事用途的無人駕駛混合動力電動平台。\n\n從資深科技記者的角度觀察，Harbinger 從單一卡車底盤製造商，快速轉型為橫跨商用物流、緊急應變及軍用無人平台的多元化電動車與技術供應商，其發展路徑反映出新創公司在極端競爭的電動車市場中，必須透過多元化應用與強大機構投資人的背書來確保生存與資金鏈穩定。隨著 FedEx 不僅大舉下單更直接進入董事會，以及 Fidelity Management 等重量級機構的加入，顯示市場對其技術商業化的實質進展抱持高度期待。不過，面對日益複雜的國防供應鏈與量產壓力，Harbinger 是否能順利實現傳聞中的上市計畫，仍有待後續觀察。",
-    "link": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Harbinger-Newsroom-Thumbnail-260610.jpeg?resize=1200,800",
-    "date": "Thu, 05 Nov 2026 17:52:44 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
-    "stable_id": "a-5d2e54dc19830c0010d3",
-    "permalink": "/articles/a-5d2e54dc19830c0010d3.html",
-    "id": 47
-  },
-  {
-    "title": "歐洲生成式 AI 版權爭議升溫：法國 AI 巨頭 Mistral 槓上新版權提案引發創作者不滿",
-    "summary": "法國 AI 模型開發商 Mistral 近期公開遊說國會議員反對一項針對生成式 AI 版權的新法案，引發當地作家、記者與藝術家等創意社群的強烈反彈。",
-    "content": "法國生成式 AI 模型開發商 Mistral 近期成為當地創意社群砲轟的焦點。起因在於，這家總部位於巴黎的 AI 企業正積極遊說國會議員，投票反對一項旨在解決生成式 AI 版權問題的新法案，引發了作家、記者、音樂家及藝術家等各界人士的強烈不滿與抗議。\n\n根據外媒 Sifted 的報導，這項新法案原先旨在強化對版權所有者的保護，針對生成式 AI 在訓練過程中使用受版權保護的內容設立更嚴格規範。然而，Mistral 的強力反對動作，讓許多法國文藝創作者感到被背叛。批評者認為，AI 企業在未經授權或合理報酬的情況下大量使用人類創作來訓練模型，已經對創意產業構成威脅，而 Mistral 作為歐洲本土的 AI 旗艦企業，理應更加尊重智慧財產權。\n\n這並非 Mistral 首次在政策與監管議題上發出強音。作為歐洲少數能與美國科技巨頭匹敵的 AI 獨角獸，Mistral 過去在歐盟《人工智慧法案》（EU AI Act）的立法過程中，也曾積極參與並推動符合自身發展利益的規範。當時，該公司與其他歐洲科技企業成功爭取到對開源模型的較寬鬆管制。然而，隨著針對版權與資料使用的本土新法案浮上檯面，科技創新與創作者權益之間的衝突再度白熱化。\n\n面對排山倒海的批評，Mistral 則強調過度嚴格的法規將削弱歐洲 AI 產業在國際市場上的競爭力。該公司與部分產業人士主張，若對訓練資料施加過高限制，將使歐洲新創企業難以取得足夠的數據來訓練出具競爭力的模型，進而落後於美國和中國的同業。此外，這場爭議也反映出歐洲在追求「數位主權」的道路上，內部的深層矛盾：一方面渴望扶植足以抗衡海外巨頭的本土 AI 冠軍，另一方面又必須保護國內龐大且極具影響力的文化創意產業。\n\n資深記者分析指出，Mistral 此次槓上版權新法案，凸顯了歐洲在平衡科技創新與著作權保護時的兩難困境。隨著生成式 AI 迅速普及，如何建立既能激勵技術發展、又能保障創作者權益的制度，將是歐盟及各國政府在未來幾年內必須持續應對的核心挑戰，而類似的利益拉鋸戰在短期內恐難以平息。",
-    "link": "https://sifted.eu/articles/mistral-copyright-law-proposal/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=1365,quality=75,fit=cover,format=auto/wp-content/uploads/2026/02/19143649/54318422566_164a353755_k-e1771511827167.jpg",
-    "date": "Tue, 10 Nov 2026 17:04:26 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/mistral-copyright-law-proposal/",
-    "stable_id": "a-fab789da1ca4cd98e23a",
-    "permalink": "/articles/a-fab789da1ca4cd98e23a.html",
-    "id": 48
-  },
-  {
-    "title": "黃仁勳取消出席 ElevenLabs 紐約高峰會，Nvidia 正調查其婚外情指控",
-    "summary": "Nvidia 執行長黃仁勳在公司針對其婚外情指控展開調查之際，已取消出席其投資組合公司 ElevenLabs 本週三在紐約舉辦的高峰會，同時也縮減了多項公開演講行程。",
-    "content": "Nvidia 執行長黃仁勳（Jensen Huang）已正式取消出席由其投資組合公司 ElevenLabs 於本週三在紐約舉辦的高峰會。這項決定是在 Nvidia 針對這位晶片龍頭執行長的婚外情指控展開內部調查後所做出的，同時也伴隨著黃仁勳近期逐步退出多項公開演講與活動的安排。\n\nElevenLabs 是一家備受關注的語音 AI 新創公司，本次高峰會原本預期將匯聚產業界的多位重要人物。然而，隨著黃仁勳因個人調查事件而缺席，也為這場預定在紐約舉行的活動增添了變數。除了此次峰會外，黃仁勳近期也全面調整了其公開露面的行程規劃。\n\n從產業脈絡來看，黃仁勳與 Nvidia 在人工智慧硬體市場的動向始終備受全球科技界高度關注。作為AI晶片市場的核心人物，其個人行程的變動以及公司內部的調查進展，不僅牽動著 Nvidia 的領導層動態，也引起投資人與合作夥伴的密切留意。\n\n觀察這起事件對科技產業的影響，雖然黃仁勳此次因個人相關調查而選擇暫時退居幕後、取消公開演講，但其背後的效應主要集中在領導高層的行程調整與企業治理的應對上。未來是否會對 Nvidia 的對外策略或相關投資組合公司的活動造成長遠影響，仍需視後續調查結果與其公開行程的恢復狀況而定。",
-    "link": "https://sifted.eu/articles/jensen-huang-pulls-out-of-elevenlabs-summit-amid-controversy/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2025/06/09131744/Jensen-1906-0424_6a965531-c88e-4313-a69d-a22f491e1f55-prv.png",
-    "date": "Tue, 10 Nov 2026 12:12:02 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/jensen-huang-pulls-out-of-elevenlabs-summit-amid-controversy/",
-    "stable_id": "a-542f1df5837a2ae8412e",
-    "permalink": "/articles/a-542f1df5837a2ae8412e.html",
     "id": 49
   }
 ]
