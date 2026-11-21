@@ -3,15 +3,16 @@ name: Auto Update IT News
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天香港時間早上 8 點完整更新 AI 新聞
-  workflow_dispatch:      # 允許手動選擇完整新聞更新或只同步 CMS
+  workflow_dispatch:      # 允許手動選擇完整新聞更新、只同步 CMS，或套用永久刪除清單
     inputs:
       task:
-        description: '選擇執行工作：完整新聞更新，或只同步 Pages CMS 文章'
+        description: '選擇執行工作：完整新聞更新、只同步 Pages CMS 文章，或套用 AI 文章永久刪除清單'
         required: true
         type: choice
         options:
           - full-update
           - cms-sync
+          - deleted-sync
         default: full-update
   push:
     paths:
@@ -122,4 +123,56 @@ jobs:
             git fetch origin "$GITHUB_REF_NAME"
             git reset --hard FETCH_HEAD
             ARCHIVE_SYNC_ONLY=1 python update_news.py
+          done
+
+  permanent-delete-archive:
+    if: github.event_name == 'workflow_dispatch' && inputs.task == 'deleted-sync'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. 取得專案程式碼
+        uses: actions/checkout@v3
+
+      - name: 2. 安裝 Python 環境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. 安裝必要套件
+        run: pip install requests feedparser google-genai beautifulsoup4
+
+      - name: 4. 套用 AI 文章永久刪除清單（不抓取 RSS 或呼叫生成式 AI）
+        env:
+          PERMANENT_DELETE_ONLY: '1'
+        run: python update_news.py
+
+      - name: 5. 儲存永久刪除結果至 GitHub（遇到推送衝突時重新套用）
+        env:
+          PERMANENT_DELETE_ONLY: '1'
+        run: |
+          set -e
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          for attempt in 1 2 3; do
+            git add data/news.json data/archive-index.json articles
+            if git diff --cached --quiet; then
+              echo "沒有需要提交的永久刪除更新。"
+              exit 0
+            fi
+
+            git commit -m "🗑️ 套用 AI 文章永久刪除清單"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "✅ 永久刪除結果已成功推送。"
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "❌ 已重試 3 次，仍無法推送；停止以保護遠端資料。"
+              exit 1
+            fi
+
+            echo "⚠️ 遠端分支已有新提交；取得最新版本並重新套用永久刪除清單後再試（第 $((attempt + 1)) 次）。"
+            git fetch origin "$GITHUB_REF_NAME"
+            git reset --hard FETCH_HEAD
+            PERMANENT_DELETE_ONLY=1 python update_news.py
           done
