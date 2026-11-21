@@ -30,6 +30,10 @@ CMS_MANUAL_FOLDERS = (
 # GitHub Actions can set this to sync Pages CMS changes without fetching new RSS/AI articles.
 ARCHIVE_SYNC_ONLY = os.environ.get("ARCHIVE_SYNC_ONLY", "").strip().lower() in {"1", "true", "yes"}
 
+DELETED_ARTICLES_PATH = "data/deleted_articles.json"
+# GitHub Actions can set this to apply permanent deletions without fetching RSS or AI calls.
+PERMANENT_DELETE_ONLY = os.environ.get("PERMANENT_DELETE_ONLY", "").strip().lower() in {"1", "true", "yes"}
+
 ARCHIVE_ALLOWED_TAGS = {
     "p", "br", "h1", "h2", "h3", "h4", "strong", "b", "em", "i",
     "ul", "ol", "li", "blockquote", "a", "img", "hr", "code", "pre"
@@ -426,6 +430,83 @@ def _remove_deleted_cms_articles(archive_records, current_manual_ids):
         print(f"🧹 本次共清理 {removed_count} 篇已從 Pages CMS 刪除的永久文章。")
 
 
+def load_deleted_articles():
+    """讀取 AI 文章永久刪除清單；檔案不存在時回傳空清單，格式錯誤時停止以保護資料。"""
+    if not os.path.exists(DELETED_ARTICLES_PATH):
+        return [], set(), set()
+
+    try:
+        with open(DELETED_ARTICLES_PATH, "r", encoding="utf-8") as f:
+            loaded = json.load(f)
+    except Exception as e:
+        raise RuntimeError(f"無法安全讀取 {DELETED_ARTICLES_PATH}，已停止更新以保護資料：{e}") from e
+
+    if not isinstance(loaded, list):
+        raise RuntimeError(f"{DELETED_ARTICLES_PATH} 的頂層資料不是 JSON 清單，已停止更新以保護資料。")
+
+    deleted_ids = set()
+    deleted_urls = set()
+    for entry in loaded:
+        if not isinstance(entry, dict):
+            raise RuntimeError(f"{DELETED_ARTICLES_PATH} 含有格式不正確的紀錄，已停止更新以保護資料。")
+        stable_id = str(entry.get("stable_id") or "").strip()
+        if stable_id:
+            if not re.fullmatch(r"a-[0-9a-f]{20}", stable_id):
+                raise RuntimeError(f"{DELETED_ARTICLES_PATH} 含有格式不安全的 stable_id：{stable_id!r}，已停止更新。")
+            deleted_ids.add(stable_id)
+        source_url = str(entry.get("source_url") or "").strip()
+        if source_url:
+            deleted_urls.add(normalize_source_url(source_url))
+
+    return loaded, deleted_ids, deleted_urls
+
+
+def is_permanently_deleted(item, deleted_ids, deleted_urls):
+    """判斷一篇文章是否在永久刪除清單內（以固定識別碼或正規化來源網址比對）。"""
+    if not deleted_ids and not deleted_urls:
+        return False
+    if get_stable_article_id(item) in deleted_ids:
+        return True
+    link = str(item.get("link") or "").strip()
+    if link.startswith(("http://", "https://")) and normalize_source_url(link) in deleted_urls:
+        return True
+    return False
+
+
+def _remove_permanently_deleted_articles(archive_records, deleted_ids, deleted_urls):
+    """從永久文章索引及 articles/ 資料夾移除清單內的文章；只處理非手動（AI/RSS）文章。"""
+    removed_count = 0
+    for stable_id, record in list(archive_records.items()):
+        if not isinstance(record, dict) or record.get("is_manual"):
+            continue
+        if not re.fullmatch(r"a-[0-9a-f]{20}", str(stable_id)):
+            print(f"⚠️ 跳過格式不安全的永久文章識別碼：{stable_id!r}")
+            continue
+
+        matched = stable_id in deleted_ids
+        if not matched:
+            link = str(record.get("link") or "").strip()
+            if link.startswith(("http://", "https://")) and normalize_source_url(link) in deleted_urls:
+                matched = True
+        if not matched:
+            continue
+
+        archive_records.pop(stable_id, None)
+        article_path = os.path.join(ARCHIVE_DIR, f"{stable_id}.html")
+        try:
+            if os.path.isfile(article_path):
+                os.remove(article_path)
+            print(f"🗑️ 已永久刪除文章：{record.get('title') or stable_id} ({stable_id})")
+            removed_count += 1
+        except OSError as e:
+            # HTML 刪不掉就保留索引紀錄，避免索引指向不存在的頁面或反之。
+            archive_records[stable_id] = record
+            print(f"⚠️ 無法移除永久文章 {article_path}，已保留索引紀錄：{e}")
+
+    if removed_count:
+        print(f"🧹 本次共永久刪除 {removed_count} 篇 AI 文章。")
+
+
 def update_permanent_archive(combined_news):
     """同步永久文章；只清理可明確識別為已刪除的 Pages CMS 手動文章。"""
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
@@ -453,6 +534,10 @@ def update_permanent_archive(combined_news):
         if item.get("is_manual")
     }
     _remove_deleted_cms_articles(archive_records, current_manual_ids)
+
+    # Permanently deleted AI articles: remove their index records and HTML pages.
+    _, _deleted_ids, _deleted_urls = load_deleted_articles()
+    _remove_permanently_deleted_articles(archive_records, _deleted_ids, _deleted_urls)
 
     # 先為完整合併清單建立／同步永久頁，再保留最新 50 篇給舊版首頁/分類頁使用。
     # Pages CMS 原始檔每次都會重新載入，因此需同步至相同固定網址。
@@ -555,7 +640,7 @@ def get_available_models():
     return ["gemini-3.5-flash-lite"]
 
 
-MODELS_TO_TRY = [] if ARCHIVE_SYNC_ONLY else get_available_models()
+MODELS_TO_TRY = [] if ARCHIVE_SYNC_ONLY or PERMANENT_DELETE_ONLY else get_available_models()
 
 
 def get_real_image_url(article_url):
@@ -887,6 +972,17 @@ if os.path.exists(json_path):
 existing_rss_news = [item for item in existing_news if not item.get("is_manual")]
 existing_links = {item.get("link") for item in existing_rss_news if item.get("link")}
 
+# 🗑️ 永久刪除清單：被列入的 AI 文章不再出現於最新清單，也不會被重新加入永久庫。
+_deleted_entries, DELETED_IDS, DELETED_URLS = load_deleted_articles()
+if DELETED_IDS or DELETED_URLS:
+    _before = len(existing_rss_news)
+    existing_rss_news = [
+        item for item in existing_rss_news
+        if not is_permanently_deleted(item, DELETED_IDS, DELETED_URLS)
+    ]
+    existing_links = {item.get("link") for item in existing_rss_news if item.get("link")}
+    print(f"🗑️ 永久刪除清單生效：{_before - len(existing_rss_news)} 篇已刪除文章已從最新清單移除。")
+
 
 # ----------------------------------------------------------------
 # 1.5 優先讀取 Pages CMS 手寫發布的原創文章 (.json 與 .md)
@@ -997,6 +1093,24 @@ if ARCHIVE_SYNC_ONLY:
         print("⚠️ 沒有可寫入的文章；為保護資料，未覆寫 data/news.json。")
     raise SystemExit(0)
 
+# Permanent-delete mode: apply data/deleted_articles.json without RSS crawling or AI calls.
+if PERMANENT_DELETE_ONLY:
+    print("\n🗑️ 執行 AI 文章永久刪除模式：不抓取 RSS、不呼叫生成式 AI。")
+    sync_news = manual_news_list + existing_rss_news
+    sync_news = update_permanent_archive(sync_news)
+    final_news = sync_news[:50]
+    for idx, item in enumerate(final_news):
+        item["id"] = idx
+    if final_news:
+        atomic_write_json(json_path, final_news)
+        print(
+            f"✅ 永久刪除同步完成：最新清單保留 {len(final_news)} 篇，"
+            f"永久文章索引已更新，被刪除文章的頁面及紀錄已移除。"
+        )
+    else:
+        print("⚠️ 沒有可寫入的文章；為保護資料，未覆寫 data/news.json。")
+    raise SystemExit(0)
+
 # ----------------------------------------------------------------
 # 2. 定義各分類及其對應的 RSS 來源 (🌟 新增 BizTech 來源)
 # ----------------------------------------------------------------
@@ -1062,6 +1176,12 @@ for category_name, rss_urls in CATEGORIES_RSS.items():
                 # 去重檢查
                 if link in existing_links:
                     print(f"⏩ 跳過已存在新聞: {entry.get('title')[:30]}...")
+                    continue
+
+                # 永久刪除檢查：來源網址或固定識別碼在刪除清單內，永不重新抓取
+                if normalize_source_url(link) in DELETED_URLS or \
+                        get_stable_article_id({"_archive_key": "rss:" + normalize_source_url(link)}) in DELETED_IDS:
+                    print(f"🚫 跳過已永久刪除新聞: {entry.get('title')[:30]}...")
                     continue
 
                 orig_title = entry.get("title", "")
