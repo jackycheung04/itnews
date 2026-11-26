@@ -300,6 +300,132 @@
     "id": 14
   },
   {
+    "title": "標普因公司治理與「關鍵人物風險」 考慮下調輝達信用評級",
+    "summary": "儘管輝達財務表現強勁，但標普全球評級因執行長黃仁勳去職與復職風波所暴露的管理隱憂，正考慮將其信用評級從 AA 下調至 AA-。",
+    "content": "國際信用評級機構標普全球評級（S&P Global Ratings）近日表示，正考慮將晶片巨頭輝達（Nvidia）的信用評級從 AA 調降至 AA-，即其評級規模中的第四高評級。這項審查主要源於對輝達公司管理與治理實踐的擔憂，而非其財務表現。\n\n標普在聲明中指出，先前執行長黃仁勳的去職與隨後復職事件，暴露出輝達在「執行監督薄弱、缺乏繼任計畫」等問題，同時也凸顯了高度依賴黃仁勳未來領導的「關鍵人物風險」（key man risk）。標普預計將在 90 天內完成此次評級審查。\n\n雖然輝達確定能維持其投資級評級，但評級遭到下調仍可能帶來連鎖反應，直接推高公司的借貸成本。由於輝達長期在背後支持自身信用實力不足的新興雲端公司（neoclouds）及其他基礎設施企業，較低的信用評級可能會使這些合作夥伴的債務成本增加，或迫使他們必須提供更多擔保品。\n\n今年 8 月，輝達曾宣布計畫透過高盛、阿波羅（Apollo）和黑石（Blackstone）等六家金融機構，為人工智慧（AI）基礎設施籌措高達 500 億美元的融資。依照最初條款，輝達將為 25% 的貸款提供擔保。然而，在黃仁勳去職與回任之前，貸款機構便已要求輝達承擔更多擔保責任。《彭博社》報導指出，若評級遭到調降，極可能促使貸款機構進一步要求提高擔保規模。\n\n記者分析認為，儘管輝達在 AI 硬體市場的財務表現無庸置疑，但頂尖科技企業的快速擴張往往與創辦人或核心領導者的個人影響力緊密綁定。此次標普的評級審查顯示，資本市場對於企業治理結構與風險分散的檢視標準正在提高。若輝達無法在未來提出更清晰的領導階層繼任與監督機制，不僅其自身的融資成本可能上升，其龐大 AI 基礎設施生態系的擴展步伐也可能面臨更多隱性成本與資本壓力。",
+    "link": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+    "date": "Wed, 25 Nov 2026 22:44:32 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+    "stable_id": "a-367d0fd1be792ad25476",
+    "permalink": "/articles/a-367d0fd1be792ad25476.html",
+    "id": 15
+  },
+  {
+    "title": "FCC有條件批准SpaceX太空AI資料中心計劃，馬斯克：將成美國與世界資產",
+    "summary": "美國FCC有條件批准SpaceX部署高達100萬顆衛星的「Starmind」軌道資料中心星系，這標誌著馬斯克將AI運算基礎設施搬上太空的野心邁出重要一步，儘管仍面臨技術與法規挑戰。",
+    "content": "美國聯邦通信委員會（FCC）於週三正式給予SpaceX有條件批准，允許其部署並營運一組多達100萬顆衛星的星系，作為其軌道資料中心業務之用。這項決策被視為執行長伊隆·馬斯克（Elon Musk）推動將人工智慧（AI）資料中心遷至太空計劃的一項重大監管勝利。馬斯克隨後也在社交平台X上發文感謝FCC主席布倫丹·卡爾（Brendan Carr），直言這將對美國和世界産生巨大助益。\n\n然而，這項授權是在面臨亞馬遜（Amazon）、Viasat以及美國天文學會（AAS）等強烈反對下通過的。反對者此前紛紛對軌道碎片與擁擠情況、射頻干擾以及環境後果表達擔憂。正著手打造星鏈（Starlink）競爭服務的亞馬遜更在請願書中批評，該申請缺乏基本細節，形容其「更像是一個崇高的野心，而非真正的計劃」，並警告此提案存在「真實損害的風險」。\n\n對此，FCC選擇駁回反對者提出的一些核心關切，包括對科學研究的潛在威脅，理由是這些議題落出了該機構的監管權限之外。FCC主席布倫丹·卡爾在聲明中表示，此舉「為推動美國領導地位與增長所需的計算基礎設施，開啟了一個大膽的新邊疆」。\n\n不過，這項初步的監管批准並不意味著軌道資料中心即將問世。SpaceX在實際落地前仍需克服諸多技術與經濟挑戰，包括如何大幅降低衛星製造與發射成本、如何在太空中冷卻處理器，以及如何為送往軌道的晶片籌措資金。\n\n此外，該公司還必須清除其他法規障礙。例如，FCC尚未批准SpaceX針對在600公里以上運作的衛星處理軌道碎片的計劃。SpaceX曾請求豁免FCC現行規則（該規則要求任務結束低於2,000公里的衛星必須在任務完成後五年內重返地球大氣層），並對將部分退役衛星轉移到地球周圍其他軌道甚至太陽周圍表現出興趣。\n\n根據FCC的授權文件，SpaceX計劃將這些名為「Starmind」的衛星部署在500至1,002公里的高度。FCC的批准授權該公司在地面通訊系統失效時，利用射頻通訊來維持與軌道資料中心的聯繫及控制，而Starmind衛星主要將透過雷射與其他衛星（包含SpaceX的星鏈衛星）進行連接。\n\n在時間規劃上，FCC給予SpaceX充足的時間來釐清這些問題。按照批准條款，SpaceX有7年的時間將第一顆營運衛星送入軌道，並有14年的時間完成整個衛星星系的部署。\n\n從產業發展的脈絡來看，這項批准無疑為太空運算商業化開闢了先例，但從技術與環保的角度而言，百萬衛星規模的軌道資料中心能否在嚴苛的太空環境中實現商業可行性，並在軌道管理上取得平衡，仍有待SpaceX在未來十多年內逐一解答。",
+    "link": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/space-tesla-cybertruck.jpg?resize=1200,801",
+    "date": "Wed, 25 Nov 2026 20:56:44 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+    "stable_id": "a-b4cea15e5fa876a13537",
+    "permalink": "/articles/a-b4cea15e5fa876a13537.html",
+    "id": 16
+  },
+  {
+    "title": "OpenAI 合併 ChatGPT 聊天與工作功能！重度用戶恐更早面臨額度限制",
+    "summary": "OpenAI 正逐步將 ChatGPT 的「Chat」與「Work」體驗整合為單一計量系統，引發部分訂閱用戶擔憂進階模型使用權益受損。",
+    "content": "人工智慧巨頭 OpenAI 近日開始向部分用戶推出整合式的 ChatGPT 體驗，將過往獨立的「Chat」與「Work」介面與額度進行合併。根據產品負責人 Thibault “Tibo” Sottiaux 在社群平台 X 上透露，這項更新已率先向一小群 Pro 訂閱用戶開放，並預計在 12 月擴大推送。\n\n然而，這項合併政策在社群媒體與 OpenAI 官方論壇上引發了部分訂閱用戶的擔憂。許多用戶認為，將聊天與工作功能的額度合併後，他們可能會在繳交相同訂閱費用的情況下，獲得較以往更少的高階推理模型使用權限。\n\n對此，OpenAI 發言人向媒體表示，雖然預期大多數用戶不會面臨更頻繁的額度重置，但極少數的重度用戶確實可能會更快達到使用上限。在新的系統下，ChatGPT 將採用單一的用量計量器，不過使用 Instant 模型的對話則維持不計入共享額度，且用戶在耗盡主要額度後仍可繼續使用 Instant 模型。發言人並強調，公司將持續提升系統效率，讓訂閱用戶能從方案中獲得更多價值。\n\n這類將日常對話與工作導向工具整合至單一介面的做法並非首見。競爭對手 Anthropic 也曾在 9 月份將其對話聊天服務 Claude 與工作導向的 Cowork 整合至同一個介面中。隨著 AI 公司面臨日益沉重的基礎設施成本，以及市場對強大模型不斷增長的需求，運算資源承受著巨大壓力。\n\n從產業發展的脈絡來看，AI 企業將對話與工作工具打包進單一介面，除了能簡化產品的操作複雜度，讓用戶在日常對話與複雜任務之間切換時不必頻繁切換分頁外，某程度上也反映出業者在維護高階模型龐大運算成本的同時，必須更精細地調控與管理用戶的資源消耗。未來隨著 12 月更廣泛的推出，這套共享額度機制是否會引發更大規模的反彈，或是促使 OpenAI 調整其用量政策，仍有待後續觀察。",
+    "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/openai-chatgpt.jpg?resize=1200,800",
+    "date": "Wed, 25 Nov 2026 20:03:27 +0000",
+    "category": "Pulse",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "stable_id": "a-7abe199f82034a59cb73",
+    "permalink": "/articles/a-7abe199f82034a59cb73.html",
+    "id": 17
+  },
+  {
+    "title": "破產法庭成隱私黑洞？Character.AI 私人聊天紀錄恐遭拍賣，引發 42 州檢察總長聯手阻擋",
+    "summary": "陷入破產困境的 AI 新創 Character.AI 擬將用戶私人對話作為資產拍賣，此舉引發全美 42 州檢察總長強烈反對。官方擔憂涉及數千萬用戶（含未成年人）的個資將失去保護，並抨擊此舉嚴重違背該公司過去對用戶的隱私承諾。",
+    "content": "曾備受矚目的 AI 新創 Character.AI 在今年 10 月申請第 11 章破產保護後，其後續資產處理爭議正引發全美法律界的關注。近日，由 42 州檢察總長組成的跨州聯盟正式介入該公司的破產程序，強烈要求法庭阻止這場涉及數百萬用戶敏感數據的拍賣計劃。\n\n根據各州檢察總長辦公室發布的聲明，Character.AI 的數據庫中包含了超過 2,100 萬個美國帳戶的聊天紀錄，其中更有超過 210 萬個帳戶屬於未成年人。此外，待拍賣的數據資產還包括用戶的 IP 位址等個人識別資訊。各州檢察總長的核心憂慮在於，一旦這些數據進入拍賣流程，收購方將不受公司原有隱私政策的約束，意味著用戶曾經深信不疑的隱私保護將蕩然無存。更令官員們擔憂的是，買家甚至可能隨意轉售這些數據，導致個資外洩的風險無限擴大。\n\n目前唯一浮出水面的競標者是一家名為「Smirks and Pangs Acquisition LLC (Smirks)」的 Delaware 州公司，該公司成立於 2026 年 11 月 13 日，隨即在隔日便被 Character.AI 選定為預計在 12 月 1 日舉行的拍賣會之基準出價方。然而，外界對於該公司購得數據後的具體用途仍一無所知，這種不透明性讓監管機構感到不安。\n\n加州檢察總長 Rob Bonta 在聲明中語氣強硬，直指 Character.AI 過去曾明確向消費者承諾不會出售個人資訊，如今竟試圖利用破產程序規避法律責任。康乃狄克州檢察總長 William Tong 則進一步抨擊，認為 Character.AI 的商業模式本就充滿瑕疵，其聊天機器人過去曾將脆弱青少年推向情緒不穩及性暗示內容的深淵，如今更想透過拍賣這些私密紀錄「變現」，是對消費者的二次傷害。\n\n事實上，Character.AI 近期已是風波不斷。在聯合創辦人 Noam Shazeer 和 Daniel De Freitas 回歸 Google 後，該公司元氣大傷，且先前已面臨多項涉及兒童安全與用戶隱私的訴訟。儘管該公司曾試圖與迪士尼進行授權交易以緩解財務壓力，但該計畫並未包含用戶聊天紀錄，也同樣遭到部分檢察總長的質疑。\n\n作為一名觀察者，此次事件無疑暴露了新興科技公司在倒閉清算時，用戶數據資產化所帶來的巨大法律與道德風險。當初作為產品核心賣點的「個性化 AI 夥伴」，如今卻成了破產清算中最具爭議的「待售資產」。這起案件已超越單純的債務清償，演變為對 AI 時代數位隱私邊界的集體抗爭。若破產法院最終核准此項拍賣，恐將開創一個危險先例，即用戶在 AI 平台留下的私密對話，在企業經營不善時，竟可淪為債權分配的籌碼，這勢必將迫使聯邦層級加速完善相關的數據保障法律框架。",
+    "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+    "image": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
+    "date": "Wed, 25 Nov 2026 17:35:58 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+    "stable_id": "a-210f8a9b12e90c9ed7b2",
+    "permalink": "/articles/a-210f8a9b12e90c9ed7b2.html",
+    "id": 18
+  },
+  {
+    "title": "AI 基礎設施泡沫將至？Nvidia 轉趨嚴苛，數據中心開發陷「土地與電力」爭奪戰",
+    "summary": "AI 數據中心建設難度提升，Nvidia 不再為未完工設施背書。隨建設延誤與融資成本攀升，專家示警 2027 年將迎來市場大洗牌，擁有成熟土地、電力與設施的業者將成勝出關鍵。",
+    "content": "隨著人工智慧算力需求持續飆升，AI 數據中心的建設不僅是一場技術競賽，更演變為一場對實體資產與資源的激烈爭奪。近期，AI 晶片霸主 Nvidia 對數據中心開發案的態度出現顯著轉變，明確表示除非項目已接近完工並具備運作能力，否則將不再為其提供背書。這一姿態對整個產業釋出了明確訊號：在 AI 狂熱的資本市場中，單憑華麗的企劃簡報（pitch deck）已不足以立足，擁有實際的土地儲備、穩定電力供應以及完備的基礎設施，才是開發商能否成功的核心指標。\n\nArizona Land Consulting 執行長 Anita Verma-Lallian 在接受《TechCrunch》Podcast 節目「Equity」訪問時指出，目前的市場環境已對新興雲端服務商（neoclouds）造成劇烈壓力。在利率高企與工程延誤的雙重夾擊下， speculative（投機型）的數據中心項目正面臨崩潰邊緣。Verma-Lallian 專門協助開發商、超大規模運算公司（hyperscalers）及 AI 實驗室整合數據中心場地，她觀察到，由於電力限制與在地社區的強烈反對，開發商在選址時面臨的法律與實體門檻正不斷提高。\n\n目前的基礎建設現實是「土地、電力與外殼」（land, power, shell）缺一不可。許多地區電力公司甚至要求台積電（TSMC）等大型客戶共同分擔基礎設施的建設成本，以應對 AI 算力帶來的巨大負荷。這種資本密集且需高度協調的建設模式，正讓產業結構產生偏移。Verma-Lallian 與投資人 Chamath Palihapitiya 等業界人士均預測，隨著風險增加，2027 年將成為數據中心產業的重要轉折點，屆時市場將迎來一場大規模洗牌。\n\n在洗牌過程中，財務體質脆弱或進度緩慢的項目將面臨巨大的違約風險，屆時開發商、貸款機構與客戶將被迫共同承擔爛尾工程帶來的財務損失。反之，擁有成熟資產的企業將具備購併這些受困項目的優勢。此外，觀察家認為，大型 AI 實驗室與超大規模雲端公司可能會轉向「自建數據中心」，而非完全依賴第三方供應商，這可能進一步擠壓新興雲端業者的生存空間。\n\n從資深科技記者的角度分析，數據中心產業正經歷從「概念行銷」回歸「資源本位」的過程。Nvidia 的強勢表態並非為了打壓開發商，而是為了確保其昂貴的 GPU 晶片能即時產生算力價值，而非滯留在未完工的倉庫中。未來幾年，數據中心產業的競爭重心將不再是誰能募得更多資金，而是誰能率先完成電力與實體基建的落地，未能完成轉型的企業恐將在 2027 年的大洗牌中遭到淘汰。",
+    "link": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Anita-Verma-Lallian-2.jpg?w=1024",
+    "date": "Wed, 25 Nov 2026 15:41:43 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+    "stable_id": "a-d012993b61aed97c2bc7",
+    "permalink": "/articles/a-d012993b61aed97c2bc7.html",
+    "id": 19
+  },
+  {
+    "title": "人工智慧產業成情報戰熱點，專家警告：AI 圈幾乎人人都是「美人計」潛在目標",
+    "summary": "隨著輝達執行長黃仁勳捲入美人計醜聞，資安專家警告，AI 產業極速崛起已成為國安級戰場，從創辦人到行政助理都面臨漏洞。",
+    "content": "在輝達（Nvidia）執行長黃仁勳深陷據稱的「美人計」醜聞風波之際，矽谷正面臨一個前所未見的殘酷現實：科技產業中有更多人正暴露於高風險之中。軟體公司 Lumbra 創辦人、前美國中情局（CIA）資深情報官亞倫・布朗（Aaron Brown）指出，歷史上美人計通常與政客、軍事及國家情報人員掛鉤，這些族群受過反情報訓練，預期會受到間諜或攻擊者的試探。然而，如今許多最具價值的機密，卻掌握在打造晶片、模型與基礎設施的科技企業手中。\n\n布朗指出，間諜目標往往鎖定執行長所能觸及的技術藍圖、出口決策、客戶名單及技術流向，而執行長正是通往這些機密的最短路徑。先前黃仁勳遭指控與新加坡新雲端前高管愛麗絲・黃（Alice Huang）有染，而愛麗絲・黃同時被指控為中國間諜，並涉及將價值數十億美元的管制品級輝達晶片走密至中國。\n\n這類威脅並非高階主管獨有。根據《華爾街日報》報導，OpenAI 已開始警告員工防範試圖接近他們以竊取公司機密的外部人員。無論是董事會成員還是行政助理，任何接觸敏感資訊的人都可能成為美人計的目標。布朗表示，攻擊者不一定扮演戀人角色，事實上，以「友誼」為包裝才是歷史最悠久的陷阱。這些攻擊者往往化身為投資者、客戶、獵人頭顧問等，其請求在紙面上看似完全合法，不需要目標墜入愛河，而是要讓目標「感到自在地開口交談」。KnowBe4 犯罪學家兼首席欺騙策略師佩里・卡彭特（Perry Carpenter）直言，當能夠透過走後門、影響決策或提出無人質疑的要求來接近關鍵人物時，又何必去費力攻破防火牆？\n\n諷刺的是，人工智慧技術的普及反而讓美人計變得更便宜、更容易執行。過去策劃一項計劃需要數月甚至數年的研究與人設打造，如今利用 AI 就能輕鬆調查目標、生成虛假社群檔案、背景甚至語音通話。卡彭特指出，AI 助長了完整的虛構背景故事，但欺騙最終仍透過人際關係來落實。布朗坦言，AI 產業演變成國家情報產業的速度，遠遠超過其企業文化的適應能力，許多人往往在不知情的情況下落入陷阱，感覺一切都非常真實甚至像是好運。\n\n面對日益嚴峻的威脅，專家建議從識別異常模式開始，例如過於巧合的頻繁偶遇、對工作及同事的持續好奇，或是要求會面保密。若對方的要求逐漸升級、踩踏個人舒適區的底線，就是明顯的危險訊號。卡彭特建議，應在個人生活與職業生涯之間劃出清晰界線，並消除企業內部的「高層特權」概念。布朗則強調，企業文化必須讓員工在面對不尋常請求時，能夠安心提出質疑與上報，而非建立一個連質疑執行長都會感到恐懼的危險環境。對於需要承擔風險與探索商業機會的創辦人而言，過度偏執並無助益，但清楚認知自己身為目標才是首要防線。",
+    "link": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Moor-Studio.jpg?resize=1200,705",
+    "date": "Fri, 20 Nov 2026 20:58:29 +0000",
+    "category": "Ecosystem",
+    "is_manual": false,
+    "_archive_key": "rss:https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+    "stable_id": "a-8493087d5ccb9b48afbd",
+    "permalink": "/articles/a-8493087d5ccb9b48afbd.html",
+    "id": 20
+  },
+  {
+    "title": "核融合新創 Starforge 獲 660 萬歐元種子前融資，瞄準規模化小型反應爐",
+    "summary": "由 Lilium 與 Commonwealth Fusion Systems 校友在慕尼黑創立的 Starforge，獲 660 萬歐元種子前融資，力求打造更具成本效益的小型核融合反應爐。",
+    "content": "總部位於德國慕尼黑的核融合新創公司 Starforge，近日宣佈完成 660 萬歐元（約合 690 萬美元）的種子前融資（Pre-seed round），目標是打造比傳統方案更具成本效益且更容易規模化的小型核融合反應爐。\n\n這家新創由 Lilium 與 Commonwealth Fusion Systems（CFS）的校友共同創辦。本輪融資由 APEX Ventures 與 CD-Venture Capital 共同領投，參投者還包括 Earlybird、Quotidian Ventures、Pace Ventures、PreSeed Ventures、APEX-Ventures 以及知名天使投資人。Starforge 希望透過縮小反應爐規模，解決傳統核融合專案往往伴隨著龐大資本支出與漫長建設時程的痛點，以更靈活的方式切入市場。\n\n近年來，隨著全球對主權能源獨立與清潔電力的需求激增，核融合技術再次成為創投界關注的焦點。過去幾十年來全球雖有超過 300 個核融合實驗爐相繼啟動，但正如 Starforge 創辦人所指出的，該產業長期面臨技術與工程上的重大挑戰。核融合雖然具備產出豐沛潔淨能源的潛力，但如何將龐大的科學實驗轉化為可商業化、具經濟效益且能順利量產的發電設施，依然是所有從業者必須克服的難關。\n\n在歐洲市場，這類深科技（Deeptech）企業正迎來資金湧現的浪潮。例如同處慕尼黑的同行 Proxima Fusion 近期才剛獲得 1.3 億歐元融資，計畫在 2031 年前建造示範電廠；而英國的 Tokamak Energy 與 Marvel Fusion 等公司也各自獲得數千萬美元不等的資金挹注。不過，儘管投資人熱情高漲，核融合新創普遍面臨極高的資本密集度，且多數公司預計要到 2030 年代中期才有機會看見商用電廠落地，這意味著短期內投資人仍需承擔相當的技術與時間風險。\n\n從 Starforge 的融資規模來看，這筆 660 萬歐元的資金對一間處於早期階段的深科技新創而言，將是推動其核心技術研發與概念驗證的重要起步。然而，相較於動輒募得數億歐元的大型競爭對手，Starforge 必須在資源相對有限的情況下，證明其小型化、模組化的設計路徑確實可行。未來數年內，該公司能否如期推進其反應爐的工程設計，並在競爭激烈的歐洲核融合賽道中突圍，將是觀察其發展的關鍵指標。",
+    "link": "https://sifted.eu/articles/exclusive-starforge-fundraise-nuclear-fusion-reactors/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/25154309/Team_Sitting-scaled.jpg",
+    "date": "Thu, 26 Nov 2026 05:00:51 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/exclusive-starforge-fundraise-nuclear-fusion-reactors/",
+    "stable_id": "a-c0d20543997430f9ce2d",
+    "permalink": "/articles/a-c0d20543997430f9ce2d.html",
+    "id": 21
+  },
+  {
+    "title": "勇奪 Slush 100 冠軍！新創 Goldfish 崛起，矢言挑戰蘋果",
+    "summary": "新創公司 Goldfish 在上週的 Slush 憑藉 AI 眼鏡技術奪下 Slush 100 大獎，備受矚目，並展現出挑戰蘋果等科技巨頭的雄心。",
+    "content": "在歐洲科技界備受矚目的 Slush 創業大賽上，新創公司 Goldfish 脫穎而出，勇奪上週的 Slush 100 獎項。這家新創公司的創辦人 Joel Edholm 與 Kaspian Jakobsson 的相遇充滿傳奇色彩，兩人當初在一次跨大西洋航班上因討論 VR 頭戴裝置而結緣，進而開啟了合作契機。隨後，他們在歐洲知名創業加速器 Entrepreneurs First 相遇，並網羅了曾任 AI 研究員、背景深厚的 Kaspian Jakobsson 加入團隊，為公司的技術發展奠定穩固基礎。\n\nGoldfish 的核心產品是一款配備攝影機、外型輕巧且時尚的眼鏡。這款裝置不僅外觀俐落，更內建了 AI 技術，能夠即時處理並理解使用者眼前的世界。在這次 Slush 大會的競賽中，Goldfish 擊敗了眾多競爭對手，抱回備受 coveted 的 Slush 100 桂冠，獲得了 100 萬歐元的無條件股權投資，這筆資金無疑為團隊的早期發展注入了強心針。\n\n在產品定位上，Goldfish 並不打算走傳統的 AI 運算硬體老路。創辦人強調，AI 穿戴裝置不應該只是另一個分散注意力的螢幕，核心價值反而在於「隱形」，讓科技退居幕後，僅在使用者真正需要時才提供協助。他們認為目前的 AI 裝置往往過於干擾用戶，而他們的目標則是打造能夠融入日常生活、不干擾使用者視線的自然互動體驗。\n\n隨著在 Slush 大會上大放異彩，Goldfish 也正在積極籌備下一步計畫。團隊計畫將總部設立在英國倫敦，並吸納來自當地及全球的頂尖人才。不過，面對科技巨頭蘋果以及市場上其他智慧眼鏡與 AI 穿戴裝置的激烈競爭，Goldfish 仍必須證明其技術能夠真正融入大眾日常，並在實用性與隱私之間找到最佳平衡點。\n\n從記者的角度來看，Goldfish 此次在 Slush 奪冠，反映出歐洲投資界對於結合輕量化硬體與實用 AI 互動的穿戴裝置高度期待。然而，如何將亮眼的早期概念轉化為消費者願意長期配戴的成熟產品，並在蘋果等巨頭夾擊下突圍，將是這家新創團隊接下來必須面臨的最大考驗。",
+    "link": "https://sifted.eu/articles/goldfish-slush-100-winners/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=800,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/25141242/1781435357247.jpeg",
+    "date": "Thu, 26 Nov 2026 05:00:35 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/goldfish-slush-100-winners/",
+    "stable_id": "a-27eeac96e56fd1b34819",
+    "permalink": "/articles/a-27eeac96e56fd1b34819.html",
+    "id": 22
+  },
+  {
+    "title": "Bolt 執行長 Markus Villig：歐洲科技業面臨不公平競爭，歐盟必須保護本土創新",
+    "summary": "Bolt 共同創辦人兼執行長 Markus Villig 接受 Sifted 專訪時指出，歐洲科技業在不公平的競爭環境中苦苦掙扎，呼籲歐盟應致力保護本土科技生態系。",
+    "content": "歐洲叫車服務巨頭 Bolt 的共同創辦人兼執行長 Markus Villig 最近在其位於塔林的總部接受 Sifted 專訪，針對歐洲自由市場經濟、自動駕駛計程車（robotaxis）以及首次公開募股（IPO）等議題發表了深入看法。他直言，歐洲本土科技企業在面對全球競爭時，面臨的並非一場公平的競爭，呼籲歐盟必須採取更積極的保護措施。\n\nVillig 指出，歐盟與美國和中國在科技領域的競爭不對等，主要原因在於監管環境與市場保護的落差。他舉例說明，歐洲往往對本土企業施加繁複的法規與合規負擔，但在應對來自海外的大型科技平台或外資競爭時，卻缺乏足夠的保護與扶持。這種現象導致歐洲 homegrown tech（本土科技）在規模化與全球擴張的道路上步履維艱，難以與資金雄厚的美國及中國競爭對手抗衡。\n\n在談到自動駕駛技術的發展時，Villig 認為歐洲在這一領域同樣落後。他指出，像 Waymo 這樣的美國企業以及中國的自駕技術公司正在快速推進，而歐洲的監管機構和市場結構卻未能提供足夠的試驗空間與政策支持，這可能讓歐洲在下一代交通運輸革命中被徹底甩開。\n\n儘管面臨諸多挑戰，Bolt 本身在業務上仍持續擴張。該公司在 2024 年的營收達到 20 億歐元，展現出強勁的成長動能。然而，談到未來的 IPO 計劃時，Villig 保持務實的態度。他認為，雖然上市是企業發展的自然過程，但目前全球資本市場的環境仍存在不確定性，Bolt 會在最適當的時機評估上市的可能性，而非盲目推進。\n\n記者分析認為，Villig 的強烈表態反映出歐洲科技界長期以來的集體焦慮。隨著美國與亞洲科技巨頭在人工智慧、自動駕駛和共享經濟等領域建立壓倒性優勢，歐洲若無法在法規靈活性與資本支持上取得突破，其本土科技創新生態系恐將面臨更嚴峻的邊緣化危機。不過，歐盟是否能在維護消費者權益與保護本土企業之間找到平衡點，仍有待觀察。",
+    "link": "https://sifted.eu/articles/bolt-markus-villig-ceo-interview-europe/",
+    "image": "https://images.sifted.eu/cdn-cgi/image/width=1598,quality=75,fit=cover,format=auto/wp-content/uploads/2024/12/02175359/1.-Markus-Villig-portrait-e1733240178872.jpeg",
+    "date": "Thu, 26 Nov 2026 05:00:25 GMT",
+    "category": "Insights",
+    "is_manual": false,
+    "_archive_key": "rss:https://sifted.eu/articles/bolt-markus-villig-ceo-interview-europe/",
+    "stable_id": "a-2ef1b2980a56381bb25d",
+    "permalink": "/articles/a-2ef1b2980a56381bb25d.html",
+    "id": 23
+  },
+  {
     "title": "耶魯學者桑尼費德直言：黃仁勳重掌輝達是美國工業的「傷害」而非救星",
     "summary": "耶魯大學學者桑尼費德警告，黃仁勳在白宮力挺下回任輝達執行長恐成重大失誤，不僅面臨龐大訴訟與個人責任，更引發高階晶片流向對手國家的爭議。",
     "content": "儘管市場對黃仁勳重返輝達（Nvidia）擔任執行長與董事歡欣鼓舞，但耶魯大學知名商業學者傑佛瑞·桑尼費德（Jeffrey Sonnenfeld）卻直指這是一場錯誤的慶祝。他認為，在風險達到最高點的時刻，輝達在很大程度上需為將先進技術送入美國對手手中負起責任，並稱輝達遠非美國工業的捍衛者，反而是「美國全球工業實力的有害因素」。\n\n桑尼費德指出，有研究顯示輝達的最先進晶片即便在美國出口管制下仍流入中國，同時搭配Anthropic股價的下挫，讓人們意識到中國看似奇蹟般的開源AI模型，本質上是複製美國頂尖實驗室的成果。然而，黃仁勳的回歸在亞洲同樣受到熱烈歡迎，中國官媒甚至以「王者歸來」形容。此次復職背後有來自華府的強大壓力，在副總統范斯（JD Vance）與美國總統川普親自致電董事會背書後，董事會最終迎回黃仁勳。\n\n這項人事決定讓同意復職的董事面臨前所未有的個人法律責任。目前針對輝達及董事的訴訟已如雪球般滾大，包括集體訴訟及代表輝達控告董事的股東衍生訴訟，指控董事忽視黃仁勳與涉嫌中國間諜艾麗絲·黃（Alice Huang）關係的警訊。此外，輝達與黃仁勳還面臨司法部的反壟斷調查、美國證券交易委員會（SEC）的會計調查、聯邦調查局（FBI）可能的審查、加州傳票、出口管制制裁以及國會的質詢。\n\n桑尼費德批評輝達董事會缺乏盡職調查、未依賴專家，在沒有美國政府業務威脅的情況下選擇屈服，展現出無能與怯懦。他並指出，輝達真正的晶片設計核心人物如共同創辦人克里斯·馬拉喬夫斯基（Chris Malachowsky）與軟體架構師伊恩·巴克（Ian Buck）並未離職，黃仁勳的回歸與核心技術研發並無直接關聯。\n\n【記者觀點】從法律與地緣政治的角度來看，黃仁勳重掌輝達雖然短暫安撫了市場情緒，但也同時將公司推向了美國監管與司法訴訟的風口浪尖。董事會在大國政治力介入下的妥協，不僅埋下了高昂法律成本的隱憂，也讓輝達在美中科技競對與出口管制政策中的角色面臨更嚴峻的公眾與政治檢視。",
@@ -311,7 +437,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
     "stable_id": "a-bf6e99c290a721fd47dd",
     "permalink": "/articles/a-bf6e99c290a721fd47dd.html",
-    "id": 15
+    "id": 24
   },
   {
     "title": "川普談輝達執行長黃仁勳風波：特赦是選項之一，但認為沒這必要",
@@ -325,7 +451,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/24/trump-reportedly-says-pardoning-jensen-huang-is-an-option-but-that-he-doesnt-think-it-will-be-necessary/",
     "stable_id": "a-9865ab9150cff557da1f",
     "permalink": "/articles/a-9865ab9150cff557da1f.html",
-    "id": 16
+    "id": 25
   },
   {
     "title": "黃仁勳重返輝達執行長職位：堅信接班人計畫只會製造不必要的層級",
@@ -339,7 +465,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
     "stable_id": "a-4ccf5b72402d061697a2",
     "permalink": "/articles/a-4ccf5b72402d061697a2.html",
-    "id": 17
+    "id": 26
   },
   {
     "title": "主打資料隱私！AI 新創 Maple 獲 530 萬美元種子輪融資，打造連自家公司也無法窥探的加密架構",
@@ -353,7 +479,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
     "stable_id": "a-b944ae03d02aa4e9cd9f",
     "permalink": "/articles/a-b944ae03d02aa4e9cd9f.html",
-    "id": 18
+    "id": 27
   },
   {
     "title": "AI 泡沫警訊？Anthropic 股價上市不到一週跌破 IPO 發行價",
@@ -367,7 +493,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
     "stable_id": "a-0638e126c1e0483f7c0f",
     "permalink": "/articles/a-0638e126c1e0483f7c0f.html",
-    "id": 19
+    "id": 28
   },
   {
     "title": "前阿里高管創立 Everful：獲 4,850 萬美元融資，以 AI 打造跨境供應鏈「全託管」模式",
@@ -381,7 +507,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
     "stable_id": "a-2154f7c177760c6b6a73",
     "permalink": "/articles/a-2154f7c177760c6b6a73.html",
-    "id": 20
+    "id": 29
   },
   {
     "title": "VC 眼中的 25 家潛力生技新創：AI 如何重塑製藥與農業未來",
@@ -395,7 +521,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/25-biotech-startups-to-watch-according-to-vcs/",
     "stable_id": "a-cb46c78ff4f5d4616a0b",
     "permalink": "/articles/a-cb46c78ff4f5d4616a0b.html",
-    "id": 21
+    "id": 30
   },
   {
     "title": "聚焦AI自主與規模化成長：第四屆 Nexus Luxembourg 將於明年三月登場",
@@ -409,7 +535,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/europes-sovereignty-debate-luxembourg-brnd/",
     "stable_id": "a-38c0ded42b380492688d",
     "permalink": "/articles/a-38c0ded42b380492688d.html",
-    "id": 22
+    "id": 31
   },
   {
     "title": "英國數位銀行 Starling 迎來人事變動：資深老臣 Declan Ferguson 將接任執行長",
@@ -423,7 +549,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/starling-veteran-to-take-over-as-ceo/",
     "stable_id": "a-ee84eacfdd239be8e49d",
     "permalink": "/articles/a-ee84eacfdd239be8e49d.html",
-    "id": 23
+    "id": 32
   },
   {
     "title": "Figma 遭現職員工指控性騷擾與歧視，內部「直接回饋」文化反成受害者枷鎖",
@@ -437,7 +563,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/23/figma-employee-sues-alleging-company-forced-her-to-confront-harassers/",
     "stable_id": "a-4ba6b6c1f6f9a5d557a2",
     "permalink": "/articles/a-4ba6b6c1f6f9a5d557a2.html",
-    "id": 24
+    "id": 33
   },
   {
     "title": "AI 代理將市場觀點化為股票投資組合：新創 Supertake 獲 2000 萬美元種子輪融資",
@@ -451,7 +577,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
     "stable_id": "a-aebbc88fc76810405dde",
     "permalink": "/articles/a-aebbc88fc76810405dde.html",
-    "id": 25
+    "id": 34
   },
   {
     "title": "捲入輝達執行長黃仁勳醜聞案，新加坡雲端公司 Megaspeed 傳將遭美方列入實體清單",
@@ -465,7 +591,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
     "stable_id": "a-9f125cbb22a34be85b73",
     "permalink": "/articles/a-9f125cbb22a34be85b73.html",
-    "id": 26
+    "id": 35
   },
   {
     "title": "歐洲金融科技大廠 Payhawk 獲 2.8 億美元 C 輪融資，估值躍升至 20 億美元",
@@ -479,7 +605,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/",
     "stable_id": "a-49f7e15553d78cd71565",
     "permalink": "/articles/a-49f7e15553d78cd71565.html",
-    "id": 27
+    "id": 36
   },
   {
     "title": "專攻企業文件解析！AI 新創 Unsiloed 獲 Felicis 領投 750 萬美元種子輪融資",
@@ -493,7 +619,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
     "stable_id": "a-70614b28cb57828ad33d",
     "permalink": "/articles/a-70614b28cb57828ad33d.html",
-    "id": 28
+    "id": 37
   },
   {
     "title": "為美國機器人餵養 AI 數據：印度新創 Humyn Labs 獲 4,700 萬美元 A 輪融資",
@@ -507,7 +633,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
     "stable_id": "a-b23bb586c54272ff7e3e",
     "permalink": "/articles/a-b23bb586c54272ff7e3e.html",
-    "id": 29
+    "id": 38
   },
   {
     "title": "歐洲軍事科技熱潮持續：倫敦國防新創 Agon 獲 Northzone 與 Lakestar 支援完成 7,000 萬美元融資",
@@ -521,7 +647,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/agon-raise-northzone-lakestar-defence/",
     "stable_id": "a-0fc18e91932582243ab0",
     "permalink": "/articles/a-0fc18e91932582243ab0.html",
-    "id": 30
+    "id": 39
   },
   {
     "title": "科技與策略思維交鋒：首屆「倫敦科技西洋棋之夜」將於明年1月登場",
@@ -535,7 +661,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/sign-up-for-the-first-london-tech-chess-night-brnd/",
     "stable_id": "a-9be677c146346d74a4f3",
     "permalink": "/articles/a-9be677c146346d74a4f3.html",
-    "id": 31
+    "id": 40
   },
   {
     "title": "歐洲未錯失AI浪潮！Plural合夥人Sten Tamkivi談10億歐元基金與國防科技佈局",
@@ -549,7 +675,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/plural-fund-ai-podcast/",
     "stable_id": "a-01d8f79b92e41e8b6b20",
     "permalink": "/articles/a-01d8f79b92e41e8b6b20.html",
-    "id": 32
+    "id": 41
   },
   {
     "title": "Anthropic 創歷史紀錄 IPO 前夕：揭密三大巨額投資人的豪賭底氣",
@@ -563,7 +689,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
     "stable_id": "a-630a400181ce977b6f34",
     "permalink": "/articles/a-630a400181ce977b6f34.html",
-    "id": 33
+    "id": 42
   },
   {
     "title": "伊莉莎白荷姆斯紀錄片《You Can See Everything》全球票房突破 1 億美元",
@@ -577,7 +703,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/22/you-can-see-everything-has-made-more-than-100m-worldwide/",
     "stable_id": "a-310ed8e1b0b7d54a962d",
     "permalink": "/articles/a-310ed8e1b0b7d54a962d.html",
-    "id": 34
+    "id": 43
   },
   {
     "title": "OpenAI首席科學家提出AI發展「速限」解方：以混淆度做為衡量標準",
@@ -591,7 +717,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
     "stable_id": "a-89b787e20cbc0e3a89ef",
     "permalink": "/articles/a-89b787e20cbc0e3a89ef.html",
-    "id": 35
+    "id": 44
   },
   {
     "title": "輝達新創持股暴增至655億美元，黃仁勳去職令未來投資動向添變數",
@@ -605,7 +731,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
     "stable_id": "a-7a0926aadce1fc56d1e2",
     "permalink": "/articles/a-7a0926aadce1fc56d1e2.html",
-    "id": 36
+    "id": 45
   },
   {
     "title": "用 AI 代理打通物流堵點：Pedestal AI 獲 470 萬美元種子輪融資",
@@ -619,7 +745,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
     "stable_id": "a-8293b85b57392cd62137",
     "permalink": "/articles/a-8293b85b57392cd62137.html",
-    "id": 37
+    "id": 46
   },
   {
     "title": "前 Neuralink 總裁創辦的 Science Corporation 完成 4 億美元 D 輪融資，估值達 35 億美元",
@@ -633,7 +759,7 @@
     "_archive_key": "rss:https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
     "stable_id": "a-c023539c9d45c97b8704",
     "permalink": "/articles/a-c023539c9d45c97b8704.html",
-    "id": 38
+    "id": 47
   },
   {
     "title": "聚焦赫elsinki Slush 2026：Anthropic IPO掀熱潮，機器人與超級人工智慧成焦點",
@@ -647,7 +773,7 @@
     "_archive_key": "rss:https://sifted.eu/articles/inside-slush-2026-robots-riches-and-the-race-to-superintelligence/",
     "stable_id": "a-7eb40eb931fe0f2ed7d9",
     "permalink": "/articles/a-7eb40eb931fe0f2ed7d9.html",
-    "id": 39
+    "id": 48
   },
   {
     "title": "歐洲新創圈的超齡野心：Slush 20u20 榜單揭曉新世代科技創業家",
@@ -661,132 +787,6 @@
     "_archive_key": "rss:https://sifted.eu/articles/slush-20u20-2026/",
     "stable_id": "a-54e0a7d8769996aab670",
     "permalink": "/articles/a-54e0a7d8769996aab670.html",
-    "id": 40
-  },
-  {
-    "title": "芬蘭新創融資戰局白熱化：埃斯波急追赫爾辛基，深科技成關鍵推手",
-    "summary": "芬蘭新創融資競賽升溫，首都赫爾辛基的鄰近城市埃斯波憑藉 Iceye 與 IQM 等深科技獨角獸的亮眼表現，融資金額幾乎追平首都。",
-    "content": "正當歐洲科技界齊聚赫爾辛基參與年度 Slush 盛會之際，芬蘭首都的鄰近城市埃斯波（Espoo）正再次威脅其作為該國新創融資熱點的地位。根據 Sifted 的數據顯示，這座芬蘭第二大城市在 2024 年吸引了 4.65 億歐元的創投融資，緊追赫爾辛基的 4.88 億歐元。這意味著埃斯波的融資額佔了全芬蘭總額的 41%，相比 2023 年的 32% 有所增長。\n\n推動這場融資競賽緊縮的核心動力，來自於當地強大的深科技（deeptech）規模化企業。例如由阿爾托大學（Aalto University）分拆出來的衛星雷達公司 Iceye，其融資規模在埃斯波名列前茅，近期更在奧斯陸完成由 TESOG 領投的 1.34 億歐元 D 輪融資，將其總融資額推高至超過 4 億歐元。相較之下，赫爾辛基雖然擁有 Oura 這樣獲得 7500 萬歐元融資的消費性科技巨頭，且整體總額仍以 4.88 億歐元微幅領先，但其領先優勢已遭到埃斯波強力挑戰。\n\n除了 Iceye，量子運算公司 IQM 也是埃斯波深科技陣營的重要支柱。IQM 與 VTT（芬蘭技術研究中心）有著深厚的淵源，兩者在量子技術領域展開密切合作。同時，阿爾托大學作為芬蘭新創生態系統的重要搖籃，不僅孕育出 Iceye 和 IQM 等重量級企業，也持續透過學術研究與人才輸出，為當地科技產業注入源源不絕的動能。\n\n然而，若從整體新創數量來看，赫爾辛基依然保持規模優勢。數據顯示，赫爾辛基的新創企業數量從 2023 年的 91 家微幅下降至 84 家，但總數仍高於埃斯波的 54 家。此外，芬蘭整體的創投融資額在近年經歷了市場調整，從 2021 至 2022 年的高峰回落，但以 Lifeline Ventures、Maki.vc 及 VTT LaunchPad 等當地創投機構為核心的融資網絡仍持續運作，支持著包括 Verda 在內的各類新創。\n\n從這場區域融資競賽中可以看出，芬蘭的科技實力並非單純集中於首都，而是展現出多核心的發展態勢。埃斯波憑藉深科技領域的國際級企業，成功在融資金額上與赫爾辛基並駕齊驅。隨著 Iceye 與 IQM 等企業在全球市場持續擴張，這種技術導向的區域競爭，預料將繼續成為推動芬蘭整體新創生態向前發展的重要動能。",
-    "link": "https://sifted.eu/articles/espoo-closes-in-on-helsinki-as-finlands-startup-funding-race-tightens/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=1200,quality=75,fit=cover,format=auto/wp-content/uploads/2021/12/02144334/Hero_image_Helsinki-2.jpg",
-    "date": "Fri, 20 Nov 2026 05:00:03 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/espoo-closes-in-on-helsinki-as-finlands-startup-funding-race-tightens/",
-    "stable_id": "a-d5f07a1356c57d75f981",
-    "permalink": "/articles/a-d5f07a1356c57d75f981.html",
-    "id": 41
-  },
-  {
-    "title": "直面AI代理監視威脅！加密通訊軟體 Signal 手機版限制截圖功能",
-    "summary": "面對作業系統整合代理型AI所帶來的生存威脅，加密通訊軟體 Signal 宣布在 Android 與 iOS 應用程式中限制截圖功能，以防敏感資料遭AI掃描外洩。",
-    "content": "以隱私安全著稱的加密通訊軟體 Signal 於週五宣布，將限制用戶在 Android 與 iOS 應用程式內進行截圖的能力。這項舉措是為了應對總裁 Meredith Whittaker 所形容的「生存威脅」（existential threat）——也就是各大作業系統深度整合代理型 AI（agentic AI）後帶來的資安挑戰。\n\nMeredith Whittaker 指出，當前包括 Windows、Android、macOS 以及 iOS 在內的作業系統，正賦予 AI 代理直接掃描用戶螢幕上資訊的能力。這種做法實際上正在破壞 Signal 長期以來獨立保證用戶隱私的基礎。她警告，為了配合 AI 代理的功能，用戶的敏感資料會被擷取、儲存，並傳送到該作業系統層級 AI 代理當下所使用的本地資料庫或遠端伺服器中。\n\n一旦資料遭到擷取，整個過程便完全超出了 Signal 的控制範圍，進而嚴重危及對話中所有參與者的隱私安全。為了降低這類風險，Signal 此前已預設在 Windows 應用程式中阻擋截圖，而現在則進一步將類似的限制擴展到 Android 與 iOS 平台。\n\n不過，Signal 同時也保留了彈性，用戶若有需求仍可手動停用這項截圖限制設定。對此，Whittaker 坦言，允許用戶關閉設定會「打破我們的隱私保證」，且這本身也只是一個「不完整」的解決方案，因為它無法解決 AI 代理未來可能透過其他更隱蔽方式存取應用程式資料的問題。\n\n從資安角度來看，作業系統層級的 AI 工具正逐漸成為隱私防護的新破口。過去通訊軟體主要需防範惡意軟體或截圖工具，如今系統內建的 AI 代理卻能以「便利」之名合法掃描畫面，這對主打端對端加密與絕對隱私的 Signal 構成根本性的挑戰。Signal 此次的防範措施雖然無法做到滴水不漏，甚至必須妥協於用戶的實際操作需求，但已明確對外傳達出防堵作業系統級監控的急迫性。",
-    "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800",
-    "date": "Sat, 21 Nov 2026 21:37:10 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-    "stable_id": "a-10fe0d2333966d071126",
-    "permalink": "/articles/a-10fe0d2333966d071126.html",
-    "id": 42
-  },
-  {
-    "title": "Nvidia 陷入「兩個世界」：財報亮眼與黃仁勳去留風波交織",
-    "summary": "Nvidia 最新財報表現強勁，但代理執行長宣布停止向中國銷售 H200 晶片。同時，科技界發起連署希望前執行長黃仁勳回歸，引發市場高度關注。",
-    "content": "本週科技巨頭 Nvidia 展現出截然不同的兩種面貌，一邊是亮眼的財務表現與現任管理層的信心喊話，另一邊則是科技大老們大聲疾呼，希望前執行長黃仁勳（Jensen Huang）重掌兵符。\n\n在 TechCrunch 的 Equity 播客節目中，編輯團隊深入討論了這家 AI 晶片大廠的最新動態。一方面，Nvidia 公布了強勁的營收成長，財測超越市場預期，業務前景看好。代理執行長柯蕾特・克萊斯（Colette Kress）在財報會議上向投資人強調現任團隊「完全掌控局勢」，試圖穩住市場信心。\n\n然而，在檯面下與社群平台上卻充滿雜音。包括馬斯克（Elon Musk）在內的科技界高層正大力推動黃仁勳回歸，甚至在網路上流傳相關請願連署，而黃仁勳本人也曾表示自己準備好重返崗位。華爾街對此顯然仍有疑慮，公司的股價下滑也反映出市場的不安。\n\n在業務與合規層面，Nvidia 同時宣布了一項重大調整：將不再向中國銷售 H200 晶片。克萊斯指出，這項決定與美國川普政府持續收緊出口管制、堵住遠端存取漏洞的政策一致。過去，部分中國企業透過馬來西亞等鄰近國家的資料中心以遠端方式存取這些晶片，如今這條路徑已被切斷。雖然批評者估計中國市場曾佔其業務的 20%，且多數是透過東南亞轉手，這項禁令若嚴格執行恐對其獲利造成影響，但從整體財報與未來布局來看，Nvidia 目前的營運基本面依然強健。\n\n針對黃仁勳可能回歸的傳聞，Nvidia 官方目前的立場是斷然否認。不過，考慮到先前公司對黃仁勳的領導力表達絕對支持，轉變之快耐人尋味。分析人士認為，Nvidia 董事會顯然希望展現自主控制權，避免在外部億萬富翁的施壓下被迫做出決定，這也讓人聯想到 OpenAI 過去的治理動盪。雖然黃仁勳回歸的可能性目前看來不高，且身為上市公司要重新更動董事會結構並不容易，但隨著美國對晶片密售中國的調查仍在進行，這場高層人事與地緣政治交織的戲碼短期內恐怕還不會落幕。",
-    "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
-    "date": "Sat, 21 Nov 2026 21:07:42 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-    "stable_id": "a-f51634a8a807bd84c4cf",
-    "permalink": "/articles/a-f51634a8a807bd84c4cf.html",
-    "id": 43
-  },
-  {
-    "title": "美聯邦調查局全國犯罪資訊中心驚傳遭駭 傳川普回應「情況不妙」",
-    "summary": "美國聯邦調查局（FBI）核心資料庫 NCIC 驚傳遭駭客入侵，調查工作正在進行中。總統川普對此公開回應表示情況不妙。",
-    "content": "美國聯邦調查局（FBI）的核心執法資料庫驚傳遭遇網路攻擊。根據《CNN》與《美聯社》等媒體報導，聯邦與地方執法機關平時用來共享通緝令、背景調查等重要資訊的「全國犯罪資訊中心」（NCIC）在近日疑似遭到駭客入侵，目前該起資安事件的實際受害規模仍不明朗。\n\nNCIC 資料庫在美國執法體系中扮演舉足輕重的角色，因此這起事件也引發了外界對資料安全的高度擔憂。一名曾任職 FBI 的官員在接受《CNN》訪問時指出，執法部門最大的擔憂不僅在於駭客是否成功竊取了敏感資訊，更在於這些攻擊者是否有能力篡改執法官員日常決策所依賴的資料準確性。\n\n美國總統唐納·川普（Donald Trump）在週六接受《福斯新聞》（Fox News）採訪時，首度公開談論了這起備受關注的資安事件。川普坦言：「我們才剛聽聞此事，而我要說的是，這情況確實不太好。」不過，川普話鋒一轉，也暗示這起資料外洩事件或許會帶來意料之外的轉折，並藉此提及過去關於俄羅斯的政治爭議。\n\n值得注意的是，這並非近期唯一一宗指向 FBI 的資安疑雲。就在今年 9 月，外界亦曾傳出 FBI 曾向旗下探員與支援人員發出通知，指他們的個人資訊在先前的網攻事件中遭到竊取。隨著 NCIC 遭駭的調查持續推進，聯邦執法機構在數位防禦與內部資安管理上面臨的挑戰，也再次成為外界關注的焦點。",
-    "link": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/09/fbi-edgar-hoover-building-2288940613.jpg?resize=1200,800",
-    "date": "Sat, 21 Nov 2026 18:44:53 +0000",
-    "category": "Pulse",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-    "stable_id": "a-4d2e700b316fb4cfec52",
-    "permalink": "/articles/a-4d2e700b316fb4cfec52.html",
-    "id": 44
-  },
-  {
-    "title": "AI 網路安全新創 Corma 創下驚人紀錄，僅花三個月便躍升十億美元獨角獸",
-    "summary": "專注於網路安全防禦的 AI 新創 Corma 在推出產品短短三個月後，便獲得由 NEA 領投的 1.25 億美元 A 輪融資，估值達到 10 億美元。",
-    "content": "在人工智慧技術急速滲透各大產業之際，網路安全領域再添一家極速崛起的獨角獸。專門提供網路安全防禦 AI 模型與代理程式的新創公司 Corma，在宣佈推出其首款產品僅僅三個月後，便成功完成 1.25 億美元的 A 輪融資，將公司估值推升至 10 億美元。這筆融資由知名創投 NEA 領投，顯示市場對 AI 防禦技術的高度信心。\n\nCorma 自今年 8 月正式結束隱身狀態（out of stealth）以來，業務發展可說迎來爆發式成長。其產品需求在 10 月 21 日迎來重大轉折點。當天，熱門網頁程式語言 PHP 被發現存在重大安全漏洞，同時開源 JavaScript 執行環境 Node.js 以及多個 LLM 請求代理開源工具 LiteLLM 也陸續揭露安全事件。這波在同一天內集中爆發的資安漏洞，讓企業的資訊安全長（CISO）們措手不及，也直接凸顯了現代軟體生態系統的脆弱性。\n\n這場安全危機的集中爆發，突顯了當前 AI 時代所面臨的攻擊威脅與複雜度。面對日益猖獗且具規模化的資安挑戰，市場急需智慧化的防禦手段。除了 Corma 之外，由資安界名人 Kevin Mandia 創立的新創 Armadin，以及 Anthropic、OpenAI、微軟等科技巨頭，皆紛紛投入 AI 網路安全防禦的行列，使得這個賽道迅速擁擠。\n\n儘管市場競爭激烈且新創如雨後春筍般湧現，但 Corma 在眾多競爭者中試圖建立不同的定位。該公司強調，自己並非單純的應用軟體開發商，而是一家專注於保護技術的前沿 AI 研究實驗室。隨著本輪資金到位，Corma 至今累積融資總額已達到 1.85 億美元，其早期投資人陣容還包括 Sequoia Capital、Khosla Ventures 與 Coatue 等重量級創投機構。\n\n從 Corma 的快速融資與市場反應來看，這筆資金不僅反映了資本市場對 AI 安全防禦的狂熱，也反映出資安產業在應對複雜漏洞時的迫切需求。然而，作為一家僅成立數月、剛跨入獨角獸門檻的新創公司，Corma 未來能否在面對眾多科技巨頭與同業夾擊下，持續維持其技術領先地位並將高額估值轉化為實際營收，將是其能否在長期立足的關鍵考驗。",
-    "link": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Networked-AI-swarm-with-glowing-nodes.png?resize=1200,600",
-    "date": "Mon, 16 Nov 2026 23:32:32 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
-    "stable_id": "a-316a2b9523340f1bb36f",
-    "permalink": "/articles/a-316a2b9523340f1bb36f.html",
-    "id": 45
-  },
-  {
-    "title": "拒絕數位焦慮：Island 將「減少螢幕使用」轉化為遊戲化農場經營",
-    "summary": "由 Y Combinator 支持的創業公司 Island，推出了一款獨特的螢幕時間管理應用。它摒棄強硬的封鎖機制，改採農場模擬遊戲，透過獎勵機制鼓勵用戶達成手機使用時長目標，並獲得極高的用戶黏著度。",
-    "content": "現代人深受數位干擾之苦，市面上常見的螢幕使用限制應用多採取強硬手段，如鎖定 App 或強制中斷用戶使用，這種做法往往在用戶正忙於處理重要事務時造成困擾。近期，一款名為 Island 的應用程式選擇了截然不同的途徑，將螢幕時間管理轉化為一場農場經營遊戲。\n\nIsland 由 Ashish Selvaraj 與 Ethan Pronev 共同創辦，這兩位創業者畢業於滑鐵盧大學，曾任職於 Jane Street、Databricks 及 Microsoft 等知名企業。在加入知名創業加速器 Y Combinator 後，他們在經歷了五次轉型才終於開發出這款讓開發團隊自身也樂在其中的產品。不同於傳統工具試圖透過限制來「懲罰」用戶，Island 採取「蘿蔔大於棒子」的策略：當用戶展現自律並達成設定的螢幕時間目標時，系統會給予「信用評分」，用於提升農場產能、解鎖新的農作物與動物等遊戲內容。\n\n這款應用程式的開發過程也反映出創辦人對產品細節的堅持。為了賦予應用程式獨特的人文氣息，Selvaraj 與團隊成員堅持親手繪製像素藝術，而非依賴 AI 生成模型。Selvaraj 表示，儘管 Claude 等工具在內容生成上日益強大，但團隊認為親手創作的過程能賦予產品更深刻的個性。\n\n數據顯示，這種激勵模式確實奏效。Island 的初期測試與 10 月發布後的數據顯示，約 82% 的用戶會在設定的極限時準確停止使用手機；當收到「剩餘 15 分鐘」的提示時，亦有大量用戶選擇停用。此外，該產品展現了強大的用戶黏著度，DAU/MAU（日活躍用戶與月活躍用戶比率）達到 51%，且 30 天留存率高達 49%。\n\n除了基本的農場經營，Island 也導入了社交功能。用戶可以拜訪好友的農場，或透過「連結彼此」功能進行互助：若一方超出了螢幕時間目標，雙方的農場都會受到影響。這種透過社交羈絆所建立的約束力，進一步強化了用戶的自律動機。\n\n目前 Island 採取免費增值模式，免費版提供基礎功能，訂閱服務（每年 39.99 美元）則允許用戶針對特定 App 設定獨立限制，而不僅僅是單一的總螢幕使用時長。該團隊目前尚未在 YC 之外進行其他種子輪融資，但計畫在今年底透過社交媒體擴大推廣。\n\n記者分析：數位健康應用市場長年充斥著「強迫管理」的邏輯，Island 的成功之處在於抓住了用戶對於「控制權」的心理需求。與其將手機使用視為必須戒斷的癮症，Island 將其轉化為經營成果的遊戲體驗，這種「正面強化」機制有效地降低了用戶的挫折感。然而，這類應用程式的長期挑戰在於新鮮感的維持。隨著用戶完成農場建設或遊戲機制變得乏味，如何持續提供新鮮的內容與社交誘因，以維持如此高的留存率，將是這家新創公司在未來擴張市場時，必須持續克服的關鍵課題。",
-    "link": "https://techcrunch.com/2026/11/16/island-is-a-new-screen-time-app-that-turns-staying-off-your-phone-into-a-game/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/island-graphic.png?resize=1200,586",
-    "date": "Mon, 16 Nov 2026 18:54:18 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/16/island-is-a-new-screen-time-app-that-turns-staying-off-your-phone-into-a-game/",
-    "stable_id": "a-ce5b1019eda185445096",
-    "permalink": "/articles/a-ce5b1019eda185445096.html",
-    "id": 46
-  },
-  {
-    "title": "歷經生死邊緣的電池新創 Our Next Energy 宣佈透過 SPAC 上市，估值達 10 億美元",
-    "summary": "曾面臨倒閉危機的美國電池新創 Our Next Energy（ONE）宣佈將透過 SPAC 方式在那斯達克上市，預計交易後估值達 10 億美元，並將營運重心轉向國防與鐵路等利基市場。",
-    "content": "美國電池新創產業向來充滿挑戰，過去二十年間倒閉的企業遠多於成功者。曾陷入嚴重財務危機的電池新創 Our Next Energy（ONE）向 TechCrunch 獨家透露，公司即將透過與 Wen Acquisition Corp. 的合併案以 SPAC 方式上市。\n\n根據 ONE 公布的資訊，該公司預估合併前的股權價值為 6 億美元，在無贖回的情況下，這起合併案預計可帶來 4.04 億美元的總收益。合併後的新公司將以股票代號「ONEE」在那斯達克掛牌交易，隱含的 pro forma 股權價值達到 10 億美元。PitchBook 的數據顯示，ONE 歷年來已累計募資 4.83 億美元，過去最高估值曾達到 1.3 億美元，並獲得密西根州數千萬美元的投資與就業激勵資金。\n\nONE 由福特與蘋果前工程師 Mujeeb Ijaz 創辦，其最初的技術核心是讓電動車透過兩種不同化學成分的電池獲取電力。其首款原型車曾創下單次充電行駛超過 600 英里的紀錄。然而，由於電動車市場成長未如預期，加上車廠轉向尋求更低價格的供應來源，導致 ONE 在 2023 年底的 C 輪融資受挫，不僅被迫裁員，也取消了密西根州 1.6 億美元工廠的租約。這波低潮促使 Mujeeb Ijaz 於 2023 年 12 月卸任執行長，但在新一輪融資完成後，他於 2025 年 3 月重返執行長職位。\n\n在經歷市場現實的洗禮後，Ijaz 決定調整公司的商業策略，將重心從競爭激烈的電動車市場轉向電網級電池、國防以及鐵路市場。Ijaz 指出，電網級客戶雖然潛力龐大，但同樣面臨來自中國低價產品的強烈競爭，因此尋找重視美國本土供應鏈的買家至關重要。目前 ONE 已打入國防與鐵路市場，例如開發應用於鐵路的混合動力機車與微型混合動力系統，並在這些領域獲得 2 億美元的多年度約束性合約。ONE 目前預期今年營收可達 3000 萬美元，並希望明年營收翻倍。\n\n記者分析認為，ONE 此次透過 SPAC 上市並轉向國防與鐵路市場，反映出美國電池新創在面對中國供應鏈競爭與電動車市場價格戰時的生存求變之道。儘管避開了車用市場的紅海，並利用美國聯邦法規對外國敏感實體（FEOC）的限制來建立護城河，但投資人是否買單，仍取決於該公司能否擺脫過去動盪的歷史，展現長期的執行力與財務穩定性。",
-    "link": "https://techcrunch.com/2026/11/16/after-dodging-death-battery-startup-our-next-energy-is-now-going-public/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/our-next-energy-pack-inspection.jpg?resize=1200,900",
-    "date": "Mon, 16 Nov 2026 13:00:00 +0000",
-    "category": "Ecosystem",
-    "is_manual": false,
-    "_archive_key": "rss:https://techcrunch.com/2026/11/16/after-dodging-death-battery-startup-our-next-energy-is-now-going-public/",
-    "stable_id": "a-a70244f08190ebee00c0",
-    "permalink": "/articles/a-a70244f08190ebee00c0.html",
-    "id": 47
-  },
-  {
-    "title": "瑞典馬mö：打造歐洲永續食品科技與資源循環的創新樞紐",
-    "summary": "面對全球人口增長挑戰，瑞典馬爾默正結合產學研資源，串聯農業科技、水產養殖與循環經濟新創，打造歐洲永續食品科技的關鍵生態系。",
-    "content": "預計到 2061 年，全球人口將達到 100 億人，食品需求正以高速增長，但傳統的農業與採購過程卻面臨資源枯竭的壓力。歐洲的食品科技新創正透過 AI 驅動的物流與生物技術，確保食品來源永續並盡可能回收資源。根據 Sifted 數據，歐洲食品科技新創在今年已募得 7.926 億歐元，2025 年則募得 15 億歐元。位於丹麥哥本哈根與隆德之間的瑞典城市馬爾默（Malmö），正成為推動這項變革的核心樞紐。\n\n馬爾默所在的南瑞典斯科訥（Skåne）地區，佔了全瑞典約三分之一的食品產量及大約一半的食品相關研發投資。當地的永續食品生產轉型涵蓋水產養殖與資源循環。例如總部位於馬爾默的水處理公司 NP Innovation，其執行長 Michael Bäärnhielm 指出，公司專為全球陸基養魚場提供過濾設備，移除水中的顆粒、氨與二氧化碳，創造理想的養殖環境。這種封閉式的循環水產養殖系統（RAS）讓魚類能在全球各地在地養殖，減少跨國運輸的碳排放。\n\n除了生產在地化，馬爾默也極力推動資源循環。推動當地食品科技創新網路（The Foodtech Innovation Network）的專案經理 Eva Jilkén 表示，該產業正從單一產品轉向建立具備韌性與經濟可行性的食品系統。網路中的新創如 Dapibuset，將食品製造過程中的副產物轉化為新原料；另一家新創 Saveggy 則開發植物性可食用塗層，用以取代一次性塑膠包裝並延長生鮮農產品的保存期限。\n\n馬爾默的優勢在於其緊密合作的生態系。當地匯聚了馬爾默大學、隆德大學和克里斯蒂安stad大學等研究機構，為新創提供食品科學以外的生物技術、工程與材料科學人才。同時，該地區也擁有植物奶大廠 Oatly 等國際知名企業。食品科技創新網路目前支援約 150 家公司，透過導師計畫、一對一指導、 pilotes 設施與媒合活動，協助創辦人將構想轉化為商業模式。\n\n在資金與市場進入方面，當地提供多元的融資管道與實質支援。除了 Minc 等機構管理的早期創投基金，瑞典政府創新局 Vinnova 也提供無稀釋性補助金，並透過歐盟的「未來食品」（Future FoodS）夥伴關係提供多階段資金。此外，創新網路更首創「逆向路演」（reverse pitch）概念，讓新創直接與大型零售商和餐飲服務業者對話，解決進入市場的痛點。隨著全球人口朝 10 億邁進，馬爾默正透過跨界合作與可擴展技術，摸索出一條兼顧糧食安全與自然保育的永續道路。",
-    "link": "https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
-    "image": "https://content.sifted.eu/wp-content/uploads/2026/11/18144917/sifted-article-2-header-1024x359.png",
-    "date": "Fri, 20 Nov 2026 09:00:01 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
-    "stable_id": "a-bb672c85791ac68ad7f4",
-    "permalink": "/articles/a-bb672c85791ac68ad7f4.html",
-    "id": 48
-  },
-  {
-    "title": "英國 AI 大臣拒絕發展主權模型惹議：比起自研，取得美國技術更重要",
-    "summary": "英國人工智慧大臣 Kanishka Narayan 在矽谷表示，英國應依賴外國技術而非開發自家前沿模型，引發國內新創圈強烈反彈。",
-    "content": "英國人工智慧大臣 Kanishka Narayan 近日在矽谷一場活動中表示，英國與其花費資源開發本土的前沿人工智慧（AI）模型，不如專注於取得美國的先進技術。此言一出，隨即引發英國科技新創圈的強烈反彈，批評聲浪不斷。\n\nKanishka Narayan 在活動中指出，我不認為這是一個非此即彼的二元選擇。他認為，與其試圖在本土打造出能與美國矽谷巨頭正面競爭的模型，不如將重點放在如何有效利用這些現有的強大技術。然而，這種傾向依賴外國技術的政策方向，觸動了英國科技界的敏感神經。\n\n英國新創社群對此感到相當憤怒。英國知名早期創投機構及創業加速器 Entrepreneur First 共同創辦人暨執行長 Matt Clifford 公開表達不滿，直言：「這真的讓人非常生氣。為什麼政府還要繼續推動這種說詞？」他並質疑，當政府官員呼籲依賴外國科技巨頭時，英國本土的 AI 新創公司該何去何從。\n\n除了新創企業家的批評，身兼英國 AI 新創 LlamaIndex 歐洲負責人的 Xuan Duong 也指出，這項言論反映出英國政府在建立本土 AI 能力上的矛盾態度。她強調，當政府一方面宣稱要扶植本土 AI 產業，另一方面卻又暗示不需要西海岸（美國）等級的基礎模型時，傳遞出的訊息相當混亂。\n\n此次爭議也凸顯了英國在追趕全球 AI 浪潮時的兩難局面。一方面，英國擁有 DeepMind 等頂尖 AI 研究機構，並曾設立英國主權 AI 基金（UK Sovereign AI Fund），試圖在基礎模型領域占有一席之地；另一方面，面對資金與算力規模遠超國內的美國科技巨頭，政府官員開始考量務實路線，認為與其耗費巨資追趕，不如擁抱現有的外國頂尖技術。\n\n從產業發展的角度來看，這場爭議反映出英國政府在「技術自主」與「實用主義」之間的擺盪。新創業者憂心，政府若放棄發展主權模型的企圖心，將使本土生態系失去長期競爭力。然而，對政策制定者而言，如何在有限的資源下取得最佳的 AI 應用效益，仍是一個棘手的難題。隨著美歐 AI 發展差距擴大，英國新創圈與政府之間的路線之爭，短期內恐難以平息。",
-    "link": "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
-    "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/20005242/kanishka-scaled.png",
-    "date": "Fri, 20 Nov 2026 05:00:50 GMT",
-    "category": "Insights",
-    "is_manual": false,
-    "_archive_key": "rss:https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
-    "stable_id": "a-48c70a71837c1bbdd62d",
-    "permalink": "/articles/a-48c70a71837c1bbdd62d.html",
     "id": 49
   }
 ]
